@@ -17,12 +17,7 @@ for d in ("assets/css", "assets/js", "assets/img", "servicios"):
     os.makedirs(os.path.join(OUT, d), exist_ok=True)
 os.makedirs(os.path.join(OUT, "blog"), exist_ok=True)
 shutil.copytree(sys.argv[3], OUT + "/assets/img/blog")
-from PIL import Image as _Im
-os.makedirs(OUT + "/assets/img/blog/og", exist_ok=True)
-for _f in os.listdir(sys.argv[3]):
-    if _f.endswith(".jpg") and not _f.endswith("-600.jpg"):
-        _i = _Im.open(os.path.join(sys.argv[3], _f)).convert("RGB"); _w, _h = _i.size; _nh = int(_w * 630 / 1200)
-        _i.crop((0, (_h - _nh) // 2, _w, (_h - _nh) // 2 + _nh)).resize((1200, 630)).save(OUT + "/assets/img/blog/og/" + _f, quality=80, optimize=True, progressive=True)
+# Las imagenes og (1200x630) de cada articulo estan en portadas/og/
 shutil.copy(os.path.join(AQUI, "estilos.css"), OUT + "/assets/css/estilos.css")
 shutil.copytree(os.path.join(AQUI, "fonts"), OUT + "/assets/fonts")
 for src, dst in [("horizontal/studio-emprende-horizontal-color.svg", "logo-horizontal.svg"),
