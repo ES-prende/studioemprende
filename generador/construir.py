@@ -543,6 +543,13 @@ print(len(PAGS), "páginas")
 
 # ---------- URLS LIMPIAS (sin .html) ----------
 import re as _re2
+# Paginas que chocan con una carpeta del mismo nombre (servicios/fichador.html + servicios/fichador/):
+# se mueven a servicios/fichador/index.html para que la URL sea /servicios/fichador/
+_CHOQUES = []
+for _d, _, _fs in os.walk(OUT):
+    for _f in _fs:
+        if _f.endswith(".html") and _f != "index.html" and os.path.isdir(os.path.join(_d, _f[:-5])):
+            _CHOQUES.append(os.path.relpath(os.path.join(_d, _f[:-5]), OUT).replace(os.sep, "/"))
 _dom = _re2.escape(DOM)
 for _d, _, _fs in os.walk(OUT):
     for _f in _fs:
@@ -552,9 +559,26 @@ for _d, _, _fs in os.walk(OUT):
         _s = _re2.sub(r'(%s/[^"\'\s)<>]*?)\.html' % _dom, r'\1', _s)
         _s = _re2.sub(r'href="((?:\.\./)*(?:[\w-]+/)*)index\.html', lambda m: 'href="%s' % (m.group(1) or "./"), _s)
         _s = _re2.sub(r'href="([^":#?]+?)\.html', r'href="\1', _s)
+        if _f.endswith(".html"):
+            _rel = os.path.relpath(_d, OUT)
+            def _abs(m):
+                attr, h = m.group(1), m.group(2)
+                if h.startswith(("http:", "https:", "mailto:", "tel:", "#", "/", "data:", "javascript:")): return m.group(0)
+                path, sep, tail = h.partition("?") if "?" in h else (h.partition("#") if "#" in h else (h, "", ""))
+                dirlike = path.endswith("/") or path in ("", ".", "./")
+                full = os.path.normpath(os.path.join(_rel, path or "."))
+                full = "/" if full in (".", "") else "/" + full.replace(os.sep, "/")
+                if dirlike and full != "/": full += "/"
+                return '%s="%s%s%s"' % (attr, full, sep, tail)
+            _s = _re2.sub(r'\b(href|src)="([^"]*)"', _abs, _s)
+            for _c in _CHOQUES:
+                _s = _re2.sub(r'"/%s(?=["#?])' % _re2.escape(_c), '"/%s/' % _c, _s)
+        for _c in _CHOQUES:
+            _s = _re2.sub(r'(%s/%s)(?=[\s"<)#?]|$)' % (_dom, _re2.escape(_c)), r'\1/', _s, flags=_re2.M)
         if _s != _o: open(_p, "w", encoding="utf-8").write(_s)
-open(OUT + "/.htaccess", "w").write("""Options -MultiViews
-DirectoryIndex index.html
+for _c in _CHOQUES:
+    shutil.move(os.path.join(OUT, _c + ".html"), os.path.join(OUT, _c, "index.html"))
+open(OUT + "/.htaccess", "w").write("""DirectoryIndex index.html
 ErrorDocument 404 /404.html
 RewriteEngine On
 
@@ -574,10 +598,14 @@ RewriteRule ^ /%1 [R=301,L,NE]
 RewriteCond %{THE_REQUEST} \\s/+([^?\\s]+?)\\.html[\\s?] [NC]
 RewriteRule ^ /%1 [R=301,L,NE]
 
+# /pagina/ -> /pagina  (quitar barra final si no es carpeta real)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
 # /pagina -> sirve pagina.html sin mostrar la extension
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.+?)/?$ $1.html [L]
+RewriteRule ^(.+)$ $1.html [L]
 
 # Cache de recursos estaticos
 <IfModule mod_expires.c>

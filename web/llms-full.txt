@@ -11,7 +11,7 @@ Atendemos 100 % online en España y Latinoamérica. Contacto y diagnóstico grat
 - Arma tu pack: A medida. Elige solo los servicios que necesitas y te damos precio.
 
 ## Software de gestión modular a medida
-URL: https://studioemprende.com/servicios/software-de-gestion
+URL: https://studioemprende.com/servicios/software-de-gestion/
 ERP, CRM y programa de gestión por módulos, con app móvil y el agente de IA PIX. Paga solo por lo que usas: empieza con dos módulos y crece cuando quieras.
 
 ### Clientes y ventas (CRM)
@@ -83,7 +83,7 @@ ERP, CRM y programa de gestión por módulos, con app móvil y el agente de IA P
 - [Contratos con firma online](https://studioemprende.com/servicios/software-de-gestion/contratos-con-firma-online)
 
 ## ERP para pymes
-URL: https://studioemprende.com/servicios/erp-para-pymes
+URL: https://studioemprende.com/servicios/erp-para-pymes/
 Un ERP une en un solo programa ventas, compras, almacén, facturación, equipo y contabilidad. Lo montamos por módulos y a medida, con PIX integrado y migración incluida.
 
 ### Qué incluye
@@ -110,7 +110,7 @@ Un ERP une en un solo programa ventas, compras, almacén, facturación, equipo y
 - [Conexión con tu tienda, banco y otras herramientas](https://studioemprende.com/servicios/erp-para-pymes/conexion-con-tu-tienda-banco-y-otras-herramientas)
 
 ## Apps móviles a medida
-URL: https://studioemprende.com/servicios/apps-moviles
+URL: https://studioemprende.com/servicios/apps-moviles/
 Apps para tus clientes y para tu equipo, conectadas a tu programa de gestión y a PIX, publicadas en Google Play y App Store.
 
 ### Qué hacemos
@@ -122,7 +122,7 @@ Apps para tus clientes y para tu equipo, conectadas a tu programa de gestión y 
 - [Mantenimiento y actualizaciones](https://studioemprende.com/servicios/apps-moviles/mantenimiento-y-actualizaciones)
 
 ## Software especializado de alto valor
-URL: https://studioemprende.com/servicios/software-especializado
+URL: https://studioemprende.com/servicios/software-especializado/
 Herramientas que resuelven una obligación legal, ahorran muchas horas o venden por ti, pensadas para pymes.
 
 ### Cumplimiento sectorial
@@ -149,7 +149,7 @@ Herramientas que resuelven una obligación legal, ahorran muchas horas o venden 
 - [App propia para negocios con clientes recurrentes](https://studioemprende.com/servicios/software-especializado/app-propia-para-negocios-con-clientes-recurrentes)
 
 ## Migraciones e integraciones
-URL: https://studioemprende.com/servicios/migraciones-e-integraciones
+URL: https://studioemprende.com/servicios/migraciones-e-integraciones/
 Dejamos atrás el Excel y los programas que no se hablan entre sí, sin perder datos.
 
 ### Servicios
@@ -162,7 +162,7 @@ Dejamos atrás el Excel y los programas que no se hablan entre sí, sin perder d
 - [Digitalización de archivo en papel](https://studioemprende.com/servicios/migraciones-e-integraciones/digitalizacion-de-archivo-en-papel)
 
 ## Agentes de IA
-URL: https://studioemprende.com/servicios/agentes-de-ia
+URL: https://studioemprende.com/servicios/agentes-de-ia/
 Asistentes que atienden, presupuestan, cobran y trabajan por ti, entrenados con la información de tu negocio.
 
 ### Atención
@@ -190,7 +190,7 @@ Asistentes que atienden, presupuestan, cobran y trabajan por ti, entrenados con 
 - [Mantenimiento de agentes y automatizaciones](https://studioemprende.com/servicios/agentes-de-ia/mantenimiento-de-agentes-y-automatizaciones)
 
 ## WhatsApp IA
-URL: https://studioemprende.com/servicios/whatsapp-ia
+URL: https://studioemprende.com/servicios/whatsapp-ia/
 Tu WhatsApp atiende, agenda y recuerda citas solo, sin que pierdas ningún cliente.
 
 ### Servicios
@@ -199,7 +199,7 @@ Tu WhatsApp atiende, agenda y recuerda citas solo, sin que pierdas ningún clien
 - [Reactivación de clientes y pacientes inactivos](https://studioemprende.com/servicios/whatsapp-ia/reactivacion-de-clientes-y-pacientes-inactivos)
 
 ## Automatización y datos
-URL: https://studioemprende.com/servicios/automatizacion-y-datos
+URL: https://studioemprende.com/servicios/automatizacion-y-datos/
 Lo repetitivo se hace solo y tú ves tu negocio en tiempo real.
 
 ### Servicios
@@ -213,7 +213,7 @@ Lo repetitivo se hace solo y tú ves tu negocio en tiempo real.
 - [Optimización de rutas](https://studioemprende.com/servicios/automatizacion-y-datos/optimizacion-de-rutas)
 
 ## Webs
-URL: https://studioemprende.com/servicios/webs
+URL: https://studioemprende.com/servicios/webs/
 Webs rápidas, accesibles y conectadas a tu gestión: cada contacto entra directo a tu CRM.
 
 ### Tipos de web
@@ -244,7 +244,7 @@ Webs rápidas, accesibles y conectadas a tu gestión: cada contacto entra direct
 - [Migración desde Wix o Squarespace](https://studioemprende.com/servicios/webs/migracion-desde-wix-o-squarespace)
 
 ## Presencia digital y crecimiento
-URL: https://studioemprende.com/servicios/presencia-digital
+URL: https://studioemprende.com/servicios/presencia-digital/
 Que te encuentren en Google, en redes y en las respuestas de ChatGPT.
 
 ### Visibilidad
@@ -267,7 +267,7 @@ Que te encuentren en Google, en redes y en las respuestas de ChatGPT.
 - [Gestión remota desde el móvil](https://studioemprende.com/servicios/presencia-digital/gestion-remota-desde-el-movil)
 
 ## Fichador · control horario
-URL: https://studioemprende.com/servicios/fichador
+URL: https://studioemprende.com/servicios/fichador/
 Cumple con el registro de jornada desde hoy y prepárate para el fichaje digital. Desde el móvil, la tablet o WhatsApp.
 
 ### Fichaje
@@ -297,7 +297,7 @@ Cumple con el registro de jornada desde hoy y prepárate para el fichaje digital
 - [Prueba gratuita](https://studioemprende.com/servicios/fichador/prueba-gratuita)
 
 ## CRM y domótica para alojamientos y casas
-URL: https://studioemprende.com/servicios/alojamientos-y-domotica
+URL: https://studioemprende.com/servicios/alojamientos-y-domotica/
 Tu alojamiento funciona solo: reservas, llaves, registro de viajeros, consumo y limpieza en un único panel.
 
 ### Gestión y cumplimiento
@@ -321,7 +321,7 @@ Tu alojamiento funciona solo: reservas, llaves, registro de viajeros, consumo y 
 - [Teleasistencia para mayores](https://studioemprende.com/servicios/alojamientos-y-domotica/teleasistencia-para-mayores)
 
 ## Ciberseguridad, sistemas y cumplimiento
-URL: https://studioemprende.com/servicios/ciberseguridad-y-sistemas
+URL: https://studioemprende.com/servicios/ciberseguridad-y-sistemas/
 Tu empresa protegida y al día con la normativa europea.
 
 ### Servicios
@@ -334,7 +334,7 @@ Tu empresa protegida y al día con la normativa europea.
 - [Migración a la nube](https://studioemprende.com/servicios/ciberseguridad-y-sistemas/migracion-a-la-nube)
 
 ## Tu departamento tecnológico
-URL: https://studioemprende.com/servicios/departamento-tecnologico
+URL: https://studioemprende.com/servicios/departamento-tecnologico/
 Un solo interlocutor para web, software, IA y equipos, por cuota mensual.
 
 ### Tranquilidad
@@ -356,7 +356,7 @@ Un solo interlocutor para web, software, IA y equipos, por cuota mensual.
 - [Herencia digital de la empresa](https://studioemprende.com/servicios/departamento-tecnologico/herencia-digital-de-la-empresa)
 
 ## Formación en IA
-URL: https://studioemprende.com/servicios/formacion-ia
+URL: https://studioemprende.com/servicios/formacion-ia/
 Formación práctica para tu equipo, bonificable por FUNDAE.
 
 ### Cursos
@@ -368,7 +368,7 @@ Formación práctica para tu equipo, bonificable por FUNDAE.
 - [Mentoría para directivos](https://studioemprende.com/servicios/formacion-ia/mentoria-para-directivos)
 
 ## Consultoría y ayudas
-URL: https://studioemprende.com/servicios/consultoria-y-ayudas
+URL: https://studioemprende.com/servicios/consultoria-y-ayudas/
 Te decimos dónde ahorrar y te ayudamos a financiarlo.
 
 ### Servicios
@@ -381,7 +381,7 @@ Te decimos dónde ahorrar y te ayudamos a financiarlo.
 - [Transformación digital por fases](https://studioemprende.com/servicios/consultoria-y-ayudas/transformacion-digital-por-fases)
 
 ## Relevo y continuidad del negocio
-URL: https://studioemprende.com/servicios/relevo-y-continuidad
+URL: https://studioemprende.com/servicios/relevo-y-continuidad/
 Tu negocio vale lo que sabes tú. Hagamos que siga funcionando cuando no estés.
 
 ### Servicios
@@ -394,7 +394,7 @@ Tu negocio vale lo que sabes tú. Hagamos que siga funcionando cuando no estés.
 - [Acompañamiento del traspaso](https://studioemprende.com/servicios/relevo-y-continuidad/acompanamiento-del-traspaso)
 
 ## Problemas que nadie resuelve
-URL: https://studioemprende.com/servicios/problemas-sin-resolver
+URL: https://studioemprende.com/servicios/problemas-sin-resolver/
 Morosidad, burocracia y falta de personal, con soluciones concretas.
 
 ### Morosidad
@@ -414,7 +414,7 @@ Morosidad, burocracia y falta de personal, con soluciones concretas.
 - [Turnos y ausencias integrados](https://studioemprende.com/servicios/problemas-sin-resolver/turnos-y-ausencias-integrados)
 
 ## Emprendedores y autónomos
-URL: https://studioemprende.com/servicios/autonomos
+URL: https://studioemprende.com/servicios/autonomos/
 Todo lo que necesitas para empezar con buen pie y presencia profesional.
 
 ### Servicios
@@ -423,7 +423,7 @@ Todo lo que necesitas para empezar con buen pie y presencia profesional.
 - [Packs con precio cerrado](https://studioemprende.com/servicios/autonomos/packs-con-precio-cerrado)
 
 ## Pequeñas empresas
-URL: https://studioemprende.com/servicios/pequenas-empresas
+URL: https://studioemprende.com/servicios/pequenas-empresas/
 No vendemos tecnología: te ayudamos a no perder clientes, cobrar antes y ahorrar horas.
 
 ### Por problema
@@ -436,7 +436,7 @@ No vendemos tecnología: te ayudamos a no perder clientes, cobrar antes y ahorra
 - [Digitalización de negocios rurales](https://studioemprende.com/servicios/pequenas-empresas/digitalizacion-de-negocios-rurales)
 
 ## Grandes empresas
-URL: https://studioemprende.com/servicios/grandes-empresas
+URL: https://studioemprende.com/servicios/grandes-empresas/
 Pilotos de IA rápidos, con precio cerrado y resultados medibles.
 
 ### Servicios
@@ -450,7 +450,7 @@ Pilotos de IA rápidos, con precio cerrado y resultados medibles.
 - [Marca blanca para consultoras](https://studioemprende.com/servicios/grandes-empresas/marca-blanca-para-consultoras)
 
 ## Startups e inversores
-URL: https://studioemprende.com/servicios/startups-e-inversores
+URL: https://studioemprende.com/servicios/startups-e-inversores/
 Del MVP a la ronda de inversión, con tecnología lista para escalar.
 
 ### Startups
@@ -467,7 +467,7 @@ Del MVP a la ronda de inversión, con tecnología lista para escalar.
 - [Mejora de participadas](https://studioemprende.com/servicios/startups-e-inversores/mejora-de-participadas)
 
 ## Servicios Deluxe
-URL: https://studioemprende.com/servicios/deluxe
+URL: https://studioemprende.com/servicios/deluxe/
 Tecnología discreta para clientes exclusivos, con confidencialidad firmada y un único interlocutor.
 
 ### Servicios
