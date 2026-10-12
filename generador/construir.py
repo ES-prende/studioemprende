@@ -5,6 +5,7 @@ from datos import SECCIONES, NORMATIVAS, NORM_EXTRA, SECTORES, PACKS, MENU
 from blog import ARTICULOS
 from alt_blog import ALT
 from guias import GUIAS, GRUPOS, SERVICIO_GUIAS
+from pix import PIX_HUB, PIX_PAGINAS
 from legales import HIST, AVISO, PRIVACIDAD, COOKIES
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
@@ -75,6 +76,7 @@ def cabecera(r):
 <a class="logo" href="{r}index.html" aria-label="Studio Emprende, inicio"><img src="{r}assets/img/logo-horizontal.svg" alt="Studio Emprende" width="200" height="56"></a>
 <nav class="nav" aria-label="Principal">
 <div class="desplegable"><button type="button" aria-expanded="false">Servicios ▾</button><div class="mega">{cols}</div></div>
+<a href="{r}servicios/pix/index.html">PIX IA</a>
 <a href="{r}servicios/fichador.html">Fichador</a>
 <a href="{r}sectores.html">Sectores</a>
 <a href="{r}precios.html">Precios</a>
@@ -136,7 +138,7 @@ def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None,
             el.append({"@type": "ListItem", "position": i, "name": t, "item": _uj(url, h) if h else url})
         grafo.append({"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": el})
         wp["breadcrumb"] = {"@id": url + "#breadcrumb"}
-    if ruta.startswith("servicios/") and ruta != "servicios/index.html":
+    if ruta.startswith("servicios/") and ruta != "servicios/index.html" and not ruta.startswith("servicios/pix/"):
         grafo.append({"@type": "Service", "@id": url + "#servicio", "name": titulo.split(" · ")[0], "description": desc, "provider": {"@id": DOM + "/#org"}, "areaServed": ["ES", "Latinoamérica"], "url": url})
         wp["mainEntity"] = {"@id": url + "#servicio"}
     if 'class="faq"' in cuerpo:
@@ -388,6 +390,8 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
     gs = [g for g in GUIAS if g[0] in SERVICIO_GUIAS.get(slug, [])]
     if gs:
         html += '<section class="sec"><div class="w"><div class="cab"><p class="kicker">Guías para emprender</p><h2>Antes de empezar, te puede servir</h2></div><div class="rejilla">%s</div></div></section>' % "".join('<a class="tarjeta" href="../guias/%s.html"><h3>%s</h3><p>%s</p><span class="mas">Leer guía →</span></a>' % (g[0], e(g[4]), e(g[3][:120].rsplit(" ",1)[0] + "…")) for g in gs[:3])
+    if slug in ("agentes-de-ia", "whatsapp-ia", "automatizacion-y-datos", "software-de-gestion", "erp-para-pymes"):
+        html += '<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Nuestro agente de IA</p><h2>Conoce PIX, la IA que trabaja dentro de tu empresa</h2></div><p class="lead" style="max-width:760px">PIX se conecta a tus datos y herramientas, atiende por web, WhatsApp, correo y voz y completa procesos con aprobación humana. Desde 90 €/mes.</p><div class="botones" style="margin-top:20px"><a class="btn btn-p" href="pix/index.html">Descubrir PIX</a><a class="btn btn-s" href="pix/implantacion-y-precios.html">Precios de PIX</a></div></div></section>'
     pagina("servicios/%s.html" % slug, "%s · Studio Emprende" % titulo, intro[:155], html + cta("../"))
 
 
@@ -414,6 +418,42 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
 {otros}""".format(m=migas("../../", ("Servicios", "../index.html"), (titulo, "../%s.html" % slug), (it, None)), cat=dict(MENU)[menu], b=e(b), t=e(it), tl=e(it[0].lower() + it[1:]), sec_l=e(titulo[0].lower() + titulo[1:]), intro=e(intro), s=slug, fs=fs, herm=hermh,
                  otros=('<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Más de %s</p><h2>Otras funciones</h2></div><div class="rejilla">%s</div></div></section>' % (e(titulo), otrosh)) if otrosh else "")
             pagina("servicios/%s/%s.html" % (slug, fs), "%s · %s · Studio Emprende" % (it, titulo), ("%s: %s" % (it, intro))[:155], html + cta("../../"))
+
+# ---------- PIX (agente de IA empresarial) ----------
+def _faq_html(fs):
+    return '<div class="faq">' + "".join("<details><summary>%s</summary><p>%s</p></details>" % (e(q), e(a)) for q, a in fs) + "</div>"
+def _pix_nav(actual):
+    return '<aside class="lateral-aside"><h3>PIX por dentro</h3><ul class="lista lista-enl" style="margin:8px 0 18px">%s</ul><a class="btn btn-claro" href="../../contacto.html?servicio=agentes-de-ia#diagnostico">Solicitar demo de PIX</a><a class="btn btn-borde-claro" href="implantacion-y-precios.html">Ver precios</a></aside>' % "".join(
+        '<li><a style="color:#fff" href="%s">%s</a></li>' % ("index.html" if s == "" else s + ".html", e(n)) for s, n in [("", "Qué es PIX")] + [(x["slug"], x["nav"]) for x in PIX_PAGINAS] if s != actual)
+_PIXAPP = {"@type": "SoftwareApplication", "@id": DOM + "/servicios/pix/#app", "name": "PIX", "alternateName": "PIX, agente de IA empresarial",
+           "applicationCategory": "BusinessApplication", "operatingSystem": "Windows, macOS, Linux, Android, Web",
+           "description": PIX_HUB["resumen"], "url": DOM + "/servicios/pix/", "provider": {"@id": DOM + "/#org"},
+           "offers": [{"@type": "Offer", "name": n, "price": pr, "priceCurrency": "EUR", "priceSpecification": {"@type": "UnitPriceSpecification", "price": pr, "priceCurrency": "EUR", "unitCode": "MON", "valueAddedTaxIncluded": False}, "seller": {"@id": DOM + "/#org"}}
+                      for n, pr in [("PIX 3 personas", "90"), ("PIX 5 personas", "145")]]}
+_cap = "".join('<a class="tarjeta" href="%s.html"><h3>%s</h3><p>%s</p><span class="mas">Ver más →</span></a>' % (sl, e(t), e(d)) for t, d, sl in PIX_HUB["capacidades"])
+_dol = "".join('<div class="tarjeta"><h3>%s</h3><p>%s</p></div>' % (e(t), e(d)) for t, d in PIX_HUB["dolor"])
+_mapa = "".join('<a class="tarjeta" href="%s.html"><h3>%s</h3><p>%s</p><span class="mas">Leer →</span></a>' % (x["slug"], e(x["nav"]), e(x["meta"][:140].rsplit(" ", 1)[0] + "…")) for x in PIX_PAGINAS)
+_hub = """<section class="page-hero"><div class="w">{m}<p class="kicker">IA empresarial</p><h1>{h1}</h1><p class="lead">{lead}</p>
+<div class="botones" style="margin-top:24px"><a class="btn btn-p" href="../../contacto.html?servicio=agentes-de-ia#diagnostico">Solicitar demo de PIX</a><a class="btn btn-s" href="implantacion-y-precios.html">Ver precios</a></div></div></section>
+<section class="sec"><div class="w"><div class="resumen"><b>Respuesta rápida</b><p>{res}</p></div>
+<h2>Dos capacidades, un mismo objetivo</h2><div class="rejilla" style="margin-top:20px"><a class="tarjeta" href="inteligencia-conectada.html"><h3>1. Inteligencia conectada</h3><p>Consulta la información real del negocio y la convierte en control, alertas, estadísticas, informes y decisiones accionables.</p><span class="mas">Ver inteligencia conectada →</span></a><a class="tarjeta" href="asistente-empresarial.html"><h3>2. Asistente que ejecuta</h3><p>Ejecuta tareas entre herramientas, mantiene el contexto y escala a una persona cuando el proceso lo necesita.</p><span class="mas">Ver el asistente →</span></a></div></div></section>
+<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">El problema</p><h2>La empresa ya tiene datos. Lo que falta es que trabajen.</h2></div><div class="rejilla">{dol}</div><div class="resumen" style="margin-top:28px"><b>Con PIX</b><p>{con}</p></div></div></section>
+<section class="sec"><div class="w"><div class="cab"><p class="kicker">Capacidades en acción</p><h2>Así convierte PIX una necesidad en acción</h2></div><div class="rejilla">{cap}</div><p class="mut" style="margin-top:18px">Diseñado para cada empresa · conectado a sus datos · supervisado por su equipo.</p></div></section>
+<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Todo sobre PIX</p><h2>Conoce PIX a fondo</h2></div><div class="rejilla">{mapa}</div></div></section>
+<section class="sec"><div class="w"><div class="cab"><h2>Preguntas frecuentes sobre PIX</h2></div>{faq}</div></section>""".format(
+    m=migas("../../", ("Servicios", "../index.html"), ("PIX", None)), h1=e(PIX_HUB["h1"]), lead=e(PIX_HUB["lead"]), res=e(PIX_HUB["resumen"]), dol=_dol, con=e(PIX_HUB["con_pix"]), cap=_cap, mapa=_mapa, faq=_faq_html(PIX_HUB["faqs"]))
+pagina("servicios/pix/index.html", PIX_HUB["titulo"], PIX_HUB["meta"], _hub + cta("../../"), faqs=PIX_HUB["faqs"], ld_extra=_PIXAPP, extra_pagina={"mainEntity": {"@id": DOM + "/servicios/pix/#app"}})
+for x in PIX_PAGINAS:
+    cuerpo = '<div class="resumen"><b>Respuesta rápida</b><p>%s</p></div>' % e(x["resumen"])
+    for h2, intro, items in x["secciones"]:
+        cuerpo += '<h2 style="margin:32px 0 12px">%s</h2>' % e(h2)
+        if intro: cuerpo += "<p>%s</p>" % e(intro)
+        if items: cuerpo += '<div class="rejilla" style="margin-top:16px">%s</div>' % "".join('<div class="tarjeta"><h3>%s</h3><p>%s</p></div>' % (e(a), e(b)) for a, b in items)
+    html = """<section class="page-hero"><div class="w">{m}<p class="kicker">{k}</p><h1>{h1}</h1><p class="lead">{lead}</p></div></section>
+<section class="sec"><div class="w lateral"><div class="lateral-main">{c}</div>{a}</div></section>
+<section class="sec sec-suave"><div class="w"><div class="cab"><h2>Preguntas frecuentes</h2></div>{faq}</div></section>""".format(
+        m=migas("../../", ("Servicios", "../index.html"), ("PIX", "index.html"), (x["nav"], None)), k=e(x["kicker"]), h1=e(x["h1"]), lead=e(x["lead"]), c=cuerpo, a=_pix_nav(x["slug"]), faq=_faq_html(x["faqs"]))
+    pagina("servicios/pix/%s.html" % x["slug"], x["titulo"], x["meta"], html + cta("../../"), faqs=x["faqs"], extra_pagina={"about": {"@id": DOM + "/servicios/pix/#app"}})
 
 # ---------- PRECIOS ----------
 def _num(p): return p.replace(" €", "").replace(".", "")
@@ -612,6 +652,7 @@ bots = ["Googlebot", "Bingbot", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "Clau
 open(OUT + "/robots.txt", "w").write("".join("User-agent: %s\nAllow: /\n\n" % b for b in bots) + "User-agent: *\nAllow: /\nDisallow: /404.html\n\n# Indice y sitemaps por tipo\nSitemap: %s/sitemap.xml\n" % DOM + "".join("Sitemap: %s/%s\n" % (DOM, s) for s in SMS) + "\n# Resumen para IA: %s/llms.txt · %s/llms-full.txt\n" % (DOM, DOM))
 llms = "# Studio Emprende\n\n> %s\n\n## Empresa\n- Nombre comercial: Studio Emprende\n- Titular: INTELIGENCIA SEVILLA SL (NIF B88763818)\n- Domicilio social: Calle Betis 3, 41449 Alcolea del Río (Sevilla), España\n- Contacto: info@studioemprende.com · WhatsApp +34 601 86 96 68\n- Ámbito: 100 %% online, España y Latinoamérica\n\n## Precios\n" % ORG["description"] + "".join("- %s: %s%s. %s\n" % (n, p, "" if p == "A medida" else " + 40 €/mes de soporte (sin IVA)", d) for n, p, d, x in PACKS) + "\n## Servicios\n"
 llms += "".join("- [%s](%s/servicios/%s.html): %s\n" % (s[2], DOM, s[0], " ".join(s[3].split())) for s in SECCIONES)
+llms += "\n## PIX, agente de IA empresarial\n- [PIX](%s/servicios/pix/): %s\n" % (DOM, PIX_HUB["resumen"]) + "".join("- [%s](%s/servicios/pix/%s.html): %s\n" % (x["nav"], DOM, x["slug"], x["resumen"]) for x in PIX_PAGINAS)
 llms += "\n## Guías para emprender\n" + "".join("- [%s](%s/guias/%s.html): %s\n" % (g[4], DOM, g[0], g[5].split(". ")[0] + ".") for g in GUIAS)
 llms += "\n## Páginas clave\n- [Precios y packs](%s/precios.html)\n- [Normativas 2026-2027](%s/normativas.html)\n- [Sectores](%s/sectores.html)\n- [Contacto](%s/contacto.html)\n\n## Blog\n" % (DOM, DOM, DOM, DOM)
 llms += "".join("- [%s](%s/blog/%s.html): %s\n" % (a[1], DOM, a[0], a[2]) for a in ARTICULOS)
