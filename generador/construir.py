@@ -95,7 +95,7 @@ def pie(r):
 <div class="pie-top"><div class="pie-marca"><img src="{r}assets/img/logo-horizontal-blanco.svg" alt="Studio Emprende" width="200" height="56"><p>Software, IA y webs para emprender. 100 % online, en España y Latinoamérica.</p></div>
 <div class="pie-cols"><div><b>Productos</b>{prod}</div><div><b>Para quién</b>{quien}</div>
 <div><b>Recursos</b><a href="{r}guias/index.html">Guías para emprender</a><a href="{r}blog/index.html">Blog</a><a href="{r}normativas.html">Normativas</a><a href="{r}sectores.html">Sectores</a><a href="{r}precios.html">Precios</a><a href="{r}mapa-web.html">Mapa de la web</a></div>
-<div><b>Empresa</b><a href="{r}sobre-nosotros.html">Sobre nosotros</a><a href="{r}contacto.html">Contacto</a><a href="{r}contacto.html#diagnostico">Diagnóstico gratis</a></div><div><b>Contacto</b><a href="https://wa.me/34601869668" target="_blank" rel="noopener">WhatsApp 601 86 96 68</a><a href="mailto:info@studioemprende.com">info@studioemprende.com</a></div></div></div>
+<div><b>Empresa</b><a href="{r}sobre-nosotros.html">Sobre nosotros</a><a href="{r}contacto.html">Contacto</a><a href="{r}contacto.html#diagnostico">Diagnóstico gratis</a></div><div><b>Contacto</b><a href="https://wa.me/34601869668" target="_blank" rel="noopener">WhatsApp 601 86 96 68</a><a href="mailto:info@studioemprende.com">info@studioemprende.com</a><span style="display:block;margin-top:8px">Calle Betis 3, 41449 Alcolea del Río (Sevilla)</span></div></div></div>
 <div class="pie-base"><span>© 2026 Studio Emprende · INTELIGENCIA SEVILLA SL · NIF B88763818</span><span><a href="{r}aviso-legal.html">Aviso legal</a> · <a href="{r}privacidad.html">Privacidad</a> · <a href="{r}cookies.html">Cookies</a></span></div>
 </div></footer>
 <script src="{r}assets/js/main.js"></script>""".format(r=r, prod=prod, quien=quien)
@@ -265,7 +265,7 @@ inicio = """
 <p class="lead">Programa de gestión modular, agentes de IA y web profesional en una sola cuenta. Empieza con lo que necesitas y crece cuando quieras.</p>
 <div class="botones"><a class="btn btn-p" href="contacto.html#diagnostico">Pide tu diagnóstico gratis</a><a class="btn btn-s" href="precios.html">Ver los packs</a></div>
 <div class="confianza"><span>Una sola cuenta</span><span>100 %% online</span><span>España y Latinoamérica</span><span>Soporte que responde</span></div></div>
-<div class="hero-card" aria-label="Ejemplo del agente PIX trabajando"><div class="estado"><span>Agente PIX · en marcha</span><b>● activo</b></div>
+<div class="hero-card" data-nosnippet aria-label="Ejemplo del agente PIX trabajando"><div class="estado"><span>Agente PIX · en marcha</span><b>● activo</b></div>
 <div class="fila">Nuevo contacto por WhatsApp: «Necesito una web y facturar con Verifactu»</div>
 <div class="fila ok"><span>✓ Contacto creado en el CRM</span><span>✓ Pack «Negocio en Marcha» propuesto</span><span>✓ Reunión agendada el jueves a las 10:00</span></div>
 <div class="fin">Presupuesto enviado al cliente</div></div>
@@ -273,7 +273,7 @@ inicio = """
 
 <section class="sec sec-suave"><div class="w">
 <div class="cab"><p class="kicker">Demo del programa</p><h2>Tus ventas, en un tablero</h2></div>
-<div class="demo"><div class="demo-lat"><b style="color:#fff;font-weight:500">Studio Emprende</b><span class="act">CRM</span><span>Facturación</span><span>Agenda</span><span>Fichaje</span><span>PIX</span></div>
+<div class="demo" data-nosnippet><div class="demo-lat"><b style="color:#fff;font-weight:500">Studio Emprende</b><span class="act">CRM</span><span>Facturación</span><span>Agenda</span><span>Fichaje</span><span>PIX</span></div>
 <div class="tablero">
 <div class="col"><span>Nuevo · 3</span><div class="trato">Taller López<br><b>1.790 €</b></div><div class="trato">Clínica Sur<br><b>990 €</b></div></div>
 <div class="col"><span>Propuesta · 2</span><div class="trato">Reformas Vega<br><b>3.690 €</b></div></div>
@@ -341,7 +341,7 @@ inicio = """
 </div></section>
 
 <section class="sec"><div class="w" style="display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:center">
-<div style="flex:999 1 420px;min-width:0"><p class="kicker">Normativas 2026-2027</p><h2>¿Te afecta Verifactu, el fichaje digital o el AI Act?</h2><p class="lead" style="margin-top:12px">Depende de tu forma jurídica y de tu actividad. Hacienda ha anunciado que Verifactu se retrasa a octubre de 2028 para todos; hasta que se publique en el BOE siguen vigentes el 1/1/2027 para sociedades y el 1/7/2027 para el resto. La factura electrónica entre empresas llega el 6/10/2027 (más de 8 M€) y el 6/10/2028 (resto). La formación en IA del AI Act es obligatoria desde el 2/2/2025 y el registro de jornada, desde 2019.</p><p style="margin-top:10px"><a href="normativas.html">Ver todas las normas, plazos y fuentes oficiales →</a></p></div>
+<div style="flex:999 1 420px;min-width:0"><p class="kicker">Normativas 2026-2027</p><h2>¿Te afecta Verifactu, el fichaje digital o el AI Act?</h2><p class="lead" style="margin-top:12px">Depende de tu forma jurídica y de tu actividad. Hacienda ha anunciado que Verifactu se retrasa a octubre de 2028 para todos; hasta que se publique en el BOE siguen vigentes el 1/1/2027 para sociedades y el 1/7/2027 para el resto. La factura electrónica entre empresas llega el 6/10/2027 (más de 8 M€) y el 6/10/2028 (resto). La formación en IA del AI Act es obligatoria desde el 2/2/2025 y el registro de jornada, desde 2019.</p><p class="mut" style="margin-top:10px;font-size:14px">Revisado el <time datetime="2026-10-12">12 de octubre de 2026</time>.</p><p style="margin-top:6px"><a href="normativas.html">Ver todas las normas, plazos y fuentes oficiales →</a></p></div>
 <a class="btn btn-s" href="normativas.html">Ver normativas</a>
 </div></section>
 
@@ -463,7 +463,7 @@ for n, pr, d, dest in PACKS:
     srv = {"@type": "Service", "@id": DOM + "/precios#" + sl, "name": n, "description": d, "provider": {"@id": DOM + "/#org"}, "areaServed": ["ES", "Latinoamérica"]}
     of = {"@type": "Offer", "@id": DOM + "/precios#offer-" + sl, "url": DOM + "/precios", "seller": {"@id": DOM + "/#org"}, "itemOffered": srv}
     if pr == "A medida":
-        of["description"] = "A medida. Precio según los servicios elegidos."
+        continue
     else:
         v = _num(pr); of.update({"price": v, "priceCurrency": "EUR", "priceSpecification": [
             {"@type": "UnitPriceSpecification", "price": v, "priceCurrency": "EUR", "valueAddedTaxIncluded": False},
@@ -508,7 +508,7 @@ def _tarj_sect(s):
     return '<div class="tarjeta" id="%s"><h3>%s</h3><p><b style="font-weight:500">El problema:</b> %s</p><p><b style="font-weight:500">Cómo lo resolvemos:</b> %s%s</p><a class="mas" href="contacto.html?sector=%s#diagnostico">Pedir propuesta para %s →</a></div>' % (sl, s, e(prob), e(sol), extra, sl, s.lower())
 sect = "".join(_tarj_sect(s) for s in SECTORES)
 pagina("sectores.html", "Software, IA y webs por sector · Studio Emprende", "Software de gestión, IA y webs adaptados a talleres, clínicas, reformas, hostelería, inmobiliarias y más: problema típico y cómo lo resolvemos.",
-       '<section class="page-hero"><div class="w">%s<h1>Software, IA y webs para tu sector</h1><p class="lead">Partimos de lo que ya funciona en tu sector y lo adaptamos a tu forma de trabajar.</p></div></section><section class="sec"><div class="w"><h2 style="margin-bottom:24px">Problemas típicos y cómo los resolvemos</h2><div class="rejilla">%s</div></div></section>%s' % (migas("", ("Sectores", None)), sect, cta("")), tipo_pagina="CollectionPage")
+       '<section class="page-hero"><div class="w">%s<h1>Software, IA y webs para tu sector</h1><p class="lead">Partimos de lo que ya funciona en tu sector y lo adaptamos a tu forma de trabajar.</p></div></section><section class="sec"><div class="w"><div class="rejilla" style="margin-bottom:36px"><div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">12</b><p>sectores con solución adaptada</p></div><div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">990 €</b><p>pack de inicio, + 40 €/mes de soporte (sin IVA)</p></div><div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">2-3 semanas</b><p>para tener el pack de inicio en marcha</p></div><div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">90 €/mes</b><p>PIX, el agente de IA, para 3 personas</p></div></div><h2 style="margin-bottom:24px">Problemas típicos y cómo los resolvemos</h2><div class="rejilla">%s</div></div></section>%s' % (migas("", ("Sectores", None)), sect, cta("")), tipo_pagina="CollectionPage")
 
 # ---------- CONTACTO ----------
 opts = "".join('<option value="%s">%s</option>' % (s[0], e(s[2])) for s in SECCIONES)
@@ -622,8 +622,9 @@ except Exception: _FECH = {}
 LASTMOD = {}
 for p in PAGS:
     h = _hl.sha1(open(os.path.join(OUT, p), "rb").read()).hexdigest()
-    if _FECH.get(p, [None])[0] != h: _FECH[p] = [h, HOY]
-    LASTMOD[p] = _FECH[p][1]
+    if _FECH.get(p, [None])[0] != h: _FECH[p] = [h, _dt.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S")]
+    if len(_FECH[p][1]) == 10: _FECH[p][1] += "T12:00:00"
+    LASTMOD[p] = _FECH[p][1][:10]
 _json.dump({k: _FECH[k] for k in sorted(_FECH) if k in LASTMOD}, open(_FP, "w"), indent=0)
 def _grupo(p):
     if p.startswith("blog/"): return "blog"
@@ -710,17 +711,28 @@ for _d, _, _fs in os.walk(OUT):
 for _c in _CHOQUES:
     shutil.move(os.path.join(OUT, _c + ".html"), os.path.join(OUT, _c, "index.html"))
 open(OUT + "/.htaccess", "w").write("""Options -MultiViews
+<IfModule mod_speling.c>
+CheckSpelling Off
+CheckCaseOnly Off
+</IfModule>
 DirectoryIndex index.html
 ErrorDocument 404 /404.html
 RewriteEngine On
 
-# Forzar https
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-
-# www -> sin www
-RewriteCond %{HTTP_HOST} ^www\\.(.+)$ [NC]
-RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+# http o www -> https sin www en UN solo salto (quitando tambien la barra final o el .html)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\\. [NC]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ https://studioemprende.com/$1 [R=301,L]
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\\. [NC]
+RewriteRule ^(.*/)?index\\.html$ https://studioemprende.com/$1 [R=301,L]
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\\. [NC]
+RewriteRule ^(.+?)\\.html$ https://studioemprende.com/$1 [R=301,L]
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\\. [NC]
+RewriteRule ^ https://studioemprende.com%{REQUEST_URI} [R=301,L,NE]
 
 # /algo/index.html -> /algo/
 RewriteCond %{THE_REQUEST} \\s/+(.*/)?index\\.html[\\s?] [NC]
@@ -741,6 +753,11 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !\\.[a-zA-Z0-9]+$
 RewriteRule ^(.*[^/])$ /$1.html [L]
 
+# Compresion gzip
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript text/javascript application/json application/xml image/svg+xml
+</IfModule>
+
 # Cache de recursos estaticos
 <IfModule mod_expires.c>
 ExpiresActive On
@@ -754,3 +771,13 @@ ExpiresByType image/webp "access plus 1 year"
 """)
 # Nota: no se cambia la fecha de los archivos (os.utime): el despliegue usa --only-newer
 # y fechas antiguas impedian que se subieran las paginas modificadas.
+
+# Last-Modified real: cada pagina conserva la fecha y hora en que cambio de verdad (fechas.json).
+# El despliegue compara tamano y fecha, asi que solo se suben las paginas modificadas.
+import calendar as _cal, time as _time
+for _p in PAGS:
+    _f = os.path.join(OUT, _p)
+    if not os.path.exists(_f): _f = os.path.join(OUT, _p[:-5], "index.html")
+    if os.path.exists(_f) and _p in _FECH:
+        _t = _cal.timegm(_time.strptime(_FECH[_p][1], "%Y-%m-%dT%H:%M:%S"))
+        os.utime(_f, (_t, _t))
