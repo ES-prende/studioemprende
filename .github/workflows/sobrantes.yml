@@ -1,0 +1,28 @@
+name: Listar archivos sobrantes en IONOS (sin borrar)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  listar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Construir la web
+        run: python generador/construir.py marca web portadas
+      - name: Instalar lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp
+      - name: Simular borrado (dry-run) y publicar la lista
+        env:
+          HOST: ${{ secrets.SFTP_HOST }}
+          USER: ${{ secrets.SFTP_USER }}
+          PASS: ${{ secrets.SFTP_PASSWORD }}
+          RUTA: ${{ secrets.SFTP_PATH }}
+        run: |
+          lftp -e "set sftp:auto-confirm yes; set net:max-retries 3; mirror -R --delete --dry-run --exclude-glob .git* web/ ${RUTA:-/}; bye" -u "$USER","$PASS" sftp://$HOST > dryrun.txt 2>&1 || true
+          grep -iE "^(rm|rmdir) " dryrun.txt > _sobrantes.txt || true
+          echo "TOTAL: $(wc -l < _sobrantes.txt)" >> _sobrantes.txt
+          lftp -e "set sftp:auto-confirm yes; put _sobrantes.txt -o ${RUTA:-/}/_sobrantes.txt; bye" -u "$USER","$PASS" sftp://$HOST
