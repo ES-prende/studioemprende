@@ -29,24 +29,3 @@ jobs:
           RUTA: ${{ secrets.SFTP_PATH }}
         run: |
           lftp -e "set sftp:auto-confirm yes; set net:max-retries 3; mirror -R --only-newer --verbose --exclude-glob .git* web/ ${RUTA:-/}; bye" -u "$USER","$PASS" sftp://$HOST
-
-      - name: Listar archivos sobrantes en el servidor (simulacion, no borra nada)
-        env:
-          HOST: ${{ secrets.SFTP_HOST }}
-          USER: ${{ secrets.SFTP_USER }}
-          PASS: ${{ secrets.SFTP_PASSWORD }}
-          RUTA: ${{ secrets.SFTP_PATH }}
-        run: |
-          lftp -e "set sftp:auto-confirm yes; set net:max-retries 3; mirror -R --delete --dry-run --exclude-glob .git* --exclude-glob _sobrantes.txt web/ ${RUTA:-/}; bye" -u "$USER","$PASS" sftp://$HOST > dryrun.txt 2>&1 || true
-          grep -iE "^(rm|rmdir) " dryrun.txt > _sobrantes.txt || true
-          echo "TOTAL: $(wc -l < _sobrantes.txt)" >> _sobrantes.txt
-          lftp -e "set sftp:auto-confirm yes; put _sobrantes.txt -o ${RUTA:-/}/_sobrantes.txt; bye" -u "$USER","$PASS" sftp://$HOST || true
-
-      - name: Borrar archivos antiguos sobrantes (lista revisada) y la lista publicada
-        env:
-          HOST: ${{ secrets.SFTP_HOST }}
-          USER: ${{ secrets.SFTP_USER }}
-          PASS: ${{ secrets.SFTP_PASSWORD }}
-          RUTA: ${{ secrets.SFTP_PATH }}
-        run: |
-          lftp -e "set sftp:auto-confirm yes; set cmd:fail-exit no; rm -f ${RUTA:-/}/_sobrantes.txt; rm -f ${RUTA:-/}/servicios/agentes-de-ia.html; rm -f ${RUTA:-/}/servicios/alojamientos-y-domotica.html; rm -f ${RUTA:-/}/servicios/apps-moviles.html; rm -f ${RUTA:-/}/servicios/automatizacion-y-datos.html; rm -f ${RUTA:-/}/servicios/autonomos.html; rm -f ${RUTA:-/}/servicios/ciberseguridad-y-sistemas.html; rm -f ${RUTA:-/}/servicios/consultoria-y-ayudas.html; rm -f ${RUTA:-/}/servicios/deluxe.html; rm -f ${RUTA:-/}/servicios/departamento-tecnologico.html; rm -f ${RUTA:-/}/servicios/erp-para-pymes.html; rm -f ${RUTA:-/}/servicios/fichador.html; rm -f ${RUTA:-/}/servicios/formacion-ia.html; rm -f ${RUTA:-/}/servicios/grandes-empresas.html; rm -f ${RUTA:-/}/servicios/migraciones-e-integraciones.html; rm -f ${RUTA:-/}/servicios/pequenas-empresas.html; rm -f ${RUTA:-/}/servicios/presencia-digital.html; rm -f ${RUTA:-/}/servicios/problemas-sin-resolver.html; rm -f ${RUTA:-/}/servicios/relevo-y-continuidad.html; rm -f ${RUTA:-/}/servicios/software-de-gestion.html; rm -f ${RUTA:-/}/servicios/software-especializado.html; rm -f ${RUTA:-/}/servicios/startups-e-inversores.html; rm -f ${RUTA:-/}/servicios/webs.html; rm -f ${RUTA:-/}/servicios/whatsapp-ia.html; bye" -u "$USER","$PASS" sftp://$HOST || true
