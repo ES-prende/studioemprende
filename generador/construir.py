@@ -540,3 +540,52 @@ full += "\n## Preguntas frecuentes\n" + "".join("**%s**\n%s\n\n" % (q, a) for q,
 full += "## Blog\n" + "".join("- [%s](%s/blog/%s.html): %s\n" % (a[1], DOM, a[0], a[2]) for a in ARTICULOS)
 open(OUT + "/llms-full.txt", "w").write(full)
 print(len(PAGS), "páginas")
+
+# ---------- URLS LIMPIAS (sin .html) ----------
+import re as _re2
+_dom = _re2.escape(DOM)
+for _d, _, _fs in os.walk(OUT):
+    for _f in _fs:
+        if not _f.endswith((".html", ".xml", ".txt")): continue
+        _p = os.path.join(_d, _f); _s = open(_p, encoding="utf-8").read(); _o = _s
+        _s = _re2.sub(r'(%s/[^"\'\s)<>]*?)index\.html' % _dom, r'\1', _s)
+        _s = _re2.sub(r'(%s/[^"\'\s)<>]*?)\.html' % _dom, r'\1', _s)
+        _s = _re2.sub(r'href="((?:\.\./)*(?:[\w-]+/)*)index\.html', lambda m: 'href="%s' % (m.group(1) or "./"), _s)
+        _s = _re2.sub(r'href="([^":#?]+?)\.html', r'href="\1', _s)
+        if _s != _o: open(_p, "w", encoding="utf-8").write(_s)
+open(OUT + "/.htaccess", "w").write("""Options -MultiViews
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+RewriteEngine On
+
+# Forzar https
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# www -> sin www
+RewriteCond %{HTTP_HOST} ^www\\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+# /algo/index.html -> /algo/
+RewriteCond %{THE_REQUEST} \\s/+(.*/)?index\\.html[\\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# /pagina.html -> /pagina  (las URL antiguas siguen funcionando)
+RewriteCond %{THE_REQUEST} \\s/+([^?\\s]+?)\\.html[\\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# /pagina -> sirve pagina.html sin mostrar la extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+# Cache de recursos estaticos
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/css "access plus 7 days"
+ExpiresByType application/javascript "access plus 7 days"
+ExpiresByType image/svg+xml "access plus 30 days"
+ExpiresByType image/png "access plus 30 days"
+ExpiresByType image/jpeg "access plus 30 days"
+</IfModule>
+""")
