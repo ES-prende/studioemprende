@@ -1,7 +1,7 @@
 import os, shutil, sys
 from html import escape as e
 sys.path.insert(0, os.path.dirname(__file__))
-from datos import SECCIONES, NORMATIVAS, SECTORES, PACKS, MENU
+from datos import SECCIONES, NORMATIVAS, NORM_EXTRA, SECTORES, PACKS, MENU
 from blog import ARTICULOS
 from alt_blog import ALT
 from guias import GUIAS, GRUPOS, SERVICIO_GUIAS
@@ -17,7 +17,14 @@ for d in ("assets/css", "assets/js", "assets/img", "servicios"):
     os.makedirs(os.path.join(OUT, d), exist_ok=True)
 os.makedirs(os.path.join(OUT, "blog"), exist_ok=True)
 shutil.copytree(sys.argv[3], OUT + "/assets/img/blog")
+from PIL import Image as _Im
+os.makedirs(OUT + "/assets/img/blog/og", exist_ok=True)
+for _f in os.listdir(sys.argv[3]):
+    if _f.endswith(".jpg") and not _f.endswith("-600.jpg"):
+        _i = _Im.open(os.path.join(sys.argv[3], _f)).convert("RGB"); _w, _h = _i.size; _nh = int(_w * 630 / 1200)
+        _i.crop((0, (_h - _nh) // 2, _w, (_h - _nh) // 2 + _nh)).resize((1200, 630)).save(OUT + "/assets/img/blog/og/" + _f, quality=80, optimize=True, progressive=True)
 shutil.copy(os.path.join(AQUI, "estilos.css"), OUT + "/assets/css/estilos.css")
+shutil.copytree(os.path.join(AQUI, "fonts"), OUT + "/assets/fonts")
 for src, dst in [("horizontal/studio-emprende-horizontal-color.svg", "logo-horizontal.svg"),
                  ("horizontal/studio-emprende-horizontal-blanco.svg", "logo-horizontal-blanco.svg"),
                  ("vertical/studio-emprende-vertical-color.svg", "logo-vertical.svg"),
@@ -66,7 +73,7 @@ def by_menu(k): return [s for s in SECCIONES if s[1] == k]
 def cabecera(r):
     cols = ""
     for k, nombre in MENU:
-        cols += "<div><h4>%s</h4>%s</div>" % (nombre, "".join('<a href="%sservicios/%s.html">%s</a>' % (r, s[0], e(s[2])) for s in by_menu(k)))
+        cols += '<div role="group" aria-label="%s"><p class="mega-titulo">%s</p>%s</div>' % (e(nombre), nombre, "".join('<a href="%sservicios/%s.html">%s</a>' % (r, s[0], e(s[2])) for s in by_menu(k)))
     return """<a class="saltar" href="#contenido" style="position:absolute;left:-9999px">Saltar al contenido</a>
 <div class="franja"></div>
 <header class="cabecera"><div class="w">
@@ -92,7 +99,7 @@ def pie(r):
 <div class="pie-cols"><div><b>Productos</b>{prod}</div><div><b>Para quién</b>{quien}</div>
 <div><b>Recursos</b><a href="{r}guias/index.html">Guías para emprender</a><a href="{r}blog/index.html">Blog</a><a href="{r}normativas.html">Normativas</a><a href="{r}sectores.html">Sectores</a><a href="{r}precios.html">Precios</a><a href="{r}mapa-web.html">Mapa de la web</a></div>
 <div><b>Empresa</b><a href="{r}sobre-nosotros.html">Sobre nosotros</a><a href="{r}contacto.html">Contacto</a><a href="{r}contacto.html#diagnostico">Diagnóstico gratis</a></div><div><b>Contacto</b><a href="https://wa.me/34601869668" target="_blank" rel="noopener">WhatsApp 601 86 96 68</a><a href="mailto:info@studioemprende.com">info@studioemprende.com</a></div></div></div>
-<div class="pie-base"><span>© 2026 Studio Emprende</span><span><a href="{r}aviso-legal.html">Aviso legal</a> · <a href="{r}privacidad.html">Privacidad</a> · <a href="{r}cookies.html">Cookies</a></span></div>
+<div class="pie-base"><span>© 2026 Studio Emprende · INTELIGENCIA SEVILLA SL · NIF B88763818</span><span><a href="{r}aviso-legal.html">Aviso legal</a> · <a href="{r}privacidad.html">Privacidad</a> · <a href="{r}cookies.html">Cookies</a></span></div>
 </div></footer>
 <script src="{r}assets/js/main.js"></script>""".format(r=r, prod=prod, quien=quien)
 
@@ -102,7 +109,9 @@ MIGAS = []
 ORG = {"@type": "Organization", "@id": DOM + "/#org", "name": "Studio Emprende", "url": DOM + "/", "logo": DOM + "/assets/img/logo-vertical.svg",
        "description": "Software de gestión modular, agentes de IA y webs con SEO para autónomos, pymes y empresas. 100 % online en España y Latinoamérica.",
        "areaServed": ["ES", "Latinoamérica"], "knowsLanguage": "es", "email": EMAIL, "telephone": "+34 601 86 96 68",
-       "contactPoint": {"@type": "ContactPoint", "telephone": "+34 601 86 96 68", "email": EMAIL, "contactType": "customer service", "availableLanguage": "es"}}
+       "contactPoint": {"@type": "ContactPoint", "telephone": "+34 601 86 96 68", "email": EMAIL, "contactType": "customer service", "availableLanguage": "es"},
+       "legalName": "INTELIGENCIA SEVILLA SL", "alternateName": "Studio Emprende", "taxID": "B88763818", "vatID": "ESB88763818",
+       "address": {"@type": "PostalAddress", "streetAddress": "Calle Betis 3", "postalCode": "41449", "addressLocality": "Alcolea del Río", "addressRegion": "Sevilla", "addressCountry": "ES"}}
 
 def _meta(d):
     d = " ".join(d.split())
@@ -117,35 +126,61 @@ def _tit(t):
     base = t.split(" · ")[0]
     return base if len(base) <= 60 else base[:57].rsplit(" ", 1)[0] + "…"
 
-def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None):
+def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None, tipo_pagina="WebPage", indexar=True, fecha=None, og=None, extra_pagina=None):
     global MIGAS
     url = DOM + "/" + ruta.replace("index.html", "")
     titulo = _tit(titulo); desc = _meta(desc)
-    grafo = [ORG]
-    if ruta == "index.html":
-        grafo.append({"@type": "WebSite", "@id": DOM + "/#web", "url": DOM + "/", "name": "Studio Emprende", "inLanguage": "es", "publisher": {"@id": DOM + "/#org"}})
-    grafo.append({"@type": "WebPage", "@id": url, "url": url, "name": titulo, "description": desc, "inLanguage": "es", "isPartOf": {"@id": DOM + "/#web"}, "about": {"@id": DOM + "/#org"}})
+    grafo = [ORG, {"@type": "WebSite", "@id": DOM + "/#web", "url": DOM + "/", "name": "Studio Emprende", "inLanguage": "es", "publisher": {"@id": DOM + "/#org"}}]
+    wp = {"@type": tipo_pagina, "@id": url, "url": url, "name": titulo, "description": desc, "inLanguage": "es", "isPartOf": {"@id": DOM + "/#web"}, "about": {"@id": DOM + "/#org"}}
+    if fecha: wp["dateModified"] = fecha
+    if extra_pagina: wp.update(extra_pagina)
+    grafo.append(wp)
     if MIGAS:
         el = [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": DOM + "/"}]
         for i, (t, h) in enumerate(MIGAS, 2):
             el.append({"@type": "ListItem", "position": i, "name": t, "item": _uj(url, h) if h else url})
-        grafo.append({"@type": "BreadcrumbList", "itemListElement": el})
+        grafo.append({"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": el})
+        wp["breadcrumb"] = {"@id": url + "#breadcrumb"}
     if ruta.startswith("servicios/") and ruta != "servicios/index.html":
-        grafo.append({"@type": "Service", "name": titulo.split(" · ")[0], "description": desc, "provider": {"@id": DOM + "/#org"}, "areaServed": ["ES", "Latinoamérica"], "url": url})
+        grafo.append({"@type": "Service", "@id": url + "#servicio", "name": titulo.split(" · ")[0], "description": desc, "provider": {"@id": DOM + "/#org"}, "areaServed": ["ES", "Latinoamérica"], "url": url})
+        wp["mainEntity"] = {"@id": url + "#servicio"}
     if 'class="faq"' in cuerpo:
-        grafo.append({"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in (faqs or FAQ)]})
-    if ld_extra: grafo.append(ld_extra)
+        grafo.append({"@type": "FAQPage", "@id": url + "#faq", "isPartOf": {"@id": url}, "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in (faqs or FAQ)]})
+        wp["hasPart"] = {"@id": url + "#faq"}
+    if ld_extra: grafo.extend(ld_extra if isinstance(ld_extra, list) else [ld_extra])
+    if not indexar: NOINDEX.add(ruta)
+    OGIMG[ruta] = og or (DOM + "/assets/img/og-imagen.png")
     MIGAS = []
     ldj = '<script type="application/ld+json">%s</script>' % _json.dumps({"@context": "https://schema.org", "@graph": grafo}, ensure_ascii=False).replace("</", "<\\/")
-    seo = """<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+    seo = """<meta name="robots" content="{rob}">
 <link rel="alternate" hreflang="es" href="{u}"><link rel="alternate" hreflang="x-default" href="{u}">
 <meta property="og:url" content="{u}"><meta property="og:locale" content="es_ES"><meta property="og:site_name" content="Studio Emprende">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{t}"><meta name="twitter:description" content="{d}"><meta name="twitter:image" content="{dom}/assets/img/og-imagen.png">
-{ld}""".format(u=url, t=e(titulo), d=e(desc), dom=DOM, ld=ldj)
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{t}"><meta name="twitter:description" content="{d}"><meta name="twitter:image" content="{og}">
+{ld}""".format(u=url, t=e(titulo), d=e(desc), dom=DOM, ld=ldj, og=OGIMG[ruta], rob="index,follow,max-image-preview:large,max-snippet:-1" if indexar else "noindex,follow")
     cuerpo = cuerpo + "\n" + seo + "\n" if False else cuerpo
     _pagina(ruta, titulo, desc, cuerpo, seo, tipo)
 
+def _ordenar_h(html):
+    # Evita saltos H1 -> H3: un h3 sin h2 previo se convierte en h2 con aspecto de h3
+    out = []; hay_h2 = False; pila = []; pos = 0
+    for m in _re_h.finditer(html):
+        out.append(html[pos:m.start()]); tag = m.group(0); pos = m.end()
+        cierre, n = m.group(1) == "/", int(m.group(2))
+        if not cierre:
+            if n == 1: hay_h2 = False
+            elif n == 2: hay_h2 = True
+            if n == 3 and not hay_h2:
+                pila.append(True); tag = tag.replace("<h3", "<h2", 1)
+                tag = tag.replace('class="', 'class="h3 ', 1) if 'class="' in tag else tag.replace("<h2", '<h2 class="h3"', 1)
+            elif n == 3: pila.append(False)
+        elif n == 3 and pila and pila.pop(): tag = "</h2>"
+        out.append(tag)
+    return "".join(out) + html[pos:]
+import re as _rem
+_re_h = _rem.compile(r"<(/?)h([1-6])\b[^>]*>")
+
 def _pagina(ruta, titulo, desc, cuerpo, seo, tipo):
+    cuerpo = _ordenar_h(cuerpo)
     r = "../" * ruta.count("/")
     html = """<!doctype html>
 <html lang="es">
@@ -155,11 +190,10 @@ def _pagina(ruta, titulo, desc, cuerpo, seo, tipo):
 <title>{t}</title>
 <meta name="description" content="{d}">
 <link rel="canonical" href="{dom}/{ruta}">
-<meta property="og:title" content="{t}"><meta property="og:description" content="{d}"><meta property="og:image" content="{dom}/assets/img/og-imagen.png"><meta property="og:type" content="{tipo}">
+<meta property="og:title" content="{t}"><meta property="og:description" content="{d}"><meta property="og:image" content="{og}"><meta property="og:type" content="{tipo}">
 {seo}
 <link rel="icon" href="{r}favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="{r}favicon.svg"><link rel="apple-touch-icon" href="{r}apple-touch-icon.png"><link rel="manifest" href="{r}site.webmanifest"><meta name="theme-color" content="#7A2638">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="/assets/fonts/jost.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/marcellus.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{r}assets/css/estilos.css">
 </head>
 <body>
@@ -172,12 +206,14 @@ def _pagina(ruta, titulo, desc, cuerpo, seo, tipo):
 <span class="wa-burbuja"><b>¿Hablamos?</b>Te respondemos por WhatsApp</span>
 <span class="wa-icono"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.6 3 15.6c0 2.5.8 4.9 2.1 6.9L3.6 29l6.7-1.7c1.8 1 3.8 1.5 5.7 1.5 7.2 0 13-5.6 13-12.6S23.2 3 16 3zm0 23.1c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-4 1 .9-3.8-.2-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.6 10 10.2 5.5 16 5.5S26.4 10 26.4 15.6 21.8 26.1 16 26.1zm5.7-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.4 3.3c.2.2 2.4 3.6 5.8 5 2.9 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></span></a>
 </body>
-</html>""".format(t=e(titulo), d=e(desc), dom=DOM, ruta=ruta.replace("index.html", ""), r=r, cab=cabecera(r), c=cuerpo, pie=pie(r), seo=seo, tipo=tipo, wan=WA_NUM, wat=_q("Hola, vengo de la web de Studio Emprende (%s) y quiero información." % titulo.split(" · ")[0]))
+</html>""".format(t=e(titulo), d=e(desc), dom=DOM, ruta=ruta.replace("index.html", ""), r=r, cab=cabecera(r), c=cuerpo, pie=pie(r), seo=seo, tipo=tipo, og=OGIMG[ruta], wan=WA_NUM, wat=_q("Hola, vengo de la web de Studio Emprende (%s) y quiero información." % titulo.split(" · ")[0]))
     p = os.path.join(OUT, ruta); os.makedirs(os.path.dirname(p), exist_ok=True)
     open(p, "w").write(html)
     PAGS.append(ruta)
 
 PAGS = []
+NOINDEX = set()
+OGIMG = {}
 
 def cta(r):
     return """<section class="cta"><div class="w"><h2>Empieza hoy con tu diagnóstico gratis</h2>
@@ -308,7 +344,7 @@ inicio = """
 </div></section>
 
 <section class="sec"><div class="w" style="display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:center">
-<div style="flex:999 1 420px;min-width:0"><p class="kicker">Normativas 2026-2027</p><h2>¿Te afecta Verifactu, el fichaje digital o el AI Act?</h2><p class="lead" style="margin-top:12px">Te explicamos qué es, cuándo llega y cómo cumplir sin complicarte.</p></div>
+<div style="flex:999 1 420px;min-width:0"><p class="kicker">Normativas 2026-2027</p><h2>¿Te afecta Verifactu, el fichaje digital o el AI Act?</h2><p class="lead" style="margin-top:12px">Depende de tu forma jurídica y de tu actividad. Hacienda ha anunciado que Verifactu se retrasa a octubre de 2028 para todos; hasta que se publique en el BOE siguen vigentes el 1/1/2027 para sociedades y el 1/7/2027 para el resto. La factura electrónica entre empresas llega el 6/10/2027 (más de 8 M€) y el 6/10/2028 (resto). La formación en IA del AI Act es obligatoria desde el 2/2/2025 y el registro de jornada, desde 2019.</p><p style="margin-top:10px"><a href="normativas.html">Ver todas las normas, plazos y fuentes oficiales →</a></p></div>
 <a class="btn btn-s" href="normativas.html">Ver normativas</a>
 </div></section>
 
@@ -385,24 +421,63 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
             pagina("servicios/%s/%s.html" % (slug, fs), "%s · %s · Studio Emprende" % (it, titulo), ("%s: %s" % (it, intro))[:155], html + cta("../../"))
 
 # ---------- PRECIOS ----------
-pagina("precios.html", "Precios y packs · Studio Emprende", "Packs para empezar desde 990 € más 40 €/mes de soporte, o arma tu propio pack con solo lo que necesitas.",
-       '<section class="page-hero"><div class="w">%s<h1>Precios y packs</h1><p class="lead">Pago único por el pack y una cuota de 40 € al mes de soporte y mantenimiento. Precios sin IVA.</p></div></section><section class="sec"><div class="w">%s</div></section><section class="sec sec-suave"><div class="w"><div class="cab"><h2>Preguntas frecuentes</h2></div>%s</div></section>%s'
-       % (migas("", ("Precios", None)), packs(""), faq(), cta("")))
+def _num(p): return p.replace(" €", "").replace(".", "")
+_offers = []
+for n, pr, d, dest in PACKS:
+    sl = n.lower().replace(" ", "-").replace("á","a")
+    srv = {"@type": "Service", "@id": DOM + "/precios#" + sl, "name": n, "description": d, "provider": {"@id": DOM + "/#org"}, "areaServed": ["ES", "Latinoamérica"]}
+    of = {"@type": "Offer", "@id": DOM + "/precios#offer-" + sl, "url": DOM + "/precios", "seller": {"@id": DOM + "/#org"}, "itemOffered": srv}
+    if pr == "A medida":
+        of["description"] = "A medida. Precio según los servicios elegidos."
+    else:
+        v = _num(pr); of.update({"price": v, "priceCurrency": "EUR", "priceSpecification": [
+            {"@type": "UnitPriceSpecification", "price": v, "priceCurrency": "EUR", "valueAddedTaxIncluded": False},
+            {"@type": "UnitPriceSpecification", "price": "40", "priceCurrency": "EUR", "valueAddedTaxIncluded": False, "unitCode": "MON", "referenceQuantity": {"@type": "QuantitativeValue", "value": 1, "unitCode": "MON"}, "name": "Soporte y mantenimiento"}]})
+    _offers.append(of)
+_cat = {"@type": "OfferCatalog", "@id": DOM + "/precios#packs", "name": "Precios y packs", "url": DOM + "/precios", "itemListElement": _offers}
+pagina("precios.html", "Precios y packs de software, IA y webs · Studio Emprende", "Packs para empezar desde 990 € más 40 €/mes de soporte, o arma tu propio pack con solo lo que necesitas.",
+       '<section class="page-hero"><div class="w">%s<h1>Precios y packs</h1><p class="lead">Pago único por el pack y una cuota de 40 € al mes de soporte y mantenimiento. Precios sin IVA, vigentes desde octubre de 2026.</p></div></section><section class="sec"><div class="w"><h2 style="margin-bottom:24px">Packs para empezar</h2>%s</div></section><section class="sec sec-suave"><div class="w"><div class="cab"><h2>Preguntas frecuentes</h2></div>%s</div></section>%s'
+       % (migas("", ("Precios", None)), packs(""), faq(), cta("")), ld_extra=_cat, extra_pagina={"mainEntity": {"@id": DOM + "/precios#packs"}})
 
 # ---------- NORMATIVAS ----------
-filas = "".join('<tr><td><b style="font-weight:500">%s</b></td><td>%s</td><td>%s</td><td><a href="servicios/%s.html">Cómo cumplir →</a></td></tr>' % (e(a), e(b), e(c), d) for a, b, c, d in NORMATIVAS)
+REV_FECHA = "2026-10-12"
+def _fila_norm(n):
+    a, b, c, d = n; x = NORM_EXTRA[a]
+    ref = ", ".join('<a href="%s" target="_blank" rel="noopener">%s</a>' % (u, e(t)) for t, u in x["fuentes"])
+    enl = " · ".join('<a href="%s">%s</a>' % (h, e(t)) for h, t in x["enlaces"])
+    return '<tr><td><b style="font-weight:500">%s</b></td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>' % (e(a), e(x["afecta"]), e(c), ref, enl)
+filas = "".join(_fila_norm(n) for n in NORMATIVAS)
+_leg = [{"@type": "Legislation", "name": t, "legislationIdentifier": t, "url": u} for n in NORMATIVAS for t, u in NORM_EXTRA[n[0]]["fuentes"]]
 pagina("normativas.html", "Normativas 2026-2027 para empresas · Studio Emprende", "Verifactu, factura electrónica, registro de jornada, AI Act, accesibilidad, NIS2 y más: qué es, a quién afecta y cuándo.",
-       '<section class="page-hero"><div class="w">%s<h1>Normativas que afectan a tu empresa</h1><p class="lead">Resumen de las leyes que más preguntan nuestros clientes. Fechas revisadas en octubre de 2026; consulta siempre la fuente oficial (BOE, AEAT o EUR-Lex).</p></div></section><section class="sec"><div class="w"><div class="tabla-wrap"><table class="tabla-norm"><thead><tr><th>Norma</th><th>Referencia</th><th>Estado y plazos</th><th></th></tr></thead><tbody>%s</tbody></table></div><p class="mut" style="margin-top:16px;font-size:14px">Esta página es informativa y no sustituye el asesoramiento legal.</p></div></section>%s'
-       % (migas("", ("Normativas", None)), filas, cta("")))
+       '<section class="page-hero"><div class="w">%s<h1>Normativas que afectan a tu empresa</h1><p class="lead">Resumen de las leyes que más preguntan nuestros clientes: a quién afectan, plazos y enlace al texto oficial (BOE o EUR-Lex).</p><p class="mut" style="font-size:14px;margin-top:10px">Revisado por el equipo de Studio Emprende el <time datetime="%s">12 de octubre de 2026</time>.</p></div></section><section class="sec"><div class="w"><h2 style="margin-bottom:18px">Plazos y obligaciones 2026-2027</h2><div class="tabla-wrap"><table class="tabla-norm"><thead><tr><th>Norma</th><th>A quién afecta</th><th>Estado y plazos</th><th>Texto oficial</th><th>Cómo cumplir</th></tr></thead><tbody>%s</tbody></table></div><p class="mut" style="margin-top:16px;font-size:14px">Esta página es informativa y no sustituye el asesoramiento legal. Consulta siempre la fuente oficial.</p></div></section>%s'
+       % (migas("", ("Normativas", None)), REV_FECHA, filas, cta("")), fecha=REV_FECHA, extra_pagina={"mentions": _leg, "reviewedBy": {"@id": DOM + "/#org"}, "lastReviewed": REV_FECHA})
 
 # ---------- SECTORES ----------
-sect = "".join('<div class="tarjeta" id="%s"><h3>%s</h3><p>Programa de gestión, PIX y web adaptados a %s.</p><a class="mas" href="contacto.html?sector=%s#diagnostico">Pedir propuesta →</a></div>' % (s.lower().replace(" ", "-"), s, s.lower(), s.lower().replace(" ", "-")) for s in SECTORES)
-pagina("sectores.html", "Sectores · Studio Emprende", "Software de gestión, IA y webs adaptados a talleres, clínicas, reformas, hostelería, inmobiliarias y más.",
-       '<section class="page-hero"><div class="w">%s<h1>Sectores</h1><p class="lead">Partimos de lo que ya funciona en tu sector y lo adaptamos a tu forma de trabajar.</p></div></section><section class="sec"><div class="w"><div class="rejilla">%s</div></div></section>%s' % (migas("", ("Sectores", None)), sect, cta("")))
+SECT_TXT = {
+ "Talleres": ("Órdenes de reparación en papel, presupuestos que no se aprueban y facturas que tienen que cumplir Verifactu.", "Programa de gestión de taller con órdenes, fotos del vehículo y aviso por WhatsApp cuando el coche está listo; facturación preparada para Verifactu.", "normativas.html"),
+ "Clínicas": ("Agenda llena de huecos por citas olvidadas y fichas de paciente repartidas entre papel y Excel.", "Agenda online con recordatorios automáticos por WhatsApp, ficha de paciente digital y cobros registrados en el mismo programa.", None),
+ "Reformas e instaladores": ("Presupuestos que tardan días, partes de trabajo a mano y obras sin saber si dan beneficio.", "Presupuestos con plantillas, partes desde el móvil con fotos y firma del cliente, y control de horas y materiales por obra.", None),
+ "Hostelería": ("Registros APPCC en papel, turnos que cambian cada semana y reservas por teléfono que se pierden.", "APPCC digital desde el móvil, fichaje del personal y reservas online con confirmación automática.", "blog/appcc-digital-hosteleria.html"),
+ "Inmobiliarias": ("Contactos de portales que nadie contesta a tiempo y fichas de inmuebles duplicadas en varias webs.", "CRM inmobiliario que recoge los contactos de los portales, responde al momento con IA y agenda visitas.", None),
+ "Academias": ("Matrículas, cobros mensuales y listas de asistencia gestionados a mano.", "Matrícula online, recibos domiciliados con aviso de impago y asistencia desde el móvil del profesor.", None),
+ "Asesorías energéticas": ("Comparativas de tarifas en Excel y renovaciones de contratos que se escapan.", "Programa de gestión de clientes y contratos con alertas de renovación y comparativas en un clic.", None),
+ "Alojamientos turísticos": ("Registro de viajeros obligatorio, check-in en persona y llaves que hay que entregar.", "Check-in online con envío automático del registro de viajeros, cerraduras inteligentes y mensajes al huésped.", "normativas.html"),
+ "Gestorías": ("Documentación que llega por correo, WhatsApp y en papel, y plazos fiscales que hay que vigilar uno a uno.", "Portal del cliente para subir documentos, avisos de vencimientos y respuestas automáticas a las preguntas frecuentes.", None),
+ "Comercios": ("Ventas de tienda y online por separado, stock que no cuadra y poca visibilidad en Google.", "TPV y tienda online conectados al mismo stock, ficha de Google Business optimizada y campañas a clientes habituales.", None),
+ "Distribuidores": ("Pedidos por teléfono y WhatsApp que hay que pasar a mano y rutas de reparto sin planificar.", "Portal de pedidos para tus clientes, albaranes y facturas automáticos y control de rutas y entregas.", None),
+ "Industria": ("Producción controlada en hojas de cálculo y mantenimiento que se hace cuando algo se rompe.", "ERP con órdenes de fabricación, trazabilidad de lotes y mantenimiento preventivo con avisos.", None),
+}
+def _tarj_sect(s):
+    sl = s.lower().replace(" ", "-"); prob, sol, enl = SECT_TXT[s]
+    extra = ' <a href="%s">Más información →</a>' % enl if enl else ""
+    return '<div class="tarjeta" id="%s"><h3>%s</h3><p><b style="font-weight:500">El problema:</b> %s</p><p><b style="font-weight:500">Cómo lo resolvemos:</b> %s%s</p><a class="mas" href="contacto.html?sector=%s#diagnostico">Pedir propuesta para %s →</a></div>' % (sl, s, e(prob), e(sol), extra, sl, s.lower())
+sect = "".join(_tarj_sect(s) for s in SECTORES)
+pagina("sectores.html", "Software, IA y webs por sector · Studio Emprende", "Software de gestión, IA y webs adaptados a talleres, clínicas, reformas, hostelería, inmobiliarias y más: problema típico y cómo lo resolvemos.",
+       '<section class="page-hero"><div class="w">%s<h1>Software, IA y webs para tu sector</h1><p class="lead">Partimos de lo que ya funciona en tu sector y lo adaptamos a tu forma de trabajar.</p></div></section><section class="sec"><div class="w"><h2 style="margin-bottom:24px">Problemas típicos y cómo los resolvemos</h2><div class="rejilla">%s</div></div></section>%s' % (migas("", ("Sectores", None)), sect, cta("")), tipo_pagina="CollectionPage")
 
 # ---------- CONTACTO ----------
 opts = "".join('<option value="%s">%s</option>' % (s[0], e(s[2])) for s in SECCIONES)
-contacto = """<section class="page-hero"><div class="w">{m}<h1>Hablemos de tu negocio</h1><p class="lead">Cuéntanos qué necesitas y te respondemos con un diagnóstico gratuito y una propuesta clara.</p></div></section>
+contacto = """<section class="page-hero"><div class="w">{m}<h1>Hablemos de tu negocio</h1><p class="lead">Cuéntanos qué necesitas y te respondemos con un diagnóstico gratuito y una propuesta clara. Si ya sabes lo que buscas, mira antes los <a href="precios.html">precios y packs</a> o nuestros servicios de <a href="servicios/software-de-gestion.html">software de gestión</a>, <a href="servicios/webs.html">webs con SEO</a> y <a href="servicios/agentes-de-ia.html">agentes de IA</a>.</p></div></section>
 <section class="sec" id="diagnostico"><div class="w lateral"><div class="lateral-main">
 <form class="form" data-contacto action="https://formsubmit.co/info@studioemprende.com" method="post">
 <input type="hidden" name="_subject" value="Nuevo contacto desde studioemprende.com">
@@ -425,16 +500,16 @@ contacto = """<section class="page-hero"><div class="w">{m}<h1>Hablemos de tu ne
 <label style="display:flex;gap:10px;font-size:14px;align-items:flex-start"><input type="checkbox" name="privacidad" required style="margin-top:4px"> He leído y acepto la <a href="privacidad.html">política de privacidad</a>.</label>
 <div><button class="btn btn-p" type="submit">Enviar y recibir mi diagnóstico</button></div>
 </form></div>
-<aside class="lateral-aside"><h3>Otras formas de contacto</h3><p style="color:#C9C1BB"><a style="color:#fff" href="https://wa.me/34601869668?text=Hola%2C%20quiero%20pedir%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">WhatsApp: 601 86 96 68</a><br><a style="color:#fff" href="mailto:info@studioemprende.com">info@studioemprende.com</a></p><p style="color:#C9C1BB">Respondemos en menos de 24 horas laborables.</p></aside>
+<aside class="lateral-aside"><h2 style="font-size:22px;color:#fff">Otras formas de contacto</h2><p style="color:#C9C1BB"><a style="color:#fff" href="https://wa.me/34601869668?text=Hola%2C%20quiero%20pedir%20mi%20diagn%C3%B3stico%20gratis" target="_blank" rel="noopener">WhatsApp: 601 86 96 68</a><br><a style="color:#fff" href="mailto:info@studioemprende.com">info@studioemprende.com</a></p><p style="color:#C9C1BB">Respondemos en menos de 24 horas laborables.</p></aside>
 </div></section>""".format(m=migas("", ("Contacto", None)), o=opts, dom=DOM)
-pagina("contacto.html", "Contacto y diagnóstico gratis · Studio Emprende", "Pide tu diagnóstico gratuito: te decimos qué puedes automatizar y digitalizar en tu negocio.", contacto)
+pagina("contacto.html", "Contacto y diagnóstico gratis · Studio Emprende", "Pide tu diagnóstico gratuito: te decimos qué puedes automatizar y digitalizar en tu negocio.", contacto, tipo_pagina="ContactPage")
 
 pagina("gracias.html", "Mensaje recibido · Studio Emprende", "Hemos recibido tu mensaje. Te respondemos en menos de 24 horas laborables; si es urgente, escríbenos por WhatsApp al 601 86 96 68.",
-       '<section class="sec"><div class="w" style="text-align:center;display:flex;flex-direction:column;gap:18px;align-items:center"><img src="assets/img/simbolo.svg" alt="" width="70" height="101"><h1>¡Gracias! Hemos recibido tu mensaje</h1><p class="lead">Te respondemos en menos de 24 horas laborables. Si es urgente, escríbenos por WhatsApp.</p><div class="botones"><a class="btn btn-p" href="https://wa.me/34601869668" target="_blank" rel="noopener">Escribir por WhatsApp</a><a class="btn btn-s" href="index.html">Volver al inicio</a></div></div></section>')
+       '<section class="sec"><div class="w" style="text-align:center;display:flex;flex-direction:column;gap:18px;align-items:center"><img src="assets/img/simbolo.svg" alt="" width="70" height="101"><h1>¡Gracias! Hemos recibido tu mensaje</h1><p class="lead">Te respondemos en menos de 24 horas laborables. Si es urgente, escríbenos por WhatsApp.</p><div class="botones"><a class="btn btn-p" href="https://wa.me/34601869668" target="_blank" rel="noopener">Escribir por WhatsApp</a><a class="btn btn-s" href="index.html">Volver al inicio</a></div></div></section>', indexar=False)
 
 # ---------- SOBRE NOSOTROS ----------
 pagina("sobre-nosotros.html", "Sobre nosotros · Studio Emprende", "Studio Emprende ayuda a emprendedores y pymes con software, IA y webs, 100 % online.",
-       '<section class="page-hero"><div class="w">%s<h1>Sobre nosotros</h1><p class="lead">Ayudamos a quien emprende a tener un negocio ordenado, visible y automatizado desde el primer día.</p></div></section><section class="sec"><div class="w rejilla"><div class="tarjeta"><h3>Siempre respondemos</h3><p>Un único interlocutor que conoce tu negocio.</p></div><div class="tarjeta"><h3>Entregamos en plazo</h3><p>Plazos cerrados desde el primer día.</p></div><div class="tarjeta"><h3>100 %% online</h3><p>Trabajamos con toda España y Latinoamérica.</p></div></div></div>%s</section>%s' % (migas("", ("Sobre nosotros", None)), HIST, cta("")))
+       '<section class="page-hero"><div class="w">%s<h1>Sobre nosotros</h1><p class="lead">Ayudamos a quien emprende a tener un negocio ordenado, visible y automatizado desde el primer día.</p></div></section><section class="sec"><div class="w rejilla"><div class="tarjeta"><h3>Siempre respondemos</h3><p>Un único interlocutor que conoce tu negocio.</p></div><div class="tarjeta"><h3>Entregamos en plazo</h3><p>Plazos cerrados desde el primer día.</p></div><div class="tarjeta"><h3>100 %% online</h3><p>Trabajamos con toda España y Latinoamérica.</p></div></div></div>%s</section>%s' % (migas("", ("Sobre nosotros", None)), HIST, cta("")), tipo_pagina="AboutPage")
 
 LEG = {"aviso-legal": AVISO, "privacidad": PRIVACIDAD, "cookies": COOKIES}
 # ---------- LEGALES ----------
@@ -443,7 +518,7 @@ for slug, t in [("aviso-legal", "Aviso legal"), ("privacidad", "Política de pri
            '<section class="page-hero"><div class="w">%s<h1>%s</h1></div></section><section class="sec"><div class="w legal-txt"><p class="mut">Última actualización: octubre de 2026.</p>%s</div></section>' % (migas("", (t, None)), t, LEG[slug]))
 
 pagina("404.html", "Página no encontrada · Studio Emprende", "La página que buscas no existe.",
-       '<section class="sec"><div class="w" style="text-align:center;display:flex;flex-direction:column;gap:18px;align-items:center"><img src="assets/img/simbolo.svg" alt="" width="70" height="101"><h1>Esta página no existe</h1><p class="lead">Puede que el enlace haya cambiado.</p><div class="botones"><a class="btn btn-p" href="index.html">Ir al inicio</a><a class="btn btn-s" href="mapa-web.html">Ver el mapa de la web</a></div></div></section>')
+       '<section class="sec"><div class="w" style="text-align:center;display:flex;flex-direction:column;gap:18px;align-items:center"><img src="assets/img/simbolo.svg" alt="" width="70" height="101"><h1>Esta página no existe</h1><p class="lead">Puede que el enlace haya cambiado.</p><div class="botones"><a class="btn btn-p" href="index.html">Ir al inicio</a><a class="btn btn-s" href="mapa-web.html">Ver el mapa de la web</a></div></div></section>', indexar=False)
 
 # ---------- BLOG ----------
 pagina("blog/index.html", "Blog · Studio Emprende", "Artículos sobre gestión, normativas, IA y webs para autónomos y pymes.",
@@ -452,15 +527,15 @@ for slug, titulo, desc, fecha, cat, serv_rel, cuerpo in ARTICULOS:
     sr = [x for x in SECCIONES if x[0] == serv_rel][0]
     otros = "".join([tarjeta_blog(a, "") for a in ARTICULOS if a[0] != slug][:3])
     ld = ""
-    bp = {"@type": "BlogPosting", "headline": titulo, "description": desc, "inLanguage": "es", "articleSection": cat,
-          "image": "%s/assets/img/blog/%s.jpg" % (DOM, slug), "author": {"@id": DOM + "/#org"}, "publisher": {"@id": DOM + "/#org"},
+    bp = {"@type": "BlogPosting", "headline": titulo, "description": desc, "inLanguage": "es", "articleSection": cat, "datePublished": "2026-10-12", "dateModified": "2026-10-12",
+          "image": ["%s/assets/img/blog/%s.jpg" % (DOM, slug), "%s/assets/img/blog/og/%s.jpg" % (DOM, slug)], "author": {"@id": DOM + "/#org"}, "publisher": {"@id": DOM + "/#org"},
           "mainEntityOfPage": "%s/blog/%s.html" % (DOM, slug)}
     html = """<section class="page-hero"><div class="w">{m}<p class="kicker">{cat} · {f}</p><h1>{t}</h1><p class="lead">{d}</p></div></section>
 <section class="sec"><div class="w lateral"><article class="lateral-main articulo">{fp}{c}</article>
 <aside class="lateral-aside"><h3>{st}</h3><p style="color:#C9C1BB">{si}</p><a class="btn btn-claro" href="../servicios/{ss}.html">Ver el servicio</a><a class="btn btn-borde-claro" href="../contacto.html?servicio={ss}#diagnostico">Pedir diagnóstico</a></aside></div></section>
 <section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Sigue leyendo</p><h2>Otros artículos</h2></div><div class="rejilla">{o}</div></div></section>{ld}""".format(fp=foto_blog(slug, ALT.get(slug, titulo), True), 
         m=migas("../", ("Blog", "index.html"), (titulo, None)), cat=e(cat), f=fecha, t=e(titulo), d=e(desc), c=cuerpo, sl=slug, st=e(sr[2]), si=e(sr[3]), ss=serv_rel, o=otros, ld=ld)
-    pagina("blog/%s.html" % slug, "%s · Studio Emprende" % titulo, desc, html + cta("../"), ld_extra=bp, tipo="article")
+    pagina("blog/%s.html" % slug, "%s · Studio Emprende" % titulo, desc, html + cta("../"), ld_extra=bp, tipo="article", og=DOM + "/assets/img/blog/og/%s.jpg" % slug)
 
 # ---------- GUIAS ----------
 GD = {g[0]: g for g in GUIAS}
@@ -505,6 +580,16 @@ pagina("mapa-web.html", "Mapa de la web · Studio Emprende", "Todas las páginas
 # ---------- SEO ----------
 import datetime as _dt
 HOY = _dt.date.today().isoformat()
+import hashlib as _hl
+_FP = os.path.join(AQUI, "fechas.json")
+try: _FECH = _json.load(open(_FP))
+except Exception: _FECH = {}
+LASTMOD = {}
+for p in PAGS:
+    h = _hl.sha1(open(os.path.join(OUT, p), "rb").read()).hexdigest()
+    if _FECH.get(p, [None])[0] != h: _FECH[p] = [h, HOY]
+    LASTMOD[p] = _FECH[p][1]
+_json.dump({k: _FECH[k] for k in sorted(_FECH) if k in LASTMOD}, open(_FP, "w"), indent=0)
 def _grupo(p):
     if p.startswith("blog/"): return "blog"
     if p.startswith("guias/"): return "guias"
@@ -516,21 +601,21 @@ SMS = []
 for g in ["paginas", "servicios", "guias", "funciones", "blog"]:
     xs = ""
     for p in PAGS:
-        if p == "404.html" or _grupo(p) != g: continue
+        if p in NOINDEX or _grupo(p) != g: continue
         img = ""
         if g == "blog" and p != "blog/index.html":
             img = "<image:image><image:loc>%s/assets/img/blog/%s.jpg</image:loc></image:image>" % (DOM, p[5:-5])
         pr = "1.0" if p == "index.html" else PRIO[g]
-        xs += "<url><loc>%s/%s</loc><lastmod>%s</lastmod><changefreq>%s</changefreq><priority>%s</priority>%s</url>\n" % (DOM, p.replace("index.html", ""), HOY, "weekly" if g in ("blog", "paginas", "guias") else "monthly", pr, img)
+        xs += "<url><loc>%s/%s</loc><lastmod>%s</lastmod><changefreq>%s</changefreq><priority>%s</priority>%s</url>\n" % (DOM, p.replace("index.html", ""), LASTMOD[p], "weekly" if g in ("blog", "paginas", "guias") else "monthly", pr, img)
     open(OUT + "/sitemap-%s.xml" % g, "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' + xs + "</urlset>\n")
     SMS.append("sitemap-%s.xml" % g)
-open(OUT + "/sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join("<sitemap><loc>%s/%s</loc><lastmod>%s</lastmod></sitemap>\n" % (DOM, s, HOY) for s in SMS) + "</sitemapindex>\n")
+open(OUT + "/sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join("<sitemap><loc>%s/%s</loc><lastmod>%s</lastmod></sitemap>\n" % (DOM, s, max(LASTMOD[p] for p in PAGS if p not in NOINDEX and _grupo(p) == s[8:-4])) for s in SMS) + "</sitemapindex>\n")
 INDEXNOW = "5e7a2c38b1d94f6a8c0e3d2b7f61a9c4"
 open(OUT + "/%s.txt" % INDEXNOW, "w").write(INDEXNOW)
-open(OUT + "/indexnow-urls.txt", "w").write("".join("%s/%s\n" % (DOM, p.replace("index.html", "")) for p in PAGS if p != "404.html"))
+open(OUT + "/indexnow-urls.txt", "w").write("".join("%s/%s\n" % (DOM, p.replace("index.html", "")) for p in PAGS if p not in NOINDEX))
 bots = ["Googlebot", "Bingbot", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot", "Meta-ExternalAgent"]
 open(OUT + "/robots.txt", "w").write("".join("User-agent: %s\nAllow: /\n\n" % b for b in bots) + "User-agent: *\nAllow: /\nDisallow: /404.html\n\n# Indice y sitemaps por tipo\nSitemap: %s/sitemap.xml\n" % DOM + "".join("Sitemap: %s/%s\n" % (DOM, s) for s in SMS) + "\n# Resumen para IA: %s/llms.txt · %s/llms-full.txt\n" % (DOM, DOM))
-llms = "# Studio Emprende\n\n> %s\n\n## Servicios\n" % ORG["description"]
+llms = "# Studio Emprende\n\n> %s\n\n## Empresa\n- Nombre comercial: Studio Emprende\n- Titular: INTELIGENCIA SEVILLA SL (NIF B88763818)\n- Domicilio social: Calle Betis 3, 41449 Alcolea del Río (Sevilla), España\n- Contacto: info@studioemprende.com · WhatsApp +34 601 86 96 68\n- Ámbito: 100 %% online, España y Latinoamérica\n\n## Precios\n" % ORG["description"] + "".join("- %s: %s%s. %s\n" % (n, p, "" if p == "A medida" else " + 40 €/mes de soporte (sin IVA)", d) for n, p, d, x in PACKS) + "\n## Servicios\n"
 llms += "".join("- [%s](%s/servicios/%s.html): %s\n" % (s[2], DOM, s[0], " ".join(s[3].split())) for s in SECCIONES)
 llms += "\n## Guías para emprender\n" + "".join("- [%s](%s/guias/%s.html): %s\n" % (g[4], DOM, g[0], g[5].split(". ")[0] + ".") for g in GUIAS)
 llms += "\n## Páginas clave\n- [Precios y packs](%s/precios.html)\n- [Normativas 2026-2027](%s/normativas.html)\n- [Sectores](%s/sectores.html)\n- [Contacto](%s/contacto.html)\n\n## Blog\n" % (DOM, DOM, DOM, DOM)
@@ -588,7 +673,8 @@ for _d, _, _fs in os.walk(OUT):
         if _s != _o: open(_p, "w", encoding="utf-8").write(_s)
 for _c in _CHOQUES:
     shutil.move(os.path.join(OUT, _c + ".html"), os.path.join(OUT, _c, "index.html"))
-open(OUT + "/.htaccess", "w").write("""DirectoryIndex index.html
+open(OUT + "/.htaccess", "w").write("""Options -MultiViews
+DirectoryIndex index.html
 ErrorDocument 404 /404.html
 RewriteEngine On
 
@@ -604,13 +690,13 @@ RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 RewriteCond %{THE_REQUEST} \\s/+(.*/)?index\\.html[\\s?] [NC]
 RewriteRule ^ /%1 [R=301,L,NE]
 
+# /pagina/ -> /pagina  (quitar barra final si no es carpeta real; un solo salto)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
 # /pagina.html -> /pagina  (las URL antiguas siguen funcionando)
 RewriteCond %{THE_REQUEST} \\s/+([^?\\s]+?)\\.html[\\s?] [NC]
 RewriteRule ^ /%1 [R=301,L,NE]
-
-# /pagina/ -> /pagina  (quitar barra final si no es carpeta real)
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)/$ /$1 [R=301,L]
 
 # /pagina -> sirve pagina.html sin mostrar la extension
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -623,8 +709,18 @@ ExpiresActive On
 ExpiresByType text/css "access plus 7 days"
 ExpiresByType application/javascript "access plus 7 days"
 ExpiresByType image/svg+xml "access plus 30 days"
-ExpiresByType image/png "access plus 30 days"
+ExpiresByType image/png "access plus 30 days"\nExpiresByType font/woff2 "access plus 1 year"
 ExpiresByType image/jpeg "access plus 1 year"
 ExpiresByType image/webp "access plus 1 year"
 </IfModule>
 """)
+
+# Fecha real de modificacion de cada pagina (cabecera Last-Modified del servidor)
+import time as _time
+for _p, _d in LASTMOD.items():
+    _f = os.path.join(OUT, _p)
+    if not os.path.exists(_f):
+        _f = os.path.join(OUT, _p[:-5], "index.html")
+    if os.path.exists(_f):
+        _t = _time.mktime(_dt.datetime.strptime(_d, "%Y-%m-%d").timetuple()) + 12 * 3600
+        os.utime(_f, (_t, _t))

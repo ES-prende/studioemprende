@@ -1,3 +1,5 @@
+@font-face{font-family:'Jost';font-style:normal;font-weight:300 500;font-display:swap;src:url(/assets/fonts/jost.woff2) format('woff2')}
+@font-face{font-family:'Marcellus';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/marcellus.woff2) format('woff2')}
 :root{
   --burdeos:#7A2638;--burdeos-osc:#5E1A2A;--ocre:#8A6A1F;--ocre-claro:#C9A961;
   --tinta:#1C1C1E;--gris:#55555A;--borde:#ECE7E2;--suave:#FAF7F4;--noche:#1F1A1C;
@@ -47,7 +49,7 @@ p{margin:0}
 .desplegable>button{background:none;border:0;font:inherit;font-size:15px;color:var(--tinta);cursor:pointer;padding:0;display:flex;align-items:center;gap:4px}
 .mega{display:none;position:absolute;top:calc(100% + 22px);left:-24px;background:#fff;border:1px solid var(--borde);border-radius:16px;padding:24px;width:min(820px,90vw);box-shadow:0 18px 40px rgba(28,28,30,.10);grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 .desplegable.abierto .mega{display:grid}
-.mega h4{margin:0 0 8px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--ocre);font-weight:500}
+.mega .mega-titulo{margin:0 0 8px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--ocre);font-weight:500}
 .mega a{display:block;padding:5px 0;font-size:15px}
 .acciones{display:flex;gap:10px;align-items:center}
 .hamburguesa{display:none;background:none;border:1px solid var(--borde);border-radius:10px;width:44px;height:44px;cursor:pointer}
@@ -316,3 +318,11 @@ h1,h2{line-height:1.18}
 .form-aviso{background:#F7EEF0;color:var(--burdeos-osc);border-radius:10px;padding:10px 14px;font-size:14px}
 .campo input:invalid:not(:placeholder-shown){border-color:#C9A961}
 .legal-txt ul{margin:0 0 14px;padding-left:22px;color:var(--gris)}.legal-txt li{margin-bottom:6px}
+
+/* h2 con aspecto de h3 (orden de encabezados correcto) */
+h2.h3{font-size:21px}
+.lateral-aside h2.h3{color:#fff}
+.mapa .grupo h2.h3{font-size:16px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ocre);margin-bottom:12px;font-family:var(--sans)}
+.tarjeta-blog h2.h3{margin-left:24px;margin-right:24px}
+.sec-noche h2.h3{color:#fff}
+@media (max-width:760px){h2.h3{font-size:19px;line-height:1.25}}

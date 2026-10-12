@@ -101,15 +101,43 @@ SECCIONES = [
 ]
 
 NORMATIVAS = [
- ("Verifactu", "RD 1007/2023 y RDL 15/2025", "Sociedades antes del 1/1/2027; autónomos antes del 1/7/2027.", "software-de-gestion"),
- ("Factura electrónica B2B", "Ley 18/2022 y RD 238/2026", "Reglamento publicado; fecha pendiente de orden ministerial.", "software-de-gestion"),
+ ("Verifactu", "RD 1007/2023 y RDL 15/2025", "Previsto: octubre de 2028 para todos (anuncio de Hacienda del 5/10/2026, pendiente de publicarse en el BOE). Mientras tanto siguen vigentes: sociedades antes del 1/1/2027 y resto antes del 1/7/2027.", "software-de-gestion"),
+ ("Factura electrónica B2B", "Ley 18/2022, RD 238/2026 y Orden HAC/1028/2026", "Empresas de más de 8 M€ de facturación desde el 6/10/2027; resto de empresas y autónomos desde el 6/10/2028.", "software-de-gestion"),
  ("Registro de jornada", "RDL 8/2019", "Obligatorio desde 2019. El fichaje digital aún no está en el BOE.", "fichador"),
  ("AI Act: alfabetización en IA", "Reglamento (UE) 2024/1689", "En vigor desde el 2/2/2025.", "formacion-ia"),
  ("Ley de Accesibilidad", "Ley 11/2023", "Aplicable desde el 28/6/2025.", "webs"),
  ("NIS2", "Directiva (UE) 2022/2555", "En España, anteproyecto de ley.", "ciberseguridad-y-sistemas"),
  ("Ciberresiliencia", "Reglamento (UE) 2024/2847", "Notificación de vulnerabilidades desde el 11/9/2026.", "ciberseguridad-y-sistemas"),
- ("Registro de viajeros y NRUA", "RD 1312/2024 y Reglamento (UE) 2024/1028", "Registro único aplicable desde el 20/5/2026.", "alojamientos-y-domotica"),
+ ("Registro de viajeros y NRUA", "RD 933/2021, RD 1312/2024 y Reglamento (UE) 2024/1028", "El registro de viajeros sigue vigente. El Supremo (sentencia 620/2026, de 19/5/2026) anuló el registro único de arrendamientos; se mantienen la ventanilla única digital y el envío de datos de las plataformas.", "alojamientos-y-domotica"),
 ]
+
+# Datos ampliados para la tabla de /normativas: fuentes oficiales, a quién afecta y enlaces descriptivos
+NORM_EXTRA = {
+ "Verifactu": {"fuentes": [("RD 1007/2023", "https://www.boe.es/eli/es/rd/2023/12/05/1007"), ("RDL 15/2025", "https://www.boe.es/eli/es/rdl/2025/12/02/15")],
+               "afecta": "Empresas y autónomos que facturan con un programa informático (salvo SII y territorios forales).",
+               "enlaces": [("servicios/software-de-gestion.html", "Software para cumplir Verifactu →"), ("blog/que-es-verifactu-y-cuando-me-afecta.html", "Guía de Verifactu")]},
+ "Factura electrónica B2B": {"fuentes": [("Ley 18/2022", "https://www.boe.es/eli/es/l/2022/09/28/18"), ("RD 238/2026", "https://www.boe.es/eli/es/rd/2026/03/25/238"), ("Orden HAC/1028/2026", "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20587")],
+               "afecta": "Todas las empresas y autónomos en sus facturas a otras empresas y profesionales.",
+               "enlaces": [("servicios/software-de-gestion.html", "Facturación electrónica en tu programa →")]},
+ "Registro de jornada": {"fuentes": [("RDL 8/2019", "https://www.boe.es/eli/es/rdl/2019/03/08/8")],
+               "afecta": "Cualquier empresa o autónomo con personas contratadas.",
+               "enlaces": [("servicios/fichador.html", "Fichador para el registro de jornada →"), ("blog/es-obligatorio-el-fichaje-digital.html", "¿Es obligatorio el fichaje digital?")]},
+ "AI Act: alfabetización en IA": {"fuentes": [("Reglamento (UE) 2024/1689", "https://eur-lex.europa.eu/eli/reg/2024/1689/oj")],
+               "afecta": "Empresas cuyo personal usa herramientas de IA (ChatGPT, Copilot…).",
+               "enlaces": [("servicios/formacion-ia.html", "Formación en IA para tu equipo →"), ("blog/formacion-ia-obligatoria-ai-act.html", "Guía del AI Act")]},
+ "Ley de Accesibilidad": {"fuentes": [("Ley 11/2023", "https://www.boe.es/eli/es/l/2023/05/08/11")],
+               "afecta": "Webs y apps de comercio electrónico y servicios al consumidor (las microempresas de servicios quedan exentas).",
+               "enlaces": [("servicios/webs.html", "Webs accesibles →")]},
+ "NIS2": {"fuentes": [("Directiva (UE) 2022/2555", "https://eur-lex.europa.eu/eli/dir/2022/2555/oj")],
+               "afecta": "Empresas medianas y grandes de sectores esenciales e importantes, y sus proveedores.",
+               "enlaces": [("servicios/ciberseguridad-y-sistemas.html", "Ciberseguridad para cumplir NIS2 →")]},
+ "Ciberresiliencia": {"fuentes": [("Reglamento (UE) 2024/2847", "https://eur-lex.europa.eu/eli/reg/2024/2847/oj")],
+               "afecta": "Fabricantes y vendedores de productos con elementos digitales (software y dispositivos).",
+               "enlaces": [("servicios/ciberseguridad-y-sistemas.html", "Seguridad de tu software y equipos →")]},
+ "Registro de viajeros y NRUA": {"fuentes": [("RD 933/2021", "https://www.boe.es/eli/es/rd/2021/10/26/933"), ("RD 1312/2024", "https://www.boe.es/eli/es/rd/2024/12/23/1312"), ("Reglamento (UE) 2024/1028", "https://eur-lex.europa.eu/eli/reg/2024/1028/oj")],
+               "afecta": "Hoteles, apartamentos y viviendas de uso turístico, y quien alquila por plataformas.",
+               "enlaces": [("servicios/alojamientos-y-domotica.html", "Registro y check-in automáticos →"), ("blog/registro-de-viajeros-ses-hospedajes.html", "Guía para anfitriones")]},
+}
 
 SECTORES = ["Talleres", "Clínicas", "Reformas e instaladores", "Hostelería", "Inmobiliarias", "Academias", "Asesorías energéticas", "Alojamientos turísticos", "Gestorías", "Comercios", "Distribuidores", "Industria"]
 

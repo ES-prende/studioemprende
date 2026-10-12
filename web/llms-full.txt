@@ -1151,14 +1151,14 @@ Sí, con un CTO externalizado que dirige el desarrollo hasta tener equipo propio
 
 
 ## Normativas
-- Verifactu (RD 1007/2023 y RDL 15/2025): Sociedades antes del 1/1/2027; autónomos antes del 1/7/2027.
-- Factura electrónica B2B (Ley 18/2022 y RD 238/2026): Reglamento publicado; fecha pendiente de orden ministerial.
+- Verifactu (RD 1007/2023 y RDL 15/2025): Previsto: octubre de 2028 para todos (anuncio de Hacienda del 5/10/2026, pendiente de publicarse en el BOE). Mientras tanto siguen vigentes: sociedades antes del 1/1/2027 y resto antes del 1/7/2027.
+- Factura electrónica B2B (Ley 18/2022, RD 238/2026 y Orden HAC/1028/2026): Empresas de más de 8 M€ de facturación desde el 6/10/2027; resto de empresas y autónomos desde el 6/10/2028.
 - Registro de jornada (RDL 8/2019): Obligatorio desde 2019. El fichaje digital aún no está en el BOE.
 - AI Act: alfabetización en IA (Reglamento (UE) 2024/1689): En vigor desde el 2/2/2025.
 - Ley de Accesibilidad (Ley 11/2023): Aplicable desde el 28/6/2025.
 - NIS2 (Directiva (UE) 2022/2555): En España, anteproyecto de ley.
 - Ciberresiliencia (Reglamento (UE) 2024/2847): Notificación de vulnerabilidades desde el 11/9/2026.
-- Registro de viajeros y NRUA (RD 1312/2024 y Reglamento (UE) 2024/1028): Registro único aplicable desde el 20/5/2026.
+- Registro de viajeros y NRUA (RD 933/2021, RD 1312/2024 y Reglamento (UE) 2024/1028): El registro de viajeros sigue vigente. El Supremo (sentencia 620/2026, de 19/5/2026) anuló el registro único de arrendamientos; se mantienen la ventanilla única digital y el envío de datos de las plataformas.
 
 ## Preguntas frecuentes
 **¿Cuánto tardáis en tenerlo todo listo?**

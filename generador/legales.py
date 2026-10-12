@@ -20,7 +20,8 @@ HIST = """<div class="w legal-txt" style="margin-top:40px">
 </div>"""
 
 AVISO = """<h2>1. Titular del sitio web</h2>
-<p>Este sitio web, studioemprende.com, pertenece a Studio Emprende. Para cualquier consulta puedes escribir a <a href="mailto:{e}">{e}</a> o por WhatsApp al 601 86 96 68.</p>
+<p>En cumplimiento del artículo 10 de la Ley 34/2002 (LSSI-CE), se informa de que este sitio web, studioemprende.com, es titularidad de:</p>
+<ul><li><b>Titular:</b> INTELIGENCIA SEVILLA SL</li><li><b>Nombre comercial:</b> Studio Emprende</li><li><b>NIF:</b> B88763818</li><li><b>Domicilio social:</b> Calle Betis 3, 41449 Alcolea del Río (Sevilla), España</li><li><b>Email:</b> <a href="mailto:{e}">{e}</a> · <b>Teléfono y WhatsApp:</b> 601 86 96 68</li></ul>
 <h2>2. Objeto</h2>
 <p>El sitio informa sobre los servicios de software de gestión, inteligencia artificial, desarrollo web y consultoría tecnológica de Studio Emprende y permite contactar para solicitar información o presupuesto.</p>
 <h2>3. Condiciones de uso</h2>
@@ -35,7 +36,7 @@ AVISO = """<h2>1. Titular del sitio web</h2>
 <p>Estas condiciones se rigen por la legislación española, en particular la Ley 34/2002 de servicios de la sociedad de la información y de comercio electrónico (LSSI-CE).</p>""".format(e=E)
 
 PRIVACIDAD = """<h2>1. Responsable del tratamiento</h2>
-<p>Studio Emprende. Contacto: <a href="mailto:{e}">{e}</a>.</p>
+<p>INTELIGENCIA SEVILLA SL (nombre comercial: Studio Emprende), con NIF B88763818 y domicilio social en Calle Betis 3, 41449 Alcolea del Río (Sevilla). Contacto: <a href="mailto:{e}">{e}</a> · 601 86 96 68.</p>
 <h2>2. Qué datos tratamos</h2>
 <p>Los que nos facilitas en el formulario de contacto o por WhatsApp y correo: nombre, teléfono, email, empresa y el contenido de tu mensaje. No pedimos datos especialmente protegidos; te rogamos que no los incluyas en el mensaje.</p>
 <h2>3. Para qué los usamos</h2>

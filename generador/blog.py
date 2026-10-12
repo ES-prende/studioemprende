@@ -27,7 +27,7 @@ ARTICULOS = [
  "11 oct 2026", "Normativas", "software-de-gestion", """
 <p>Verifactu es el sistema con el que Hacienda quiere asegurarse de que los programas de facturación no permitan borrar ni modificar facturas sin dejar rastro. Lo regulan el Real Decreto 1007/2023 y el Real Decreto-ley 15/2025, que aplazó los plazos.</p>
 <h2>¿Cuándo es obligatorio?</h2>
-<ul><li><b>Sociedades:</b> antes del 1 de enero de 2027.</li><li><b>Autónomos y resto de obligados:</b> antes del 1 de julio de 2027.</li></ul>
+<ul><li><b>Sociedades:</b> antes del 1 de enero de 2027.</li><li><b>Autónomos y resto de obligados:</b> antes del 1 de julio de 2027.</li></ul><p><b>Novedad: Verifactu se retrasa a octubre de 2028.</b> El 5 de octubre de 2026 el Ministerio de Hacienda anunció que ampliará el plazo hasta octubre de 2028 para todos los obligados, para alinearlo con la factura electrónica obligatoria. Falta que se publique en el BOE; mientras tanto, los plazos legales vigentes siguen siendo los de arriba.</p>
 <h2>¿Qué tienes que hacer?</h2>
 <p>Usar un programa de facturación adaptado. Cada factura queda registrada de forma que no se pueda alterar y lleva un código QR para que tu cliente pueda comprobarla.</p>
 <h2>Errores habituales</h2>
@@ -123,7 +123,7 @@ _a("registro-de-viajeros-ses-hospedajes", "Registro de viajeros y NRUA: lo que t
 <h2>Registro de viajeros</h2>
 <p>Hay que comunicar los datos de los huéspedes a SES.HOSPEDAJES en un máximo de 24 horas desde su llegada y conservar el registro durante 3 años. En Cataluña y el País Vasco se hace a través de los sistemas de los Mossos y la Ertzaintza.</p>
 <h2>Registro único (NRUA)</h2>
-<p>Desde el 1 de julio de 2025 cada vivienda turística necesita su Número de Registro Único, y sin él no se puede anunciar en las plataformas. Además, el Reglamento europeo de alquileres de corta duración es aplicable desde el 20 de mayo de 2026.</p>
+<p>Desde el 1 de julio de 2025 se exigía a cada vivienda turística su Número de Registro Único para anunciarse en las plataformas, pero el Tribunal Supremo anuló ese registro estatal en su sentencia 620/2026, de 19 de mayo. Siguen vigentes la ventanilla única digital, el envío de datos de las plataformas y el Reglamento europeo de alquileres de corta duración, aplicable desde el 20 de mayo de 2026. Revisa además el registro que exija tu comunidad autónoma.</p>
 <h2>Cómo simplificarlo</h2>
 <ul><li>Check-in online con firma antes de la llegada.</li><li>Envío automático del parte de viajeros.</li><li>Cerradura con un código distinto para cada reserva.</li></ul>
 <p>La normativa autonómica y municipal cambia según dónde esté la vivienda; revísala siempre en tu ayuntamiento.</p>"""),
