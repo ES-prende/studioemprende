@@ -216,7 +216,7 @@ def cta(r):
     return """<section class="cta"><div class="w"><h2>Empieza hoy con tu diagnóstico gratis</h2>
 <div class="botones"><a class="btn btn-claro" href="{r}contacto.html#diagnostico">Pedir diagnóstico</a><a class="btn btn-borde-claro" href="{r}contacto.html">Hablar con nosotros</a></div></div></section>""".format(r=r)
 
-FAQ = [("¿Cuánto tardáis en tenerlo todo listo?", "Depende del pack y de lo rápido que nos pases tu información. Te damos un plazo cerrado al empezar."),
+FAQ = [("¿Cuánto tardáis en tenerlo todo listo?", "Impulso Inicial: de 2 a 3 semanas. Negocio en Marcha: de 3 a 4 semanas. Llave en Mano: unos 2 meses. Los plazos cuentan desde que nos pasas la información necesaria, y te damos una fecha cerrada al empezar."),
        ("¿Qué incluye la cuota de 40 € al mes?", "El soporte y el mantenimiento de tu programa de gestión."),
        ("¿Puedo contratar un solo servicio?", "Sí. Con «Arma tu pack» eliges solo lo que necesitas."),
        ("¿Trabajáis fuera de España?", "Sí. Somos 100 % online y trabajamos con España y Latinoamérica."),

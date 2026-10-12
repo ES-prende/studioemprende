@@ -142,9 +142,9 @@ NORM_EXTRA = {
 SECTORES = ["Talleres", "Clínicas", "Reformas e instaladores", "Hostelería", "Inmobiliarias", "Academias", "Asesorías energéticas", "Alojamientos turísticos", "Gestorías", "Comercios", "Distribuidores", "Industria"]
 
 PACKS = [
- ("Impulso Inicial", "990 €", "Identidad visual, web One Page, Google Business, redes y una sesión de coaching.", False),
- ("Negocio en Marcha", "1.790 €", "Web completa con blog, SEO, programa de gestión básico y automatizaciones.", True),
- ("Llave en Mano", "3.690 €", "Branding completo, web premium, embudo de ventas, gestión avanzada y dos meses de acompañamiento.", False),
+ ("Impulso Inicial", "990 €", "Identidad visual, web One Page, Google Business, redes y una sesión de coaching. Listo en 2-3 semanas.", False),
+ ("Negocio en Marcha", "1.790 €", "Web completa con blog, SEO, programa de gestión básico y automatizaciones. Listo en 3-4 semanas.", True),
+ ("Llave en Mano", "3.690 €", "Branding completo, web premium, embudo de ventas, gestión avanzada y dos meses de acompañamiento. Listo en unos 2 meses.", False),
  ("Arma tu pack", "A medida", "Elige solo los servicios que necesitas y te damos precio.", False),
 ]
 
