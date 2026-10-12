@@ -29,3 +29,15 @@ jobs:
           RUTA: ${{ secrets.SFTP_PATH }}
         run: |
           lftp -e "set sftp:auto-confirm yes; set net:max-retries 3; mirror -R --only-newer --verbose --exclude-glob .git* web/ ${RUTA:-/}; bye" -u "$USER","$PASS" sftp://$HOST
+
+      - name: Listar archivos sobrantes en el servidor (simulacion, no borra nada)
+        env:
+          HOST: ${{ secrets.SFTP_HOST }}
+          USER: ${{ secrets.SFTP_USER }}
+          PASS: ${{ secrets.SFTP_PASSWORD }}
+          RUTA: ${{ secrets.SFTP_PATH }}
+        run: |
+          lftp -e "set sftp:auto-confirm yes; set net:max-retries 3; mirror -R --delete --dry-run --exclude-glob .git* --exclude-glob _sobrantes.txt web/ ${RUTA:-/}; bye" -u "$USER","$PASS" sftp://$HOST > dryrun.txt 2>&1 || true
+          grep -iE "^(rm|rmdir) " dryrun.txt > _sobrantes.txt || true
+          echo "TOTAL: $(wc -l < _sobrantes.txt)" >> _sobrantes.txt
+          lftp -e "set sftp:auto-confirm yes; put _sobrantes.txt -o ${RUTA:-/}/_sobrantes.txt; bye" -u "$USER","$PASS" sftp://$HOST || true
