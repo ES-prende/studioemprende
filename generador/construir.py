@@ -397,6 +397,7 @@ contacto = """<section class="page-hero"><div class="w">{m}<h1>Hablemos de tu ne
 <section class="sec" id="diagnostico"><div class="w lateral"><div class="lateral-main">
 <form class="form" data-contacto action="https://formsubmit.co/info@studioemprende.com" method="post">
 <input type="hidden" name="_subject" value="Nuevo contacto desde studioemprende.com">
+<input type="hidden" name="_cc" value="socialstudioemprende@gmail.com">
 <input type="hidden" name="_template" value="table">
 <input type="hidden" name="_next" value="{dom}/gracias.html">
 <input type="hidden" name="funcion" id="funcion" value="">
