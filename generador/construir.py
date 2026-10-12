@@ -735,9 +735,11 @@ RewriteCond %{THE_REQUEST} \\s/+([^?\\s]+?)\\.html[\\s?] [NC]
 RewriteRule ^ /%1 [R=301,L,NE]
 
 # /pagina -> sirve pagina.html sin mostrar la extension
+# (sin comprobar -f sobre REQUEST_FILENAME: en IONOS esa comprobacion falla)
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.+)$ $1.html [L]
+RewriteCond %{REQUEST_URI} !\\.[a-zA-Z0-9]+$
+RewriteRule ^(.*[^/])$ /$1.html [L]
 
 # Cache de recursos estaticos
 <IfModule mod_expires.c>
