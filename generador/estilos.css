@@ -230,6 +230,7 @@ a.tarjeta:hover{border-color:var(--burdeos);transform:translateY(-2px);color:var
 @media (max-width:1280px){.acciones .btn-s{display:none}}
 
 .tarjeta-blog{padding:0;overflow:hidden}
+.tarjeta-blog picture,.articulo picture{display:block}
 .tarjeta-blog img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid var(--borde)}
 .tarjeta-blog .etiqueta,.tarjeta-blog h3,.tarjeta-blog p,.tarjeta-blog .mas{margin-left:24px;margin-right:24px}
 .tarjeta-blog .etiqueta{margin-top:18px}.tarjeta-blog .mas{margin-bottom:24px}

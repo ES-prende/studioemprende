@@ -3,6 +3,7 @@ from html import escape as e
 sys.path.insert(0, os.path.dirname(__file__))
 from datos import SECCIONES, NORMATIVAS, SECTORES, PACKS, MENU
 from blog import ARTICULOS
+from alt_blog import ALT
 from guias import GUIAS, GRUPOS, SERVICIO_GUIAS
 from legales import HIST, AVISO, PRIVACIDAD, COOKIES
 
@@ -199,9 +200,17 @@ def packs(r):
             "Según los servicios" if p == "A medida" else "+ 40 €/mes de soporte", "btn-p" if dest else "btn-s", r, n.replace(" ", "-").lower(), "Montar mi pack" if p == "A medida" else "Lo quiero")
     return out + "</div>"
 
+def foto_blog(sl, alt, portada=False):
+    b = "/assets/img/blog/" + sl
+    carga = 'fetchpriority="high" decoding="async"' if portada else 'loading="lazy" decoding="async"'
+    tam = "(max-width: 760px) 100vw, 820px" if portada else "(max-width: 760px) 100vw, 400px"
+    return ('<picture><source type="image/webp" srcset="%s-600.webp 600w, %s.webp 1200w" sizes="%s">'
+            '<img%s src="%s.jpg" srcset="%s-600.jpg 600w, %s.jpg 1200w" sizes="%s" alt="%s" width="1200" height="675" %s></picture>') % (
+            b, b, tam, ' class="portada"' if portada else "", b, b, b, tam, e(alt), carga)
+
 def tarjeta_blog(a, pre):
-    img = pre.replace("blog/", "") + ("../" if pre == "" else "") + "assets/img/blog/%s.jpg" % a[0]
-    return '<a class="tarjeta tarjeta-blog" href="%s%s.html"><img src="%s" alt="" width="1200" height="675" loading="lazy"><span class="etiqueta">%s</span><h3>%s</h3><p>%s</p><span class="mas">Leer artículo →</span></a>' % (pre, a[0], img, e(a[4]), e(a[1]), e(a[2]))
+    img = foto_blog(a[0], ALT.get(a[0], a[1]))
+    return '<a class="tarjeta tarjeta-blog" href="%s%s.html">%s<span class="etiqueta">%s</span><h3>%s</h3><p>%s</p><span class="mas">Leer artículo →</span></a>' % (pre, a[0], img, e(a[4]), e(a[1]), e(a[2]))
 BLOGHOME = "".join(tarjeta_blog(a, "blog/") for a in ARTICULOS[:3])
 # ---------- INICIO ----------
 r = ""
@@ -447,9 +456,9 @@ for slug, titulo, desc, fecha, cat, serv_rel, cuerpo in ARTICULOS:
           "image": "%s/assets/img/blog/%s.jpg" % (DOM, slug), "author": {"@id": DOM + "/#org"}, "publisher": {"@id": DOM + "/#org"},
           "mainEntityOfPage": "%s/blog/%s.html" % (DOM, slug)}
     html = """<section class="page-hero"><div class="w">{m}<p class="kicker">{cat} · {f}</p><h1>{t}</h1><p class="lead">{d}</p></div></section>
-<section class="sec"><div class="w lateral"><article class="lateral-main articulo"><img class="portada" src="../assets/img/blog/{sl}.jpg" alt="{t}" width="1200" height="675">{c}</article>
+<section class="sec"><div class="w lateral"><article class="lateral-main articulo">{fp}{c}</article>
 <aside class="lateral-aside"><h3>{st}</h3><p style="color:#C9C1BB">{si}</p><a class="btn btn-claro" href="../servicios/{ss}.html">Ver el servicio</a><a class="btn btn-borde-claro" href="../contacto.html?servicio={ss}#diagnostico">Pedir diagnóstico</a></aside></div></section>
-<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Sigue leyendo</p><h2>Otros artículos</h2></div><div class="rejilla">{o}</div></div></section>{ld}""".format(
+<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Sigue leyendo</p><h2>Otros artículos</h2></div><div class="rejilla">{o}</div></div></section>{ld}""".format(fp=foto_blog(slug, ALT.get(slug, titulo), True), 
         m=migas("../", ("Blog", "index.html"), (titulo, None)), cat=e(cat), f=fecha, t=e(titulo), d=e(desc), c=cuerpo, sl=slug, st=e(sr[2]), si=e(sr[3]), ss=serv_rel, o=otros, ld=ld)
     pagina("blog/%s.html" % slug, "%s · Studio Emprende" % titulo, desc, html + cta("../"), ld_extra=bp, tipo="article")
 
@@ -615,6 +624,7 @@ ExpiresByType text/css "access plus 7 days"
 ExpiresByType application/javascript "access plus 7 days"
 ExpiresByType image/svg+xml "access plus 30 days"
 ExpiresByType image/png "access plus 30 days"
-ExpiresByType image/jpeg "access plus 30 days"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/webp "access plus 1 year"
 </IfModule>
 """)
