@@ -752,13 +752,5 @@ ExpiresByType image/jpeg "access plus 1 year"
 ExpiresByType image/webp "access plus 1 year"
 </IfModule>
 """)
-
-# Fecha real de modificacion de cada pagina (cabecera Last-Modified del servidor)
-import time as _time
-for _p, _d in LASTMOD.items():
-    _f = os.path.join(OUT, _p)
-    if not os.path.exists(_f):
-        _f = os.path.join(OUT, _p[:-5], "index.html")
-    if os.path.exists(_f):
-        _t = _time.mktime(_dt.datetime.strptime(_d, "%Y-%m-%d").timetuple()) + 12 * 3600
-        os.utime(_f, (_t, _t))
+# Nota: no se cambia la fecha de los archivos (os.utime): el despliegue usa --only-newer
+# y fechas antiguas impedian que se subieran las paginas modificadas.
