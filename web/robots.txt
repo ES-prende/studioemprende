@@ -1,0 +1,55 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# Indice y sitemaps por tipo
+Sitemap: https://studioemprende.com/sitemap.xml
+Sitemap: https://studioemprende.com/sitemap-paginas.xml
+Sitemap: https://studioemprende.com/sitemap-servicios.xml
+Sitemap: https://studioemprende.com/sitemap-guias.xml
+Sitemap: https://studioemprende.com/sitemap-funciones.xml
+Sitemap: https://studioemprende.com/sitemap-blog.xml
+
+# Resumen para IA: https://studioemprende.com/llms.txt · https://studioemprende.com/llms-full.txt
