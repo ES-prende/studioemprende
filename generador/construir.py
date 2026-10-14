@@ -96,9 +96,23 @@ def pie(r):
 <div class="pie-cols"><div><b>Productos</b>{prod}</div><div><b>Para quién</b>{quien}</div>
 <div><b>Recursos</b><a href="{r}guias/index.html">Guías para emprender</a><a href="{r}blog/index.html">Blog</a><a href="{r}normativas.html">Normativas</a><a href="{r}sectores.html">Sectores</a><a href="{r}precios.html">Precios</a><a href="{r}mapa-web.html">Mapa de la web</a></div>
 <div><b>Empresa</b><a href="{r}sobre-nosotros.html">Sobre nosotros</a><a href="{r}contacto.html">Contacto</a><a href="{r}contacto.html#diagnostico">Diagnóstico gratis</a></div><div><b>Contacto</b><a href="https://wa.me/34601869668" target="_blank" rel="noopener">WhatsApp 601 86 96 68</a><a href="mailto:info@studioemprende.com">info@studioemprende.com</a><span style="display:block;margin-top:8px">Calle Betis 3, 41449 Alcolea del Río (Sevilla)</span></div></div></div>
-<div class="pie-base"><span>© 2026 Studio Emprende · INTELIGENCIA SEVILLA SL · NIF B88763818</span><span><a href="{r}aviso-legal.html">Aviso legal</a> · <a href="{r}privacidad.html">Privacidad</a> · <a href="{r}cookies.html">Cookies</a></span></div>
+<div class="pie-base"><span>© 2026 Studio Emprende · INTELIGENCIA SEVILLA SL · NIF B88763818</span><span><a href="{r}aviso-legal.html">Aviso legal</a> · <a href="{r}privacidad.html">Privacidad</a> · <a href="{r}cookies.html">Cookies</a> · <a href="#" data-abrir-cookies>Configurar cookies</a></span></div>
 </div></footer>
-<script src="{r}assets/js/main.js"></script>""".format(r=r, prod=prod, quien=quien)
+<script src="{r}assets/js/main.js"></script>
+<div class="cookies" id="cookies" role="dialog" aria-live="polite" aria-label="Aviso de cookies" hidden>
+<p><b>Cookies</b> Usamos cookies técnicas necesarias y, solo si nos das permiso, cookies de analítica y publicidad para medir visitas y campañas. <a href="{r}cookies.html">Más información</a></p>
+<div class="cookies-opc" id="cookies-opc" hidden><label><input type="checkbox" checked disabled> Técnicas (siempre activas)</label><label><input type="checkbox" id="ck-ana"> Analítica</label><label><input type="checkbox" id="ck-pub"> Publicidad</label></div>
+<div class="cookies-btn"><button type="button" class="btn btn-s" data-ck="rechazar">Rechazar</button><button type="button" class="btn btn-s" data-ck="config">Configurar</button><button type="button" class="btn btn-s" data-ck="guardar" hidden>Guardar selección</button><button type="button" class="btn btn-p" data-ck="aceptar">Aceptar todas</button></div>
+</div>
+<script>(function(){{var b=document.getElementById('cookies');if(!b)return;var k='se_consent';function g(){{try{{return localStorage.getItem(k)}}catch(e){{return null}}}}
+function save(a,p){{var v={{analytics_storage:a?'granted':'denied',ad_storage:p?'granted':'denied',ad_user_data:p?'granted':'denied',ad_personalization:p?'granted':'denied'}};try{{localStorage.setItem(k,JSON.stringify(v))}}catch(e){{}}if(window.gtag)gtag('consent','update',v);window.dataLayer&&dataLayer.push({{event:'consent_update'}});b.hidden=true;}}
+if(!g())b.hidden=false;
+b.addEventListener('click',function(e){{var t=e.target.getAttribute('data-ck');if(!t)return;
+if(t==='aceptar')save(true,true);else if(t==='rechazar')save(false,false);
+else if(t==='config'){{document.getElementById('cookies-opc').hidden=false;e.target.hidden=true;b.querySelector('[data-ck=guardar]').hidden=false;}}
+else if(t==='guardar')save(document.getElementById('ck-ana').checked,document.getElementById('ck-pub').checked);}});
+document.addEventListener('click',function(e){{if(e.target.closest&&e.target.closest('[data-abrir-cookies]')){{e.preventDefault();var c={{}};try{{c=JSON.parse(g()||'{{}}')}}catch(x){{}}document.getElementById('ck-ana').checked=c.analytics_storage==='granted';document.getElementById('ck-pub').checked=c.ad_storage==='granted';b.hidden=false;}}}});}})();</script>
+""".format(r=r, prod=prod, quien=quien)
 
 import json as _json
 from urllib.parse import urljoin as _uj
@@ -183,6 +197,9 @@ def _pagina(ruta, titulo, desc, cuerpo, seo, tipo):
 <html lang="es">
 <head>
 <meta charset="utf-8">
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}
+gtag('consent','default',{{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500}});
+try{{var c=localStorage.getItem('se_consent');if(c)gtag('consent','update',JSON.parse(c));}}catch(e){{}}</script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
 new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],

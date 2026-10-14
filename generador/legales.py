@@ -55,10 +55,13 @@ PRIVACIDAD = """<h2>1. Responsable del tratamiento</h2>
 COOKIES = """<h2>1. Qué son las cookies</h2>
 <p>Son pequeños archivos que un sitio web guarda en tu navegador para recordar información sobre tu visita.</p>
 <h2>2. Qué usa este sitio</h2>
-<p>Este sitio <b>no usa cookies de publicidad ni de analítica de terceros</b>. Solo emplea:</p>
-<ul><li><b>Almacenamiento técnico del navegador</b>: para evitar envíos repetidos del formulario de contacto (protección antispam). No te identifica y se queda en tu dispositivo.</li><li><b>Servicios externos necesarios</b>: tipografías de Google Fonts y la verificación antispam del formulario, que pueden registrar datos técnicos como tu dirección IP para funcionar.</li></ul>
-<p>Como solo son elementos técnicos necesarios, no es obligatorio pedir tu consentimiento. Si en el futuro añadimos analítica o publicidad, actualizaremos esta política y te pediremos permiso antes de activarlas.</p>
-<h2>3. Cómo desactivarlas</h2>
+<p><b>Técnicas (siempre activas, no requieren consentimiento):</b> almacenamiento del navegador para recordar tu elección sobre cookies y para evitar envíos repetidos del formulario de contacto (protección antispam), y la verificación antispam del formulario (FormSubmit).</p>
+<p><b>Analítica (solo si la aceptas):</b> herramientas de Google (Google Tag Manager y Google Analytics) que nos dicen de forma agregada cuántas personas visitan la web y qué páginas leen. Pueden instalar cookies como <code>_ga</code> o <code>_ga_*</code>, con una duración de hasta 2 años.</p>
+<p><b>Publicidad (solo si la aceptas):</b> cookies de Google y de otras plataformas de anuncios para medir campañas y mostrarte anuncios relacionados. Pueden durar hasta 2 años.</p>
+<p>Google Tag Manager se carga siempre, pero mientras no aceptes, las etiquetas de analítica y publicidad funcionan en modo de consentimiento denegado y no guardan cookies de seguimiento. Los datos que trata Google pueden transferirse fuera del Espacio Económico Europeo; puedes consultar su política en <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+<h2>3. Cómo cambiar tu elección</h2>
+<p>Puedes aceptar, rechazar o configurar las cookies en el aviso que aparece al entrar y cambiar tu elección cuando quieras desde el enlace «Configurar cookies» del pie de página.</p>
+<h2>4. Cómo desactivarlas en el navegador</h2>
 <p>Puedes borrar o bloquear las cookies y el almacenamiento local desde la configuración de tu navegador (Chrome, Safari, Firefox o Edge). Si lo haces, la web seguirá funcionando.</p>
-<h2>4. Contacto</h2>
+<h2>5. Contacto</h2>
 <p>Para cualquier duda escribe a <a href="mailto:{e}">{e}</a>.</p>""".format(e=E)

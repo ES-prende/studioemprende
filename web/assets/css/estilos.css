@@ -328,3 +328,11 @@ h2.h3{font-size:21px}
 .tarjeta-blog h2.h3{margin-left:24px;margin-right:24px}
 .sec-noche h2.h3{color:#fff}
 @media (max-width:760px){h2.h3{font-size:19px;line-height:1.25}}
+
+/* Aviso de cookies */
+.cookies{position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--borde);border-radius:16px;box-shadow:0 18px 40px rgba(28,28,30,.18);padding:20px 22px;font-size:15px;line-height:1.5}
+.cookies[hidden]{display:none}
+.cookies p{margin:0 0 14px}.cookies p b{display:block;color:var(--burdeos);font-weight:500;margin-bottom:4px}
+.cookies-opc{display:flex;flex-wrap:wrap;gap:10px 22px;margin:0 0 14px}.cookies-opc[hidden]{display:none}.cookies-opc label{display:flex;gap:8px;align-items:center}
+.cookies-btn{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}.cookies-btn .btn{padding:10px 18px;font-size:15px}.cookies-btn [hidden]{display:none}
+@media (max-width:560px){.cookies-btn .btn{flex:1 1 40%}}
