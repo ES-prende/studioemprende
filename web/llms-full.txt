@@ -366,6 +366,7 @@ Formación práctica para tu equipo, bonificable por FUNDAE.
 - [IA para dueños de negocios de toda la vida](https://studioemprende.com/servicios/formacion-ia/ia-para-duenos-de-negocios-de-toda-la-vida)
 - [Política de uso de IA para empresas](https://studioemprende.com/servicios/formacion-ia/politica-de-uso-de-ia-para-empresas)
 - [Mentoría para directivos](https://studioemprende.com/servicios/formacion-ia/mentoria-para-directivos)
+- [Sesión de IA 1 a 1](https://studioemprende.com/servicios/formacion-ia/sesion-de-ia-1-a-1)
 
 ## Consultoría y ayudas
 URL: https://studioemprende.com/servicios/consultoria-y-ayudas/

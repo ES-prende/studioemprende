@@ -336,8 +336,8 @@
 "2026-10-14T23:38:09"
 ],
 "precios.html": [
-"5b2f120214ea9d1b3e719f12d1220587ce80404f",
-"2026-10-14T23:38:09"
+"80d7c1857066de40db6b06e1901552d722bc34f7",
+"2026-10-15T12:13:45"
 ],
 "privacidad.html": [
 "b143d10547d6bf7e563ba1c5865df7e256c7600f",
@@ -876,32 +876,36 @@
 "2026-10-14T23:38:09"
 ],
 "servicios/formacion-ia.html": [
-"e7b642bfc88171ca06244868359d953e2cf2654f",
-"2026-10-14T23:38:09"
+"fa99a64bcf1a61cefffc445daecb09c52fdd0adc",
+"2026-10-15T12:13:45"
 ],
 "servicios/formacion-ia/formacion-obligatoria-ai-act.html": [
-"544bb6459089da004f6371df0e7ef043c9ce2b1c",
-"2026-10-14T23:38:09"
+"42055c76bf0a47dc5946f0b3a8c90f7edfed2d4a",
+"2026-10-15T12:13:27"
 ],
 "servicios/formacion-ia/formacion-por-sectores.html": [
-"7c5c943e888e4c1dbdcdf1b99969128e0b4f9bbf",
-"2026-10-14T23:38:09"
+"bbee3048b7bdddbf39bc3d320b726820ed325ca0",
+"2026-10-15T12:13:27"
 ],
 "servicios/formacion-ia/ia-para-autonomos-por-profesion.html": [
-"748b89039032d5b5f16c2bf1e1e906713d053774",
-"2026-10-14T23:38:09"
+"6c2122047c5f3fe83dbff26a90a6683ce84a93a6",
+"2026-10-15T12:13:27"
 ],
 "servicios/formacion-ia/ia-para-duenos-de-negocios-de-toda-la-vida.html": [
-"6c99514eeef009eba9b2420ad6dc5c06c3d0df43",
-"2026-10-14T23:38:09"
+"ba9cbc6cd52a15ef3d92a564dca3ff440aae5f60",
+"2026-10-15T12:13:27"
 ],
 "servicios/formacion-ia/mentoria-para-directivos.html": [
-"2e9201d84c95c34ba63de63dde3ad54b1296eaf5",
-"2026-10-14T23:38:09"
+"13235e1768348e4243cecc1ec85b19abb7cd5b58",
+"2026-10-15T12:13:27"
 ],
 "servicios/formacion-ia/politica-de-uso-de-ia-para-empresas.html": [
-"2d6b6a461d402e0dd94af16f9b0dcbdfb7b873b3",
-"2026-10-14T23:38:09"
+"acd0b4b905e63c3d6989edd8dae27758043dd02f",
+"2026-10-15T12:13:27"
+],
+"servicios/formacion-ia/sesion-de-ia-1-a-1.html": [
+"a06b1f1425cb1c3e43f634ece09f15da04a8fb53",
+"2026-10-15T12:13:45"
 ],
 "servicios/grandes-empresas.html": [
 "2b089c74a996f0c68b1f922999cb15fa64286336",
@@ -1584,7 +1588,7 @@
 "2026-10-14T23:38:09"
 ],
 "sobre-nosotros.html": [
-"2041737c79374653f3e1d737b27cd4705a25f1ee",
-"2026-10-14T23:38:09"
+"fe9398961b3824425131b185b6b383be111a5eb1",
+"2026-10-15T12:13:45"
 ]
 }

@@ -1,6 +1,7 @@
 import os, shutil, sys
 from html import escape as e
 sys.path.insert(0, os.path.dirname(__file__))
+import formacion as FORM
 from datos import SECCIONES, NORMATIVAS, NORM_EXTRA, SECTORES, PACKS, MENU
 from blog import ARTICULOS
 from alt_blog import ALT
@@ -382,6 +383,8 @@ import unicodedata, re as _re
 def slugify(t):
     t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode().lower()
     return _re.sub(r"[^a-z0-9]+", "-", t).strip("-")[:70]
+def _faq_html(fs):
+    return '<div class="faq">' + "".join("<details><summary>%s</summary><p>%s</p></details>" % (e(q), e(a)) for q, a in fs) + "</div>"
 # ---------- SERVICIOS ----------
 def migas(r, *items):
     global MIGAS
@@ -413,14 +416,17 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
     html = """<section class="page-hero"><div class="w">{m}<p class="kicker">{cat}</p><h1>{t}</h1><p class="lead">{i}</p>
 <div class="botones" style="margin-top:24px"><a class="btn btn-p" href="../contacto.html?servicio={s}#diagnostico">Pedir información</a><a class="btn btn-s" href="index.html">Ver todos los servicios</a></div></div></section>
 <section class="sec"><div class="w lateral"><div class="lateral-main">{c}</div>{a}</div></section>
-{rel}""".format(m=migas("../", ("Servicios", "index.html"), (titulo, None)), cat=dict(MENU)[menu], t=e(titulo), i=e(intro), s=slug, c=cuerpo, a=aside,
+{x}{rel}""".format(x=FORM.hub_extra("../").format(formador=FORM.tarjeta_formador("../"), faq=_faq_html(FORM.HUB_FAQS)) if slug == "formacion-ia" else "", m=migas("../", ("Servicios", "index.html"), (titulo, None)), cat=dict(MENU)[menu], t=e(titulo), i=e(intro), s=slug, c=cuerpo, a=aside,
                  rel=('<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">También te puede interesar</p><h2>Servicios relacionados</h2></div><div class="rejilla">%s</div></div></section>' % relh) if relh else "")
     gs = [g for g in GUIAS if g[0] in SERVICIO_GUIAS.get(slug, [])]
     if gs:
         html += '<section class="sec"><div class="w"><div class="cab"><p class="kicker">Guías para emprender</p><h2>Antes de empezar, te puede servir</h2></div><div class="rejilla">%s</div></div></section>' % "".join('<a class="tarjeta" href="../guias/%s.html"><h3>%s</h3><p>%s</p><span class="mas">Leer guía →</span></a>' % (g[0], e(g[4]), e(g[3][:120].rsplit(" ",1)[0] + "…")) for g in gs[:3])
     if slug in ("agentes-de-ia", "whatsapp-ia", "automatizacion-y-datos", "software-de-gestion", "erp-para-pymes"):
         html += '<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Nuestro agente de IA</p><h2>Conoce PIX, la IA que trabaja dentro de tu empresa</h2></div><p class="lead" style="max-width:760px">PIX se conecta a tus datos y herramientas, atiende por web, WhatsApp, correo y voz y completa procesos con aprobación humana. Desde 90 €/mes.</p><div class="botones" style="margin-top:20px"><a class="btn btn-p" href="pix/index.html">Descubrir PIX</a><a class="btn btn-s" href="pix/implantacion-y-precios.html">Precios de PIX</a></div></div></section>'
-    pagina("servicios/%s.html" % slug, "%s · Studio Emprende" % titulo, intro[:155], html + cta("../"))
+    if slug == "formacion-ia":
+        pagina("servicios/formacion-ia.html", "Formación en IA para empresas y equipos · Studio Emprende", "Formación en IA práctica para tu equipo: casos reales de cada área, normas de uso y seguimiento. Online o presencial, con Jordan García.", html + cta("../"), faqs=FORM.HUB_FAQS, ld_extra=[FORM.curso_hub(), FORM.JORDAN])
+    else:
+        pagina("servicios/%s.html" % slug, "%s · Studio Emprende" % titulo, intro[:155], html + cta("../"))
 
 
 # ---------- PAGINAS DE CADA FUNCION ----------
@@ -428,6 +434,7 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
     for b, items in bloques:
         for it in items:
             fs = slugify(it)
+            if slug == "formacion-ia" and fs == FORM.SESION_SLUG: continue
             herm = [x for x in items if x != it]
             hermh = "".join('<li><a href="%s.html">%s</a></li>' % (slugify(x), e(x)) for x in herm)
             otros = [(bb, ii) for bb, ii in bloques if bb != b]
@@ -447,9 +454,10 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
                  otros=('<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Más de %s</p><h2>Otras funciones</h2></div><div class="rejilla">%s</div></div></section>' % (e(titulo), otrosh)) if otrosh else "")
             pagina("servicios/%s/%s.html" % (slug, fs), "%s · %s · Studio Emprende" % (it, titulo), ("%s: %s" % (it, intro))[:155], html + cta("../../"))
 
+_ses = FORM.sesion_html(migas("../../", ("Servicios", "../index.html"), ("Formación en IA", "../formacion-ia.html"), ("Sesión de IA 1 a 1", None)), _faq_html(FORM.SESION_FAQS), "../../")
+pagina("servicios/formacion-ia/%s.html" % FORM.SESION_SLUG, FORM.SESION_TITULO, FORM.SESION_META, _ses + cta("../../"), faqs=FORM.SESION_FAQS, ld_extra=[FORM.curso_sesion(), FORM.JORDAN])
+
 # ---------- PIX (agente de IA empresarial) ----------
-def _faq_html(fs):
-    return '<div class="faq">' + "".join("<details><summary>%s</summary><p>%s</p></details>" % (e(q), e(a)) for q, a in fs) + "</div>"
 def _pix_nav(actual):
     return '<aside class="lateral-aside"><h3>PIX por dentro</h3><ul class="lista lista-enl" style="margin:8px 0 18px">%s</ul><a class="btn btn-claro" href="../../contacto.html?servicio=agentes-de-ia#diagnostico">Solicitar demo de PIX</a><a class="btn btn-borde-claro" href="implantacion-y-precios.html">Ver precios</a></aside>' % "".join(
         '<li><a style="color:#fff" href="%s">%s</a></li>' % ("index.html" if s == "" else s + ".html", e(n)) for s, n in [("", "Qué es PIX")] + [(x["slug"], x["nav"]) for x in PIX_PAGINAS] if s != actual)
@@ -499,8 +507,8 @@ for n, pr, d, dest in PACKS:
     _offers.append(of)
 _cat = {"@type": "OfferCatalog", "@id": DOM + "/precios#packs", "name": "Precios y packs", "url": DOM + "/precios", "itemListElement": _offers}
 pagina("precios.html", "Precios y packs de software, IA y webs · Studio Emprende", "Packs para empezar desde 990 € más 40 €/mes de soporte, o arma tu propio pack con solo lo que necesitas.",
-       '<section class="page-hero"><div class="w">%s<h1>Precios y packs</h1><p class="lead">Pago único por el pack y una cuota de 40 € al mes de soporte y mantenimiento. Precios sin IVA, vigentes desde octubre de 2026.</p></div></section><section class="sec"><div class="w"><h2 style="margin-bottom:24px">Packs para empezar</h2>%s</div></section><section class="sec sec-suave"><div class="w"><div class="cab"><h2>Preguntas frecuentes</h2></div>%s</div></section>%s'
-       % (migas("", ("Precios", None)), packs(""), faq(), cta("")), ld_extra=_cat, extra_pagina={"mainEntity": {"@id": DOM + "/precios#packs"}})
+       '<section class="page-hero"><div class="w">%s<h1>Precios y packs</h1><p class="lead">Pago único por el pack y una cuota de 40 € al mes de soporte y mantenimiento. Precios sin IVA, vigentes desde octubre de 2026.</p></div></section><section class="sec"><div class="w"><h2 style="margin-bottom:24px">Packs para empezar</h2>%s</div></section>%s<section class="sec sec-suave"><div class="w"><div class="cab"><h2>Preguntas frecuentes</h2></div>%s</div></section>%s'
+       % (migas("", ("Precios", None)), packs(""), FORM.banda_precios(), faq(), cta("")), ld_extra=_cat, extra_pagina={"mainEntity": {"@id": DOM + "/precios#packs"}})
 
 # ---------- NORMATIVAS ----------
 REV_FECHA = "2026-10-12"
@@ -572,7 +580,7 @@ pagina("gracias.html", "Mensaje recibido · Studio Emprende", "Hemos recibido tu
 
 # ---------- SOBRE NOSOTROS ----------
 pagina("sobre-nosotros.html", "Sobre nosotros · Studio Emprende", "Studio Emprende ayuda a emprendedores y pymes con software, IA y webs, 100 % online.",
-       '<section class="page-hero"><div class="w">%s<h1>Sobre nosotros</h1><p class="lead">Ayudamos a quien emprende a tener un negocio ordenado, visible y automatizado desde el primer día.</p></div></section><section class="sec"><div class="w rejilla"><div class="tarjeta"><h3>Siempre respondemos</h3><p>Un único interlocutor que conoce tu negocio.</p></div><div class="tarjeta"><h3>Entregamos en plazo</h3><p>Plazos cerrados desde el primer día.</p></div><div class="tarjeta"><h3>100 %% online</h3><p>Trabajamos con toda España y Latinoamérica.</p></div></div></div>%s</section>%s' % (migas("", ("Sobre nosotros", None)), HIST, cta("")), tipo_pagina="AboutPage")
+       '<section class="page-hero"><div class="w">%s<h1>Sobre nosotros</h1><p class="lead">Ayudamos a quien emprende a tener un negocio ordenado, visible y automatizado desde el primer día.</p></div></section><section class="sec"><div class="w rejilla"><div class="tarjeta"><h3>Siempre respondemos</h3><p>Un único interlocutor que conoce tu negocio.</p></div><div class="tarjeta"><h3>Entregamos en plazo</h3><p>Plazos cerrados desde el primer día.</p></div><div class="tarjeta"><h3>100 %% online</h3><p>Trabajamos con toda España y Latinoamérica.</p></div></div></div>%s</section>%s%s' % (migas("", ("Sobre nosotros", None)), HIST, FORM.equipo_html(""), cta("")), tipo_pagina="AboutPage", ld_extra=FORM.JORDAN)
 
 LEG = {"aviso-legal": AVISO, "privacidad": PRIVACIDAD, "cookies": COOKIES}
 # ---------- LEGALES ----------

@@ -70,7 +70,7 @@ SECCIONES = [
   ("Lo que nadie revisa", ["Correo que no llega a spam", "Dominios y renovaciones", "Vigilancia de suplantación", "Monitorización de la web 24/7", "Control del gasto en IA y suscripciones", "Propiedad de tu web y tus datos", "Herencia digital de la empresa"])]),
 ("formacion-ia", "formacion", "Formación en IA",
  "Formación práctica para tu equipo, bonificable por FUNDAE.",
- [("Cursos", ["Formación obligatoria AI Act", "Formación por sectores", "IA para autónomos por profesión", "IA para dueños de negocios de toda la vida", "Política de uso de IA para empresas", "Mentoría para directivos"])]),
+ [("Cursos", ["Formación obligatoria AI Act", "Formación por sectores", "IA para autónomos por profesión", "IA para dueños de negocios de toda la vida", "Política de uso de IA para empresas", "Mentoría para directivos", "Sesión de IA 1 a 1"])]),
 ("consultoria-y-ayudas", "formacion", "Consultoría y ayudas",
  "Te decimos dónde ahorrar y te ayudamos a financiarlo.",
  [("Servicios", ["Diagnóstico de digitalización gratuito", "Auditoría de IA para pymes", "Auditoría de procesos con informe de ahorro", "Segunda opinión tecnológica", "Gestión del Kit Digital y Kit Consulting", "Vigilancia de subvenciones", "Transformación digital por fases"])]),
