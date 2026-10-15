@@ -3,6 +3,7 @@ from html import escape as e
 sys.path.insert(0, os.path.dirname(__file__))
 import formacion as FORM
 import cursos_empresa as CE
+import funciones as FN
 from datos import SECCIONES, NORMATIVAS, NORM_EXTRA, SECTORES, PACKS, MENU
 from blog import ARTICULOS
 from alt_blog import ALT
@@ -454,6 +455,12 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
         for it in items:
             fs = slugify(it)
             if slug == "formacion-ia" and (fs == FORM.SESION_SLUG or fs in CE.SLUGS): continue
+            _fk = "%s/%s" % (slug, fs)
+            if _fk in FN.PAGINAS:
+                _c = FN.PAGINAS[_fk]
+                _h = FN.html(_fk, _c, migas("../../", ("Servicios", "../index.html"), (titulo, "../%s.html" % slug), (it, None)), _faq_html(_c["faqs"]), titulo)
+                pagina("servicios/%s/%s.html" % (slug, fs), _c["titulo"] + " · Studio Emprende", _c["meta"], _h + cta("../../"), faqs=_c["faqs"], fecha=FN.FECHA)
+                continue
             herm = [x for x in items if x != it]
             hermh = "".join('<li><a href="%s.html">%s</a></li>' % (slugify(x), e(x)) for x in herm)
             otros = [(bb, ii) for bb, ii in bloques if bb != b]
@@ -471,7 +478,7 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
 <aside class="lateral-aside"><h3>¿Te interesa?</h3><p style="color:#C9C1BB">Te contamos cómo encaja {tl} en tu negocio y te damos un presupuesto sin compromiso.</p><a class="btn btn-claro" href="../../contacto.html?servicio={s}&amp;funcion={fs}#diagnostico">Pedir información</a><a class="btn btn-borde-claro" href="../../precios.html">Ver packs</a></aside></div></section>
 {otros}""".format(m=migas("../../", ("Servicios", "../index.html"), (titulo, "../%s.html" % slug), (it, None)), cat=dict(MENU)[menu], b=e(b), t=e(it), tl=e(it[0].lower() + it[1:]), sec_l=e(titulo[0].lower() + titulo[1:]), intro=e(intro), s=slug, fs=fs, herm=hermh,
                  otros=('<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Más de %s</p><h2>Otras funciones</h2></div><div class="rejilla">%s</div></div></section>' % (e(titulo), otrosh)) if otrosh else "")
-            pagina("servicios/%s/%s.html" % (slug, fs), "%s · %s · Studio Emprende" % (it, titulo), ("%s: %s" % (it, intro))[:155], html + cta("../../"))
+            pagina("servicios/%s/%s.html" % (slug, fs), "%s · %s · Studio Emprende" % (it, titulo), ("%s: %s" % (it, intro))[:155], html + cta("../../"), indexar=False)
 
 _ses = FORM.sesion_html(migas("../../", ("Servicios", "../index.html"), ("Formación en IA", "../formacion-ia.html"), ("Sesión de IA 1 a 1", None)), _faq_html(FORM.SESION_FAQS), "../../")
 pagina("servicios/formacion-ia/%s.html" % FORM.SESION_SLUG, FORM.SESION_TITULO, FORM.SESION_META, _ses + cta("../../"), faqs=FORM.SESION_FAQS, ld_extra=[FORM.curso_sesion(), FORM.JORDAN])
@@ -728,7 +735,8 @@ full += "\n## Packs y precios\n" + "".join("- %s: %s. %s\n" % (n, p, d) for n, p
 for slug, menu, titulo, intro, bloques in SECCIONES:
     full += "\n## %s\nURL: %s/servicios/%s.html\n%s\n" % (titulo, DOM, slug, " ".join(intro.split()))
     for b, items in bloques:
-        full += "\n### %s\n" % b + "".join("- [%s](%s/servicios/%s/%s.html)\n" % (i, DOM, slug, slugify(i)) for i in items)
+        _ok = [i for i in items if "servicios/%s/%s.html" % (slug, slugify(i)) not in NOINDEX and "servicios/%s/%s.html" % (slug, slugify(i)) not in CANON]
+        full += "\n### %s\n" % b + "".join("- [%s](%s/servicios/%s/%s.html)\n" % (i, DOM, slug, slugify(i)) for i in _ok) + ("".join("- %s\n" % i for i in items if i not in _ok))
 for g in GUIAS:
     full += "\n## %s\nURL: %s/guias/%s.html\n%s\n" % (g[4], DOM, g[0], g[5]) + "".join("**%s**\n%s\n\n" % (q, a) for q, a in g[7])
 full += "\n## Normativas\n" + "".join("- %s (%s): %s\n" % (a, b, c) for a, b, c, d in NORMATIVAS)
