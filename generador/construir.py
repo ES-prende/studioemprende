@@ -4,6 +4,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 import formacion as FORM
 import cursos_empresa as CE
 import funciones as FN
+import partners as PT
 from datos import SECCIONES, NORMATIVAS, NORM_EXTRA, SECTORES, PACKS, MENU
 from blog import ARTICULOS
 from alt_blog import ALT
@@ -105,7 +106,7 @@ def pie(r):
 <div class="pie-top"><div class="pie-marca"><img src="{r}assets/img/logo-horizontal-blanco.svg" alt="Studio Emprende" width="200" height="56"><p>Software, IA y webs para emprender. 100 % online, en España y Latinoamérica.</p></div>
 <div class="pie-cols"><div><b>Productos</b>{prod}</div><div><b>Para quién</b>{quien}</div>
 <div><b>Recursos</b><a href="{r}guias/index.html">Guías para emprender</a><a href="{r}blog/index.html">Blog</a><a href="{r}normativas.html">Normativas</a><a href="{r}sectores.html">Sectores</a><a href="{r}precios.html">Precios</a><a href="{r}mapa-web.html">Mapa de la web</a></div>
-<div><b>Empresa</b><a href="{r}sobre-nosotros.html">Sobre nosotros</a><a href="{r}contacto.html">Contacto</a><a href="{r}contacto.html#diagnostico">Diagnóstico gratis</a></div><div><b>Contacto</b><a href="https://wa.me/34601869668" target="_blank" rel="noopener">WhatsApp 601 86 96 68</a><a href="mailto:info@studioemprende.com">info@studioemprende.com</a><span style="display:block;margin-top:8px">Calle Betis 3, 41449 Alcolea del Río (Sevilla)</span></div></div></div>
+<div><b>Empresa</b><a href="{r}sobre-nosotros.html">Sobre nosotros</a><a href="{r}partners.html">Hazte partner</a><a href="{r}contacto.html">Contacto</a><a href="{r}contacto.html#diagnostico">Diagnóstico gratis</a></div><div><b>Contacto</b><a href="https://wa.me/34601869668" target="_blank" rel="noopener">WhatsApp 601 86 96 68</a><a href="mailto:info@studioemprende.com">info@studioemprende.com</a><span style="display:block;margin-top:8px">Calle Betis 3, 41449 Alcolea del Río (Sevilla)</span></div></div></div>
 <div class="pie-base"><span>© 2026 Studio Emprende · INTELIGENCIA SEVILLA SL · NIF B88763818</span><span><a href="{r}aviso-legal.html">Aviso legal</a> · <a href="{r}privacidad.html">Privacidad</a> · <a href="{r}cookies.html">Cookies</a> · <a href="#" data-abrir-cookies>Configurar cookies</a></span></div>
 </div></footer>
 <script src="{r}assets/js/main.js"></script>
@@ -613,6 +614,8 @@ pagina("gracias.html", "Mensaje recibido · Studio Emprende", "Hemos recibido tu
 pagina("sobre-nosotros.html", "Sobre nosotros · Studio Emprende", "Studio Emprende ayuda a emprendedores y pymes con software, IA y webs, 100 % online.",
        '<section class="page-hero"><div class="w">%s<h1>Sobre nosotros</h1><p class="lead">Ayudamos a quien emprende a tener un negocio ordenado, visible y automatizado desde el primer día.</p></div></section><section class="sec"><div class="w rejilla"><div class="tarjeta"><h3>Siempre respondemos</h3><p>Un único interlocutor que conoce tu negocio.</p></div><div class="tarjeta"><h3>Entregamos en plazo</h3><p>Plazos cerrados desde el primer día.</p></div><div class="tarjeta"><h3>100 %% online</h3><p>Trabajamos con toda España y Latinoamérica.</p></div></div></div>%s</section>%s%s' % (migas("", ("Sobre nosotros", None)), HIST, FORM.equipo_html(""), cta("")), tipo_pagina="AboutPage", ld_extra=FORM.JORDAN)
 
+pagina("partners.html", PT.TITULO + " · Studio Emprende", PT.META, PT.html(migas("", ("Partners", None)), _faq_html(PT.FAQS), DOM) + cta(""), faqs=PT.FAQS)
+
 LEG = {"aviso-legal": AVISO, "privacidad": PRIVACIDAD, "cookies": COOKIES}
 # ---------- LEGALES ----------
 for slug, t in [("aviso-legal", "Aviso legal"), ("privacidad", "Política de privacidad"), ("cookies", "Política de cookies")]:
@@ -674,7 +677,7 @@ for slug, grupo, titulo, meta, h1, resumen, secciones, faqs, servs, blogs, rel i
     pagina("guias/%s.html" % slug, titulo, meta, html + cta("../"), ld_extra=art, tipo="article", faqs=faqs)
 
 # ---------- MAPA ----------
-grupos = [("Principal", [("Inicio", "index.html"), ("Servicios", "servicios/index.html"), ("Precios y packs", "precios.html"), ("Sectores", "sectores.html"), ("Normativas", "normativas.html"), ("Sobre nosotros", "sobre-nosotros.html"), ("Contacto y diagnóstico", "contacto.html")])]
+grupos = [("Principal", [("Inicio", "index.html"), ("Servicios", "servicios/index.html"), ("Precios y packs", "precios.html"), ("Sectores", "sectores.html"), ("Normativas", "normativas.html"), ("Sobre nosotros", "sobre-nosotros.html"), ("Programa de partners", "partners.html"), ("Contacto y diagnóstico", "contacto.html")])]
 for k, n in MENU:
     grupos.append((n, [(s[2], "servicios/%s.html" % s[0]) for s in by_menu(k)]))
 grupos.append(("Guías para emprender", [("Todas las guías", "guias/index.html")] + [(g[4], "guias/%s.html" % g[0]) for g in GUIAS]))
@@ -726,7 +729,7 @@ llms = "# Studio Emprende\n\n> %s\n\n## Empresa\n- Nombre comercial: Studio Empr
 llms += "".join("- [%s](%s/servicios/%s.html): %s\n" % (s[2], DOM, s[0], " ".join(s[3].split())) for s in SECCIONES)
 llms += "\n## PIX, agente de IA empresarial\n- [PIX](%s/servicios/pix/): %s\n" % (DOM, PIX_HUB["resumen"]) + "".join("- [%s](%s/servicios/pix/%s.html): %s\n" % (x["nav"], DOM, x["slug"], x["resumen"]) for x in PIX_PAGINAS)
 llms += "\n## Guías para emprender\n" + "".join("- [%s](%s/guias/%s.html): %s\n" % (g[4], DOM, g[0], g[5].split(". ")[0] + ".") for g in GUIAS)
-llms += "\n## Páginas clave\n- [Precios y packs](%s/precios.html)\n- [Normativas 2026-2027](%s/normativas.html)\n- [Sectores](%s/sectores.html)\n- [Contacto](%s/contacto.html)\n\n## Blog\n" % (DOM, DOM, DOM, DOM)
+llms += "\n## Páginas clave\n- [Precios y packs](%s/precios.html)\n- [Normativas 2026-2027](%s/normativas.html)\n- [Sectores](%s/sectores.html)\n- [Programa de partners](%s/partners.html)\n- [Contacto](%s/contacto.html)\n\n## Blog\n" % (DOM, DOM, DOM, DOM, DOM)
 llms += "".join("- [%s](%s/blog/%s.html): %s\n" % (a[1], DOM, a[0], a[2]) for a in ARTICULOS)
 llms += "\n## Optional\n- [Todas las funciones, página a página](%s/llms-full.txt)\n- [Mapa de la web](%s/mapa-web.html)\n- [Sitemap](%s/sitemap.xml)\n" % (DOM, DOM, DOM)
 open(OUT + "/llms.txt", "w").write(llms)
