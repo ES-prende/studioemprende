@@ -30,7 +30,7 @@
 - [CRM y domótica para alojamientos y casas](https://studioemprende.com/servicios/alojamientos-y-domotica/): Tu alojamiento funciona solo: reservas, llaves, registro de viajeros, consumo y limpieza en un único panel.
 - [Ciberseguridad, sistemas y cumplimiento](https://studioemprende.com/servicios/ciberseguridad-y-sistemas/): Tu empresa protegida y al día con la normativa europea.
 - [Tu departamento tecnológico](https://studioemprende.com/servicios/departamento-tecnologico/): Un solo interlocutor para web, software, IA y equipos, por cuota mensual.
-- [Formación en IA](https://studioemprende.com/servicios/formacion-ia/): Formación práctica para tu equipo, bonificable por FUNDAE.
+- [Formación en IA](https://studioemprende.com/servicios/formacion-ia/): Formación en IA para empresas y profesionales: práctica, con vuestras tareas reales, online o presencial y bonificable por FUNDAE.
 - [Consultoría y ayudas](https://studioemprende.com/servicios/consultoria-y-ayudas/): Te decimos dónde ahorrar y te ayudamos a financiarlo.
 - [Relevo y continuidad del negocio](https://studioemprende.com/servicios/relevo-y-continuidad/): Tu negocio vale lo que sabes tú. Hagamos que siga funcionando cuando no estés.
 - [Problemas que nadie resuelve](https://studioemprende.com/servicios/problemas-sin-resolver/): Morosidad, burocracia y falta de personal, con soluciones concretas.
@@ -112,6 +112,11 @@
 - [Contacto](https://studioemprende.com/contacto)
 
 ## Blog
+- [Formación bonificada para empresas: cómo usar el crédito de FUNDAE](https://studioemprende.com/blog/formacion-bonificada-para-empresas-fundae): Qué es la formación bonificada, cuánto crédito tiene tu empresa según su plantilla, qué cursos se pueden bonificar (también los de IA) y los pasos para no perder la bonificación.
+- [Plan de formación para empresas: cómo hacerlo en 6 pasos](https://studioemprende.com/blog/plan-de-formacion-para-empresas): Cómo hacer un plan de formación anual para tu empresa: detectar necesidades, priorizar, elegir formato, calcular presupuesto y medir si ha servido.
+- [Formación obligatoria en empresas: qué cursos tienes que dar en 2026](https://studioemprende.com/blog/formacion-obligatoria-en-empresas): Qué formación es obligatoria en una empresa en España: prevención de riesgos, igualdad y acoso, LGTBI, protección de datos, alimentos, IA y las 20 horas anuales del Estatuto.
+- [Formación en IA desde cero: qué curso elegir y cuánto cuesta](https://studioemprende.com/blog/formacion-en-ia-desde-cero): Cómo empezar a formarte en inteligencia artificial sin conocimientos previos: tipos de cursos, opciones gratis, cuánto cuestan y cómo elegir el que de verdad te sirve.
+- [ChatGPT, Gemini, Copilot o Claude: qué IA usar en tu empresa](https://studioemprende.com/blog/chatgpt-gemini-copilot-o-claude-para-empresas): Comparativa práctica de los cuatro asistentes de IA más usados en empresas: en qué destaca cada uno, cómo encaja con tus herramientas y qué revisar sobre privacidad.
 - [Qué es un ERP y cuándo lo necesita tu empresa](https://studioemprende.com/blog/que-es-un-erp-y-cuando-lo-necesito): Diferencia entre ERP, CRM y programa de gestión, señales de que te hace falta y cómo implantarlo sin parar el negocio.
 - [Cómo dejar de usar Excel en tu empresa sin perder datos](https://studioemprende.com/blog/como-dejar-de-usar-excel-en-mi-empresa): Señales de que el Excel se te ha quedado pequeño y cómo pasar a un programa de gestión paso a paso.
 - [Qué es Verifactu y cuándo te afecta](https://studioemprende.com/blog/que-es-verifactu-y-cuando-me-afecta): Explicación sencilla del sistema de facturación verificable de Hacienda y de los plazos para sociedades y autónomos.

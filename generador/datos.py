@@ -69,7 +69,7 @@ SECCIONES = [
  [("Tranquilidad", ["Soporte con un único interlocutor", "Mantenemos programas abandonados por su proveedor", "Prueba mensual de copias de seguridad", "Auditoría de accesos y licencias", "Documentación de sistemas", "Asesor de compras tecnológicas", "Informe mensual en lenguaje claro"]),
   ("Lo que nadie revisa", ["Correo que no llega a spam", "Dominios y renovaciones", "Vigilancia de suplantación", "Monitorización de la web 24/7", "Control del gasto en IA y suscripciones", "Propiedad de tu web y tus datos", "Herencia digital de la empresa"])]),
 ("formacion-ia", "formacion", "Formación en IA",
- "Formación práctica para tu equipo, bonificable por FUNDAE.",
+ "Formación en IA para empresas y profesionales: práctica, con vuestras tareas reales, online o presencial y bonificable por FUNDAE.",
  [("Cursos", ["Formación obligatoria AI Act", "Formación por sectores", "IA para autónomos por profesión", "IA para dueños de negocios de toda la vida", "Política de uso de IA para empresas", "Mentoría para directivos", "Sesión de IA 1 a 1"]),
   ("Formación de empleados a medida", ["Cursos de formación a medida para empresas", "Formación de empleados en un programa nuevo", "Plan de formación para nuevos empleados", "Curso de Excel para empresas"])]),
 ("consultoria-y-ayudas", "formacion", "Consultoría y ayudas",

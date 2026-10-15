@@ -6,6 +6,9 @@ import cursos_empresa as CE
 from datos import SECCIONES, NORMATIVAS, NORM_EXTRA, SECTORES, PACKS, MENU
 from blog import ARTICULOS
 from alt_blog import ALT
+import blog_formacion as BF
+ARTICULOS = BF.ARTICULOS + ARTICULOS
+ALT.update(BF.ALT)
 from guias import GUIAS, GRUPOS, SERVICIO_GUIAS
 from pix import PIX_HUB, PIX_PAGINAS
 from legales import HIST, AVISO, PRIVACIDAD, COOKIES
@@ -604,7 +607,10 @@ for slug, titulo, desc, fecha, cat, serv_rel, cuerpo in ARTICULOS:
     sr = [x for x in SECCIONES if x[0] == serv_rel][0]
     otros = "".join([tarjeta_blog(a, "") for a in ARTICULOS if a[0] != slug][:3])
     ld = ""
-    bp = {"@type": "BlogPosting", "headline": titulo, "description": desc, "inLanguage": "es", "articleSection": cat, "datePublished": "2026-10-12", "dateModified": "2026-10-12",
+    _fq = BF.FAQS.get(slug)
+    if _fq: cuerpo = cuerpo + '<h2>Preguntas frecuentes</h2>' + _faq_html(_fq)
+    _fd = BF.FECHA_ISO if slug in BF.FAQS else "2026-10-12"
+    bp = {"@type": "BlogPosting", "headline": titulo, "description": desc, "inLanguage": "es", "articleSection": cat, "datePublished": _fd, "dateModified": _fd,
           "image": ["%s/assets/img/blog/%s.jpg" % (DOM, slug), "%s/assets/img/blog/og/%s.jpg" % (DOM, slug)], "author": {"@id": DOM + "/#org"}, "publisher": {"@id": DOM + "/#org"},
           "mainEntityOfPage": "%s/blog/%s.html" % (DOM, slug)}
     html = """<section class="page-hero"><div class="w">{m}<p class="kicker">{cat} · {f}</p><h1>{t}</h1><p class="lead">{d}</p></div></section>
@@ -612,7 +618,7 @@ for slug, titulo, desc, fecha, cat, serv_rel, cuerpo in ARTICULOS:
 <aside class="lateral-aside"><h3>{st}</h3><p style="color:#C9C1BB">{si}</p><a class="btn btn-claro" href="../servicios/{ss}.html">Ver el servicio</a><a class="btn btn-borde-claro" href="../contacto.html?servicio={ss}#diagnostico">Pedir diagnóstico</a></aside></div></section>
 <section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Sigue leyendo</p><h2>Otros artículos</h2></div><div class="rejilla">{o}</div></div></section>{ld}""".format(fp=foto_blog(slug, ALT.get(slug, titulo), True), 
         m=migas("../", ("Blog", "index.html"), (titulo, None)), cat=e(cat), f=fecha, t=e(titulo), d=e(desc), c=cuerpo, sl=slug, st=e(sr[2]), si=e(sr[3]), ss=serv_rel, o=otros, ld=ld)
-    pagina("blog/%s.html" % slug, "%s · Studio Emprende" % titulo, desc, html + cta("../"), ld_extra=bp, tipo="article", og=DOM + "/assets/img/blog/og/%s.jpg" % slug)
+    pagina("blog/%s.html" % slug, "%s · Studio Emprende" % titulo, desc, html + cta("../"), ld_extra=bp, tipo="article", og=DOM + "/assets/img/blog/og/%s.jpg" % slug, faqs=_fq)
 
 # ---------- GUIAS ----------
 GD = {g[0]: g for g in GUIAS}

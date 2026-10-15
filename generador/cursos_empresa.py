@@ -12,7 +12,7 @@ CURSOS = [
  "meta": "Cursos de formación a medida para empresas: diseñamos el temario con tus procesos, tus documentos y tus programas para que la plantilla aplique lo aprendido.",
  "kicker": "Formación de empleados · In company",
  "h1": "Cursos de formación a medida para empresas, diseñados con tu operativa",
- "lead": "Cursos de formación a medida para empresas que se construyen a partir de cómo trabaja tu equipo: tus procesos, tus documentos y tus programas, no ejemplos inventados.",
+ "lead": "Cursos de formación a medida para empresas que se construyen a partir de cómo trabaja tu equipo: tus procesos, tus documentos y tus programas. Formación para empresas online o presencial, en toda España.",
  "respuesta": "Un curso a medida es una formación cuyo temario se escribe después de analizar cómo trabaja la empresa. Se practica con sus propios casos, se agrupa a la gente por puesto y termina con un ejercicio sobre una tarea real, de modo que lo aprendido se usa al día siguiente.",
  "secciones": [
   ("¿En qué se diferencia de un curso de catálogo?", None, [
@@ -27,6 +27,11 @@ CURSOS = [
     ("4. Impartición", "Online en directo o presencial, en sesiones cortas que no paran la actividad."),
     ("5. Comprobación", "Cada persona resuelve una tarea real al final. Así se ve qué ha calado y qué hay que reforzar."),
   ]),
+  ("¿Formación online para empresas o presencial?", "Elegimos el formato según cómo está repartido el equipo y qué se va a practicar.", [
+    ("Online en directo", "Para equipos en varias sedes o en teletrabajo. Sesiones cortas, con cámara y pantalla compartida, y grabación de las partes de consulta."),
+    ("Presencial", "Cuando la práctica es en una máquina, un almacén o un puesto concreto, o cuando el equipo trabaja junto."),
+    ("Mixto", "Arranque presencial y seguimiento online: lo más eficaz cuando hay que cambiar una forma de trabajar."),
+  ]),
   ("¿Qué temas se pueden trabajar?", "Lo que pida tu operativa. Los más habituales:", [
     ("Herramientas del día a día", "Excel, correo, documentos compartidos y el programa de gestión de la empresa."),
     ("IA aplicada al puesto", "Cómo usar la inteligencia artificial en las tareas de cada área, con normas claras sobre qué datos no se comparten."),
@@ -36,10 +41,10 @@ CURSOS = [
  "faqs": [
   ("¿Qué es la formación in company?", "Es la formación que se imparte para una sola empresa, adaptada a su actividad y a su equipo, en lugar de un curso abierto con alumnos de empresas distintas."),
   ("¿Cuánto cuesta un curso a medida?", "Depende del número de personas, de puestos y de horas. Tras el análisis de la operativa te damos un presupuesto cerrado, sin sorpresas."),
-  ("¿Se puede hacer online?", "Sí. Online en directo para equipos repartidos por España, o presencial si el equipo trabaja en un mismo sitio."),
+  ("¿Se puede bonificar con FUNDAE?", "Sí, con el crédito de formación de la empresa, si se comunica antes de empezar y se justifica la asistencia. Lo explicamos paso a paso en nuestro artículo sobre formación bonificada."),
   ("¿Quién lo imparte?", "Jordan García, formador de Studio Emprende, con el apoyo del equipo técnico cuando el curso toca un programa que hemos implantado nosotros."),
  ],
- "rel": [("formacion-de-empleados-en-un-programa-nuevo.html", "Formación de empleados en un programa nuevo"), ("plan-de-formacion-para-nuevos-empleados.html", "Plan de formación para nuevos empleados"), ("curso-de-excel-para-empresas.html", "Curso de Excel para empresas")],
+ "rel": [("formacion-de-empleados-en-un-programa-nuevo.html", "Formación de empleados en un programa nuevo"), ("plan-de-formacion-para-nuevos-empleados.html", "Plan de formación para nuevos empleados"), ("curso-de-excel-para-empresas.html", "Curso de Excel para empresas"), ("../../blog/plan-de-formacion-para-empresas.html", "Cómo hacer el plan de formación anual"), ("../../blog/formacion-bonificada-para-empresas-fundae.html", "Formación bonificada con FUNDAE")],
  "curso": True,
 },
 {
@@ -104,14 +109,14 @@ CURSOS = [
   ("¿Sirve para empresas pequeñas?", "Sí, y es donde más se nota: en un equipo de pocas personas, cada hora que alguien dedica a explicar lo mismo es una hora menos de trabajo."),
   ("¿Quién mantiene el manual al día?", "Os dejamos el formato y la costumbre de actualizarlo. Si lo prefieres, lo revisamos nosotros periódicamente."),
  ],
- "rel": [("../agentes-de-ia/asistente-interno-de-procedimientos.html", "Asistente interno de procedimientos"), ("../relevo-y-continuidad/manual-de-operaciones-con-video-e-ia.html", "Manual de operaciones con vídeo e IA"), ("cursos-de-formacion-a-medida-para-empresas.html", "Cursos de formación a medida para empresas")],
+ "rel": [("../../blog/formacion-obligatoria-en-empresas.html", "Qué formación es obligatoria por ley"), ("../agentes-de-ia/asistente-interno-de-procedimientos.html", "Asistente interno de procedimientos"), ("../relevo-y-continuidad/manual-de-operaciones-con-video-e-ia.html", "Manual de operaciones con vídeo e IA"), ("cursos-de-formacion-a-medida-para-empresas.html", "Cursos de formación a medida para empresas")],
  "curso": False,
 },
 {
  "item": "Curso de Excel para empresas",
  "slug": "curso-de-excel-para-empresas",
  "titulo": "Curso de Excel para empresas a medida",
- "meta": "Curso de Excel para empresas con las hojas reales de tu equipo: tablas dinámicas, fórmulas, limpieza de datos y automatización. Online o presencial.",
+ "meta": "Formación de Excel para empresas con las hojas reales de tu equipo: tablas dinámicas, fórmulas, Power Query y Excel con IA. Online o presencial.",
  "kicker": "Formación de empleados · Excel",
  "h1": "Curso de Excel para empresas, con las hojas que tu equipo ya usa",
  "lead": "Curso de Excel para empresas pensado para la plantilla: se trabaja sobre vuestras propias hojas de cálculo, por niveles y por puesto.",

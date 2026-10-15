@@ -24,6 +24,10 @@ HUB_FAQS = [
     ("¿Es online o presencial?", "Las dos. Online en directo para cualquier punto de España y presencial cuando el equipo lo prefiere."),
     ("¿Hay obligación legal de formar al equipo en IA?", "Sí, si tu empresa usa sistemas de IA. El artículo 4 del Reglamento europeo de IA (AI Act) exige desde el 2 de febrero de 2025 que el personal que los utiliza tenga un nivel suficiente de alfabetización en IA."),
     ("¿Entregáis materiales?", "Sí. Cada área se queda con sus instrucciones y ejemplos guardados, y la empresa con sus normas de uso de la IA por escrito."),
+    ("¿Cuánto cuesta la formación en IA para empresas?", "La sesión individual cuesta desde 40 € la hora (sin IVA). La formación para equipos se presupuesta cerrada según el número de personas, áreas y horas, después de la entrevista previa."),
+    ("¿La formación en IA es bonificable o subvencionada?", "Puede bonificarse con el crédito de formación que cada empresa tiene en FUNDAE, siempre que se comunique antes de empezar y se justifique la asistencia."),
+    ("¿Hay formación en IA gratis?", "Hay cursos gratuitos que explican los conceptos básicos. Lo que no suelen ofrecer es práctica sobre las tareas de tu empresa ni normas de uso adaptadas, que es donde se nota el ahorro."),
+    ("¿Formáis en ChatGPT, Copilot, Gemini y Claude?", "Sí. Trabajamos con la herramienta que ya tenga la empresa o ayudamos a elegir una según cómo trabajáis."),
     ("¿Y si solo soy yo, sin equipo?", "Para eso está la sesión de IA 1 a 1: una hora práctica sobre tu negocio desde 40 € la hora (sin IVA)."),
 ]
 
@@ -48,6 +52,22 @@ def hub_extra(r):
 <div class="tarjeta"><h3>Comercial</h3><p>Propuestas y presupuestos más rápidos, seguimiento de clientes y respuestas a las preguntas de siempre.</p></div>
 <div class="tarjeta"><h3>Operaciones</h3><p>Procedimientos escritos, partes e informes, y documentación interna que por fin está al día.</p></div>
 <div class="tarjeta"><h3>Dirección</h3><p>Informes para decidir, preparación de reuniones y la política de uso de la IA en la empresa.</p></div>
+</div></div></section>
+<section class="sec"><div class="w"><div class="cab"><p class="kicker">Herramientas</p><h2>¿Con qué herramientas de IA trabajamos?</h2></div>
+<p class="lead" style="max-width:760px;margin-bottom:20px">Formamos en la herramienta que ya uséis o os ayudamos a elegir una. Lo que cambia entre ellas lo explicamos en <a href="../blog/chatgpt-gemini-copilot-o-claude-para-empresas.html">ChatGPT, Gemini, Copilot o Claude: qué IA usar en tu empresa</a>.</p>
+<div class="rejilla">
+<div class="tarjeta"><h3>Formación en ChatGPT</h3><p>Instrucciones bien escritas, asistentes propios y análisis de documentos para el trabajo diario.</p></div>
+<div class="tarjeta"><h3>Formación en Copilot</h3><p>IA dentro de Outlook, Word, Excel y Teams para empresas que trabajan con Microsoft 365.</p></div>
+<div class="tarjeta"><h3>Formación en Gemini</h3><p>IA dentro de Gmail, Drive, Docs y Sheets para equipos que usan Google Workspace.</p></div>
+<div class="tarjeta"><h3>Formación en Claude</h3><p>Trabajo con documentos largos, redacción cuidada y análisis detallados.</p></div>
+</div></div></section>
+<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Por perfiles</p><h2>Formación en IA para cada perfil profesional</h2></div><div class="rejilla">
+<div class="tarjeta"><h3>Directivos y empresarios</h3><p>Dónde aplicar la IA en el negocio, cómo medir el retorno y qué riesgos vigilar. Ver <a href="formacion-ia/mentoria-para-directivos.html">mentoría para directivos</a>.</p></div>
+<div class="tarjeta"><h3>Recursos humanos</h3><p>Ofertas de empleo, cribado de candidaturas con criterio, planes de formación y comunicación interna.</p></div>
+<div class="tarjeta"><h3>Abogados y despachos</h3><p>Resumen de documentos, borradores y búsqueda en expedientes sin comprometer la confidencialidad.</p></div>
+<div class="tarjeta"><h3>Marketing y ventas</h3><p>Contenidos, campañas, propuestas comerciales y respuestas a clientes en la mitad de tiempo.</p></div>
+<div class="tarjeta"><h3>Administración y finanzas</h3><p>Conciliaciones, informes, revisión de facturas y hojas de cálculo con ayuda de la IA.</p></div>
+<div class="tarjeta"><h3>Autónomos y pymes</h3><p>Lo justo para ganar horas desde la primera semana. Ver <a href="formacion-ia/ia-para-autonomos-por-profesion.html">IA para autónomos por profesión</a>.</p></div>
 </div></div></section>
 <section class="sec"><div class="w"><div class="rejilla">
 {formador}
