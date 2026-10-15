@@ -478,7 +478,7 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
 <aside class="lateral-aside"><h3>¿Te interesa?</h3><p style="color:#C9C1BB">Te contamos cómo encaja {tl} en tu negocio y te damos un presupuesto sin compromiso.</p><a class="btn btn-claro" href="../../contacto.html?servicio={s}&amp;funcion={fs}#diagnostico">Pedir información</a><a class="btn btn-borde-claro" href="../../precios.html">Ver packs</a></aside></div></section>
 {otros}""".format(m=migas("../../", ("Servicios", "../index.html"), (titulo, "../%s.html" % slug), (it, None)), cat=dict(MENU)[menu], b=e(b), t=e(it), tl=e(it[0].lower() + it[1:]), sec_l=e(titulo[0].lower() + titulo[1:]), intro=e(intro), s=slug, fs=fs, herm=hermh,
                  otros=('<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Más de %s</p><h2>Otras funciones</h2></div><div class="rejilla">%s</div></div></section>' % (e(titulo), otrosh)) if otrosh else "")
-            pagina("servicios/%s/%s.html" % (slug, fs), "%s · %s · Studio Emprende" % (it, titulo), ("%s: %s" % (it, intro))[:155], html + cta("../../"), indexar=False)
+            pagina("servicios/%s/%s.html" % (slug, fs), "%s · %s · Studio Emprende" % (it, titulo), ("%s: %s" % (it, intro))[:155], html + cta("../../"), indexar=("servicios/%s/%s.html" % (slug, fs)) in CANON)
 
 _ses = FORM.sesion_html(migas("../../", ("Servicios", "../index.html"), ("Formación en IA", "../formacion-ia.html"), ("Sesión de IA 1 a 1", None)), _faq_html(FORM.SESION_FAQS), "../../")
 pagina("servicios/formacion-ia/%s.html" % FORM.SESION_SLUG, FORM.SESION_TITULO, FORM.SESION_META, _ses + cta("../../"), faqs=FORM.SESION_FAQS, ld_extra=[FORM.curso_sesion(), FORM.JORDAN])

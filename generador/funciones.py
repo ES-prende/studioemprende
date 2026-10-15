@@ -167,4 +167,9 @@ def html(key, c, migas_html, faq_html, sec_titulo):
 <section class="sec" style="padding-bottom:0"><div class="w"><div class="respuesta"><p class="kicker" style="margin:0 0 6px">Respuesta corta</p><p style="margin:0">{resp}</p></div></div></section>
 {secs}
 <section class="sec"><div class="w lateral"><div class="lateral-main"><div class="cab"><h2>Preguntas frecuentes</h2></div>{faq}</div><aside class="lateral-aside"><h3>Relacionado</h3><ul class="lista lista-enl" style="margin:8px 0 18px">{rel}</ul><a class="btn btn-claro" href="../../contacto.html?servicio={sec}&amp;funcion={sl}#diagnostico">Pedir información</a></aside></div></section>""".format(
-        m=migas_html, st=sec_titulo, h1=c["h1"], lead=c["lead"], sec=seccion, sl=slug, stl=sec_titulo[0].lower() + sec_titulo[1:], resp=c["respuesta"], secs=secs, faq=faq_html, rel=rel)
+        m=migas_html, st=sec_titulo, h1=c["h1"], lead=c["lead"], sec=seccion, sl=slug, stl=sec_titulo if sec_titulo.split()[0] in ("WhatsApp", "PIX", "CRM", "ERP", "IA") or sec_titulo[:2].isupper() else sec_titulo[0].lower() + sec_titulo[1:], resp=c["respuesta"], secs=secs, faq=faq_html, rel=rel)
+
+# Lotes de páginas de función reescritas (octubre 2026)
+import importlib as _il
+for _n in range(1, 11):
+    PAGINAS.update(_il.import_module("funciones_lote_%d" % _n).PAGINAS)

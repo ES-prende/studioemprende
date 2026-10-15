@@ -15,358 +15,358 @@ URL: https://studioemprende.com/servicios/software-de-gestion/
 ERP, CRM y programa de gestión por módulos, con app móvil y el agente de IA PIX. Paga solo por lo que usas: empieza con dos módulos y crece cuando quieras.
 
 ### Clientes y ventas (CRM)
+- [Ficha de cliente 360°](https://studioemprende.com/servicios/software-de-gestion/ficha-de-cliente-360)
+- [Embudo de ventas y oportunidades](https://studioemprende.com/servicios/software-de-gestion/embudo-de-ventas-y-oportunidades)
+- [Presupuestos que pasan a pedido y factura](https://studioemprende.com/servicios/software-de-gestion/presupuestos-que-pasan-a-pedido-y-factura)
+- [Seguimiento comercial y tareas](https://studioemprende.com/servicios/software-de-gestion/seguimiento-comercial-y-tareas)
+- [Comerciales y comisiones](https://studioemprende.com/servicios/software-de-gestion/comerciales-y-comisiones)
 - [Captación de leads desde web, WhatsApp y anuncios](https://studioemprende.com/servicios/software-de-gestion/captacion-de-leads-desde-web-whatsapp-y-anuncios)
-- Ficha de cliente 360°
-- Embudo de ventas y oportunidades
-- Presupuestos que pasan a pedido y factura
-- Seguimiento comercial y tareas
-- Comerciales y comisiones
-- Campañas de email y WhatsApp
-- Fidelización y bonos
+- [Campañas de email y WhatsApp](https://studioemprende.com/servicios/software-de-gestion/campanas-de-email-y-whatsapp)
+- [Fidelización y bonos](https://studioemprende.com/servicios/software-de-gestion/fidelizacion-y-bonos)
 
 ### Facturación y finanzas
 - [Facturación con Verifactu](https://studioemprende.com/servicios/software-de-gestion/facturacion-con-verifactu)
 - [Factura electrónica B2B](https://studioemprende.com/servicios/software-de-gestion/factura-electronica-b2b)
 - [Cobros, impagos y semáforo de clientes](https://studioemprende.com/servicios/software-de-gestion/cobros-impagos-y-semaforo-de-clientes)
 - [Previsión de tesorería](https://studioemprende.com/servicios/software-de-gestion/prevision-de-tesoreria)
-- Lectura automática de facturas de proveedores
-- Remesas y domiciliaciones
-- Conexión con tu asesoría
+- [Lectura automática de facturas de proveedores](https://studioemprende.com/servicios/software-de-gestion/lectura-automatica-de-facturas-de-proveedores)
+- [Remesas y domiciliaciones](https://studioemprende.com/servicios/software-de-gestion/remesas-y-domiciliaciones)
+- [Conexión con tu asesoría](https://studioemprende.com/servicios/software-de-gestion/conexion-con-tu-asesoria)
 
 ### Agenda y servicios
 - [Agenda y citas online](https://studioemprende.com/servicios/software-de-gestion/agenda-y-citas-online)
-- Reservas de mesas, salas, clases o servicios
-- Recordatorios automáticos por WhatsApp
-- Bonos, cuotas y suscripciones
+- [Reservas de mesas, salas, clases o servicios](https://studioemprende.com/servicios/software-de-gestion/reservas-de-mesas-salas-clases-o-servicios)
+- [Recordatorios automáticos por WhatsApp](https://studioemprende.com/servicios/software-de-gestion/recordatorios-automaticos-por-whatsapp)
+- [Bonos, cuotas y suscripciones](https://studioemprende.com/servicios/software-de-gestion/bonos-cuotas-y-suscripciones)
 
 ### Operaciones
-- Órdenes y partes de trabajo con firma y fotos
-- Obras y proyectos: presupuesto frente a real
-- Presupuestos desde mediciones
-- Postventa, garantías e incidencias
-- Planificación de rutas
-- Mantenimientos programados
+- [Órdenes y partes de trabajo con firma y fotos](https://studioemprende.com/servicios/software-de-gestion/ordenes-y-partes-de-trabajo-con-firma-y-fotos)
+- [Obras y proyectos: presupuesto frente a real](https://studioemprende.com/servicios/software-de-gestion/obras-y-proyectos-presupuesto-frente-a-real)
+- [Presupuestos desde mediciones](https://studioemprende.com/servicios/software-de-gestion/presupuestos-desde-mediciones)
+- [Postventa, garantías e incidencias](https://studioemprende.com/servicios/software-de-gestion/postventa-garantias-e-incidencias)
+- [Planificación de rutas](https://studioemprende.com/servicios/software-de-gestion/planificacion-de-rutas)
+- [Mantenimientos programados](https://studioemprende.com/servicios/software-de-gestion/mantenimientos-programados)
 - Gestión de flotas
 
 ### Almacén y compras
-- Inventario en varios almacenes
-- Pedidos a proveedores
-- Lotes, trazabilidad y caducidades
-- Previsión de stock con IA
-- Etiquetas, códigos de barras y QR
+- [Inventario en varios almacenes](https://studioemprende.com/servicios/software-de-gestion/inventario-en-varios-almacenes)
+- [Pedidos a proveedores](https://studioemprende.com/servicios/software-de-gestion/pedidos-a-proveedores)
+- [Lotes, trazabilidad y caducidades](https://studioemprende.com/servicios/software-de-gestion/lotes-trazabilidad-y-caducidades)
+- [Previsión de stock con IA](https://studioemprende.com/servicios/software-de-gestion/prevision-de-stock-con-ia)
+- [Etiquetas, códigos de barras y QR](https://studioemprende.com/servicios/software-de-gestion/etiquetas-codigos-de-barras-y-qr)
 
 ### Equipo y RRHH
-- Fichador y registro de jornada
-- Turnos, vacaciones y ausencias
-- Documentación del empleado
-- Productividad y objetivos
-- Onboarding con IA
-- Canal de denuncias (Ley 2/2023)
+- [Fichador y registro de jornada](https://studioemprende.com/servicios/software-de-gestion/fichador-y-registro-de-jornada)
+- [Turnos, vacaciones y ausencias](https://studioemprende.com/servicios/software-de-gestion/turnos-vacaciones-y-ausencias)
+- [Documentación del empleado](https://studioemprende.com/servicios/software-de-gestion/documentacion-del-empleado)
+- [Productividad y objetivos](https://studioemprende.com/servicios/software-de-gestion/productividad-y-objetivos)
+- [Onboarding con IA](https://studioemprende.com/servicios/software-de-gestion/onboarding-con-ia)
+- [Canal de denuncias (Ley 2/2023)](https://studioemprende.com/servicios/software-de-gestion/canal-de-denuncias-ley-2-2023)
 
 ### Comercio y punto de venta
-- TPV
-- Tienda online conectada
-- Catálogo y tarifas
+- [TPV](https://studioemprende.com/servicios/software-de-gestion/tpv)
+- [Tienda online conectada](https://studioemprende.com/servicios/software-de-gestion/tienda-online-conectada)
+- [Catálogo y tarifas](https://studioemprende.com/servicios/software-de-gestion/catalogo-y-tarifas)
 - Presupuestador y configurador online
 - Portal de pedidos B2B
 
 ### Dirección y datos
-- Cuadro de mando en tiempo real
-- Informe semanal automático por WhatsApp o voz
-- Rentabilidad por cliente, servicio y empleado
+- [Cuadro de mando en tiempo real](https://studioemprende.com/servicios/software-de-gestion/cuadro-de-mando-en-tiempo-real)
+- [Informe semanal automático por WhatsApp o voz](https://studioemprende.com/servicios/software-de-gestion/informe-semanal-automatico-por-whatsapp-o-voz)
+- [Rentabilidad por cliente, servicio y empleado](https://studioemprende.com/servicios/software-de-gestion/rentabilidad-por-cliente-servicio-y-empleado)
 
 ### Conexiones
+- [Portal del cliente y del proveedor](https://studioemprende.com/servicios/software-de-gestion/portal-del-cliente-y-del-proveedor)
+- [App móvil](https://studioemprende.com/servicios/software-de-gestion/app-movil)
+- [App para técnicos de campo](https://studioemprende.com/servicios/software-de-gestion/app-para-tecnicos-de-campo)
+- [Contratos con firma online](https://studioemprende.com/servicios/software-de-gestion/contratos-con-firma-online)
 - Integraciones por API
-- Portal del cliente y del proveedor
-- App móvil
-- App para técnicos de campo
-- Contratos con firma online
 
 ## ERP para pymes
 URL: https://studioemprende.com/servicios/erp-para-pymes/
 Un ERP une en un solo programa ventas, compras, almacén, facturación, equipo y contabilidad. Lo montamos por módulos y a medida, con PIX integrado y migración incluida.
 
 ### Qué incluye
-- CRM y ventas conectados a facturación
-- Compras, proveedores y almacén
-- Facturación con Verifactu y factura electrónica B2B
-- Producción, obras o servicios según tu sector
-- Equipo, fichaje y turnos
-- Contabilidad o conexión con tu asesoría
+- [CRM y ventas conectados a facturación](https://studioemprende.com/servicios/erp-para-pymes/crm-y-ventas-conectados-a-facturacion)
+- [Compras, proveedores y almacén](https://studioemprende.com/servicios/erp-para-pymes/compras-proveedores-y-almacen)
+- [Facturación con Verifactu y factura electrónica B2B](https://studioemprende.com/servicios/erp-para-pymes/facturacion-con-verifactu-y-factura-electronica-b2b)
+- [Producción, obras o servicios según tu sector](https://studioemprende.com/servicios/erp-para-pymes/produccion-obras-o-servicios-segun-tu-sector)
+- [Equipo, fichaje y turnos](https://studioemprende.com/servicios/erp-para-pymes/equipo-fichaje-y-turnos)
+- [Contabilidad o conexión con tu asesoría](https://studioemprende.com/servicios/erp-para-pymes/contabilidad-o-conexion-con-tu-asesoria)
 - Cuadro de mando en tiempo real
 
 ### Cómo lo implantamos
-- Análisis de tus procesos y elección de módulos
-- Migración desde Excel u otro programa
-- Implantación por fases para no parar el negocio
-- Formación del equipo con casos reales
-- Acompañamiento de 30 a 90 días
+- [Análisis de tus procesos y elección de módulos](https://studioemprende.com/servicios/erp-para-pymes/analisis-de-tus-procesos-y-eleccion-de-modulos)
+- [Migración desde Excel u otro programa](https://studioemprende.com/servicios/erp-para-pymes/migracion-desde-excel-u-otro-programa)
+- [Implantación por fases para no parar el negocio](https://studioemprende.com/servicios/erp-para-pymes/implantacion-por-fases-para-no-parar-el-negocio)
+- [Formación del equipo con casos reales](https://studioemprende.com/servicios/erp-para-pymes/formacion-del-equipo-con-casos-reales)
+- [Acompañamiento de 30 a 90 días](https://studioemprende.com/servicios/erp-para-pymes/acompanamiento-de-30-a-90-dias)
 
 ### Por qué a medida
-- Pagas solo los módulos que usas
-- Se adapta a tu forma de trabajar, no al revés
-- Crece contigo: añades módulos cuando los necesitas
-- PIX dentro del ERP: pregúntale en lenguaje normal
-- Conexión con tu tienda, banco y otras herramientas
+- [Pagas solo los módulos que usas](https://studioemprende.com/servicios/erp-para-pymes/pagas-solo-los-modulos-que-usas)
+- [Se adapta a tu forma de trabajar, no al revés](https://studioemprende.com/servicios/erp-para-pymes/se-adapta-a-tu-forma-de-trabajar-no-al-reves)
+- [Crece contigo: añades módulos cuando los necesitas](https://studioemprende.com/servicios/erp-para-pymes/crece-contigo-anades-modulos-cuando-los-necesitas)
+- [PIX dentro del ERP: pregúntale en lenguaje normal](https://studioemprende.com/servicios/erp-para-pymes/pix-dentro-del-erp-preguntale-en-lenguaje-normal)
+- [Conexión con tu tienda, banco y otras herramientas](https://studioemprende.com/servicios/erp-para-pymes/conexion-con-tu-tienda-banco-y-otras-herramientas)
 
 ## Apps móviles a medida
 URL: https://studioemprende.com/servicios/apps-moviles/
 Apps para tus clientes y para tu equipo, conectadas a tu programa de gestión y a PIX, publicadas en Google Play y App Store.
 
 ### Qué hacemos
-- App para clientes: reservas, pedidos, fidelización y avisos
-- App interna para empleados y técnicos
-- App para socios, alumnos o pacientes
-- App de catálogo y pedidos para distribuidores
-- Publicación en Google Play y App Store
-- Mantenimiento y actualizaciones
+- [App para clientes: reservas, pedidos, fidelización y avisos](https://studioemprende.com/servicios/apps-moviles/app-para-clientes-reservas-pedidos-fidelizacion-y-avisos)
+- [App interna para empleados y técnicos](https://studioemprende.com/servicios/apps-moviles/app-interna-para-empleados-y-tecnicos)
+- [App para socios, alumnos o pacientes](https://studioemprende.com/servicios/apps-moviles/app-para-socios-alumnos-o-pacientes)
+- [App de catálogo y pedidos para distribuidores](https://studioemprende.com/servicios/apps-moviles/app-de-catalogo-y-pedidos-para-distribuidores)
+- [Publicación en Google Play y App Store](https://studioemprende.com/servicios/apps-moviles/publicacion-en-google-play-y-app-store)
+- [Mantenimiento y actualizaciones](https://studioemprende.com/servicios/apps-moviles/mantenimiento-y-actualizaciones)
 
 ## Software especializado de alto valor
 URL: https://studioemprende.com/servicios/software-especializado/
 Herramientas que resuelven una obligación legal, ahorran muchas horas o venden por ti, pensadas para pymes.
 
 ### Cumplimiento sectorial
-- APPCC digital para hostelería y alimentación
-- Coordinación de actividades empresariales (CAE)
-- Registro de mantenimientos obligatorios
-- Gestión de calidad ISO sin papel
-- Huella de carbono para proveedores
+- [APPCC digital para hostelería y alimentación](https://studioemprende.com/servicios/software-especializado/appcc-digital-para-hosteleria-y-alimentacion)
+- [Coordinación de actividades empresariales (CAE)](https://studioemprende.com/servicios/software-especializado/coordinacion-de-actividades-empresariales-cae)
+- [Registro de mantenimientos obligatorios](https://studioemprende.com/servicios/software-especializado/registro-de-mantenimientos-obligatorios)
+- [Gestión de calidad ISO sin papel](https://studioemprende.com/servicios/software-especializado/gestion-de-calidad-iso-sin-papel)
+- [Huella de carbono para proveedores](https://studioemprende.com/servicios/software-especializado/huella-de-carbono-para-proveedores)
 
 ### Ventas automatizadas
-- Presupuestador y configurador online
-- Portal de pedidos B2B
-- Tarificador para corredurías
-- Contratos y firma automatizados
+- [Presupuestador y configurador online](https://studioemprende.com/servicios/software-especializado/presupuestador-y-configurador-online)
+- [Portal de pedidos B2B](https://studioemprende.com/servicios/software-especializado/portal-de-pedidos-b2b)
+- [Tarificador para corredurías](https://studioemprende.com/servicios/software-especializado/tarificador-para-corredurias)
+- [Contratos y firma automatizados](https://studioemprende.com/servicios/software-especializado/contratos-y-firma-automatizados)
 
 ### Industria y operaciones
-- Planificación de producción
-- Mantenimiento predictivo con sensores
-- Gestión de flotas
+- [Planificación de producción](https://studioemprende.com/servicios/software-especializado/planificacion-de-produccion)
+- [Mantenimiento predictivo con sensores](https://studioemprende.com/servicios/software-especializado/mantenimiento-predictivo-con-sensores)
+- [Gestión de flotas](https://studioemprende.com/servicios/software-especializado/gestion-de-flotas)
 
 ### Para revender
-- Portal en marca blanca para gestorías
-- Plataforma de formación interna (LMS)
-- App propia para negocios con clientes recurrentes
+- [Portal en marca blanca para gestorías](https://studioemprende.com/servicios/software-especializado/portal-en-marca-blanca-para-gestorias)
+- [Plataforma de formación interna (LMS)](https://studioemprende.com/servicios/software-especializado/plataforma-de-formacion-interna-lms)
+- [App propia para negocios con clientes recurrentes](https://studioemprende.com/servicios/software-especializado/app-propia-para-negocios-con-clientes-recurrentes)
 
 ## Migraciones e integraciones
 URL: https://studioemprende.com/servicios/migraciones-e-integraciones/
 Dejamos atrás el Excel y los programas que no se hablan entre sí, sin perder datos.
 
 ### Servicios
-- Migración de Excel a programa de gestión
-- Migración desde Holded, Clientify, HubSpot y otros
-- Unificar varios programas en uno
-- Integraciones por API
-- Conectar ERP, tienda, CRM y contabilidad
-- Rescate de software antiguo
-- Digitalización de archivo en papel
+- [Migración de Excel a programa de gestión](https://studioemprende.com/servicios/migraciones-e-integraciones/migracion-de-excel-a-programa-de-gestion)
+- [Migración desde Holded, Clientify, HubSpot y otros](https://studioemprende.com/servicios/migraciones-e-integraciones/migracion-desde-holded-clientify-hubspot-y-otros)
+- [Unificar varios programas en uno](https://studioemprende.com/servicios/migraciones-e-integraciones/unificar-varios-programas-en-uno)
+- [Integraciones por API](https://studioemprende.com/servicios/migraciones-e-integraciones/integraciones-por-api)
+- [Conectar ERP, tienda, CRM y contabilidad](https://studioemprende.com/servicios/migraciones-e-integraciones/conectar-erp-tienda-crm-y-contabilidad)
+- [Rescate de software antiguo](https://studioemprende.com/servicios/migraciones-e-integraciones/rescate-de-software-antiguo)
+- [Digitalización de archivo en papel](https://studioemprende.com/servicios/migraciones-e-integraciones/digitalizacion-de-archivo-en-papel)
 
 ## Agentes de IA
 URL: https://studioemprende.com/servicios/agentes-de-ia/
 Asistentes que atienden, presupuestan, cobran y trabajan por ti, entrenados con la información de tu negocio.
 
 ### Atención
-- Chatbot para tu web con PIX
-- Recepcionista de voz y atención fuera de horario
-- Clasificación y respuesta de correos
-- Respuesta a reseñas de Google
-- Alta automática de clientes y pacientes
+- [Chatbot para tu web con PIX](https://studioemprende.com/servicios/agentes-de-ia/chatbot-para-tu-web-con-pix)
+- [Recepcionista de voz y atención fuera de horario](https://studioemprende.com/servicios/agentes-de-ia/recepcionista-de-voz-y-atencion-fuera-de-horario)
+- [Clasificación y respuesta de correos](https://studioemprende.com/servicios/agentes-de-ia/clasificacion-y-respuesta-de-correos)
+- [Respuesta a reseñas de Google](https://studioemprende.com/servicios/agentes-de-ia/respuesta-a-resenas-de-google)
+- [Alta automática de clientes y pacientes](https://studioemprende.com/servicios/agentes-de-ia/alta-automatica-de-clientes-y-pacientes)
 
 ### Trabajo completo
-- Agentes que gestionan pedidos, presupuestos o incidencias de principio a fin
-- Presupuestos automáticos
-- Cobros e impagos
-- Agente documental para gestorías
-- Agente inmobiliario
-- Revisión de contratos para despachos
-- Licitaciones públicas
-- Venta adicional en pedidos y reservas
+- [Agentes que gestionan pedidos, presupuestos o incidencias de principio a fin](https://studioemprende.com/servicios/agentes-de-ia/agentes-que-gestionan-pedidos-presupuestos-o-incidencias-de-principio-)
+- [Presupuestos automáticos](https://studioemprende.com/servicios/agentes-de-ia/presupuestos-automaticos)
+- [Cobros e impagos](https://studioemprende.com/servicios/agentes-de-ia/cobros-e-impagos)
+- [Agente documental para gestorías](https://studioemprende.com/servicios/agentes-de-ia/agente-documental-para-gestorias)
+- [Agente inmobiliario](https://studioemprende.com/servicios/agentes-de-ia/agente-inmobiliario)
+- [Revisión de contratos para despachos](https://studioemprende.com/servicios/agentes-de-ia/revision-de-contratos-para-despachos)
+- [Licitaciones públicas](https://studioemprende.com/servicios/agentes-de-ia/licitaciones-publicas)
+- [Venta adicional en pedidos y reservas](https://studioemprende.com/servicios/agentes-de-ia/venta-adicional-en-pedidos-y-reservas)
 
 ### IA privada
-- IA con los datos de tu empresa, sin que salgan fuera
-- IA en servidor propio
-- Asistente interno de procedimientos
-- Departamento de IA externalizado
-- Mantenimiento de agentes y automatizaciones
+- [IA con los datos de tu empresa, sin que salgan fuera](https://studioemprende.com/servicios/agentes-de-ia/ia-con-los-datos-de-tu-empresa-sin-que-salgan-fuera)
+- [IA en servidor propio](https://studioemprende.com/servicios/agentes-de-ia/ia-en-servidor-propio)
+- [Asistente interno de procedimientos](https://studioemprende.com/servicios/agentes-de-ia/asistente-interno-de-procedimientos)
+- [Departamento de IA externalizado](https://studioemprende.com/servicios/agentes-de-ia/departamento-de-ia-externalizado)
+- [Mantenimiento de agentes y automatizaciones](https://studioemprende.com/servicios/agentes-de-ia/mantenimiento-de-agentes-y-automatizaciones)
 
 ## WhatsApp IA
 URL: https://studioemprende.com/servicios/whatsapp-ia/
 Tu WhatsApp atiende, agenda y recuerda citas solo, sin que pierdas ningún cliente.
 
 ### Servicios
-- Asistente de IA para WhatsApp
-- Citas y recordatorios automáticos
-- Reactivación de clientes y pacientes inactivos
+- [Asistente de IA para WhatsApp](https://studioemprende.com/servicios/whatsapp-ia/asistente-de-ia-para-whatsapp)
+- [Citas y recordatorios automáticos](https://studioemprende.com/servicios/whatsapp-ia/citas-y-recordatorios-automaticos)
+- [Reactivación de clientes y pacientes inactivos](https://studioemprende.com/servicios/whatsapp-ia/reactivacion-de-clientes-y-pacientes-inactivos)
 
 ## Automatización y datos
 URL: https://studioemprende.com/servicios/automatizacion-y-datos/
 Lo repetitivo se hace solo y tú ves tu negocio en tiempo real.
 
 ### Servicios
-- Automatización de administración, facturas y cobros
-- Lectura automática de documentos hacia tu programa
-- Previsión de ventas y stock
-- Clientes en riesgo de irse
-- Previsión de tesorería y control de costes
-- Cuadro de mando de dirección
-- Informe semanal por WhatsApp o voz
-- Optimización de rutas
+- [Automatización de administración, facturas y cobros](https://studioemprende.com/servicios/automatizacion-y-datos/automatizacion-de-administracion-facturas-y-cobros)
+- [Lectura automática de documentos hacia tu programa](https://studioemprende.com/servicios/automatizacion-y-datos/lectura-automatica-de-documentos-hacia-tu-programa)
+- [Previsión de ventas y stock](https://studioemprende.com/servicios/automatizacion-y-datos/prevision-de-ventas-y-stock)
+- [Clientes en riesgo de irse](https://studioemprende.com/servicios/automatizacion-y-datos/clientes-en-riesgo-de-irse)
+- [Previsión de tesorería y control de costes](https://studioemprende.com/servicios/automatizacion-y-datos/prevision-de-tesoreria-y-control-de-costes)
+- [Cuadro de mando de dirección](https://studioemprende.com/servicios/automatizacion-y-datos/cuadro-de-mando-de-direccion)
+- [Informe semanal por WhatsApp o voz](https://studioemprende.com/servicios/automatizacion-y-datos/informe-semanal-por-whatsapp-o-voz)
+- [Optimización de rutas](https://studioemprende.com/servicios/automatizacion-y-datos/optimizacion-de-rutas)
 
 ## Webs
 URL: https://studioemprende.com/servicios/webs/
 Webs rápidas, accesibles y conectadas a tu gestión: cada contacto entra directo a tu CRM.
 
 ### Tipos de web
-- Web corporativa con SEO
-- Landing pages para campañas
-- Tienda online
-- Webs scroll 3D inmersivas
-- Web con CRM integrado
-- Web con reservas y citas
-- Webs multidioma para España y Latinoamérica
-- Webs para startups
+- [Web corporativa con SEO](https://studioemprende.com/servicios/webs/web-corporativa-con-seo)
+- [Landing pages para campañas](https://studioemprende.com/servicios/webs/landing-pages-para-campanas)
+- [Tienda online](https://studioemprende.com/servicios/webs/tienda-online)
+- [Webs scroll 3D inmersivas](https://studioemprende.com/servicios/webs/webs-scroll-3d-inmersivas)
+- [Web con CRM integrado](https://studioemprende.com/servicios/webs/web-con-crm-integrado)
+- [Web con reservas y citas](https://studioemprende.com/servicios/webs/web-con-reservas-y-citas)
+- [Webs multidioma para España y Latinoamérica](https://studioemprende.com/servicios/webs/webs-multidioma-para-espana-y-latinoamerica)
+- [Webs para startups](https://studioemprende.com/servicios/webs/webs-para-startups)
 
 ### IA en la web
-- Chatbot PIX
-- Contenido personalizado según el visitante
-- Pruebas A/B automáticas
-- Buscador inteligente
+- [Chatbot PIX](https://studioemprende.com/servicios/webs/chatbot-pix)
+- [Contenido personalizado según el visitante](https://studioemprende.com/servicios/webs/contenido-personalizado-segun-el-visitante)
+- [Pruebas A/B automáticas](https://studioemprende.com/servicios/webs/pruebas-a-b-automaticas)
+- [Buscador inteligente](https://studioemprende.com/servicios/webs/buscador-inteligente)
 
 ### Rendimiento y cumplimiento
-- Velocidad y Core Web Vitals
-- Auditoría de conversión
-- Accesibilidad web (Ley 11/2023)
-- Aviso legal, privacidad y cookies
+- [Velocidad y Core Web Vitals](https://studioemprende.com/servicios/webs/velocidad-y-core-web-vitals)
+- [Auditoría de conversión](https://studioemprende.com/servicios/webs/auditoria-de-conversion)
+- [Accesibilidad web (Ley 11/2023)](https://studioemprende.com/servicios/webs/accesibilidad-web-ley-11-2023)
+- [Aviso legal, privacidad y cookies](https://studioemprende.com/servicios/webs/aviso-legal-privacidad-y-cookies)
 
 ### Mantenimiento
-- Mantenimiento mensual
-- Rescate de webs antiguas o hackeadas
-- Migración desde Wix o Squarespace
+- [Mantenimiento mensual](https://studioemprende.com/servicios/webs/mantenimiento-mensual)
+- [Rescate de webs antiguas o hackeadas](https://studioemprende.com/servicios/webs/rescate-de-webs-antiguas-o-hackeadas)
+- [Migración desde Wix o Squarespace](https://studioemprende.com/servicios/webs/migracion-desde-wix-o-squarespace)
 
 ## Presencia digital y crecimiento
 URL: https://studioemprende.com/servicios/presencia-digital/
 Que te encuentren en Google, en redes y en las respuestas de ChatGPT.
 
 ### Visibilidad
-- Google Business Profile
-- SEO local y por sectores
-- SEO programático
-- Aparecer en ChatGPT y Gemini (GEO)
-- Analítica web
+- [Google Business Profile](https://studioemprende.com/servicios/presencia-digital/google-business-profile)
+- [SEO local y por sectores](https://studioemprende.com/servicios/presencia-digital/seo-local-y-por-sectores)
+- [SEO programático](https://studioemprende.com/servicios/presencia-digital/seo-programatico)
+- [Aparecer en ChatGPT y Gemini (GEO)](https://studioemprende.com/servicios/presencia-digital/aparecer-en-chatgpt-y-gemini-geo)
+- [Analítica web](https://studioemprende.com/servicios/presencia-digital/analitica-web)
 
 ### Contenido y captación
-- Automatización de redes sociales
-- Vídeos y anuncios con IA
-- Traducción y doblaje con IA
-- Captación automatizada de clientes B2B
+- [Automatización de redes sociales](https://studioemprende.com/servicios/presencia-digital/automatizacion-de-redes-sociales)
+- [Vídeos y anuncios con IA](https://studioemprende.com/servicios/presencia-digital/videos-y-anuncios-con-ia)
+- [Traducción y doblaje con IA](https://studioemprende.com/servicios/presencia-digital/traduccion-y-doblaje-con-ia)
+- [Captación automatizada de clientes B2B](https://studioemprende.com/servicios/presencia-digital/captacion-automatizada-de-clientes-b2b)
 
 ### Pantallas digitales
-- Menús digitales para hostelería
-- Escaparates y promociones
-- Pantallas de turnos y sala de espera
-- Gestión remota desde el móvil
+- [Menús digitales para hostelería](https://studioemprende.com/servicios/presencia-digital/menus-digitales-para-hosteleria)
+- [Escaparates y promociones](https://studioemprende.com/servicios/presencia-digital/escaparates-y-promociones)
+- [Pantallas de turnos y sala de espera](https://studioemprende.com/servicios/presencia-digital/pantallas-de-turnos-y-sala-de-espera)
+- [Gestión remota desde el móvil](https://studioemprende.com/servicios/presencia-digital/gestion-remota-desde-el-movil)
 
 ## Fichador · control horario
 URL: https://studioemprende.com/servicios/fichador/
 Cumple con el registro de jornada desde hoy y prepárate para el fichaje digital. Desde el móvil, la tablet o WhatsApp.
 
 ### Fichaje
-- Móvil, tablet, web o tarjeta NFC
-- Geolocalización con aviso al trabajador
-- Fichaje por WhatsApp o con PIX
-- Modo sin conexión para obras
-- Pausas y descansos
+- [Móvil, tablet, web o tarjeta NFC](https://studioemprende.com/servicios/fichador/movil-tablet-web-o-tarjeta-nfc)
+- [Geolocalización con aviso al trabajador](https://studioemprende.com/servicios/fichador/geolocalizacion-con-aviso-al-trabajador)
+- [Fichaje por WhatsApp o con PIX](https://studioemprende.com/servicios/fichador/fichaje-por-whatsapp-o-con-pix)
+- [Modo sin conexión para obras](https://studioemprende.com/servicios/fichador/modo-sin-conexion-para-obras)
+- [Pausas y descansos](https://studioemprende.com/servicios/fichador/pausas-y-descansos)
 
 ### Cumplimiento
-- Registros inalterables con historial
-- Conservación durante 4 años
-- Informe para Inspección en un clic
-- Acceso del trabajador a sus registros
+- [Registros inalterables con historial](https://studioemprende.com/servicios/fichador/registros-inalterables-con-historial)
+- [Conservación durante 4 años](https://studioemprende.com/servicios/fichador/conservacion-durante-4-anos)
+- [Informe para Inspección en un clic](https://studioemprende.com/servicios/fichador/informe-para-inspeccion-en-un-clic)
+- [Acceso del trabajador a sus registros](https://studioemprende.com/servicios/fichador/acceso-del-trabajador-a-sus-registros)
 
 ### Gestión
-- Horas extra
-- Turnos y cuadrantes
-- Vacaciones y ausencias
-- Alertas de olvidos y retrasos
-- Teletrabajo y varios centros
+- [Horas extra](https://studioemprende.com/servicios/fichador/horas-extra)
+- [Turnos y cuadrantes](https://studioemprende.com/servicios/fichador/turnos-y-cuadrantes)
+- [Vacaciones y ausencias](https://studioemprende.com/servicios/fichador/vacaciones-y-ausencias)
+- [Alertas de olvidos y retrasos](https://studioemprende.com/servicios/fichador/alertas-de-olvidos-y-retrasos)
+- [Teletrabajo y varios centros](https://studioemprende.com/servicios/fichador/teletrabajo-y-varios-centros)
 
 ### Contratación
-- Precio por trabajador al mes
-- Sin permanencia
-- Alta en 24-48 horas
-- Prueba gratuita
+- [Precio por trabajador al mes](https://studioemprende.com/servicios/fichador/precio-por-trabajador-al-mes)
+- [Sin permanencia](https://studioemprende.com/servicios/fichador/sin-permanencia)
+- [Alta en 24-48 horas](https://studioemprende.com/servicios/fichador/alta-en-24-48-horas)
+- [Prueba gratuita](https://studioemprende.com/servicios/fichador/prueba-gratuita)
 
 ## CRM y domótica para alojamientos y casas
 URL: https://studioemprende.com/servicios/alojamientos-y-domotica/
 Tu alojamiento funciona solo: reservas, llaves, registro de viajeros, consumo y limpieza en un único panel.
 
 ### Gestión y cumplimiento
-- Calendario unificado con Airbnb, Booking y web propia
-- Check-in online con firma
-- Envío automático a SES.HOSPEDAJES
-- Control de NRUA y licencias
-- Panel de propietarios
+- [Calendario unificado con Airbnb, Booking y web propia](https://studioemprende.com/servicios/alojamientos-y-domotica/calendario-unificado-con-airbnb-booking-y-web-propia)
+- [Check-in online con firma](https://studioemprende.com/servicios/alojamientos-y-domotica/check-in-online-con-firma)
+- [Envío automático a SES.HOSPEDAJES](https://studioemprende.com/servicios/alojamientos-y-domotica/envio-automatico-a-ses-hospedajes)
+- [Control de NRUA y licencias](https://studioemprende.com/servicios/alojamientos-y-domotica/control-de-nrua-y-licencias)
+- [Panel de propietarios](https://studioemprende.com/servicios/alojamientos-y-domotica/panel-de-propietarios)
 
 ### Domótica
-- Cerradura con código por reserva
-- Sensor de ruido sin cámaras
-- Clima y luces automáticas
-- Detector de fugas y humo
-- Consumo por estancia
+- [Cerradura con código por reserva](https://studioemprende.com/servicios/alojamientos-y-domotica/cerradura-con-codigo-por-reserva)
+- [Sensor de ruido sin cámaras](https://studioemprende.com/servicios/alojamientos-y-domotica/sensor-de-ruido-sin-camaras)
+- [Clima y luces automáticas](https://studioemprende.com/servicios/alojamientos-y-domotica/clima-y-luces-automaticas)
+- [Detector de fugas y humo](https://studioemprende.com/servicios/alojamientos-y-domotica/detector-de-fugas-y-humo)
+- [Consumo por estancia](https://studioemprende.com/servicios/alojamientos-y-domotica/consumo-por-estancia)
 
 ### Huéspedes y casas
-- Asistente del huésped por WhatsApp 24/7
-- Aviso automático a limpieza
-- Hogar inteligente y modo vacaciones
-- Teleasistencia para mayores
+- [Asistente del huésped por WhatsApp 24/7](https://studioemprende.com/servicios/alojamientos-y-domotica/asistente-del-huesped-por-whatsapp-24-7)
+- [Aviso automático a limpieza](https://studioemprende.com/servicios/alojamientos-y-domotica/aviso-automatico-a-limpieza)
+- [Hogar inteligente y modo vacaciones](https://studioemprende.com/servicios/alojamientos-y-domotica/hogar-inteligente-y-modo-vacaciones)
+- [Teleasistencia para mayores](https://studioemprende.com/servicios/alojamientos-y-domotica/teleasistencia-para-mayores)
 
 ## Ciberseguridad, sistemas y cumplimiento
 URL: https://studioemprende.com/servicios/ciberseguridad-y-sistemas/
 Tu empresa protegida y al día con la normativa europea.
 
 ### Servicios
-- Adaptación al AI Act
-- Adaptación a NIS2 para proveedores
-- Adaptación al Reglamento de Ciberresiliencia
-- Responsable de ciberseguridad externalizado
-- Copias de seguridad y plan de continuidad
-- Renovación de equipos y fin de Windows 10
-- Migración a la nube
+- [Adaptación al AI Act](https://studioemprende.com/servicios/ciberseguridad-y-sistemas/adaptacion-al-ai-act)
+- [Adaptación a NIS2 para proveedores](https://studioemprende.com/servicios/ciberseguridad-y-sistemas/adaptacion-a-nis2-para-proveedores)
+- [Adaptación al Reglamento de Ciberresiliencia](https://studioemprende.com/servicios/ciberseguridad-y-sistemas/adaptacion-al-reglamento-de-ciberresiliencia)
+- [Responsable de ciberseguridad externalizado](https://studioemprende.com/servicios/ciberseguridad-y-sistemas/responsable-de-ciberseguridad-externalizado)
+- [Copias de seguridad y plan de continuidad](https://studioemprende.com/servicios/ciberseguridad-y-sistemas/copias-de-seguridad-y-plan-de-continuidad)
+- [Renovación de equipos y fin de Windows 10](https://studioemprende.com/servicios/ciberseguridad-y-sistemas/renovacion-de-equipos-y-fin-de-windows-10)
+- [Migración a la nube](https://studioemprende.com/servicios/ciberseguridad-y-sistemas/migracion-a-la-nube)
 
 ## Tu departamento tecnológico
 URL: https://studioemprende.com/servicios/departamento-tecnologico/
 Un solo interlocutor para web, software, IA y equipos, por cuota mensual.
 
 ### Tranquilidad
-- Soporte con un único interlocutor
-- Mantenemos programas abandonados por su proveedor
-- Prueba mensual de copias de seguridad
-- Auditoría de accesos y licencias
-- Documentación de sistemas
-- Asesor de compras tecnológicas
-- Informe mensual en lenguaje claro
+- [Soporte con un único interlocutor](https://studioemprende.com/servicios/departamento-tecnologico/soporte-con-un-unico-interlocutor)
+- [Mantenemos programas abandonados por su proveedor](https://studioemprende.com/servicios/departamento-tecnologico/mantenemos-programas-abandonados-por-su-proveedor)
+- [Prueba mensual de copias de seguridad](https://studioemprende.com/servicios/departamento-tecnologico/prueba-mensual-de-copias-de-seguridad)
+- [Auditoría de accesos y licencias](https://studioemprende.com/servicios/departamento-tecnologico/auditoria-de-accesos-y-licencias)
+- [Documentación de sistemas](https://studioemprende.com/servicios/departamento-tecnologico/documentacion-de-sistemas)
+- [Asesor de compras tecnológicas](https://studioemprende.com/servicios/departamento-tecnologico/asesor-de-compras-tecnologicas)
+- [Informe mensual en lenguaje claro](https://studioemprende.com/servicios/departamento-tecnologico/informe-mensual-en-lenguaje-claro)
 
 ### Lo que nadie revisa
-- Correo que no llega a spam
-- Dominios y renovaciones
-- Vigilancia de suplantación
-- Monitorización de la web 24/7
-- Control del gasto en IA y suscripciones
-- Propiedad de tu web y tus datos
-- Herencia digital de la empresa
+- [Correo que no llega a spam](https://studioemprende.com/servicios/departamento-tecnologico/correo-que-no-llega-a-spam)
+- [Dominios y renovaciones](https://studioemprende.com/servicios/departamento-tecnologico/dominios-y-renovaciones)
+- [Vigilancia de suplantación](https://studioemprende.com/servicios/departamento-tecnologico/vigilancia-de-suplantacion)
+- [Monitorización de la web 24/7](https://studioemprende.com/servicios/departamento-tecnologico/monitorizacion-de-la-web-24-7)
+- [Control del gasto en IA y suscripciones](https://studioemprende.com/servicios/departamento-tecnologico/control-del-gasto-en-ia-y-suscripciones)
+- [Propiedad de tu web y tus datos](https://studioemprende.com/servicios/departamento-tecnologico/propiedad-de-tu-web-y-tus-datos)
+- [Herencia digital de la empresa](https://studioemprende.com/servicios/departamento-tecnologico/herencia-digital-de-la-empresa)
 
 ## Formación en IA
 URL: https://studioemprende.com/servicios/formacion-ia/
 Formación en IA para empresas y profesionales: práctica, con vuestras tareas reales, online o presencial y bonificable por FUNDAE.
 
 ### Cursos
+- [Formación obligatoria AI Act](https://studioemprende.com/servicios/formacion-ia/formacion-obligatoria-ai-act)
+- [Formación por sectores](https://studioemprende.com/servicios/formacion-ia/formacion-por-sectores)
+- [IA para autónomos por profesión](https://studioemprende.com/servicios/formacion-ia/ia-para-autonomos-por-profesion)
+- [IA para dueños de negocios de toda la vida](https://studioemprende.com/servicios/formacion-ia/ia-para-duenos-de-negocios-de-toda-la-vida)
+- [Política de uso de IA para empresas](https://studioemprende.com/servicios/formacion-ia/politica-de-uso-de-ia-para-empresas)
+- [Mentoría para directivos](https://studioemprende.com/servicios/formacion-ia/mentoria-para-directivos)
 - [Sesión de IA 1 a 1](https://studioemprende.com/servicios/formacion-ia/sesion-de-ia-1-a-1)
-- Formación obligatoria AI Act
-- Formación por sectores
-- IA para autónomos por profesión
-- IA para dueños de negocios de toda la vida
-- Política de uso de IA para empresas
-- Mentoría para directivos
 
 ### Formación de empleados a medida
 - [Cursos de formación a medida para empresas](https://studioemprende.com/servicios/formacion-ia/cursos-de-formacion-a-medida-para-empresas)
@@ -379,114 +379,114 @@ URL: https://studioemprende.com/servicios/consultoria-y-ayudas/
 Te decimos dónde ahorrar y te ayudamos a financiarlo.
 
 ### Servicios
-- Diagnóstico de digitalización gratuito
-- Auditoría de IA para pymes
-- Auditoría de procesos con informe de ahorro
-- Segunda opinión tecnológica
-- Gestión del Kit Digital y Kit Consulting
-- Vigilancia de subvenciones
-- Transformación digital por fases
+- [Diagnóstico de digitalización gratuito](https://studioemprende.com/servicios/consultoria-y-ayudas/diagnostico-de-digitalizacion-gratuito)
+- [Auditoría de IA para pymes](https://studioemprende.com/servicios/consultoria-y-ayudas/auditoria-de-ia-para-pymes)
+- [Auditoría de procesos con informe de ahorro](https://studioemprende.com/servicios/consultoria-y-ayudas/auditoria-de-procesos-con-informe-de-ahorro)
+- [Segunda opinión tecnológica](https://studioemprende.com/servicios/consultoria-y-ayudas/segunda-opinion-tecnologica)
+- [Gestión del Kit Digital y Kit Consulting](https://studioemprende.com/servicios/consultoria-y-ayudas/gestion-del-kit-digital-y-kit-consulting)
+- [Vigilancia de subvenciones](https://studioemprende.com/servicios/consultoria-y-ayudas/vigilancia-de-subvenciones)
+- [Transformación digital por fases](https://studioemprende.com/servicios/consultoria-y-ayudas/transformacion-digital-por-fases)
 
 ## Relevo y continuidad del negocio
 URL: https://studioemprende.com/servicios/relevo-y-continuidad/
 Tu negocio vale lo que sabes tú. Hagamos que siga funcionando cuando no estés.
 
 ### Servicios
-- Diagnóstico de continuidad
-- Cerebro digital del negocio con PIX
-- Manual de operaciones con vídeo e IA
-- Empresa lista para traspasar o vender
-- Cuadro de mando de valor
-- Digitalización para el sucesor
-- Acompañamiento del traspaso
+- [Diagnóstico de continuidad](https://studioemprende.com/servicios/relevo-y-continuidad/diagnostico-de-continuidad)
+- [Cerebro digital del negocio con PIX](https://studioemprende.com/servicios/relevo-y-continuidad/cerebro-digital-del-negocio-con-pix)
+- [Manual de operaciones con vídeo e IA](https://studioemprende.com/servicios/relevo-y-continuidad/manual-de-operaciones-con-video-e-ia)
+- [Empresa lista para traspasar o vender](https://studioemprende.com/servicios/relevo-y-continuidad/empresa-lista-para-traspasar-o-vender)
+- [Cuadro de mando de valor](https://studioemprende.com/servicios/relevo-y-continuidad/cuadro-de-mando-de-valor)
+- [Digitalización para el sucesor](https://studioemprende.com/servicios/relevo-y-continuidad/digitalizacion-para-el-sucesor)
+- [Acompañamiento del traspaso](https://studioemprende.com/servicios/relevo-y-continuidad/acompanamiento-del-traspaso)
 
 ## Problemas que nadie resuelve
 URL: https://studioemprende.com/servicios/problemas-sin-resolver/
 Morosidad, burocracia y falta de personal, con soluciones concretas.
 
 ### Morosidad
-- Sistema anti-impagos
-- Semáforo de clientes morosos
-- Cobro fácil con enlaces de pago
-- Expediente de reclamación listo
+- [Sistema anti-impagos](https://studioemprende.com/servicios/problemas-sin-resolver/sistema-anti-impagos)
+- [Semáforo de clientes morosos](https://studioemprende.com/servicios/problemas-sin-resolver/semaforo-de-clientes-morosos)
+- [Cobro fácil con enlaces de pago](https://studioemprende.com/servicios/problemas-sin-resolver/cobro-facil-con-enlaces-de-pago)
+- [Expediente de reclamación listo](https://studioemprende.com/servicios/problemas-sin-resolver/expediente-de-reclamacion-listo)
 
 ### Burocracia
-- Agente de trámites
-- Calendario de obligaciones
-- Buzón de notificaciones vigilado
+- [Agente de trámites](https://studioemprende.com/servicios/problemas-sin-resolver/agente-de-tramites)
+- [Calendario de obligaciones](https://studioemprende.com/servicios/problemas-sin-resolver/calendario-de-obligaciones)
+- [Buzón de notificaciones vigilado](https://studioemprende.com/servicios/problemas-sin-resolver/buzon-de-notificaciones-vigilado)
 
 ### Personal
-- Empleado digital
-- Formación rápida de nuevos empleados
-- Turnos y ausencias integrados
+- [Empleado digital](https://studioemprende.com/servicios/problemas-sin-resolver/empleado-digital)
+- [Formación rápida de nuevos empleados](https://studioemprende.com/servicios/problemas-sin-resolver/formacion-rapida-de-nuevos-empleados)
+- [Turnos y ausencias integrados](https://studioemprende.com/servicios/problemas-sin-resolver/turnos-y-ausencias-integrados)
 
 ## Emprendedores y autónomos
 URL: https://studioemprende.com/servicios/autonomos/
 Todo lo que necesitas para empezar con buen pie y presencia profesional.
 
 ### Servicios
-- Kit de arranque: web, Google Business y facturación
-- Automatización del día a día
-- Packs con precio cerrado
+- [Kit de arranque: web, Google Business y facturación](https://studioemprende.com/servicios/autonomos/kit-de-arranque-web-google-business-y-facturacion)
+- [Automatización del día a día](https://studioemprende.com/servicios/autonomos/automatizacion-del-dia-a-dia)
+- [Packs con precio cerrado](https://studioemprende.com/servicios/autonomos/packs-con-precio-cerrado)
 
 ## Pequeñas empresas
 URL: https://studioemprende.com/servicios/pequenas-empresas/
 No vendemos tecnología: te ayudamos a no perder clientes, cobrar antes y ahorrar horas.
 
 ### Por problema
-- No pierdas clientes: WhatsApp IA y recepcionista de voz
-- Cobra antes: cobros y tesorería
-- Ahorra horas: programa de gestión y facturas automáticas
-- Cumple la ley: Verifactu y registro de jornada
-- Vende más en redes
-- Todo incluido por cuota mensual
-- Digitalización de negocios rurales
+- [No pierdas clientes: WhatsApp IA y recepcionista de voz](https://studioemprende.com/servicios/pequenas-empresas/no-pierdas-clientes-whatsapp-ia-y-recepcionista-de-voz)
+- [Cobra antes: cobros y tesorería](https://studioemprende.com/servicios/pequenas-empresas/cobra-antes-cobros-y-tesoreria)
+- [Ahorra horas: programa de gestión y facturas automáticas](https://studioemprende.com/servicios/pequenas-empresas/ahorra-horas-programa-de-gestion-y-facturas-automaticas)
+- [Cumple la ley: Verifactu y registro de jornada](https://studioemprende.com/servicios/pequenas-empresas/cumple-la-ley-verifactu-y-registro-de-jornada)
+- [Vende más en redes](https://studioemprende.com/servicios/pequenas-empresas/vende-mas-en-redes)
+- [Todo incluido por cuota mensual](https://studioemprende.com/servicios/pequenas-empresas/todo-incluido-por-cuota-mensual)
+- [Digitalización de negocios rurales](https://studioemprende.com/servicios/pequenas-empresas/digitalizacion-de-negocios-rurales)
 
 ## Grandes empresas
 URL: https://studioemprende.com/servicios/grandes-empresas/
 Pilotos de IA rápidos, con precio cerrado y resultados medibles.
 
 ### Servicios
-- Piloto de agente IA en 30-60 días
-- IA conectada a ERP y sistemas antiguos
-- Preparación de datos para IA
-- Formación in-company por departamentos
-- Gobernanza de IA
-- Voz del cliente con IA
-- Pruebas de agentes IA
-- Marca blanca para consultoras
+- [Piloto de agente IA en 30-60 días](https://studioemprende.com/servicios/grandes-empresas/piloto-de-agente-ia-en-30-60-dias)
+- [IA conectada a ERP y sistemas antiguos](https://studioemprende.com/servicios/grandes-empresas/ia-conectada-a-erp-y-sistemas-antiguos)
+- [Preparación de datos para IA](https://studioemprende.com/servicios/grandes-empresas/preparacion-de-datos-para-ia)
+- [Formación in-company por departamentos](https://studioemprende.com/servicios/grandes-empresas/formacion-in-company-por-departamentos)
+- [Gobernanza de IA](https://studioemprende.com/servicios/grandes-empresas/gobernanza-de-ia)
+- [Voz del cliente con IA](https://studioemprende.com/servicios/grandes-empresas/voz-del-cliente-con-ia)
+- [Pruebas de agentes IA](https://studioemprende.com/servicios/grandes-empresas/pruebas-de-agentes-ia)
+- [Marca blanca para consultoras](https://studioemprende.com/servicios/grandes-empresas/marca-blanca-para-consultoras)
 
 ## Startups e inversores
 URL: https://studioemprende.com/servicios/startups-e-inversores/
 Del MVP a la ronda de inversión, con tecnología lista para escalar.
 
 ### Startups
-- MVP en 6-12 semanas
-- CTO externalizado
-- Métricas para inversores
-- Preparación de due diligence
-- Memoria técnica para ENISA y CDTI
-- Pitch y web en inglés
+- [MVP en 6-12 semanas](https://studioemprende.com/servicios/startups-e-inversores/mvp-en-6-12-semanas)
+- [CTO externalizado](https://studioemprende.com/servicios/startups-e-inversores/cto-externalizado)
+- [Métricas para inversores](https://studioemprende.com/servicios/startups-e-inversores/metricas-para-inversores)
+- [Preparación de due diligence](https://studioemprende.com/servicios/startups-e-inversores/preparacion-de-due-diligence)
+- [Memoria técnica para ENISA y CDTI](https://studioemprende.com/servicios/startups-e-inversores/memoria-tecnica-para-enisa-y-cdti)
+- [Pitch y web en inglés](https://studioemprende.com/servicios/startups-e-inversores/pitch-y-web-en-ingles)
 
 ### Inversores
-- Due diligence técnica
-- Valoración de proyectos con IA
-- Mejora de participadas
+- [Due diligence técnica](https://studioemprende.com/servicios/startups-e-inversores/due-diligence-tecnica)
+- [Valoración de proyectos con IA](https://studioemprende.com/servicios/startups-e-inversores/valoracion-de-proyectos-con-ia)
+- [Mejora de participadas](https://studioemprende.com/servicios/startups-e-inversores/mejora-de-participadas)
 
 ## Servicios Deluxe
 URL: https://studioemprende.com/servicios/deluxe/
 Tecnología discreta para clientes exclusivos, con confidencialidad firmada y un único interlocutor.
 
 ### Servicios
-- Asistente personal con IA privado
-- Villa o casa inteligente de lujo
-- Gestión de varias propiedades
-- Protección frente a suplantación y deepfakes
-- Técnico personal 24/7
-- Inventario digital de patrimonio
-- Legado digital familiar
-- Conectividad en toda la finca
-- Eventos con tecnología
+- [Asistente personal con IA privado](https://studioemprende.com/servicios/deluxe/asistente-personal-con-ia-privado)
+- [Villa o casa inteligente de lujo](https://studioemprende.com/servicios/deluxe/villa-o-casa-inteligente-de-lujo)
+- [Gestión de varias propiedades](https://studioemprende.com/servicios/deluxe/gestion-de-varias-propiedades)
+- [Protección frente a suplantación y deepfakes](https://studioemprende.com/servicios/deluxe/proteccion-frente-a-suplantacion-y-deepfakes)
+- [Técnico personal 24/7](https://studioemprende.com/servicios/deluxe/tecnico-personal-24-7)
+- [Inventario digital de patrimonio](https://studioemprende.com/servicios/deluxe/inventario-digital-de-patrimonio)
+- [Legado digital familiar](https://studioemprende.com/servicios/deluxe/legado-digital-familiar)
+- [Conectividad en toda la finca](https://studioemprende.com/servicios/deluxe/conectividad-en-toda-la-finca)
+- [Eventos con tecnología](https://studioemprende.com/servicios/deluxe/eventos-con-tecnologia)
 
 ## Qué es un emprendedor y qué significa emprender
 URL: https://studioemprende.com/guias/que-es-un-emprendedor
