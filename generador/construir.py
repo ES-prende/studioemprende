@@ -7,8 +7,12 @@ from datos import SECCIONES, NORMATIVAS, NORM_EXTRA, SECTORES, PACKS, MENU
 from blog import ARTICULOS
 from alt_blog import ALT
 import blog_formacion as BF
-ARTICULOS = BF.ARTICULOS + ARTICULOS
-ALT.update(BF.ALT)
+import blog_pymes as BP
+ARTICULOS = [(a[0], a[1], a[2], a[3], a[4], a[5], a[6] + BP.EXCEL_EXTRA) if a[0] == "como-dejar-de-usar-excel-en-mi-empresa" else a for a in ARTICULOS]
+NUEVOS = {a[0] for a in BF.ARTICULOS + BP.ARTICULOS}
+ARTICULOS = BP.ARTICULOS + BF.ARTICULOS + ARTICULOS
+ALT.update(BF.ALT); ALT.update(BP.ALT)
+FAQS_BLOG = dict(BF.FAQS); FAQS_BLOG.update(BP.FAQS)
 from guias import GUIAS, GRUPOS, SERVICIO_GUIAS
 from pix import PIX_HUB, PIX_PAGINAS
 from legales import HIST, AVISO, PRIVACIDAD, COOKIES
@@ -607,10 +611,11 @@ for slug, titulo, desc, fecha, cat, serv_rel, cuerpo in ARTICULOS:
     sr = [x for x in SECCIONES if x[0] == serv_rel][0]
     otros = "".join([tarjeta_blog(a, "") for a in ARTICULOS if a[0] != slug][:3])
     ld = ""
-    _fq = BF.FAQS.get(slug)
+    _fq = FAQS_BLOG.get(slug)
     if _fq: cuerpo = cuerpo + '<h2>Preguntas frecuentes</h2>' + _faq_html(_fq)
-    _fd = BF.FECHA_ISO if slug in BF.FAQS else "2026-10-12"
-    bp = {"@type": "BlogPosting", "headline": titulo, "description": desc, "inLanguage": "es", "articleSection": cat, "datePublished": _fd, "dateModified": _fd,
+    _fp = BF.FECHA_ISO if slug in NUEVOS else "2026-10-12"
+    _fd = BF.FECHA_ISO if slug in FAQS_BLOG else "2026-10-12"
+    bp = {"@type": "BlogPosting", "headline": titulo, "description": desc, "inLanguage": "es", "articleSection": cat, "datePublished": _fp, "dateModified": _fd,
           "image": ["%s/assets/img/blog/%s.jpg" % (DOM, slug), "%s/assets/img/blog/og/%s.jpg" % (DOM, slug)], "author": {"@id": DOM + "/#org"}, "publisher": {"@id": DOM + "/#org"},
           "mainEntityOfPage": "%s/blog/%s.html" % (DOM, slug)}
     html = """<section class="page-hero"><div class="w">{m}<p class="kicker">{cat} · {f}</p><h1>{t}</h1><p class="lead">{d}</p></div></section>
