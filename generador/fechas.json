@@ -336,8 +336,8 @@
 "2026-10-14T23:38:09"
 ],
 "precios.html": [
-"80d7c1857066de40db6b06e1901552d722bc34f7",
-"2026-10-15T12:13:45"
+"f0e13935bd021b21f678cd723a83a1f2a60eb159",
+"2026-10-15T12:55:13"
 ],
 "privacidad.html": [
 "b143d10547d6bf7e563ba1c5865df7e256c7600f",
@@ -876,36 +876,52 @@
 "2026-10-14T23:38:09"
 ],
 "servicios/formacion-ia.html": [
-"fa99a64bcf1a61cefffc445daecb09c52fdd0adc",
-"2026-10-15T12:13:45"
+"6d855991e91db2a50f700758e015f82bb19dcd45",
+"2026-10-15T12:55:13"
+],
+"servicios/formacion-ia/curso-de-excel-para-empresas.html": [
+"37b9d22f52df6bd4d1e6b8df9d1012f9b683b60f",
+"2026-10-15T12:55:58"
+],
+"servicios/formacion-ia/cursos-de-formacion-a-medida-para-empresas.html": [
+"c4c56497b8cc8c06d690c7c483c7ce73ab2b5da4",
+"2026-10-15T12:55:58"
+],
+"servicios/formacion-ia/formacion-de-empleados-en-un-programa-nuevo.html": [
+"f0c6448e40d5aa1ed732f156fb9a1676bce06dbf",
+"2026-10-15T12:55:58"
 ],
 "servicios/formacion-ia/formacion-obligatoria-ai-act.html": [
-"42055c76bf0a47dc5946f0b3a8c90f7edfed2d4a",
-"2026-10-15T12:13:27"
+"46094787e7c04baf2495c0970310e8b22d4fad7e",
+"2026-10-15T12:55:13"
 ],
 "servicios/formacion-ia/formacion-por-sectores.html": [
-"bbee3048b7bdddbf39bc3d320b726820ed325ca0",
-"2026-10-15T12:13:27"
+"3b8d3dbc955f2f728fde9ea9a76a3266ea099daf",
+"2026-10-15T12:55:13"
 ],
 "servicios/formacion-ia/ia-para-autonomos-por-profesion.html": [
-"6c2122047c5f3fe83dbff26a90a6683ce84a93a6",
-"2026-10-15T12:13:27"
+"43dfae9e910189facf7d4ab28d453930dfa8b0b9",
+"2026-10-15T12:55:13"
 ],
 "servicios/formacion-ia/ia-para-duenos-de-negocios-de-toda-la-vida.html": [
-"ba9cbc6cd52a15ef3d92a564dca3ff440aae5f60",
-"2026-10-15T12:13:27"
+"35bdb4a97d4d3115377c3cf9b0729bd7606ee729",
+"2026-10-15T12:55:13"
 ],
 "servicios/formacion-ia/mentoria-para-directivos.html": [
-"13235e1768348e4243cecc1ec85b19abb7cd5b58",
-"2026-10-15T12:13:27"
+"5b220e5bf094396255956be9c12d36237eeb2cc3",
+"2026-10-15T12:55:13"
+],
+"servicios/formacion-ia/plan-de-formacion-para-nuevos-empleados.html": [
+"07eb4972b651a04a333e1202e0a89759708170d7",
+"2026-10-15T12:55:58"
 ],
 "servicios/formacion-ia/politica-de-uso-de-ia-para-empresas.html": [
-"acd0b4b905e63c3d6989edd8dae27758043dd02f",
-"2026-10-15T12:13:27"
+"b776d5201446c8ac4d3972f0bd448d7a508c3268",
+"2026-10-15T12:55:13"
 ],
 "servicios/formacion-ia/sesion-de-ia-1-a-1.html": [
-"a06b1f1425cb1c3e43f634ece09f15da04a8fb53",
-"2026-10-15T12:13:45"
+"09c382c6ae47c57181576d2be909ad4845ba3dd8",
+"2026-10-15T12:55:13"
 ],
 "servicios/grandes-empresas.html": [
 "2b089c74a996f0c68b1f922999cb15fa64286336",

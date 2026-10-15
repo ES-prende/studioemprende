@@ -2,6 +2,7 @@ import os, shutil, sys
 from html import escape as e
 sys.path.insert(0, os.path.dirname(__file__))
 import formacion as FORM
+import cursos_empresa as CE
 from datos import SECCIONES, NORMATIVAS, NORM_EXTRA, SECTORES, PACKS, MENU
 from blog import ARTICULOS
 from alt_blog import ALT
@@ -434,7 +435,7 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
     for b, items in bloques:
         for it in items:
             fs = slugify(it)
-            if slug == "formacion-ia" and fs == FORM.SESION_SLUG: continue
+            if slug == "formacion-ia" and (fs == FORM.SESION_SLUG or fs in CE.SLUGS): continue
             herm = [x for x in items if x != it]
             hermh = "".join('<li><a href="%s.html">%s</a></li>' % (slugify(x), e(x)) for x in herm)
             otros = [(bb, ii) for bb, ii in bloques if bb != b]
@@ -456,6 +457,11 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
 
 _ses = FORM.sesion_html(migas("../../", ("Servicios", "../index.html"), ("Formación en IA", "../formacion-ia.html"), ("Sesión de IA 1 a 1", None)), _faq_html(FORM.SESION_FAQS), "../../")
 pagina("servicios/formacion-ia/%s.html" % FORM.SESION_SLUG, FORM.SESION_TITULO, FORM.SESION_META, _ses + cta("../../"), faqs=FORM.SESION_FAQS, ld_extra=[FORM.curso_sesion(), FORM.JORDAN])
+
+for _c in CE.CURSOS:
+    _m = migas("../../", ("Servicios", "../index.html"), ("Formación en IA", "../formacion-ia.html"), (_c["titulo"], None))
+    _ld = [FORM.JORDAN] + ([CE.curso_ld(_c, FORM.JORDAN["@id"])] if _c["curso"] else [])
+    pagina("servicios/formacion-ia/%s.html" % _c["slug"], _c["titulo"] + " · Studio Emprende", _c["meta"], CE.html(_c, _m, _faq_html(_c["faqs"]), FORM.tarjeta_formador("../../")) + cta("../../"), faqs=_c["faqs"], ld_extra=_ld, fecha=CE.FECHA)
 
 # ---------- PIX (agente de IA empresarial) ----------
 def _pix_nav(actual):

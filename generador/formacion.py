@@ -24,7 +24,7 @@ HUB_FAQS = [
     ("¿Es online o presencial?", "Las dos. Online en directo para cualquier punto de España y presencial cuando el equipo lo prefiere."),
     ("¿Hay obligación legal de formar al equipo en IA?", "Sí, si tu empresa usa sistemas de IA. El artículo 4 del Reglamento europeo de IA (AI Act) exige desde el 2 de febrero de 2025 que el personal que los utiliza tenga un nivel suficiente de alfabetización en IA."),
     ("¿Entregáis materiales?", "Sí. Cada área se queda con sus instrucciones y ejemplos guardados, y la empresa con sus normas de uso de la IA por escrito."),
-    ("¿Y si solo soy yo, sin equipo?", "Para eso está la sesión de IA 1 a 1: una hora práctica sobre tu negocio por 40 € (sin IVA)."),
+    ("¿Y si solo soy yo, sin equipo?", "Para eso está la sesión de IA 1 a 1: una hora práctica sobre tu negocio desde 40 € la hora (sin IVA)."),
 ]
 
 def hub_extra(r):
@@ -51,7 +51,7 @@ def hub_extra(r):
 </div></div></section>
 <section class="sec"><div class="w"><div class="rejilla">
 {formador}
-<div class="tarjeta"><p class="kicker" style="margin:0 0 4px">Si estás solo en tu negocio</p><h3 style="margin:0 0 8px">Sesión de IA 1 a 1</h3><p style="margin:0">Una hora práctica sobre tu negocio, online o presencial en Sevilla capital. 40 € (sin IVA).</p><p style="margin:10px 0 0"><a href="formacion-ia/sesion-de-ia-1-a-1.html">Ver la sesión 1 a 1 →</a></p></div>
+<div class="tarjeta"><p class="kicker" style="margin:0 0 4px">Si estás solo en tu negocio</p><h3 style="margin:0 0 8px">Sesión de IA 1 a 1</h3><p style="margin:0">Una hora práctica sobre tu negocio, online o presencial en Sevilla capital. Desde 40 € la hora (sin IVA).</p><p style="margin:10px 0 0"><a href="formacion-ia/sesion-de-ia-1-a-1.html">Ver la sesión 1 a 1 →</a></p></div>
 </div></div></section>
 <section class="sec sec-suave"><div class="w"><div class="cab"><h2>Preguntas frecuentes</h2></div>{faq}</div></section>"""
 
@@ -70,19 +70,19 @@ SESION_SLUG = "sesion-de-ia-1-a-1"
 SESION_FAQS = [
     ("¿Hace falta que sepa algo de IA?", "No. Si nunca has abierto ChatGPT, se empieza por ahí. Si ya lo usas y quieres sacarle más partido, vamos directos a tus tareas."),
     ("¿Es online o presencial?", "Online por videollamada desde cualquier punto de España, o presencial en Sevilla capital. Mismo precio."),
-    ("¿Los 40 € incluyen el desplazamiento?", "Sí. En las sesiones presenciales en Sevilla capital, el desplazamiento está incluido."),
-    ("¿Y si necesito más de una hora?", "Al terminar vemos si te hace falta otra sesión y buscamos hueco. Las siguientes cuestan lo mismo: 40 € la hora."),
+    ("¿Qué incluye el precio?", "Desde 40 € la hora (sin IVA). En las sesiones presenciales en Sevilla capital el desplazamiento está incluido; si la sesión necesita preparación especial, te lo decimos antes de reservar."),
+    ("¿Y si necesito más de una hora?", "Al terminar vemos si te hace falta otra sesión y buscamos hueco. Las siguientes siguen la misma tarifa, desde 40 € la hora."),
     ("¿Y si lo que necesito no aparece en la lista?", "Escríbenos y cuéntanoslo. Si podemos enseñártelo, lo trabajamos; si no, te lo decimos claro y te orientamos."),
 ]
-SESION_TITULO = "Clase de IA 1 a 1 para emprendedores: 40 €/hora · Studio Emprende"
-SESION_META = "Aprende a usar la IA en tu negocio en una sesión práctica 1 a 1 de una hora: online en toda España o presencial en Sevilla capital. 40 € sin IVA."
+SESION_TITULO = "Clase de IA 1 a 1 para emprendedores, desde 40 €/hora"
+SESION_META = "Aprende a usar la IA en tu negocio en una sesión práctica 1 a 1 de una hora: online en toda España o presencial en Sevilla capital. Desde 40 € la hora, sin IVA."
 
 def sesion_html(migas_html, faq_html, r):
     return """<section class="page-hero"><div class="w">{m}<p class="kicker">Formación en IA · Sesión individual</p><h1>Clase de IA 1 a 1: una hora práctica sobre tu negocio</h1>
-<p class="lead">Sin cursos genéricos ni diapositivas. Te sientas delante de tu ordenador, nos cuentas qué haces cada día y aprendes a hacerlo con IA. 40 € la hora (sin IVA), online o presencial en Sevilla capital.</p>
+<p class="lead">Sin cursos genéricos ni diapositivas. Te sientas delante de tu ordenador, nos cuentas qué haces cada día y aprendes a hacerlo con IA. Desde 40 € la hora (sin IVA), online o presencial en Sevilla capital.</p>
 <div class="botones" style="margin-top:24px"><a class="btn btn-p" href="{wa}" target="_blank" rel="noopener">Reservar por WhatsApp</a><a class="btn btn-s" href="../formacion-ia.html">Formación para equipos</a></div></div></section>
 <section class="sec"><div class="w"><div class="rejilla">
-<div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">40 €</b><p>por hora, sin IVA</p></div>
+<div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">Desde 40 €</b><p>por hora, sin IVA</p></div>
 <div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">1 a 1</b><p>sesión individual</p></div>
 <div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">100 %</b><p>práctica, sobre tus tareas</p></div>
 <div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">Online</b><p>o presencial en Sevilla capital</p></div>
@@ -120,7 +120,7 @@ def curso_sesion():
                 {"@type": "CourseInstance", "courseMode": "Onsite", "courseWorkload": "PT1H", "instructor": {"@id": JORDAN["@id"]},
                  "location": {"@type": "Place", "name": "Sevilla capital", "address": {"@type": "PostalAddress", "addressLocality": "Sevilla", "addressCountry": "ES"}}}],
             "offers": {"@type": "Offer", "category": "Paid", "price": "40", "priceCurrency": "EUR", "url": u, "availability": "https://schema.org/InStock",
-                       "priceSpecification": {"@type": "UnitPriceSpecification", "price": "40", "priceCurrency": "EUR", "unitCode": "HUR", "valueAddedTaxIncluded": False}}}
+                       "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": "40", "priceCurrency": "EUR", "unitCode": "HUR", "valueAddedTaxIncluded": False}}}
 
 # ---------- Sobre nosotros: equipo ----------
 def equipo_html(r):
@@ -132,5 +132,5 @@ def equipo_html(r):
 def banda_precios():
     return ('<section class="sec"><div class="w"><div class="tarjeta" style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">'
             '<div><p class="kicker" style="margin:0 0 4px">¿Todavía no necesitas un pack?</p><h2 style="margin:0 0 6px;font-size:24px">Empieza con una sesión de IA 1 a 1</h2>'
-            '<p style="margin:0">Una hora práctica para aprender a usar la IA en tu negocio. 40 € (sin IVA), online o presencial en Sevilla capital.</p></div>'
+            '<p style="margin:0">Una hora práctica para aprender a usar la IA en tu negocio. Desde 40 € la hora (sin IVA), online o presencial en Sevilla capital.</p></div>'
             '<a class="btn btn-p" href="servicios/formacion-ia/sesion-de-ia-1-a-1.html">Ver la sesión</a></div></div></section>')
