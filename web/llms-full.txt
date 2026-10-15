@@ -770,8 +770,8 @@ Programas que centralizan la administración de un negocio: ventas, facturas, cl
 **¿Qué es un software de gestión empresarial?**
 Un sistema que integra varias áreas de la empresa en un mismo lugar; cuando lo cubre todo se llama ERP.
 
-**¿Qué software necesita un restaurante?**
-Como mínimo un TPV con Verifactu, reservas y control horario; idealmente conectados entre sí.
+**¿Un software de gestión sirve para cualquier sector?**
+Sí, si es modular: cada negocio activa lo que usa, por ejemplo TPV y reservas en hostelería u órdenes de trabajo en un taller.
 
 
 ## Qué es un ERP: significado, tipos y ejemplos
@@ -906,8 +906,8 @@ El programa de punto de venta que gestiona ventas, cobros y cierres de caja; en 
 **¿El TPV de un bar tiene que cumplir Verifactu?**
 Sí: el software que emite facturas o tickets debe adaptarse a Verifactu en los plazos que fije la normativa.
 
-**¿Qué software necesita un restaurante?**
-TPV con Verifactu, reservas, fichaje del personal, carta digital y, si elabora comida, APPCC.
+**¿Qué debe conectar el TPV de un restaurante?**
+Reservas, fichaje del personal, carta digital y, si elabora comida, el APPCC, para que todo salga del mismo sistema.
 
 
 ## Software a medida por sectores y subsectores
@@ -1188,7 +1188,7 @@ Sí, la migración está incluida al implantar el programa de gestión.
 - [Cómo empezar a usar la IA en tu pequeña empresa (sin conocimientos técnicos)](https://studioemprende.com/blog/como-empezar-a-usar-la-ia-en-tu-pequena-empresa): Guía para implementar IA en una pequeña empresa paso a paso: las mejores herramientas de IA para propietarios de pequeñas empresas, por dónde empezar y errores a evitar.
 - [Agente de IA para WhatsApp: cómo automatizar las respuestas de WhatsApp Business](https://studioemprende.com/blog/agente-de-ia-para-whatsapp): Qué es un agente de IA de WhatsApp, en qué se diferencia de un chatbot, cómo gestiona las consultas de clientes y qué necesitas para automatizar WhatsApp Business en tu pequeña empresa.
 - [CRM para empresas de servicios: cuál elegir para clientes y citas](https://studioemprende.com/blog/crm-para-empresas-de-servicios): Qué debe tener el mejor CRM para una pequeña empresa de servicios, clínica o negocio local: ficha de cliente, citas, recordatorios, presupuestos y cobros en un mismo sitio.
-- [CRM para autónomos: el más sencillo para llevar clientes y facturas](https://studioemprende.com/blog/crm-para-autonomos): Cuál es el mejor CRM para autónomos y emprendedores individuales: qué necesita de verdad una empresa unipersonal, qué sobra y cómo llevar clientes y facturas en un solo sitio.
+- [CRM para autónomos y freelancers: cuál elegir y qué debe tener](https://studioemprende.com/blog/crm-para-autonomos): Cuál es el mejor CRM para autónomos y freelancers: qué necesita una empresa unipersonal, CRM gratis o de pago, facturación española, protección de datos y cómo elegir.
 - [App de control horario para pequeñas empresas: qué debe tener](https://studioemprende.com/blog/app-de-control-horario-para-pequenas-empresas): Cómo elegir una aplicación de control horario para una pequeña empresa: funciones imprescindibles para controlar las horas de los empleados, cumplir el registro de jornada y no complicarte.
 - [Software todo en uno para pequeñas empresas: ¿mejor que varias apps?](https://studioemprende.com/blog/software-todo-en-uno-para-pequenas-empresas): Software empresarial todo en uno frente a aplicaciones separadas: ventajas, inconvenientes y qué herramientas de gestión necesita de verdad el dueño de una pequeña empresa.
 - [Cómo hacer que tu pequeña empresa aparezca en Google](https://studioemprende.com/blog/como-aparecer-en-google-con-tu-pequena-empresa): Qué necesita la web de una pequeña empresa para posicionarse en Google y cómo configurar el perfil de Google Business paso a paso para aparecer en el mapa.

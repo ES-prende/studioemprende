@@ -219,7 +219,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{t}</title>
 <meta name="description" content="{d}">
-<link rel="canonical" href="{dom}/{ruta}">{bing}
+<link rel="canonical" href="{dom}/{canon}">{bing}
 <meta property="og:title" content="{t}"><meta property="og:description" content="{d}"><meta property="og:image" content="{og}"><meta property="og:type" content="{tipo}">
 {seo}
 <link rel="icon" href="{r}favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="{r}favicon.svg"><link rel="apple-touch-icon" href="{r}apple-touch-icon.png"><link rel="manifest" href="{r}site.webmanifest"><meta name="theme-color" content="#7A2638">
@@ -240,13 +240,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <span class="wa-burbuja"><b>¿Hablamos?</b>Te respondemos por WhatsApp</span>
 <span class="wa-icono"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.6 3 15.6c0 2.5.8 4.9 2.1 6.9L3.6 29l6.7-1.7c1.8 1 3.8 1.5 5.7 1.5 7.2 0 13-5.6 13-12.6S23.2 3 16 3zm0 23.1c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-4 1 .9-3.8-.2-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.6 10 10.2 5.5 16 5.5S26.4 10 26.4 15.6 21.8 26.1 16 26.1zm5.7-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.4 3.3c.2.2 2.4 3.6 5.8 5 2.9 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></span></a>
 </body>
-</html>""".format(t=e(titulo), d=e(desc), dom=DOM, ruta=ruta.replace("index.html", ""), r=r, cab=cabecera(r), c=cuerpo, pie=pie(r), seo=seo, tipo=tipo, og=OGIMG[ruta], bing=('\n<meta name="msvalidate.01" content="AB0BB421B154681CB3B932E814F90956" />' if ruta == "index.html" else ""), wan=WA_NUM, wat=_q("Hola, vengo de la web de Studio Emprende (%s) y quiero información." % titulo.split(" · ")[0]))
+</html>""".format(t=e(titulo), d=e(desc), dom=DOM, ruta=ruta.replace("index.html", ""), canon=CANON.get(ruta, ruta).replace("index.html", ""), r=r, cab=cabecera(r), c=cuerpo, pie=pie(r), seo=seo, tipo=tipo, og=OGIMG[ruta], bing=('\n<meta name="msvalidate.01" content="AB0BB421B154681CB3B932E814F90956" />' if ruta == "index.html" else ""), wan=WA_NUM, wat=_q("Hola, vengo de la web de Studio Emprende (%s) y quiero información." % titulo.split(" · ")[0]))
     p = os.path.join(OUT, ruta); os.makedirs(os.path.dirname(p), exist_ok=True)
     open(p, "w").write(html)
     PAGS.append(ruta)
 
 PAGS = []
 NOINDEX = set()
+# Funciones que aparecen en dos secciones: la copia apunta (canonical) a la principal y sale del sitemap
+CANON = {"servicios/software-de-gestion/gestion-de-flotas.html": "servicios/software-especializado/gestion-de-flotas.html",
+         "servicios/software-de-gestion/presupuestador-y-configurador-online.html": "servicios/software-especializado/presupuestador-y-configurador-online.html",
+         "servicios/software-de-gestion/portal-de-pedidos-b2b.html": "servicios/software-especializado/portal-de-pedidos-b2b.html",
+         "servicios/erp-para-pymes/cuadro-de-mando-en-tiempo-real.html": "servicios/software-de-gestion/cuadro-de-mando-en-tiempo-real.html",
+         "servicios/software-de-gestion/integraciones-por-api.html": "servicios/migraciones-e-integraciones/integraciones-por-api.html"}
+FAQ_HOME = [("¿Qué es Studio Emprende?", "Un estudio que monta todo lo digital de un negocio: marca, web con SEO, programa de gestión, automatizaciones e inteligencia artificial, en packs con precio cerrado."),
+ ("¿A quién ayudáis?", "A emprendedores, autónomos y pequeñas empresas que empiezan o quieren ordenar su negocio, y a asesores que montan negocios para sus clientes."),
+ ("¿Usáis inteligencia artificial en los proyectos?", "Sí, cuando ahorra trabajo de verdad: automatizaciones, asistentes en WhatsApp y nuestro agente PIX conectado a tu programa de gestión, siempre con tu aprobación en lo importante."),
+ ("¿Cómo funciona el diagnóstico gratis?", "Nos cuentas cómo trabajas y te decimos qué digitalizar o automatizar primero y cuánto costaría, sin compromiso."),
+ ("¿Dais formación?", "Sí: formación en IA para equipos, sesiones individuales desde 40 € la hora y cursos a medida según la operativa de tu empresa.")]
 OGIMG = {}
 
 def cta(r):
@@ -384,8 +395,8 @@ inicio = """
 
 <section class="sec"><div class="w"><div class="cab"><p class="kicker">Blog</p><h2>Ideas claras para tu negocio</h2></div><div class="rejilla">%s</div><p style="margin-top:28px"><a class="btn btn-s" href="blog/index.html">Ver todos los artículos</a></p></div></section>
 <section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Preguntas frecuentes</p><h2>Lo que más nos preguntan</h2></div>%s</div></section>
-""" % (tec, serv, packs(""), "".join('<a class="pildora" href="sectores.html#%s">%s</a>' % (s.lower().replace(" ", "-"), s) for s in SECTORES), BLOGHOME, faq())
-pagina("index.html", "Studio Emprende · Software, IA y webs para emprender", "Programa de gestión modular, agentes de IA y webs con SEO en una sola cuenta. Para autónomos, pymes y empresas en España y Latinoamérica.", inicio + cta(""))
+""" % (tec, serv, packs(""), "".join('<a class="pildora" href="sectores.html#%s">%s</a>' % (s.lower().replace(" ", "-"), s) for s in SECTORES), BLOGHOME, '<div class="faq">' + "".join("<details><summary>%s</summary><p>%s</p></details>" % (e(q), e(a)) for q, a in FAQ_HOME) + "</div>")
+pagina("index.html", "Studio Emprende · Software, IA y webs para emprender", "Programa de gestión modular, agentes de IA y webs con SEO en una sola cuenta. Para autónomos, pymes y empresas en España y Latinoamérica.", inicio + cta(""), faqs=FAQ_HOME)
 
 import unicodedata, re as _re
 def slugify(t):
@@ -690,7 +701,7 @@ SMS = []
 for g in ["paginas", "servicios", "guias", "funciones", "blog"]:
     xs = ""
     for p in PAGS:
-        if p in NOINDEX or _grupo(p) != g: continue
+        if p in NOINDEX or p in CANON or _grupo(p) != g: continue
         img = ""
         if g == "blog" and p != "blog/index.html":
             img = "<image:image><image:loc>%s/assets/img/blog/%s.jpg</image:loc></image:image>" % (DOM, p[5:-5])
@@ -701,7 +712,7 @@ for g in ["paginas", "servicios", "guias", "funciones", "blog"]:
 open(OUT + "/sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join("<sitemap><loc>%s/%s</loc><lastmod>%s</lastmod></sitemap>\n" % (DOM, s, max(LASTMOD[p] for p in PAGS if p not in NOINDEX and _grupo(p) == s[8:-4])) for s in SMS) + "</sitemapindex>\n")
 INDEXNOW = "0e7088fe2e96eae098138bb5db5e8322"
 open(OUT + "/%s.txt" % INDEXNOW, "w").write(INDEXNOW)
-open(OUT + "/indexnow-urls.txt", "w").write("".join("%s/%s\n" % (DOM, p.replace("index.html", "")) for p in PAGS if p not in NOINDEX))
+open(OUT + "/indexnow-urls.txt", "w").write("".join("%s/%s\n" % (DOM, p.replace("index.html", "")) for p in PAGS if p not in NOINDEX and p not in CANON))
 bots = ["Googlebot", "Bingbot", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot", "Meta-ExternalAgent"]
 open(OUT + "/robots.txt", "w").write("".join("User-agent: %s\nAllow: /\n\n" % b for b in bots) + "User-agent: *\nAllow: /\nDisallow: /404.html\n\n# Indice y sitemaps por tipo\nSitemap: %s/sitemap.xml\n" % DOM + "".join("Sitemap: %s/%s\n" % (DOM, s) for s in SMS) + "\n# Resumen para IA: %s/llms.txt · %s/llms-full.txt\n" % (DOM, DOM))
 llms = "# Studio Emprende\n\n> %s\n\n## Empresa\n- Nombre comercial: Studio Emprende\n- Titular: INTELIGENCIA SEVILLA SL (NIF B88763818)\n- Domicilio social: Calle Betis 3, 41449 Alcolea del Río (Sevilla), España\n- Contacto: info@studioemprende.com · WhatsApp +34 601 86 96 68\n- Ámbito: 100 %% online, España y Latinoamérica\n\n## Precios\n" % ORG["description"] + "".join("- %s: %s%s. %s\n" % (n, p, "" if p == "A medida" else " + 40 €/mes de soporte (sin IVA)", d) for n, p, d, x in PACKS) + "\n## Servicios\n"

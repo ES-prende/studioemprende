@@ -104,7 +104,7 @@ GUIAS2 = [
    "<p>Haz una lista de las tareas que repites cada semana, quién las hace y dónde se pierde tiempo. Después busca un programa que cubra esas tareas, que se pueda ampliar y que te deje sacar tus datos. El nuestro es <a href=\"" + SG + "software-de-gestion.html\">modular</a>: activas solo lo que usas.</p>")],
  [("¿Qué son los software de gestión?", "Programas que centralizan la administración de un negocio: ventas, facturas, clientes, stock y empleados."),
   ("¿Qué es un software de gestión empresarial?", "Un sistema que integra varias áreas de la empresa en un mismo lugar; cuando lo cubre todo se llama ERP."),
-  ("¿Qué software necesita un restaurante?", "Como mínimo un TPV con Verifactu, reservas y control horario; idealmente conectados entre sí.")],
+  ("¿Un software de gestión sirve para cualquier sector?", "Sí, si es modular: cada negocio activa lo que usa, por ejemplo TPV y reservas en hostelería u órdenes de trabajo en un taller.")],
  ["software-de-gestion", "fichador", "erp-para-pymes"], ["pyme-ahorrar-horas", "que-es-verifactu-y-cuando-me-afecta"], ["que-es-un-erp", "erp-vs-crm", "tipos-de-software"]),
 
 ("que-es-un-erp", "software",
@@ -280,7 +280,7 @@ GUIAS2 = [
    "<p>Algunos TPV gratuitos cobran por otros lados: comisiones por pago, funciones básicas de pago o datos que no puedes exportar. Antes de elegir, comprueba que cumple Verifactu, que puedes llevarte tus datos y que tiene soporte en horario de hostelería. Nuestro <a href=\"" + SG + "software-de-gestion/tpv.html\">TPV</a> forma parte del programa de gestión modular.</p>")],
  [("¿Qué es un software TPV?", "El programa de punto de venta que gestiona ventas, cobros y cierres de caja; en hostelería, también mesas y comandas."),
   ("¿El TPV de un bar tiene que cumplir Verifactu?", "Sí: el software que emite facturas o tickets debe adaptarse a Verifactu en los plazos que fije la normativa."),
-  ("¿Qué software necesita un restaurante?", "TPV con Verifactu, reservas, fichaje del personal, carta digital y, si elabora comida, APPCC.")],
+  ("¿Qué debe conectar el TPV de un restaurante?", "Reservas, fichaje del personal, carta digital y, si elabora comida, el APPCC, para que todo salga del mismo sistema.")],
  ["software-de-gestion", "fichador", "presencia-digital"], ["appcc-digital-hosteleria", "que-es-verifactu-y-cuando-me-afecta"], ["que-es-un-software-de-gestion", "tipos-de-software"]),
 
 ("software-a-medida-por-sectores", "software",

@@ -21,7 +21,7 @@ def tarjeta_formador(r):
 HUB_FAQS = [
     ("¿Hace falta que el equipo sepa de tecnología?", "No. Empezamos desde el nivel de cada persona. Si alguien nunca ha abierto ChatGPT, se parte de ahí; si ya lo usa, se va directo a sus tareas."),
     ("¿Cuánto dura la formación?", "Depende de cuántas personas y áreas haya. Tras la entrevista previa te damos una propuesta cerrada con número de sesiones y calendario."),
-    ("¿Es online o presencial?", "Las dos. Online en directo para cualquier punto de España y presencial cuando el equipo lo prefiere."),
+    ("¿La formación en IA para equipos es online o presencial?", "Las dos. Online en directo para cualquier punto de España y presencial cuando el equipo lo prefiere."),
     ("¿Hay obligación legal de formar al equipo en IA?", "Sí, si tu empresa usa sistemas de IA. El artículo 4 del Reglamento europeo de IA (AI Act) exige desde el 2 de febrero de 2025 que el personal que los utiliza tenga un nivel suficiente de alfabetización en IA."),
     ("¿Entregáis materiales?", "Sí. Cada área se queda con sus instrucciones y ejemplos guardados, y la empresa con sus normas de uso de la IA por escrito."),
     ("¿Cuánto cuesta la formación en IA para empresas?", "La sesión individual cuesta desde 40 € la hora (sin IVA). La formación para equipos se presupuesta cerrada según el número de personas, áreas y horas, después de la entrevista previa."),
@@ -89,7 +89,7 @@ def curso_hub():
 SESION_SLUG = "sesion-de-ia-1-a-1"
 SESION_FAQS = [
     ("¿Hace falta que sepa algo de IA?", "No. Si nunca has abierto ChatGPT, se empieza por ahí. Si ya lo usas y quieres sacarle más partido, vamos directos a tus tareas."),
-    ("¿Es online o presencial?", "Online por videollamada desde cualquier punto de España, o presencial en Sevilla capital. Mismo precio."),
+    ("¿La clase de IA 1 a 1 es online o presencial?", "Online por videollamada desde cualquier punto de España, o presencial en Sevilla capital. Mismo precio."),
     ("¿Qué incluye el precio?", "Desde 40 € la hora (sin IVA). En las sesiones presenciales en Sevilla capital el desplazamiento está incluido; si la sesión necesita preparación especial, te lo decimos antes de reservar."),
     ("¿Y si necesito más de una hora?", "Al terminar vemos si te hace falta otra sesión y buscamos hueco. Las siguientes siguen la misma tarifa, desde 40 € la hora."),
     ("¿Y si lo que necesito no aparece en la lista?", "Escríbenos y cuéntanoslo. Si podemos enseñártelo, lo trabajamos; si no, te lo decimos claro y te orientamos."),

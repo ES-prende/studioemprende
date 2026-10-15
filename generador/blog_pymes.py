@@ -77,8 +77,8 @@ ARTICULOS = [
 <ol><li>Pasa todos tus contactos a una sola base de datos, sin duplicados.</li><li>Conecta la agenda a la web y a WhatsApp para recibir reservas.</li><li>Activa recordatorios el día anterior.</li><li>Registra cada visita en la ficha del cliente.</li><li>Revisa cada mes qué clientes llevan tiempo sin venir y contáctalos.</li></ol>
 <p>Nuestro <a href="../servicios/software-de-gestion.html">software de gestión modular</a> incluye CRM, agenda y facturación, y se adapta a cada sector. Si trabajas solo, quizá te encaje mejor lo que contamos en <a href="crm-para-autonomos.html">CRM para autónomos</a>.</p>
 """),
-("crm-para-autonomos", "CRM para autónomos: el más sencillo para llevar clientes y facturas",
- "Cuál es el mejor CRM para autónomos y emprendedores individuales: qué necesita de verdad una empresa unipersonal, qué sobra y cómo llevar clientes y facturas en un solo sitio.",
+("crm-para-autonomos", "CRM para autónomos y freelancers: cuál elegir y qué debe tener",
+ "Cuál es el mejor CRM para autónomos y freelancers: qué necesita una empresa unipersonal, CRM gratis o de pago, facturación española, protección de datos y cómo elegir.",
  "15 oct 2026", "Gestión", "autonomos", _resp(
  "El mejor CRM para un autónomo es uno sencillo: una lista de clientes con su historial, recordatorios de seguimiento, presupuestos y facturas en el mismo sitio y acceso desde el móvil. A una empresa unipersonal le sobran embudos complejos y funciones pensadas para equipos comerciales.") + """
 <p>Si trabajas por tu cuenta, probablemente llevas los clientes entre el móvil, el correo y una hoja de cálculo. Funciona hasta que se te olvida llamar a alguien o no sabes quién te debe una factura.</p>
@@ -88,6 +88,19 @@ ARTICULOS = [
 <p>Embudos de ventas con diez fases, permisos de equipo, informes de comerciales… Pagar por funciones que no usas solo complica el día a día.</p>
 <h2>¿Cómo llevo un registro de mis clientes y facturas como profesional independiente?</h2>
 <ol><li>Reúne tus contactos en un solo sitio.</li><li>Crea cada presupuesto desde la ficha del cliente.</li><li>Convierte el presupuesto aceptado en factura sin volver a teclear.</li><li>Activa avisos de facturas vencidas.</li><li>Revisa una vez a la semana a quién toca llamar.</li></ol>
+<h2>¿CRM gratis o de pago?</h2>
+<p>Hay CRM conocidos, como HubSpot, con plan gratuito que sirve para ordenar contactos y oportunidades. Para un freelance que empieza, puede bastar. Sus límites suelen aparecer en tres sitios: número de contactos o funciones de automatización, <b>facturas que no están adaptadas a la normativa española</b> (Verifactu) y soporte solo en inglés. Si facturas desde el CRM, comprueba esto antes de elegir.</p>
+<h2>Qué mirar según cómo trabajas</h2>
+<div class="tabla-wrap"><table class="tabla-norm"><thead><tr><th>Si tu trabajo es…</th><th>Busca un CRM con…</th></tr></thead><tbody>
+<tr><td>Por proyectos (diseño, desarrollo, consultoría)</td><td>Gestión de proyectos, tareas y horas facturables</td></tr>
+<tr><td>Con propuestas largas</td><td>Presupuestos y contratos con firma online</td></tr>
+<tr><td>Con clientes recurrentes</td><td>Cuotas, renovaciones y recordatorios automáticos</td></tr>
+<tr><td>Con clientes internacionales</td><td>Varias monedas e idiomas en facturas y correos</td></tr>
+<tr><td>En la calle o en obra</td><td>App móvil que funcione sin conexión</td></tr>
+<tr><td>Muy de correo y calendario</td><td>Integración con Gmail/Google Workspace o Outlook</td></tr></tbody></table></div>
+<h2>Protección de datos: lo que no puedes pasar por alto</h2>
+<ul><li>Que los datos se alojen en la Unión Europea o con garantías equivalentes.</li><li>Que el proveedor firme contigo el contrato de encargado del tratamiento (RGPD).</li><li>Que puedas exportar todos tus datos cuando quieras.</li></ul>
+<p>Si vienes de una hoja de cálculo, el cambio está explicado en <a href="como-dejar-de-usar-excel-en-mi-empresa.html">cómo dejar de usar Excel sin perder datos</a>.</p>
 <h2>CRM sencillo o programa de facturación</h2>
 <p>Muchos programas de facturación para autónomos ya incluyen una lista de clientes básica. Si tu negocio depende de hacer seguimiento (presupuestos que se piensan, clientes recurrentes, renovaciones), te conviene un CRM con facturación integrada. Te ayudamos a montarlo dentro de nuestros <a href="../servicios/autonomos.html">servicios para autónomos</a>.</p>
 """),
@@ -178,6 +191,8 @@ FAQS = {
  ("¿Un CRM sirve para una clínica?", "Sí, siempre que tenga control de accesos, historial por paciente y cumpla la protección de datos."),
 ],
 "crm-para-autonomos": [
+ ("¿Cuál es el mejor CRM gratis para autónomos?", "Los planes gratuitos de CRM conocidos sirven para ordenar contactos; si necesitas facturar según la normativa española y tener soporte en español, conviene uno con facturación integrada."),
+ ("¿Puedo usar Notion o Excel como CRM?", "Para unos pocos clientes, sí. Cuando necesitas recordatorios, presupuestos que pasan a factura o acceso desde el móvil, se quedan cortos."),
  ("¿Cuál es el mejor CRM para una empresa unipersonal?", "Uno sencillo, con lista de clientes, recordatorios, presupuestos y facturas integrados y app móvil."),
  ("¿Necesita un autónomo un CRM?", "Si haces seguimiento de presupuestos o tienes clientes recurrentes, sí: evita olvidos y te dice quién te debe dinero."),
  ("¿Puedo usar un CRM desde el móvil?", "Sí, y para un autónomo es casi imprescindible, porque gran parte del trabajo se hace fuera de la oficina."),

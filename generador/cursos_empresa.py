@@ -136,7 +136,7 @@ CURSOS = [
  ],
  "faqs": [
   ("¿Cuántas horas tiene el curso?", "Se ajusta al nivel de partida y a lo que necesita cada puesto. Te proponemos la duración después de ver vuestras hojas y hablar con el equipo."),
-  ("¿Es online o presencial?", "Las dos opciones. Presencial si el equipo está en un mismo sitio y online en directo si está repartido."),
+  ("¿El curso de Excel es online o presencial?", "Las dos opciones. Presencial si el equipo está en un mismo sitio y online en directo si está repartido."),
   ("¿Hace falta que todos tengan el mismo nivel?", "No. Hacemos una prueba corta al principio y separamos a la gente por nivel para que nadie se aburra ni se pierda."),
   ("¿Y si al final necesitamos un programa en vez de Excel?", "Te lo diremos con argumentos. Si es así, podemos migrar esas hojas a un programa de gestión y formar al equipo en él."),
  ],

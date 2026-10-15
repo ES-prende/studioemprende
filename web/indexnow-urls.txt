@@ -48,7 +48,6 @@ https://studioemprende.com/servicios/software-de-gestion/presupuestos-desde-medi
 https://studioemprende.com/servicios/software-de-gestion/postventa-garantias-e-incidencias
 https://studioemprende.com/servicios/software-de-gestion/planificacion-de-rutas
 https://studioemprende.com/servicios/software-de-gestion/mantenimientos-programados
-https://studioemprende.com/servicios/software-de-gestion/gestion-de-flotas
 https://studioemprende.com/servicios/software-de-gestion/inventario-en-varios-almacenes
 https://studioemprende.com/servicios/software-de-gestion/pedidos-a-proveedores
 https://studioemprende.com/servicios/software-de-gestion/lotes-trazabilidad-y-caducidades
@@ -63,12 +62,9 @@ https://studioemprende.com/servicios/software-de-gestion/canal-de-denuncias-ley-
 https://studioemprende.com/servicios/software-de-gestion/tpv
 https://studioemprende.com/servicios/software-de-gestion/tienda-online-conectada
 https://studioemprende.com/servicios/software-de-gestion/catalogo-y-tarifas
-https://studioemprende.com/servicios/software-de-gestion/presupuestador-y-configurador-online
-https://studioemprende.com/servicios/software-de-gestion/portal-de-pedidos-b2b
 https://studioemprende.com/servicios/software-de-gestion/cuadro-de-mando-en-tiempo-real
 https://studioemprende.com/servicios/software-de-gestion/informe-semanal-automatico-por-whatsapp-o-voz
 https://studioemprende.com/servicios/software-de-gestion/rentabilidad-por-cliente-servicio-y-empleado
-https://studioemprende.com/servicios/software-de-gestion/integraciones-por-api
 https://studioemprende.com/servicios/software-de-gestion/portal-del-cliente-y-del-proveedor
 https://studioemprende.com/servicios/software-de-gestion/app-movil
 https://studioemprende.com/servicios/software-de-gestion/app-para-tecnicos-de-campo
@@ -79,7 +75,6 @@ https://studioemprende.com/servicios/erp-para-pymes/facturacion-con-verifactu-y-
 https://studioemprende.com/servicios/erp-para-pymes/produccion-obras-o-servicios-segun-tu-sector
 https://studioemprende.com/servicios/erp-para-pymes/equipo-fichaje-y-turnos
 https://studioemprende.com/servicios/erp-para-pymes/contabilidad-o-conexion-con-tu-asesoria
-https://studioemprende.com/servicios/erp-para-pymes/cuadro-de-mando-en-tiempo-real
 https://studioemprende.com/servicios/erp-para-pymes/analisis-de-tus-procesos-y-eleccion-de-modulos
 https://studioemprende.com/servicios/erp-para-pymes/migracion-desde-excel-u-otro-programa
 https://studioemprende.com/servicios/erp-para-pymes/implantacion-por-fases-para-no-parar-el-negocio
