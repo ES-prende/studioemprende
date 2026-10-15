@@ -61,6 +61,8 @@ COOKIES = """<h2>1. Qué son las cookies</h2>
 <p>Google Tag Manager se carga siempre, pero mientras no aceptes, las etiquetas de analítica y publicidad funcionan en modo de consentimiento denegado y no guardan cookies de seguimiento. Los datos que trata Google pueden transferirse fuera del Espacio Económico Europeo; puedes consultar su política en <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
 <h2>3. Cómo cambiar tu elección</h2>
 <p>Puedes aceptar, rechazar o configurar las cookies en el aviso que aparece al entrar y cambiar tu elección cuando quieras desde el enlace «Configurar cookies» del pie de página.</p>
+<h3>Registro de tu elección</h3>
+<p>Para poder demostrar que nos diste (o no) tu consentimiento, guardamos en nuestro servidor un registro de cada elección con: fecha y hora, un identificador aleatorio que se crea en tu navegador (no contiene tu nombre ni tu correo), la opción elegida (aceptar, rechazar o selección personalizada y qué categorías), la versión del aviso, la página desde la que elegiste, tu dirección IP anonimizada (sin el último bloque) y el tipo de navegador. Lo hacemos para cumplir la obligación de acreditar el consentimiento (artículo 7.1 del RGPD). Conservamos el registro un máximo de 3 años y no lo cedemos a terceros.</p>
 <h2>4. Cómo desactivarlas en el navegador</h2>
 <p>Puedes borrar o bloquear las cookies y el almacenamiento local desde la configuración de tu navegador (Chrome, Safari, Firefox o Edge). Si lo haces, la web seguirá funcionando.</p>
 <h2>5. Contacto</h2>

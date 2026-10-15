@@ -116,12 +116,14 @@ def pie(r):
 <div class="cookies-btn"><button type="button" class="btn btn-s" data-ck="rechazar">Rechazar</button><button type="button" class="btn btn-s" data-ck="config">Configurar</button><button type="button" class="btn btn-s" data-ck="guardar" hidden>Guardar selección</button><button type="button" class="btn btn-p" data-ck="aceptar">Aceptar todas</button></div>
 </div>
 <script>(function(){{var b=document.getElementById('cookies');if(!b)return;var k='se_consent';function g(){{try{{return localStorage.getItem(k)}}catch(e){{return null}}}}
-function save(a,p){{var v={{analytics_storage:a?'granted':'denied',ad_storage:p?'granted':'denied',ad_user_data:p?'granted':'denied',ad_personalization:p?'granted':'denied'}};try{{localStorage.setItem(k,JSON.stringify(v))}}catch(e){{}}if(window.gtag)gtag('consent','update',v);window.dataLayer&&dataLayer.push({{event:'consent_update'}});b.hidden=true;}}
+function cid(){{var i='';try{{i=localStorage.getItem('se_cid');if(!i){{i=(Date.now().toString(36)+Math.random().toString(36).slice(2,12));localStorage.setItem('se_cid',i)}}}}catch(e){{i='sin-id'+Math.random().toString(36).slice(2,10)}}return i}}
+function reg(acc,a,p){{try{{var d=JSON.stringify({{id:cid(),accion:acc,analitica:a,publicidad:p,version:'2026-10',url:location.href.split('#')[0]}});if(navigator.sendBeacon){{navigator.sendBeacon('/consentimiento.php',new Blob([d],{{type:'application/json'}}))}}else{{fetch('/consentimiento.php',{{method:'POST',body:d,keepalive:true}})}}}}catch(e){{}}}}
+function save(a,p,acc){{var v={{analytics_storage:a?'granted':'denied',ad_storage:p?'granted':'denied',ad_user_data:p?'granted':'denied',ad_personalization:p?'granted':'denied'}};try{{localStorage.setItem(k,JSON.stringify(v))}}catch(e){{}}if(window.gtag)gtag('consent','update',v);window.dataLayer&&dataLayer.push({{event:'consent_update'}});reg(acc,a,p);b.hidden=true;}}
 if(!g())b.hidden=false;
 b.addEventListener('click',function(e){{var t=e.target.getAttribute('data-ck');if(!t)return;
-if(t==='aceptar')save(true,true);else if(t==='rechazar')save(false,false);
+if(t==='aceptar')save(true,true,'aceptar');else if(t==='rechazar')save(false,false,'rechazar');
 else if(t==='config'){{document.getElementById('cookies-opc').hidden=false;e.target.hidden=true;b.querySelector('[data-ck=guardar]').hidden=false;}}
-else if(t==='guardar')save(document.getElementById('ck-ana').checked,document.getElementById('ck-pub').checked);}});
+else if(t==='guardar')save(document.getElementById('ck-ana').checked,document.getElementById('ck-pub').checked,'guardar');}});
 document.addEventListener('click',function(e){{if(e.target.closest&&e.target.closest('[data-abrir-cookies]')){{e.preventDefault();var c={{}};try{{c=JSON.parse(g()||'{{}}')}}catch(x){{}}document.getElementById('ck-ana').checked=c.analytics_storage==='granted';document.getElementById('ck-pub').checked=c.ad_storage==='granted';b.hidden=false;}}}});}})();</script>
 """.format(r=r, prod=prod, quien=quien)
 
@@ -721,10 +723,12 @@ for g in ["paginas", "servicios", "guias", "funciones", "blog"]:
     SMS.append("sitemap-%s.xml" % g)
 open(OUT + "/sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join("<sitemap><loc>%s/%s</loc><lastmod>%s</lastmod></sitemap>\n" % (DOM, s, max(LASTMOD[p] for p in PAGS if p not in NOINDEX and _grupo(p) == s[8:-4])) for s in SMS) + "</sitemapindex>\n")
 INDEXNOW = "0e7088fe2e96eae098138bb5db5e8322"
+for _php in ("consentimiento.php", "registro-consentimientos.php"):
+    shutil.copy(os.path.join(AQUI, "php", _php), OUT + "/" + _php)
 open(OUT + "/%s.txt" % INDEXNOW, "w").write(INDEXNOW)
 open(OUT + "/indexnow-urls.txt", "w").write("".join("%s/%s\n" % (DOM, p.replace("index.html", "")) for p in PAGS if p not in NOINDEX and p not in CANON))
 bots = ["Googlebot", "Bingbot", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot", "Meta-ExternalAgent"]
-open(OUT + "/robots.txt", "w").write("".join("User-agent: %s\nAllow: /\n\n" % b for b in bots) + "User-agent: *\nAllow: /\nDisallow: /404.html\n\n# Indice y sitemaps por tipo\nSitemap: %s/sitemap.xml\n" % DOM + "".join("Sitemap: %s/%s\n" % (DOM, s) for s in SMS) + "\n# Resumen para IA: %s/llms.txt · %s/llms-full.txt\n" % (DOM, DOM))
+open(OUT + "/robots.txt", "w").write("".join("User-agent: %s\nAllow: /\n\n" % b for b in bots) + "User-agent: *\nAllow: /\nDisallow: /404.html\nDisallow: /registro-consentimientos.php\nDisallow: /consentimiento.php\n\n# Indice y sitemaps por tipo\nSitemap: %s/sitemap.xml\n" % DOM + "".join("Sitemap: %s/%s\n" % (DOM, s) for s in SMS) + "\n# Resumen para IA: %s/llms.txt · %s/llms-full.txt\n" % (DOM, DOM))
 llms = "# Studio Emprende\n\n> %s\n\n## Empresa\n- Nombre comercial: Studio Emprende\n- Titular: INTELIGENCIA SEVILLA SL (NIF B88763818)\n- Domicilio social: Calle Betis 3, 41449 Alcolea del Río (Sevilla), España\n- Contacto: info@studioemprende.com · WhatsApp +34 601 86 96 68\n- Ámbito: 100 %% online, España y Latinoamérica\n\n## Precios\n" % ORG["description"] + "".join("- %s: %s%s. %s\n" % (n, p, "" if p == "A medida" else " + 40 €/mes de soporte (sin IVA)", d) for n, p, d, x in PACKS) + "\n## Servicios\n"
 llms += "".join("- [%s](%s/servicios/%s.html): %s\n" % (s[2], DOM, s[0], " ".join(s[3].split())) for s in SECCIONES)
 llms += "\n## PIX, agente de IA empresarial\n- [PIX](%s/servicios/pix/): %s\n" % (DOM, PIX_HUB["resumen"]) + "".join("- [%s](%s/servicios/pix/%s.html): %s\n" % (x["nav"], DOM, x["slug"], x["resumen"]) for x in PIX_PAGINAS)

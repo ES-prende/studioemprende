@@ -43,6 +43,8 @@ Allow: /
 User-agent: *
 Allow: /
 Disallow: /404.html
+Disallow: /registro-consentimientos.php
+Disallow: /consentimiento.php
 
 # Indice y sitemaps por tipo
 Sitemap: https://studioemprende.com/sitemap.xml

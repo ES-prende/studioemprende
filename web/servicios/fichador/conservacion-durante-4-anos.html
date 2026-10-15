@@ -70,12 +70,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="cookies-btn"><button type="button" class="btn btn-s" data-ck="rechazar">Rechazar</button><button type="button" class="btn btn-s" data-ck="config">Configurar</button><button type="button" class="btn btn-s" data-ck="guardar" hidden>Guardar selección</button><button type="button" class="btn btn-p" data-ck="aceptar">Aceptar todas</button></div>
 </div>
 <script>(function(){var b=document.getElementById('cookies');if(!b)return;var k='se_consent';function g(){try{return localStorage.getItem(k)}catch(e){return null}}
-function save(a,p){var v={analytics_storage:a?'granted':'denied',ad_storage:p?'granted':'denied',ad_user_data:p?'granted':'denied',ad_personalization:p?'granted':'denied'};try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}if(window.gtag)gtag('consent','update',v);window.dataLayer&&dataLayer.push({event:'consent_update'});b.hidden=true;}
+function cid(){var i='';try{i=localStorage.getItem('se_cid');if(!i){i=(Date.now().toString(36)+Math.random().toString(36).slice(2,12));localStorage.setItem('se_cid',i)}}catch(e){i='sin-id'+Math.random().toString(36).slice(2,10)}return i}
+function reg(acc,a,p){try{var d=JSON.stringify({id:cid(),accion:acc,analitica:a,publicidad:p,version:'2026-10',url:location.href.split('#')[0]});if(navigator.sendBeacon){navigator.sendBeacon('/consentimiento.php',new Blob([d],{type:'application/json'}))}else{fetch('/consentimiento.php',{method:'POST',body:d,keepalive:true})}}catch(e){}}
+function save(a,p,acc){var v={analytics_storage:a?'granted':'denied',ad_storage:p?'granted':'denied',ad_user_data:p?'granted':'denied',ad_personalization:p?'granted':'denied'};try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}if(window.gtag)gtag('consent','update',v);window.dataLayer&&dataLayer.push({event:'consent_update'});reg(acc,a,p);b.hidden=true;}
 if(!g())b.hidden=false;
 b.addEventListener('click',function(e){var t=e.target.getAttribute('data-ck');if(!t)return;
-if(t==='aceptar')save(true,true);else if(t==='rechazar')save(false,false);
+if(t==='aceptar')save(true,true,'aceptar');else if(t==='rechazar')save(false,false,'rechazar');
 else if(t==='config'){document.getElementById('cookies-opc').hidden=false;e.target.hidden=true;b.querySelector('[data-ck=guardar]').hidden=false;}
-else if(t==='guardar')save(document.getElementById('ck-ana').checked,document.getElementById('ck-pub').checked);});
+else if(t==='guardar')save(document.getElementById('ck-ana').checked,document.getElementById('ck-pub').checked,'guardar');});
 document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('[data-abrir-cookies]')){e.preventDefault();var c={};try{c=JSON.parse(g()||'{}')}catch(x){}document.getElementById('ck-ana').checked=c.analytics_storage==='granted';document.getElementById('ck-pub').checked=c.ad_storage==='granted';b.hidden=false;}});})();</script>
 
 <a class="wa-flot" href="https://wa.me/34601869668?text=Hola%2C%20vengo%20de%20la%20web%20de%20Studio%20Emprende%20%28Conservar%20el%20registro%20de%20jornada%204%20a%C3%B1os%20sin%20papeles%29%20y%20quiero%20informaci%C3%B3n." target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
