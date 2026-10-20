@@ -10,7 +10,7 @@ PAGINAS = {
  "lead": "Un programa de facturación con Verifactu que no es una pieza suelta: las facturas salen de tus presupuestos y pedidos y quedan registradas como exige Hacienda.",
  "respuesta": "Un programa de facturación adaptado a Verifactu genera un registro de cada factura encadenado con el anterior, imprime un código QR que el cliente puede verificar en la Agencia Tributaria y, si eliges la modalidad VERI*FACTU, envía los registros a Hacienda de forma automática. Nuestro programa lo hace sin pasos extra.",
  "secciones": [
-  ("¿Qué hace el programa por ti?", None, [
+  ("¿Qué hace el programa por ti?", "Se encarga de que cada factura cumpla Verifactu sin que cambies tu forma de facturar: deja el registro encadenado, pone el QR, remite los datos a Hacienda si eliges esa modalidad y corrige errores con rectificativas.", [
     ("Registro encadenado", "Cada factura genera su registro con una huella vinculada a la anterior, de modo que no se puede borrar ni alterar sin dejar rastro."),
     ("Código QR en la factura", "El QR se añade solo en el PDF y en el ticket, listo para que tu cliente lo compruebe."),
     ("Envío a la Agencia Tributaria", "En modalidad VERI*FACTU, los registros se remiten automáticamente; tú no tienes que entrar en ninguna sede."),
@@ -32,12 +32,12 @@ PAGINAS = {
  "lead": "La factura electrónica B2B será obligatoria entre empresas y autónomos. Con nuestro programa de gestión las envías, las recibes y comunicas su estado de pago sin cambiar de herramienta.",
  "respuesta": "La factura electrónica B2B obligatoria no es un PDF por correo: es un archivo estructurado que se intercambia por plataformas autorizadas o por la solución pública de la Agencia Tributaria, y en el que además hay que informar de cuándo se paga. Será obligatoria desde el 6 de octubre de 2027 para quien facture más de 8 millones de euros y desde el 6 de octubre de 2028 para el resto.",
  "secciones": [
-  ("¿En qué se diferencia de lo que haces hoy?", None, [
+  ("¿En qué se diferencia de lo que haces hoy?", "Cambian tres cosas respecto al PDF que mandas por correo: el formato del archivo, que leerá el programa de tu cliente; el canal de envío, que debe estar autorizado; y la obligación de comunicar cuándo se paga.", [
     ("Archivo estructurado, no PDF", "La factura viaja en un formato que el programa del cliente lee sin que nadie teclee nada."),
     ("Envío por canal autorizado", "Plataformas de intercambio o la solución pública de la AEAT, en lugar del correo electrónico."),
     ("Estado de pago", "Hay que informar de cuándo se cobra o se paga cada factura, lo que ayuda a vigilar la morosidad."),
   ]),
-  ("¿Cómo lo resolvemos?", None, [
+  ("¿Cómo lo resolvemos?", "Lo resolvemos dentro de tu propio programa: la factura que ya emites sale también en formato electrónico, las de tus proveedores entran sin teclearlas y el estado de cobro o pago se comunica al registrarlo.", [
     ("Emisión desde la misma factura", "La factura que ya generas (con Verifactu) se envía también en formato electrónico."),
     ("Recepción automática", "Las facturas de proveedores entran en el programa sin teclearlas."),
     ("Estado de cobro sincronizado", "Al marcar un cobro, el estado se comunica; al recibir un pago, se refleja en tu tesorería."),
@@ -57,12 +57,12 @@ PAGINAS = {
  "lead": "Controlar los cobros y los impagos no debería depender de revisar el banco cada mañana. El semáforo te dice de un vistazo quién paga bien, quién se retrasa y a quién no conviene servir.",
  "respuesta": "Un control de cobros con semáforo clasifica a cada cliente en verde (paga a tiempo), ámbar (se retrasa) o rojo (tiene deuda vencida), envía recordatorios automáticos antes y después del vencimiento y avisa al equipo antes de aceptar un pedido nuevo de un cliente en rojo.",
  "secciones": [
-  ("¿Cómo funciona el semáforo?", None, [
+  ("¿Cómo funciona el semáforo?", "El semáforo pinta a cada cliente según cómo paga: verde si cumple los plazos, ámbar si empieza a retrasarse o roza su límite de riesgo y rojo cuando acumula facturas vencidas sin pagar.", [
     ("Verde", "Paga en plazo. Se le sirve sin restricciones."),
     ("Ámbar", "Acumula retrasos o se acerca a su límite de riesgo. Recibe recordatorios y el comercial lo ve en su ficha."),
     ("Rojo", "Tiene facturas vencidas. El programa avisa antes de preparar un nuevo pedido o presupuesto."),
   ]),
-  ("Recordatorios que cobran solos", None, [
+  ("Recordatorios que cobran solos", "Los avisos de cobro salen sin que nadie los escriba: uno cordial antes de que venza la factura, otros escalonados por correo y WhatsApp si se retrasa, y se detienen en cuanto el banco confirma el pago.", [
     ("Antes del vencimiento", "Un aviso amable unos días antes evita la mayoría de retrasos."),
     ("Después del vencimiento", "Recordatorios escalonados por correo y WhatsApp, con enlace de pago."),
     ("Al conciliar el banco", "Cuando entra el pago, la factura se marca como cobrada y los avisos se detienen."),
@@ -82,12 +82,12 @@ PAGINAS = {
  "lead": "La previsión de tesorería te dice cuánto dinero tendrás en las próximas semanas a partir de lo que ya está en tu programa: facturas por cobrar, pagos a proveedores, nóminas e impuestos.",
  "respuesta": "Una previsión de tesorería automática suma tu saldo actual, los cobros pendientes según su vencimiento y los pagos previstos (proveedores, nóminas, impuestos y cuotas) y te muestra semana a semana cuánto dinero tendrás. Así ves con tiempo cuándo faltará caja y puedes adelantar cobros o aplazar compras.",
  "secciones": [
-  ("¿De dónde salen los datos?", None, [
+  ("¿De dónde salen los datos?", "La previsión se construye con lo que ya registras en el programa: las facturas emitidas con su vencimiento, los pagos comprometidos a proveedores, nóminas y préstamos, y una estimación de los impuestos del trimestre.", [
     ("Cobros", "Facturas emitidas con su fecha de vencimiento y el historial de puntualidad de cada cliente."),
     ("Pagos", "Facturas de proveedores, remesas, nóminas, cuotas de préstamos y suscripciones."),
     ("Impuestos", "Estimación de IVA y retenciones de cada trimestre a partir de tu facturación."),
   ]),
-  ("¿Qué decisiones te ayuda a tomar?", None, [
+  ("¿Qué decisiones te ayuda a tomar?", "Te ayuda a decidir con semanas de margen qué cobros conviene reclamar antes, qué pagos puedes mover sin ahogar la caja y si necesitas pedir una póliza al banco antes de que sea urgente.", [
     ("Adelantar cobros", "Detectas qué clientes conviene recordar antes de una semana floja."),
     ("Ordenar pagos", "Ves qué pagos puedes mover sin tensar la caja."),
     ("Pedir financiación con tiempo", "Si hace falta una póliza, la pides antes de necesitarla, no la víspera."),
@@ -107,12 +107,12 @@ PAGINAS = {
  "lead": "Una agenda de citas online conectada a tu gestión: tus clientes reservan cuando quieren y cada cita queda en su ficha, con su historial y su factura.",
  "respuesta": "Una agenda de citas online permite que el cliente reserve solo desde la web, WhatsApp o tu ficha de Google según tu disponibilidad real, le envía recordatorios para que no falte y guarda cada cita en su ficha. Conectada al programa de gestión, la cita genera después la factura sin volver a teclear.",
  "secciones": [
-  ("¿Desde dónde reservan tus clientes?", None, [
+  ("¿Desde dónde reservan tus clientes?", "Tus clientes pueden reservar desde tres puntos que acaban en la misma agenda: el botón de tu web, una conversación de WhatsApp con el asistente y el enlace de tu perfil de Google Business.", [
     ("Tu web", "Un botón de reserva que muestra solo los huecos libres de cada profesional o sala."),
     ("WhatsApp", "El asistente propone horas y confirma la cita en la conversación."),
     ("Google", "El enlace de reserva en tu perfil de Google Business lleva a la misma agenda."),
   ]),
-  ("¿Qué evita las ausencias?", None, [
+  ("¿Qué evita las ausencias?", "Las ausencias bajan cuando el cliente recibe un recordatorio con opción de confirmar o cambiar, cuando deja una señal en servicios largos y cuando los huecos cancelados pasan solos a la lista de espera.", [
     ("Recordatorio el día antes", "Con opción de confirmar o cambiar la cita en un toque."),
     ("Señal o pago por adelantado", "Para servicios largos o clientes que ya han faltado."),
     ("Lista de espera", "Si alguien cancela, el hueco se ofrece automáticamente a otro cliente."),
@@ -132,12 +132,12 @@ PAGINAS = {
  "lead": "La captación de leads falla menos por falta de contactos que por contactos que se pierden. Aquí cada solicitud de la web, WhatsApp o tus anuncios entra en el CRM y se responde al momento.",
  "respuesta": "Un sistema de captación de leads recoge automáticamente los contactos que llegan por formularios web, WhatsApp y anuncios (Meta o Google), los crea en el CRM con su origen, envía una primera respuesta inmediata y asigna el seguimiento a una persona. Así ningún interesado se enfría y sabes qué canal te trae clientes de verdad.",
  "secciones": [
-  ("¿De dónde entran los contactos?", None, [
+  ("¿De dónde entran los contactos?", "Entran desde los formularios de tu web, los mensajes nuevos de WhatsApp y los formularios de los anuncios de Meta y Google, y cada uno se guarda en el CRM con el canal del que procede.", [
     ("Formularios de la web", "Cada envío crea el contacto con la página desde la que llegó."),
     ("WhatsApp", "Los mensajes nuevos se registran como oportunidad, con la conversación guardada."),
     ("Anuncios de Meta y Google", "Los formularios de los anuncios se vuelcan al CRM sin descargar hojas de cálculo."),
   ]),
-  ("¿Qué pasa en los primeros cinco minutos?", None, [
+  ("¿Qué pasa en los primeros cinco minutos?", "En esos primeros minutos el contacto recibe una respuesta automática, queda asignado a la persona que corresponde por servicio o zona y, si nadie lo atiende dentro del plazo fijado, el programa lanza un aviso.", [
     ("Respuesta inmediata", "Un mensaje automático confirma que lo has recibido y, si quieres, propone una cita."),
     ("Asignación", "El contacto se asigna a quien toca según el servicio o la zona."),
     ("Seguimiento", "Si nadie lo atiende en el plazo que fijes, el programa avisa."),

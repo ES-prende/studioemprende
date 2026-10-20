@@ -7,13 +7,13 @@ PAGINAS = {
  "lead": "La ficha de cliente 360° reúne en una sola pantalla todo lo que ha pasado con cada cliente: llamadas, mensajes, presupuestos, facturas, cobros y avisos abiertos.",
  "respuesta": "Una ficha de cliente 360° es la vista de un CRM que junta en un mismo sitio los datos de contacto, el historial de conversaciones, lo que ha comprado, lo que tiene pendiente de pagar y las incidencias abiertas. Sirve para que cualquier persona del equipo atienda a ese cliente sabiendo todo su contexto, sin preguntar a un compañero ni abrir otros programas.",
  "secciones": [
-  ("¿Qué ves al abrir la ficha de un cliente?", None, [
+  ("¿Qué ves al abrir la ficha de un cliente?", "Al abrirla ves cuatro bloques: la línea de tiempo con cada contacto, los documentos de venta con su estado, lo que el cliente tiene pendiente de pagar y las incidencias o tareas que siguen abiertas.", [
     ("Línea de tiempo", "Llamadas, correos, WhatsApp, visitas y notas internas ordenados por fecha, con quién lo atendió."),
     ("Ventas y documentos", "Presupuestos enviados, pedidos, albaranes, facturas y contratos, cada uno con su estado."),
     ("Situación de pago", "Importe pendiente, facturas vencidas y forma de pago habitual, visibles antes de aceptar un pedido nuevo."),
     ("Avisos abiertos", "Incidencias, garantías o tareas sin cerrar, para no prometer algo a quien ya está molesto."),
   ]),
-  ("¿Para qué te sirve en el día a día?", None, [
+  ("¿Para qué te sirve en el día a día?", "Te sirve para atender una llamada sabiendo ya de qué va, para que un compañero retome a un cliente cuando otro falta y para pedirle a PIX un resumen de compras y pendientes en segundos.", [
     ("Contestar sin hacer esperar", "Cuando llama un cliente, su ficha aparece y sabes de qué te habla antes de que termine la frase."),
     ("Cubrir ausencias", "Si el comercial está de vacaciones, otra persona retoma la relación con todo el contexto."),
     ("Preguntarle a PIX", "Escribes «¿qué compró este cliente el año pasado y qué tiene pendiente?» y te lo resume en segundos."),
@@ -34,13 +34,13 @@ PAGINAS = {
  "lead": "El embudo de ventas del CRM pone cada oportunidad en su fase, desde el primer contacto hasta la firma, para que sepas qué está a punto de cerrarse y qué se está enfriando.",
  "respuesta": "Un embudo de ventas (o pipeline) es un tablero donde cada oportunidad comercial avanza por fases como contacto, visita, presupuesto enviado, negociación y ganada o perdida. Cada tarjeta lleva el importe, la fecha prevista de cierre y el responsable, de modo que de un vistazo sabes cuánto dinero tienes en juego y en qué paso se te escapan las ventas.",
  "secciones": [
-  ("¿Cómo funciona el tablero?", None, [
+  ("¿Cómo funciona el tablero?", "El tablero muestra en columnas las fases reales de tu venta; mueves cada oportunidad arrastrándola, el cambio queda fechado y, con el importe y la probabilidad de cada fase, calcula una previsión ponderada.", [
     ("Fases a tu medida", "Defines las etapas reales de tu venta; una reforma no se vende igual que una suscripción."),
     ("Arrastrar y soltar", "Mueves la oportunidad de columna cuando avanza y el cambio queda fechado."),
     ("Importe y probabilidad", "Cada fase tiene un porcentaje, así el embudo calcula una previsión ponderada de ventas."),
     ("Motivo de pérdida", "Al marcar una oportunidad como perdida eliges por qué: precio, plazo, competencia o sin respuesta."),
   ]),
-  ("¿Qué preguntas te responde?", None, [
+  ("¿Qué preguntas te responde?", "Te dice cuánto vas a facturar este mes según las oportunidades abiertas, en qué fase se quedan paradas más días de la cuenta y cuáles son los motivos más habituales por los que pierdes ventas.", [
     ("¿Cuánto voy a facturar este mes?", "Suma de las oportunidades con cierre previsto, ajustada por su probabilidad."),
     ("¿Dónde se atascan?", "Tiempo medio que pasa una oportunidad en cada fase y cuáles llevan demasiados días paradas."),
     ("¿Por qué pierdo ventas?", "Ranking de motivos de pérdida por comercial, servicio o canal de origen."),
@@ -60,13 +60,13 @@ PAGINAS = {
  "lead": "Con este programa de presupuestos, el documento que aprueba tu cliente es el mismo que luego se convierte en pedido, albarán y factura, sin copiar líneas de un sitio a otro.",
  "respuesta": "Un programa de presupuestos conectado a la facturación permite crear la oferta con los precios de tu catálogo, enviarla al cliente para que la acepte y, al aceptarla, transformarla en pedido y después en factura conservando todas las líneas, descuentos e impuestos. Se evitan errores de transcripción y se sabe en todo momento qué se presupuestó, qué se sirvió y qué se cobró.",
  "secciones": [
-  ("¿Cómo es el recorrido de un presupuesto?", None, [
+  ("¿Cómo es el recorrido de un presupuesto?", "El presupuesto se monta con tu catálogo, el cliente lo acepta desde un enlace, pasa a pedido con entregas parciales si hace falta y termina en una factura registrada según Verifactu, siempre sobre el mismo documento.", [
     ("Creación rápida", "Eliges productos o servicios del catálogo, aplicas tarifa del cliente y el total se calcula solo."),
     ("Envío y aceptación", "El cliente recibe un enlace, lo revisa y lo acepta o pide cambios desde el móvil."),
     ("Pedido y entregas parciales", "Al aceptarse pasa a pedido; si sirves por partes, cada albarán descuenta lo entregado."),
     ("Factura final", "La factura sale del pedido o de varios albaranes agrupados, ya registrada como exige Verifactu."),
   ]),
-  ("¿Qué controlas que antes se te escapaba?", None, [
+  ("¿Qué controlas que antes se te escapaba?", "Controlas qué versión del presupuesto aceptó el cliente, cuáles están a punto de caducar sin respuesta y qué trabajo o material ya entregado sigue sin facturar, tres fugas habituales cuando todo va en papel o Excel.", [
     ("Versiones", "Si cambias precios, queda la versión anterior y se sabe cuál aceptó el cliente."),
     ("Caducidad", "Los presupuestos tienen fecha de validez y el programa te recuerda los que vencen sin respuesta."),
     ("Pendiente de facturar", "Un listado te muestra lo entregado que todavía no se ha facturado."),
@@ -86,7 +86,7 @@ PAGINAS = {
  "lead": "El seguimiento comercial deja de depender de la memoria: cada contacto tiene una próxima tarea con fecha y responsable, y el CRM avisa cuando alguna se queda sin hacer.",
  "respuesta": "El seguimiento comercial en un CRM consiste en asignar a cada cliente u oportunidad una próxima acción concreta, como llamar, enviar una propuesta o hacer una visita, con fecha y responsable. El programa muestra a cada persona su lista del día, registra lo que se hizo y avisa de las tareas vencidas, para que ningún interesado se quede sin respuesta.",
  "secciones": [
-  ("¿Cómo se organiza el trabajo del comercial?", None, [
+  ("¿Cómo se organiza el trabajo del comercial?", "Cada comercial empieza el día con su lista de llamadas, visitas y envíos por prioridad, anota el resultado de cada acción y programa la siguiente en el mismo paso, también desde el móvil.", [
     ("Agenda del día", "Al entrar, cada uno ve sus llamadas, visitas y envíos pendientes, ordenados por prioridad."),
     ("Resultado de cada acción", "Tras una llamada se anota qué pasó y se programa la siguiente en el mismo paso."),
     ("Secuencias", "Puedes definir pasos fijos: llamada a los dos días, recordatorio a la semana, último intento al mes."),
@@ -108,13 +108,13 @@ PAGINAS = {
  "lead": "Un software de comisiones que liquida lo que gana cada comercial a partir de sus ventas reales, con las reglas que tengas pactadas y sin discusiones a final de mes.",
  "respuesta": "Un software de comisiones para comerciales calcula automáticamente lo que corresponde a cada vendedor según reglas fijadas de antemano: porcentaje sobre la venta, sobre el margen o solo sobre lo cobrado, con tramos y objetivos. Como parte de las facturas y cobros del propio programa, la liquidación mensual sale sola y cada comercial puede consultar la suya.",
  "secciones": [
-  ("¿Qué reglas de comisión se pueden configurar?", None, [
+  ("¿Qué reglas de comisión se pueden configurar?", "Puedes comisionar sobre la venta, el margen o lo cobrado, fijar tramos y objetivos por periodo, dar porcentajes distintos por familia o tipo de cliente e incluir a agentes externos que te facturan.", [
     ("Sobre venta, margen o cobro", "Eliges la base; comisionar sobre lo cobrado evita pagar ventas que luego no se pagan."),
     ("Tramos y objetivos", "Un porcentaje hasta cierta cifra y otro mayor al superarla, por mes o trimestre."),
     ("Por familia o cliente", "Comisiones distintas para productos de mayor margen o para clientes nuevos."),
     ("Agentes externos", "También sirve para colaboradores que cobran por cliente aportado y te facturan a ti."),
   ]),
-  ("¿Qué ve cada comercial?", None, [
+  ("¿Qué ve cada comercial?", "Cada comercial consulta su cartera de clientes y oportunidades, el detalle de su liquidación factura a factura y lo que le falta para alcanzar el siguiente tramo u objetivo.", [
     ("Su cartera", "Clientes asignados, ventas del periodo y oportunidades abiertas."),
     ("Su liquidación", "Detalle factura a factura de lo que ha generado y lo que falta por cobrar."),
     ("Su avance", "Cuánto le queda para el siguiente tramo u objetivo."),
@@ -134,12 +134,12 @@ PAGINAS = {
  "lead": "Lanza campañas de email y WhatsApp desde el mismo CRM donde tienes a tus clientes, eligiendo a quién escribir según lo que compran, dónde están o cuándo vinieron por última vez.",
  "respuesta": "Las campañas de email y WhatsApp desde un CRM permiten enviar un mismo mensaje a un grupo de clientes seleccionado con filtros del propio programa, como quienes compraron un producto o no vienen desde hace seis meses. Al salir del CRM, cada envío queda registrado en la ficha del cliente y las respuestas vuelven al mismo sitio, sin exportar listas a otra herramienta.",
  "secciones": [
-  ("¿A quién le escribes?", None, [
+  ("¿A quién le escribes?", "Escribes a grupos que filtras con los datos del CRM, como zona, compras o citas pendientes, siempre entre quienes han dado su consentimiento y dejando fuera a quien tiene una incidencia o una deuda abierta.", [
     ("Segmentos con tus datos", "Clientes de una zona, que compraron cierta familia de productos o con una cita pendiente."),
     ("Solo con consentimiento", "El programa separa quién aceptó recibir comunicaciones y gestiona las bajas solas."),
     ("Exclusiones", "Puedes dejar fuera a quien tiene una incidencia abierta o una deuda pendiente."),
   ]),
-  ("¿Email o WhatsApp?", None, [
+  ("¿Email o WhatsApp?", "Depende del mensaje: el email encaja con boletines y catálogos largos, WhatsApp con avisos breves y ofertas puntuales, y combinarlos sirve para alcanzar con un segundo mensaje a quien no abrió el primero.", [
     ("Email", "Para boletines, catálogos y comunicaciones largas; se mide apertura y clic."),
     ("WhatsApp", "Para avisos cortos y ofertas puntuales, con plantillas aprobadas por Meta y la conversación guardada."),
     ("Combinados", "Primero el email y, a quien no lo abre, un WhatsApp breve unos días después."),
@@ -160,13 +160,13 @@ PAGINAS = {
  "lead": "Un programa de fidelización de clientes que suma puntos con cada compra, gestiona tarjetas regalo y premia a quien te recomienda, todo desde tu caja o tu programa de gestión.",
  "respuesta": "Un programa de fidelización de clientes registra cada compra o visita y la convierte en puntos, sellos o saldo que el cliente canjea por descuentos o regalos. Al estar conectado con el TPV y la facturación, el saldo se actualiza solo, el cliente lo consulta en el móvil y tú sabes qué clientes vuelven y cuáles han dejado de venir.",
  "secciones": [
-  ("¿Qué fórmulas de fidelización puedes usar?", None, [
+  ("¿Qué fórmulas de fidelización puedes usar?", "Puedes combinar puntos o sellos por compra o visita, tarjetas regalo con saldo, premios para quien te trae clientes nuevos y niveles que dan más ventajas a quien más compra.", [
     ("Puntos o sellos", "Cada euro o cada visita suma; al llegar a una cifra, el premio se aplica en caja."),
     ("Tarjeta regalo", "Se vende con un código o QR y su saldo se descuenta en cada uso hasta agotarse."),
     ("Premio por recomendar", "Quien trae a un cliente nuevo recibe saldo cuando ese cliente hace su primera compra."),
     ("Niveles", "Ventajas mayores para quien más compra, revisadas automáticamente cada periodo."),
   ]),
-  ("¿Cómo lo vive tu cliente?", None, [
+  ("¿Cómo lo vive tu cliente?", "Para tu cliente es sencillo: se identifica con su teléfono o un QR, recibe en el móvil su saldo y la fecha en que caducan sus puntos y le llega un detalle en fechas como su cumpleaños.", [
     ("Sin tarjeta de cartón", "Se identifica con su teléfono o un QR en el móvil."),
     ("Saldo a la vista", "Recibe por WhatsApp o email cuántos puntos tiene y cuándo caducan."),
     ("Detalles automáticos", "Un mensaje con un regalo en su cumpleaños o al año de su primera compra."),
@@ -186,12 +186,12 @@ PAGINAS = {
  "lead": "La lectura automática de facturas de proveedores extrae con IA los datos de cada PDF o foto y los registra en tu programa, listos para revisar, pagar y pasar a la asesoría.",
  "respuesta": "La lectura automática de facturas de proveedores usa reconocimiento de texto e inteligencia artificial para sacar de cada factura, en PDF o en foto, el proveedor, el NIF, la fecha, las bases, el IVA, el total y el vencimiento. Esos datos se registran como factura recibida en el programa de gestión, se comparan con el pedido o el albarán y solo hay que revisar lo que el sistema marca como dudoso.",
  "secciones": [
-  ("¿Cómo llegan las facturas al programa?", None, [
+  ("¿Cómo llegan las facturas al programa?", "Llegan por tres vías: reenviadas a un buzón de correo propio, fotografiadas con la app cuando son de papel o tickets, o importadas tal cual si ya vienen en formato electrónico estructurado.", [
     ("Buzón de correo", "Reenvías las facturas a una dirección propia o el programa las recoge del correo de administración."),
     ("Foto desde el móvil", "El ticket de gasolina o la factura en papel se fotografía con la app y se procesa igual."),
     ("Facturas electrónicas", "Las que ya llegan en formato estructurado se importan directamente, sin pasar por lectura."),
   ]),
-  ("¿Qué comprueba antes de registrarla?", None, [
+  ("¿Qué comprueba antes de registrarla?", "Antes de darla por buena, el programa busca duplicados, compara cantidades y precios con el pedido y el albarán, detecta subidas respecto a la última compra y revisa que bases, IVA y total cuadren.", [
     ("Duplicados", "Detecta si esa factura ya se había metido, aunque venga con otro nombre de archivo."),
     ("Cuadre con el pedido", "Compara cantidades y precios con lo que pediste y lo que recibiste en el albarán."),
     ("Subidas de precio", "Avisa si un proveedor te cobra más que la última vez por el mismo artículo."),
@@ -212,7 +212,7 @@ PAGINAS = {
  "lead": "Un programa de remesas SEPA que agrupa los recibos domiciliados de tus clientes en un fichero para el banco y controla los mandatos y las devoluciones.",
  "respuesta": "Una remesa SEPA es un fichero que agrupa los recibos que vas a cobrar por domiciliación bancaria y que se sube a la banca online para que el banco los cargue en las cuentas de tus clientes. El programa la genera a partir de las facturas o cuotas pendientes, comprueba que cada cliente tiene su mandato firmado y, si un recibo vuelve, lo marca como impagado y lanza el aviso.",
  "secciones": [
-  ("¿Qué hace el programa por ti?", None, [
+  ("¿Qué hace el programa por ti?", "Prepara el fichero SEPA para subirlo a tu banco, deja fuera a quien no tenga mandato firmado, convierte las cuotas del mes en recibos y marca con su motivo cada recibo que el banco devuelva.", [
     ("Fichero listo para el banco", "Genera la remesa en el formato SEPA que admiten los bancos, con la fecha de cargo que elijas."),
     ("Mandatos en orden", "Guarda el mandato de cada cliente con su referencia y fecha; sin mandato, no entra en la remesa."),
     ("Cuotas recurrentes", "Gimnasios, academias o mantenimientos: las cuotas del mes se convierten en recibos solas."),
@@ -234,12 +234,12 @@ PAGINAS = {
  "lead": "Conectar tu programa de gestión con la asesoría evita el envío de carpetas a final de trimestre: tu gestor accede a las facturas y movimientos ya ordenados.",
  "respuesta": "La conexión con la asesoría consiste en que el programa de gestión entregue al gestor, de forma periódica y ordenada, las facturas emitidas y recibidas, los cobros y pagos y los documentos que necesita para la contabilidad y los impuestos. Puede hacerse con un acceso de solo lectura para la asesoría o con una exportación en el formato que admite su programa contable.",
  "secciones": [
-  ("¿Qué recibe tu asesoría?", None, [
+  ("¿Qué recibe tu asesoría?", "Tu gestor recibe las facturas emitidas y recibidas ya clasificadas con su PDF, el detalle de cobros y pagos con fecha y forma, y los gastos con su justificante adjunto, sin papeles sueltos.", [
     ("Facturas emitidas y recibidas", "Con su PDF, numeración, bases e impuestos ya clasificados."),
     ("Cobros y pagos", "Fecha y forma de cada cobro, útil para el criterio de caja o para cuadrar el banco."),
     ("Gastos con justificante", "Tickets y facturas de gasto con la imagen adjunta, sin papeles sueltos."),
   ]),
-  ("¿Cómo se hace la conexión?", None, [
+  ("¿Cómo se hace la conexión?", "Se hace dando a la asesoría un usuario de solo consulta o exportando ficheros que su programa contable importe; además, cada trimestre cerrado queda bloqueado y se avisa de los gastos sin justificante.", [
     ("Acceso para el gestor", "Un usuario de consulta para la asesoría, sin poder modificar tus datos."),
     ("Exportación compatible", "Ficheros preparados para importarlos en su programa contable, según el que use."),
     ("Cierre de periodo", "Al cerrar el trimestre, las facturas quedan bloqueadas para que nadie cambie lo ya declarado."),
@@ -260,13 +260,13 @@ PAGINAS = {
  "lead": "Un software de reservas que controla plazas, mesas o salas disponibles en tiempo real, cobra señal si quieres y llena los huecos con la lista de espera.",
  "respuesta": "Un software de reservas permite que tus clientes reserven en línea un recurso limitado, como una mesa, una sala, una plaza en una clase o un servicio, viendo solo lo que está libre. Controla el aforo, evita reservas dobles, puede pedir una señal por adelantado y, si alguien cancela, ofrece la plaza a la siguiente persona de la lista de espera.",
  "secciones": [
-  ("¿Qué se puede reservar?", None, [
+  ("¿Qué se puede reservar?", "Se pueden reservar mesas por comensales y turno, salas por horas o días, plazas en clases con aforo limitado y servicios que necesitan a la vez a una persona y un recurso como una cabina o un vehículo.", [
     ("Mesas", "Por número de comensales y turno, con plano de sala y mesas que se pueden juntar."),
     ("Salas y espacios", "Por horas o por días, con su capacidad, equipamiento y precio."),
     ("Clases y actividades", "Con plazas limitadas por sesión, monitor asignado y control de asistencia."),
     ("Servicios con recursos", "Cuando un servicio necesita a la vez una persona y una cabina, máquina o vehículo."),
   ]),
-  ("¿Cómo evitar huecos y plantones?", None, [
+  ("¿Cómo evitar huecos y plantones?", "Los plantones se reducen pidiendo una señal en reservas de grupo o fechas señaladas, ofreciendo las plazas liberadas a la lista de espera y aplicando una política de cancelación que el cliente acepta al reservar.", [
     ("Señal o tarjeta", "Cobro de una parte por adelantado mediante enlace de pago en reservas de grupo o fechas señaladas."),
     ("Lista de espera", "Si se libera una plaza, se avisa por orden a quien estaba esperando."),
     ("Política de cancelación", "Plazos y condiciones que el cliente acepta al reservar y que el sistema aplica."),
@@ -286,13 +286,13 @@ PAGINAS = {
  "lead": "Los recordatorios automáticos por WhatsApp avisan a cada cliente de su cita y le dejan confirmar, cambiar o anular con un toque, y la respuesta llega directa a tu agenda.",
  "respuesta": "Los recordatorios automáticos por WhatsApp son mensajes que el programa de gestión envía a cada cliente un tiempo antes de su cita, con la fecha, la hora y el lugar. El cliente responde con botones para confirmar, cancelar o pedir otra hora, y esa respuesta actualiza la agenda sin que nadie del equipo tenga que llamar ni anotar nada.",
  "secciones": [
-  ("¿Qué mensajes se pueden automatizar?", None, [
+  ("¿Qué mensajes se pueden automatizar?", "Puedes automatizar la confirmación al reservar, uno o dos recordatorios antes de la cita, el mensaje posterior para pedir reseña o proponer otra visita y el aviso de la próxima revisión periódica.", [
     ("Confirmación al reservar", "Con la dirección, cómo llegar y lo que el cliente debe traer o preparar."),
     ("Recordatorio previo", "Uno o dos avisos, por ejemplo el día antes y dos horas antes, según tu tipo de servicio."),
     ("Después de la cita", "Agradecimiento, petición de reseña o propuesta de la siguiente visita."),
     ("Revisiones periódicas", "Aviso cuando toca la siguiente revisión, limpieza o mantenimiento."),
   ]),
-  ("¿Qué pasa con la respuesta del cliente?", None, [
+  ("¿Qué pasa con la respuesta del cliente?", "La respuesta cambia la agenda sola: si confirma, la cita queda confirmada; si cancela, el hueco se libera para la lista de espera; y si quiere otra hora, recibe las disponibles en el mismo chat.", [
     ("Confirma", "La cita se marca como confirmada en la agenda."),
     ("Cancela", "El hueco queda libre y puede ofrecerse a la lista de espera."),
     ("Quiere cambiar", "Recibe las horas libres o PIX le propone una nueva en la misma conversación."),
@@ -312,13 +312,13 @@ PAGINAS = {
  "lead": "La gestión de bonos, cuotas y suscripciones descuenta cada sesión del bono del cliente, cobra las cuotas mensuales en su fecha y avisa antes de que algo caduque.",
  "respuesta": "Un módulo de bonos, cuotas y suscripciones controla los servicios que el cliente paga por adelantado o de forma periódica: bonos de un número de sesiones, cuotas mensuales o trimestrales y suscripciones con renovación. Cada uso se descuenta del saldo, las cuotas se generan y cobran solas en su fecha y el cliente recibe avisos de renovación o de sesiones a punto de caducar.",
  "secciones": [
-  ("¿Qué modalidades admite?", None, [
+  ("¿Qué modalidades admite?", "Admite bonos de un número fijo de sesiones, cuotas mensuales, trimestrales o anuales, suscripciones con acceso limitado por días o franjas, y también pausas temporales y bajas con fecha de efecto.", [
     ("Bonos de sesiones", "Diez masajes, veinte clases o cinco lavados: cada cita o uso descuenta una unidad."),
     ("Cuotas periódicas", "Mensual, trimestral o anual, con alta a mitad de mes prorrateada si lo prefieres."),
     ("Suscripciones con condiciones", "Acceso ilimitado, días concretos o franjas horarias según la tarifa."),
     ("Pausas y bajas", "Congelar una cuota por lesión o vacaciones y tramitar bajas con fecha de efecto."),
   ]),
-  ("¿Cómo se cobran?", None, [
+  ("¿Cómo se cobran?", "Se cobran como prefiera cada cliente: domiciliadas en una remesa al banco, con cargo recurrente a la tarjeta que registró al darse de alta o en caja con el TPV, que actualiza el saldo al momento.", [
     ("Domiciliación", "Las cuotas del mes se agrupan en una remesa para el banco."),
     ("Tarjeta", "Cobro recurrente con la tarjeta que el cliente registró al darse de alta."),
     ("En el local", "Pago en caja con el TPV, que actualiza el saldo del bono al momento."),
@@ -338,13 +338,13 @@ PAGINAS = {
  "lead": "Con este programa de partes de trabajo, el técnico recibe la orden en el móvil, apunta horas y materiales, hace fotos y el cliente firma en la pantalla antes de que se vaya.",
  "respuesta": "Un programa de partes de trabajo sustituye el talonario de papel por una app: la oficina crea la orden con el cliente, la dirección y la tarea; el técnico la recibe en el móvil, registra horas, materiales y fotos, y recoge la firma del cliente en la pantalla. El parte firmado llega al cliente por email y a la oficina, lista para facturar el mismo día.",
  "secciones": [
-  ("¿Qué recoge el parte de trabajo?", None, [
+  ("¿Qué recoge el parte de trabajo?", "El parte recoge las horas reales con llegada y salida, los materiales usados tomados del catálogo, fotos fechadas del antes y el después y la firma del cliente con sus observaciones.", [
     ("Horas reales", "Llegada y salida con un toque, y tiempo de desplazamiento por separado si lo cobras."),
     ("Materiales usados", "Se eligen del catálogo y se descuentan del stock de la furgoneta."),
     ("Fotos y notas", "Antes y después del trabajo, con fecha y hora, para evitar discusiones posteriores."),
     ("Firma del cliente", "Con su nombre y DNI si lo necesitas, y conformidad u observaciones."),
   ]),
-  ("¿Qué pasa cuando el técnico lo cierra?", None, [
+  ("¿Qué pasa cuando el técnico lo cierra?", "Al cerrarlo, el cliente recibe el PDF con fotos y firma, horas y materiales pasan a la factura con tus tarifas y, si queda trabajo pendiente, se abre una nueva orden enlazada a la anterior.", [
     ("Copia al cliente", "Recibe el parte en PDF al momento, con las fotos y su firma."),
     ("Listo para facturar", "Horas y materiales pasan a factura con tus tarifas, sin volver a teclearlos."),
     ("Trabajo pendiente", "Si queda algo por hacer, se genera una nueva orden enlazada a la primera."),
@@ -364,12 +364,12 @@ PAGINAS = {
  "lead": "El control de obras y proyectos enfrenta el presupuesto de cada trabajo con su coste real, partida a partida, para que veas la desviación mientras aún puedes corregirla.",
  "respuesta": "Controlar una obra con presupuesto frente a real significa imputar a cada proyecto todo lo que consume, como horas del equipo, compras de material, alquileres y subcontratas, y compararlo de forma continua con lo que se presupuestó en cada partida. El programa muestra el margen previsto y el real, y avisa cuando una partida supera el porcentaje de desviación que hayas fijado.",
  "secciones": [
-  ("¿De dónde salen los costes reales?", None, [
+  ("¿De dónde salen los costes reales?", "Los costes reales salen de tres fuentes que ya registras: las horas del equipo en partes o fichajes, las facturas de proveedores imputadas a cada obra y partida, y las subcontratas o alquileres con sus certificaciones.", [
     ("Horas del equipo", "Cada parte de trabajo o fichaje se asigna a una obra y se valora a coste por hora."),
     ("Compras imputadas", "Al registrar la factura de un proveedor se indica a qué obra y partida corresponde."),
     ("Subcontratas y alquileres", "Gruistas, andamios o gremios externos con sus certificaciones y facturas."),
   ]),
-  ("¿Qué te enseña el panel de cada obra?", None, [
+  ("¿Qué te enseña el panel de cada obra?", "El panel enseña, partida a partida, lo presupuestado frente a lo gastado, el margen que te quedará si el resto va según lo previsto, lo certificado y cobrado y las alertas de desviación.", [
     ("Avance por partida", "Presupuesto, gastado y porcentaje ejecutado de cada capítulo."),
     ("Margen vivo", "Lo que vas a ganar si el resto de la obra se ejecuta como está previsto."),
     ("Certificado y cobrado", "Lo que has certificado al cliente, lo facturado y lo que falta por cobrar."),
@@ -390,12 +390,12 @@ PAGINAS = {
  "lead": "Un programa de presupuestos con mediciones que convierte los metros tomados en la visita en partidas valoradas con tu banco de precios, sin pasar notas a limpio en la oficina.",
  "respuesta": "Hacer presupuestos desde mediciones consiste en anotar las dimensiones de cada estancia o elemento, como largo, ancho, alto o número de unidades, y que el programa calcule las cantidades de cada partida y las valore con tus precios unitarios. Así el presupuesto sale con metros cuadrados, metros lineales y unidades correctas, y el margen de cada partida queda visible antes de enviarlo.",
  "secciones": [
-  ("¿Cómo se toman las mediciones?", None, [
+  ("¿Cómo se toman las mediciones?", "Se toman en la app durante la visita, estancia por estancia y con fotos; las fórmulas calculan paredes, suelos o rodapiés descontando huecos y suman un porcentaje de merma por material.", [
     ("En la app, durante la visita", "Por estancia o zona, con fotos y notas de cada medida."),
     ("Fórmulas automáticas", "Paredes, suelos, rodapiés o huecos se calculan a partir de largo, ancho y alto, descontando ventanas y puertas."),
     ("Mermas", "Un porcentaje de desperdicio por material para que no te quedes corto al pedir."),
   ]),
-  ("¿De dónde salen los precios?", None, [
+  ("¿De dónde salen los precios?", "Los precios salen de tu banco de precios, con partidas que agrupan materiales y horas y se recalculan al cambiar la medida, de modo que ves coste y margen antes de enviar el presupuesto.", [
     ("Tu banco de precios", "Cada partida con su descripción, unidad, coste de material y mano de obra."),
     ("Partidas compuestas", "Una partida puede arrastrar varios materiales y horas, que se recalculan al cambiar la medida."),
     ("Margen y descuentos", "Ves coste y beneficio por partida y en total antes de dar el precio al cliente."),
@@ -416,7 +416,7 @@ PAGINAS = {
  "lead": "Un software de postventa que registra cada incidencia, comprueba si el producto o trabajo sigue en garantía y avisa al cliente de cada paso hasta resolverla.",
  "respuesta": "Un software de postventa gestiona lo que pasa después de vender: el cliente comunica un fallo, se abre una incidencia vinculada a su compra, el programa comprueba si sigue en garantía por la fecha de venta o el número de serie y se asigna a un técnico. Cada caso tiene estado, plazos y responsable, y el cliente recibe avisos hasta que se cierra.",
  "secciones": [
-  ("¿Cómo entra y se trata una incidencia?", None, [
+  ("¿Cómo entra y se trata una incidencia?", "La incidencia entra por teléfono, web, email o WhatsApp, se comprueba la garantía con la factura o el número de serie, recibe un plazo según su tipo y enlaza piezas, devoluciones o abonos.", [
     ("Por varios canales", "Teléfono, formulario web, email o WhatsApp crean la incidencia con los datos del cliente."),
     ("Garantía al momento", "Al indicar la factura o el número de serie se ve si está cubierta y hasta cuándo."),
     ("Prioridad y plazo", "Cada tipo de incidencia tiene un plazo de respuesta y el programa avisa si se va a incumplir."),
@@ -438,13 +438,13 @@ PAGINAS = {
  "lead": "La planificación de rutas reparte y ordena las visitas del día entre técnicos, comerciales o repartidores según zona y horario, y les manda el recorrido al móvil.",
  "respuesta": "Un planificador de rutas toma las visitas o entregas pendientes, con su dirección y franja horaria, y propone a quién asignarlas y en qué orden hacerlas para recorrer menos kilómetros y llegar a tiempo. Cada persona recibe su ruta en el móvil con navegación, y si surge una urgencia la ruta se recalcula y se avisa al cliente afectado.",
  "secciones": [
-  ("¿Qué tiene en cuenta al planificar?", None, [
+  ("¿Qué tiene en cuenta al planificar?", "Al planificar cruza las franjas horarias de cada cliente, el punto de salida y la zona, lo que dura cada tipo de visita y la carga o especialidad de cada técnico o vehículo.", [
     ("Franjas horarias", "Clientes que solo pueden de mañana o con hora concertada."),
     ("Zona y punto de salida", "Desde el almacén o desde casa del técnico, con regreso o sin él."),
     ("Duración de cada visita", "Una revisión no ocupa lo mismo que una instalación completa."),
     ("Capacidad y especialidad", "Carga de la furgoneta o técnico con la cualificación necesaria."),
   ]),
-  ("¿Qué ve el cliente y qué ve la oficina?", None, [
+  ("¿Qué ve el cliente y qué ve la oficina?", "El cliente recibe la franja estimada y un aviso cuando el técnico va de camino; la oficina sigue en un mapa el avance de cada ruta y encaja las urgencias reordenando el resto.", [
     ("Aviso de llegada", "Mensaje al cliente con la franja estimada y otro cuando el técnico va de camino."),
     ("Mapa del día", "En la oficina, dónde está cada ruta y qué visitas quedan."),
     ("Cambios de última hora", "Una urgencia se encaja en la ruta más cercana y se reordena el resto."),
@@ -464,12 +464,12 @@ PAGINAS = {
  "lead": "El software de mantenimiento preventivo crea cada revisión en su fecha a partir de los contratos o equipos dados de alta, con su lista de comprobaciones y su técnico.",
  "respuesta": "Un software de mantenimiento preventivo guarda cada equipo, instalación o contrato con su periodicidad de revisión, por ejemplo mensual, semestral o anual, y genera automáticamente la orden de trabajo cuando toca. El técnico la recibe con la lista de comprobaciones de ese equipo, la cierra con firma y fotos y queda un historial completo de cada revisión.",
  "secciones": [
-  ("¿Qué se da de alta en el programa?", None, [
+  ("¿Qué se da de alta en el programa?", "Das de alta cada equipo o instalación con su ubicación y número de serie, los contratos de mantenimiento con lo que incluyen y su frecuencia, y la lista de comprobaciones de cada tipo de equipo.", [
     ("Equipos e instalaciones", "Calderas, climatización, ascensores, extintores o maquinaria, con su ubicación y número de serie."),
     ("Contratos de mantenimiento", "Qué revisiones incluye, con qué frecuencia y a qué precio."),
     ("Checklists por tipo de equipo", "Las comprobaciones que hay que hacer y anotar en cada visita."),
   ]),
-  ("¿Qué automatiza?", None, [
+  ("¿Qué automatiza?", "Automatiza la creación de cada orden con antelación a su fecha, el aviso antes de que venza un contrato, la facturación periódica de las cuotas y el historial de revisiones y averías de cada equipo.", [
     ("Órdenes en su fecha", "Con antelación suficiente para planificar la ruta y avisar al cliente."),
     ("Renovación de contratos", "Aviso antes de que venza un contrato para renovarlo o revisar el precio."),
     ("Facturación periódica", "Las cuotas del contrato se facturan solas cada mes, trimestre o año."),
@@ -490,12 +490,12 @@ PAGINAS = {
  "lead": "Un programa de inventario para varios almacenes que te dice cuánto tienes de cada artículo en cada sitio, incluidas tiendas y furgonetas, y registra cada traspaso entre ellos.",
  "respuesta": "Un programa de inventario multialmacén lleva el stock de cada artículo separado por ubicación, ya sea un almacén central, una tienda, una nave secundaria o la furgoneta de un técnico. Cada venta, compra, traspaso o consumo mueve el stock de la ubicación correcta, de modo que sabes en tiempo real qué hay en cada sitio y qué conviene mover antes de comprar más.",
  "secciones": [
-  ("¿Qué controlas por cada ubicación?", None, [
+  ("¿Qué controlas por cada ubicación?", "En cada almacén, tienda o furgoneta controlas el stock físico y el ya reservado para pedidos, un mínimo propio con aviso y, si lo necesitas, el hueco exacto de cada artículo en la estantería.", [
     ("Stock disponible y reservado", "Lo que hay físicamente y lo que ya está comprometido con pedidos de clientes."),
     ("Mínimos propios", "Cada almacén o furgoneta tiene su stock mínimo y avisa cuando baja de él."),
     ("Huecos y estanterías", "Si lo necesitas, la posición exacta de cada artículo dentro del almacén."),
   ]),
-  ("¿Cómo se mueve la mercancía?", None, [
+  ("¿Cómo se mueve la mercancía?", "La mercancía se mueve con traspasos confirmados en origen y destino, propuestas de carga para las furgonetas según el consumo semanal, recuentos por zonas con el móvil y ajustes que siempre llevan su motivo.", [
     ("Traspasos", "Del central a una tienda o a la furgoneta, con salida y entrada confirmadas por cada parte."),
     ("Reposición de furgonetas", "Propuesta de carga según lo que cada técnico ha gastado en la semana."),
     ("Recuentos con el móvil", "Inventario por zonas escaneando códigos, sin parar todo el almacén."),
@@ -516,12 +516,12 @@ PAGINAS = {
  "lead": "La gestión de pedidos a proveedores propone qué comprar según tu stock, envía el pedido y controla lo que llega, lo que falta y a qué precio te lo facturan.",
  "respuesta": "Un módulo de pedidos a proveedores genera propuestas de compra a partir del stock mínimo y de los pedidos de clientes pendientes, agrupa los artículos por proveedor y envía el pedido por email. Al recibir la mercancía se registra el albarán, se actualiza el stock y se comprueba después que la factura coincide con lo pedido y lo entregado.",
  "secciones": [
-  ("¿Cómo se decide qué pedir?", None, [
+  ("¿Cómo se decide qué pedir?", "El programa propone qué pedir a partir de los artículos bajo mínimo y de los pedidos de clientes pendientes, con el proveedor preferente de cada uno y un aviso si no alcanzas su pedido mínimo.", [
     ("Propuesta automática", "Artículos por debajo del mínimo y lo necesario para servir pedidos ya aceptados."),
     ("Proveedor habitual y alternativo", "Cada artículo con su proveedor preferente, su referencia y su último precio."),
     ("Pedido mínimo y portes", "Aviso si no llegas al mínimo del proveedor para que agrupes compras."),
   ]),
-  ("¿Qué controlas después de pedir?", None, [
+  ("¿Qué controlas después de pedir?", "Después controlas lo pendiente de recibir con su fecha prometida, las entregas que llegan por partes, si la factura respeta el precio pactado y cómo se comporta cada proveedor a lo largo del año.", [
     ("Pendiente de recibir", "Lo pedido y no entregado, con la fecha prometida por el proveedor."),
     ("Entregas parciales", "Cada albarán descuenta lo recibido y el resto sigue vivo."),
     ("Precios pactados", "Diferencias entre el precio del pedido y el de la factura."),
@@ -542,12 +542,12 @@ PAGINAS = {
  "lead": "Un software de trazabilidad por lotes que sabe de qué proveedor vino cada lote, en qué productos se usó, a qué clientes se vendió y cuándo caduca.",
  "respuesta": "La trazabilidad por lotes consiste en registrar el número de lote y la fecha de caducidad de cada mercancía al recibirla y arrastrarlos en cada movimiento: almacenaje, producción y venta. Así puedes saber hacia atrás de qué proveedor procede un producto y hacia delante a qué clientes ha llegado, algo imprescindible para retirar un lote o responder a una inspección.",
  "secciones": [
-  ("¿Qué registra el programa?", None, [
+  ("¿Qué registra el programa?", "Registra el lote y la caducidad de cada entrada, qué lotes de materia prima forman cada lote fabricado y qué lote exacto se entregó en cada albarán o venta a tus clientes.", [
     ("Entrada con lote", "Lote del proveedor, caducidad y fecha de recepción, leídos del código de barras cuando es posible."),
     ("Producción", "Qué lotes de materia prima entran en cada lote de producto terminado."),
     ("Salida a cliente", "Cada albarán o venta guarda el lote exacto que se entregó."),
   ]),
-  ("¿Qué te resuelve?", None, [
+  ("¿Qué te resuelve?", "Te resuelve servir antes lo que caduca antes, ver qué lotes vencen en los próximos días, sacar en segundos los clientes que recibieron un lote a retirar y documentar su recorrido ante una inspección.", [
     ("Primero lo que antes caduca", "Al preparar pedidos, el programa propone el lote con caducidad más próxima."),
     ("Alertas de caducidad", "Lista de lotes que caducan en los próximos días para darles salida a tiempo."),
     ("Retirada de un lote", "En segundos, la lista de clientes que lo recibieron con sus datos de contacto."),
@@ -568,13 +568,13 @@ PAGINAS = {
  "lead": "La previsión de stock con IA estudia cómo se venden tus artículos y cuánto tardan tus proveedores para proponerte qué comprar y cuándo, antes de quedarte sin existencias.",
  "respuesta": "La previsión de stock con inteligencia artificial analiza el historial de ventas de cada artículo, la estacionalidad, las tendencias recientes y el plazo de entrega de cada proveedor para estimar la demanda de las próximas semanas. Con esa estimación propone cantidades de compra y señala qué artículos corren riesgo de agotarse y cuáles llevan demasiado tiempo parados en el almacén.",
  "secciones": [
-  ("¿Qué datos usa la previsión?", None, [
+  ("¿Qué datos usa la previsión?", "La previsión se apoya en el historial de ventas por artículo y almacén, las temporadas y campañas de tu negocio, los días que tarda cada proveedor y los encargos de clientes aún sin servir.", [
     ("Ventas pasadas", "Por artículo, semana y almacén, con al menos varios meses de historial."),
     ("Temporadas y campañas", "Verano, Navidad, rebajas o las fechas que marcan tu negocio."),
     ("Plazos de proveedor", "Cuántos días tarda cada proveedor en servir, para pedir con margen."),
     ("Pedidos ya comprometidos", "Lo que tus clientes ya te han encargado y aún no has servido."),
   ]),
-  ("¿Qué te propone?", None, [
+  ("¿Qué te propone?", "Te propone una compra por artículo y proveedor que revisas antes de aprobar, te avisa de lo que se agotará antes de la próxima entrega y te señala el stock parado que inmoviliza dinero.", [
     ("Compra sugerida", "Cantidad recomendada por artículo y proveedor, que tú revisas y apruebas."),
     ("Riesgo de rotura", "Artículos que se agotarán antes de que llegue la próxima entrega."),
     ("Stock dormido", "Lo que no rota y está inmovilizando dinero, para liquidarlo o dejar de comprarlo."),
@@ -594,13 +594,13 @@ PAGINAS = {
  "lead": "Un programa para imprimir etiquetas con código de barras o QR desde tu catálogo, y para leerlas después con un lector o con la cámara del móvil en cualquier proceso.",
  "respuesta": "El módulo de etiquetas genera e imprime códigos de barras o códigos QR para productos, lotes, ubicaciones del almacén o equipos, con los datos que elijas, como nombre, precio o caducidad. Al leerlos con un lector o con la cámara del móvil, el programa identifica el artículo al instante para vender, recibir mercancía, hacer inventario o abrir la ficha de un equipo.",
  "secciones": [
-  ("¿Qué puedes etiquetar?", None, [
+  ("¿Qué puedes etiquetar?", "Puedes etiquetar productos con su EAN o un código interno, entradas con lote y caducidad, estanterías y huecos del almacén, y máquinas o herramientas con un QR que abre su historial.", [
     ("Productos", "Con su código EAN si ya lo tiene o con un código interno generado por el programa."),
     ("Lotes y caducidades", "Etiqueta de entrada con lote y fecha para la trazabilidad."),
     ("Ubicaciones", "Estanterías y huecos del almacén, para saber dónde se guarda cada cosa."),
     ("Equipos y activos", "Un QR en la máquina o la herramienta que abre su historial y sus manuales."),
   ]),
-  ("¿Con qué se imprime y se lee?", None, [
+  ("¿Con qué se imprime y se lee?", "Se imprime en impresoras térmicas de rollo o en láser con hojas de etiquetas, y se lee con pistolas USB o inalámbricas o directamente con la cámara del móvil, sin comprar más equipos.", [
     ("Impresoras de etiquetas", "Térmicas de rollo o láser en hojas de etiquetas, según el volumen."),
     ("Lectores", "Pistolas USB o inalámbricas en caja y almacén."),
     ("Cámara del móvil", "La app lee códigos sin hardware adicional para recuentos y técnicos en ruta."),
@@ -620,12 +620,12 @@ PAGINAS = {
  "lead": "El fichador y registro de jornada de tu programa de gestión recoge entradas, salidas y pausas, y esas horas se cruzan con turnos, partes de trabajo y vacaciones.",
  "respuesta": "Un fichador integrado en el programa de gestión registra la hora de inicio y fin de la jornada de cada trabajador, con sus pausas, desde el móvil, una tablet o una tarjeta. El registro de jornada es obligatorio desde 2019 (Real Decreto-ley 8/2019) y debe conservarse cuatro años; al estar dentro de tu gestión, esas horas sirven también para costes, partes y turnos.",
  "secciones": [
-  ("¿Cómo fichan tus trabajadores?", None, [
+  ("¿Cómo fichan tus trabajadores?", "Tus trabajadores fichan con un toque en la app del móvil, en una tablet a la entrada con código o tarjeta NFC, o enviando un mensaje por WhatsApp a PIX si prefieren algo más sencillo.", [
     ("Móvil", "Con un toque en la app, también para quien empieza la jornada en casa de un cliente."),
     ("Tablet en el centro", "Un punto de fichaje a la entrada con código personal o tarjeta NFC."),
     ("Por WhatsApp o con PIX", "Un mensaje basta para registrar entrada o salida en equipos poco tecnológicos."),
   ]),
-  ("¿Qué gana tu programa de gestión con el fichaje?", None, [
+  ("¿Qué gana tu programa de gestión con el fichaje?", "Con el fichaje dentro, el programa compara horas fichadas con las imputadas en partes, marca retrasos o fichajes fuera de turno, calcula horas extra con tus reglas y exporta los registros si llega una inspección.", [
     ("Coste real de cada trabajo", "Las horas fichadas se comparan con las imputadas en partes y obras."),
     ("Cuadre con turnos", "Retrasos, ausencias o fichajes fuera de turno aparecen señalados."),
     ("Horas extra y bolsa de horas", "Calculadas con tus reglas y listas para la gestoría."),
@@ -647,13 +647,13 @@ PAGINAS = {
  "lead": "Un programa de turnos, vacaciones y ausencias que monta el cuadrante, recibe las peticiones del equipo desde el móvil y avisa si alguien se queda sin cubrir.",
  "respuesta": "Un programa de turnos, vacaciones y ausencias reúne en un calendario quién trabaja cada día y en qué horario, quién está de vacaciones y quién está de baja o de permiso. Los trabajadores piden días desde la app, el responsable los aprueba viendo si el servicio queda cubierto y el saldo de vacaciones de cada uno se actualiza automáticamente.",
  "secciones": [
-  ("¿Cómo se monta el cuadrante?", None, [
+  ("¿Cómo se monta el cuadrante?", "El cuadrante se monta con plantillas de turno y rotaciones semanales aplicadas al equipo de una vez, marcando la cobertura mínima de cada franja; al publicarlo, cada persona ve su horario en el móvil.", [
     ("Plantillas de turno", "Mañana, tarde, noche o partido, con su horario y sus descansos."),
     ("Rotaciones", "Turnos que se repiten por semanas, aplicados al equipo de una vez."),
     ("Cobertura mínima", "Cuántas personas necesitas en cada franja; el cuadrante avisa si no llegas."),
     ("Publicación", "Cada trabajador ve su horario en el móvil y recibe aviso de cualquier cambio."),
   ]),
-  ("¿Cómo se gestionan vacaciones y ausencias?", None, [
+  ("¿Cómo se gestionan vacaciones y ausencias?", "Cada trabajador pide sus días desde la app viendo si choca con compañeros, el saldo se calcula según su convenio y fecha de alta, y las bajas y permisos se registran con su justificante.", [
     ("Solicitud desde la app", "El trabajador pide los días y ve al momento si hay solapes con compañeros."),
     ("Saldo de días", "Días que le corresponden, disfrutados y pendientes, según su convenio y fecha de alta."),
     ("Bajas y permisos", "Con su tipo, fechas y justificante adjunto, visibles para quien organiza el turno."),
@@ -673,13 +673,13 @@ PAGINAS = {
  "lead": "La gestión documental de empleados guarda en una carpeta digital por persona sus contratos, nóminas, formaciones y entregas, con firma online y aviso de lo que caduca.",
  "respuesta": "Un módulo de documentación del empleado crea una carpeta digital para cada trabajador donde se guardan su contrato y anexos, nóminas, certificados de formación, reconocimientos médicos y entregas de material. Los documentos se pueden enviar a firmar online, el trabajador consulta los suyos desde el móvil y el programa avisa antes de que caduque un certificado o una formación.",
  "secciones": [
-  ("¿Qué se guarda en la carpeta de cada empleado?", None, [
+  ("¿Qué se guarda en la carpeta de cada empleado?", "En la carpeta de cada persona se guardan su contrato con anexos y prórrogas, las nóminas que sube la gestoría, los certificados de formación con caducidad y el recibí de cada uniforme, herramienta o EPI.", [
     ("Contrato y anexos", "Con sus prórrogas, cambios de jornada y fechas clave."),
     ("Nóminas", "Subidas por la gestoría y repartidas solas a cada trabajador."),
     ("Formación y certificados", "Prevención, carnés profesionales o cursos, con su fecha de caducidad."),
     ("Entregas", "Uniformes, herramientas, EPI, llaves o equipos, con el recibí firmado."),
   ]),
-  ("¿Qué cambia respecto a las carpetas de papel?", None, [
+  ("¿Qué cambia respecto a las carpetas de papel?", "Frente al archivador, el trabajador firma desde el móvil, el programa avisa con antelación de lo que va a caducar y cada persona accede solo a sus documentos o a los de su equipo.", [
     ("Firma desde el móvil", "El trabajador firma el documento sin imprimir ni escanear nada."),
     ("Avisos de caducidad", "Un certificado o curso que vence aparece con antelación para renovarlo."),
     ("Accesos por perfil", "Cada empleado ve solo lo suyo; los responsables, solo lo de su equipo."),

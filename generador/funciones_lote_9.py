@@ -7,14 +7,14 @@ PAGINAS = {
  "lead": "Digitalizar el negocio familiar para el sucesor es pasar a un programa lo que hoy vive en libretas, en el móvil del dueño y en su memoria, para que quien coja el relevo lo encuentre ordenado.",
  "respuesta": "Digitalizar un negocio para el sucesor es ordenar en un único programa de gestión los clientes, tarifas, proveedores, márgenes y accesos que maneja el fundador, y enseñar al relevo a usarlo mientras el fundador todavía está. Así el sucesor no hereda papeles sueltos, sino un sistema que puede consultar y mejorar.",
  "secciones": [
-  ("¿Qué se pasa al programa antes del relevo?", None, [
+  ("¿Qué se pasa al programa antes del relevo?", "Antes del relevo pasan al programa los clientes con sus condiciones pactadas, las tarifas con sus descuentos y costes, los proveedores de confianza y todos los accesos digitales, que quedan a nombre de la empresa.", [
     ("Clientes con su historia", "Quién compra qué, cada cuánto, a qué precio y con qué condiciones pactadas de palabra."),
     ("Tarifas y márgenes reales", "Los precios que aplica el fundador, incluidos los descuentos que nunca se escribieron, con el coste de cada servicio al lado."),
     ("Proveedores y contactos clave", "A quién se llama para cada cosa, plazos de entrega y qué proveedor responde cuando hay una urgencia."),
     ("Accesos a nombre de la empresa", "Dominio, correo, banca online y plataformas pasan a cuentas de la empresa, con un inventario de contraseñas custodiado."),
   ]),
   ("¿Por qué hacerlo con el fundador todavía dentro?", "Un programa nuevo se aprende mejor con alguien al lado que sabe por qué se hacía cada cosa. Durante unos meses, fundador y sucesor trabajan en el mismo sistema: el primero valida los datos y el segundo coge soltura sin cargar todavía con la decisión final.", []),
-  ("¿Qué gana el sucesor desde el primer día?", None, [
+  ("¿Qué gana el sucesor desde el primer día?", "El sucesor gana autonomía: ve los encargos abiertos sin llamar al fundador, consulta datos a PIX con preguntas normales y puede decidir cambios de tarifas o canales de venta apoyándose en cifras reales.", [
     ("Trabajos pendientes a la vista", "Ve qué encargos hay abiertos y con qué cliente, sin depender de una llamada al fundador."),
     ("Consultas en lenguaje normal", "Con PIX dentro del programa puede preguntar, por ejemplo, qué clientes no han comprado este año."),
     ("Margen para modernizar", "Con los datos ordenados, decidir si abrir tienda online o cambiar tarifas se hace con números, no a ciegas."),
@@ -34,13 +34,13 @@ PAGINAS = {
  "lead": "El acompañamiento en el traspaso de un negocio se ocupa de la parte técnica de cambiar de dueño: dominio, cuentas, programas, datos y cobros, coordinado con tu asesoría y tu notaría.",
  "respuesta": "El acompañamiento tecnológico de un traspaso es un plan por fases para que el nuevo titular reciba el control del dominio, el correo, los programas, los datos de clientes y los accesos sin interrumpir el servicio. Nosotros coordinamos la parte digital; la documentación legal y fiscal la preparan la asesoría y la notaría.",
  "secciones": [
-  ("¿Qué cambia de manos en un traspaso digital?", None, [
+  ("¿Qué cambia de manos en un traspaso digital?", "En un traspaso digital cambian de titular el dominio y el correo, las licencias que estaban a nombre personal, la base de clientes que se pueda ceder legalmente y las cuentas donde entran los cobros.", [
     ("Dominio y correo", "Cambio de titular del dominio y de las cuentas de correo sin que se pierdan mensajes ni la web deje de verse."),
     ("Licencias y suscripciones", "Se revisa qué está a nombre personal del anterior dueño y se pasa a la empresa o al nuevo titular."),
     ("Datos de clientes", "Traspaso ordenado de la base de clientes, revisando con tu asesoría qué se puede ceder según protección de datos."),
     ("Cobros y pasarelas", "Cambio de cuentas en el datáfono, los enlaces de pago y las domiciliaciones para que los ingresos lleguen al nuevo titular."),
   ]),
-  ("¿Cómo se organiza el acompañamiento?", None, [
+  ("¿Cómo se organiza el acompañamiento?", "Se organiza con un calendario semanal de cambios validados, un periodo en el que el anterior dueño solo puede consultar y un acta técnica final que recoge cada acceso transferido y en qué estado queda.", [
     ("Calendario de cambios", "Un plan por semanas que fija qué se cambia, en qué orden y quién lo valida."),
     ("Periodo de convivencia", "Durante el traspaso, el anterior dueño conserva acceso de consulta para resolver dudas, sin poder modificar nada."),
     ("Cierre con acta técnica", "Al terminar se entrega un documento con todos los accesos transferidos y su estado."),
@@ -60,14 +60,14 @@ PAGINAS = {
  "lead": "Un sistema anti-impagos convierte tus normas de cobro en reglas automáticas del programa de gestión, para que reclamar no dependa de que te acuerdes.",
  "respuesta": "Un sistema anti-impagos es un conjunto de reglas configuradas en tu programa de gestión que piden anticipos, limitan el riesgo con cada cliente, envían avisos escalonados y registran cada reclamación. Funciona solo y te avisa únicamente cuando hace falta una decisión tuya.",
  "secciones": [
-  ("¿Qué reglas se pueden automatizar?", None, [
+  ("¿Qué reglas se pueden automatizar?", "Puedes automatizar el cobro de anticipos a partir del importe que elijas, un tope de deuda por cliente, avisos de vencimiento cada vez más firmes y el registro fechado de cada reclamación hecha.", [
     ("Anticipo según importe", "Si el presupuesto supera la cifra que fijes, incluye un anticipo y el trabajo no se agenda hasta cobrarlo."),
     ("Límite de riesgo por cliente", "Cada cliente tiene un máximo de deuda pendiente; al superarlo, el pedido nuevo queda en espera de tu visto bueno."),
     ("Avisos que suben de tono", "Recordatorio amable antes del vencimiento, aviso el día que vence y mensaje firme pasados los días que decidas."),
     ("Historial de cada reclamación", "Cada correo, WhatsApp o llamada queda anotado con fecha, por si luego hay que reclamar en serio."),
   ]),
   ("¿Qué ves tú en el día a día?", "Una lista corta con las facturas que necesitan tu intervención y el motivo: un cliente que ha superado su límite, un pago prometido que no ha llegado o un recibo devuelto. El resto lo gestiona el sistema sin molestarte.", []),
-  ("¿Para qué negocios encaja?", None, [
+  ("¿Para qué negocios encaja?", "Encaja en negocios que adelantan trabajo o material antes de cobrar, en quienes venden a otras empresas con pago aplazado y en los que viven de cuotas mensuales expuestas a recibos devueltos.", [
     ("Servicios con trabajo previo", "Reformas, instaladores o agencias que adelantan horas y material antes de facturar."),
     ("Venta a empresas a plazo", "Distribuidores y fabricantes que facturan a 30, 60 o 90 días."),
     ("Cuotas recurrentes", "Academias, gimnasios o asesorías con recibos mensuales que a veces se devuelven."),
@@ -87,13 +87,13 @@ PAGINAS = {
  "lead": "El semáforo de clientes morosos pone un color a cada cliente según cómo te paga de verdad, no según la impresión que tengas de él.",
  "respuesta": "Un semáforo de clientes morosos asigna verde, ámbar o rojo a cada cliente a partir de sus días reales de pago, la deuda vencida y los recibos devueltos. El color aparece en su ficha, en el presupuesto y en el pedido, para que quien vende o sirve sepa con quién está tratando.",
  "secciones": [
-  ("¿Con qué datos se calcula el color?", None, [
+  ("¿Con qué datos se calcula el color?", "El color sale del retraso medio en sus últimos pagos, la deuda vencida frente a su volumen habitual de compra y los recibos devueltos, comparados con los umbrales que tú mismo fijas.", [
     ("Días medios de retraso", "Lo que tarda de media en pagar respecto al vencimiento en sus últimas facturas."),
     ("Deuda vencida hoy", "El importe fuera de plazo, comparado con lo que suele comprarte."),
     ("Recibos devueltos", "Cada devolución bancaria pesa en el cálculo, aunque luego se acabe cobrando."),
     ("Tus umbrales", "Tú decides cuántos días o cuánto importe hacen pasar a un cliente de verde a ámbar o a rojo."),
   ]),
-  ("¿Dónde aparece el semáforo?", None, [
+  ("¿Dónde aparece el semáforo?", "El semáforo se ve en la ficha de cada cliente con su explicación, como aviso al presupuestar o vender y en un resumen semanal con los clientes que han cambiado de color.", [
     ("En la ficha del cliente", "Con el detalle de por qué tiene ese color y cómo ha evolucionado."),
     ("Al presupuestar o vender", "El comercial o el mostrador ve el aviso antes de cerrar la operación."),
     ("En el resumen semanal", "Los clientes que han cambiado de color esa semana, para que nadie se entere tarde."),
@@ -113,7 +113,7 @@ PAGINAS = {
  "lead": "Los enlaces de pago quitan la excusa de «ahora no tengo el número de cuenta»: el cliente abre el enlace y paga en un minuto.",
  "respuesta": "Un enlace de pago es una dirección web única asociada a una factura o a un anticipo que lleva al cliente a una pasarela segura para pagar con tarjeta u otros métodos que ofrezca la pasarela. Cuando paga, el programa marca la factura como cobrada sin que tengas que revisar el banco.",
  "secciones": [
-  ("¿Dónde se incluye el enlace?", None, [
+  ("¿Dónde se incluye el enlace?", "El enlace de pago va dentro del PDF de la factura como botón o QR, en el presupuesto aceptado para cobrar la señal, en cada recordatorio y en un WhatsApp que envías desde el móvil.", [
     ("En el PDF de la factura", "Un botón o un código QR que lleva directamente al pago de ese importe."),
     ("En el presupuesto aceptado", "Para cobrar la señal en el mismo momento en que el cliente dice que sí."),
     ("En los recordatorios", "Cada aviso de vencimiento lleva el enlace, así pagar es más fácil que contestar."),
@@ -135,14 +135,14 @@ PAGINAS = {
  "lead": "Cuando un impago se alarga, el expediente de reclamación de deuda reúne en un solo archivo todo lo que la prueba, sacado directamente de tu programa.",
  "respuesta": "Un expediente de reclamación de deuda es el conjunto ordenado de documentos que prueban lo que te deben: presupuesto o pedido aceptado, albaranes o partes firmados, facturas e historial de recordatorios. Si todo vive en tu programa de gestión, el expediente se genera con un clic y se entrega al abogado o a la asesoría para que inicie la reclamación.",
  "secciones": [
-  ("¿Qué incluye el expediente?", None, [
+  ("¿Qué incluye el expediente?", "El expediente reúne el documento que originó el encargo, las pruebas de que el trabajo se hizo, las facturas pendientes con sus vencimientos y el registro fechado de todas las reclamaciones enviadas.", [
     ("Origen del encargo", "El presupuesto aceptado, el pedido o el contrato firmado, con su fecha."),
     ("Prueba del trabajo hecho", "Albaranes de entrega, partes de trabajo con firma y fotos del servicio terminado."),
     ("Facturas y vencimientos", "Cada factura pendiente con su fecha de vencimiento y el importe exacto."),
     ("Historial de reclamaciones", "Cada recordatorio enviado y cada llamada anotada, con fecha y respuesta."),
   ]),
   ("¿Por qué conviene tenerlo preparado desde el principio?", "Cuando llega el momento de reclamar, buscar albaranes en cajas y capturas de WhatsApp lleva días y a veces falta lo esencial. Si cada documento se guarda asociado al cliente en cuanto se genera, el expediente solo hay que exportarlo.", []),
-  ("¿Qué queda fuera de este servicio?", None, [
+  ("¿Qué queda fuera de este servicio?", "Quedan fuera el consejo jurídico, el contacto con el deudor en tu nombre y la inclusión en registros de morosos: nosotros ordenamos los papeles y la vía legal la decide tu abogado o asesoría.", [
     ("Asesoramiento jurídico", "La vía de reclamación la decide tu abogado o asesoría; nosotros ordenamos la documentación."),
     ("Hablar con el deudor en tu nombre", "Las comunicaciones salen de tu empresa, con tus plantillas y tu firma."),
     ("Ficheros de morosos", "No se incluye a nadie en registros de morosidad: eso tiene requisitos legales que valora tu abogado."),
@@ -162,7 +162,7 @@ PAGINAS = {
  "lead": "El agente de IA para trámites prepara el papeleo de tu empresa: rellena borradores, reúne documentos y te dice qué falta para cada gestión.",
  "respuesta": "Un agente de trámites es un asistente de inteligencia artificial que, a partir de los datos de tu empresa, prepara borradores de solicitudes, comprueba qué documentos pide cada trámite y los reúne en una carpeta. La presentación y la firma las haces tú o tu asesoría: el agente prepara y una persona decide.",
  "secciones": [
-  ("¿Qué trámites puede preparar?", None, [
+  ("¿Qué trámites puede preparar?", "El agente prepara borradores de solicitudes y licencias, vigila la caducidad de los certificados que más te piden, reúne la documentación que exige cada cliente o pliego y resume los requerimientos que recibes.", [
     ("Solicitudes y licencias", "Borradores de solicitudes municipales o autonómicas con los datos de la empresa ya rellenados."),
     ("Certificados recurrentes", "Aviso cuando un certificado que te piden a menudo va a caducar y hay que solicitarlo de nuevo."),
     ("Documentación para clientes", "Reúne escrituras, seguros y certificados en el formato que pide cada cliente o cada pliego."),
@@ -184,13 +184,13 @@ PAGINAS = {
  "lead": "El calendario de obligaciones fiscales y legales reúne en un solo sitio todos los plazos de tu empresa y avisa con tiempo a quien le toca.",
  "respuesta": "Un calendario de obligaciones es una agenda compartida con los vencimientos de la empresa, desde los modelos de impuestos hasta las revisiones obligatorias y las renovaciones de seguros, dominios o licencias, con un responsable y avisos previos para cada uno. Evita recargos y sustos por plazos olvidados.",
  "secciones": [
-  ("¿Qué fechas recoge?", None, [
+  ("¿Qué fechas recoge?", "Recoge los plazos fiscales que lleva tu asesoría, las revisiones obligatorias de equipos y vehículos, las renovaciones de seguros, dominios y certificados, y las fechas de entrada en vigor de normas como Verifactu.", [
     ("Impuestos y declaraciones", "Los plazos de los modelos que presenta tu asesoría, para pasarle la documentación con margen."),
     ("Revisiones periódicas", "Extintores, instalaciones, vehículos o equipos con revisiones obligatorias."),
     ("Renovaciones", "Seguros, dominios, licencias de software, certificados digitales y contratos con proveedores."),
     ("Cambios normativos", "Fechas como Verifactu o la factura electrónica B2B, con lo que tienes que tener listo antes."),
   ]),
-  ("¿Cómo se avisa?", None, [
+  ("¿Cómo se avisa?", "Cada plazo genera al menos dos avisos por correo o WhatsApp, uno con tiempo y otro cerca de la fecha, dirigidos a su responsable; si no lo cierra, el aviso llega a dirección.", [
     ("Varios avisos por plazo", "Uno con margen para preparar y otro cerca de la fecha, por correo o WhatsApp."),
     ("Responsable asignado", "Cada obligación tiene una persona; si no la marca como hecha, el aviso sube a dirección."),
     ("Justificante guardado", "Al marcarla como hecha se adjunta el justificante y queda archivado."),
@@ -210,12 +210,12 @@ PAGINAS = {
  "lead": "Las notificaciones electrónicas de Hacienda, la Seguridad Social o el ayuntamiento llegan a buzones que casi nadie mira. El buzón vigilado las detecta y te avisa con un resumen.",
  "respuesta": "Un buzón de notificaciones vigilado centraliza los avisos de las sedes electrónicas donde tu empresa recibe notificaciones, como la DEHú, y te avisa en cuanto llega una nueva con un resumen de qué es y qué plazo tiene. Es importante porque una notificación que no se abre a tiempo se considera rechazada y el procedimiento sigue adelante.",
  "secciones": [
-  ("¿Qué buzones se vigilan?", None, [
+  ("¿Qué buzones se vigilan?", "Se vigilan la Dirección Electrónica Habilitada única, los buzones de las sedes donde tu empresa está dada de alta, como Agencia Tributaria o Seguridad Social, y los correos de aviso que esas sedes envían.", [
     ("Dirección Electrónica Habilitada única", "El punto donde muchas administraciones depositan sus notificaciones a empresas."),
     ("Sedes con buzón propio", "Agencia Tributaria, Seguridad Social y otras sedes que use tu empresa, según dónde estés dado de alta."),
     ("Correos de aviso", "Los avisos que mandan las sedes al correo de contacto, que suelen acabar en spam o en un buzón olvidado."),
   ]),
-  ("¿Qué recibes cuando llega una notificación?", None, [
+  ("¿Qué recibes cuando llega una notificación?", "Recibes un aviso inmediato por WhatsApp o correo, un resumen claro con el organismo, el asunto y los plazos, y una tarea con fecha límite que no se cierra hasta que alguien la atiende.", [
     ("Aviso inmediato", "Un mensaje por WhatsApp o correo a ti y, si quieres, a tu asesoría."),
     ("Resumen en lenguaje claro", "Qué organismo la envía, de qué trata y qué plazo hay para abrirla y para responder."),
     ("Tarea con responsable", "Se crea una tarea con fecha límite que sigue abierta hasta que alguien la marca como atendida."),
@@ -235,12 +235,12 @@ PAGINAS = {
  "lead": "Un empleado digital con IA es un agente al que se asigna un puesto con funciones concretas, igual que a una persona nueva, cuando no encuentras a quién contratar o no te salen las cuentas.",
  "respuesta": "Un empleado digital es un agente de inteligencia artificial, como PIX, configurado para un puesto concreto: tiene funciones escritas, acceso solo a las herramientas que necesita, un horario y una persona que supervisa su trabajo. Se encarga de tareas repetitivas como atender consultas, registrar pedidos o preparar documentos, y pasa a un humano lo que no sabe resolver.",
  "secciones": [
-  ("¿Qué puestos puede cubrir?", None, [
+  ("¿Qué puestos puede cubrir?", "Un empleado digital puede cubrir tareas de auxiliar administrativo, de atención al cliente por WhatsApp, web o teléfono, y de apoyo a operaciones como pasar pedidos, avisar de stock bajo o confirmar entregas.", [
     ("Auxiliar administrativo", "Registra facturas de proveedores, da de alta clientes y prepara borradores de presupuesto."),
     ("Atención al cliente", "Responde por WhatsApp, web o teléfono las preguntas frecuentes y agenda citas."),
     ("Apoyo a operaciones", "Pasa pedidos al programa, avisa de stock bajo y confirma entregas con los clientes."),
   ]),
-  ("¿Cómo se incorpora a tu equipo?", None, [
+  ("¿Cómo se incorpora a tu equipo?", "Se incorpora como cualquier fichaje: con una ficha de puesto que marca sus límites, acceso solo a lo que necesita, unas semanas de prueba con todo revisado y una persona de tu equipo que lo supervisa.", [
     ("Ficha de puesto", "Se escribe con tu equipo qué hace, qué no hace y cuándo debe pasar el caso a una persona."),
     ("Permisos limitados", "Solo accede a las herramientas y datos de su puesto."),
     ("Periodo de prueba", "Las primeras semanas todo lo que prepara pasa por revisión antes de salir."),
@@ -261,12 +261,12 @@ PAGINAS = {
  "lead": "Para formar rápido a un empleado nuevo cuando cada temporada entra gente y no tienes tiempo de enseñar, hace falta que el aprendizaje no dependa de tener a alguien al lado.",
  "respuesta": "La formación rápida de nuevos empleados combina vídeos cortos grabados con el móvil para cada tarea, un asistente de IA que responde dudas a partir de esos vídeos y de los procedimientos de la empresa, y una lista de comprobación que revisa el responsable. El nuevo aprende haciendo y pregunta al asistente antes que al compañero.",
  "secciones": [
-  ("¿Cómo se monta en poco tiempo?", None, [
+  ("¿Cómo se monta en poco tiempo?", "Se monta grabando con el móvil vídeos cortos de cada tarea, que la IA convierte en pasos; un asistente responde las dudas del nuevo empleado y una lista marca lo que debe dominar la primera semana.", [
     ("Vídeos de dos minutos", "Grabas con el móvil cómo se hace cada tarea; la IA los transcribe y saca los pasos."),
     ("Asistente que responde", "El empleado pregunta, por ejemplo, cómo se hace una devolución y recibe la respuesta con el vídeo correspondiente."),
     ("Lista de la primera semana", "Tareas que debe dominar, marcadas por su responsable cuando las hace bien."),
   ]),
-  ("¿Para qué negocios es más útil?", None, [
+  ("¿Para qué negocios es más útil?", "Es más útil en hostelería y negocios de temporada, en comercios con caja y devoluciones, en empresas de servicios técnicos y en cadenas con varios locales que quieren formar igual en todos.", [
     ("Hostelería y temporada", "Equipos que cambian cada verano y tienen que estar listos en pocos días."),
     ("Comercio y atención", "Caja, devoluciones, pedidos especiales y normas de la casa."),
     ("Servicios con técnicos", "Cómo rellenar un parte, qué fotos hacer y qué revisar antes de irse."),
@@ -287,7 +287,7 @@ PAGINAS = {
  "lead": "Con el cuadrante de turnos y ausencias conectado a la agenda y al fichaje, una baja de última hora no te pilla a ciegas.",
  "respuesta": "Integrar turnos y ausencias significa que el cuadrante de personal está conectado con el registro de jornada y con la agenda de citas o trabajos. Cuando alguien pide vacaciones o falta, el programa muestra qué servicios quedan sin cubrir, propone quién puede sustituirle y permite avisar a los clientes afectados si hay que mover algo.",
  "secciones": [
-  ("¿Qué se conecta?", None, [
+  ("¿Qué se conecta?", "Se conectan el cuadrante de turnos, el fichaje, la agenda de trabajos y las solicitudes de vacaciones o cambios, de modo que una ausencia avisa al responsable y permite reasignar las tareas a tiempo.", [
     ("Cuadrante", "Los turnos de cada persona por semana, con sus horas y su centro."),
     ("Fichaje", "Si alguien no ficha a su hora, el responsable recibe un aviso antes de que el hueco se note."),
     ("Agenda de trabajos", "Citas, servicios o rutas asignados a cada persona, que se reasignan si falta."),
@@ -309,7 +309,7 @@ PAGINAS = {
  "lead": "El kit de arranque para autónomos te deja lo básico montado de una vez: una web que explica qué haces, tu ficha en Google y un programa para facturar como pide Hacienda.",
  "respuesta": "El kit de arranque para autónomos deja listo en pocas semanas lo mínimo para trabajar con imagen profesional: dominio y correo propios, una web sencilla con tus servicios y contacto, la ficha de Google Business configurada y un programa de facturación preparado para Verifactu. Todo queda a tu nombre.",
  "secciones": [
-  ("¿Qué recibes montado?", None, [
+  ("¿Qué recibes montado?", "Recibes un dominio con correo profesional configurado, una web de una página con botón de contacto, tu ficha de Google Business completa y un programa para presupuestar y facturar preparado para Verifactu.", [
     ("Dominio y correo con tu nombre", "Nada de direcciones gratuitas: correo profesional configurado en el móvil y en el ordenador."),
     ("Web de una página", "Qué haces, para quién, en qué zona trabajas, opiniones y un botón de WhatsApp o de llamada."),
     ("Ficha de Google Business", "Categorías, horario, fotos, servicios y zona de trabajo bien rellenados para salir en el mapa."),
@@ -331,7 +331,7 @@ PAGINAS = {
  "lead": "Las automatizaciones para autónomos se quedan con las tareas que repites cada semana, porque eres a la vez administrativo, comercial y técnico de tu negocio.",
  "respuesta": "Automatizar el día a día de un autónomo es conectar sus herramientas para que las tareas repetitivas ocurran solas: confirmar citas, enviar presupuestos desde plantilla, emitir la factura al terminar el trabajo, recordar pagos y guardar los tickets de gasto para la gestoría. El autónomo solo interviene para decidir.",
  "secciones": [
-  ("¿Qué tareas se automatizan primero?", None, [
+  ("¿Qué tareas se automatizan primero?", "Lo primero suele ser la reserva de citas con recordatorio por WhatsApp, los presupuestos a partir de tu lista de servicios, la factura con enlace de pago al cerrar un trabajo y la lectura de tickets con una foto.", [
     ("Citas sin llamadas", "El cliente reserva hueco y recibe confirmación y recordatorio por WhatsApp."),
     ("Presupuesto en minutos", "Eliges servicios de tu lista y el presupuesto sale con tu diseño y se envía."),
     ("Factura al cerrar el trabajo", "Cuando marcas un trabajo como hecho, se genera la factura con un enlace de pago."),
@@ -353,13 +353,13 @@ PAGINAS = {
  "lead": "Los packs digitales con precio cerrado para autónomos y emprendedores te dicen desde el principio cuánto pagas y qué recibes: 990 €, 1.790 € o 3.690 €, sin IVA.",
  "respuesta": "Hay tres packs con precio cerrado: Impulso Inicial (990 €), con identidad visual, web de una página, Google Business y redes; Negocio en Marcha (1.790 €), con web completa con blog y SEO, programa de gestión básico y automatizaciones; y Llave en Mano (3.690 €), con branding completo, web premium, embudo de ventas, gestión avanzada y dos meses de acompañamiento. Se suman 40 €/mes de soporte; precios sin IVA.",
  "secciones": [
-  ("¿Qué incluye cada pack?", None, [
+  ("¿Qué incluye cada pack?", "Impulso Inicial cubre identidad, web One Page y Google Business; Negocio en Marcha añade web con blog, SEO y gestión básica; Llave en Mano suma embudo, gestión avanzada y acompañamiento. El soporte posterior cuesta 40 €/mes.", [
     ("Impulso Inicial: 990 €", "Identidad visual, web One Page, Google Business, redes y una sesión de coaching. Listo en 2-3 semanas."),
     ("Negocio en Marcha: 1.790 €", "Web completa con blog y SEO, programa de gestión básico y automatizaciones. Listo en 3-4 semanas."),
     ("Llave en Mano: 3.690 €", "Branding completo, web premium, embudo de ventas, gestión avanzada y dos meses de acompañamiento. Unos 2 meses."),
     ("Soporte: 40 €/mes", "Soporte y mantenimiento del programa de gestión una vez entregado el pack."),
   ]),
-  ("¿Cuál elegir según el momento de tu negocio?", None, [
+  ("¿Cuál elegir según el momento de tu negocio?", "Elige Impulso Inicial si estás empezando, Negocio en Marcha si ya tienes clientes y necesitas orden en la gestión, y Llave en Mano si tu objetivo es captar clientes de forma constante con acompañamiento.", [
     ("Estás empezando", "Impulso Inicial: lo justo para que te encuentren y transmitir seriedad sin gastar de más."),
     ("Ya tienes clientes y te falta orden", "Negocio en Marcha: añade el programa de gestión y automatiza lo que repites."),
     ("Quieres captar de forma constante", "Llave en Mano: marca, web y embudo pensados para vender, con acompañamiento."),
@@ -379,12 +379,12 @@ PAGINAS = {
  "lead": "Atender WhatsApp y llamadas con IA evita lo que más clientes cuesta a una pequeña empresa: que nadie conteste cuando el equipo tiene las manos ocupadas o ya ha cerrado.",
  "respuesta": "Una pequeña empresa puede atender WhatsApp y llamadas con IA mediante un asistente que responde mensajes al momento y una recepcionista de voz que coge el teléfono cuando nadie puede. Ambos resuelven las dudas habituales, agendan citas o toman el encargo, y pasan a una persona los casos que lo necesitan con un resumen.",
  "secciones": [
-  ("¿Dónde se pierden clientes hoy?", None, [
+  ("¿Dónde se pierden clientes hoy?", "Hoy se pierden en las llamadas que nadie atiende mientras trabajas, en los WhatsApp que se contestan horas después y en las consultas que llegan de noche o en fin de semana.", [
     ("Llamadas que nadie coge", "Mientras atiendes el mostrador o estás en un trabajo, el cliente llama a la competencia."),
     ("WhatsApp contestado tarde", "Una respuesta que llega horas después suele encontrar al cliente ya decidido."),
     ("Consultas fuera de horario", "Muchas preguntas llegan por la noche o en fin de semana, cuando no hay nadie."),
   ]),
-  ("¿Cómo se reparten el trabajo la IA y tu equipo?", None, [
+  ("¿Cómo se reparten el trabajo la IA y tu equipo?", "La IA atiende lo repetitivo, como horarios, precios orientativos o citas, y pasa a tu equipo las quejas y casos especiales con un resumen; todo queda en la ficha del cliente y sobre tu número habitual.", [
     ("Lo repetitivo, para la IA", "Horarios, precios orientativos, disponibilidad, citas y estado de un pedido."),
     ("Lo delicado, para una persona", "Quejas, negociaciones o casos especiales se derivan con un resumen de la conversación."),
     ("Todo queda en la ficha", "Cada conversación se guarda en la ficha del cliente, aunque la haya atendido la IA."),
@@ -405,12 +405,12 @@ PAGINAS = {
  "lead": "Para cobrar antes en una pequeña empresa no basta con reclamar más: hay que acortar el tiempo entre que terminas un trabajo y el dinero llega al banco.",
  "respuesta": "Cobrar antes consiste en acortar cada tramo del ciclo de cobro: pedir señal al aceptar el presupuesto, facturar el mismo día que terminas, incluir un enlace de pago y recordar los vencimientos sin intervención. Con la previsión de tesorería ves además cuánto dinero tendrás en las próximas semanas y puedes adelantarte a un mes flojo.",
  "secciones": [
-  ("¿Dónde se retrasa el dinero?", None, [
+  ("¿Dónde se retrasa el dinero?", "El dinero se retrasa en tres puntos: cuando la factura se emite días después de acabar el trabajo, cuando el cliente no tiene una forma fácil de pagar y cuando el cobro tarda en verse en el banco.", [
     ("Entre terminar y facturar", "Facturas que se hacen a final de mes en lugar del día en que se acaba el trabajo."),
     ("Entre facturar y pagar", "Clientes que no encuentran cómo pagar o esperan a que se lo recuerdes."),
     ("Entre pagar y saberlo", "Cobros que tardas días en ver porque hay que cuadrar el banco a mano."),
   ]),
-  ("¿Qué ves en tu tesorería?", None, [
+  ("¿Qué ves en tu tesorería?", "Ves el saldo previsto semana a semana con cobros y pagos, las facturas con fecha de pago comprometida separadas del resto y un aviso si alguna semana baja del mínimo que marques.", [
     ("Saldo previsto por semana", "Lo que vas a cobrar y pagar, con el saldo que te quedará cada semana."),
     ("Cobros comprometidos", "Facturas con fecha prometida por el cliente, separadas de las que no la tienen."),
     ("Alertas de tensión", "Aviso cuando una semana próxima queda por debajo del mínimo que tú fijes."),
@@ -430,12 +430,12 @@ PAGINAS = {
  "lead": "Un programa de gestión con facturas automáticas evita que en tu pequeña empresa se escriba lo mismo tres veces: en el presupuesto, en el albarán y en la factura.",
  "respuesta": "Un programa de gestión con facturación automática guarda cada dato una sola vez y lo reutiliza: el presupuesto aceptado se convierte en pedido, el pedido en albarán y el albarán en factura sin volver a teclear. Las cuotas y servicios recurrentes se facturan solos cada periodo y las facturas de proveedores se leen desde el PDF.",
  "secciones": [
-  ("¿Qué facturas salen solas?", None, [
+  ("¿Qué facturas salen solas?", "Salen solas las facturas de trabajos o entregas que cierras, las cuotas de mantenimientos, alquileres o igualas en su fecha y las mensuales que agrupan todos los albaranes de un mismo cliente.", [
     ("Desde el trabajo terminado", "Al cerrar un parte o una entrega, la factura se genera con lo que se hizo."),
     ("Cuotas y contratos", "Mantenimientos, alquileres o igualas se emiten cada periodo en la fecha pactada."),
     ("Agrupadas por cliente", "Para quien prefiere una factura mensual con todos sus albaranes."),
   ]),
-  ("¿Qué otras horas recuperas?", None, [
+  ("¿Qué otras horas recuperas?", "Recuperas el tiempo de teclear facturas de proveedores, de mandar papeles a la gestoría cada trimestre y de montar informes en Excel, porque ventas, márgenes y cobros pendientes se ven en una pantalla.", [
     ("Facturas de proveedores", "Se leen del correo o del PDF y se registran sin teclearlas."),
     ("Envío a la gestoría", "Tu asesoría recibe o consulta la documentación del trimestre sin que se la mandes a mano."),
     ("Informes sin Excel", "Ventas, márgenes y pendientes de cobro actualizados en una pantalla."),
@@ -455,13 +455,13 @@ PAGINAS = {
  "lead": "Verifactu y el registro de jornada son las dos obligaciones por las que más preguntan las pequeñas empresas, y se pueden cumplir desde el mismo programa de gestión.",
  "respuesta": "Una pequeña empresa con trabajadores debe registrar la jornada diaria desde 2019 (RDL 8/2019) y conservar esos registros cuatro años. Además, tendrá que facturar con un sistema adaptado a Verifactu: las fechas vigentes son el 1 de enero de 2027 para sociedades y el 1 de julio de 2027 para el resto, aunque Hacienda ha anunciado un aplazamiento a octubre de 2028 pendiente de publicarse en el BOE.",
  "secciones": [
-  ("¿Qué exige cada obligación?", None, [
+  ("¿Qué exige cada obligación?", "El registro de jornada exige anotar a diario la entrada y salida de cada trabajador y guardarlo cuatro años; Verifactu pide que cada factura genere un registro encadenado e inalterable con su código QR.", [
     ("Registro de jornada", "Hora de entrada y de salida de cada trabajador, cada día, disponible para la plantilla y para Inspección."),
     ("Conservación cuatro años", "Los registros deben guardarse cuatro años y poder consultarse cuando se pidan."),
     ("Facturación con Verifactu", "Cada factura genera un registro encadenado e inalterable y lleva un código QR."),
   ]),
   ("¿Qué es obligatorio ya y qué no?", "El registro de jornada es obligatorio hoy; el fichaje digital obligatorio todavía no está publicado en el BOE, así que el registro puede llevarse en otros formatos siempre que sea fiable. Verifactu aún no se aplica, pero conviene tener el programa preparado para no cambiar con prisas.", []),
-  ("¿Cómo se resuelve con un solo programa?", None, [
+  ("¿Cómo se resuelve con un solo programa?", "Un mismo programa recoge los fichajes desde móvil, tablet o tarjeta, genera en cada factura el registro y el QR de Verifactu y se actualiza cuando cambian los plazos oficiales, con aviso para ti.", [
     ("Fichaje desde el móvil", "La plantilla ficha desde el móvil, una tablet o una tarjeta, y el informe sale en un clic."),
     ("Facturas preparadas", "El programa de facturación genera el registro y el QR sin pasos extra."),
     ("Fechas vigiladas", "Si cambian los plazos oficiales, se actualizan cuando se publiquen y te avisamos."),
@@ -481,12 +481,12 @@ PAGINAS = {
  "lead": "Para vender más en redes sociales una pequeña empresa no necesita publicar a diario en todas: necesita que cada publicación lleve a un mensaje, una reserva o una visita.",
  "respuesta": "Vender en redes sociales siendo pequeña empresa se basa en tres cosas: publicar con constancia en una o dos redes donde está tu cliente, enseñar trabajos reales y precios orientativos, y llevar a cada interesado a un canal donde se le atiende al momento, como WhatsApp o una página de reserva. La IA ayuda a preparar textos, vídeos y respuestas.",
  "secciones": [
-  ("¿Qué se publica?", None, [
+  ("¿Qué se publica?", "Se publican trabajos reales grabados con el móvil, vídeos cortos que responden las dudas que te hacen por teléfono y ofertas con fecha límite y un botón para reservar o escribirte.", [
     ("Trabajos reales", "Antes y después, pedidos del día o el equipo trabajando, grabados con el móvil."),
     ("Respuestas a dudas frecuentes", "Las preguntas que te hacen por teléfono convertidas en vídeos cortos."),
     ("Ofertas con fecha", "Promociones concretas con un plazo y un botón para reservar o escribir."),
   ]),
-  ("¿Cómo se convierte un seguidor en cliente?", None, [
+  ("¿Cómo se convierte un seguidor en cliente?", "Un seguidor se convierte en cliente cuando cada publicación le lleva a WhatsApp o a reservar, recibe respuesta rápida, queda registrado en tu CRM y, si algo funciona, se refuerza con anuncios en tu zona.", [
     ("Enlace a WhatsApp o reserva", "Cada publicación lleva a un sitio donde se puede pedir sin esperar."),
     ("Respuesta rápida a comentarios", "Los mensajes con intención de compra se responden pronto y se anotan."),
     ("Seguimiento en tu CRM", "Quien escribe desde redes queda registrado y sabes cuántos clientes te trae cada red."),
@@ -507,7 +507,7 @@ PAGINAS = {
  "lead": "Con una cuota mensual fija, la tecnología de tu pequeña empresa deja de ser una suma de facturas sueltas: programa, web, soporte y mantenimiento en un solo pago.",
  "respuesta": "La modalidad de cuota mensual agrupa en un pago fijo los servicios digitales de una pequeña empresa: el programa de gestión, la web, el soporte técnico, las copias de seguridad y las actualizaciones. Sabes cuánto pagas cada mes y tienes un solo interlocutor cuando algo falla.",
  "secciones": [
-  ("¿Qué puede entrar en la cuota?", None, [
+  ("¿Qué puede entrar en la cuota?", "En la cuota pueden entrar el programa de gestión con sus actualizaciones, la web con dominio y mantenimiento, una persona de soporte que conoce tu negocio y las copias de seguridad comprobadas.", [
     ("Programa de gestión", "Los módulos que usas, con sus actualizaciones y mejoras."),
     ("Web y dominio", "Alojamiento, renovaciones, mantenimiento y pequeños cambios de contenido."),
     ("Soporte con nombre", "Una persona que conoce tu negocio y resuelve por teléfono, WhatsApp o en remoto."),
@@ -529,12 +529,12 @@ PAGINAS = {
  "lead": "La digitalización de negocios rurales tiene sus propios problemas: poca cobertura, clientes repartidos en varios pueblos y nadie cerca para arreglar el ordenador.",
  "respuesta": "Digitalizar un negocio rural es darle herramientas para vender fuera de su zona y organizarse con poca gente: web y ficha de Google para que lo encuentren visitantes y compradores de fuera, pedidos y reservas por WhatsApp o web, un programa de gestión que funcione desde el móvil y soporte en remoto. Todo se hace online, sin desplazamientos.",
  "secciones": [
-  ("¿Qué necesita un negocio de pueblo?", None, [
+  ("¿Qué necesita un negocio de pueblo?", "Un negocio de pueblo necesita que lo encuentre quien busca desde fuera, poder vender a distancia por WhatsApp o tienda online y aceptar reservas sin tener que estar pendiente del teléfono.", [
     ("Que lo encuentren de fuera", "Ficha de Google y web para turistas, compradores de otras provincias y quien busca en el mapa."),
     ("Venta a distancia", "Pedidos por WhatsApp o tienda online para productos locales, con envío o recogida."),
     ("Reservas sin teléfono", "Casas rurales, restaurantes y actividades que reservan online mientras atiendes."),
   ]),
-  ("¿Y si la cobertura es mala?", None, [
+  ("¿Y si la cobertura es mala?", "Con mala cobertura se trabaja igual: partes, albaranes y fichajes se guardan en el móvil y se envían al volver la señal, y el soporte y la formación se hacen a distancia.", [
     ("Trabajo sin conexión", "Partes, albaranes o fichajes se guardan en el móvil y se envían al recuperar señal."),
     ("Soporte en remoto", "Las incidencias se resuelven conectándose a distancia, sin esperar a un técnico."),
     ("Rutas por varios pueblos", "Repartos o visitas ordenados para hacer menos kilómetros."),
@@ -555,13 +555,13 @@ PAGINAS = {
  "lead": "Un piloto de agente de IA en 30-60 días pone a trabajar un agente en un proceso real de tu empresa con una métrica acordada, para decidir con datos si se escala.",
  "respuesta": "Un piloto de agente de IA es una prueba acotada, de 30 a 60 días, en la que un agente trabaja sobre un único proceso con datos y usuarios reales, medido contra una métrica fijada al inicio. Termina con un informe de resultados, el coste de escalar y una recomendación clara: ampliar, ajustar o parar.",
  "secciones": [
-  ("¿Cómo se reparten las semanas?", None, [
+  ("¿Cómo se reparten las semanas?", "Las dos primeras semanas sirven para elegir el caso y medir el punto de partida, las dos siguientes para construir el agente, después el equipo lo usa en real y la última semana se decide con un informe.", [
     ("Semanas 1-2: caso y punto de partida", "Se elige el proceso, se mide cómo funciona hoy y se fija con el área el criterio de éxito."),
     ("Semanas 3-4: construcción", "Agente conectado a los sistemas imprescindibles, con permisos mínimos y revisión humana."),
     ("Semanas 5-7: uso real", "El equipo lo usa en su trabajo diario y se registran resultados, errores y excepciones."),
     ("Semana final: decisión", "Informe con datos, coste de extenderlo a la organización y riesgos detectados."),
   ]),
-  ("¿Qué procesos suelen servir para un piloto?", None, [
+  ("¿Qué procesos suelen servir para un piloto?", "Sirven procesos con mucho volumen y resultado medible, como clasificar correos y tickets, consultar documentación interna que el equipo busca a diario o pasar al ERP pedidos y facturas que llegan en PDF.", [
     ("Clasificación de correos y tickets", "Volumen alto, reglas claras y un resultado fácil de medir."),
     ("Consulta de documentación interna", "Procedimientos, contratos o fichas técnicas que el equipo busca a diario."),
     ("Entrada de pedidos o facturas", "Datos que llegan en PDF o por correo y hoy se pasan a mano al ERP."),
@@ -581,13 +581,13 @@ PAGINAS = {
  "lead": "Conectar la IA a un ERP o a un sistema antiguo es posible aunque no tenga una API moderna: se elige la vía que el sistema admite y se limita lo que el agente puede tocar.",
  "respuesta": "Para conectar un agente de IA a un ERP o a un sistema heredado se usa la vía que ese sistema permita: su API si la tiene, una réplica de la base de datos, el intercambio de ficheros o, como último recurso, la automatización de pantallas. El agente empieza con permisos de solo lectura y cada escritura pasa por reglas y aprobación.",
  "secciones": [
-  ("¿Por dónde se conecta según el sistema?", None, [
+  ("¿Por dónde se conecta según el sistema?", "Se usa la API del ERP si existe y está documentada; si no, una réplica de la base de datos, ficheros de intercambio programados o, como último recurso, automatizar las pantallas con controles adicionales.", [
     ("API del ERP", "La opción más limpia cuando el fabricante la ofrece y está documentada."),
     ("Réplica de base de datos", "Consultas sobre una copia, sin cargar el sistema de producción."),
     ("Ficheros de intercambio", "Exportaciones e importaciones programadas en CSV, XML u otros formatos que el sistema ya genere."),
     ("Automatización de pantallas", "Para aplicaciones sin otra salida, con más mantenimiento y controles adicionales."),
   ]),
-  ("¿Cómo se controla lo que hace la IA?", None, [
+  ("¿Cómo se controla lo que hace la IA?", "La IA empieza con permisos de solo lectura, cualquier acción pasa por una capa propia que valida los datos antes del ERP y cada consulta, propuesta y aprobación queda registrada para auditoría.", [
     ("Solo lectura al principio", "El agente consulta y propone; no escribe nada hasta validar su comportamiento."),
     ("Capa intermedia", "Las acciones pasan por un servicio propio que valida los datos antes de llegar al ERP."),
     ("Registro de cada operación", "Qué consultó, qué propuso y quién lo aprobó, para auditoría interna."),
@@ -607,7 +607,7 @@ PAGINAS = {
  "lead": "La preparación de datos para IA es el trabajo previo que decide si un agente acierta o inventa: qué fuentes usa, qué versión es la buena y quién puede ver qué.",
  "respuesta": "Preparar datos para IA es inventariar las fuentes de la empresa, limpiar duplicados y versiones obsoletas, unificar formatos, etiquetar la documentación y respetar los permisos de acceso de cada persona. Un agente con datos ordenados da respuestas que se pueden comprobar; con datos desordenados, mezcla versiones y se equivoca.",
  "secciones": [
-  ("¿Qué incluye la preparación?", None, [
+  ("¿Qué incluye la preparación?", "La preparación incluye inventariar las fuentes y sus responsables, eliminar duplicados y documentos caducados, respetar los permisos que ya existen en cada sistema y tratar los datos personales antes de indexarlos.", [
     ("Inventario de fuentes", "Carpetas compartidas, ERP, CRM, correo e intranet: qué hay, dónde está y quién responde de cada fuente."),
     ("Limpieza y versiones", "Se retiran duplicados y documentos caducados, y se marca cuál es la versión vigente."),
     ("Permisos heredados", "El agente solo muestra a cada usuario lo que ya podía ver en el sistema de origen."),
@@ -629,13 +629,13 @@ PAGINAS = {
  "lead": "La formación en IA in company por departamentos enseña a cada equipo a usar la IA en sus propias tareas, en lugar de un curso general igual para todos.",
  "respuesta": "La formación en IA in company por departamentos divide la plantilla por áreas y prepara para cada una ejercicios con sus tareas y documentos reales, las herramientas autorizadas por la empresa y los límites de su política de uso. Ayuda además a cumplir la alfabetización en IA que exige el artículo 4 del Reglamento (UE) 2024/1689, aplicable desde el 2 de febrero de 2025.",
  "secciones": [
-  ("¿Qué aprende cada área?", None, [
+  ("¿Qué aprende cada área?", "Cada área practica con sus propias tareas: ventas prepara propuestas, finanzas revisa documentos y cifras, recursos humanos cuida las decisiones sobre personas y atención al cliente resuelve incidencias con control humano.", [
     ("Ventas y marketing", "Preparar propuestas, analizar oportunidades y adaptar mensajes sin inventar datos del cliente."),
     ("Finanzas y administración", "Revisar documentos, cruzar información y redactar informes verificando cada cifra."),
     ("Recursos humanos", "Ofertas, acogida y comunicación interna, con especial cuidado en decisiones sobre personas."),
     ("Atención al cliente y operaciones", "Respuestas, procedimientos e incidencias resueltos con IA y control humano."),
   ]),
-  ("¿Cómo se organiza en una empresa grande?", None, [
+  ("¿Cómo se organiza en una empresa grande?", "En una empresa grande se forman grupos según el nivel de uso, los ejercicios se basan en material interno anonimizado si hace falta y queda registro de asistencia para acreditar la alfabetización en IA.", [
     ("Grupos por nivel", "Sesiones distintas para mandos, usuarios intensivos y usuarios ocasionales."),
     ("Casos internos", "Los ejercicios se preparan con material de cada área, anonimizado si hace falta."),
     ("Registro de asistencia", "Constancia de quién se ha formado y en qué, útil para acreditar la alfabetización en IA."),
@@ -655,7 +655,7 @@ PAGINAS = {
  "lead": "La gobernanza de IA pone orden en cómo se usa la inteligencia artificial en la empresa: qué herramientas se permiten, quién responde de cada sistema y qué decisiones nunca toma la IA sola.",
  "respuesta": "La gobernanza de IA es el conjunto de reglas, responsables y controles con los que una empresa decide qué sistemas de IA usa, para qué y con qué límites. Incluye un inventario de usos, su clasificación de riesgo según el Reglamento (UE) 2024/1689 (AI Act), la supervisión humana y un registro que permite revisar qué hizo cada sistema.",
  "secciones": [
-  ("¿Qué incluye un marco de gobernanza de IA?", None, [
+  ("¿Qué incluye un marco de gobernanza de IA?", "Un marco de gobernanza incluye el inventario de herramientas y agentes en uso, su clasificación según el AI Act, quién aprueba y supervisa cada uso y un registro de actividad que se revisa periódicamente.", [
     ("Inventario de usos", "Qué herramientas y agentes se usan, en qué áreas y con qué datos, incluidos los que el equipo usa por su cuenta."),
     ("Clasificación de riesgo", "Cada uso se encuadra en las categorías del AI Act para saber qué obligaciones le afectan."),
     ("Responsables y aprobaciones", "Quién autoriza un uso nuevo, quién lo supervisa y qué acciones exigen aprobación humana."),

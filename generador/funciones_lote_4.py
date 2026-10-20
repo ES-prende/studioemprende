@@ -9,13 +9,13 @@ PAGINAS = {
  "lead": "Conectar el ERP con la tienda online, el CRM y la contabilidad significa que un pedido web descuenta stock, crea la factura y llega a tu asesoría sin que nadie vuelva a teclearlo.",
  "respuesta": "Conectar un ERP con la tienda, el CRM y la contabilidad consiste en que cada dato se escriba una sola vez y viaje solo al resto de programas: el pedido de la web entra en el ERP, el stock se actualiza en la tienda, el cliente aparece en el CRM y la factura llega a contabilidad. Se hace por API o por intercambio automático de archivos, según lo que permita cada programa.",
  "secciones": [
-  ("¿Qué datos viajan entre programas?", None, [
+  ("¿Qué datos viajan entre programas?", "Viajan los pedidos de la tienda hacia el ERP, el stock y los precios hacia la web, las fichas de cliente hacia el CRM y las facturas y cobros hacia la contabilidad o tu asesoría.", [
     ("Pedidos de la tienda", "Cada venta online entra en el ERP con cliente, artículos, portes y forma de pago, lista para preparar."),
     ("Stock y precios", "Si vendes en tienda física o a otro cliente, la web muestra el stock real y no vende lo que ya no tienes."),
     ("Clientes y oportunidades", "El comprador web y el contacto comercial son la misma ficha en el CRM, con su historial de compras."),
     ("Facturas y cobros", "Las facturas emitidas y los cobros pasan a contabilidad o a tu asesoría con su cuenta y su IVA."),
   ]),
-  ("¿Qué hay que decidir antes de conectar?", None, [
+  ("¿Qué hay que decidir antes de conectar?", "Hay que acordar qué programa es la referencia para cada dato, con qué frecuencia se sincroniza cada cosa y quién recibe el aviso cuando un envío no llega a su destino.", [
     ("Quién manda en cada dato", "Se fija qué programa es la fuente del stock, de los precios y de los clientes para que no se pisen."),
     ("Cada cuánto se sincroniza", "Al momento para pedidos y stock; por lotes, por ejemplo cada noche, para lo que no corre prisa."),
     ("Qué pasa si algo falla", "Si un pedido no entra, queda en una cola de errores y se avisa a una persona en lugar de perderse."),
@@ -35,13 +35,13 @@ PAGINAS = {
  "lead": "El rescate de software antiguo es para ese programa que solo funciona en un ordenador viejo, cuyo proveedor ya no existe y del que depende media empresa.",
  "respuesta": "Rescatar un software antiguo es extraer los datos de un programa obsoleto (una base de Access, una aplicación de MS-DOS, un programa a medida sin soporte), limpiarlos y llevarlos a un sistema actual, conservando clientes, artículos e histórico. Mientras tanto, el programa viejo puede seguir funcionando en modo consulta para no parar el negocio.",
  "secciones": [
-  ("¿Cuándo es urgente rescatar un programa?", None, [
+  ("¿Cuándo es urgente rescatar un programa?", "Es urgente si el programa solo funciona en un ordenador, si ya nadie puede mantenerlo, si no podrá adaptarse a Verifactu o si depende de un Windows que ya no recibe parches de seguridad.", [
     ("Solo arranca en un equipo", "Si ese ordenador se estropea, se pierde el acceso a años de datos."),
     ("Nadie sabe mantenerlo", "El proveedor cerró o la persona que lo hizo ya no está, y cualquier cambio es imposible."),
     ("No cumple lo que viene", "Un programa sin actualizar no se adaptará a Verifactu ni a la factura electrónica."),
     ("Sistema operativo sin soporte", "Funciona sobre Windows antiguos que ya no reciben parches de seguridad."),
   ]),
-  ("¿Cómo se hace el rescate?", None, [
+  ("¿Cómo se hace el rescate?", "Primero se hace una copia completa, después se leen las tablas de la base de datos aunque el programa no permita exportar y, por último, se corrigen los datos antes de cargarlos en el sistema nuevo.", [
     ("Copia de seguridad primero", "Antes de tocar nada se hace una copia completa del programa y de su base de datos."),
     ("Lectura de los datos", "Se identifica el formato interno de la base de datos y se extraen las tablas aunque el programa no tenga opción de exportar."),
     ("Limpieza y traspaso", "Duplicados, campos rotos y códigos antiguos se corrigen antes de cargar todo en el sistema nuevo."),
@@ -61,7 +61,7 @@ PAGINAS = {
  "lead": "La digitalización del archivo en papel convierte cajas de expedientes, albaranes y contratos en documentos buscables y ordenados dentro de tu programa.",
  "respuesta": "Digitalizar un archivo en papel no es solo escanear: es convertir cada documento en un archivo legible, extraer sus datos clave (fecha, cliente, importe, número) y guardarlo en la carpeta o ficha correcta para encontrarlo después con un buscador. Con IA, la lectura de los datos se hace sola y una persona revisa los casos dudosos.",
  "secciones": [
-  ("¿Qué documentos se suelen digitalizar?", None, [
+  ("¿Qué documentos se suelen digitalizar?", "Lo más habitual son expedientes de clientes, albaranes y facturas antiguas, fichas de pacientes o alumnos y documentación técnica como planos o garantías. Cada documento queda unido a la persona, la obra o el equipo al que pertenece.", [
     ("Expedientes de clientes", "Contratos, autorizaciones y comunicaciones, cada uno en la ficha de su cliente."),
     ("Albaranes y facturas antiguas", "Con proveedor, fecha e importe extraídos para poder filtrar y sumar."),
     ("Historias y fichas de pacientes o alumnos", "Ordenadas por persona y con acceso limitado a quien corresponda."),
@@ -83,7 +83,7 @@ PAGINAS = {
  "lead": "Un chatbot para tu web con PIX contesta a tus visitas con tus precios, servicios y horarios reales, y convierte una consulta en un contacto con nombre y teléfono.",
  "respuesta": "Un chatbot con IA para la web es un asistente que conversa con los visitantes en lenguaje natural. Con PIX se entrena con la información de tu empresa y se conecta a tus sistemas autorizados, así que puede responder dudas, recoger los datos del interesado, dejarlo en tu CRM y pasar la conversación a una persona cuando hace falta, con todo el contexto.",
  "secciones": [
-  ("¿Qué hace el chatbot en tu web?", None, [
+  ("¿Qué hace el chatbot en tu web?", "Contesta dudas sobre tus servicios con la información que le has dado, recoge los datos del interesado para tu CRM, consulta citas o pedidos si lo autorizas y pasa a tu equipo lo que requiere una persona.", [
     ("Responde preguntas concretas", "Servicios, condiciones, plazos o zonas de trabajo, con la información que le das y sin inventar lo que no sabe."),
     ("Recoge el contacto", "Pide nombre, teléfono y motivo en la propia conversación y lo guarda como oportunidad en tu CRM."),
     ("Consulta tus sistemas", "Con acceso autorizado, puede mirar disponibilidad, estado de un pedido o una cita en tu programa."),
@@ -105,13 +105,13 @@ PAGINAS = {
  "lead": "Una recepcionista virtual con IA atiende el teléfono a la hora de comer, por la noche o cuando estás con un cliente, y te deja anotado quién llamó y qué quería.",
  "respuesta": "Una recepcionista de voz con IA es un agente que contesta las llamadas de tu negocio con voz natural, entiende lo que pide quien llama, responde a las dudas habituales, toma recados o gestiona citas y registra el resultado. Con PIX se configura con tu número propio, tu horario y tus reglas, y avisa a una persona cuando la llamada lo necesita.",
  "secciones": [
-  ("¿Qué resuelve en una llamada?", None, [
+  ("¿Qué resuelve en una llamada?", "Resuelve las preguntas habituales, da o cambia citas en tu agenda, toma recados con el motivo y la hora preferida para devolver la llamada y avisa al momento si detecta una urgencia según tus reglas.", [
     ("Dudas de siempre", "Horario, dirección, servicios o documentación necesaria, respondido con tu información."),
     ("Citas", "Da, confirma o cambia una cita según la agenda conectada."),
     ("Recados con contexto", "Anota quién llama, para qué y cuándo prefiere que le devuelvan la llamada."),
     ("Urgencias", "Si detecta un caso urgente según tus reglas, avisa al responsable en ese momento."),
   ]),
-  ("¿Cuándo atiende?", None, [
+  ("¿Cuándo atiende?", "Atiende cuando tú decidas: solo fuera de horario, también cuando la línea está saturada o durante todo el día como primer filtro que deriva a tu equipo lo que de verdad lo necesita.", [
     ("Fuera de horario", "Noches, fines de semana y festivos, cuando antes saltaba el contestador."),
     ("En horas punta", "Cuando la línea está ocupada o el equipo no puede descolgar."),
     ("Todo el día", "Si prefieres que haga siempre el primer filtro y pase solo lo que requiere a una persona."),
@@ -131,7 +131,7 @@ PAGINAS = {
  "lead": "Clasificar y responder correos con IA quita de en medio el trabajo de leer cada mensaje para decidir qué es, de quién es y qué hay que contestar.",
  "respuesta": "Un agente de IA para el correo lee cada email que entra, lo clasifica (pedido, consulta, factura, reclamación, publicidad), extrae los datos importantes, lo asigna a la persona o departamento correcto y prepara un borrador de respuesta con la información de tu empresa. Las respuestas sensibles se quedan pendientes de aprobación antes de enviarse.",
  "secciones": [
-  ("¿Qué hace con cada correo?", None, [
+  ("¿Qué hace con cada correo?", "Lee cada correo, le pone tipo y prioridad, lo asigna al departamento que toca y deja un borrador de respuesta con datos reales. Los adjuntos importantes acaban en su carpeta o en tu programa.", [
     ("Lo etiqueta", "Detecta el tipo de mensaje y su prioridad, aunque el asunto no diga nada útil."),
     ("Lo reparte", "Lo asigna a ventas, administración o soporte según las reglas que definas."),
     ("Prepara la respuesta", "Redacta un borrador con datos reales: plazos, estado del pedido, documentación pendiente."),
@@ -153,7 +153,7 @@ PAGINAS = {
  "lead": "Responder las reseñas de Google con IA te permite contestar a todas, buenas y malas, con tu estilo y sin dedicarle cada noche un rato a la ficha.",
  "respuesta": "Un agente de IA para reseñas de Google lee cada opinión nueva, prepara una respuesta personalizada con el tono de tu negocio y te la deja para aprobar. Las reseñas negativas se marcan como prioritarias y te avisa, y además resume qué temas repiten tus clientes para que sepas qué mejorar.",
  "secciones": [
-  ("¿Cómo trata cada tipo de reseña?", None, [
+  ("¿Cómo trata cada tipo de reseña?", "Agradece las positivas mencionando lo que el cliente valoró, te avisa de las negativas con una propuesta de respuesta calmada, contesta brevemente las que solo tienen estrellas y te señala las sospechosas para que decidas.", [
     ("Positivas", "Una respuesta breve y distinta cada vez, que menciona lo que el cliente destacó."),
     ("Negativas", "Te avisa al momento y propone una respuesta serena que reconoce el problema y ofrece contacto directo."),
     ("Sin texto", "Un agradecimiento corto, para que la ficha no tenga estrellas sin respuesta."),
@@ -175,7 +175,7 @@ PAGINAS = {
  "lead": "El alta automática de clientes y pacientes evita que alguien de tu equipo pase la mañana copiando DNI, direcciones y teléfonos de un formulario o un WhatsApp al programa.",
  "respuesta": "El alta automática con IA recoge los datos de un cliente o paciente nuevo por el canal por el que llega (web, WhatsApp o correo), le pide lo que falta, valida que la información sea coherente, solicita documentos y consentimientos y crea su ficha completa en tu programa de gestión o CRM. Una persona solo interviene si algo no cuadra.",
  "secciones": [
-  ("¿Qué pasos hace solo?", None, [
+  ("¿Qué pasos hace solo?", "El agente pide los datos que faltan, revisa que DNI, correo o código postal tengan buen formato, solicita los documentos necesarios y guarda la aceptación de protección de datos con su fecha.", [
     ("Pide los datos que faltan", "Si el cliente escribe solo su nombre, el agente le pide el resto en la misma conversación."),
     ("Comprueba que cuadren", "Formato de DNI o NIF, códigos postales o correos mal escritos se detectan antes de guardar."),
     ("Solicita documentos", "Fotos del DNI, informes previos o justificantes, que quedan adjuntos a la ficha."),
@@ -197,12 +197,12 @@ PAGINAS = {
  "lead": "Un agente de IA que gestiona pedidos e incidencias no se queda en contestar: recibe la petición, hace los pasos en tus programas y solo te llama cuando hay que decidir.",
  "respuesta": "Un agente de IA de principio a fin es un asistente que recibe una petición (un pedido, una solicitud de presupuesto o una incidencia), consulta los datos necesarios en tus sistemas, ejecuta los pasos que tiene permitidos, informa al cliente del estado y deja todo registrado. Las decisiones sensibles, como un descuento o un abono, quedan pendientes de aprobación humana.",
  "secciones": [
-  ("Tres procesos que puede llevar enteros", None, [
+  ("Tres procesos que puede llevar enteros", "Pedidos, presupuestos e incidencias son los tres procesos que un agente puede cerrar de principio a fin: recibe la petición, comprueba tus datos, la registra en tu programa y mantiene informado al cliente.", [
     ("Pedido", "Recibe el pedido por correo o WhatsApp, comprueba stock y condiciones del cliente, lo crea en tu programa y confirma la fecha de entrega."),
     ("Presupuesto", "Recoge lo que necesita el cliente, calcula con tus tarifas, prepara el PDF para que lo apruebes y hace el seguimiento."),
     ("Incidencia", "Registra la queja con fotos, comprueba garantía e historial, abre el caso, lo asigna y mantiene informado al cliente."),
   ]),
-  ("¿Dónde se para el agente?", None, [
+  ("¿Dónde se para el agente?", "Se detiene ante cualquier excepción, como falta de stock o un cliente con deuda, y ante todo lo que toque dinero. Además, tú decides qué acciones puede ejecutar solo y cuáles esperan tu aprobación.", [
     ("Excepciones", "Un artículo sin stock, un cliente con deuda o un dato que no encuentra: avisa a la persona responsable."),
     ("Dinero", "Descuentos, abonos o devoluciones requieren tu visto bueno antes de ejecutarse."),
     ("Límites que tú pones", "El administrador decide qué acciones puede hacer solo y cuáles necesitan aprobación."),
@@ -222,7 +222,7 @@ PAGINAS = {
  "lead": "Con los presupuestos automáticos, la consulta que llega por web, correo o WhatsApp se convierte en una oferta calculada con tus precios, lista para que la revises y la envíes.",
  "respuesta": "Un agente de presupuestos automáticos lee la petición del cliente, le pregunta lo que falta (medidas, cantidades, plazos), calcula el importe con tus tarifas y reglas, genera el presupuesto en PDF con tu plantilla y te lo pasa para aprobar. Una vez enviado, recuerda al cliente que lo tiene pendiente y te avisa cuando lo acepta.",
  "secciones": [
-  ("¿Cómo prepara el presupuesto?", None, [
+  ("¿Cómo prepara el presupuesto?", "Interpreta lo que pide el cliente aunque lo explique a su manera, le pregunta solo los datos imprescindibles, calcula con tus tarifas y condiciones y genera un PDF con tu imagen que queda guardado en su ficha.", [
     ("Entiende la petición", "Aunque el cliente lo escriba a su manera, identifica qué servicio o producto necesita."),
     ("Pregunta lo que falta", "Medidas, unidades, dirección o fecha: lo justo para poder calcular."),
     ("Aplica tus reglas", "Tarifas, mínimos, desplazamientos, descuentos por volumen y márgenes que tú defines."),
@@ -244,7 +244,7 @@ PAGINAS = {
  "lead": "Un agente de IA para cobros e impagos hace la parte incómoda de reclamar facturas y, sobre todo, entiende lo que el cliente contesta y actúa en consecuencia.",
  "respuesta": "Un agente de IA de cobros consulta las facturas vencidas en tu programa, envía la reclamación por correo o WhatsApp, lee la respuesta del cliente (ya he pagado, pago el viernes, no estoy conforme) y actúa según cada caso: anota la promesa de pago, pide el justificante, abre una incidencia o avisa a tu equipo. Si llega el pago, deja de reclamar.",
  "secciones": [
-  ("¿Qué hace con cada respuesta?", None, [
+  ("¿Qué hace con cada respuesta?", "Adapta la reclamación a lo que conteste el cliente: pide justificante si dice haber pagado, apunta las promesas de pago, detiene el proceso si hay desacuerdo y, ante el silencio, sube el tono hasta pasar el caso a una persona.", [
     ("Ya he pagado", "Pide el justificante y lo cruza con el banco o lo pasa a administración para comprobarlo."),
     ("Pago tal día", "Anota la promesa de pago y, si llega la fecha y no ha entrado, vuelve a escribir."),
     ("No estoy conforme", "Para la reclamación y abre una incidencia para que alguien revise la factura."),
@@ -266,7 +266,7 @@ PAGINAS = {
  "lead": "El agente documental para gestorías se encarga de perseguir, recibir y ordenar la documentación de tus clientes antes de cada cierre, para que el equipo dedique el tiempo a asesorar.",
  "respuesta": "Un agente documental para gestorías recibe los documentos que mandan los clientes por correo, WhatsApp o portal, los clasifica por cliente y tipo (facturas, extractos, nóminas, contratos), extrae los datos de las facturas, detecta lo que falta para cada trimestre o cierre y envía los recordatorios. El técnico recibe el expediente completo y un resumen de lo pendiente.",
  "secciones": [
-  ("¿Qué quita de la mesa del equipo?", None, [
+  ("¿Qué quita de la mesa del equipo?", "Le quita al equipo el trabajo de archivar cada documento, teclear los datos de las facturas, revisar qué falta de cada cliente y perseguir la documentación antes de cada plazo.", [
     ("Clasificar lo que llega", "Cada documento va a la carpeta del cliente y del periodo que corresponde."),
     ("Extraer las facturas", "Proveedor, NIF, base, IVA y fecha, listos para revisar y contabilizar."),
     ("Detectar lo que falta", "Compara con lo habitual de cada cliente y avisa si falta un extracto o una factura recurrente."),
@@ -288,7 +288,7 @@ PAGINAS = {
  "lead": "Un agente de IA inmobiliario contesta a quien pregunta por un piso en minutos, averigua qué busca de verdad y le propone visita, aunque tus agentes estén enseñando otra vivienda.",
  "respuesta": "Un agente de IA para inmobiliarias atiende los contactos que llegan de portales, web y WhatsApp, responde sobre el inmueble con la información de tu cartera, hace las preguntas de calificación (presupuesto, zona, financiación, plazos), crea la ficha de demanda, la cruza con otros inmuebles disponibles y agenda la visita en el calendario del comercial.",
  "secciones": [
-  ("¿Qué hace con cada interesado?", None, [
+  ("¿Qué hace con cada interesado?", "Contesta dudas del inmueble con los datos de tu cartera, averigua si el interesado puede y quiere comprar, le ofrece otras viviendas si esa no le encaja y le reserva la visita con el comercial.", [
     ("Responde sobre el inmueble", "Metros, habitaciones, gastos o disponibilidad, con los datos de tu cartera."),
     ("Califica la demanda", "Pregunta presupuesto, financiación y urgencia para separar curiosos de compradores."),
     ("Cruza oferta y demanda", "Si el piso no encaja, propone otros de tu cartera que sí cumplen lo que busca."),
@@ -310,7 +310,7 @@ PAGINAS = {
  "lead": "La revisión de contratos con IA para despachos hace la primera lectura: compara el documento con tus criterios y te dice dónde mirar, para que el abogado empiece por lo importante.",
  "respuesta": "Un agente de revisión de contratos lee el documento que entra, lo compara con las plantillas y criterios del despacho, señala las cláusulas que se apartan de lo habitual o que suponen riesgo (penalizaciones, plazos, jurisdicción, renovaciones automáticas) y prepara un resumen con fechas e importes clave. La valoración jurídica y la decisión siempre son del abogado.",
  "secciones": [
-  ("¿Qué entrega en cada revisión?", None, [
+  ("¿Qué entrega en cada revisión?", "Cada revisión te deja un resumen de una página, las diferencias con el modelo de tu despacho, las cláusulas sensibles localizadas en el texto y las fechas de renovación o preaviso apuntadas en la agenda.", [
     ("Resumen del contrato", "Partes, objeto, duración, importes y fechas clave en una página."),
     ("Diferencias con tu modelo", "Qué cláusulas faltan, cuáles cambian y cuáles se añaden respecto a tu plantilla."),
     ("Puntos de atención", "Cláusulas que tu despacho considera sensibles, marcadas con su ubicación en el texto."),
@@ -332,7 +332,7 @@ PAGINAS = {
  "lead": "Un agente de IA para licitaciones públicas filtra las convocatorias que encajan con tu empresa y te resume cada pliego para decidir rápido si merece la pena presentarse.",
  "respuesta": "Un agente de IA para licitaciones revisa las convocatorias publicadas según tus criterios (sector, zona, importe), descarta las que no encajan, resume los pliegos de las interesantes (objeto, presupuesto, solvencia exigida, criterios de adjudicación y plazos) y prepara la lista de documentos que tienes que reunir. La decisión de presentarse y la oferta final son de tu equipo.",
  "secciones": [
-  ("¿En qué te ayuda en cada fase?", None, [
+  ("¿En qué te ayuda en cada fase?", "Te ayuda a localizar los concursos que encajan contigo, a leer el pliego con un resumen siempre igual, a reunir la documentación necesaria y a no perder ninguna fecha del procedimiento.", [
     ("Búsqueda", "Vigila las publicaciones con tus palabras clave y te avisa solo de lo relevante."),
     ("Lectura del pliego", "Resume requisitos de solvencia, criterios de valoración y penalizaciones en un formato fijo."),
     ("Preparación", "Lista de documentos, con lo que ya tienes en tu archivo y lo que falta por conseguir."),
@@ -354,7 +354,7 @@ PAGINAS = {
  "lead": "La venta adicional automática ofrece en cada pedido o reserva ese extra que el cliente probablemente quiere, igual que lo haría tu mejor dependiente.",
  "respuesta": "La venta adicional con un agente de IA consiste en que, al recibir un pedido o una reserva, el asistente propone un producto o servicio complementario según reglas que tú defines y el historial del cliente: un tratamiento extra en una cita, el desayuno en una reserva o el consumible que suele acabarse. Si el cliente acepta, se añade al pedido directamente.",
  "secciones": [
-  ("Ejemplos por tipo de negocio", None, [
+  ("Ejemplos por tipo de negocio", "La oferta cambia según el sector: un alojamiento propone parking o desayuno, una clínica un tratamiento complementario, un distribuidor el recambio habitual y un restaurante la tarta para la celebración.", [
     ("Alojamientos", "Llegada temprana, salida tardía, parking o desayuno al confirmar la reserva."),
     ("Centros de estética y clínicas", "Un tratamiento complementario o un bono al agendar la cita."),
     ("Distribución", "El consumible o recambio que ese cliente compra cada cierto tiempo y que no ha pedido."),
@@ -377,7 +377,7 @@ PAGINAS = {
  "respuesta": "Una IA privada para empresas trabaja con tus datos internos (clientes, contratos, procedimientos, ventas) dentro de un entorno controlado: solo accede a las fuentes que autorizas, cifra la información, aplica permisos por rol, registra cada consulta y puede desplegarse en un servidor dedicado. Así el equipo aprovecha la IA sin copiar información sensible en herramientas que la empresa no controla.",
  "secciones": [
   ("¿Qué riesgo quieres evitar?", "El problema más habitual no es un ataque, sino un empleado que pega una lista de clientes o un contrato en un chat gratuito para que se lo resuma. Una vez ahí, la empresa ya no controla qué pasa con esa información. Ofrecer una alternativa interna, igual de cómoda, es la forma más eficaz de evitarlo.", []),
-  ("¿Cómo se mantiene el control?", None, [
+  ("¿Cómo se mantiene el control?", "Tú eliges qué fuentes se conectan, cada rol consulta solo lo que le corresponde, cada pregunta queda registrada y decides si el sistema funciona en la nube cifrada o en un servidor dedicado.", [
     ("Fuentes elegidas", "Solo se conectan las carpetas, programas y buzones que decides, nada más."),
     ("Permisos por rol", "Cada persona consulta lo que le corresponde: comercial no ve nóminas, administración no ve expedientes clínicos."),
     ("Registro de uso", "Queda constancia de quién preguntó qué y a qué datos accedió la IA."),
@@ -398,13 +398,13 @@ PAGINAS = {
  "lead": "Tener la IA en un servidor propio o dedicado significa que tu agente y sus datos funcionan en un entorno reservado para tu empresa, no compartido con otros clientes.",
  "respuesta": "Desplegar la IA en un servidor dedicado consiste en instalar el agente, sus conexiones y sus datos en una máquina reservada para tu empresa. Así los flujos funcionan de forma continua, sin depender de que un ordenador de la oficina esté encendido, y la información queda en un entorno aislado. Dónde se aloja y con qué garantías se decide en la auditoría y se documenta por contrato.",
  "secciones": [
-  ("¿Cuándo tiene sentido un servidor dedicado?", None, [
+  ("¿Cuándo tiene sentido un servidor dedicado?", "Tiene sentido cuando manejas información confidencial, cuando los procesos deben funcionar día y noche, cuando lo usan muchas personas o cuando tus propios clientes te exigen saber dónde se guardan sus datos.", [
     ("Datos sensibles", "Despachos, clínicas o empresas con información confidencial que prefieren un entorno aislado."),
     ("Procesos continuos", "Flujos que deben ejecutarse por horario o por evento, de día y de noche."),
     ("Muchos usuarios", "Equipos grandes o varios departamentos trabajando con el mismo agente."),
     ("Requisitos de clientes", "Cuando tus propios clientes te exigen garantías concretas sobre dónde están sus datos."),
   ]),
-  ("¿Qué hay que tener en cuenta?", None, [
+  ("¿Qué hay que tener en cuenta?", "Ten en cuenta que un servidor propio necesita mantenimiento continuo, cuesta más que un plan estándar y debe tener acceso a los programas con los que trabaja el agente, estén en la nube o en tu oficina.", [
     ("Mantenimiento", "Un servidor requiere actualizaciones, copias y vigilancia; lo incluimos en el proyecto."),
     ("Coste", "Es más caro que un plan estándar, por eso se presupuesta según usuarios y volumen."),
     ("Conexiones", "El servidor debe poder llegar a tus programas, ya estén en la nube o en tu oficina."),
@@ -424,7 +424,7 @@ PAGINAS = {
  "lead": "Un asistente de IA interno para procedimientos responde a tu equipo cómo se hace cada cosa en tu empresa, consultando tus manuales y protocolos en lugar de interrumpir al compañero veterano.",
  "respuesta": "Un asistente interno de procedimientos es una IA que tu equipo consulta en lenguaje normal (cómo se tramita una devolución, qué hago si falla tal máquina, qué documentos pide un alta) y que responde a partir de los manuales, protocolos y documentos de tu empresa, indicando de cuál ha sacado la respuesta. Si no encuentra la información, lo dice.",
  "secciones": [
-  ("¿Qué preguntas resuelve?", None, [
+  ("¿Qué preguntas resuelve?", "Resuelve cómo se hace cada proceso, qué protocolo aplica en cada excepción y dónde está cada plantilla o documento. A quien acaba de entrar le contesta las dudas sin interrumpir a sus compañeros.", [
     ("Cómo se hace", "Pasos de un proceso interno, del alta de un cliente al cierre de una obra."),
     ("Qué toca en cada caso", "Excepciones, protocolos de calidad o de seguridad y a quién avisar."),
     ("Dónde está", "Plantillas, formularios y documentos actualizados, con el enlace directo."),
@@ -446,7 +446,7 @@ PAGINAS = {
  "lead": "Un departamento de IA externalizado te da el criterio y las manos para aplicar la IA en tu empresa sin fichar a un especialista a jornada completa.",
  "respuesta": "Un departamento de IA externalizado es un equipo externo que hace las funciones de un área de IA interna: identifica qué procesos merece la pena automatizar, prioriza, implanta y mantiene los agentes, forma al personal, vigila el gasto en herramientas de IA y presenta resultados periódicos a dirección. Pagas por un servicio continuo en lugar de contratar varios perfiles.",
  "secciones": [
-  ("¿Qué funciones cubre?", None, [
+  ("¿Qué funciones cubre?", "Cubre lo que haría un equipo interno de IA: decidir qué automatizar primero, montar y conectar los agentes, formar a tu plantilla con normas de uso claras y revisar con dirección los resultados.", [
     ("Hoja de ruta", "Lista priorizada de procesos a automatizar según impacto y facilidad."),
     ("Implantación", "Montaje de agentes y automatizaciones, conectados a tus programas."),
     ("Formación y normas", "Formación del equipo y política interna de uso de la IA."),
@@ -468,13 +468,13 @@ PAGINAS = {
  "lead": "El mantenimiento de agentes de IA y automatizaciones evita lo más peligroso: que un flujo deje de funcionar un día y nadie se entere hasta que un cliente se queja.",
  "respuesta": "Mantener un agente de IA o una automatización consiste en vigilar que se ejecuta bien, detectar errores (una conexión caída, un cambio en un programa, una respuesta incorrecta), corregirlos, actualizar la información con la que trabaja el agente (precios, servicios, horarios) y ajustar su comportamiento con los casos reales. Sin mantenimiento, una automatización se degrada con el tiempo.",
  "secciones": [
-  ("¿Por qué se rompen las automatizaciones?", None, [
+  ("¿Por qué se rompen las automatizaciones?", "Se rompen porque los programas conectados se actualizan, los accesos caducan, tu negocio cambia precios o servicios y aparecen situaciones que nadie previó al configurar el agente.", [
     ("Cambian los programas", "Una actualización de tu tienda, tu CRM o tu correo modifica algo y la conexión deja de funcionar."),
     ("Caducan los accesos", "Contraseñas, permisos o credenciales que vencen y cortan el flujo."),
     ("Cambia tu negocio", "Nuevos precios, servicios u horarios que el agente sigue sin conocer."),
     ("Casos nuevos", "Preguntas o situaciones que no existían cuando se configuró."),
   ]),
-  ("¿Qué incluye el mantenimiento?", None, [
+  ("¿Qué incluye el mantenimiento?", "Incluye alertas cuando un flujo se para, revisión periódica de conversaciones, actualización de la información del agente cuando cambias algo y un informe con lo corregido y lo siguiente que conviene automatizar.", [
     ("Vigilancia", "Alertas cuando un flujo falla o deja de ejecutarse."),
     ("Revisión de conversaciones", "Muestras periódicas para detectar respuestas mejorables."),
     ("Actualización de conocimiento", "Cambios de tarifas, catálogo o procedimientos cargados en el agente."),
@@ -495,7 +495,7 @@ PAGINAS = {
  "lead": "Un asistente de IA para WhatsApp contesta a tus clientes al momento, a cualquier hora, y te deja el trabajo hecho: la cita dada, el pedido apuntado o el caso listo para ti.",
  "respuesta": "Un asistente de IA para WhatsApp es un agente conectado al número de tu negocio que lee cada mensaje, entiende lo que pide el cliente, responde con tu información, ejecuta acciones en tus programas (dar una cita, registrar un pedido, consultar un estado) y pasa la conversación a una persona cuando hace falta. Con PIX, la conversación conserva el contexto aunque el cliente cambie de canal.",
  "secciones": [
-  ("¿Qué hace en tu WhatsApp?", None, [
+  ("¿Qué hace en tu WhatsApp?", "Responde a cualquier hora con tus datos, recuerda lo que el cliente habló días antes, registra citas, pedidos o incidencias en tu programa y pasa la conversación a tu equipo con un resumen cuando hace falta.", [
     ("Responde al momento", "Precios, horarios, disponibilidad o cómo llegar, con tus datos y a cualquier hora."),
     ("Recuerda la conversación", "Si el cliente vuelve días después, retoma lo hablado sin preguntar lo mismo otra vez."),
     ("Hace la gestión", "Da la cita, apunta el pedido o abre la incidencia en tu programa."),
@@ -517,12 +517,12 @@ PAGINAS = {
  "lead": "Con las citas por WhatsApp y los recordatorios automáticos, el cliente pide, confirma o cambia su cita escribiendo, y tu agenda se actualiza sola.",
  "respuesta": "Las citas automáticas por WhatsApp permiten que el cliente pida hora en una conversación, vea los huecos libres de tu agenda y reserve sin llamar. Antes de la cita recibe un recordatorio con opción de confirmar, cambiar o cancelar respondiendo al mensaje; si cancela, el hueco queda libre y se puede ofrecer a quien estaba esperando.",
  "secciones": [
-  ("¿Cómo funciona para el cliente?", None, [
+  ("¿Cómo funciona para el cliente?", "El cliente escribe qué necesita y cuándo le viene bien, recibe huecos libres, le llega un recordatorio antes de la cita y puede confirmarla, moverla o anularla contestando en el mismo chat.", [
     ("Pide cita escribiendo", "Dice qué necesita y cuándo le viene bien, y recibe huecos concretos."),
     ("Recibe recordatorio", "Unas horas o días antes, según el tipo de servicio, con la dirección y lo que debe traer."),
     ("Responde y listo", "Confirma, cambia de hora o cancela en el mismo chat."),
   ]),
-  ("¿Y para tu negocio?", None, [
+  ("¿Y para tu negocio?", "Tu agenda se actualiza sola con cada cambio, los huecos que se liberan se ofrecen a la lista de espera y recepción deja de llamar para confirmar. Las condiciones de reserva las pones tú.", [
     ("Agenda siempre al día", "Cada cambio se refleja al momento en la agenda de cada profesional o sala."),
     ("Huecos aprovechados", "Las cancelaciones se ofrecen a clientes en lista de espera."),
     ("Menos teléfono", "Recepción deja de dedicar horas a llamar para confirmar."),
@@ -543,7 +543,7 @@ PAGINAS = {
  "lead": "La reactivación de clientes y pacientes inactivos detecta a quién le toca volver y no ha vuelto, y le escribe por WhatsApp con un motivo concreto para hacerlo.",
  "respuesta": "Reactivar clientes inactivos consiste en localizar en tu programa a quienes llevan más tiempo del habitual sin comprar o sin pedir cita (una revisión anual, un tratamiento periódico, una compra recurrente) y enviarles un mensaje personalizado por WhatsApp con la opción de reservar en la misma conversación. Solo se escribe a quien ha dado su consentimiento para recibir comunicaciones.",
  "secciones": [
-  ("¿A quién se le escribe?", None, [
+  ("¿A quién se le escribe?", "Se escribe a quien tiene una revisión vencida, a quien dejó a medias un bono o tratamiento, al cliente habitual que ha dejado de pedir y, con otro mensaje, a quien lleva mucho tiempo sin volver.", [
     ("Revisión pendiente", "Pacientes o clientes cuya revisión periódica ya ha vencido."),
     ("Tratamiento a medias", "Quien empezó un bono o un plan y dejó de venir."),
     ("Compra recurrente", "El cliente que pedía cada mes y lleva dos sin hacerlo."),
@@ -565,7 +565,7 @@ PAGINAS = {
  "lead": "Automatizar facturas, cobros y administración es quitarle a la oficina las tareas que se repiten cada mes igual: emitir, enviar, conciliar, reclamar y pasar papeles a la asesoría.",
  "respuesta": "La automatización administrativa hace que las tareas repetitivas de facturación y cobro se ejecuten solas: las facturas recurrentes se emiten y envían en su fecha, los cobros del banco se casan con sus facturas, los vencidos generan recordatorios y la documentación del mes llega a la asesoría sin preparar nada. Una persona solo revisa lo que no cuadra.",
  "secciones": [
-  ("¿Qué tareas se automatizan?", None, [
+  ("¿Qué tareas se automatizan?", "Se automatizan las facturas que se repiten cada mes, el emparejamiento de movimientos bancarios con facturas, los avisos de cobro con enlace de pago y el envío de la documentación mensual a tu asesoría.", [
     ("Facturas recurrentes", "Cuotas, mantenimientos o alquileres que se emiten y se envían cada mes sin tocar nada."),
     ("Conciliación bancaria", "Los movimientos del banco se emparejan con facturas emitidas y recibidas."),
     ("Recordatorios de cobro", "Avisos antes y después del vencimiento, con enlace de pago."),
@@ -587,13 +587,13 @@ PAGINAS = {
  "lead": "La lectura automática de documentos con IA convierte albaranes, pedidos, facturas y partes en datos que entran solos en tu programa, sin que nadie los teclee.",
  "respuesta": "La lectura automática de documentos usa IA para leer un PDF, una foto o un escaneo, reconocer qué tipo de documento es, extraer sus datos (proveedor, fecha, líneas, importes, referencias) y cargarlos en el lugar correcto de tu programa de gestión. A diferencia del OCR clásico, entiende documentos con formatos distintos sin crear una plantilla para cada uno.",
  "secciones": [
-  ("¿Qué documentos puede leer?", None, [
+  ("¿Qué documentos puede leer?", "Lee albaranes de proveedor, pedidos de clientes en PDF o correo, partes de trabajo escritos a mano y facturas recibidas, y pasa cada dato al apartado que le corresponde en tu programa.", [
     ("Albaranes de proveedor", "Líneas de producto y cantidades para dar entrada al almacén."),
     ("Pedidos de clientes", "Pedidos que llegan en PDF o por correo, convertidos en pedidos del programa."),
     ("Partes de trabajo en papel", "Horas, materiales y firma, asociados a su obra o servicio."),
     ("Facturas recibidas", "Datos fiscales e importes listos para contabilizar."),
   ]),
-  ("¿Cómo se controla que no haya errores?", None, [
+  ("¿Cómo se controla que no haya errores?", "Cada dato leído lleva un grado de seguridad, el sistema comprueba sumas, proveedores y artículos, y una persona revisa solo lo que queda marcado con el documento original al lado.", [
     ("Nivel de confianza", "Cada dato extraído lleva una seguridad; lo dudoso se marca."),
     ("Validaciones", "Se comprueba que las sumas cuadren y que el proveedor o el artículo existan."),
     ("Revisión rápida", "La persona ve el documento junto a los datos y solo corrige lo marcado."),
@@ -613,7 +613,7 @@ PAGINAS = {
  "lead": "La previsión de ventas y stock usa tu histórico para anticipar qué vas a vender en las próximas semanas y cuánto tienes que pedir para no quedarte corto ni llenar el almacén.",
  "respuesta": "Una previsión de ventas y stock analiza el histórico de ventas de cada artículo, su estacionalidad, las tendencias recientes y los pedidos ya comprometidos para estimar la demanda de las próximas semanas. Con esa estimación, el stock actual y el plazo de cada proveedor, propone qué y cuánto comprar y avisa de los artículos que se van a agotar.",
  "secciones": [
-  ("¿Qué tiene en cuenta la previsión?", None, [
+  ("¿Qué tiene en cuenta la previsión?", "Combina tu histórico de ventas por artículo y canal, la estacionalidad de tu sector, el tiempo que tarda cada proveedor y lo que ya tienes vendido pendiente de servir.", [
     ("Histórico de ventas", "Lo vendido por artículo, semana y canal en los últimos periodos."),
     ("Temporada y fechas", "Campañas, festivos y meses fuertes o flojos de tu sector."),
     ("Plazos de proveedor", "Cuánto tarda en llegar cada pedido, para avisarte a tiempo."),

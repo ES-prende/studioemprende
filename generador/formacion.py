@@ -8,7 +8,7 @@ JORDAN = {"@type": "Person", "@id": DOM + "/sobre-nosotros#jordan-garcia", "name
           "knowsAbout": ["Inteligencia artificial", "Prompt engineering", "ChatGPT", "Automatización de procesos", "Formación en IA para empresas"],
           "url": DOM + "/sobre-nosotros#equipo"}
 
-JORDAN_BIO = ("Prompt engineer y CEO de Inteligencia Sevilla. Ha aplicado inteligencia artificial en 11 empresas distintas para resolver "
+JORDAN_BIO = ("Formador de inteligencia artificial en Studio Emprende, prompt engineer y CEO de Inteligencia Sevilla. Ha aplicado inteligencia artificial en 11 empresas distintas para resolver "
               "problemas reales, y todo lo que enseña lo ha usado antes en producción. Sus sesiones son prácticas de principio a fin: "
               "se trabaja sobre las tareas reales de cada persona, no sobre ejemplos de manual.")
 
@@ -144,7 +144,7 @@ def curso_sesion():
 
 # ---------- Sobre nosotros: equipo ----------
 def equipo_html(r):
-    return '<section class="sec sec-suave" id="equipo"><div class="w"><div class="cab"><p class="kicker">Equipo</p><h2>Quién está detrás</h2></div><p class="lead" style="max-width:780px;margin-bottom:22px">Studio Emprende es una marca comercial de INTELIGENCIA SEVILLA SL, empresa con sede en Alcolea del Río (Sevilla) que desarrolla software de gestión, agentes de IA y webs para negocios de toda España. La formación en IA la imparte Jordan García, prompt engineer y CEO de Inteligencia Sevilla; el equipo técnico se encarga de la implantación y el soporte de cada proyecto.</p>%s</div></section>' % tarjeta_formador(r).replace(
+    return '<section class="sec sec-suave" id="equipo"><div class="w"><div class="cab"><p class="kicker">Equipo</p><h2>Quién está detrás</h2></div><p class="lead" style="max-width:780px;margin-bottom:22px">Studio Emprende es una marca de INTELIGENCIA SEVILLA SL, con sede en Alcolea del Río (Sevilla), que desarrolla software de gestión, agentes de IA y webs para negocios de toda España. La formación en IA la imparte Jordan García; el equipo técnico implanta y da soporte a cada proyecto.</p>%s</div></section>' % tarjeta_formador(r).replace(
         '<p style="margin:10px 0 0"><a href="%ssobre-nosotros.html#equipo">Conoce al equipo →</a></p>' % r,
         '<p style="margin:10px 0 0"><a href="%sservicios/formacion-ia.html">Ver la formación en IA →</a></p>' % r)
 

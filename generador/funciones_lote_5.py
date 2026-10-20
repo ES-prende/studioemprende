@@ -7,13 +7,13 @@ PAGINAS = {
  "lead": "Saber qué clientes están en riesgo de irse antes de que dejen de comprar es la forma más barata de crecer: retener cuesta menos que captar de nuevo.",
  "respuesta": "La detección de clientes en riesgo de irse (churn) analiza cada semana el comportamiento de tus clientes: cada cuánto compran, cuánto gastan, si han tenido incidencias o retrasos en el pago. Cuando alguien se aparta de su patrón habitual, el sistema lo marca y propone una acción, como una llamada o una oferta, antes de perderlo.",
  "secciones": [
-  ("¿Qué señales delatan a un cliente que se está yendo?", None, [
+  ("¿Qué señales delatan a un cliente que se está yendo?", "Lo delatan los pedidos más espaciados, un gasto medio que baja, incidencias que siguen abiertas y mensajes que antes contestaba y ahora ignora. El sistema suma esas señales en una puntuación de riesgo.", [
     ("Compra menos a menudo", "Un cliente que pedía cada dos semanas y lleva seis sin hacerlo aparece en la lista, aunque nunca se haya quejado."),
     ("Baja el importe medio", "Sigue comprando, pero solo lo básico: suele estar probando a otro proveedor para el resto."),
     ("Incidencias sin cerrar", "Reclamaciones, devoluciones o tickets abiertos demasiado tiempo pesan en la puntuación."),
     ("Deja de abrir tus mensajes", "Si ignora correos y WhatsApp que antes contestaba, es otra pista que se suma."),
   ]),
-  ("¿Qué haces cuando salta el aviso?", None, [
+  ("¿Qué haces cuando salta el aviso?", "Recibes cada semana la lista ordenada por riesgo y facturación con una acción propuesta para cada cliente. Lo que hagas queda registrado, y así se aprende qué funciona en tu empresa.", [
     ("Lista priorizada", "Cada lunes ves los clientes ordenados por riesgo y por lo que facturan, para empezar por los que más importan."),
     ("Acción sugerida", "La IA propone qué hacer con cada uno: llamada del comercial, visita, descuento o simplemente preguntar qué ha pasado."),
     ("Seguimiento del resultado", "Se registra si el cliente vuelve a comprar, y el modelo aprende qué acciones funcionan en tu negocio."),
@@ -34,7 +34,7 @@ PAGINAS = {
  "lead": "La previsión de tesorería y el control de costes dejan de ser un Excel que se actualiza cuando hay tiempo: los datos salen del banco y de tus facturas, y la IA te avisa de lo que se tuerce.",
  "respuesta": "Este servicio conecta tus movimientos bancarios, facturas emitidas y facturas de proveedores para calcular cuánto dinero tendrás cada semana y en qué se va. La IA clasifica los gastos por partida, compara precios de proveedores mes a mes y avisa cuando un coste sube o cuando la caja prevista baja de un mínimo que tú fijas.",
  "secciones": [
-  ("¿Qué controla en tus costes?", None, [
+  ("¿Qué controla en tus costes?", "Clasifica cada gasto en su partida, te avisa cuando un proveedor sube el precio, detecta suscripciones que nadie usa y compara lo gastado con lo que habías presupuestado.", [
     ("Gasto por partida", "Personal, compras, suministros, alquiler, suscripciones: cada movimiento se clasifica solo y ves cuánto pesa cada bloque."),
     ("Subidas de proveedores", "Si un proveedor te cobra más que el mes anterior por lo mismo, recibes el aviso con la diferencia."),
     ("Suscripciones olvidadas", "Cargos recurrentes que nadie usa aparecen en una lista para darlos de baja."),
@@ -56,13 +56,13 @@ PAGINAS = {
  "lead": "Un cuadro de mando de dirección reúne en una pantalla los indicadores con los que decides: ventas, margen, caja, cobros y equipo, aunque hoy vivan en programas distintos.",
  "respuesta": "Un cuadro de mando de dirección es un panel que junta los KPIs clave de la empresa, procedentes del programa de gestión, el banco, la tienda online o el CRM, y los actualiza de forma automática. Está pensado para gerencia: pocas cifras, comparadas con el objetivo y con el mismo periodo del año anterior, y con avisos cuando algo se desvía.",
  "secciones": [
-  ("¿Qué indicadores suele mirar un gerente?", None, [
+  ("¿Qué indicadores suele mirar un gerente?", "Lo más consultado son ventas y margen frente al objetivo, caja y cobros pendientes, la actividad comercial con presupuestos y oportunidades, y los indicadores de equipo u operaciones propios de cada empresa.", [
     ("Ventas y margen", "Por línea de negocio, tienda o comercial, frente al objetivo del mes."),
     ("Caja y cobros", "Saldo actual, cobros vencidos y previsión a corto plazo."),
     ("Actividad comercial", "Presupuestos enviados, tasa de aceptación y oportunidades abiertas."),
     ("Equipo y operaciones", "Horas, productividad o pedidos servidos, según el tipo de empresa."),
   ]),
-  ("¿En qué se diferencia de los informes de tu programa?", None, [
+  ("¿En qué se diferencia de los informes de tu programa?", "Se diferencia en que junta datos de varios programas, enseña de un vistazo si vas bien o dónde está el problema y muestra a cada responsable solo su parte.", [
     ("Une varias fuentes", "Cruza datos que hoy están separados, como la tienda online y el ERP, o el CRM y la contabilidad."),
     ("Pensado para decidir", "No muestra cien tablas: muestra si vas bien o mal y dónde está el problema."),
     ("Por niveles", "Dirección ve la empresa entera; cada responsable, solo su área."),
@@ -82,7 +82,7 @@ PAGINAS = {
  "lead": "El informe semanal por WhatsApp o voz te cuenta cómo ha ido la semana en un mensaje o un audio corto, para que estés al día aunque no te sientes delante del ordenador.",
  "respuesta": "Es un resumen automático que se genera cada semana con los datos de tus programas y llega por WhatsApp como texto o como nota de voz. Explica en lenguaje normal qué has vendido, qué falta por cobrar, cómo viene la semana siguiente y qué requiere tu atención, y puedes responder con preguntas para pedir más detalle.",
  "secciones": [
-  ("¿Qué te cuenta el informe?", None, [
+  ("¿Qué te cuenta el informe?", "Te cuenta cómo ha ido la semana frente a periodos anteriores, qué cobros, presupuestos o pedidos siguen pendientes y qué tienes por delante, empezando por lo que se sale de lo normal.", [
     ("Lo que ha pasado", "Ventas, servicios o citas de la semana comparados con la anterior y con el mismo periodo del año pasado."),
     ("Lo que tienes pendiente", "Facturas por cobrar, presupuestos sin respuesta y pedidos atrasados."),
     ("Lo que viene", "Agenda, entregas o vencimientos de los próximos días."),
@@ -104,13 +104,13 @@ PAGINAS = {
  "lead": "La optimización de rutas decide cada mañana el orden de las paradas de tus vehículos para hacer más visitas con menos kilómetros, sin que nadie pase una hora delante del mapa.",
  "respuesta": "Un sistema de optimización de rutas toma los pedidos, avisos o visitas del día, con su dirección, su franja horaria y el tiempo que lleva cada parada, y calcula el reparto entre vehículos y el orden más eficiente para cada uno. La ruta llega al móvil del conductor o técnico y se recalcula si entra un aviso urgente.",
  "secciones": [
-  ("¿Qué tiene en cuenta al calcular la ruta?", None, [
+  ("¿Qué tiene en cuenta al calcular la ruta?", "Calcula cada ruta respetando el horario de recepción de cada cliente, lo que cabe en cada vehículo, la acreditación de cada técnico y el tiempo real que lleva cada parada.", [
     ("Franjas del cliente", "Si un cliente solo recibe por la mañana, la parada se coloca dentro de su horario."),
     ("Capacidad del vehículo", "Peso, volumen o número de bultos, para no cargar de más una furgoneta."),
     ("Habilidades del técnico", "Un aviso de gas no se asigna a quien no tiene la acreditación."),
     ("Duración de cada parada", "No es lo mismo dejar un paquete que hacer una instalación de dos horas."),
   ]),
-  ("¿Para qué negocios es?", None, [
+  ("¿Para qué negocios es?", "Sirve a empresas de distribución y reparto, servicios técnicos a domicilio y equipos comerciales que visitan clientes por zonas, es decir, a cualquiera que haga varias paradas al día.", [
     ("Distribución y reparto", "Mayoristas, panaderías, bebidas o paquetería propia."),
     ("Servicio técnico", "Instaladores, mantenimiento y reparaciones a domicilio."),
     ("Visitas comerciales", "Comerciales con cartera de clientes que visitan por zonas."),
@@ -130,7 +130,7 @@ PAGINAS = {
  "lead": "Una web corporativa con SEO se diseña a partir de lo que buscan tus clientes, no al revés: primero el mapa de páginas y las búsquedas, después el diseño.",
  "respuesta": "Una web corporativa con SEO es la web de presentación de una empresa construida para posicionar en Google desde el primer día: arquitectura con una página por servicio o sector, textos escritos para búsquedas reales, código ligero, datos estructurados y títulos optimizados. Además se conecta al CRM para que cada contacto quede registrado.",
  "secciones": [
-  ("¿Qué incluye una web corporativa bien planteada?", None, [
+  ("¿Qué incluye una web corporativa bien planteada?", "Una web corporativa bien planteada parte de cómo te busca tu cliente, dedica una página a cada servicio o sector, lleva textos escritos para tu negocio y nace con una base técnica rápida y ordenada.", [
     ("Estudio de búsquedas", "Antes de diseñar, vemos cómo te busca tu cliente y qué páginas necesita la web para responderle."),
     ("Arquitectura por servicios", "Cada servicio, sector o zona tiene su página propia, enlazada con lógica para que Google la entienda."),
     ("Textos propios", "Redactados para tu negocio, con preguntas frecuentes y respuestas claras que también pueden citar los asistentes de IA."),
@@ -152,13 +152,13 @@ PAGINAS = {
  "lead": "Una landing page para campañas es la página a la que llega quien hace clic en tu anuncio. Si habla de lo mismo que el anuncio y pide una sola cosa, el clic que pagas tiene muchas más opciones de acabar en contacto.",
  "respuesta": "Una landing page es una página independiente creada para una campaña concreta, con un único objetivo: que el visitante deje sus datos, reserve o compre. Elimina menús y distracciones, repite la promesa del anuncio, muestra pruebas de confianza y mide cada conversión para que Google Ads o Meta optimicen la campaña.",
  "secciones": [
-  ("¿Qué tiene una landing que funciona?", None, [
+  ("¿Qué tiene una landing que funciona?", "Funciona la landing que cumple lo que prometía el anuncio, pide una única acción, resuelve dudas de precio y plazo antes de que surjan y carga al instante en el móvil.", [
     ("Coherencia con el anuncio", "El titular repite lo que prometía el anuncio; si no, el visitante cree que se ha equivocado y se va."),
     ("Una sola llamada a la acción", "Un formulario corto o un botón de WhatsApp, sin menú que lleve a otra parte."),
     ("Objeciones resueltas", "Precio orientativo, plazos, garantías y preguntas frecuentes antes de que el visitante dude."),
     ("Carga inmediata en el móvil", "La mayoría del tráfico de anuncios llega desde el móvil y no espera."),
   ]),
-  ("¿Cómo se mide?", None, [
+  ("¿Cómo se mide?", "Se mide enviando cada conversión a Google Ads y Meta, registrando en tu CRM de qué campaña viene cada contacto y comparando variantes para quedarte con la que consigue más.", [
     ("Conversiones enviadas a las plataformas", "Cada formulario o reserva se comunica a Google Ads y Meta para que sepan qué clic funcionó."),
     ("Contactos al CRM con su campaña", "El contacto entra en tu CRM con el anuncio del que vino, y así ves cuántos acaban siendo clientes."),
     ("Variantes", "Se pueden publicar dos versiones del titular u oferta y quedarse con la que más convierte."),
@@ -178,7 +178,7 @@ PAGINAS = {
  "lead": "Crear una tienda online profesional es más que subir productos: el stock, los pedidos y las facturas tienen que ir de la tienda a tu gestión sin que nadie copie nada a mano.",
  "respuesta": "Una tienda online profesional es una web de venta con catálogo, carrito, pasarela de pago, gestión de envíos y textos legales, conectada al inventario y a la facturación de la empresa. Cuando entra un pedido, descuenta stock, genera la factura y avisa a almacén; cuando cambias un precio en tu programa, se actualiza en la tienda.",
  "secciones": [
-  ("¿Qué incluye la tienda?", None, [
+  ("¿Qué incluye la tienda?", "Incluye fichas de producto preparadas para posicionar, pagos y envíos configurados a tu medida y un único inventario compartido con tus otros canales. Si vendes a empresas, también condiciones y precios para ellas.", [
     ("Catálogo con fichas que posicionan", "Cada producto con su descripción propia, fotos optimizadas, variantes y datos estructurados para Google."),
     ("Pagos y envíos", "Tarjeta, Bizum u otros métodos según tu pasarela, y tarifas de envío por zona o peso."),
     ("Stock sincronizado", "Si vendes también en tienda física o por teléfono, el inventario es uno solo."),
@@ -200,12 +200,12 @@ PAGINAS = {
  "lead": "Una web con scroll 3D inmersivo convierte el desplazamiento en una animación: al bajar, el producto gira, se despieza o cambia de escena, y el visitante descubre lo que vendes casi sin leer.",
  "respuesta": "Una web scroll 3D es una página en la que una animación avanza según el visitante desplaza la pantalla. Se construye con secuencias de fotogramas o modelos 3D ligeros sincronizados con el scroll, y se acompaña de texto real para que Google pueda leerla. Es útil para presentar productos físicos, inmuebles, espacios o marcas premium.",
  "secciones": [
-  ("¿Cuándo tiene sentido un scroll 3D?", None, [
+  ("¿Cuándo tiene sentido un scroll 3D?", "Tiene sentido cuando tu producto gana al verse en movimiento o por dentro, cuando lanzas algo que debe causar impresión o cuando quieres enseñar un espacio sin que el cliente lo visite.", [
     ("Producto con algo que enseñar", "Un mueble que se despliega, una máquina por dentro, una joya con detalles: lo que en foto fija se pierde."),
     ("Lanzamientos", "Una página de presentación para un producto o una marca nueva que tiene que impresionar."),
     ("Inmuebles y espacios", "Recorridos por una vivienda, un hotel o un local antes de que exista o sin visita física."),
   ]),
-  ("¿Cómo evitamos que pese y no posicione?", None, [
+  ("¿Cómo evitamos que pese y no posicione?", "Cargamos la animación por partes y en formatos ligeros, servimos una versión reducida a móviles modestos, escribimos el contenido en texto real y respetamos a quien desactiva las animaciones.", [
     ("Carga progresiva", "Los fotogramas se cargan por tramos y en formatos modernos, para que la primera pantalla aparezca enseguida."),
     ("Versión ligera en el móvil", "En móviles modestos se sirve una animación reducida o imágenes fijas."),
     ("Texto debajo de la animación", "Titulares y párrafos reales, no imágenes con letras, para que Google y los lectores de pantalla entiendan el contenido."),
@@ -226,7 +226,7 @@ PAGINAS = {
  "lead": "Una web con CRM integrado hace que cada persona que te escribe desde la web aparezca como contacto en tu CRM, con la página que visitó y una tarea de seguimiento asignada.",
  "respuesta": "Una web con CRM integrado envía directamente al CRM los datos de cada formulario, solicitud de presupuesto o conversación iniciada en la web, en lugar de dejarlos en un correo. El contacto se crea con su origen y su consentimiento, se asigna a una persona y dispara la primera respuesta automática.",
  "secciones": [
-  ("¿Qué pasa cuando alguien rellena un formulario?", None, [
+  ("¿Qué pasa cuando alguien rellena un formulario?", "El contacto entra en tu CRM con su origen, en su ficha si ya existía, la persona responsable recibe el aviso con la tarea y el cliente obtiene una confirmación inmediata con los siguientes pasos.", [
     ("Se crea o actualiza la ficha", "Si el contacto ya existía, se añade a su historial en lugar de duplicarlo."),
     ("Queda registrado el origen", "Página, campaña y fuente de la visita, para saber qué parte de la web genera negocio."),
     ("Se asigna y se avisa", "La persona responsable recibe el aviso en el móvil y la tarea aparece en su lista."),
@@ -248,13 +248,13 @@ PAGINAS = {
  "lead": "Una web con reservas y citas permite que tus clientes vean tus huecos libres y reserven desde la propia página, a cualquier hora, sin salir a una plataforma externa.",
  "respuesta": "Una web con sistema de reservas muestra en tiempo real la disponibilidad de tus servicios, profesionales, mesas o salas y deja que el cliente elija fecha y hora, deje sus datos y, si lo configuras, pague una señal. La reserva entra en tu agenda y el cliente recibe confirmación y recordatorio automáticos.",
  "secciones": [
-  ("¿Qué negocios lo usan más?", None, [
+  ("¿Qué negocios lo usan más?", "La usan sobre todo centros de salud y estética, restaurantes, academias y actividades con plazas limitadas y negocios que alquilan salas, pistas o equipos por horas.", [
     ("Salud y bienestar", "Clínicas, fisioterapia, estética y peluquerías con citas por profesional."),
     ("Restaurantes", "Reservas de mesa por turnos y tamaño de grupo."),
     ("Clases y actividades", "Academias, gimnasios o experiencias con plazas limitadas."),
     ("Alquiler de espacios", "Salas, pistas o equipos que se reservan por horas."),
   ]),
-  ("¿Por qué integrada en tu web y no en una plataforma?", None, [
+  ("¿Por qué integrada en tu web y no en una plataforma?", "Porque el cliente reserva en tu dominio sin ver a la competencia al lado, el historial de reservas queda en tus manos y las búsquedas para reservar en tu negocio te llevan a ti.", [
     ("El cliente se queda en tu web", "No lo mandas a un portal donde ve a tu competencia al lado."),
     ("Los datos son tuyos", "El historial de reservas alimenta tu ficha de cliente y tus campañas."),
     ("Posiciona tu marca", "Las búsquedas de «reservar en» tu negocio llevan a tu dominio."),
@@ -274,12 +274,12 @@ PAGINAS = {
  "lead": "Una web multidioma tiene sentido cuando tus clientes buscan en otra lengua: en una lengua cooficial, en inglés si recibes turistas o en el idioma del país al que exportas. Cada versión se escribe y se revisa para su público.",
  "respuesta": "Una web multidioma sirve una versión distinta de cada página según el idioma del visitante, cada una en su propia ruta y marcada con etiquetas hreflang para que Google muestre la correcta. En España se usa sobre todo para lenguas cooficiales, turismo y venta a otros países.",
  "secciones": [
-  ("¿Qué idiomas suelen necesitar los negocios en España?", None, [
+  ("¿Qué idiomas suelen necesitar los negocios en España?", "Lo habitual es combinar español con alguna lengua cooficial, inglés si recibes visitantes de fuera y el idioma de los países donde vendes o distribuyes.", [
     ("Lenguas cooficiales", "Catalán, euskera o gallego si tu clientela o la Administración con la que trabajas los usa a diario."),
     ("Inglés", "Imprescindible en alojamientos, restauración y actividades con visitantes extranjeros."),
     ("Idioma del país de destino", "Francés, alemán, portugués o el que toque si vendes o distribuyes fuera de España."),
   ]),
-  ("¿Cómo se hace bien técnicamente?", None, [
+  ("¿Cómo se hace bien técnicamente?", "Cada idioma va en su propia ruta con hreflang bien configurado, la traducción hecha con IA pasa por una revisión humana y el visitante cambia de idioma cuando quiere sin redirecciones forzadas.", [
     ("Una ruta por idioma", "Por ejemplo /ca/ o /en/, para que cada versión pueda posicionar por separado."),
     ("Hreflang correcto", "Le dice a Google qué versión mostrar a cada visitante y evita que las compare como duplicados."),
     ("Traducción con revisión", "La IA acelera la traducción y una persona revisa términos y tono antes de publicar."),
@@ -300,12 +300,12 @@ PAGINAS = {
  "lead": "La web de una startup cambia cada pocas semanas: primero valida la idea, luego capta usuarios y después convence a inversores. Tiene que estar lista rápido y poder editarse sin rehacerla.",
  "respuesta": "Una web para startups es una web ligera y editable que acompaña cada fase de la empresa: una página de validación con lista de espera para medir interés, una web de producto con alta de usuarios y analítica, y apartados para inversores y prensa. Se construye para publicarse en poco tiempo y cambiar el mensaje sin depender de un desarrollador.",
  "secciones": [
-  ("¿Qué web necesita cada fase?", None, [
+  ("¿Qué web necesita cada fase?", "Al principio basta una página que mida el interés con lista de espera. En el lanzamiento hace falta web de producto con altas y precios, y para una ronda, un apartado pensado para inversores.", [
     ("Validación", "Una página con la propuesta de valor y una lista de espera: si nadie se apunta, has ahorrado meses de desarrollo."),
     ("Lanzamiento", "Web de producto con precios, alta de usuarios, documentación básica y medición del embudo."),
     ("Ronda", "Apartado de equipo, tracción y contacto para inversores, y versión en inglés si buscas fuera."),
   ]),
-  ("¿Qué la diferencia de una web de pyme?", None, [
+  ("¿Qué la diferencia de una web de pyme?", "Se diferencia en que el mensaje se pone a prueba con variantes, la analítica sigue altas y activación además de visitas y el propio equipo edita la web sin depender de programadores.", [
     ("Mensaje que se prueba", "Se lanzan variantes del titular y la propuesta para ver cuál engancha."),
     ("Analítica de producto", "No solo visitas: altas, activación y abandono en cada paso."),
     ("Editable por el equipo", "Fundadores y marketing cambian textos y secciones sin tocar código."),
@@ -325,7 +325,7 @@ PAGINAS = {
  "lead": "El chatbot PIX es un chatbot con IA para tu web que responde con la información real de tu empresa y, cuando detecta interés, recoge los datos del visitante y los deja en tu CRM.",
  "respuesta": "PIX es un agente de IA que, colocado en tu web como chat, responde a los visitantes usando los servicios, precios, horarios y preguntas frecuentes de tu empresa. A diferencia de un chatbot de botones, entiende preguntas escritas con sus palabras, puede proponer una cita, pedir los datos de contacto y pasar la conversación a una persona cuando hace falta.",
  "secciones": [
-  ("¿Qué puede hacer en tu web?", None, [
+  ("¿Qué puede hacer en tu web?", "Resuelve dudas a cualquier hora, averigua qué necesita cada visitante antes de pasarlo a ventas, reserva en tu agenda o recoge datos para presupuestar y deja el caso por escrito a tu equipo cuando hace falta.", [
     ("Resolver dudas antes de que se vayan", "Plazos, zonas de servicio, qué incluye cada servicio o cómo funciona el proceso, a las once de la noche igual que a mediodía."),
     ("Cualificar al visitante", "Pregunta lo necesario para saber si es un buen cliente y qué necesita, antes de pasarlo al comercial."),
     ("Reservar o pedir presupuesto", "Ofrece huecos de tu agenda o recoge los datos para preparar el presupuesto."),
@@ -347,7 +347,7 @@ PAGINAS = {
  "lead": "Con contenido personalizado según el visitante, la misma web muestra un titular, unos ejemplos o una oferta distintos a quien llega de un anuncio para restaurantes que a quien busca algo para su clínica.",
  "respuesta": "La personalización web adapta partes de la página, como el titular, los casos de ejemplo, las imágenes o la llamada a la acción, según datos del visitante: la campaña o búsqueda de la que viene, su zona aproximada, si ya es cliente o qué páginas ha visto. El resto de la web es igual para todos y Google ve siempre una versión completa.",
  "secciones": [
-  ("¿Qué se puede personalizar?", None, [
+  ("¿Qué se puede personalizar?", "Puedes adaptar lo que ve cada visitante según la campaña de la que llega, su sector, si ya había entrado antes o si es un cliente que ya te compra.", [
     ("Por campaña de origen", "Quien llega de un anuncio sobre un servicio ve ese servicio arriba, no la portada genérica."),
     ("Por sector", "Ejemplos, fotos y testimonios del sector del visitante, si lo indica o si viene de una página de ese sector."),
     ("Por visita repetida", "A quien vuelve se le muestra lo que miró la última vez o la siguiente acción lógica."),
@@ -369,13 +369,13 @@ PAGINAS = {
  "lead": "Las pruebas A/B automáticas enseñan dos versiones de una parte de tu web a visitantes distintos y miden cuál consigue más contactos, reservas o ventas.",
  "respuesta": "Una prueba A/B reparte las visitas entre dos o más versiones de un elemento, como un titular, un botón, una foto o un formulario, y compara cuántas conversiones consigue cada una. En las pruebas automáticas, el sistema va enviando más tráfico a la versión que mejor funciona y la deja fija cuando la diferencia es clara.",
  "secciones": [
-  ("¿Qué merece la pena probar?", None, [
+  ("¿Qué merece la pena probar?", "Conviene empezar por lo que más pesa en la decisión: el titular, el texto y canal del botón, el número de campos del formulario y la forma de presentar el precio o la oferta.", [
     ("Titular y propuesta", "Es lo primero que se lee y lo que más cambia el resultado."),
     ("Llamada a la acción", "Pedir presupuesto, reservar o escribir por WhatsApp: el texto y el canal importan."),
     ("Longitud del formulario", "Menos campos suele traer más contactos; más campos, contactos mejor cualificados."),
     ("Precio u oferta", "Cómo presentas el precio o la promoción, cuando el negocio lo permite."),
   ]),
-  ("¿Cómo se evita sacar conclusiones falsas?", None, [
+  ("¿Cómo se evita sacar conclusiones falsas?", "Cambiando un solo elemento por prueba, esperando a que la diferencia sea fiable antes de cerrarla y midiendo con el CRM qué versión trae ventas y no solo clics.", [
     ("Una sola variable cada vez", "Si cambias titular y foto a la vez, no sabrás cuál de los dos funcionó."),
     ("Esperar a tener datos", "Unos pocos contactos no deciden nada; la prueba se cierra cuando la diferencia es fiable."),
     ("Medir la venta, no solo el clic", "Al estar conectada al CRM, se puede ver qué versión trae clientes que compran."),
@@ -395,7 +395,7 @@ PAGINAS = {
  "lead": "Un buscador inteligente entiende frases como «zapatillas para correr por montaña de mujer» o «cuánto tarda el envío a Canarias» y devuelve el producto o la respuesta, aunque el visitante escriba con errores o con otras palabras.",
  "respuesta": "Un buscador inteligente usa IA para entender el significado de lo que se escribe, no solo las palabras exactas. Tolera faltas de ortografía, reconoce sinónimos y frases completas, filtra por características y puede mezclar resultados de productos, páginas y preguntas frecuentes. Además registra lo que se busca y no se encuentra.",
  "secciones": [
-  ("¿Qué mejora frente al buscador de siempre?", None, [
+  ("¿Qué mejora frente al buscador de siempre?", "Encuentra lo que se busca aunque haya faltas o sinónimos, entiende frases con talla, color o precio, responde dudas además de mostrar productos y sugiere resultados desde la primera letra.", [
     ("Sinónimos y errores", "Quien escribe «sofa cama» sin tilde o «chaise longue» con otra grafía encuentra lo mismo."),
     ("Búsquedas en lenguaje natural", "Entiende atributos dentro de la frase: talla, color, uso o precio máximo."),
     ("Resultados mezclados", "Si la búsqueda es una duda, muestra la respuesta; si es un producto, la ficha."),
@@ -417,7 +417,7 @@ PAGINAS = {
  "lead": "La velocidad de una web y sus Core Web Vitals miden cuánto tarda en verse, en responder y si se mueve mientras carga. Son señales que Google tiene en cuenta y, sobre todo, lo que decide si el visitante espera o se va.",
  "respuesta": "Las Core Web Vitals son tres métricas de Google sobre la experiencia real de los usuarios: LCP, el tiempo hasta que se ve el contenido principal (bueno por debajo de 2,5 segundos); INP, lo que tarda la página en reaccionar a un toque o clic (bueno por debajo de 200 milisegundos); y CLS, cuánto se desplaza el contenido mientras carga (bueno por debajo de 0,1).",
  "secciones": [
-  ("¿Qué suele hacer lenta una web?", None, [
+  ("¿Qué suele hacer lenta una web?", "Lo más habitual son imágenes demasiado pesadas, scripts y plugins que cargan en todas las páginas, un alojamiento sin caché y elementos que aparecen tarde y mueven el contenido.", [
     ("Imágenes sin optimizar", "Fotos de varios megas servidas a un móvil; se convierten a formatos modernos y al tamaño justo."),
     ("Plugins y scripts de más", "Chats, píxeles, sliders y plantillas pesadas que cargan código en todas las páginas."),
     ("Alojamiento y caché", "Un servidor lento o sin caché ni CDN añade segundos antes de empezar."),
@@ -439,7 +439,7 @@ PAGINAS = {
  "lead": "Una auditoría de conversión busca los puntos exactos en los que tu web pierde a quien ya estaba interesado: el formulario que nadie termina, el botón que no se ve en el móvil o la página que no responde la duda clave.",
  "respuesta": "Una auditoría de conversión (CRO) analiza la analítica, el comportamiento de los visitantes y el recorrido hasta el contacto o la compra para detectar dónde abandonan y por qué. El resultado es una lista de mejoras ordenadas por impacto esperado y esfuerzo, que se pueden aplicar y medir después con pruebas A/B.",
  "secciones": [
-  ("¿Qué revisamos?", None, [
+  ("¿Qué revisamos?", "Revisamos los números del embudo página a página, el recorrido completo desde el móvil, si el mensaje y las pruebas de confianza convencen y si tus contactos se están midiendo bien.", [
     ("El embudo en números", "Cuántos llegan a cada página clave, cuántos empiezan el formulario o el carrito y cuántos lo terminan."),
     ("El recorrido en el móvil", "Probamos la web como un cliente: buscar el servicio, entender el precio y contactar desde el teléfono."),
     ("Mensajes y confianza", "Si queda claro qué haces y para quién, y si hay pruebas que respalden lo que dices."),
@@ -461,7 +461,7 @@ PAGINAS = {
  "lead": "La accesibilidad web consiste en que cualquier persona, también quien ve poco, no usa ratón o navega con un lector de pantalla, pueda usar tu web. Desde junio de 2025, la Ley 11/2023 la exige a muchas webs de servicios al consumidor.",
  "respuesta": "Una web accesible permite navegar con teclado, se entiende con lector de pantalla, tiene contraste suficiente, textos alternativos en las imágenes y formularios con etiquetas y mensajes de error claros. La Ley 11/2023 obliga a muchas webs que prestan servicios a consumidores desde junio de 2025, y las pautas WCAG son la referencia técnica habitual para cumplirla.",
  "secciones": [
-  ("¿Qué falla más a menudo?", None, [
+  ("¿Qué falla más a menudo?", "Los fallos más comunes son textos y botones con poco contraste, imágenes sin descripción, menús que no funcionan con teclado y formularios sin etiquetas o con errores difíciles de entender.", [
     ("Contraste bajo", "Texto gris claro sobre fondo blanco o botones que no se distinguen."),
     ("Imágenes sin texto alternativo", "El lector de pantalla no sabe qué hay en la foto ni a dónde lleva el enlace."),
     ("Navegación solo con ratón", "Menús, sliders o ventanas emergentes que no se pueden usar con el teclado."),
@@ -483,13 +483,13 @@ PAGINAS = {
  "lead": "El aviso legal, la política de privacidad y la de cookies tienen que describir lo que tu web hace de verdad. Copiar los textos de otra web es la forma más rápida de incumplir sin darte cuenta.",
  "respuesta": "Toda web profesional en España necesita un aviso legal con los datos del titular (LSSI), una política de privacidad que explique qué datos se recogen, para qué y durante cuánto tiempo (RGPD y LOPDGDD), y una política y un banner de cookies que pidan consentimiento antes de instalar las no necesarias y permitan rechazarlas con la misma facilidad que aceptarlas.",
  "secciones": [
-  ("¿Qué revisamos antes de redactar?", None, [
+  ("¿Qué revisamos antes de redactar?", "Antes de escribir una línea revisamos los formularios de tu web, las herramientas que instalan cookies, los proveedores que reciben datos y los datos exactos del titular de la web.", [
     ("Qué formularios hay", "Contacto, reservas, presupuesto o newsletter: cada uno tiene su finalidad y su base legal."),
     ("Qué herramientas cargan", "Analítica, píxeles de anuncios, mapas, vídeos o chat: cada una puede instalar cookies."),
     ("A dónde van los datos", "CRM, correo, proveedores fuera de la UE: tiene que constar quién trata los datos."),
     ("Quién es el titular", "Razón social, NIF, domicilio y registro, tal como deben figurar."),
   ]),
-  ("¿Cómo debe comportarse el banner de cookies?", None, [
+  ("¿Cómo debe comportarse el banner de cookies?", "El banner debe bloquear analítica y píxeles hasta el consentimiento, mostrar aceptar y rechazar con el mismo peso y permitir elegir por categorías y cambiar la decisión más tarde.", [
     ("Nada antes de aceptar", "La analítica y los píxeles no se activan hasta que el visitante consiente."),
     ("Aceptar y rechazar al mismo nivel", "Los dos botones visibles en la primera capa, sin esconder el rechazo."),
     ("Configuración por categorías", "El visitante puede elegir qué tipos de cookies permite y cambiar de opinión después."),
@@ -509,7 +509,7 @@ PAGINAS = {
  "lead": "El mantenimiento web mensual mantiene tu web actualizada, segura y con copias que funcionan, y te da a alguien a quien pedir ese cambio de horario o de precio sin esperar semanas.",
  "respuesta": "Un mantenimiento web mensual incluye actualizar el gestor de contenidos, la plantilla y los plugins después de comprobar que no rompen nada, hacer copias de seguridad fuera del servidor y verificar que se restauran, vigilar que la web esté en línea y que el certificado y el dominio no caduquen, y hacer pequeños cambios de contenido.",
  "secciones": [
-  ("¿Qué se hace cada mes?", None, [
+  ("¿Qué se hace cada mes?", "Cada mes se aplican actualizaciones probadas antes en una copia, se guardan copias de seguridad que se comprueban, se vigila que la web y el formulario funcionen y se hacen los cambios de contenido incluidos.", [
     ("Actualizaciones con prueba", "Se actualiza primero en una copia de la web y, si todo funciona, en la real."),
     ("Copias que se restauran", "Copias automáticas guardadas fuera del servidor y una prueba de restauración periódica."),
     ("Vigilancia", "Aviso inmediato si la web cae, si el formulario deja de enviar o si alguien modifica archivos."),
@@ -531,7 +531,7 @@ PAGINAS = {
  "lead": "Si tu web redirige a páginas raras, Google la marca como peligrosa o nadie sabe ya cómo entrar en ella, el rescate de webs antiguas o hackeadas la limpia y la devuelve a tus manos.",
  "respuesta": "Rescatar una web hackeada consiste en hacer una copia del estado actual, localizar y eliminar el código malicioso y los usuarios intrusos, cerrar la vulnerabilidad por la que entraron, cambiar todas las credenciales y pedir a Google que revise la web para quitar avisos. En webs antiguas abandonadas, además, se recuperan los accesos y se actualiza o migra la tecnología.",
  "secciones": [
-  ("¿Cómo saber si tu web está hackeada?", None, [
+  ("¿Cómo saber si tu web está hackeada?", "Sospecha si la web redirige a páginas extrañas, si el navegador o Search Console muestran avisos, si Google indexa páginas tuyas que no reconoces o si tus correos empiezan a rebotar como spam.", [
     ("Redirecciones extrañas", "Al entrar desde Google o el móvil, la web lleva a otra página de apuestas, farmacia o similar."),
     ("Avisos del navegador o de Google", "Pantalla roja de sitio peligroso o mensajes en Search Console."),
     ("Páginas que no son tuyas", "En Google aparecen resultados de tu dominio con textos en otros idiomas o productos que no vendes."),
@@ -553,13 +553,13 @@ PAGINAS = {
  "lead": "La migración desde Wix o Squarespace tiene sentido cuando la web se te ha quedado corta: lenta, difícil de posicionar o imposible de conectar con tu gestión. Lo delicado es no perder lo que ya posiciona.",
  "respuesta": "Migrar una web desde Wix o Squarespace implica exportar o reconstruir sus contenidos en una nueva web, mantener las mismas direcciones o redirigir cada una con una redirección 301 a su equivalente, conservar títulos y metadatos, apuntar el dominio al nuevo alojamiento y comprobar en Search Console que Google indexa la nueva versión sin errores.",
  "secciones": [
-  ("¿Cuándo compensa salir de Wix o Squarespace?", None, [
+  ("¿Cuándo compensa salir de Wix o Squarespace?", "Compensa cuando necesitas que la web hable con tu gestión, cuando la velocidad te limita, cuando quieres publicar muchas páginas o cuando prefieres tener tus contenidos en un formato que puedas llevarte.", [
     ("Necesitas conectar la web con tu gestión", "Formularios al CRM, reservas a tu agenda o stock real en la tienda."),
     ("La velocidad te penaliza", "Cuando no puedes controlar el código que carga cada página."),
     ("Quieres crecer en contenidos", "Cientos de páginas de servicios, sectores o zonas se gestionan mejor fuera del constructor."),
     ("Prefieres no depender de una plataforma", "Tu web y tus contenidos en un formato que puedas mover cuando quieras."),
   ]),
-  ("¿Cómo no perder posicionamiento?", None, [
+  ("¿Cómo no perder posicionamiento?", "Se protege el posicionamiento listando antes todas las URL con valor, redirigiendo cada una a su página equivalente y vigilando Search Console durante las semanas posteriores al cambio.", [
     ("Inventario de direcciones", "Listamos todas las URL que tienen visitas o enlaces antes de tocar nada."),
     ("Redirecciones 301 una a una", "Cada dirección antigua lleva a su equivalente nuevo, no todas a la portada."),
     ("Seguimiento tras el cambio", "Revisamos Search Console las semanas siguientes y corregimos lo que falle."),
@@ -579,7 +579,7 @@ PAGINAS = {
  "lead": "El perfil de Google Business es la ficha que aparece en Google Maps y en el mapa de resultados. Crearla es fácil; lo que te hace aparecer por encima de la competencia es mantenerla completa y activa.",
  "respuesta": "Google Business Profile es el perfil gratuito de Google para negocios con atención presencial, en un local o en el domicilio del cliente. Optimizarlo consiste en elegir bien la categoría principal y las secundarias, completar servicios, zonas y horarios, subir fotos reales con regularidad, publicar novedades y conseguir y responder reseñas. Los negocios 100 % online no son elegibles.",
  "secciones": [
-  ("¿Qué trabajamos en tu ficha?", None, [
+  ("¿Qué trabajamos en tu ficha?", "Trabajamos las categorías y servicios de la ficha, las fotos y publicaciones periódicas, la petición y respuesta de reseñas y que tus datos coincidan en todas partes.", [
     ("Categorías y servicios", "La categoría principal es lo que más pesa; las secundarias y la lista de servicios cubren el resto de búsquedas."),
     ("Fotos y publicaciones", "Fotos reales del local, del equipo y de trabajos, y publicaciones con ofertas o novedades."),
     ("Reseñas", "Petición automática de reseña después de cada servicio y respuesta a todas, con tu tono."),
@@ -601,7 +601,7 @@ PAGINAS = {
  "lead": "El SEO local y por sectores lleva tu web a las búsquedas que incluyen una ciudad o un tipo de cliente, como «asesoría para hostelería en Málaga», que son las que más cerca están de convertirse en encargo.",
  "respuesta": "El SEO local trabaja la web y la presencia en Google para búsquedas con intención geográfica, mientras que el SEO por sectores crea contenido para cada tipo de cliente al que sirves. Combinados, generan páginas específicas por zona y por sector con información real y distinta en cada una, enlazadas desde tus servicios y reforzadas con reseñas y menciones locales.",
  "secciones": [
-  ("¿Qué incluye?", None, [
+  ("¿Qué incluye?", "Incluye elegir qué zonas y sectores merecen página propia, escribir contenido distinto para cada una, conseguir menciones en medios y directorios cercanos y seguir qué búsquedas traen contactos.", [
     ("Mapa de zonas y sectores", "Decidimos qué ciudades, comarcas y tipos de cliente merecen página propia según demanda y negocio real."),
     ("Páginas con contenido distinto", "Cada página habla de lo que cambia en esa zona o ese sector: problemas, normativa, ejemplos, plazos."),
     ("Menciones locales", "Directorios, asociaciones y medios de tu zona o de tu sector que enlacen a tu web."),
@@ -623,12 +623,12 @@ PAGINAS = {
  "lead": "El SEO programático genera de forma automática cientos de páginas a partir de una base de datos, por ejemplo una por producto y ciudad o por servicio y sector, para cubrir búsquedas que serían imposibles de escribir a mano.",
  "respuesta": "El SEO programático combina una plantilla de página bien diseñada con una base de datos propia, como catálogo, ubicaciones, especificaciones o preguntas reales, para publicar muchas páginas que responden búsquedas muy concretas. Funciona cuando cada página aporta datos distintos y útiles; si solo cambia una palabra, Google lo considera contenido a escala sin valor.",
  "secciones": [
-  ("¿Cuándo tiene sentido?", None, [
+  ("¿Cuándo tiene sentido?", "Tiene sentido cuando tienes un catálogo amplio, combinaciones de servicio y ciudad o sector que la gente busca de verdad, o datos propios que hacen que cada página aporte algo diferente.", [
     ("Catálogos grandes", "Productos, repuestos o referencias con características que la gente busca de forma específica."),
     ("Combinaciones con demanda", "Servicio por ciudad, sector por problema o comparativas que se buscan de verdad."),
     ("Datos propios", "Precios orientativos, plazos, disponibilidad o casos que solo tú tienes y que hacen cada página distinta."),
   ]),
-  ("¿Cómo lo hacemos sin crear páginas basura?", None, [
+  ("¿Cómo lo hacemos sin crear páginas basura?", "Comprobamos la demanda de cada combinación, usamos plantillas donde cambian datos y ejemplos además del título, revisamos muestras de lo que redacta la IA y publicamos por tandas midiendo la indexación.", [
     ("Investigación primero", "Comprobamos que cada combinación tiene búsquedas antes de generarla."),
     ("Plantilla con bloques variables", "No cambia solo el título: cambian datos, ejemplos, preguntas y enlaces internos."),
     ("IA con revisión", "La IA redacta las partes variables a partir de tus datos y una persona revisa muestras de cada tanda."),

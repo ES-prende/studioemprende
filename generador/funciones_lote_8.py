@@ -11,13 +11,13 @@ PAGINAS = {
  "lead": "Un asesor de compras tecnológicas revisa cada ordenador, impresora, programa o suscripción antes de que lo compres, para que encaje con lo que ya tienes y no pagues de más.",
  "respuesta": "Un asesor de compras tecnológicas es la persona a la que consultas antes de comprar equipos, software o servicios digitales. Compara opciones, comprueba que lo nuevo funciona con lo que ya usa tu empresa, revisa condiciones de permanencia y te da una recomendación por escrito. En nuestro departamento tecnológico va incluido en la cuota.",
  "secciones": [
-  ("¿Qué compras revisa un asesor tecnológico?", None, [
+  ("¿Qué compras revisa un asesor tecnológico?", "Revisa cualquier gasto tecnológico antes de que lo firmes: ordenadores ajustados a cada puesto, licencias que quizá ya tienes, suscripciones con letra pequeña y equipos de red, impresoras o rentings con costes escondidos.", [
     ("Ordenadores y portátiles", "Qué procesador, memoria y garantía necesita cada puesto según el trabajo que hace, sin pagar potencia que nadie va a usar."),
     ("Programas y licencias", "Si la licencia que te ofrecen ya la tienes incluida en otro plan, o si una versión inferior te basta."),
     ("Suscripciones y servicios web", "Plazos de permanencia, subidas de precio tras el primer año y qué pasa con tus datos si te das de baja."),
     ("Redes, impresoras y periféricos", "Compatibilidad con tu red, consumibles caros y contratos de renting que conviene leer dos veces."),
   ]),
-  ("¿Cómo funciona una consulta de compra?", None, [
+  ("¿Cómo funciona una consulta de compra?", "Nos reenvías la oferta tal como te llegó, la cruzamos con los equipos y licencias que ya tienes y te contestamos si conviene comprar, esperar o cambiar de opción, con el porqué en pocas líneas.", [
     ("Nos mandas el enlace o el presupuesto", "Por correo o WhatsApp, tal como te lo ha enviado el comercial."),
     ("Lo comparamos con tu inventario", "Miramos qué equipos y licencias tienes ya para detectar duplicados o incompatibilidades."),
     ("Recibes una recomendación clara", "Comprar, esperar o elegir otra opción, con el motivo explicado en dos líneas."),
@@ -37,7 +37,7 @@ PAGINAS = {
  "lead": "El informe mensual de informática en lenguaje claro te cuenta en una página cómo están tu web, tus equipos, tus copias y tus programas, sin siglas ni jerga.",
  "respuesta": "Es un resumen mensual del estado tecnológico de tu empresa escrito para quien dirige, no para un informático. Incluye las incidencias resueltas, el resultado de las copias de seguridad, la disponibilidad de la web, las renovaciones próximas y una lista corta de decisiones pendientes. Llega por correo y, si quieres, en audio por WhatsApp.",
  "secciones": [
-  ("¿Qué incluye el informe cada mes?", None, [
+  ("¿Qué incluye el informe cada mes?", "El informe trae un semáforo del estado de tus sistemas, las incidencias del mes con su tiempo de resolución, los vencimientos de los próximos 90 días con su importe y un máximo de tres decisiones para ti.", [
     ("Semáforo general", "Verde, amarillo o rojo para web, correo, equipos, copias y programas, para saber en diez segundos si hay algo que mirar."),
     ("Lo que ha pasado", "Incidencias del mes, cuánto tardaron en resolverse y si hay alguna que se repite."),
     ("Lo que viene", "Dominios, certificados, licencias y contratos que vencen en los próximos 90 días, con su importe."),
@@ -59,13 +59,13 @@ PAGINAS = {
  "lead": "Cuando tus correos llegan a spam pierdes presupuestos, facturas y respuestas sin enterarte. Revisamos tu dominio y tus envíos para que lleguen a la bandeja de entrada.",
  "respuesta": "Los correos de empresa suelen acabar en spam porque el dominio no tiene bien configurados los registros SPF, DKIM y DMARC, porque se envían boletines desde el mismo dominio sin control o porque el servidor tiene mala reputación. Se soluciona ajustando esos registros en el DNS, separando los envíos masivos y vigilando los informes de entrega cada mes.",
  "secciones": [
-  ("¿Por qué tus correos acaban en spam?", None, [
+  ("¿Por qué tus correos acaban en spam?", "Casi siempre es un problema de configuración del dominio: registros SPF, DKIM o DMARC que faltan o están mal, o boletines masivos enviados desde el mismo dominio que usas para el correo diario.", [
     ("Falta SPF o está incompleto", "El registro que dice qué servidores pueden enviar en tu nombre no incluye a todos, por ejemplo el programa de facturación o la web."),
     ("Sin firma DKIM", "Sin esa firma, Gmail y Outlook no pueden comprobar que el mensaje no se ha modificado por el camino."),
     ("DMARC ausente o mal ajustado", "Los grandes proveedores ya exigen DMARC a quien envía mucho correo, y sin él tus mensajes pierden confianza."),
     ("Boletines desde el dominio principal", "Un envío masivo con muchas quejas arrastra la reputación del correo diario de toda la empresa."),
   ]),
-  ("¿Qué hacemos para arreglarlo y que no vuelva?", None, [
+  ("¿Qué hacemos para arreglarlo y que no vuelva?", "Analizamos tu dominio y correos reales que acabaron en spam, corregimos los registros DNS para incluir todo lo que envía en tu nombre y revisamos los informes DMARC mes a mes para detectar recaídas.", [
     ("Diagnóstico del dominio", "Comprobamos registros, listas negras y cabeceras de correos reales que te han llegado a spam."),
     ("Corrección en el DNS", "Ajustamos SPF, DKIM y DMARC incluyendo todos los servicios que envían por ti."),
     ("Revisión mensual de informes", "Leemos los informes DMARC para detectar fallos de entrega y envíos no autorizados."),
@@ -85,12 +85,12 @@ PAGINAS = {
  "lead": "El control de dominios y renovaciones evita que tu web y tu correo dejen de funcionar porque una tarjeta caducó o el aviso llegó a un buzón que nadie lee.",
  "respuesta": "Consiste en tener inventariados todos los dominios, certificados SSL, alojamientos y licencias de la empresa, comprobar que están a nombre de la empresa con datos de contacto actuales y vigilar sus fechas de vencimiento. Así se renuevan a tiempo y nadie puede quedarse con un dominio caducado.",
  "secciones": [
-  ("¿Qué riesgos tiene no vigilar los dominios?", None, [
+  ("¿Qué riesgos tiene no vigilar los dominios?", "Un dominio descuidado puede dejarte sin web ni correo de golpe, estar registrado a nombre de alguien ajeno a la empresa o, si pasa el periodo de gracia, acabar en manos de un tercero.", [
     ("Web y correo caídos", "Si el dominio caduca, dejan de funcionar a la vez la web, el correo y cualquier formulario que dependa de él."),
     ("Dominio a nombre de otro", "Es habitual que esté registrado a nombre del antiguo diseñador o de un empleado que ya no está."),
     ("Pérdida definitiva", "Pasado el periodo de gracia, el dominio puede quedar libre y registrarlo cualquiera, también para suplantarte."),
   ]),
-  ("¿Qué hacemos con tus dominios?", None, [
+  ("¿Qué hacemos con tus dominios?", "Hacemos un listado de tus dominios con su titular y vencimiento, los ponemos a nombre de la empresa, te avisamos con margen o dejamos la renovación automática y valoramos qué variantes conviene registrar.", [
     ("Inventario completo", "Dominio, registrador, titular, fecha de vencimiento y servicios que dependen de cada uno."),
     ("Titularidad corregida", "Pasamos los dominios a nombre de la empresa y ponemos un correo de contacto que sí se revisa."),
     ("Avisos con margen", "Te avisamos con meses de antelación y, si lo autorizas, dejamos la renovación automática configurada."),
@@ -111,12 +111,12 @@ PAGINAS = {
  "lead": "La vigilancia de suplantación detecta dominios casi iguales al tuyo, correos falsos enviados en tu nombre y perfiles copiados, para actuar antes de que tus clientes paguen a quien no deben.",
  "respuesta": "La suplantación de empresa consiste en que alguien registra un dominio parecido o falsifica tu remitente para pedir pagos, cambiar cuentas bancarias o robar datos a tus clientes. La vigilancia combina el control de dominios similares, los informes DMARC de tu correo y la revisión de perfiles en redes, con un protocolo de respuesta cuando aparece algo.",
  "secciones": [
-  ("¿Qué vigilamos?", None, [
+  ("¿Qué vigilamos?", "Vigilamos tres frentes: dominios recién registrados que imitan el tuyo, intentos de enviar correo en tu nombre desde servidores ajenos y perfiles o anuncios que copian tu marca en redes.", [
     ("Dominios parecidos", "Registros nuevos con letras cambiadas, guiones o extensiones distintas a la tuya."),
     ("Correos falsos en tu nombre", "Los informes de tu dominio muestran quién intenta enviar como tú desde servidores no autorizados."),
     ("Perfiles y anuncios clonados", "Páginas de redes o anuncios que copian tu logo y tus textos."),
   ]),
-  ("¿Qué pasa cuando detectamos una suplantación?", None, [
+  ("¿Qué pasa cuando detectamos una suplantación?", "Te avisamos con una valoración del riesgo, redactamos un mensaje para que tus clientes distingan lo auténtico, reunimos pruebas para pedir la retirada o denunciar y endurecemos la política DMARC de tu dominio.", [
     ("Aviso inmediato", "Te contamos qué hemos encontrado y qué riesgo tiene, sin alarmas innecesarias."),
     ("Mensaje para tus clientes", "Te preparamos un aviso para que tus clientes sepan qué correos y cuentas son los buenos."),
     ("Denuncia y retirada", "Reunimos las pruebas para pedir la baja al registrador o a la plataforma y para denunciar si hace falta."),
@@ -137,7 +137,7 @@ PAGINAS = {
  "lead": "Con la monitorización de la web 24/7 sabemos al momento si tu página deja de cargar, va lenta o el formulario de contacto no envía, y lo arreglamos sin esperar a que alguien se queje.",
  "respuesta": "Monitorizar una web 24/7 significa que un sistema la visita cada pocos minutos desde fuera, comprueba que responde, que el contenido es el correcto y que el certificado de seguridad sigue vigente. Si algo falla, salta un aviso y el equipo técnico actúa. Cada mes recibes el porcentaje de tiempo en línea.",
  "secciones": [
-  ("¿Qué se comprueba exactamente?", None, [
+  ("¿Qué se comprueba exactamente?", "Comprobamos de forma automática que la portada y las páginas clave cargan, que formularios y reservas entregan los contactos, que certificado y dominio no estén a punto de caducar y que la velocidad se mantiene.", [
     ("Que la web responde", "Visitas automáticas a la portada y a las páginas que más venden."),
     ("Que el formulario y la reserva funcionan", "Un envío de prueba confirma que los contactos llegan de verdad a tu correo o a tu CRM."),
     ("Certificado y dominio", "Aviso antes de que caduque el candado de seguridad o el propio dominio."),
@@ -159,13 +159,13 @@ PAGINAS = {
  "lead": "El control del gasto en suscripciones de software e IA saca a la luz las cuotas pequeñas que se acumulan: ChatGPT por persona, herramientas de prueba que nadie canceló y licencias de quien ya no está.",
  "respuesta": "Es una revisión periódica de todos los cargos recurrentes de software y herramientas de IA de la empresa: qué servicio es, quién lo usa, cuánto cuesta al año y si se solapa con otro. Con esa lista se cancelan los que no se usan, se agrupan cuentas sueltas en planes de equipo y se fija quién puede dar de alta nuevas herramientas.",
  "secciones": [
-  ("¿Dónde se escapa el dinero?", None, [
+  ("¿Dónde se escapa el dinero?", "Se escapa en asistentes de IA duplicados que paga cada empleado, pruebas gratuitas que pasaron a cobrar, licencias de antiguos trabajadores que siguen activas y planes más caros de lo que pide el uso real.", [
     ("Varias IA para lo mismo", "Tres personas pagan tres asistentes distintos con su tarjeta y lo pasan como gasto."),
     ("Pruebas que se convirtieron en cuota", "El periodo gratuito terminó y la herramienta sigue cobrando sin uso."),
     ("Licencias de personas que se fueron", "Usuarios activos de antiguos empleados en el correo, el CRM o el diseño."),
     ("Planes sobredimensionados", "Pagar la versión empresa cuando el uso real cabe en un plan inferior."),
   ]),
-  ("¿Cómo se mantiene bajo control?", None, [
+  ("¿Cómo se mantiene bajo control?", "Mantenemos una lista única de suscripciones con importe y responsable, la cotejamos con los cargos del banco cada trimestre y fijamos una norma sobre quién puede contratar herramientas y con qué cuenta.", [
     ("Registro único de suscripciones", "Una lista viva con importe, renovación, responsable y alternativa."),
     ("Revisión trimestral", "Comparamos los cargos del banco con la lista para cazar altas nuevas."),
     ("Norma de altas", "Quién puede contratar una herramienta y con qué cuenta, para que los datos queden en la empresa."),
@@ -185,7 +185,7 @@ PAGINAS = {
  "lead": "La propiedad de tu web y tus datos no siempre es tuya: el dominio, el hosting o la base de clientes pueden estar en manos de la agencia o del programa que usas. Lo comprobamos y lo arreglamos.",
  "respuesta": "Ser propietario de tu web y tus datos significa que el dominio está a nombre de la empresa, que tienes acceso de administrador al alojamiento y al gestor de contenidos, que puedes descargar una copia completa y que tus datos de clientes se pueden exportar en un formato estándar. Si falta alguna de esas piezas, dependes de un tercero para cambiar de proveedor.",
  "secciones": [
-  ("¿Cómo saber si tu web es realmente tuya?", None, [
+  ("¿Cómo saber si tu web es realmente tuya?", "Es tuya si el dominio está a nombre de tu empresa, tienes tu propio usuario administrador en el alojamiento, puedes descargar la web completa y exportar clientes, pedidos y facturas en un formato estándar.", [
     ("Dominio", "Titular, correo de contacto y acceso al panel del registrador."),
     ("Alojamiento y accesos", "Usuario administrador propio, no prestado por la agencia."),
     ("Código y contenidos", "Posibilidad de descargar la web entera y llevarla a otro servidor."),
@@ -207,12 +207,12 @@ PAGINAS = {
  "lead": "La herencia digital de la empresa es saber quién puede entrar en el banco online, el dominio, el correo o la cuenta de Hacienda si mañana falta la persona que guardaba todas las contraseñas.",
  "respuesta": "La herencia digital de una empresa es el conjunto ordenado de accesos, cuentas, certificados y documentos digitales que necesita otra persona para seguir operando cuando falta quien los gestionaba. Se resuelve con un gestor de contraseñas de empresa, un inventario de cuentas, accesos de emergencia para personas de confianza y una revisión periódica.",
  "secciones": [
-  ("¿Qué se pierde si nadie tiene las claves?", None, [
+  ("¿Qué se pierde si nadie tiene las claves?", "Se pierde el acceso a cuentas creadas con el correo personal del fundador, al certificado digital guardado en un único ordenador y a servicios cuyo código de verificación llega a un móvil que nadie puede abrir.", [
     ("Cuentas a nombre de una persona", "Correo, redes, Google o la tienda online creados con el email personal del fundador."),
     ("Certificado digital en un solo ordenador", "Sin él no se presentan impuestos ni se recogen notificaciones."),
     ("Doble factor en un móvil", "El código de verificación llega a un teléfono que ya nadie puede desbloquear."),
   ]),
-  ("¿Cómo lo dejamos ordenado?", None, [
+  ("¿Cómo lo dejamos ordenado?", "Listamos las cuentas críticas con su responsable, pasamos las claves a un gestor de empresa con acceso de emergencia, configuramos métodos de recuperación que no dependan de un solo móvil y lo revisamos una vez al año.", [
     ("Inventario de cuentas críticas", "Banco, administración, dominio, correo, programas de gestión y redes, con su responsable."),
     ("Gestor de contraseñas de empresa", "Claves compartidas por roles, con acceso de emergencia para quien tú decidas."),
     ("Doble factor recuperable", "Métodos de recuperación que no dependen de un único móvil."),
@@ -235,13 +235,13 @@ PAGINAS = {
  "lead": "El curso de alfabetización en IA para cumplir el AI Act forma a cada persona según cómo usa la IA en su puesto y deja la documentación que demuestra que la empresa ha cumplido.",
  "respuesta": "El artículo 4 del Reglamento (UE) 2024/1689, aplicable desde el 2 de febrero de 2025, pide a las empresas que usan sistemas de IA asegurar un nivel suficiente de alfabetización en IA de su personal. Nuestro curso lo cubre con contenidos adaptados a cada puesto, prácticas con las herramientas reales de la empresa y un registro de formación que sirve como evidencia.",
  "secciones": [
-  ("¿Qué incluye el curso de alfabetización en IA?", None, [
+  ("¿Qué incluye el curso de alfabetización en IA?", "El curso explica cómo funciona un asistente de IA y por qué falla, qué datos nunca deben entrar en él, los riesgos concretos de cada puesto y cómo revisar lo que produce antes de usarlo.", [
     ("Qué es y qué no es la IA", "Cómo genera respuestas un asistente, por qué se equivoca y qué tareas no conviene delegarle."),
     ("Datos y confidencialidad", "Qué información de clientes y de la empresa no debe entrar en una IA y cómo anonimizar la que sí."),
     ("Riesgos según el puesto", "No es lo mismo atención al cliente, recursos humanos o administración: cada grupo practica con sus casos."),
     ("Supervisión humana", "Cómo revisar lo que produce la IA antes de enviarlo, firmarlo o publicarlo."),
   ]),
-  ("¿Qué documentación te llevas?", None, [
+  ("¿Qué documentación te llevas?", "Te llevas el programa de sesiones por grupo, el registro de quién asistió y a qué módulo para tu expediente de cumplimiento, y el listado de herramientas de IA que usa tu plantilla.", [
     ("Programa por grupos", "Contenidos, duración y destinatarios de cada sesión."),
     ("Registro de asistencia", "Quién se formó, cuándo y en qué módulo, para tu expediente de cumplimiento."),
     ("Inventario de herramientas", "Lista de las IA que usa la plantilla, revisada durante el curso."),
@@ -262,7 +262,7 @@ PAGINAS = {
  "lead": "La formación en IA por sectores cambia los ejemplos genéricos por las tareas de tu sector: cartas de alérgenos en hostelería, informes en clínicas, escritos en despachos o mediciones en obra.",
  "respuesta": "Es un curso de IA cuyo temario se construye a partir de las tareas habituales de un sector concreto. En lugar de practicar con ejemplos de oficina genéricos, el equipo trabaja con documentos, mensajes y situaciones propias de su actividad, lo que hace que lo aprendido se aplique desde el día siguiente.",
  "secciones": [
-  ("¿Qué se practica en cada sector?", None, [
+  ("¿Qué se practica en cada sector?", "Cada sector practica con sus tareas habituales: reseñas y cartas en hostelería, avisos a pacientes en clínicas, borradores y normativa en despachos, y presupuestos o fichas de inmuebles en construcción e inmobiliaria.", [
     ("Hostelería y comercio", "Respuestas a reseñas, descripciones de carta y producto, turnos y pedidos a proveedores."),
     ("Clínicas y centros de salud", "Recordatorios a pacientes, textos informativos y resumen de documentación, con especial cuidado en datos de salud."),
     ("Despachos y asesorías", "Borradores de escritos, resumen de normativa y clasificación de documentación de clientes."),
@@ -284,13 +284,13 @@ PAGINAS = {
  "lead": "La formación en IA para autónomos por profesión te enseña a usar la IA en lo que te quita horas de tu oficio: presupuestos, mensajes a clientes, papeleo y redes.",
  "respuesta": "Es una formación práctica en inteligencia artificial pensada para profesionales que trabajan solos. Cada itinerario parte de una profesión concreta y enseña a usar asistentes como ChatGPT, Gemini o Claude en sus tareas diarias: preparar presupuestos, contestar clientes, ordenar papeles o crear publicaciones, sin conocimientos técnicos previos.",
  "secciones": [
-  ("¿Qué aprende cada profesión?", None, [
+  ("¿Qué aprende cada profesión?", "Cada profesión aprende a delegar en la IA lo que más tiempo le quita: textos para pacientes, presupuestos dictados desde la obra, borradores legales revisados a mano o propuestas y guiones de venta.", [
     ("Profesionales de la salud y el bienestar", "Textos para pacientes, recordatorios, planes de ejercicio y publicaciones, sin meter datos sensibles en la IA."),
     ("Oficios e instaladores", "Presupuestos a partir de una nota de voz, respuestas a clientes y fichas de trabajo desde el móvil."),
     ("Abogados, gestores y consultores", "Borradores, resúmenes de documentación y correos difíciles, con revisión siempre humana."),
     ("Creativos y comerciales", "Propuestas, guiones, textos de venta y seguimiento de contactos."),
   ]),
-  ("¿Cómo es el formato para un autónomo?", None, [
+  ("¿Cómo es el formato para un autónomo?", "Son sesiones de una hora pensadas para agendas apretadas, trabajamos sobre tareas reales que traigas pendientes y terminas con plantillas de instrucciones guardadas para repetirlas cuando quieras.", [
     ("Sesiones cortas", "Bloques de una hora que caben en una agenda llena."),
     ("Tus propias tareas", "Traes un presupuesto o un correo pendiente y lo resolvemos con IA en la sesión."),
     ("Plantillas que te quedas", "Instrucciones guardadas para repetir cada tarea sin empezar de cero."),
@@ -310,7 +310,7 @@ PAGINAS = {
  "lead": "La IA para negocios tradicionales no exige saber de ordenadores: empezamos con el móvil que ya usas para WhatsApp y vamos tarea a tarea, al ritmo de quien lleva años detrás del mostrador.",
  "respuesta": "Es una formación en inteligencia artificial para propietarios de comercios, bares, talleres o empresas familiares que nunca han usado estas herramientas. Se hace en sesiones cortas, preferiblemente presenciales, con el móvil del propio dueño, y se centra en cuatro o cinco tareas útiles del negocio en lugar de en la tecnología.",
  "secciones": [
-  ("¿Qué aprende un dueño en las primeras sesiones?", None, [
+  ("¿Qué aprende un dueño en las primeras sesiones?", "En las primeras sesiones aprende a pedir cosas a la IA hablando, a responder quejas y reseñas, a preparar textos para carteles y redes, y a entender cartas del banco o de proveedores.", [
     ("Hablarle a la IA con la voz", "Dictar lo que quieres en vez de escribirlo, como si fuera un mensaje de audio."),
     ("Contestar a clientes y reseñas", "Respuestas educadas a una queja o a una reseña de Google en un minuto."),
     ("Carteles, ofertas y redes", "Textos para el escaparate, la pizarra o una publicación con foto del producto."),
@@ -332,13 +332,13 @@ PAGINAS = {
  "lead": "Una política de uso de IA para empresas dice qué herramientas se pueden usar, con qué datos y quién revisa lo que producen. La redactamos contigo y la explicamos al equipo en una sesión.",
  "respuesta": "La política de uso de IA es un documento interno que fija qué herramientas de inteligencia artificial están autorizadas, qué información no puede introducirse en ellas, cuándo es obligatoria la revisión humana y a quién consultar en caso de duda. Sirve para evitar fugas de datos y ordenar el uso que la plantilla ya hace por su cuenta.",
  "secciones": [
-  ("¿Qué debe incluir una política de uso de IA?", None, [
+  ("¿Qué debe incluir una política de uso de IA?", "Debe recoger qué herramientas están autorizadas, qué información no se puede introducir en ellas, qué resultados necesitan revisión de una persona antes de salir y quién vela por su cumplimiento.", [
     ("Herramientas autorizadas", "Lista cerrada de asistentes y cuentas de empresa permitidas, y cómo pedir una nueva."),
     ("Datos que no entran", "Datos personales de clientes, información financiera, contraseñas o documentos confidenciales, con ejemplos."),
     ("Revisión humana obligatoria", "Qué textos, cálculos o decisiones no pueden salir de la empresa sin que una persona los compruebe."),
     ("Responsables y sanciones", "Quién mantiene la política y qué pasa si se incumple."),
   ]),
-  ("¿Cómo la implantamos?", None, [
+  ("¿Cómo la implantamos?", "Empezamos con una encuesta anónima sobre el uso actual, redactamos con dirección un documento breve adaptado a vuestra actividad y lo presentamos a la plantilla con ejemplos de su propio trabajo.", [
     ("Encuesta previa de uso", "Preguntamos de forma anónima qué IA usa ya cada departamento."),
     ("Redacción con dirección", "Un documento de pocas páginas, en lenguaje claro, adaptado a vuestra actividad."),
     ("Sesión con la plantilla", "Explicamos las normas con ejemplos de vuestro trabajo y recogemos dudas."),
@@ -358,7 +358,7 @@ PAGINAS = {
  "lead": "La mentoría en IA para directivos es un acompañamiento individual para gerentes y miembros de dirección que tienen que decidir qué hacer con la IA en su empresa y quieren usarla bien en su propio trabajo.",
  "respuesta": "Es un programa de sesiones individuales con un formador que ayuda a un directivo a entender qué puede aportar la IA a su empresa, priorizar dónde aplicarla, evaluar propuestas de proveedores y usar asistentes en sus tareas de dirección: preparar reuniones, analizar informes o redactar comunicaciones delicadas.",
  "secciones": [
-  ("¿Qué se trabaja en la mentoría?", None, [
+  ("¿Qué se trabaja en la mentoría?", "Trabajamos dónde aporta la IA en tu empresa y dónde no, cómo evaluar a un proveedor que te ofrece un agente, cómo usarla en tu propia agenda de dirección y cómo presentársela a tu equipo.", [
     ("Mapa de oportunidades", "Qué áreas de tu empresa tienen tareas repetitivas donde la IA encaja y cuáles no compensan."),
     ("Evaluar propuestas", "Qué preguntar a un proveedor que te ofrece un agente o una plataforma de IA, y qué señales deben preocuparte."),
     ("IA en tu agenda", "Preparar un consejo, resumir un informe largo o ensayar una negociación con un asistente."),
@@ -382,7 +382,7 @@ PAGINAS = {
  "lead": "El diagnóstico de digitalización gratuito es una primera conversación para saber en qué punto está tu negocio y qué tres cosas te conviene digitalizar antes que el resto.",
  "respuesta": "Es una revisión inicial sin coste del nivel digital de un negocio: qué programas usa, dónde se repiten tareas a mano, qué riesgos hay con los datos y la normativa, y qué presencia tiene en internet. El resultado es un resumen escrito con tres prioridades ordenadas, sin obligación de contratar nada.",
  "secciones": [
-  ("¿Qué revisamos en el diagnóstico?", None, [
+  ("¿Qué revisamos en el diagnóstico?", "Repasamos qué herramientas usas y dónde se pisan, qué tareas se repiten a mano, qué obligaciones legales te tocan pronto, como Verifactu o el registro de jornada, y cómo llegan hoy tus clientes.", [
     ("Herramientas actuales", "Programas, hojas de cálculo, apps y papel: qué se usa para cada cosa y qué se solapa."),
     ("Tareas que se repiten", "Lo que alguien teclea dos veces, copia de un sitio a otro o persigue por teléfono."),
     ("Obligaciones próximas", "Registro de jornada, Verifactu o factura electrónica, según tu actividad y tamaño."),
@@ -404,13 +404,13 @@ PAGINAS = {
  "lead": "La auditoría de IA para pymes revisa tus tareas, tus datos y el uso que ya hace tu equipo de la IA para decidir qué automatizar primero y qué dejar como está.",
  "respuesta": "Una auditoría de IA analiza las tareas de una empresa para identificar cuáles puede asumir total o parcialmente un asistente o agente de inteligencia artificial, evalúa si los datos necesarios están disponibles y ordenados, revisa el uso de IA que ya existe y propone un primer piloto medible con sus riesgos y requisitos.",
  "secciones": [
-  ("¿Qué analiza la auditoría de IA?", None, [
+  ("¿Qué analiza la auditoría de IA?", "Analizamos qué tareas repetitivas podría asumir la IA, si los datos que necesitaría están accesibles, qué herramientas usa ya tu equipo y qué riesgos legales o de privacidad hay que cubrir.", [
     ("Tareas candidatas", "Correos, presupuestos, citas, clasificación de documentos o consultas internas que siguen un patrón."),
     ("Estado de los datos", "Si la información que necesitaría la IA está en un programa, en hojas sueltas o en la cabeza de alguien."),
     ("Uso actual de IA", "Qué herramientas usa ya el equipo, con qué cuentas y con qué información."),
     ("Riesgos y normativa", "Datos personales, alfabetización exigida por el AI Act y necesidad de supervisión humana."),
   ]),
-  ("¿Qué entregamos?", None, [
+  ("¿Qué entregamos?", "Recibes cada tarea clasificada según si conviene automatizarla, apoyarla con IA o dejarla igual, una propuesta de piloto con su forma de medirlo y las medidas de seguridad previas a ampliar.", [
     ("Mapa de tareas", "Cada tarea clasificada en automatizar, asistir con IA o dejar como está."),
     ("Propuesta de piloto", "Una primera automatización acotada, con lo que hace falta y cómo medir si funciona."),
     ("Recomendaciones de seguridad", "Qué cuentas, permisos y normas internas conviene poner antes de ampliar."),
@@ -430,12 +430,12 @@ PAGINAS = {
  "lead": "La auditoría de procesos con informe de ahorro mide paso a paso cómo se hacen hoy los pedidos, las facturas o los partes, y calcula el tiempo que se puede recuperar en cada uno.",
  "respuesta": "Una auditoría de procesos describe cómo se ejecuta cada tarea clave de la empresa, quién interviene, cuánto tiempo lleva y dónde se producen esperas, errores o duplicidades. El informe de ahorro estima las horas recuperables en cada proceso con una mejora concreta y ordena las mejoras por impacto y esfuerzo.",
  "secciones": [
-  ("¿Cómo se hace la auditoría?", None, [
+  ("¿Cómo se hace la auditoría?", "Entrevistamos a quien hace cada trabajo, dibujamos el recorrido completo de cada proceso desde la solicitud hasta el cobro y medimos duración y frecuencia de cada paso con datos validados por tu equipo.", [
     ("Entrevistas por puesto", "Hablamos con quien hace el trabajo, no solo con dirección, porque es quien conoce los atajos y los atascos."),
     ("Mapa de cada proceso", "Desde que entra un pedido o una solicitud hasta que se cobra, con cada paso y cada herramienta."),
     ("Medición de tiempos", "Cuánto dura cada paso y cuántas veces al mes ocurre, con datos que el propio equipo confirma."),
   ]),
-  ("¿Qué contiene el informe de ahorro?", None, [
+  ("¿Qué contiene el informe de ahorro?", "El informe muestra las horas mensuales de cada proceso, las mejoras posibles, cuántas horas podrías recuperar según tus propios tiempos y en qué orden abordarlas por impacto, coste y facilidad.", [
     ("Horas por proceso", "El tiempo mensual que se dedica hoy a cada tarea."),
     ("Mejoras propuestas", "Automatizar, eliminar un paso, unificar programas o cambiar un formulario."),
     ("Estimación de horas recuperables", "Calculada con tus propios tiempos, no con promedios de otras empresas."),
@@ -456,7 +456,7 @@ PAGINAS = {
  "lead": "Pide una segunda opinión tecnológica cuando tengas encima de la mesa un presupuesto de software, web, ERP o IA y no sepas si lo que te ofrecen es razonable.",
  "respuesta": "Una segunda opinión tecnológica es la revisión independiente de una propuesta de otro proveedor: si resuelve el problema planteado, si el alcance está bien definido, si el precio y los plazos son coherentes, qué permanencias y dependencias genera y de quién serán el código y los datos. Se entrega como un informe con preguntas para negociar.",
  "secciones": [
-  ("¿Qué revisamos de la propuesta?", None, [
+  ("¿Qué revisamos de la propuesta?", "Miramos si el alcance está bien definido, quién se queda con el código y los datos si cambias de proveedor, cuánto costará cada año además del precio inicial y si encaja con tus programas actuales.", [
     ("Alcance", "Si está claro qué se entrega y qué queda fuera, o si hay partes ambiguas que luego se cobrarán aparte."),
     ("Propiedad y salida", "De quién es el código, si puedes exportar tus datos y qué pasa si quieres cambiar de proveedor."),
     ("Costes recurrentes", "Licencias, mantenimiento y subidas previstas más allá del precio inicial."),
@@ -478,12 +478,12 @@ PAGINAS = {
  "lead": "Las convocatorias del Kit Digital y del Kit Consulting están cerradas, pero muchas empresas siguen teniendo pendiente la justificación, el mantenimiento de lo instalado o una solución que nadie usa.",
  "respuesta": "El Kit Digital y el Kit Consulting son programas de ayudas públicas a la digitalización cuyas convocatorias cerraron en 2025. Quien los recibió puede tener todavía obligaciones de justificación y de mantenimiento de las soluciones durante el periodo comprometido. Te ayudamos a revisar esas obligaciones, a sacar partido de lo instalado y a vigilar nuevas ayudas.",
  "secciones": [
-  ("¿Qué puede quedar pendiente del Kit Digital?", None, [
+  ("¿Qué puede quedar pendiente del Kit Digital?", "Pueden quedar por cerrar la justificación con todas sus evidencias, la obligación de mantener activas las soluciones durante el periodo comprometido y herramientas instaladas que nadie usa o sin soporte.", [
     ("Justificación", "Comprobar que la documentación del agente digitalizador y las evidencias de uso están completas."),
     ("Mantener la solución", "Web, ficha de Google, CRM o factura electrónica deben seguir activos durante el periodo de prestación."),
     ("Soluciones abandonadas", "Herramientas instaladas que nadie usa o cuyo proveedor ya no responde."),
   ]),
-  ("¿Cómo te ayudamos ahora?", None, [
+  ("¿Cómo te ayudamos ahora?", "Revisamos tu expediente para ver qué plazos siguen abiertos, ponemos en marcha o migramos lo que quedó a medias, convertimos el informe del Kit Consulting en un plan práctico y te avisamos de nuevas convocatorias.", [
     ("Revisión del expediente", "Leemos lo que firmaste y te decimos qué obligaciones y plazos siguen vivos."),
     ("Rescate de lo instalado", "Si la web o el CRM del bono se han quedado a medias, los ponemos a funcionar o migramos los datos."),
     ("Recomendaciones del Kit Consulting", "Convertimos el informe del asesoramiento en un plan aplicable."),
@@ -504,7 +504,7 @@ PAGINAS = {
  "lead": "La vigilancia de subvenciones revisa las convocatorias de ayudas a la digitalización, la innovación y la formación y te avisa solo de las que encajan con tu tamaño, sector y proyecto.",
  "respuesta": "Es un servicio que sigue las publicaciones de ayudas estatales, autonómicas y locales relacionadas con digitalización, inteligencia artificial, innovación y formación, filtra las que cumplen los requisitos de tu empresa y te avisa con antelación, junto con lo que necesitarías preparar para solicitarlas.",
  "secciones": [
-  ("¿Qué ayudas vigilamos?", None, [
+  ("¿Qué ayudas vigilamos?", "Seguimos cuatro tipos de ayudas: digitalización y software, proyectos de IA e innovación, formación de la plantilla, incluida la bonificada por FUNDAE, y apoyos autonómicos o municipales al emprendimiento y al relevo.", [
     ("Digitalización y software", "Programas para implantar herramientas de gestión, comercio electrónico o ciberseguridad."),
     ("IA e innovación", "Convocatorias para proyectos de inteligencia artificial, I+D o nuevos productos digitales."),
     ("Formación", "Crédito de formación bonificada por FUNDAE y otras líneas para formar a la plantilla."),
@@ -526,13 +526,13 @@ PAGINAS = {
  "lead": "La transformación digital por fases ordena los cambios de tu empresa en etapas cortas: cada una resuelve un problema concreto y se mide antes de pasar a la siguiente.",
  "respuesta": "Transformar digitalmente una empresa por fases significa dividir el cambio en etapas de pocas semanas, empezando por lo que más tiempo o dinero libera. Cada fase tiene un objetivo medible, un responsable interno y una formación propia, y la siguiente solo arranca cuando la anterior funciona. Así el negocio no se detiene y el gasto se reparte.",
  "secciones": [
-  ("¿Cómo se ordenan las fases?", None, [
+  ("¿Cómo se ordenan las fases?", "Se empieza por ordenar datos, accesos y copias, después se conecta la parte administrativa con Verifactu y factura electrónica, luego la operativa diaria y, al final, captación, automatizaciones con IA y cuadro de mando.", [
     ("Fase de cimientos", "Datos de clientes y productos en un solo sitio, correo y accesos ordenados, copias de seguridad."),
     ("Fase de administración", "Presupuestos, facturación y cobros conectados, con las obligaciones de Verifactu y factura electrónica en mente."),
     ("Fase de operación", "Partes, citas, almacén o producción según la actividad, con app para quien trabaja fuera."),
     ("Fase de crecimiento", "Web que capta, automatizaciones con IA y cuadro de mando para decidir con datos."),
   ]),
-  ("¿Qué se mide en cada fase?", None, [
+  ("¿Qué se mide en cada fase?", "En cada fase medimos si el equipo usa de verdad la herramienta nueva, cuántas horas se han liberado y cuántos errores, como facturas rectificadas o citas perdidas, se han dejado de cometer.", [
     ("Uso real", "Si el equipo usa la herramienta nueva o sigue con la antigua en paralelo."),
     ("Tiempo liberado", "Horas que ya no se dedican a la tarea que se ha digitalizado."),
     ("Errores evitados", "Facturas rectificadas, citas perdidas o pedidos duplicados antes y después."),
@@ -554,7 +554,7 @@ PAGINAS = {
  "lead": "El diagnóstico de continuidad del negocio identifica todo lo que depende solo de ti, desde cómo se calcula un presupuesto hasta quién tiene la clave del banco, para que la empresa no se pare si no estás.",
  "respuesta": "Un diagnóstico de continuidad analiza qué conocimientos, accesos, relaciones con clientes y proveedores y decisiones diarias dependen de una sola persona, normalmente el dueño. Clasifica cada dependencia según su riesgo y propone cómo trasladarla a documentos, herramientas o personas para que el negocio siga funcionando en una ausencia, una enfermedad o un relevo.",
  "secciones": [
-  ("¿Qué dependencias buscamos?", None, [
+  ("¿Qué dependencias buscamos?", "Buscamos lo que hoy solo depende de ti: conocimiento sin documentar, accesos y firmas que nadie más tiene, clientes o proveedores que solo te conocen a ti y decisiones que el equipo no puede tomar solo.", [
     ("Saber hacer", "Cómo se fijan precios, se resuelve una queja o se elige un proveedor, cuando solo lo sabe una persona."),
     ("Accesos y firmas", "Banco, certificado digital, dominios y programas que solo abre el dueño."),
     ("Relaciones", "Clientes y proveedores que solo hablan contigo y no conocen a nadie más en la empresa."),
@@ -576,13 +576,13 @@ PAGINAS = {
  "lead": "Un cerebro digital del negocio con PIX guarda lo que sabes, los criterios, las excepciones y el historial de clientes, para que el equipo pueda preguntarle en lenguaje normal cuando tú no estés.",
  "respuesta": "Es una base de conocimiento de la empresa conectada a PIX, el agente de IA de Studio Emprende. Se alimenta con documentos, notas de voz, correos y datos del programa de gestión, y responde a las preguntas del equipo citando de dónde saca cada respuesta. Así el conocimiento del dueño queda disponible aunque él no esté.",
  "secciones": [
-  ("¿Qué guarda el cerebro digital?", None, [
+  ("¿Qué guarda el cerebro digital?", "Guarda cómo fijas precios y descuentos, el historial y los acuerdos de cada cliente, los pasos ante devoluciones, averías o urgencias, y con quién contactar para cada cosa y en qué condiciones.", [
     ("Criterios de precio", "Cómo calculas un presupuesto, qué descuentos das y a quién."),
     ("Historia de cada cliente", "Acuerdos, preferencias y problemas pasados que hoy solo recuerdas tú."),
     ("Procedimientos", "Qué hacer con una devolución, una avería o un pedido urgente."),
     ("Contactos y proveedores", "A quién llamar para cada cosa y qué condiciones tiene cada uno."),
   ]),
-  ("¿Cómo se llena sin escribir un libro?", None, [
+  ("¿Cómo se llena sin escribir un libro?", "Se alimenta con audios cortos que grabas en el móvil, con los documentos que ya tienes y con las respuestas que das cuando PIX te consulta algo que todavía no sabe.", [
     ("Notas de voz", "Grabas explicaciones cortas desde el móvil y PIX las ordena por tema."),
     ("Documentos existentes", "Tarifas, contratos, correos y manuales que ya tienes se cargan tal cual."),
     ("Preguntas del equipo", "Cuando PIX no sabe algo, te lo pregunta a ti y guarda la respuesta para la próxima vez."),
@@ -602,7 +602,7 @@ PAGINAS = {
  "lead": "El manual de operaciones con vídeo e IA se hace grabando con el móvil cómo haces cada tarea; la IA transcribe, ordena los pasos y genera fichas que cualquiera puede seguir.",
  "respuesta": "Es un manual de procedimientos de la empresa creado a partir de vídeos breves grabados mientras se trabaja. La inteligencia artificial transcribe lo que se explica, lo divide en pasos numerados, añade capturas del vídeo y genera una ficha por tarea, de modo que el conocimiento práctico queda documentado sin que nadie tenga que redactarlo desde cero.",
  "secciones": [
-  ("¿Cómo se crea el manual?", None, [
+  ("¿Cómo se crea el manual?", "Elegimos las tareas críticas, quien las domina graba vídeos breves explicándolas mientras trabaja, la IA los convierte en fichas con pasos e imágenes y esa misma persona las corrige antes de publicarlas.", [
     ("Lista de tareas clave", "Elegimos las tareas que más se repiten o que solo sabe hacer una persona."),
     ("Grabación en el puesto", "Vídeos de pocos minutos explicando en voz alta lo que se hace, sin guion."),
     ("Ficha generada con IA", "Pasos numerados, avisos importantes e imágenes extraídas del vídeo."),
@@ -624,13 +624,13 @@ PAGINAS = {
  "lead": "Preparar una empresa para traspasar o vender es conseguir que funcione sin el dueño y que sus cifras, clientes y procesos se puedan comprobar, porque eso es lo que mira quien la compra.",
  "respuesta": "Una empresa está lista para traspasarse o venderse cuando sus datos económicos y de clientes están en un sistema fiable, sus procesos están documentados, los contratos, dominios y licencias están a nombre de la sociedad y el negocio puede operar sin depender de la persona que se va. La preparación digital no fija el precio, pero facilita que el comprador confíe.",
  "secciones": [
-  ("¿Qué revisa un comprador del lado digital?", None, [
+  ("¿Qué revisa un comprador del lado digital?", "Un comprador quiere cifras que salgan de un sistema y no de una hoja editable, saber si el negocio funciona sin ti, ver los activos digitales a nombre de la empresa y las obligaciones legales cumplidas.", [
     ("Datos verificables", "Ventas, clientes recurrentes y márgenes que salen de un programa, no de una hoja que se puede retocar."),
     ("Dependencia del dueño", "Si los clientes y el saber hacer se van con quien vende."),
     ("Propiedad de los activos", "Web, dominio, redes, base de clientes y software a nombre de la empresa."),
     ("Obligaciones al día", "Registro de jornada, facturación conforme y protección de datos sin cabos sueltos."),
   ]),
-  ("¿Cómo te preparamos?", None, [
+  ("¿Cómo te preparamos?", "Reunimos clientes, ventas y facturas en un único programa con histórico, documentamos procesos con manual y cerebro digital, y montamos una carpeta con la información que pedirá el comprador o su asesor.", [
     ("Orden de datos", "Unificamos clientes, ventas y facturas en un programa con histórico consultable."),
     ("Documentación de procesos", "Manual de operaciones y cerebro digital para que el conocimiento se transmita."),
     ("Sala de datos", "Una carpeta ordenada con la información que pedirá el comprador o su asesor."),
@@ -650,7 +650,7 @@ PAGINAS = {
  "lead": "El cuadro de mando de valor muestra los indicadores que hacen que tu negocio valga más ante un comprador, un socio o un sucesor, y cómo evolucionan cada mes.",
  "respuesta": "Es un panel con los indicadores que influyen en el valor de una empresa más allá de la facturación: ingresos recurrentes, concentración de clientes, margen por servicio, antigüedad de la cartera y grado de dependencia del dueño. Se alimenta automáticamente del programa de gestión y permite trabajar esos números años antes de un relevo o una venta.",
  "secciones": [
-  ("¿Qué indicadores muestra?", None, [
+  ("¿Qué indicadores muestra?", "Muestra qué parte de tus ingresos se repite cada mes, cuánto dependes de tus mayores clientes, qué líneas dejan margen de verdad y qué proporción de ventas y decisiones sigue pasando por ti.", [
     ("Ingresos recurrentes", "Qué parte de la facturación se repite cada mes por contratos, cuotas o clientes fieles."),
     ("Concentración de clientes", "Cuánto pesan los cinco mayores clientes; si uno se va, cuánto se pierde."),
     ("Margen por línea de negocio", "Qué servicios o productos aportan de verdad y cuáles solo dan volumen."),

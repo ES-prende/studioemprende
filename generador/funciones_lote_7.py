@@ -8,7 +8,7 @@ PAGINAS = {
  "lead": "La prueba gratuita del fichador te deja comprobar, con tu plantilla y tus horarios reales, si el control horario encaja antes de pagar nada.",
  "respuesta": "La prueba gratuita del fichador es un periodo en el que tu equipo ficha de verdad desde el móvil, la tablet, la web o WhatsApp, y tú consultas los registros y el informe de jornada como si ya fueras cliente. Al terminar decides si sigues; no hay permanencia ni pagos por haberlo probado.",
  "secciones": [
-  ("¿Qué puedes comprobar durante la prueba?", None, [
+  ("¿Qué puedes comprobar durante la prueba?", "Durante la prueba compruebas qué método de fichaje prefiere cada perfil de tu plantilla, cuántos olvidos aparecen y cómo se corrigen, si el informe para Inspección se entiende y si turnos y pausas encajan con tu convenio.", [
     ("Cómo ficha cada perfil", "Quien está en la oficina, quien sale a ruta y quien teletrabaja: mira qué método le resulta más cómodo a cada uno."),
     ("Los olvidos reales", "Verás cuántas entradas o salidas se quedan sin marcar y cómo funcionan los avisos para corregirlas."),
     ("El informe que pediría Inspección", "Saca el registro de un trabajador o de todo el equipo en un rango de fechas y revisa si se entiende a la primera."),
@@ -30,12 +30,12 @@ PAGINAS = {
  "lead": "Con un calendario unificado de Airbnb, Booking y tu web, una reserva en cualquier canal cierra esas noches en todos los demás.",
  "respuesta": "Un calendario unificado de reservas reúne en una sola vista las estancias que entran por Airbnb, Booking, tu web propia o por teléfono. Cuando entra una reserva, las fechas se bloquean en el resto de canales mediante sincronización de calendarios (iCal) o la conexión que permita cada plataforma, y la reserva pasa al resto del sistema: check-in, limpieza y código de la cerradura.",
  "secciones": [
-  ("¿Qué problema te quita?", None, [
+  ("¿Qué problema te quita?", "Te quita el riesgo de que dos plataformas vendan la misma noche, la ronda diaria por cada panel para ver qué queda libre y la tarea de cerrar fechas canal por canal.", [
     ("Dobles reservas", "El huésped de Booking que llega a una casa ya ocupada por uno de Airbnb deja de ser un riesgo cotidiano."),
     ("Cinco pestañas abiertas", "No tienes que entrar en cada plataforma para saber qué noches quedan libres."),
     ("Bloqueos a mano", "Las noches de mantenimiento o de uso propio se cierran una vez y se aplican en todos los canales."),
   ]),
-  ("¿Qué ves en el panel?", None, [
+  ("¿Qué ves en el panel?", "En el panel ves cada alojamiento en su fila con las reservas coloreadas por canal, los datos de cada estancia, las reservas directas de tu web y las noches sueltas que siguen sin venderse.", [
     ("Ocupación por alojamiento", "Una fila por casa o apartamento, con el color del canal de origen de cada reserva."),
     ("Datos de la estancia", "Número de personas, hora de llegada prevista y estado del check-in."),
     ("Reservas directas", "Las que entran por tu web propia se cobran sin comisión de plataforma y aparecen junto al resto."),
@@ -57,13 +57,13 @@ PAGINAS = {
  "lead": "El check-in online con firma permite que el huésped rellene sus datos, fotografíe su documento y firme desde el móvil días antes de la llegada.",
  "respuesta": "El check-in online con firma es un formulario que el huésped recibe por enlace tras reservar: introduce los datos de cada viajero, adjunta la foto del documento de identidad y firma en la pantalla del móvil. Con esa información queda preparado el parte de entrada para comunicarlo a SES.HOSPEDAJES, y el alojamiento puede dar acceso sin entrega presencial de llaves.",
  "secciones": [
-  ("¿Cómo lo vive el huésped?", None, [
+  ("¿Cómo lo vive el huésped?", "Al confirmar la reserva, el huésped recibe un enlace en su idioma, rellena los datos de cada acompañante, firma en la pantalla del móvil y, si se le olvida, le llega un recordatorio la víspera.", [
     ("Enlace en su idioma", "Le llega por correo o WhatsApp al confirmar la reserva, en español, inglés u otros idiomas que configures."),
     ("Un formulario por viajero", "Los datos de cada acompañante se piden por separado, con avisos si falta algún campo obligatorio."),
     ("Firma con el dedo", "Firma en la pantalla y recibe una copia del documento firmado."),
     ("Recordatorio si no lo hace", "Si a falta de un día no ha completado el check-in, recibe un recordatorio automático."),
   ]),
-  ("¿Y tú qué ganas?", None, [
+  ("¿Y tú qué ganas?", "Ganas tiempo y orden: dejas de quedar en la puerta para revisar documentos, recibes los datos de los viajeros listos para el registro y el huésped acepta las normas de la casa al firmar.", [
     ("Nada de esperar en el portal", "Ya no hay que quedar a una hora concreta para ver documentos y entregar llaves."),
     ("Parte de viajeros preparado", "Los datos llegan completos y en el formato que necesita el registro."),
     ("Normas de la casa aceptadas", "Puedes añadir las normas del alojamiento y que el huésped las acepte junto con la firma."),
@@ -83,7 +83,7 @@ PAGINAS = {
  "lead": "El envío automático a SES.HOSPEDAJES toma los datos del check-in online y comunica el parte de viajeros sin que tengas que entrar en la plataforma de Interior.",
  "respuesta": "SES.HOSPEDAJES es la plataforma del Ministerio del Interior donde los alojamientos comunican los datos de sus huéspedes, como exige el Real Decreto 933/2021. El plazo es de 24 horas desde la llegada y el registro se conserva tres años. El envío automático genera la comunicación con los datos del check-in, la remite y guarda el justificante de cada estancia.",
  "secciones": [
-  ("¿Qué se automatiza exactamente?", None, [
+  ("¿Qué se automatiza exactamente?", "Se automatiza todo el circuito del parte: revisar que cada viajero tenga sus datos obligatorios, enviarlo al registrar la llegada, guardar el justificante por reserva y avisarte si la plataforma rechaza algún envío.", [
     ("Datos completos", "Antes del envío se comprueba que no falta ningún dato obligatorio de ningún viajero."),
     ("Comunicación en plazo", "El parte sale al registrar la llegada, sin depender de que alguien se acuerde por la noche."),
     ("Justificante archivado", "Cada envío queda guardado con su fecha y la respuesta de la plataforma, ordenado por reserva."),
@@ -106,7 +106,7 @@ PAGINAS = {
  "respuesta": "El control de licencias y NRUA es un apartado del CRM del alojamiento donde cada vivienda guarda su número de inscripción turística, el número de registro que muestra en los anuncios y los seguros y certificados, con sus fechas de vencimiento. El sistema avisa antes de que algo caduque y te ayuda a revisar que cada anuncio muestra el número correcto.",
  "secciones": [
   ("¿Por qué conviene tenerlo controlado?", "El registro único estatal de alquileres de corta duración (NRUA) fue anulado por el Tribunal Supremo en su sentencia 620/2026, mientras siguen vigentes los registros autonómicos, la ventanilla única digital y las obligaciones europeas de las plataformas. Con normas que cambian tanto, lo útil es tener cada número y cada documento localizado y al día.", []),
-  ("¿Qué guarda cada ficha de vivienda?", None, [
+  ("¿Qué guarda cada ficha de vivienda?", "Cada ficha reúne el número de inscripción turística con su resolución, el número que muestran tus anuncios para cotejarlo, los seguros y certificados con su fecha de caducidad y los avisos antes de que venzan.", [
     ("Número de inscripción turística", "El que asigna tu comunidad autónoma, con la fecha de alta y la resolución en PDF."),
     ("Número publicado en anuncios", "Para comprobar de un vistazo que Airbnb, Booking y tu web muestran el mismo."),
     ("Seguros y certificados", "Responsabilidad civil, cédula de habitabilidad o certificado energético, con su caducidad."),
@@ -127,13 +127,13 @@ PAGINAS = {
  "lead": "El panel de propietarios da a cada dueño un acceso propio donde consulta las reservas, lo que ha generado su vivienda y lo que se le liquida cada mes.",
  "respuesta": "Un panel de propietarios es un área privada para los dueños de las viviendas que gestionas. Cada propietario ve solo su inmueble: calendario de ocupación, ingresos por reserva, comisiones de plataforma, gastos de limpieza o reparaciones y la liquidación del mes. Reduce las llamadas para preguntar cómo va la casa y hace más transparente tu gestión.",
  "secciones": [
-  ("¿Qué ve cada propietario?", None, [
+  ("¿Qué ve cada propietario?", "El propietario consulta las noches ocupadas y libres sin datos de huéspedes, el desglose de cada estancia con comisiones y honorarios, los gastos con su ticket y la liquidación mensual en PDF.", [
     ("Ocupación al día", "Las noches vendidas y las libres, sin los datos personales de los huéspedes."),
     ("Ingresos y descuentos", "Precio de cada estancia, comisión del canal y tu honorario de gestión, línea a línea."),
     ("Gastos con justificante", "Limpieza, lavandería o una reparación, con la foto del ticket o la factura."),
     ("Liquidación descargable", "El resumen mensual en PDF, listo para su gestor."),
   ]),
-  ("¿Qué gana el gestor?", None, [
+  ("¿Qué gana el gestor?", "Como gestor recibes menos consultas de los propietarios, dejas de montar liquidaciones en hojas de cálculo y cuentas con una herramienta que puedes enseñar cuando quieres captar viviendas nuevas.", [
     ("Menos mensajes", "El propietario consulta por su cuenta en lugar de preguntarte cada lunes."),
     ("Liquidaciones sin hoja de cálculo", "Se calculan solas con las reservas y los gastos ya registrados."),
     ("Argumento comercial", "Enseñar el panel a un propietario nuevo ayuda a captar más viviendas."),
@@ -153,7 +153,7 @@ PAGINAS = {
  "lead": "La cerradura con código por reserva genera una clave única para cada huésped que solo abre entre la hora de entrada y la de salida.",
  "respuesta": "Una cerradura con código por reserva es una cerradura electrónica conectada al sistema de reservas: cuando se confirma una estancia y el huésped completa el check-in, se crea un código que solo funciona en las fechas y horas de esa reserva y se le envía automáticamente. Al terminar la estancia, el código caduca solo.",
  "secciones": [
-  ("¿Cómo funciona paso a paso?", None, [
+  ("¿Cómo funciona paso a paso?", "El código nace con las fechas de la reserva, se envía al huésped cuando corresponde, deja de abrir a la hora del check-out y convive con claves propias para limpieza y mantenimiento.", [
     ("Se crea con la reserva", "El código se genera a partir de las fechas de la estancia, sin que nadie tenga que inventarlo."),
     ("Se envía cuando toca", "Puedes condicionarlo a que el check-in esté completo; llega por WhatsApp o correo."),
     ("Caduca a la hora de salida", "A partir del check-out deja de abrir, aunque el huésped lo tenga guardado."),
@@ -176,7 +176,7 @@ PAGINAS = {
  "respuesta": "Un sensor de ruido para alojamientos turísticos mide el nivel de sonido en decibelios de forma continua, pero no graba ni guarda lo que se dice. Cuando el ruido supera el umbral que fijas durante un tiempo seguido, envía un aviso automático al huésped y otro a ti, para que puedas actuar antes de que lleguen las quejas de los vecinos.",
  "secciones": [
   ("¿Por qué sin cámaras?", "Una cámara dentro de la vivienda invade la intimidad del huésped y genera rechazo, y las plataformas tienen normas estrictas sobre dispositivos de vigilancia. El sensor solo registra niveles de sonido, así que protege la convivencia sin vigilar a nadie. Aun así, conviene indicar en el anuncio que existe.", []),
-  ("¿Qué puedes configurar?", None, [
+  ("¿Qué puedes configurar?", "Puedes fijar límites de ruido distintos según la hora, los mensajes que recibe el huésped si se supera, cuándo te llega la alerta a ti y guardar los picos de cada reserva para reclamar.", [
     ("Umbrales por franja horaria", "Más margen por la tarde y un límite más bajo a partir de la hora de descanso de la comunidad."),
     ("Mensaje automático al huésped", "Un primer aviso amable por WhatsApp y otro más firme si el ruido continúa."),
     ("Alerta al gestor", "Si el nivel sigue alto, te llega una alerta para llamar o enviar a alguien."),
@@ -197,7 +197,7 @@ PAGINAS = {
  "lead": "Con el clima y las luces automáticas, el aire o la calefacción se encienden antes de que llegue el huésped y se apagan cuando la vivienda queda vacía.",
  "respuesta": "La automatización de clima y luces conecta termostatos, aire acondicionado e iluminación al calendario de reservas. La vivienda se climatiza un rato antes de la llegada, mantiene la temperatura dentro de un rango razonable durante la estancia y lo apaga todo tras la salida. Con sensores en ventanas, el aire se detiene si alguien deja la terraza abierta.",
  "secciones": [
-  ("¿Qué automatizaciones son las más útiles?", None, [
+  ("¿Qué automatizaciones son las más útiles?", "Las que más se aprovechan son recibir al huésped con la casa a buena temperatura, acotar el termostato, parar el aire con ventanas abiertas y apagarlo todo automáticamente cuando termina la estancia.", [
     ("Bienvenida a temperatura", "En verano entra fresco y en invierno caliente, sin dejar el aparato encendido días enteros."),
     ("Límites de temperatura", "El huésped regula a su gusto, pero dentro de un margen que decides tú."),
     ("Ventana abierta, clima parado", "Un sensor en puertas y ventanas corta el aire mientras están abiertas."),
@@ -219,13 +219,13 @@ PAGINAS = {
  "lead": "Un detector de fugas y humo conectado te avisa en el móvil en cuanto detecta agua en el suelo o humo, aunque estés a cientos de kilómetros.",
  "respuesta": "Los detectores conectados de fugas y humo son sensores que se colocan junto a lavadoras, termos y fregaderos o en el techo y que, al detectar agua o humo, envían una alerta inmediata al móvil del responsable y al panel. Si se instala una electroválvula en la entrada de agua, el sistema puede cortar el suministro automáticamente para limitar los daños.",
  "secciones": [
-  ("¿Dónde se colocan los sensores?", None, [
+  ("¿Dónde se colocan los sensores?", "Los sensores de agua van bajo lavadora y lavavajillas, junto al termo y en la entrada general con electroválvula; los de humo, en pasillo y cocina, con aviso fuera de la vivienda.", [
     ("Bajo lavadora y lavavajillas", "Mangueras y tomas de agua dan muchos sustos en viviendas que pasan días vacías."),
     ("Junto al termo", "Una pérdida lenta puede ir mojando el suelo sin que nadie la vea."),
     ("Pasillo y cocina", "Detectores de humo que, además de sonar, avisan fuera de la vivienda."),
     ("Entrada general de agua", "Con una electroválvula se cierra el agua a distancia o de forma automática."),
   ]),
-  ("¿Qué ocurre cuando salta una alarma?", None, [
+  ("¿Qué ocurre cuando salta una alarma?", "Cuando salta una alarma, el aviso llega por orden a las personas que hayas elegido, el huésped recibe instrucciones en su idioma y todo queda registrado para presentarlo al seguro si hace falta.", [
     ("Aviso a varias personas", "Gestor, mantenimiento o un vecino de confianza, en el orden que decidas."),
     ("Mensaje al huésped", "Si hay alguien alojado, recibe instrucciones claras en su idioma."),
     ("Registro del incidente", "Hora, sensor y acciones quedan guardados, útiles para el parte del seguro."),
@@ -245,7 +245,7 @@ PAGINAS = {
  "lead": "El consumo por estancia asigna a cada reserva los kilovatios y litros que se han gastado entre la entrada y la salida del huésped.",
  "respuesta": "El consumo por estancia cruza las lecturas de medidores conectados de luz, agua o gas con las fechas de cada reserva. Así sabes cuánto ha costado realmente cada estancia, comparas temporadas y detectas consumos anómalos, como un aire acondicionado encendido con la casa vacía o una fuga lenta.",
  "secciones": [
-  ("¿Para qué te sirve el dato?", None, [
+  ("¿Para qué te sirve el dato?", "Saber lo que gasta cada reserva te ayuda a fijar tarifas con el coste real de climatizar, repercutir suministros medidos a los propietarios, detectar estancias con gastos anómalos y poner límites en alquileres largos.", [
     ("Precios con el coste real", "Ajustas tarifas de verano e invierno sabiendo cuánto cuesta climatizar cada noche."),
     ("Liquidaciones a propietarios", "Repercutes los suministros de cada mes con datos medidos, no estimados."),
     ("Consumos fuera de lo normal", "Una estancia que gasta el triple que la media salta en el informe."),
@@ -267,7 +267,7 @@ PAGINAS = {
  "lead": "El asistente del huésped por WhatsApp responde a cualquier hora las preguntas de la estancia, con la información de cada vivienda y en el idioma del viajero.",
  "respuesta": "El asistente del huésped por WhatsApp 24/7 es un agente de IA entrenado con la información de cada alojamiento: clave del wifi, cómo llegar, dónde aparcar, cómo funciona la vitrocerámica o a qué hora es el check-out. Contesta al momento en el idioma del huésped y, cuando la consulta necesita a una persona, como una avería o una queja, te la pasa con el resumen de la conversación.",
  "secciones": [
-  ("¿Qué puede resolver solo?", None, [
+  ("¿Qué puede resolver solo?", "Resuelve por su cuenta cómo llegar y entrar, las dudas sobre wifi, aparatos o basuras, las recomendaciones que tú hayas elegido y recoge peticiones de extras para que las apruebes.", [
     ("Llegada y acceso", "Indicaciones para encontrar la casa y el envío del código cuando el check-in está completo."),
     ("Dudas de la vivienda", "Wifi, electrodomésticos, basuras o piscina, con fotos o vídeos si los tienes."),
     ("Recomendaciones de la zona", "Restaurantes, farmacias o playas que hayas elegido tú, no una lista genérica."),
@@ -289,13 +289,13 @@ PAGINAS = {
  "lead": "El aviso automático a limpieza manda la tarea al equipo en cuanto termina una reserva, con la hora de salida, la de la próxima entrada y lo que hay que preparar.",
  "respuesta": "El aviso automático a limpieza crea una tarea por cada salida de huéspedes y la envía a la persona o empresa de limpieza asignada, por WhatsApp o en una app. Incluye la dirección, el código de acceso del equipo, la hora límite antes de la siguiente llegada y las camas o kits que hay que preparar. Al terminar, marcan la casa como lista, con fotos si lo pides.",
  "secciones": [
-  ("¿Qué recibe el equipo de limpieza?", None, [
+  ("¿Qué recibe el equipo de limpieza?", "El equipo recibe las salidas del día por orden de hora, lo que debe preparar según los huéspedes que llegan, un código de acceso limitado a su franja y una lista de revisión con fotos.", [
     ("Agenda del día ordenada", "Todas las salidas de la jornada, ordenadas por hora límite."),
     ("Qué preparar", "Camas, toallas y amenities según los huéspedes que entran, no según los que salen."),
     ("Acceso sin llaves", "Un código propio para la cerradura, válido solo en la franja de limpieza."),
     ("Checklist con fotos", "Una lista de comprobación por vivienda y fotos al terminar."),
   ]),
-  ("¿Y si algo cambia?", None, [
+  ("¿Y si algo cambia?", "Si se aprueba una salida tardía, la tarea cambia de hora sola. Las roturas, los objetos olvidados y lo que falta por reponer se anotan desde la propia tarea de limpieza.", [
     ("Salida tardía aprobada", "La tarea se mueve sola y el equipo recibe la nueva hora."),
     ("Incidencias", "Una rotura o algo olvidado por el huésped se reporta desde la misma tarea, con foto."),
     ("Reposición", "Si falta papel o productos, se apunta y se suma a la lista de compra."),
@@ -315,7 +315,7 @@ PAGINAS = {
  "lead": "Un hogar inteligente con modo vacaciones simula que hay alguien en casa y vigila agua, humo y accesos mientras estás fuera, con un solo botón.",
  "respuesta": "El modo vacaciones de un hogar inteligente es una escena que se activa al salir de casa: enciende y apaga luces y sube y baja persianas en horarios variables para simular presencia, deja la calefacción o el aire al mínimo, cierra el agua si hay electroválvula y mantiene activos los sensores de apertura, fugas y humo con aviso al móvil.",
  "secciones": [
-  ("¿Qué hace el modo vacaciones?", None, [
+  ("¿Qué hace el modo vacaciones?", "El modo vacaciones enciende luces y mueve persianas con horarios variables, baja el consumo de termo y clima, vigila puertas, agua y humo con avisos inmediatos y deja la casa a punto antes de tu regreso.", [
     ("Simulación de presencia", "Luces y persianas a horas distintas cada día, no siempre a la misma."),
     ("Consumo al mínimo", "Termo, clima y aparatos en espera se apagan o bajan."),
     ("Vigilancia de la casa", "Aperturas de puertas y ventanas, agua y humo, con aviso inmediato."),
@@ -337,7 +337,7 @@ PAGINAS = {
  "lead": "La teleasistencia para mayores con domótica aprende la rutina de la casa y avisa a la familia si algo no cuadra, sin cámaras ni aparatos que haya que recordar.",
  "respuesta": "La teleasistencia domótica para personas mayores usa sensores de movimiento, apertura y consumo repartidos por la vivienda para conocer su rutina habitual. Si no hay actividad a la hora de levantarse, si la puerta se abre de madrugada o si la nevera no se abre en todo el día, envía un aviso a los familiares. Se complementa con un pulsador de ayuda.",
  "secciones": [
-  ("¿Qué situaciones detecta?", None, [
+  ("¿Qué situaciones detecta?", "Avisa a la familia si no hay movimiento por la mañana, si se abre la puerta de noche o si la cocina sigue encendida sin nadie, y añade un pulsador para pedir ayuda.", [
     ("Sin movimiento por la mañana", "Si a media mañana no ha habido actividad, la familia recibe un aviso."),
     ("Puerta abierta de noche", "Útil cuando hay riesgo de desorientación."),
     ("Cocina encendida sin nadie", "Un sensor en la vitrocerámica o el horno avisa si se queda encendido mucho rato."),
@@ -359,7 +359,7 @@ PAGINAS = {
  "lead": "La adaptación al AI Act empieza por saber qué herramientas de IA usa tu empresa, para qué y quién las maneja, y a partir de ahí cumplir lo que te corresponda.",
  "respuesta": "El AI Act es el Reglamento (UE) 2024/1689, la norma europea de inteligencia artificial. Clasifica los usos de la IA según su riesgo y fija obligaciones distintas para quien desarrolla los sistemas y para quien los usa. Para la mayoría de pymes, que usan herramientas como ChatGPT o un chatbot, la primera obligación es la alfabetización en IA del artículo 4, aplicable desde el 2 de febrero de 2025.",
  "secciones": [
-  ("¿Qué hacemos en la adaptación?", None, [
+  ("¿Qué hacemos en la adaptación?", "Hacemos un inventario de las herramientas de IA que usa tu equipo, señalamos los usos de riesgo, comprobamos que tus clientes sepan cuándo tratan con IA y preparamos formación por puesto con su registro.", [
     ("Inventario de usos de IA", "Qué herramientas se usan, en qué tareas, con qué datos y por quién, incluidas las que nadie ha autorizado."),
     ("Clasificación por riesgo", "Señalamos si algún uso podría entrar en categorías sensibles, como la selección de personal, para estudiarlo con más cuidado."),
     ("Transparencia con clientes", "Revisamos que un chatbot o un contenido generado con IA se identifique como tal cuando corresponda."),
@@ -382,7 +382,7 @@ PAGINAS = {
  "respuesta": "NIS2 es la Directiva (UE) 2022/2555 sobre ciberseguridad. Afecta directamente a entidades de sectores esenciales e importantes y les pide gestionar también los riesgos de su cadena de suministro. Por eso muchas pymes, sin estar obligadas directamente, reciben de sus clientes cuestionarios y requisitos de seguridad. En España, la ley que la transpone todavía no está aprobada.",
  "secciones": [
   ("¿Por qué te llega aunque seas pequeño?", "Tus clientes grandes tienen que demostrar que sus proveedores no son la puerta de entrada de un ataque. Por eso preguntan por contraseñas, doble factor, copias, gestión de incidentes o un responsable de seguridad, y algunos lo incluyen en el contrato.", []),
-  ("¿Cómo te preparamos?", None, [
+  ("¿Cómo te preparamos?", "Te ayudamos a entender cada pregunta del cuestionario de tu cliente, aplicamos antes las medidas básicas de seguridad, reunimos pruebas de lo que respondes y dejamos escrito cómo actuar ante un incidente.", [
     ("Lectura del cuestionario", "Traducimos cada pregunta del cliente a lo que significa en tu empresa."),
     ("Medidas básicas reales", "Doble factor, copias probadas, equipos actualizados y accesos revisados antes de contestar."),
     ("Evidencias", "Capturas, políticas y registros que demuestran que lo que respondes es cierto."),
@@ -403,12 +403,12 @@ PAGINAS = {
  "lead": "La adaptación al Reglamento de Ciberresiliencia te importa si fabricas, importas o vendes en la UE productos con elementos digitales: programas, apps o aparatos conectados.",
  "respuesta": "El Reglamento de Ciberresiliencia es el Reglamento (UE) 2024/2847. Exige que los productos con elementos digitales que se venden en la Unión, desde un programa instalable hasta un dispositivo conectado, se diseñen con seguridad, tengan un proceso para gestionar vulnerabilidades y reciban actualizaciones durante su vida útil. Sus obligaciones se aplican de forma escalonada.",
  "secciones": [
-  ("¿A quién le afecta?", None, [
+  ("¿A quién le afecta?", "Afecta a quien fabrica software que el cliente instala o aparatos que se conectan a una red, y también a importadores y distribuidores, que deben revisar lo que venden.", [
     ("Fabricantes de software", "Empresas que venden un programa o una app que el cliente instala."),
     ("Fabricantes de dispositivos", "Cámaras, cerraduras, sensores o cualquier aparato que se conecte a una red."),
     ("Importadores y distribuidores", "También deben comprobar lo que ponen en el mercado."),
   ]),
-  ("¿Qué trabajo hacemos contigo?", None, [
+  ("¿Qué trabajo hacemos contigo?", "Contigo listamos los componentes de terceros de tu producto, montamos un proceso para corregir vulnerabilidades y publicar actualizaciones, preparamos la documentación técnica y revisamos el diseño desde el punto de vista de la seguridad.", [
     ("Inventario de componentes", "Lista de las librerías y piezas de terceros que lleva tu producto."),
     ("Gestión de vulnerabilidades", "Un procedimiento para recibir avisos, corregir fallos y publicar actualizaciones."),
     ("Documentación técnica", "Lo que el producto necesita tener documentado para su evaluación."),
@@ -429,7 +429,7 @@ PAGINAS = {
  "lead": "Un responsable de ciberseguridad externalizado hace el trabajo de un CISO a tiempo parcial: fija prioridades, vigila y responde cuando algo pasa.",
  "respuesta": "El responsable de ciberseguridad externalizado es una persona o un equipo externo que asume la seguridad de la empresa sin que tengas que contratar a alguien a jornada completa. Revisa con calendario accesos, equipos y copias, mantiene las políticas al día, coordina la respuesta ante un incidente y es el interlocutor cuando un cliente, una aseguradora o un auditor preguntan por la seguridad.",
  "secciones": [
-  ("¿Qué hace cada mes?", None, [
+  ("¿Qué hace cada mes?", "Cada mes revisa quién tiene acceso a qué, comprueba que todos los equipos estén actualizados, lanza correos de prueba para entrenar a la plantilla frente al phishing y te entrega una lista breve de riesgos por prioridad.", [
     ("Revisión de accesos", "Usuarios que ya no trabajan, permisos excesivos y cuentas sin doble factor."),
     ("Parches y equipos", "Que ordenadores, móviles y servidores tengan las actualizaciones al día."),
     ("Simulacros de phishing", "Correos de prueba para entrenar al equipo a reconocer engaños."),
@@ -451,7 +451,7 @@ PAGINAS = {
  "lead": "Las copias de seguridad y el plan de continuidad responden a una pregunta: si mañana falla todo, ¿cuánto tardas en volver a trabajar y qué pierdes?",
  "respuesta": "Un plan de continuidad define qué sistemas son imprescindibles, cuánto tiempo puede estar la empresa sin ellos y cuántos datos puede permitirse perder. Las copias de seguridad se diseñan a partir de esas respuestas: automáticas, en más de un lugar, con al menos una copia que no se pueda borrar desde la red de la oficina y con pruebas de restauración.",
  "secciones": [
-  ("¿Qué incluye el servicio?", None, [
+  ("¿Qué incluye el servicio?", "Identificamos los sistemas sin los que no puedes trabajar, programamos copias automáticas incluida la nube, añadimos una copia que el ransomware no puede tocar y dejamos por escrito qué hacer ante cada tipo de desastre.", [
     ("Mapa de lo imprescindible", "Programa de gestión, correo, documentos, web y móviles, ordenados por importancia."),
     ("Copias automáticas", "De equipos, servidores y servicios en la nube, que también necesitan su copia aparte."),
     ("Copia inmutable", "Una copia que un ransomware no puede cifrar ni borrar aunque entre en la red."),
@@ -473,7 +473,7 @@ PAGINAS = {
  "lead": "El fin de Windows 10 obliga a revisar los ordenadores de la empresa: cuáles se actualizan a Windows 11, cuáles se renuevan y cómo se pasa todo sin parar.",
  "respuesta": "Microsoft terminó el soporte de Windows 10 en octubre de 2025, así que esos equipos ya no reciben actualizaciones de seguridad gratuitas. Un ordenador sin parches es una puerta abierta, sobre todo si se usa para el correo, el banco o el programa de gestión. La solución pasa por actualizar a Windows 11 los equipos compatibles y renovar los demás de forma ordenada.",
  "secciones": [
-  ("¿Cómo lo hacemos?", None, [
+  ("¿Cómo lo hacemos?", "Revisamos cada ordenador, decidimos si conviene actualizarlo, ampliarlo o cambiarlo, te proponemos equipos ajustados al uso de cada persona y hacemos el traspaso de datos y programas sin cortar tu jornada.", [
     ("Inventario de equipos", "Modelo, procesador, chip TPM, disco y uso de cada ordenador de la oficina."),
     ("Decisión equipo a equipo", "Actualizar, ampliar memoria o disco, o sustituir, con su motivo."),
     ("Compra razonable", "Modelos adecuados al trabajo de cada persona, sin pagar potencia que no se va a usar."),
@@ -495,12 +495,12 @@ PAGINAS = {
  "lead": "La migración a la nube saca de la oficina el servidor, las carpetas compartidas y el correo para que el equipo trabaje desde cualquier sitio con los mismos permisos.",
  "respuesta": "Migrar a la nube consiste en trasladar los datos y servicios que hoy están en un servidor o un NAS de la oficina a plataformas como Microsoft 365, Google Workspace o un servidor en la nube. Se planifica qué se mueve, se ordenan carpetas y permisos, se copian los datos en varias pasadas y se hace el cambio final en un momento de poca actividad.",
  "secciones": [
-  ("¿Qué se puede llevar a la nube?", None, [
+  ("¿Qué se puede llevar a la nube?", "Puedes subir las carpetas del servidor o NAS a SharePoint, OneDrive o Google Drive, trasladar el correo con todo su histórico y pasar algunos programas a versión en la nube o a un servidor remoto.", [
     ("Carpetas compartidas", "Del NAS o servidor a SharePoint, OneDrive o Google Drive, con los mismos accesos."),
     ("Correo", "Buzones, calendarios y contactos de un proveedor a otro, conservando el histórico."),
     ("Programas", "Algunos se sustituyen por versiones en la nube y otros se alojan en un servidor remoto."),
   ]),
-  ("¿Cómo evitamos los sustos?", None, [
+  ("¿Cómo evitamos los sustos?", "Antes de mover nada limpiamos lo que sobra y repasamos quién debe ver cada carpeta. El cambio final se hace cuando no hay nadie trabajando y el primer día laborable estamos contigo resolviendo dudas.", [
     ("Limpieza previa", "Duplicados y carpetas obsoletas se quedan fuera antes de mover nada."),
     ("Permisos revisados", "Se aprovecha para decidir quién ve qué, en lugar de copiar el desorden."),
     ("Cambio en fin de semana", "La última sincronización y el cambio se hacen cuando nadie trabaja."),
@@ -521,7 +521,7 @@ PAGINAS = {
  "lead": "El soporte con un único interlocutor significa llamar siempre a la misma persona, sea un problema de la web, del correo, de la impresora o del programa de gestión.",
  "respuesta": "El soporte con un único interlocutor es un servicio en el que una persona de referencia recibe todas las incidencias tecnológicas de la empresa y las resuelve o las coordina con el proveedor que toque: el hosting, el fabricante del software, la operadora o el técnico de equipos. La empresa deja de hacer de intermediaria entre proveedores que se pasan la pelota.",
  "secciones": [
-  ("¿Qué cambia en el día a día?", None, [
+  ("¿Qué cambia en el día a día?", "Hablas siempre con la misma persona por el canal que prefieras, nadie se pasa la pelota entre proveedores, cada incidencia queda anotada para atajar las repetidas y tus claves se guardan en un gestor seguro.", [
     ("Un solo canal", "WhatsApp, correo o teléfono, siempre con la misma persona, que ya conoce tu empresa."),
     ("Se acabó el «eso no es mío»", "Si el fallo está entre la web y el hosting, lo resolvemos nosotros con los dos."),
     ("Historial de incidencias", "Cada problema queda registrado, y los que se repiten se atacan de raíz."),
@@ -543,12 +543,12 @@ PAGINAS = {
  "lead": "Si el programa del que depende tu empresa ya no tiene quien lo mantenga, mantenemos ese software abandonado para que siga funcionando mientras decides su futuro.",
  "respuesta": "Mantener un programa abandonado por su proveedor consiste en asegurar sus datos, hacerlo funcionar en equipos y sistemas actuales, corregir fallos cuando hay acceso al código o a la base de datos y preparar una salida ordenada. Es habitual en programas hechos a medida hace años por alguien que ya no está o en productos que el fabricante ha dejado de vender.",
  "secciones": [
-  ("¿Qué hacemos primero?", None, [
+  ("¿Qué hacemos primero?", "Lo primero es asegurar tus datos con una copia legible fuera del programa, averiguar qué código y licencias tienes y qué dice tu contrato, y lograr que el programa funcione en los equipos actuales.", [
     ("Rescatar los datos", "Copia completa de la base de datos y comprobación de que se puede leer fuera del programa."),
     ("Localizar código y licencias", "Vemos qué tienes, de quién es y qué permite el contrato que firmaste."),
     ("Estabilizar", "Que arranque en los equipos actuales, en una máquina virtual si hace falta."),
   ]),
-  ("¿Y después?", None, [
+  ("¿Y después?", "Una vez estable, corregimos errores si hay acceso al código, estudiamos si puede cumplir con Verifactu y la factura electrónica y, cuando tenga sentido, planificamos el paso a otro programa conservando el histórico.", [
     ("Arreglos puntuales", "Corrección de errores y pequeños cambios cuando hay acceso al código."),
     ("Adaptaciones legales", "Valoramos si puede adaptarse a Verifactu o a la factura electrónica, o si conviene cambiarlo."),
     ("Plan de sustitución", "Migración a un programa nuevo con el histórico, cuando tenga sentido y a tu ritmo."),
@@ -568,7 +568,7 @@ PAGINAS = {
  "lead": "La prueba mensual de copias de seguridad consiste en recuperar de verdad archivos, correos o bases de datos cada mes y comprobar que se abren y están completos.",
  "respuesta": "La prueba mensual de copias de seguridad es una restauración real y programada: se elige una muestra de datos, como una carpeta, un buzón o la base de datos del programa de gestión, se recupera en un entorno aparte y se comprueba que está completa y se puede usar. El resultado, con la fecha y el tiempo empleado, queda anotado en un registro.",
  "secciones": [
-  ("¿Qué se prueba cada mes?", None, [
+  ("¿Qué se prueba cada mes?", "Cada mes restauramos un sistema distinto, cada cierto tiempo simulamos recuperar un equipo completo, verificamos que haya copias recientes y antiguas, y medimos cuánto tardarías en volver a trabajar.", [
     ("Rotación de sistemas", "Un mes el programa de gestión, otro el correo, otro los documentos compartidos."),
     ("Restauración completa ocasional", "Cada cierto tiempo se simula recuperar un equipo entero."),
     ("Antigüedad de la copia", "Comprobamos que la última copia es reciente y que las anteriores también existen."),
@@ -590,7 +590,7 @@ PAGINAS = {
  "lead": "La auditoría de accesos y licencias revisa quién tiene usuario en cada herramienta de la empresa y cuántas licencias pagas sin que nadie las use.",
  "respuesta": "Una auditoría de accesos y licencias cruza la lista de personas de la empresa con los usuarios de cada programa, servicio en la nube y red social corporativa. Detecta cuentas de antiguos empleados todavía activas, permisos de administrador que sobran, cuentas sin doble factor y suscripciones duplicadas o infrautilizadas, y deja un plan para cerrarlas o ajustarlas.",
  "secciones": [
-  ("¿Qué revisa la auditoría?", None, [
+  ("¿Qué revisa la auditoría?", "Buscamos accesos que siguen abiertos de personas que ya se fueron, usuarios con más permisos de los necesarios, licencias que pagas y nadie usa, y contraseñas compartidas entre varias personas.", [
     ("Exempleados con acceso", "Correo, CRM o redes sociales que nadie cerró cuando alguien se marchó."),
     ("Administradores de más", "Personas con permisos totales que solo necesitan consultar."),
     ("Licencias dormidas", "Usuarios de pago asignados a nadie o a quien no entra desde hace meses."),
@@ -612,7 +612,7 @@ PAGINAS = {
  "lead": "La documentación de sistemas recoge por escrito cómo está montada la tecnología de tu empresa: qué hay, dónde está, quién lo gestiona y cómo se recupera.",
  "respuesta": "La documentación de sistemas es el manual técnico de la empresa: inventario de equipos y programas, red y conexiones, dominios, proveedores con sus contratos, ubicación de las copias y procedimientos para tareas como dar de alta a un empleado o recuperar un servicio. Permite que cualquier técnico tome el relevo y que la empresa no dependa de la memoria de una persona.",
  "secciones": [
-  ("¿Qué se documenta?", None, [
+  ("¿Qué se documenta?", "Dejamos por escrito el inventario de equipos con su garantía, cada servicio contratado con su proveedor y contacto, las contraseñas en un gestor con acceso de emergencia y los procedimientos para las situaciones habituales.", [
     ("Inventario", "Ordenadores, móviles, impresoras, router y servidores, con su antigüedad y garantía."),
     ("Servicios y proveedores", "Dominio, hosting, correo, programa de gestión y telefonía, con contrato y contacto."),
     ("Credenciales", "En un gestor de contraseñas con acceso de emergencia, nunca en un documento suelto."),

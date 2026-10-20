@@ -7,13 +7,13 @@ PAGINAS = {
  "lead": "Un ERP con inteligencia artificial te ahorra el paso de buscar: escribes o dices «¿qué clientes no han comprado este trimestre?» y PIX te lo devuelve con los datos de tu propio programa.",
  "respuesta": "Un ERP con IA integrada permite consultar y mover datos con frases normales en lugar de menús y filtros. PIX, el agente de IA que va dentro de nuestro ERP, lee ventas, compras, almacén, facturas y equipo, responde con cifras reales de tu empresa y puede preparar tareas, como un pedido o un recordatorio, que tú apruebas antes de que se ejecuten.",
  "secciones": [
-  ("¿Qué le puedes preguntar a PIX dentro del ERP?", None, [
+  ("¿Qué le puedes preguntar a PIX dentro del ERP?", "Puedes preguntarle por ventas, márgenes, stock, deudas de clientes o ausencias del equipo, tal como lo dirías en voz alta. PIX busca la respuesta en los datos del ERP y, si hace falta, te propone el siguiente paso.", [
     ("Ventas y márgenes", "«¿Cuánto hemos facturado este mes frente al mismo mes del año pasado?» o «¿qué familia de productos deja menos margen?»."),
     ("Almacén", "«¿Qué referencias se quedan sin stock antes del viernes?» y te propone el pedido al proveedor habitual."),
     ("Cobros", "«¿Quién nos debe más de 60 días?» con la lista de facturas y el importe pendiente de cada cliente."),
     ("Equipo", "«¿Quién está de vacaciones la semana que viene?» cruzando turnos, ausencias y fichajes."),
   ]),
-  ("¿Por qué es distinto de usar ChatGPT con un Excel?", None, [
+  ("¿Por qué es distinto de usar ChatGPT con un Excel?", "Porque PIX trabaja sobre el ERP en vivo, respeta lo que cada usuario tiene permitido ver y nunca cambia un dato sin tu aprobación. Con un Excel exportado tendrías cifras de ayer y ningún control de accesos.", [
     ("Datos vivos", "PIX consulta el ERP en el momento; no trabaja sobre una exportación que se queda vieja al día siguiente."),
     ("Permisos de cada usuario", "Un comercial solo ve lo que su perfil le deja ver, igual que en las pantallas del programa."),
     ("Acciones con aprobación", "Cuando PIX prepara algo que cambia datos, te lo enseña y espera tu visto bueno."),
@@ -34,7 +34,7 @@ PAGINAS = {
  "lead": "Un ERP conectado con tu tienda online y tu banco evita lo de siempre: pedidos copiados a mano, stock que no cuadra y cobros que nadie marca como pagados.",
  "respuesta": "Conectar el ERP con la tienda online, el banco y otras herramientas significa que los datos viajan solos entre programas. Los pedidos web entran en el ERP, el stock se actualiza en la tienda, los movimientos bancarios se casan con las facturas y el resto de aplicaciones (correo, calendario, mensajería) reciben lo que necesitan sin que nadie lo teclee dos veces.",
  "secciones": [
-  ("¿Qué se conecta y qué pasa en cada caso?", None, [
+  ("¿Qué se conecta y qué pasa en cada caso?", "Se conectan la tienda online, el banco, tu asesoría y los canales de aviso como el correo o la mensajería. En cada caso el ERP recibe o envía los datos por su cuenta y tú solo revisas lo que propone.", [
     ("Tienda online", "Cada venta crea el pedido y la factura en el ERP; el stock que ves en la web es el del almacén real."),
     ("Banco", "Los movimientos se importan y el ERP propone con qué factura o recibo casa cada uno."),
     ("Asesoría", "Se le envían facturas emitidas y recibidas en el formato que pida, sin reenvíos sueltos por correo."),
@@ -56,13 +56,13 @@ PAGINAS = {
  "lead": "Una app para clientes con tu marca hace que vuelvan sin depender de redes sociales ni de plataformas que se quedan comisión: reservan, piden y reciben tus avisos en el móvil.",
  "respuesta": "Una app para clientes es una aplicación con la marca de tu negocio que el cliente instala en su móvil para reservar, hacer pedidos, consultar su saldo de puntos o bonos y recibir notificaciones. Si está conectada a tu programa de gestión, cada reserva o pedido entra directamente en tu agenda o en tu almacén.",
  "secciones": [
-  ("¿Qué puede hacer tu cliente desde la app?", None, [
+  ("¿Qué puede hacer tu cliente desde la app?", "Tu cliente reserva en tu agenda real, repite o hace pedidos, consulta y gasta sus puntos o bonos y recibe avisos útiles en el móvil. Todo sin llamar ni pasar por plataformas de terceros.", [
     ("Reservar", "Elige servicio, profesional y hueco libre de tu agenda real, y puede cambiar o cancelar sin llamar."),
     ("Pedir", "Repite su último pedido en dos toques o elige del catálogo con los precios que tengas activos."),
     ("Acumular y canjear", "Ve sus puntos, sellos o bonos y los usa al pagar."),
     ("Recibir avisos", "Recordatorio de cita, pedido listo para recoger o una oferta para clientes que llevan tiempo sin venir."),
   ]),
-  ("¿Qué ganas tú como negocio?", None, [
+  ("¿Qué ganas tú como negocio?", "Ganas un canal directo con tus clientes por el que no pagas alcance, una recepción con menos llamadas y datos sobre qué se pide y quién ha dejado de venir.", [
     ("Un canal propio", "Las notificaciones llegan a quien tiene la app, sin pagar por alcance."),
     ("Menos llamadas", "Las reservas y cambios se hacen solos y la recepción queda libre."),
     ("Datos de uso", "Sabes qué se pide, cuándo y quién ha dejado de venir."),
@@ -82,13 +82,13 @@ PAGINAS = {
  "lead": "Una app para empleados y técnicos sustituye los grupos de WhatsApp, las hojas de ruta impresas y las llamadas de «¿a qué dirección voy?»: cada persona ve su trabajo del día y lo cierra desde el móvil.",
  "respuesta": "Una app interna para empleados es una aplicación privada, solo para tu equipo, donde cada persona ve sus tareas o servicios asignados, rellena partes de trabajo con fotos y firma del cliente, ficha la jornada y consulta documentos. Lo que hace en la app se guarda al momento en el programa de gestión de la oficina.",
  "secciones": [
-  ("¿Qué ve cada empleado al abrir la app?", None, [
+  ("¿Qué ve cada empleado al abrir la app?", "Cada empleado encuentra su agenda del día, el parte de trabajo para rellenar con fotos y firma, el botón de fichaje y los documentos que le tocan, desde manuales hasta sus solicitudes de vacaciones.", [
     ("Su agenda del día", "Servicios o tareas en orden, con dirección, contacto y notas del cliente."),
     ("El parte de trabajo", "Horas, materiales usados, fotos de antes y después y firma en pantalla."),
     ("Fichaje", "Entrada, pausas y salida, que alimentan el registro de jornada."),
     ("Documentación", "Manuales, protocolos, nóminas o solicitudes de vacaciones."),
   ]),
-  ("¿Y qué cambia en la oficina?", None, [
+  ("¿Y qué cambia en la oficina?", "La oficina recibe los partes ya cerrados y puede facturarlos el mismo día, mueve servicios sin hacer llamadas y no pierde datos aunque el técnico trabaje en una zona sin cobertura.", [
     ("Partes al instante", "El parte firmado llega cerrado y se puede facturar el mismo día."),
     ("Reasignar sin llamar", "Si cambia un servicio, se mueve en el programa y el técnico lo ve en su móvil."),
     ("Funciona sin cobertura", "La app guarda los datos y los envía en cuanto hay conexión."),
@@ -108,7 +108,7 @@ PAGINAS = {
  "lead": "Una app para socios, alumnos o pacientes resuelve lo que más llamadas genera en clubes, academias y clínicas: horarios, reservas, pagos de cuotas y documentos.",
  "respuesta": "Una app para socios, alumnos o pacientes es una aplicación privada de tu centro donde cada persona entra con su usuario, reserva clases o citas, consulta y paga sus cuotas, descarga sus documentos y recibe avisos. Está conectada al programa de gestión, así que la información es la misma que ve tu recepción.",
  "secciones": [
-  ("¿Qué incluye según el tipo de centro?", None, [
+  ("¿Qué incluye según el tipo de centro?", "Depende del centro: un club o gimnasio necesita reservas con aforo y carné digital, una academia horarios, notas y comunicados, y una clínica citas, consentimientos e informes compartidos.", [
     ("Club o gimnasio", "Reserva de pistas y clases con aforo, carné digital y estado de la cuota."),
     ("Academia", "Horario, notas o evaluaciones, materiales del curso y comunicados a familias."),
     ("Clínica o centro de salud", "Citas, recordatorios, consentimientos para firmar e informes que el profesional decida compartir."),
@@ -129,7 +129,7 @@ PAGINAS = {
  "lead": "Una app de pedidos para distribuidores pone tu catálogo, con las tarifas de cada cliente y el stock real, en el móvil de comerciales y compradores para que dejen de pedir por WhatsApp o por teléfono.",
  "respuesta": "Una app de catálogo y pedidos para distribuidores muestra los productos con fotos, precios por cliente y disponibilidad, permite montar el pedido y enviarlo directamente al programa de gestión. La usan los comerciales en visita y también los propios clientes, como bares, tiendas o talleres, para hacer su pedido cuando les viene bien.",
  "secciones": [
-  ("¿Qué facilita en el día a día?", None, [
+  ("¿Qué facilita en el día a día?", "Facilita que cada cliente pida con sus propias tarifas, repita su último pedido cambiando solo cantidades y vea el stock antes de confirmar. Tu comercial, además, llega a cada visita con el historial y la deuda a mano.", [
     ("Precios de cada cliente", "Cada uno ve su tarifa, sus descuentos y sus condiciones de pago."),
     ("Repetir pedido", "El cliente parte de su último pedido y solo cambia cantidades."),
     ("Stock y plazos", "Se ve qué hay, qué falta y cuándo llega, antes de confirmar."),
@@ -151,7 +151,7 @@ PAGINAS = {
  "lead": "Publicar una app en Google Play y en App Store tiene más trámites de lo que parece: cuentas, fichas, permisos, textos de privacidad y una revisión que puede rechazarla por detalles.",
  "respuesta": "Publicar una app en las tiendas implica darse de alta como desarrollador en Google y Apple, preparar la ficha (nombre, descripción, capturas, icono), declarar qué datos recoge la app, generar las versiones firmadas y superar la revisión de cada tienda. Nos encargamos de todo el proceso y la app queda a nombre de tu empresa.",
  "secciones": [
-  ("¿Qué incluye la publicación?", None, [
+  ("¿Qué incluye la publicación?", "Incluye abrir las cuentas de desarrollador a nombre de tu empresa, preparar la ficha de cada tienda, completar privacidad y permisos y atender las revisiones de Apple y Google hasta que la app quede aprobada.", [
     ("Cuentas de desarrollador", "Te guiamos para abrirlas a nombre de tu empresa, para que la app sea tuya."),
     ("Ficha de la tienda", "Textos, capturas e icono pensados para que te encuentren al buscar."),
     ("Privacidad y permisos", "Formularios de datos, política de privacidad y justificación de permisos como cámara o ubicación."),
@@ -173,7 +173,7 @@ PAGINAS = {
  "lead": "El mantenimiento de una app móvil no es opcional: Android e iOS cambian cada año y una app que nadie actualiza acaba fallando o desapareciendo de las tiendas.",
  "respuesta": "El mantenimiento de una app consiste en adaptarla a las nuevas versiones de Android e iOS y a los requisitos de Google Play y App Store, corregir errores, revisar la seguridad y vigilar que las conexiones con tu programa sigan funcionando. Sin él, la app se degrada con el tiempo aunque nadie la toque.",
  "secciones": [
-  ("¿Qué cubre el mantenimiento?", None, [
+  ("¿Qué cubre el mantenimiento?", "Cubre la compatibilidad con cada nueva versión de Android e iOS, los cambios de normas de las tiendas, la corrección de fallos reportados y la vigilancia de las conexiones con tu programa de gestión.", [
     ("Nuevas versiones del sistema", "Probamos la app con cada versión de Android e iOS y ajustamos lo necesario."),
     ("Requisitos de las tiendas", "Cuando Google o Apple cambian sus normas, actualizamos la app antes de que te la retiren."),
     ("Errores y avisos", "Recibimos los informes de fallos de la app y los corregimos."),
@@ -195,13 +195,13 @@ PAGINAS = {
  "lead": "Un programa APPCC digital convierte las hojas de temperaturas, limpieza y recepción que se rellenan a última hora en registros con fecha, hora y responsable, hechos desde el móvil.",
  "respuesta": "Un APPCC digital es una aplicación donde el personal de cocina u obrador anota los controles del plan de autocontrol (temperaturas de cámaras, limpiezas, recepción de mercancía, trazabilidad y alérgenos) en el momento en que los hace. Avisa si un valor está fuera de rango o si un control no se ha hecho y guarda el histórico para enseñarlo en una inspección.",
  "secciones": [
-  ("¿Qué registros se llevan en la app?", None, [
+  ("¿Qué registros se llevan en la app?", "Llevas en la app las temperaturas de cámaras y vitrinas, la limpieza por zonas, la recepción de mercancía con lote y albarán y los alérgenos de cada plato, todo registrado por quien lo hace.", [
     ("Temperaturas", "Cámaras, abatidor y vitrinas, a mano o con sondas que envían el dato solas."),
     ("Limpieza y desinfección", "Tareas por zona y frecuencia, marcadas por quien las hace."),
     ("Recepción de mercancía", "Proveedor, lote, temperatura de llegada y foto del albarán."),
     ("Alérgenos y fichas técnicas", "Cada plato con sus alérgenos, listos para informar al cliente."),
   ]),
-  ("¿Qué pasa cuando algo falla?", None, [
+  ("¿Qué pasa cuando algo falla?", "Cuando una temperatura se dispara, el responsable recibe un aviso en el móvil y la app le pide registrar qué hizo con el producto. Los controles que se quedan sin hacer aparecen en el resumen de cierre.", [
     ("Alerta inmediata", "Si una cámara sube de temperatura, avisa al responsable por móvil."),
     ("Medida correctora", "La app pide anotar qué se hizo con el producto afectado."),
     ("Controles olvidados", "Si al cierre falta un registro, el encargado lo ve en su resumen."),
@@ -221,7 +221,7 @@ PAGINAS = {
  "lead": "Un software CAE ordena la coordinación de actividades empresariales: qué documentos debe entregar cada contrata, cuáles están caducados y quién puede entrar hoy a trabajar en tus instalaciones u obras.",
  "respuesta": "Un software de coordinación de actividades empresariales (CAE) es una plataforma donde las empresas subcontratadas y los autónomos suben la documentación de prevención que les pides (formación, aptitud médica, seguros, evaluación de riesgos), el sistema la revisa y avisa antes de que caduque. Así sabes en cada momento qué trabajadores están autorizados a entrar.",
  "secciones": [
-  ("¿Cómo funciona el día a día?", None, [
+  ("¿Cómo funciona el día a día?", "Tú fijas qué documentos exige cada trabajo y cada contrata los sube a su portal. El programa avisa antes de que algo caduque y te da cada día la lista de quién puede entrar en cada centro u obra.", [
     ("Requisitos por actividad", "Defines qué documentos pide cada tipo de trabajo, empresa o trabajador."),
     ("Portal para contratas", "Cada proveedor sube lo suyo y ve qué le falta o qué ha sido rechazado."),
     ("Caducidades", "Avisos al proveedor y a ti antes de que venza un certificado o un seguro."),
@@ -243,7 +243,7 @@ PAGINAS = {
  "lead": "Un programa de mantenimientos obligatorios reúne en un calendario las revisiones de tus instalaciones (extintores, climatización, ascensores, instalación eléctrica, depósitos) y te avisa antes de que venzan.",
  "respuesta": "Un registro de mantenimientos obligatorios es un programa que guarda cada instalación o equipo de tu empresa, la periodicidad de sus revisiones, la empresa que las hace y los certificados o actas. Genera avisos antes de cada vencimiento y deja el historial disponible para una inspección, una aseguradora o un cliente que lo pida.",
  "secciones": [
-  ("¿Qué controla el programa?", None, [
+  ("¿Qué controla el programa?", "Controla el inventario de instalaciones con su normativa, el calendario de revisiones propias y de inspecciones oficiales, los certificados de cada una y el seguimiento de los defectos hasta que se corrigen.", [
     ("Inventario de instalaciones", "Cada equipo con su ubicación, fecha de alta y normativa que le aplica."),
     ("Calendario de revisiones", "Fechas de mantenimiento propio y de inspecciones por empresa autorizada."),
     ("Certificados y actas", "El documento de cada revisión, adjunto y fácil de encontrar."),
@@ -265,7 +265,7 @@ PAGINAS = {
  "lead": "Un software de gestión de calidad ISO deja atrás las carpetas de procedimientos, las hojas de no conformidades y los Excel de indicadores que solo se ponen al día antes de la auditoría.",
  "respuesta": "Un software de gestión de calidad ISO centraliza el sistema de gestión: documentos y procedimientos con control de versiones, registro de no conformidades y acciones correctivas, plan de auditorías internas, evaluación de proveedores e indicadores. Cada tarea tiene responsable y fecha, y la evidencia queda guardada para la auditoría de certificación.",
  "secciones": [
-  ("¿Qué módulos incluye?", None, [
+  ("¿Qué módulos incluye?", "Incluye control de documentos con versiones y lecturas, registro de no conformidades desde el móvil, acciones correctivas con responsable y plazo, y la planificación de auditorías junto a los objetivos de calidad.", [
     ("Documentos con versiones", "Cada procedimiento tiene su versión vigente, quién la aprobó y quién la ha leído."),
     ("No conformidades", "Se registran desde el móvil con foto y siguen su ciclo hasta el cierre."),
     ("Acciones correctivas", "Causa, acción, responsable, plazo y verificación de eficacia."),
@@ -287,12 +287,12 @@ PAGINAS = {
  "lead": "Calcular la huella de carbono se ha vuelto una pregunta habitual en los cuestionarios de grandes clientes a sus proveedores. Para responderla, una pyme no necesita una consultora cada año.",
  "respuesta": "La herramienta de huella de carbono para proveedores recoge los consumos de tu empresa (electricidad, combustible de la flota, gas, viajes) desde las facturas o el programa de gestión, aplica factores de emisión publicados y calcula tus emisiones por alcance. Genera un informe anual y por cliente para responder a los cuestionarios de sostenibilidad.",
  "secciones": [
-  ("¿De dónde salen los datos?", None, [
+  ("¿De dónde salen los datos?", "Salen sobre todo de tus facturas de luz y gas y del combustible de tus vehículos. Si quieres un cálculo más completo, se añaden también los viajes y los envíos que contratas.", [
     ("Facturas de energía", "Se leen los kWh de luz y el gas de cada suministro."),
     ("Combustible y flota", "Litros de gasóleo o gasolina por vehículo, desde las facturas o tarjetas de carburante."),
     ("Viajes y transporte", "Desplazamientos y envíos contratados, si quieres ir más allá de lo básico."),
   ]),
-  ("¿Qué entregas a tu cliente?", None, [
+  ("¿Qué entregas a tu cliente?", "Entregas un informe anual con tus emisiones por alcance y la metodología, un reparto por pedido o cliente si te lo piden y un plan de reducción que demuestra que haces seguimiento.", [
     ("Informe anual", "Emisiones por alcance, evolución y la metodología usada."),
     ("Dato por pedido o cliente", "Un reparto aproximado de emisiones si tu cliente lo pide así."),
     ("Plan de reducción", "Medidas posibles y su efecto estimado, para mostrar que hay seguimiento."),
@@ -312,12 +312,12 @@ PAGINAS = {
  "lead": "Un configurador de producto online deja que el cliente monte lo que quiere en tu web (medidas, acabados, extras) y vea el precio en ese momento, en vez de esperar días a que alguien le haga el presupuesto.",
  "respuesta": "Un presupuestador o configurador online es una herramienta en tu web donde el cliente elige las opciones de un producto o servicio y el sistema calcula el precio con tus propias reglas y tarifas. El presupuesto se envía al cliente y entra en tu programa como oportunidad, lista para que un comercial la cierre.",
  "secciones": [
-  ("¿Qué negocios lo aprovechan?", None, [
+  ("¿Qué negocios lo aprovechan?", "Lo aprovechan quienes fabrican a medida, quienes hacen reformas o instalaciones y los servicios que cobran por tarifas según volumen y extras. En todos ellos el precio depende de opciones que el cliente puede elegir.", [
     ("Fabricación a medida", "Carpintería, cerramientos, toldos, mobiliario o rótulos con precio por medida."),
     ("Reformas e instalaciones", "Una estimación por metros, calidades y estancias."),
     ("Servicios con tarifas", "Limpieza, eventos, mudanzas o formación según volumen y extras."),
   ]),
-  ("¿Qué hay detrás del precio?", None, [
+  ("¿Qué hay detrás del precio?", "Detrás están tus propias reglas de precio: mínimos, recargos, descuentos e incompatibilidades. Si el producto lo permite, el cliente ve cómo queda, y al aceptar el presupuesto pasa directamente a pedido.", [
     ("Tus reglas", "Mínimos, recargos, incompatibilidades entre opciones y descuentos por volumen."),
     ("Vista previa", "Imagen o dibujo que cambia según lo que elige el cliente, si el producto lo permite."),
     ("Del presupuesto al pedido", "Si lo acepta, pasa a pedido y a fabricación sin volver a escribirlo."),
@@ -337,7 +337,7 @@ PAGINAS = {
  "lead": "Una plataforma B2B de pedidos es una tienda privada para tus clientes profesionales: cada uno entra con su usuario y ve sus precios, su riesgo disponible, sus pedidos anteriores y sus facturas.",
  "respuesta": "Un portal de pedidos B2B es una web privada donde los clientes de un mayorista, fabricante o distribuidor hacen pedidos con sus condiciones pactadas. Calcula tarifas y descuentos por cliente, respeta límites de crédito y envía el pedido al ERP, y además permite descargar facturas, albaranes y fichas técnicas sin pedirlas por correo.",
  "secciones": [
-  ("¿Qué lo distingue de una tienda online normal?", None, [
+  ("¿Qué lo distingue de una tienda online normal?", "Cada cliente profesional ve solo sus precios y condiciones, compra a crédito dentro de su límite, pide rápido por referencia o lista habitual y descarga sus facturas, albaranes y fichas técnicas.", [
     ("Precio por cliente", "Tarifa, rappel y descuentos propios; nadie ve los precios de otro."),
     ("Crédito y forma de pago", "Pedidos a crédito hasta su límite, con el riesgo pendiente a la vista."),
     ("Pedido rápido", "Por referencia, por lista habitual o subiendo un fichero con cantidades."),
@@ -359,7 +359,7 @@ PAGINAS = {
  "lead": "Un tarificador para corredurías ahorra lo que más tiempo consume al vender un seguro: pedir los datos del cliente, meterlos en varias herramientas y montar la comparativa a mano.",
  "respuesta": "Un tarificador para corredurías es una herramienta que recoge los datos del riesgo una sola vez (en tu web o en la oficina), calcula precios con las tarifas que la correduría tiene cargadas o conectadas, prepara una propuesta comparativa para el cliente y, si la acepta, guarda la póliza y sus vencimientos en el programa de gestión.",
  "secciones": [
-  ("¿Cómo encaja en la correduría?", None, [
+  ("¿Cómo encaja en la correduría?", "Encaja como la herramienta que recoge cada solicitud con un formulario por ramo, genera la comparativa con tu marca, la sigue como oportunidad y te avisa de las renovaciones de tu cartera.", [
     ("Formulario por ramo", "Auto, hogar, salud, comercio o responsabilidad civil, con las preguntas que cada uno necesita."),
     ("Comparativa clara", "Coberturas y precios lado a lado, con tu marca, en PDF o enlace."),
     ("Seguimiento", "Cada solicitud es una oportunidad con recordatorios hasta que se cierra."),
@@ -381,7 +381,7 @@ PAGINAS = {
  "lead": "Generar contratos automáticamente evita copiar y pegar datos en un Word, imprimir, escanear y perseguir firmas: el contrato sale de la plantilla con los datos del cliente y se firma en el móvil.",
  "respuesta": "La generación automática de contratos rellena tus plantillas con los datos que ya están en el programa (cliente, servicio, precio, fechas, condiciones) y envía el documento para firma electrónica por correo o WhatsApp. Al firmarse, queda guardado en la ficha del cliente y se lanzan los siguientes pasos, como el alta del servicio o el primer recibo.",
  "secciones": [
-  ("¿Qué se automatiza?", None, [
+  ("¿Qué se automatiza?", "Se automatiza la redacción a partir de plantillas, el envío con recordatorios al cliente, la firma desde el móvil con su registro y las tareas que deben arrancar en cuanto el contrato está firmado.", [
     ("Plantillas con variables", "Cláusulas fijas y huecos que se llenan solos; cláusulas opcionales según el tipo de servicio."),
     ("Envío y recordatorios", "Si el cliente no firma, se le recuerda a los días que decidas."),
     ("Firma en el móvil", "Sin descargar nada, con registro de fecha, hora y datos del firmante."),
@@ -403,7 +403,7 @@ PAGINAS = {
  "lead": "Un software de planificación de la producción sustituye la pizarra del taller y el Excel del jefe de producción por un plan que se recalcula cuando entra un pedido urgente o se para una máquina.",
  "respuesta": "Un software de planificación de producción convierte los pedidos en órdenes de fabricación, las reparte entre máquinas, líneas y operarios según su capacidad, calcula qué materiales hacen falta y cuándo, y da una fecha de entrega realista. Los operarios registran el avance desde una tableta y el plan se actualiza con lo que pasa en planta.",
  "secciones": [
-  ("¿Qué resuelve en la fábrica o el taller?", None, [
+  ("¿Qué resuelve en la fábrica o el taller?", "Te enseña qué puestos o máquinas están saturados, qué materiales faltan para cada orden y cómo afecta un pedido urgente al resto. Desde planta se registra el avance real de cada trabajo.", [
     ("Carga de trabajo visible", "Un calendario por máquina o puesto donde se ve qué está saturado."),
     ("Materiales a tiempo", "Avisa de lo que falta para cada orden y propone las compras."),
     ("Urgencias", "Al meter un pedido urgente, ves qué otros se retrasan antes de decidir."),
@@ -425,7 +425,7 @@ PAGINAS = {
  "lead": "El mantenimiento predictivo con sensores vigila de forma continua cómo trabajan tus máquinas para detectar el desgaste antes de que llegue la avería y la parada de producción.",
  "respuesta": "El mantenimiento predictivo usa sensores instalados en las máquinas (vibración, temperatura, consumo eléctrico, horas de uso) para medir su estado de forma continua. Cuando los valores se salen de lo normal, el sistema avisa y crea una orden de trabajo, de modo que se interviene en una parada planificada en lugar de reparar tras una avería.",
  "secciones": [
-  ("¿Qué se mide y qué indica?", None, [
+  ("¿Qué se mide y qué indica?", "Los sensores miden vibración, temperatura, consumo eléctrico y horas o ciclos de uso. Cada lectura fuera de lo normal apunta a un desgaste concreto, como un rodamiento o un motor forzado, antes de la avería.", [
     ("Vibración", "Rodamientos, desalineaciones o piezas sueltas que empiezan a fallar."),
     ("Temperatura", "Motores, cuadros eléctricos o rodamientos que se calientan más de la cuenta."),
     ("Consumo eléctrico", "Un motor que consume más para hacer lo mismo suele estar forzado."),
@@ -447,7 +447,7 @@ PAGINAS = {
  "lead": "Un software de control de flotas ordena todo lo que rodea a tus vehículos: vencimientos de ITV y seguros, revisiones, combustible, multas y quién conducía cada día.",
  "respuesta": "Un software de gestión de flotas registra cada vehículo con su documentación, sus mantenimientos, su consumo y su conductor asignado. Avisa antes de que venza la ITV, el seguro o una revisión, calcula el coste real por vehículo y por kilómetro y, si se conecta a localizadores GPS, muestra la posición y los kilómetros recorridos.",
  "secciones": [
-  ("¿Qué lleva el programa de cada vehículo?", None, [
+  ("¿Qué lleva el programa de cada vehículo?", "Cada vehículo tiene su documentación con caducidades, su historial de mantenimiento con facturas, los repostajes y el consumo medio, y el registro de qué conductor lo llevaba en cada fecha por si llega una multa.", [
     ("Documentación", "ITV, seguro, permisos, tarjetas de transporte y sus caducidades."),
     ("Mantenimiento", "Revisiones por kilómetros o fecha, neumáticos y reparaciones con su factura."),
     ("Combustible", "Repostajes desde las tarjetas de carburante y consumo medio por vehículo."),
@@ -469,13 +469,13 @@ PAGINAS = {
  "lead": "Un portal del cliente en marca blanca para gestorías acaba con las facturas por WhatsApp, los correos con veinte adjuntos y las llamadas para pedir el modelo del trimestre.",
  "respuesta": "Un portal en marca blanca para gestorías es una plataforma con el logo y el dominio de la asesoría donde cada cliente sube sus facturas y tickets, consulta sus impuestos presentados, descarga nóminas y documentos y firma lo que haga falta. Los documentos se leen con IA y se clasifican para que el equipo los contabilice sin buscarlos.",
  "secciones": [
-  ("¿Qué hace el cliente de la gestoría?", None, [
+  ("¿Qué hace el cliente de la gestoría?", "Tu cliente sube tickets y facturas desde el móvil, descarga modelos, nóminas y certificados, firma autorizaciones a distancia y recibe recordatorios antes de cada cierre, todo bajo la marca de tu gestoría.", [
     ("Sube documentos", "Foto del ticket desde el móvil o reenvío de facturas a un correo propio."),
     ("Consulta y descarga", "Modelos presentados, nóminas, cuentas anuales y certificados."),
     ("Firma", "Autorizaciones, contratos o representaciones, sin pasar por la oficina."),
     ("Recibe avisos", "Recordatorios de documentación pendiente antes de cada cierre."),
   ]),
-  ("¿Qué gana la asesoría?", None, [
+  ("¿Qué gana la asesoría?", "La asesoría recibe la documentación a tiempo, teclea menos porque las facturas llegan leídas y ofrece un servicio con su propia marca que ayuda a retener clientes y puede ir dentro de la cuota.", [
     ("Documentación a tiempo", "Ves qué cliente no ha subido nada este trimestre y se le avisa solo."),
     ("Menos tecleo", "Los datos de cada factura llegan leídos y listos para revisar."),
     ("Un servicio que se nota", "Un portal con tu marca da imagen y fideliza; puedes incluirlo en tus cuotas."),
@@ -495,7 +495,7 @@ PAGINAS = {
  "lead": "Una plataforma de formación interna (LMS) reúne los cursos de tu empresa en un sitio y te dice quién ha hecho cada uno, algo que con vídeos sueltos y correos es imposible de saber.",
  "respuesta": "Un LMS de formación interna es una plataforma donde la empresa sube sus cursos (vídeos, documentos, test), los asigna por puesto o departamento y sigue el avance de cada empleado. Emite certificados, avisa de las formaciones pendientes o caducadas y deja constancia de la formación impartida, útil también para la formación obligatoria.",
  "secciones": [
-  ("¿Qué se puede montar en la plataforma?", None, [
+  ("¿Qué se puede montar en la plataforma?", "Puedes montar itinerarios según el puesto, cursos cortos con test y certificado y reciclajes que avisan antes de caducar. Los borradores de lecciones pueden salir de tus propios manuales con ayuda de la IA.", [
     ("Itinerarios por puesto", "Lo que tiene que aprender un nuevo comercial, un técnico o un encargado."),
     ("Cursos con evaluación", "Lecciones cortas, test y certificado al aprobar."),
     ("Formaciones que caducan", "Reciclajes periódicos con aviso antes de que venzan."),
@@ -517,7 +517,7 @@ PAGINAS = {
  "lead": "Una app propia para negocios con clientes recurrentes es la forma más directa de que un cliente que viene cada mes reserve, pague su bono y reciba tus avisos sin pasar por terceros.",
  "respuesta": "Es una app base ya construida para negocios de servicios con clientela habitual (peluquerías, estética, fisioterapia, entrenamiento personal, tintorerías) que se personaliza con la marca, los servicios y las tarifas de cada negocio. Incluye reservas, bonos, recordatorios y notificaciones, y se publica a nombre del negocio en las tiendas.",
  "secciones": [
-  ("¿Por qué una base ya hecha?", None, [
+  ("¿Por qué una base ya hecha?", "Porque partir de una base que ya gestiona reservas y bonos en negocios parecidos acorta el plazo y reduce errores. Se adapta lo necesario y la app sale con tu nombre, tu icono y tus colores.", [
     ("Plazo corto", "No se parte de cero: se configura y se adapta lo que haga falta."),
     ("Probada", "Las funciones comunes de reservas y bonos ya funcionan en otros negocios del mismo tipo."),
     ("Tu identidad", "Nombre, icono, colores y textos propios; el cliente no ve otra marca."),
@@ -538,7 +538,7 @@ PAGINAS = {
  "lead": "Pasar de Excel a un programa de gestión da miedo por una razón: años de datos repartidos en hojas que solo entiende quien las hizo. La migración consiste en no perder nada por el camino.",
  "respuesta": "Migrar de Excel a un programa de gestión significa revisar todas tus hojas (clientes, productos, precios, pedidos, facturas), limpiar duplicados y errores, unificar formatos y cargar los datos en el programa con su relación correcta: cada factura con su cliente, cada precio con su producto. Después se comprueba con muestras que todo cuadra.",
  "secciones": [
-  ("¿Cómo se hace la migración?", None, [
+  ("¿Cómo se hace la migración?", "Se localizan todas las hojas en uso, se limpian duplicados y datos mal escritos, se hace una carga de prueba que tú revisas y al final se comparan totales y saldos entre el Excel y el programa.", [
     ("Inventario de hojas", "Localizamos todos los Excel que se usan, también los que alguien tiene en su escritorio."),
     ("Limpieza", "Clientes repetidos con nombres distintos, NIF mal escritos, fechas en formatos mezclados."),
     ("Carga de prueba", "Una primera importación que revisas tú antes de dar nada por bueno."),
@@ -560,7 +560,7 @@ PAGINAS = {
  "lead": "Cambiar de Holded, Clientify, HubSpot u otro programa suele frenarse por miedo a perder contactos, historial y facturas. Planificamos la salida para que no se quede nada atrás.",
  "respuesta": "Migrar desde un programa como Holded, Clientify o HubSpot consiste en exportar todos tus datos (contactos, empresas, oportunidades, actividades, productos, facturas y documentos adjuntos) por los medios que ofrezca ese programa, transformarlos al formato del nuevo y cargarlos manteniendo sus relaciones. Se hace con una fecha de corte para no perder lo que entre mientras tanto.",
  "secciones": [
-  ("¿Qué se migra?", None, [
+  ("¿Qué se migra?", "Se migran contactos y empresas con sus campos propios, las oportunidades abiertas en su etapa, el historial de notas y tareas si el programa lo deja exportar, y la facturación con sus series y numeración.", [
     ("Contactos y empresas", "Con sus campos personalizados, etiquetas y responsables."),
     ("Embudo comercial", "Oportunidades abiertas en su etapa, con importe y fecha prevista."),
     ("Historial", "Notas, correos y tareas asociados a cada cliente, cuando el programa permite exportarlos."),
@@ -582,7 +582,7 @@ PAGINAS = {
  "lead": "Unificar varios programas en uno tiene sentido cuando tu equipo pasa más tiempo saltando entre aplicaciones y copiando datos que trabajando: un CRM, un programa de facturas, una agenda y un Excel de stock.",
  "respuesta": "Unificar programas consiste en sustituir varias herramientas sueltas por un único programa de gestión con módulos (clientes, ventas, facturación, agenda, almacén, equipo) que comparten la misma base de datos. Se migran los datos de cada herramienta, se eliminan duplicados y se da de baja lo que ya no hace falta.",
  "secciones": [
-  ("¿Cuándo compensa unificar?", None, [
+  ("¿Cuándo compensa unificar?", "Compensa cuando el mismo cliente aparece distinto en cada programa, cuando un informe sencillo exige cruzar exportaciones o cuando pagas varias cuotas por herramientas que hacen casi lo mismo.", [
     ("El mismo cliente, varias veces", "Está en el CRM, en facturación y en la agenda, y cada versión dice una cosa."),
     ("Informes imposibles", "Para saber qué cliente es rentable hay que cruzar tres exportaciones."),
     ("Suscripciones que suman", "Pagas varias cuotas por usuario por herramientas que se solapan."),
@@ -604,13 +604,13 @@ PAGINAS = {
  "lead": "Una integración por API es la manera limpia de que dos programas se pasen datos sin exportar e importar ficheros a mano: un pedido, un cliente nuevo o un pago viajan solos de uno a otro.",
  "respuesta": "Una API es la puerta que un programa ofrece para que otros lean o escriban datos en él de forma controlada. Integrar por API consiste en conectar dos o más programas a través de esas puertas, definiendo qué datos se envían, cuándo (al momento o cada cierto tiempo) y qué pasa si algo falla.",
  "secciones": [
-  ("¿Qué tipo de integraciones hacemos?", None, [
+  ("¿Qué tipo de integraciones hacemos?", "Conectamos programas comerciales entre sí, software propio o antiguo al que se le añade una API, máquinas que generan datos y PIX, para que el agente trabaje con la información de varios sistemas a la vez.", [
     ("Entre programas comerciales", "Tu gestión con tienda online, CRM, pasarela de pago o plataforma de reservas, si ofrecen API."),
     ("Con software propio", "Programas hechos a medida o antiguos a los que se añade una API."),
     ("Con máquinas y dispositivos", "Equipos que exportan datos y que se pueden leer desde tu programa."),
     ("Con PIX", "Para que el agente de IA consulte y actúe sobre los datos de varios programas."),
   ]),
-  ("¿Qué cuidamos en cada integración?", None, [
+  ("¿Qué cuidamos en cada integración?", "En cada integración cuidamos que las claves estén protegidas y con los permisos justos, que cada envío quede registrado y se reintente si falla, y que todo quede documentado por escrito.", [
     ("Seguridad", "Claves de acceso guardadas de forma segura y permisos mínimos necesarios."),
     ("Errores", "Registro de cada envío, reintentos y aviso si algo no llega."),
     ("Documentación", "Queda escrito qué hace la integración, para que no dependa de una persona."),

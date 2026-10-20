@@ -7,13 +7,13 @@ PAGINAS = {
  "lead": "Un programa de objetivos y productividad que no pide a nadie apuntar nada más: usa los partes, las ventas y las tareas que tu equipo ya registra en el día a día.",
  "respuesta": "Un módulo de productividad y objetivos permite fijar metas por persona, por equipo o por centro y compararlas cada semana con lo que de verdad ha pasado: trabajos cerrados, ventas facturadas, tareas a tiempo o incidencias resueltas. Los datos salen de la propia gestión, así que nadie tiene que rellenar informes para que el indicador se mueva.",
  "secciones": [
-  ("¿Qué se puede medir sin molestar al equipo?", None, [
+  ("¿Qué se puede medir sin molestar al equipo?", "Puedes medir los trabajos y partes cerrados frente al tiempo previsto, las ventas y presupuestos que se convierten en pedido, las tareas cerradas en plazo y las incidencias o quejas ligadas a cada trabajo.", [
     ("Trabajos y partes cerrados", "Cuántos servicios termina cada técnico o cada equipo y cuánto tiempo real llevan frente al previsto."),
     ("Ventas y presupuestos aceptados", "Importe facturado, número de presupuestos enviados y cuántos se convierten en pedido."),
     ("Tareas en plazo", "Qué porcentaje de tareas asignadas se cierra antes de su fecha y cuáles se quedan atascadas."),
     ("Calidad del servicio", "Incidencias reabiertas, devoluciones o quejas asociadas a cada trabajo."),
   ]),
-  ("¿Cómo se trabaja con los objetivos?", None, [
+  ("¿Cómo se trabaja con los objetivos?", "Fijas una meta mensual o trimestral, el programa calcula cuánto falta y a qué ritmo vas, cada persona ve solo su avance y, si pagas variables, el cálculo sale de esos mismos datos.", [
     ("Metas mensuales o trimestrales", "Defines el objetivo y el programa calcula cuánto falta y a qué ritmo vas."),
     ("Panel personal", "Cada persona ve solo sus cifras y su avance, sin rankings públicos si no los quieres."),
     ("Base para incentivos", "Si pagas variables, el cálculo sale de los mismos datos y evita discusiones de final de mes."),
@@ -34,7 +34,7 @@ PAGINAS = {
  "lead": "El onboarding con IA convierte la incorporación de una persona en un recorrido guiado: tareas, documentos y un asistente que contesta sus dudas con la información de tu empresa.",
  "respuesta": "Un onboarding con IA combina una lista de pasos por puesto (firmar documentos, recibir accesos, conocer procedimientos) con un asistente que el nuevo empleado puede consultar en cualquier momento. El asistente responde con los manuales y normas internas de la empresa, de modo que el responsable no tiene que repetir lo mismo cada vez que entra alguien.",
  "secciones": [
-  ("¿Qué recorre el nuevo empleado?", None, [
+  ("¿Qué recorre el nuevo empleado?", "El nuevo empleado sigue una lista de pasos propia de su puesto: leer y firmar los documentos internos, recibir accesos y material con constancia de entrega y empezar con tareas reales sencillas desde el primer día.", [
     ("Checklist por puesto", "No es lo mismo un técnico que una administrativa: cada puesto tiene sus pasos, sus plazos y su responsable."),
     ("Documentos para leer y firmar", "Normas internas, prevención de riesgos o protección de datos, con constancia de lectura."),
     ("Accesos y material", "Usuario del programa, correo, uniforme o herramientas: cada entrega queda marcada."),
@@ -60,7 +60,7 @@ PAGINAS = {
  "lead": "El canal de denuncias de la Ley 2/2023 es obligatorio para las empresas desde 50 trabajadores. Lo integramos en tu programa de gestión con confidencialidad y registro de cada caso.",
  "respuesta": "Un canal de denuncias, también llamado sistema interno de información, es una vía segura para que empleados y otras personas vinculadas a la empresa comuniquen irregularidades. La Ley 2/2023 lo exige a las empresas con 50 o más trabajadores, y debe proteger la identidad de quien informa y dejar constancia de cómo se tramita cada comunicación.",
  "secciones": [
-  ("¿Qué incluye el canal?", None, [
+  ("¿Qué incluye el canal?", "Incluye un formulario confidencial con opción de no identificarse, un buzón cifrado al que solo accede el responsable designado, un libro registro de cada caso y una vía para hablar con quien informa sin revelar su identidad.", [
     ("Formulario confidencial", "Accesible desde la web o el móvil, con la posibilidad de enviar la comunicación sin identificarse."),
     ("Buzón cifrado y acceso restringido", "Solo la persona responsable que designe la empresa puede abrir y gestionar las comunicaciones."),
     ("Libro registro de casos", "Cada comunicación queda registrada con su fecha de entrada, sus actuaciones y su cierre."),
@@ -82,13 +82,13 @@ PAGINAS = {
  "lead": "Un TPV para tienda que no vive aislado: cada ticket descuenta el stock, suma a las ventas del día y aparece en la ficha del cliente si se identifica.",
  "respuesta": "Un TPV (terminal punto de venta) es el programa con el que cobras en el mostrador. Cuando está conectado al programa de gestión, cada venta actualiza el inventario, genera el ticket o la factura con sus registros y alimenta el cierre de caja y los informes, sin exportar ni copiar datos.",
  "secciones": [
-  ("¿Qué hace el TPV en el mostrador?", None, [
+  ("¿Qué hace el TPV en el mostrador?", "En el mostrador cobras buscando por nombre, código o favoritos con cualquier forma de pago, emites ticket o factura desde la misma venta, gestionas devoluciones con vale y haces el arqueo al cerrar el día.", [
     ("Cobro rápido", "Búsqueda por nombre, código de barras o favoritos, con efectivo, tarjeta o pago mixto."),
     ("Ticket o factura al momento", "Si el cliente pide factura, se genera desde la misma venta con sus datos fiscales."),
     ("Devoluciones y vales", "Devolver un artículo repone el stock y puede generar un vale canjeable."),
     ("Cierre de caja", "Arqueo al final del día con el desglose por forma de pago y las diferencias señaladas."),
   ]),
-  ("¿Qué gana tu negocio al conectarlo?", None, [
+  ("¿Qué gana tu negocio al conectarlo?", "Al conectarlo, lo vendido en tienda se descuenta también de la web y del almacén, cada compra queda en la ficha del cliente para puntos o campañas y todas tus cajas se ven en un mismo panel.", [
     ("Stock siempre al día", "Lo que se vende en tienda deja de estar disponible en la web y en el almacén."),
     ("Clientes que vuelven", "Las compras quedan en la ficha y se pueden usar para puntos, bonos o campañas."),
     ("Varias cajas, un solo dato", "Si tienes más de un punto de venta, ves todas las cajas en el mismo panel."),
@@ -108,7 +108,7 @@ PAGINAS = {
  "lead": "Una tienda online conectada a tu gestión evita el problema clásico: vender por la web algo que ya se fue por el mostrador, o pasar a mano cada pedido al programa.",
  "respuesta": "Una tienda online conectada comparte productos, precios y stock con el programa de gestión. Cuando entra un pedido por la web, se crea en el programa, se reserva la mercancía, se genera la factura y el cliente queda en tu base de datos, todo sin intervención manual.",
  "secciones": [
-  ("¿Qué se sincroniza entre la web y la gestión?", None, [
+  ("¿Qué se sincroniza entre la web y la gestión?", "Se sincronizan el catálogo y los precios, el stock de todos los canales, los pedidos con los datos de envío del cliente y las facturas y devoluciones, que se gestionan desde el programa y reponen existencias.", [
     ("Catálogo y precios", "Das de alta o cambias un producto una sola vez y se actualiza en la web."),
     ("Stock en tiempo real", "Las ventas en tienda física, web y otros canales descuentan del mismo inventario."),
     ("Pedidos y clientes", "Cada pedido web entra con sus datos de envío y su historial de compras."),
@@ -130,12 +130,12 @@ PAGINAS = {
  "lead": "Gestionar el catálogo de productos y las tarifas en hojas sueltas acaba en precios distintos según quién haga el presupuesto. Este módulo deja una sola fuente de verdad.",
  "respuesta": "Un módulo de catálogo y tarifas guarda cada producto o servicio con su ficha (descripción, fotos, coste, variantes) y le asigna varios precios según el tipo de cliente: público, profesional, distribuidor o acuerdos particulares. Presupuestos, pedidos, TPV y tienda online toman el precio de ahí, así que todo el equipo vende con el mismo criterio.",
  "secciones": [
-  ("¿Qué guarda cada ficha de producto?", None, [
+  ("¿Qué guarda cada ficha de producto?", "Cada ficha reúne la referencia, descripción, fotos y variantes del artículo, su coste de compra con el margen de cada tarifa y los proveedores que lo sirven con su precio y plazo.", [
     ("Datos y variantes", "Referencia, descripción, fotos, tallas, colores o medidas en una sola ficha."),
     ("Coste y margen", "Precio de compra actualizado y margen calculado en cada tarifa."),
     ("Proveedores", "Quién te lo vende, a qué precio y con qué plazo de entrega."),
   ]),
-  ("¿Cómo se manejan las tarifas?", None, [
+  ("¿Cómo se manejan las tarifas?", "Cada producto admite varias tarifas, precios o descuentos pactados con clientes concretos y escalas por cantidad, y puedes subir una familia entera de golpe por porcentaje o a partir del nuevo coste.", [
     ("Varias tarifas por producto", "Minorista, mayorista, distribuidor o la que necesites, cada una con sus reglas."),
     ("Precios pactados por cliente", "Un cliente concreto puede tener su precio o descuento en ciertos artículos."),
     ("Descuentos por volumen", "Escalas automáticas según la cantidad del pedido."),
@@ -157,13 +157,13 @@ PAGINAS = {
  "lead": "El cuadro de mando en tiempo real es la primera pantalla que ves al entrar en tu programa: las cifras que importan, actualizadas con cada venta, cobro o trabajo cerrado.",
  "respuesta": "Un cuadro de mando en tiempo real reúne en una pantalla los indicadores clave del negocio (ventas, cobros pendientes, stock bajo, presupuestos abiertos, trabajos en curso) y los actualiza al momento con lo que se registra en el programa. No hace falta exportar a Excel ni esperar al cierre de mes para saber cómo vas.",
  "secciones": [
-  ("¿Qué ves de un vistazo?", None, [
+  ("¿Qué ves de un vistazo?", "De un vistazo ves las ventas del día y del mes frente al año anterior y tu objetivo, lo pendiente de cobrar, las alertas de stock o retrasos y la carga de trabajo de la semana.", [
     ("Ventas del día y del mes", "Comparadas con el mismo periodo del año anterior y con tu objetivo."),
     ("Dinero pendiente de cobrar", "Total vencido y por vencer, con los clientes que más deben."),
     ("Alertas operativas", "Artículos bajo mínimos, trabajos retrasados o presupuestos sin respuesta."),
     ("Agenda y carga de trabajo", "Lo que hay previsto hoy y esta semana por persona o por equipo."),
   ]),
-  ("¿Cómo se usa en el día a día?", None, [
+  ("¿Cómo se usa en el día a día?", "Cada perfil abre su propio panel, pulsa cualquier cifra para llegar a las facturas o pedidos que la forman y puede consultarlo igual desde la app cuando está fuera de la oficina.", [
     ("Un panel por perfil", "Dirección ve el negocio entero; el jefe de taller, sus órdenes; el comercial, su embudo."),
     ("Del dato al detalle", "Pulsas una cifra y llegas a las facturas, pedidos o clientes que la forman."),
     ("También en el móvil", "El mismo panel en la app, para consultarlo fuera de la oficina."),
@@ -183,7 +183,7 @@ PAGINAS = {
  "lead": "Un informe semanal automático por WhatsApp o voz te cuenta cómo ha ido la semana sin abrir el ordenador: lo que se vendió, lo que falta por cobrar y lo que necesita tu atención.",
  "respuesta": "El informe semanal automático es un resumen que el programa de gestión prepara y envía el día y la hora que elijas, en texto por WhatsApp o como nota de voz. Lo redacta el agente PIX a partir de los datos reales de la semana y destaca lo que ha cambiado y lo que conviene decidir.",
  "secciones": [
-  ("¿Qué cuenta el informe?", None, [
+  ("¿Qué cuenta el informe?", "El informe resume las cifras de la semana comparadas con la anterior, señala lo que se sale de lo habitual, como un cliente que deja de comprar, y recuerda lo que vence en los próximos días.", [
     ("Resumen de cifras", "Ventas, cobros, gastos destacados y comparación con la semana anterior."),
     ("Lo que se sale de lo normal", "Un cliente que ha dejado de comprar, un servicio que se ha disparado o una factura muy vencida."),
     ("Pendientes para la semana", "Presupuestos a punto de caducar, entregas comprometidas o pagos importantes."),
@@ -208,12 +208,12 @@ PAGINAS = {
  "lead": "Saber la rentabilidad por cliente, por servicio y por empleado cambia decisiones: a quién subir el precio, qué servicio dejar de ofrecer y dónde se escapan las horas.",
  "respuesta": "Este módulo cruza lo que facturas con lo que te cuesta producirlo: horas registradas en partes o fichajes, material consumido, desplazamientos y gastos asignados. El resultado es el margen real de cada cliente, de cada tipo de servicio y de las horas de cada persona, no una estimación.",
  "secciones": [
-  ("¿De dónde salen los costes?", None, [
+  ("¿De dónde salen los costes?", "Los costes salen de las horas registradas en partes o fichajes valoradas al coste de cada perfil, del material consumido a su precio de compra y de los desplazamientos, dietas o subcontratas asignados.", [
     ("Horas trabajadas", "De los partes de trabajo o del fichaje, valoradas con el coste por hora de cada perfil."),
     ("Material y compras", "Lo que se gasta en cada trabajo, al precio al que lo compraste."),
     ("Desplazamientos y gastos", "Kilómetros, dietas o subcontratas asignados al cliente o al proyecto."),
   ]),
-  ("¿Qué descubres con estos datos?", None, [
+  ("¿Qué descubres con estos datos?", "Descubres qué clientes consumen más horas de las que pagan, qué servicios están mal presupuestados, cuánto tiempo del equipo no acaba en ninguna factura y si cada margen mejora o empeora mes a mes.", [
     ("Clientes que cuestan más de lo que pagan", "Facturan mucho, pero piden tantas horas extra que el margen se esfuma."),
     ("Servicios mal presupuestados", "Los que siempre llevan más tiempo del previsto y conviene recalcular."),
     ("Horas que no se facturan", "Cuánto tiempo del equipo se va en tareas que no llegan a ninguna factura."),
@@ -234,13 +234,13 @@ PAGINAS = {
  "lead": "Un portal del cliente y del proveedor da a cada uno un acceso privado a lo suyo y te quita de encima llamadas del tipo «¿me reenvías la factura?» o «¿cuándo llega mi pedido?».",
  "respuesta": "Un portal de clientes y proveedores es un área privada en la web, con usuario y contraseña, conectada al programa de gestión. El cliente consulta facturas, pedidos, presupuestos y trabajos; el proveedor confirma pedidos, indica fechas de entrega y sube sus facturas. Todo lo que hacen se refleja al momento en tu programa.",
  "secciones": [
-  ("¿Qué hace el cliente en su portal?", None, [
+  ("¿Qué hace el cliente en su portal?", "En su portal el cliente descarga todas sus facturas, sigue el estado de pedidos y trabajos, acepta presupuestos y abre incidencias con fotos que entran directamente en postventa.", [
     ("Descarga sus facturas", "Histórico completo, sin tener que pedírtelo a ti."),
     ("Sigue sus pedidos o trabajos", "Estado actualizado: recibido, en curso, enviado o terminado."),
     ("Acepta presupuestos", "Revisa la propuesta y la aprueba desde el mismo portal."),
     ("Abre incidencias", "Con fotos y descripción, que entran directas a postventa."),
   ]),
-  ("¿Y el proveedor?", None, [
+  ("¿Y el proveedor?", "El proveedor confirma o reprograma tus pedidos y avisa de faltas, sube facturas y albaranes enlazados a cada pedido y mantiene al día sus certificados y seguros con aviso de caducidad.", [
     ("Confirma tus pedidos", "Acepta, propone otra fecha o avisa de faltas antes de que te enteres tarde."),
     ("Sube facturas y albaranes", "Los documentos se asocian al pedido para revisarlos sin buscar en el correo."),
     ("Mantiene su documentación", "Certificados, seguros o fichas técnicas con fecha de caducidad y aviso."),
@@ -260,7 +260,7 @@ PAGINAS = {
  "lead": "La app móvil de tu programa de gestión lleva al bolsillo lo que cada persona necesita para trabajar fuera de la oficina, sin tener que llamar para pedir un dato.",
  "respuesta": "La app móvil es la versión para Android e iPhone del programa de gestión. Usa los mismos datos que el ordenador, así que lo que se registra en la calle aparece al instante en la oficina. Cada persona ve las funciones que le corresponden: el comercial su cartera, el técnico su agenda y dirección los números.",
  "secciones": [
-  ("¿Qué se puede hacer desde la app?", None, [
+  ("¿Qué se puede hacer desde la app?", "Desde la app consultas la ficha y la deuda de cualquier cliente, ves tus citas y tareas del día, creas pedidos o presupuestos en plena visita y fichas o pides vacaciones.", [
     ("Consultar clientes", "Ficha, historial, deuda pendiente y contacto con un toque."),
     ("Agenda y tareas", "Citas del día, recordatorios y tareas asignadas con aviso en el móvil."),
     ("Pedidos y presupuestos", "Crear un pedido delante del cliente o enviar un presupuesto al salir de la visita."),
@@ -282,13 +282,13 @@ PAGINAS = {
  "lead": "Una app para técnicos de campo resuelve lo que más tiempo hace perder en la calle: llamar a la oficina para pedir datos y rellenar el parte en papel al final del día.",
  "respuesta": "Una app para técnicos de campo muestra a cada técnico sus avisos del día, le guía hasta el cliente y le da el historial del equipo o la instalación. Al terminar, el técnico hace el parte con fotos, materiales y firma del cliente en el móvil, y la oficina lo recibe al momento para facturar.",
  "secciones": [
-  ("¿Qué lleva el técnico en el móvil?", None, [
+  ("¿Qué lleva el técnico en el móvil?", "El técnico lleva en el móvil su agenda con la ruta, el historial de cada equipo, el parte digital con fotos y firma y el stock de su furgoneta, que se descuenta según gasta material.", [
     ("Agenda y ruta", "Avisos ordenados por hora o por cercanía, con navegación hasta la dirección."),
     ("Historial del equipo", "Intervenciones anteriores, piezas cambiadas y notas de otros técnicos."),
     ("Parte digital", "Horas, trabajos realizados, fotos del antes y el después y firma del cliente."),
     ("Stock de la furgoneta", "El material usado se descuenta y avisa cuando hay que reponer."),
   ]),
-  ("¿Qué gana la oficina?", None, [
+  ("¿Qué gana la oficina?", "La oficina factura el mismo día con el parte firmado, sabe en qué estado está cada aviso sin llamar al técnico y reduce las segundas visitas porque este llega con la pieza correcta.", [
     ("Facturación el mismo día", "El parte firmado llega completo y se convierte en factura sin teclearlo."),
     ("Saber dónde está cada aviso", "Pendiente, en camino, en curso o terminado, sin llamar a nadie."),
     ("Menos visitas repetidas", "Con el historial delante, el técnico llega con la pieza correcta."),
@@ -308,7 +308,7 @@ PAGINAS = {
  "lead": "Firmar contratos online desde tu programa de gestión evita el circuito de imprimir, firmar, escanear y reenviar, y deja cada contrato guardado en la ficha del cliente.",
  "respuesta": "El módulo de contratos con firma online genera el documento a partir de una plantilla, rellena los datos del cliente y del servicio desde el programa y lo envía por correo o WhatsApp. El cliente lo firma desde el móvil o el ordenador y el contrato firmado se archiva con la fecha y los datos del proceso de firma.",
  "secciones": [
-  ("¿Cómo funciona?", None, [
+  ("¿Cómo funciona?", "Eliges una plantilla con tus cláusulas, el programa rellena los datos del cliente y del presupuesto, el cliente firma desde un enlace en cualquier dispositivo y el contrato queda archivado con aviso de vencimiento.", [
     ("Plantillas propias", "Contratos de servicio, mantenimiento, alquiler o confidencialidad con tus cláusulas."),
     ("Datos rellenados solos", "Nombre, NIF, dirección, precio y condiciones salen de la ficha y del presupuesto."),
     ("Firma desde cualquier dispositivo", "El cliente recibe un enlace, revisa el documento y firma sin instalar nada."),
@@ -330,7 +330,7 @@ PAGINAS = {
  "lead": "Un ERP con CRM integrado sigue la venta entera, desde el primer contacto hasta el cobro, sin que nadie copie datos de una herramienta a otra.",
  "respuesta": "En un ERP con CRM integrado, el comercial trabaja la oportunidad, prepara el presupuesto y, al aceptarse, ese mismo documento se convierte en pedido, se reserva el stock o se planifica el trabajo, y después se factura y se controla el cobro. Toda la empresa ve la misma información del cliente: lo que se le ofreció, lo que compró y lo que debe.",
  "secciones": [
-  ("¿Qué cambia cuando ventas y facturación están unidas?", None, [
+  ("¿Qué cambia cuando ventas y facturación están unidas?", "Cambia que todo el equipo trabaja sobre la misma ficha de cliente, el presupuesto aceptado se convierte en factura sin reescribirlo, las comisiones salen de cobros reales y el comercial ve la deuda antes de vender.", [
     ("Un solo cliente para todos", "Comercial, administración y almacén trabajan sobre la misma ficha, sin versiones distintas."),
     ("Presupuesto que se convierte", "El presupuesto aceptado pasa a pedido y a factura sin volver a escribir líneas."),
     ("Comisiones sobre lo cobrado", "Las comisiones se calculan con facturas reales y cobros confirmados."),
@@ -352,13 +352,13 @@ PAGINAS = {
  "lead": "Un ERP de compras, proveedores y almacén cierra el circuito completo: lo que pides, lo que recibes, lo que te cuesta y lo que te facturan, sin hojas intermedias.",
  "respuesta": "El módulo de compras y almacén de un ERP enlaza el pedido al proveedor con la recepción de la mercancía, la entrada en stock y la factura del proveedor. Al cuadrar los tres documentos, el ERP detecta diferencias de cantidad o de precio y actualiza el coste de cada artículo, que luego usa ventas para calcular márgenes.",
  "secciones": [
-  ("El circuito de compra en un ERP", None, [
+  ("El circuito de compra en un ERP", "El circuito arranca con una propuesta de compra por stock, pedidos o una obra, pasa por la aprobación del pedido, sigue con la recepción contra lo pedido y termina cuadrando la factura antes de pagarla.", [
     ("Necesidad de compra", "Stock mínimo, pedidos de clientes o una obra concreta generan la propuesta de compra."),
     ("Pedido con aprobación", "Por encima de un importe, el pedido espera el visto bueno del responsable."),
     ("Recepción contra pedido", "Al llegar la mercancía se comprueba lo recibido y las faltas quedan anotadas."),
     ("Factura cuadrada", "La factura del proveedor se compara con pedido y albarán antes de pagarla."),
   ]),
-  ("¿Qué aporta a la visión de empresa?", None, [
+  ("¿Qué aporta a la visión de empresa?", "Aporta márgenes de venta calculados con el coste real actualizado en cada compra, una comparativa de proveedores basada en datos y la parte del inventario que ya está comprometida con pedidos o proyectos.", [
     ("Coste real en ventas", "El coste medio se actualiza con cada compra y los márgenes de ventas lo reflejan."),
     ("Comparativa de proveedores", "Precios, plazos y cumplimiento de cada proveedor con datos, no de memoria."),
     ("Stock comprometido", "Qué parte del inventario está reservada para pedidos o proyectos ya vendidos."),
@@ -378,7 +378,7 @@ PAGINAS = {
  "lead": "Un ERP con Verifactu y factura electrónica B2B centraliza la facturación de toda la empresa, salga la factura del mostrador, de la web, de una obra o de un contrato.",
  "respuesta": "En un ERP, la facturación no es un programa aparte: recibe las ventas de todos los módulos y emite cada factura con su registro Verifactu y, cuando la operación es entre empresas, en formato electrónico. Las facturas de proveedores entran por la misma vía y se enlazan con las compras. Así cumples ambas normas sin depender de que cada departamento lo haga bien por su cuenta.",
  "secciones": [
-  ("¿Qué resuelve el ERP frente a facturar por separado?", None, [
+  ("¿Qué resuelve el ERP frente a facturar por separado?", "Resuelve que todas las ventas, del TPV a las obras, facturen con una numeración controlada, que las facturas de proveedores se casen con sus compras y que cada estado de cobro se actualice al conciliar el banco.", [
     ("Una sola numeración controlada", "Series por tipo de venta o por centro, sin huecos ni duplicados."),
     ("Todas las fuentes de venta", "TPV, tienda online, pedidos, obras y cuotas facturan con el mismo sistema."),
     ("Recepción enlazada a compras", "Las facturas electrónicas de proveedores se casan con su pedido y su albarán."),
@@ -400,7 +400,7 @@ PAGINAS = {
  "lead": "Un ERP para producción, obras o servicios tiene que reflejar cómo se genera el trabajo en tu sector. El módulo operativo cambia; lo que lo rodea, compras, equipo y facturación, es el mismo.",
  "respuesta": "El corazón de un ERP es el módulo que organiza la actividad principal de la empresa. En fabricación son las órdenes de producción y las listas de materiales; en construcción, las obras con su presupuesto, sus certificaciones y su coste real; en empresas de servicios, los contratos, los avisos y los partes. Ese módulo se conecta con el resto del ERP para que cada hora y cada material acaben en el coste y en la factura.",
  "secciones": [
-  ("¿Qué módulo operativo encaja con tu empresa?", None, [
+  ("¿Qué módulo operativo encaja con tu empresa?", "Depende de tu actividad: fabricación con escandallos y órdenes, obras y proyectos con partidas y certificaciones, servicios con contratos, avisos y partes, o una combinación si fabricas e instalas o vendes y mantienes.", [
     ("Fabricación", "Escandallos, órdenes de fabricación, consumo de materia prima y producto terminado al almacén."),
     ("Obras y proyectos", "Partidas, mediciones, certificaciones al cliente, subcontratas y desviaciones frente a presupuesto."),
     ("Servicios", "Contratos, avisos, planificación de técnicos, partes firmados y facturación periódica."),
@@ -422,13 +422,13 @@ PAGINAS = {
  "lead": "Integrar el fichaje, los turnos y las ausencias en el ERP hace que las horas del equipo dejen de ser solo una obligación legal y pasen a explicar costes y márgenes.",
  "respuesta": "Cuando el equipo está dentro del ERP, el registro de jornada, los turnos y las vacaciones comparten datos con la operativa: las horas se imputan a obras, servicios o pedidos, la planificación cuenta con quién está disponible y las incidencias del mes se preparan para la asesoría. El registro diario de jornada es obligatorio desde 2019 y hay que conservarlo cuatro años.",
  "secciones": [
-  ("¿Qué incluye el área de equipo?", None, [
+  ("¿Qué incluye el área de equipo?", "El área de equipo incluye el registro de jornada desde cualquier dispositivo, los cuadrantes de turnos con aviso de huecos, las solicitudes de vacaciones con su saldo y la documentación de cada trabajador.", [
     ("Registro de jornada", "Fichaje desde móvil, tablet o web, con historial que no se puede alterar sin dejar rastro."),
     ("Turnos y cuadrantes", "Planificación por centro o por equipo, con aviso de huecos y solapes."),
     ("Vacaciones y ausencias", "Solicitudes, aprobaciones y saldo de días visibles para cada persona."),
     ("Documentación", "Contratos, nóminas y formación de cada trabajador en su ficha."),
   ]),
-  ("¿Qué aporta verlo en el ERP?", None, [
+  ("¿Qué aporta verlo en el ERP?", "Verlo en el ERP suma las horas al coste de cada obra o servicio, evita asignar trabajo a quien está de vacaciones o de baja y deja preparadas las incidencias del mes para las nóminas.", [
     ("Coste de personal por trabajo", "Las horas fichadas o imputadas se suman al coste de cada obra o servicio."),
     ("Planificación realista", "Al asignar trabajos, el ERP sabe quién está de vacaciones o de baja."),
     ("Cierre de mes para nóminas", "Horas extra, ausencias e incidencias, listas para enviar a la asesoría."),
@@ -448,12 +448,12 @@ PAGINAS = {
  "lead": "Con un ERP puedes llevar la contabilidad dentro o mantener a tu asesoría de siempre. En los dos casos, nadie vuelve a teclear facturas que ya están en el programa.",
  "respuesta": "Un ERP puede integrar un módulo de contabilidad que genera los asientos de ventas, compras, cobros y pagos a medida que se registran, o puede preparar esos mismos datos para la asesoría externa en el formato que use su programa. La elección depende de si la contabilidad la llevas tú o tu gestoría; el objetivo es el mismo: que los datos fluyan sin copiarlos.",
  "secciones": [
-  ("Dos caminos según cómo trabajes hoy", None, [
+  ("Dos caminos según cómo trabajes hoy", "Si tienes administración propia, llevas la contabilidad dentro del ERP con asientos automáticos; si la lleva tu gestoría, el ERP le envía los datos listos para importar o le da un usuario de consulta.", [
     ("Contabilidad dentro del ERP", "Para empresas con administración propia: asientos automáticos, conciliación bancaria y balances al día."),
     ("Conexión con tu asesoría", "Para quien delega: facturas, cobros y pagos se envían a la gestoría periódicamente, listos para importar."),
     ("Acceso para la gestoría", "Un usuario de consulta para que tu asesor descargue lo que necesite cuando lo necesite."),
   ]),
-  ("¿Qué se automatiza en ambos casos?", None, [
+  ("¿Qué se automatiza en ambos casos?", "En los dos casos se generan solos los apuntes de cada factura emitida o recibida, se casan los movimientos del banco con facturas y recibos y salen los listados de IVA y retenciones sin rehacerlos.", [
     ("Asientos de ventas y compras", "Cada factura emitida o recibida genera su apunte con sus cuentas e impuestos."),
     ("Movimientos del banco", "Los extractos se importan y se casan con facturas y recibos."),
     ("Datos para los impuestos", "Los listados de IVA y retenciones salen del ERP sin rehacerlos en hojas."),
@@ -473,13 +473,13 @@ PAGINAS = {
  "lead": "El análisis de procesos antes de implantar un ERP evita el error más caro: comprar módulos que nadie va a usar y dejar fuera el que de verdad resolvía el problema.",
  "respuesta": "El análisis de procesos es la primera fase de la implantación de un ERP. Consiste en dibujar cómo circula hoy la información en la empresa (de un pedido a su cobro, de una compra a su pago), quién la toca y dónde se duplica o se pierde. Con ese mapa se decide qué módulos son imprescindibles, en qué orden se implantan y qué se deja para más adelante.",
  "secciones": [
-  ("¿Qué se revisa en el análisis?", None, [
+  ("¿Qué se revisa en el análisis?", "Se revisa el recorrido completo de una venta hasta el cobro, las herramientas que hoy sostienen el trabajo, los puntos donde se teclea dos veces o se espera, y quién hace y aprueba cada paso.", [
     ("El recorrido de una venta", "Desde que entra la petición del cliente hasta que el dinero llega al banco."),
     ("Herramientas actuales", "Programas, hojas de cálculo, cuadernos y grupos de WhatsApp que hoy sostienen el trabajo."),
     ("Puntos de fricción", "Datos que se teclean dos veces, esperas entre departamentos y errores que se repiten."),
     ("Personas y permisos", "Quién hace cada paso y quién debería poder ver o aprobar cada cosa."),
   ]),
-  ("¿Qué obtienes al terminar?", None, [
+  ("¿Qué obtienes al terminar?", "Al terminar tienes un mapa de cómo trabaja hoy tu empresa y cómo lo hará con el ERP, la lista de módulos ordenada por prioridad y un plan de fases con datos a migrar y fechas de corte.", [
     ("Mapa de procesos", "Un esquema sencillo de cómo trabaja tu empresa hoy y cómo trabajará con el ERP."),
     ("Módulos priorizados", "Imprescindibles para arrancar, recomendables a medio plazo y opcionales."),
     ("Plan de fases", "Orden de implantación, datos a migrar y fechas de corte propuestas."),
@@ -499,7 +499,7 @@ PAGINAS = {
  "lead": "La migración desde Excel u otro programa decide si el ERP arranca con buen pie: si los datos llegan sucios o incompletos, el equipo deja de confiar en él la primera semana.",
  "respuesta": "Migrar a un ERP consiste en extraer los datos del sistema actual (hojas de Excel, un programa antiguo o varias herramientas), limpiarlos, adaptarlos a la estructura del nuevo ERP y cargarlos comprobando que cuadran. Lo habitual es traer clientes, proveedores, artículos, stock y saldos pendientes, y el histórico de facturas que haga falta consultar.",
  "secciones": [
-  ("¿Cómo se hace la migración?", None, [
+  ("¿Cómo se hace la migración?", "Se hace en cuatro pasos: localizar todas las fuentes de datos, limpiar duplicados y códigos obsoletos, cargar una copia de prueba que revisa tu equipo y hacer la carga definitiva cuadrando stock, deudas y saldos.", [
     ("Inventario de fuentes", "Qué datos hay, dónde están y cuál manda cuando dos fuentes no coinciden."),
     ("Limpieza", "Clientes duplicados, artículos obsoletos y códigos repetidos se depuran antes de cargar."),
     ("Carga de prueba", "Se migra una copia, se revisa con tu equipo y se corrige lo que no encaja."),
@@ -521,7 +521,7 @@ PAGINAS = {
  "lead": "La implantación de un ERP por fases permite cambiar de sistema mientras sigues vendiendo, sirviendo y cobrando, sin un «gran día» en el que todo cambia a la vez.",
  "respuesta": "Implantar un ERP por fases significa poner en marcha los módulos de uno en uno o por bloques, empezando por el que más problemas resuelve. Cada fase tiene su fecha de corte, su grupo de prueba y un criterio claro de cierre antes de pasar a la siguiente, de modo que el negocio nunca depende de algo que no se ha probado.",
  "secciones": [
-  ("¿Cómo se organizan las fases?", None, [
+  ("¿Cómo se organizan las fases?", "Las fases arrancan por el área que más problemas da, se prueban con un grupo piloto, cambian en fechas tranquilas como el inicio de mes y solo se cierran cuando nadie vuelve al sistema antiguo.", [
     ("Primero lo que más duele", "Si el problema es facturar, se arranca por ahí; si es el almacén, por el almacén."),
     ("Grupo piloto", "Una persona o un equipo usa el módulo en real antes de extenderlo al resto."),
     ("Fechas de corte pensadas", "Cambios a principio de mes o en semanas tranquilas, nunca en plena campaña."),
@@ -543,13 +543,13 @@ PAGINAS = {
  "lead": "La formación en el ERP funciona cuando cada persona practica con sus propios casos: el pedido de ese cliente difícil, la factura con tres series o la devolución de la semana pasada.",
  "respuesta": "Formar al equipo en un ERP con casos reales significa enseñar cada módulo usando operaciones de la propia empresa, en un entorno de prácticas con una copia de sus datos. Cada puesto aprende solo lo que va a usar, en el orden en que lo hará en su día a día, y se queda con guías breves para consultar después.",
  "secciones": [
-  ("¿Cómo son las sesiones?", None, [
+  ("¿Cómo son las sesiones?", "Son sesiones cortas por puesto de trabajo, en un entorno de prácticas con una copia de tus datos, donde se reproducen operaciones reales de tu semana y se programan cerca del arranque de cada fase.", [
     ("Por puesto, no por menú", "Administración aprende a facturar y conciliar; almacén, a recibir y preparar; comerciales, a presupuestar."),
     ("Entorno de prácticas", "Una copia del ERP con tus datos para equivocarse sin consecuencias."),
     ("Casos de tu semana", "Se reproducen operaciones reales, incluidas las excepciones que más dudas generan."),
     ("Sesiones cortas", "Bloques breves cerca de la fecha de arranque de cada fase, para que no se olvide."),
   ]),
-  ("¿Qué queda después de la formación?", None, [
+  ("¿Qué queda después de la formación?", "Después te quedan guías breves por tarea en ficha o vídeo, PIX para resolver dudas de uso a cualquier hora y una persona de referencia en cada área que ayuda a sus compañeros.", [
     ("Guías por tarea", "Fichas de una página o vídeos cortos: cómo hacer un abono, cómo dar de alta un artículo."),
     ("PIX como consulta", "El agente responde dudas de uso del ERP en lenguaje normal y a cualquier hora."),
     ("Referentes internos", "Una persona por área que domina el módulo y ayuda a sus compañeros."),
@@ -569,7 +569,7 @@ PAGINAS = {
  "lead": "El acompañamiento de 30 a 90 días cubre la etapa en la que un ERP se consolida o se abandona: las primeras semanas de uso real, con dudas, excepciones y el primer cierre de mes.",
  "respuesta": "El acompañamiento posterior a la implantación es un periodo de soporte cercano, de 30 a 90 días según el tamaño y el número de módulos, en el que el equipo tiene una vía directa para resolver dudas y se ajusta el ERP a lo que se descubre al usarlo: campos que faltan, informes que se piden, permisos o automatismos que no encajaban.",
  "secciones": [
-  ("¿Qué incluye el acompañamiento?", None, [
+  ("¿Qué incluye el acompañamiento?", "Incluye un canal directo de soporte, la revisión conjunta del primer cierre de mes, pequeños ajustes de pantallas, documentos e informes según el uso real y la detección de quién sigue tirando de hojas de cálculo.", [
     ("Soporte directo", "Un canal para preguntar y resolver incidencias sin abrir tickets anónimos."),
     ("Primer cierre de mes juntos", "Facturación, cobros, stock y datos para la asesoría revisados en el primer cierre."),
     ("Ajustes con el uso real", "Pequeños cambios en pantallas, documentos e informes según lo que pide el equipo."),
@@ -591,12 +591,12 @@ PAGINAS = {
  "lead": "Con un ERP modular pagas solo por los módulos que tu empresa usa. Nada de paquetes cerrados con contabilidad analítica, producción o RRHH que nadie va a abrir.",
  "respuesta": "Un ERP modular se compone de piezas independientes (ventas, compras, almacén, facturación, equipo, contabilidad, producción) que comparten la misma base de datos. Se contratan solo las que la empresa necesita, se puede empezar con dos módulos y añadir otros más adelante sin migrar ni cambiar de programa.",
  "secciones": [
-  ("¿En qué se diferencia de un ERP de paquete?", None, [
+  ("¿En qué se diferencia de un ERP de paquete?", "Frente a un paquete cerrado, no pagas por funciones que no usas, el menú solo muestra los módulos contratados y la puesta en marcha es más corta porque hay menos datos que migrar y menos que aprender.", [
     ("Sin funciones de relleno", "Los ERP estándar incluyen decenas de opciones; la pyme suele usar una parte pequeña y paga todas."),
     ("Pantallas más limpias", "Si un módulo no está, no aparece en el menú ni confunde al equipo."),
     ("Implantación más corta", "Menos módulos al empezar significa menos datos que migrar y menos formación."),
   ]),
-  ("¿Cómo se elige con qué empezar?", None, [
+  ("¿Cómo se elige con qué empezar?", "Se empieza por lo imprescindible, que suele ser la facturación y el módulo de tu actividad principal, por el área donde hoy se pierden más horas y por lo que te exige la normativa según tus plazos.", [
     ("Lo imprescindible", "Normalmente facturación y el módulo que organiza tu actividad principal."),
     ("Lo que más tiempo quita", "El área donde hoy se pierden más horas o se cometen más errores."),
     ("Lo que obliga la norma", "Verifactu, factura electrónica o registro de jornada, según tus plazos."),
@@ -616,7 +616,7 @@ PAGINAS = {
  "lead": "Un ERP a medida que se adapta a tu forma de trabajar respeta lo que hace bien tu empresa: sus pasos, su vocabulario y sus documentos, en lugar de forzarla a copiar el modelo de otra.",
  "respuesta": "Adaptar un ERP a la empresa significa configurar y, cuando hace falta, desarrollar sus pantallas, estados, documentos y automatismos según los procesos reales del negocio. No se trata de reproducir cada costumbre, sino de mantener lo que aporta valor y corregir lo que solo existía porque la herramienta anterior no daba para más.",
  "secciones": [
-  ("¿Qué se adapta del ERP?", None, [
+  ("¿Qué se adapta del ERP?", "Se adaptan los estados por los que pasa cada pedido, los campos propios de tu sector, el diseño y los textos de tus documentos y los avisos o aprobaciones que se disparan en cada momento del proceso.", [
     ("Estados y pasos", "Tu pedido pasa por los estados que tú usas: medición, aprobación, fabricación, montaje."),
     ("Campos propios", "Datos que solo tu sector necesita, como matrícula, número de serie o lote de origen."),
     ("Documentos con tu formato", "Presupuestos, albaranes y facturas con tu diseño y tus textos legales."),
@@ -638,7 +638,7 @@ PAGINAS = {
  "lead": "Un ERP escalable acompaña a la empresa cuando crece: un segundo almacén, una tienda online, más personal o una nueva sociedad se suman al mismo programa, sin volver a migrar.",
  "respuesta": "Un ERP escalable permite añadir módulos, usuarios, centros o sociedades sobre la misma base de datos a medida que la empresa crece. Los clientes, artículos e históricos ya cargados se reutilizan, de modo que cada ampliación es un proyecto pequeño y no una nueva implantación.",
  "secciones": [
-  ("¿Cuándo toca añadir un módulo?", None, [
+  ("¿Cuándo toca añadir un módulo?", "Toca ampliarlo cuando abres otro almacén o tienda, empiezas a vender por internet, el equipo crece lo bastante para necesitar turnos y fichaje o creas una nueva sociedad que quieres ver junto a la actual.", [
     ("Abres otro almacén o tienda", "Se activa la gestión multialmacén o un nuevo punto de venta con el mismo catálogo."),
     ("Empiezas a vender online", "La tienda se conecta al stock y a la facturación que ya funcionan."),
     ("El equipo pasa de pocos a muchos", "Turnos, fichaje y documentación del empleado se vuelven necesarios."),

@@ -363,3 +363,6 @@ h2.h3{font-size:21px}
 .form input[type=checkbox],input[type=checkbox]{width:22px;height:22px}
 .form input,.form select,.form textarea{min-height:44px}
 }
+.firma{font-size:14px;color:var(--gris);margin-top:12px}
+.firma a{color:inherit;text-decoration:underline}
+.resp-directa{max-width:780px;margin:0 0 18px}

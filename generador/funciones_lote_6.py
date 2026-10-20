@@ -9,7 +9,7 @@ PAGINAS = {
  "lead": "El posicionamiento en ChatGPT y Gemini (GEO) prepara tu web y tu presencia en internet para que la IA te cite cuando alguien pregunta por lo que vendes.",
  "respuesta": "El GEO (optimización para motores generativos) es el trabajo de conseguir que asistentes como ChatGPT, Gemini o Perplexity mencionen tu negocio en sus respuestas. Se logra con páginas que responden preguntas concretas de forma clara, datos estructurados que explican quién eres y menciones coherentes en directorios, reseñas y medios. No se puede pagar por aparecer: se gana con información fiable y fácil de citar.",
  "secciones": [
-  ("¿Qué trabajamos para que la IA te cite?", None, [
+  ("¿Qué trabajamos para que la IA te cite?", "Trabajamos cuatro frentes: respuestas breves que la IA puede copiar tal cual, datos estructurados en el código, una ficha de empresa coherente en todos los directorios y contenido creado a partir de las preguntas reales de tus clientes.", [
     ("Respuestas cortas en cada página", "Bloques de dos o tres frases que resuelven una pregunta sin necesitar contexto, justo el formato que los asistentes copian y enlazan."),
     ("Datos estructurados", "Marcamos en el código qué es tu empresa, qué servicios das, en qué zona y qué dudas resuelves, para que las máquinas no tengan que adivinarlo."),
     ("Tu nombre, igual en todas partes", "Revisamos directorios, perfiles y fichas para que nombre, actividad y contacto coincidan. Las contradicciones restan confianza."),
@@ -31,13 +31,13 @@ PAGINAS = {
  "lead": "La analítica web sirve de poco si solo cuenta visitas. La configuramos para que veas cuántas llamadas, formularios y WhatsApp genera cada página y cada campaña.",
  "respuesta": "La analítica web mide lo que hace la gente en tu web: de dónde llega, qué páginas lee y qué acción termina haciendo. Bien configurada, cuenta como conversión cada formulario enviado, cada clic para llamar y cada conversación de WhatsApp, y respeta el consentimiento de cookies de cada visitante.",
  "secciones": [
-  ("¿Qué medimos?", None, [
+  ("¿Qué medimos?", "Medimos de dónde viene cada persona que te contacta, qué acciones cuentan como conversión, qué páginas reciben visitas sin generar contactos y con qué búsquedas te encuentra Google, todo dentro de la misma configuración.", [
     ("Origen de cada contacto", "Si el cliente llegó desde Google, un anuncio, Instagram o una respuesta de la IA, queda anotado junto a su solicitud."),
     ("Conversiones reales", "Formularios, clics en el teléfono, botón de WhatsApp y reservas, registrados como objetivos y no como simples clics."),
     ("Páginas que no convierten", "Las que tienen muchas visitas y ningún contacto, que son las primeras que conviene mejorar."),
     ("Búsquedas en Google", "Conectamos Search Console para ver con qué búsquedas apareces y en qué posición."),
   ]),
-  ("¿Y con esos datos, qué haces?", None, [
+  ("¿Y con esos datos, qué haces?", "Los convertimos en decisiones: un informe mensual corto con lo que conviene cambiar, cada contacto registrado en tu CRM con su canal de origen y una medición que solo arranca cuando el visitante acepta las cookies.", [
     ("Informe que se lee en cinco minutos", "Un resumen mensual con pocos números: visitas útiles, contactos, coste por contacto si haces anuncios y qué cambiar."),
     ("Conexión con el CRM", "Cada contacto entra en tu programa con su origen, así sabes qué canal acaba en venta y no solo en consulta."),
     ("Cookies en regla", "Banner de consentimiento configurado para que no se mida nada antes de que el visitante acepte."),
@@ -57,7 +57,7 @@ PAGINAS = {
  "lead": "Automatizar las redes sociales no es publicar lo mismo en todas partes. Montamos un sistema que planifica, adapta cada pieza a su red y te la deja lista para aprobar.",
  "respuesta": "La automatización de redes sociales combina un calendario editorial, herramientas de programación y redacción con IA para preparar y publicar contenido en Instagram, Facebook, LinkedIn o TikTok sin hacerlo a mano cada día. El negocio revisa y aprueba; el sistema publica a su hora, ordena los mensajes recibidos y avisa de los que necesitan una respuesta humana.",
  "secciones": [
-  ("¿Qué se automatiza y qué no?", None, [
+  ("¿Qué se automatiza y qué no?", "Se automatizan la planificación mensual, la adaptación de cada tema al formato de cada red y las respuestas a preguntas repetidas. Las fotos de tu trabajo, tu criterio y los mensajes delicados siguen en tus manos.", [
     ("Calendario del mes", "Una propuesta de publicaciones a partir de tus servicios, temporadas y novedades, que ajustas antes de que salga nada."),
     ("Adaptación por red", "Un mismo tema se convierte en carrusel para Instagram, texto profesional para LinkedIn y vídeo corto, con el formato de cada una."),
     ("Mensajes y comentarios", "Las preguntas repetidas (horario, dónde estáis, cómo reservar) se contestan con tus respuestas aprobadas; el resto llega a una persona."),
@@ -79,13 +79,13 @@ PAGINAS = {
  "lead": "Hacer vídeos y anuncios con IA permite probar varias ideas por el esfuerzo de una sola grabación. Preparamos guion, imagen, voz y versiones para cada formato.",
  "respuesta": "Los vídeos y anuncios con IA se producen combinando generadores de imagen y vídeo, voces sintéticas y edición automática a partir de un guion. Sirven para crear piezas de producto, explicativas o de marca en poco tiempo y en varios formatos (vertical, cuadrado, horizontal), y para probar en campañas cuál funciona mejor.",
  "secciones": [
-  ("¿Qué piezas se pueden hacer?", None, [
+  ("¿Qué piezas se pueden hacer?", "Con IA preparamos anuncios de producto en distintos escenarios, vídeos cortos que explican tu servicio, versiones alternativas de un mismo anuncio para probar cuál funciona mejor y cada pieza en el formato que pide su red.", [
     ("Anuncio de producto", "Tu producto en escenarios distintos, con movimiento y texto, sin sesión de fotos cada temporada."),
     ("Vídeo explicativo", "Cómo funciona tu servicio en 30 a 60 segundos, con voz en off y rótulos."),
     ("Variaciones para test", "Varias aperturas, mensajes y llamadas a la acción del mismo anuncio para que la campaña descubra cuál rinde."),
     ("Formato de cada red", "Vertical para Reels y TikTok, cuadrado para el feed y horizontal para YouTube o la web."),
   ]),
-  ("¿Qué cuidamos?", None, [
+  ("¿Qué cuidamos?", "Cuidamos que ninguna pieza engañe a quien la ve, que las herramientas usadas permitan el uso comercial del resultado y que colores, tipografía y tono respondan a tu marca en cada anuncio.", [
     ("Nada engañoso", "No inventamos clientes ni testimonios. Si aparece un avatar, no se hace pasar por un cliente real."),
     ("Uso comercial permitido", "Herramientas cuyas condiciones permiten usar el resultado en anuncios, junto con tus fotos y tu logo."),
     ("Tu identidad visual", "Colores, tipografía y tono de tu marca en todas las piezas, para que no parezcan de banco de imágenes."),
@@ -105,7 +105,7 @@ PAGINAS = {
  "lead": "Con la traducción y el doblaje con IA, un vídeo grabado en español sale en inglés, francés o portugués con tu propia voz y subtítulos revisados.",
  "respuesta": "El doblaje con IA transcribe el audio original, traduce el texto, genera una voz en el idioma de destino que imita la del hablante y, si se quiere, ajusta el movimiento de los labios. Con una revisión humana del guion traducido se obtienen versiones de vídeos, cursos o anuncios en otros idiomas sin volver a grabar.",
  "secciones": [
-  ("¿Qué puedes traducir?", None, [
+  ("¿Qué puedes traducir?", "Puedes traducir vídeos de redes y anuncios, cursos grabados con subtítulos y voz, textos de tu web y catálogos, y también ajustar el vocabulario de tu español según el país al que vendas.", [
     ("Vídeos de redes y anuncios", "Una pieza que funciona en España se adapta a otro mercado sin rodar de nuevo."),
     ("Cursos y formaciones", "Lecciones grabadas con subtítulos y audio en el idioma del alumno."),
     ("Webs, fichas y catálogos", "Textos de producto y páginas traducidos con la misma terminología en todo el sitio."),
@@ -127,7 +127,7 @@ PAGINAS = {
  "lead": "La captación automatizada de clientes B2B encuentra empresas que encajan contigo, les escribe un mensaje pensado para cada una y hace el seguimiento hasta que alguien pide reunión.",
  "respuesta": "La prospección B2B automatizada combina bases de datos de empresas filtradas por sector, tamaño y zona con IA que redacta mensajes personalizados a partir de la web de cada empresa. Las respuestas se clasifican solas, los interesados reservan cita en tu agenda y quien no contesta recibe un número limitado de recordatorios.",
  "secciones": [
-  ("¿Cómo es el proceso?", None, [
+  ("¿Cómo es el proceso?", "Partimos de tu cliente ideal para armar la lista de empresas, la IA escribe a cada una con un detalle propio, una secuencia breve hace el seguimiento y quien muestra interés reserva reunión directamente en tu agenda.", [
     ("Perfil de cliente ideal", "Sector, tamaño, zona y cargo de la persona que decide. Con eso se construye la lista."),
     ("Mensaje con motivo", "La IA lee la web de cada empresa y menciona algo concreto suyo, en vez de enviar el mismo texto a todas."),
     ("Secuencia corta", "Un primer mensaje y dos o tres seguimientos espaciados. Quien responde sale de la secuencia al momento."),
@@ -149,7 +149,7 @@ PAGINAS = {
  "lead": "Un menú digital en pantalla no se queda viejo: cambias un precio, agotas un plato o pasas a la carta de cenas desde el móvil, sin imprimir ni borrar pizarras.",
  "respuesta": "Un menú digital para hostelería es una pantalla (televisor o monitor profesional) conectada a un pequeño reproductor que muestra la carta, el menú del día o las promociones y se actualiza desde el móvil o el ordenador. Puede cambiar solo según la hora, marcar platos agotados y mostrar los alérgenos de cada plato.",
  "secciones": [
-  ("¿Qué ve el cliente?", None, [
+  ("¿Qué ve el cliente?", "El cliente ve la carta que toca según la franja del día, con foto de cada plato y bebida, iconos de alérgenos junto al nombre y sin los platos que ya se han terminado.", [
     ("Carta según la hora", "Desayunos por la mañana, menú del día a mediodía y raciones por la noche, sin tocar nada."),
     ("Fotos de platos y bebidas", "La imagen vende más que una lista, sobre todo en barra y en comida para llevar."),
     ("Alérgenos a la vista", "Iconos junto a cada plato para responder antes de que pregunten."),
@@ -171,13 +171,13 @@ PAGINAS = {
  "lead": "Una pantalla en el escaparate llama más la atención que un cartel y se cambia cada día. Programas promociones por horario y temporada sin imprimir nada.",
  "respuesta": "Un escaparate digital es una pantalla orientada a la calle, con brillo suficiente para verse de día, que muestra promociones, novedades y vídeos programados. El contenido se gestiona en remoto y se planifica por fechas y horas, por ejemplo una oferta solo por la tarde o una campaña que arranca el lunes en todas tus tiendas.",
  "secciones": [
-  ("¿Qué puedes mostrar?", None, [
+  ("¿Qué puedes mostrar?", "Puedes mostrar ofertas con fecha de caducidad, novedades y campañas de temporada, vídeos breves que se entienden sin audio desde la calle y tus reseñas o tu perfil de Instagram como prueba social.", [
     ("Oferta del día o de la semana", "Precio, foto y fecha de fin, programados para que se quiten solos al terminar."),
     ("Novedades y temporada", "Lo que acaba de llegar, rebajas, Navidad o vuelta al cole."),
     ("Vídeo corto de producto", "Piezas de pocos segundos que se entienden sin sonido desde la acera."),
     ("Redes y reseñas", "Tu Instagram o tus mejores opiniones de Google como prueba social."),
   ]),
-  ("Detalles que importan en un escaparate", None, [
+  ("Detalles que importan en un escaparate", "Para que el escaparate funcione hace falta una pantalla con brillo suficiente para verse tras el cristal, encendido y apagado automáticos según tu horario y la opción de coordinar campañas entre varios locales.", [
     ("Brillo para la calle", "Una tele doméstica no se ve detrás de un cristal a pleno sol; hace falta una pantalla de alto brillo."),
     ("Horario de encendido", "Se enciende y se apaga sola según el horario del local."),
     ("Varias tiendas, una campaña", "Si tienes más de un local, lanzas la misma promoción en todos o una distinta en cada uno."),
@@ -197,12 +197,12 @@ PAGINAS = {
  "lead": "Una pantalla de turnos ordena la sala de espera: cada persona ve cuándo le toca y a qué puesto ir, y mientras espera lee información útil de tu negocio.",
  "respuesta": "Un sistema de pantalla de turnos asigna un número a cada cliente o lo llama por su código, lo muestra en una pantalla con aviso sonoro e indica a qué consulta, mesa o mostrador debe pasar. Conectado a la agenda de citas, llama a quien tiene cita en el orden correcto y puede mostrar el tiempo de espera aproximado.",
  "secciones": [
-  ("¿Dónde se usa?", None, [
+  ("¿Dónde se usa?", "Se usa en clínicas que prefieren llamar por número, en oficinas y servicios técnicos con varias ventanillas y en comercios donde el cliente coge turno nada más entrar.", [
     ("Clínicas y centros de salud", "Llamada a consulta por número para no decir el nombre del paciente en voz alta."),
     ("Mostradores de atención", "Oficinas, servicios técnicos o talleres con varias ventanillas."),
     ("Comercio con turno", "Charcuterías, farmacias o tiendas de telefonía donde se coge número al llegar."),
   ]),
-  ("¿Qué hace además de llamar?", None, [
+  ("¿Qué hace además de llamar?", "Además de llamar al siguiente, la pantalla se sincroniza con tu agenda, avisa del tiempo de espera estimado, muestra información útil entre llamadas y te deja datos sobre las horas con más cola.", [
     ("Conexión con la agenda", "Recepción marca la llegada y el profesional llama desde su ordenador o tablet."),
     ("Espera estimada", "La pantalla y, si quieres, un mensaje al móvil indican cuánto falta."),
     ("Contenido entre llamadas", "Servicios, consejos, normas de la sala o promociones."),
@@ -223,7 +223,7 @@ PAGINAS = {
  "lead": "Con la gestión remota desde el móvil controlas todas tus pantallas digitales sin ir al local: subes una imagen, cambias un precio o programas la semana desde donde estés.",
  "respuesta": "La gestión remota de cartelería digital es un panel en la nube, accesible desde el móvil o el ordenador, que envía contenidos a cada pantalla conectada a internet. Permite agrupar pantallas por local o zona, programar qué se ve en cada franja y comprobar que todas están encendidas y mostrando lo correcto.",
  "secciones": [
-  ("¿Qué puedes hacer desde el móvil?", None, [
+  ("¿Qué puedes hacer desde el móvil?", "Desde el móvil publicas fotos, vídeos o precios nuevos en segundos, programas el contenido de toda la semana, cambias a la vez grupos enteros de pantallas y recibes aviso si alguna deja de funcionar.", [
     ("Subir y cambiar contenido", "Una foto hecha con el móvil, un vídeo o una plantilla con el precio nuevo, publicada en segundos."),
     ("Programar la semana", "Qué se ve cada día y a cada hora, incluidos festivos y campañas con fecha de fin."),
     ("Grupos de pantallas", "Todas las de un local, todas las de escaparate o todas las de la cadena, con un solo cambio."),
@@ -245,7 +245,7 @@ PAGINAS = {
  "lead": "Fichar con el móvil, una tablet, la web o una tarjeta NFC: cada trabajador usa el método que encaja con su puesto y todos los registros acaban en el mismo sitio.",
  "respuesta": "Un fichador con varios métodos permite registrar la entrada y la salida desde la app del móvil, desde una tablet fija en la entrada (con PIN o tarjeta), desde el navegador del ordenador o acercando una tarjeta o llavero NFC a un lector. Todos los fichajes se guardan en un único registro por trabajador, sea cual sea el método.",
  "secciones": [
-  ("¿Qué método conviene a cada puesto?", None, [
+  ("¿Qué método conviene a cada puesto?", "Depende de dónde empiece la jornada: el móvil va bien para quien trabaja fuera, la tablet para una entrada común, la web para oficina y teletrabajo, y la tarjeta NFC cuando la plantilla es numerosa.", [
     ("Móvil", "Para comerciales, técnicos y personal que empieza la jornada fuera del centro."),
     ("Tablet en la entrada", "Para tiendas, talleres o naves donde todos entran por la misma puerta. Se ficha con PIN o tarjeta, sin móvil personal."),
     ("Web en el ordenador", "Para oficina y teletrabajo: un botón en el navegador al empezar y otro al terminar."),
@@ -267,7 +267,7 @@ PAGINAS = {
  "lead": "La geolocalización en el fichaje guarda dónde se fichó, no por dónde anda el trabajador. Se activa solo cuando hace falta y siempre con aviso previo a la plantilla.",
  "respuesta": "El fichaje con geolocalización registra la ubicación del móvil únicamente en el instante de fichar la entrada, la salida o una pausa, nunca durante la jornada. El trabajador ve en pantalla que se va a guardar su ubicación antes de confirmar, y la empresa debe haber informado antes a la plantilla de qué dato se guarda y para qué.",
  "secciones": [
-  ("¿Cómo funciona?", None, [
+  ("¿Cómo funciona?", "La ubicación se registra únicamente en el instante de fichar y la app lo avisa antes de confirmar. Tú defines las zonas de trabajo y decides a qué personas o centros se aplica.", [
     ("Solo al fichar", "Se toma la posición en el momento del fichaje; entre un fichaje y otro no hay seguimiento."),
     ("Aviso en pantalla", "Antes de confirmar, la app indica que se registrará la ubicación. Nada ocurre a escondidas."),
     ("Zonas de trabajo", "Defines un radio alrededor de la obra, la tienda o el cliente y ves qué fichajes caen fuera."),
@@ -289,7 +289,7 @@ PAGINAS = {
  "lead": "Fichar por WhatsApp es tan simple como enviar «entro» o «salgo» a un número de la empresa. PIX, nuestro agente de IA, lo registra y contesta al momento.",
  "respuesta": "El fichaje por WhatsApp permite registrar entrada, salida y pausas enviando un mensaje a un número de la empresa conectado al fichador. PIX identifica al trabajador por su número, guarda el fichaje con la hora del sistema y responde con una confirmación; también contesta preguntas como cuántas horas lleva esta semana.",
  "secciones": [
-  ("¿Qué se puede hacer desde el chat?", None, [
+  ("¿Qué se puede hacer desde el chat?", "Desde el chat el trabajador ficha con una palabra o un audio, pregunta cuántas horas lleva, solicita corregir un fichaje olvidado y recibe un aviso cuando no ha marcado la entrada a su hora.", [
     ("Fichar con una palabra", "«Entro», «salgo», «pausa» o «vuelvo». También vale un mensaje de voz."),
     ("Consultar tus horas", "«¿Cuántas horas llevo este mes?» y PIX responde con el dato del registro."),
     ("Pedir una corrección", "Si se te olvidó fichar, lo pides en el chat y la solicitud llega al responsable para aprobarla."),
@@ -311,13 +311,13 @@ PAGINAS = {
  "lead": "En una obra, un sótano o una finca sin cobertura también hay que fichar. El modo sin conexión guarda el fichaje en el móvil y lo envía al recuperar la señal.",
  "respuesta": "El modo sin conexión de un fichador guarda en el propio dispositivo la hora y, si está activada, la ubicación del fichaje cuando no hay internet. Al recuperar la conexión envía los fichajes pendientes, marcados como hechos sin conexión, de forma que el registro conserva la hora real del fichaje y no la del envío.",
  "secciones": [
-  ("¿Cómo funciona sin cobertura?", None, [
+  ("¿Cómo funciona sin cobertura?", "El móvil guarda el fichaje aunque no haya señal y lo envía solo al recuperar conexión. El responsable ve qué registros llegaron más tarde y si la hora del teléfono no coincidía con la del servidor.", [
     ("Fichaje guardado en el móvil", "La app confirma el fichaje aunque no haya señal y lo deja en cola."),
     ("Sincronización automática", "En cuanto hay datos o wifi, los fichajes pendientes suben sin que el trabajador haga nada."),
     ("Marca de sin conexión", "Cada fichaje enviado más tarde lleva una señal visible para el responsable."),
     ("Hora vigilada", "Al sincronizar, la app compara con la hora del servidor y señala desajustes del reloj del móvil."),
   ]),
-  ("¿Quién lo necesita?", None, [
+  ("¿Quién lo necesita?", "Lo necesitan las empresas cuyos equipos trabajan donde la señal falla: obras, sótanos y garajes, fincas e invernaderos alejados, y técnicos de mantenimiento en cubiertas, naves o salas de máquinas.", [
     ("Construcción y reformas", "Obras nuevas, sótanos y garajes donde la cobertura falla."),
     ("Agricultura y medio rural", "Fincas, invernaderos y explotaciones alejadas del pueblo."),
     ("Mantenimiento e instalaciones", "Técnicos en salas de máquinas, cubiertas o naves industriales."),
@@ -337,7 +337,7 @@ PAGINAS = {
  "lead": "Registrar las pausas y los descansos evita discusiones sobre las horas trabajadas. Cada pausa se ficha con su tipo y el fichador calcula el tiempo efectivo.",
  "respuesta": "El registro de pausas permite al trabajador marcar el inicio y el fin de cada descanso (bocadillo, comida, pausa personal) dentro de su jornada. El fichador distingue si cada tipo de pausa cuenta como tiempo de trabajo o no, según tu convenio o tu acuerdo, y calcula las horas efectivas de cada día.",
  "secciones": [
-  ("¿Qué tipos de pausa se pueden configurar?", None, [
+  ("¿Qué tipos de pausa se pueden configurar?", "Puedes configurar descansos que cuentan como trabajo, pausas de comida que se descuentan, salidas personales con su motivo y una duración prevista para cada una que genera aviso si se supera.", [
     ("Descanso retribuido", "El bocadillo o la pausa que tu convenio considera tiempo de trabajo: se registra pero no resta."),
     ("Pausa de comida", "La jornada partida o el descanso no retribuido, que se descuenta de las horas del día."),
     ("Pausas personales", "Salidas puntuales, médico o gestiones, con motivo si lo necesitas."),
@@ -359,7 +359,7 @@ PAGINAS = {
  "lead": "Un registro de jornada inalterable no impide corregir errores: impide hacerlo sin dejar rastro. Cada cambio guarda quién, cuándo, qué había antes y por qué.",
  "respuesta": "Un registro de fichaje inalterable guarda cada entrada y salida de forma que no se pueda borrar ni sobrescribir. Si hay que corregir un fichaje, se añade una corrección con el valor original, el nuevo, el autor, la fecha y el motivo, y el trabajador ve ese historial. Así el registro es fiable ante la Inspección y ante la propia plantilla.",
  "secciones": [
-  ("¿Qué queda guardado en cada fichaje?", None, [
+  ("¿Qué queda guardado en cada fichaje?", "Cada fichaje guarda la hora que marca el servidor, el método usado y si se hizo sin conexión. Las correcciones se añaden sobre el original con su motivo, quién la pidió y quién la aprobó.", [
     ("Hora del sistema", "La pone el servidor, no el reloj del dispositivo."),
     ("Método de fichaje", "Móvil, tablet, web, NFC o WhatsApp, y si se hizo sin conexión."),
     ("Corrección como capa nueva", "El fichaje original nunca desaparece; la corrección se añade encima con su motivo."),
@@ -381,7 +381,7 @@ PAGINAS = {
  "lead": "El registro de jornada hay que conservarlo cuatro años. El fichador lo guarda en la nube con copias automáticas, también el de quienes ya no están en la empresa.",
  "respuesta": "Conservar el registro de jornada durante cuatro años significa poder enseñar los fichajes de cualquier trabajador, de cualquier día de ese periodo, aunque ya haya dejado la empresa. Un fichador digital lo resuelve guardando los registros en servidores con copia de seguridad y permitiendo filtrarlos y exportarlos por persona y fechas.",
  "secciones": [
-  ("¿Qué incluye?", None, [
+  ("¿Qué incluye?", "Incluye cuatro años de fichajes, pausas, correcciones y ausencias, también de quienes ya no están en la empresa, con copias de seguridad automáticas y exportación en PDF o Excel cuando lo necesites.", [
     ("Histórico completo", "Cuatro años de fichajes, pausas, correcciones y ausencias, consultables en segundos."),
     ("Extrabajadores incluidos", "Al dar de baja a alguien se cierra su acceso, pero su registro se mantiene el tiempo exigido."),
     ("Copias de seguridad", "Copias automáticas en ubicaciones distintas para que un fallo no te deje sin datos."),
@@ -403,7 +403,7 @@ PAGINAS = {
  "lead": "Si llega un requerimiento de la Inspección de Trabajo, el informe de registro de jornada sale en un clic, con el periodo, los trabajadores y el centro que te pidan.",
  "respuesta": "El informe para Inspección es un documento exportable en PDF o Excel que recoge, por trabajador y día, la hora de inicio y fin de la jornada, las pausas, el total de horas y las correcciones con su historial. Se genera filtrando por periodo, centro o persona, sin recopilar hojas ni rehacer cálculos.",
  "secciones": [
-  ("¿Qué contiene el informe?", None, [
+  ("¿Qué contiene el informe?", "El informe recoge los datos de empresa, centro y periodo, el detalle diario de cada trabajador, las correcciones con su motivo y autor, y los totales semanales y mensuales con las horas extra aparte.", [
     ("Empresa, centro y periodo", "Razón social, centro de trabajo y fechas consultadas en la cabecera."),
     ("Detalle diario por persona", "Entrada, salida, pausas y horas totales de cada día."),
     ("Correcciones con motivo", "Qué se cambió, quién y cuándo, para que no haya dudas sobre la fiabilidad."),
@@ -425,7 +425,7 @@ PAGINAS = {
  "lead": "Con el acceso del trabajador a sus registros, cada persona consulta sus fichajes y sus horas desde el móvil, ve cualquier corrección y descarga su registro cuando lo necesita.",
  "respuesta": "El acceso del trabajador a sus registros es un área personal, en la app o la web del fichador, donde cada empleado ve sus fichajes día a día, el total de horas, las pausas, las horas extra y el historial de cualquier corrección. Desde ahí puede pedir un cambio si detecta un error y descargar su registro de un periodo.",
  "secciones": [
-  ("¿Qué ve cada trabajador?", None, [
+  ("¿Qué ve cada trabajador?", "Cada persona ve sus fichajes día a día, cuántas horas lleva frente a las de su contrato, cualquier cambio que se haya hecho en su registro y puede descargar un PDF del periodo que quiera.", [
     ("Su calendario de fichajes", "Día a día, con entrada, salida y pausas."),
     ("Saldo de horas", "Horas de la semana y del mes frente a las de su contrato, y extras acumuladas."),
     ("Historial de cambios", "Cualquier corrección que haya hecho el responsable, con su motivo."),
@@ -447,12 +447,12 @@ PAGINAS = {
  "lead": "El control de horas extra deja de ser una cuenta a mano: el fichador compara lo trabajado con el contrato de cada persona y separa las horas de más.",
  "respuesta": "Un control de horas extra calcula cada día y cada semana la diferencia entre las horas fichadas y la jornada contratada de cada trabajador, descontando las pausas no retribuidas. Las horas de más pueden pasar por la aprobación del responsable y se acumulan en una bolsa para compensar con descanso o se envían como resumen para la nómina.",
  "secciones": [
-  ("¿Cómo se calculan?", None, [
+  ("¿Cómo se calculan?", "El sistema compara el tiempo efectivo trabajado, ya sin pausas, con la jornada de cada contrato y aplica el periodo de cómputo que use tu empresa o tu convenio: diario, semanal o mensual.", [
     ("Jornada de cada contrato", "Completa, parcial o con distribución irregular: cada persona tiene la suya."),
     ("Periodo de cómputo", "Diario, semanal o mensual, según cómo se compute en tu empresa o convenio."),
     ("Pausas ya descontadas", "Solo cuenta el tiempo de trabajo efectivo."),
   ]),
-  ("¿Qué se hace con ellas?", None, [
+  ("¿Qué se hace con ellas?", "El responsable las aprueba, se acumulan en una bolsa compensable con descanso, salen en un listado mensual para tu asesoría y, si alguien suma demasiadas, recibes una alerta para reorganizar el trabajo.", [
     ("Aprobación", "El responsable valida las horas de más antes de que cuenten, con un comentario si hace falta."),
     ("Bolsa de horas", "Se acumulan y se compensan con descanso; el trabajador ve su saldo."),
     ("Resumen para nómina", "Listado mensual por persona, listo para tu asesoría."),
@@ -473,7 +473,7 @@ PAGINAS = {
  "lead": "El cuadrante de turnos online sustituye al Excel que se reenvía cada semana: lo montas, lo publicas y cada persona ve en el móvil cuándo trabaja.",
  "respuesta": "Un cuadrante de turnos online es un calendario donde se asignan turnos (mañana, tarde, noche, partido) a cada trabajador y se publica para que el equipo lo consulte en el móvil. Conectado al fichador, compara el turno planificado con el fichaje real y avisa de ausencias, retrasos o personas sin turno asignado.",
  "secciones": [
-  ("¿Cómo se monta el cuadrante?", None, [
+  ("¿Cómo se monta el cuadrante?", "Creas tus turnos una sola vez, los asignas arrastrando, copias la semana anterior cuando se repite y el cuadrante te señala las franjas sin cobertura teniendo en cuenta vacaciones y bajas.", [
     ("Plantillas de turno", "Defines tus turnos una vez y los arrastras a cada persona y día."),
     ("Copiar semanas", "Repites la semana anterior y solo ajustas lo que cambia."),
     ("Cobertura mínima", "Indicas cuántas personas necesitas por franja y el cuadrante te avisa de los huecos."),
@@ -495,7 +495,7 @@ PAGINAS = {
  "lead": "Con la gestión de vacaciones y ausencias, cada trabajador pide sus días desde el móvil y el responsable aprueba sabiendo quién más falta esas fechas.",
  "respuesta": "La gestión de vacaciones y ausencias dentro del fichador permite que el trabajador solicite vacaciones, asuntos propios o permisos desde la app, que el responsable los apruebe viendo el calendario del equipo y que el sistema descuente el saldo. Las bajas y permisos se registran con su justificante y esos días no cuentan como fichajes olvidados.",
  "secciones": [
-  ("¿Qué se gestiona?", None, [
+  ("¿Qué se gestiona?", "Desde el mismo programa gestionas el saldo de vacaciones de cada persona, los permisos que marque tu convenio, las bajas con su documento y los festivos locales de cada centro de trabajo.", [
     ("Vacaciones", "Saldo anual por persona, con días pedidos, aprobados y pendientes."),
     ("Permisos y asuntos propios", "Tipos configurables según tu convenio, con o sin justificante."),
     ("Bajas", "Fechas y documento adjunto, visible solo para quien debe verlo."),
@@ -517,13 +517,13 @@ PAGINAS = {
  "lead": "Las alertas de fichaje olvidado avisan al trabajador a tiempo para corregirlo el mismo día. Así no llegas a fin de mes con decenas de huecos que rellenar.",
  "respuesta": "Las alertas de olvidos y retrasos comparan cada día el turno o el horario previsto de cada trabajador con sus fichajes. Si alguien no ha fichado la entrada a su hora, lleva demasiado tiempo sin fichar la salida o llega tarde, recibe un recordatorio en el móvil o por WhatsApp, y el responsable recibe un resumen con lo que sigue pendiente.",
  "secciones": [
-  ("¿Qué situaciones detecta?", None, [
+  ("¿Qué situaciones detecta?", "Detecta cuatro casos: alguien que no ha fichado la entrada de su turno, jornadas que siguen abiertas demasiado tiempo, llegadas fuera del margen que fijes y pausas de comida sin fichaje de vuelta.", [
     ("Entrada sin fichar", "Ha pasado la hora de su turno y no hay fichaje."),
     ("Salida olvidada", "La jornada sigue abierta horas después de lo normal."),
     ("Retraso", "Fichaje de entrada más tarde del margen que tú fijes."),
     ("Pausa sin cerrar", "Alguien salió a comer y no ha fichado la vuelta."),
   ]),
-  ("¿Quién recibe qué?", None, [
+  ("¿Quién recibe qué?", "El aviso llega antes al trabajador para que lo corrija él, y al responsable solo le llega un resumen periódico de lo pendiente. Los minutos de cortesía los fijas tú.", [
     ("El trabajador, primero", "Un recordatorio amable para que lo resuelva él mismo."),
     ("El responsable, después", "Resumen diario o semanal solo con lo que sigue sin resolver."),
     ("Margen a tu medida", "Tú decides cuántos minutos de cortesía hay antes de avisar."),
@@ -543,12 +543,12 @@ PAGINAS = {
  "lead": "El control horario en teletrabajo y con varios centros pide lo mismo que en una oficina: saber quién trabaja, cuánto y dónde, sin pedir fotos ni hacer llamadas.",
  "respuesta": "Un fichador preparado para teletrabajo y varios centros permite fichar desde casa por la web o el móvil, asigna a cada trabajador un centro con su calendario laboral y sus festivos locales, y da a cada responsable la vista de su centro mientras la dirección ve el conjunto. Los días en casa se distinguen de los presenciales en el registro.",
  "secciones": [
-  ("Teletrabajo", None, [
+  ("Teletrabajo", "Quien trabaja en remoto ficha desde el navegador, cada registro indica si fue en casa o en la oficina y el sistema solo anota la jornada, sin controlar lo que se hace en el ordenador.", [
     ("Fichaje desde el navegador", "Un botón al empezar y otro al terminar, sin instalar nada."),
     ("Casa u oficina", "Cada fichaje indica la modalidad, útil si trabajáis en modelo híbrido."),
     ("Sin vigilar el ordenador", "Se registra la jornada, no la actividad del equipo ni capturas de pantalla."),
   ]),
-  ("Varios centros", None, [
+  ("Varios centros", "Con varios centros, cada ubicación tiene su calendario y su encargado, la dirección lo ve todo junto, el personal que rota ficha donde esté y los informes salen separados por centro.", [
     ("Calendario por centro", "Festivos locales y horarios distintos en cada tienda, nave u oficina."),
     ("Responsable por centro", "Cada encargado gestiona a su gente; la dirección ve todos los centros a la vez."),
     ("Personal que rota", "Quien trabaja en varios centros ficha en el que esté y el registro lo refleja."),
@@ -569,7 +569,7 @@ PAGINAS = {
  "lead": "El fichador se paga por trabajador al mes: la cuota depende de cuántas personas fichan, así que una empresa de cinco no paga lo mismo que una de cincuenta.",
  "respuesta": "El modelo de precio por trabajador al mes consiste en pagar una cuota mensual según el número de empleados dados de alta en el fichador. Si contratas o das de baja a alguien, la cuota se ajusta. Antes de empezar te damos el precio exacto según tu plantilla y las funciones que necesites.",
  "secciones": [
-  ("¿De qué depende el precio?", None, [
+  ("¿De qué depende el precio?", "La cuota depende de cuántas personas fichan, de las funciones que actives, del hardware que quieras añadir, como tablet o tarjetas NFC, y de si conectamos las horas con otros programas.", [
     ("Número de trabajadores", "Las personas dadas de alta que registran su jornada."),
     ("Funciones que activas", "Turnos, vacaciones, fichaje por WhatsApp con PIX o tarjetas NFC, solo si las vas a usar."),
     ("Hardware opcional", "Tablet de entrada o lectores y tarjetas NFC, únicamente si los necesitas."),
@@ -591,7 +591,7 @@ PAGINAS = {
  "lead": "Un software de control horario sin permanencia te deja irte cuando quieras. Y como el registro hay que conservarlo, al salir te llevas tus datos exportados.",
  "respuesta": "Contratar el fichador sin permanencia significa que no hay un periodo mínimo obligatorio ni penalización por darte de baja: pagas mientras lo usas. Al terminar recibes la exportación completa de los registros de jornada para que sigas conservándolos el tiempo exigido o los importes en otra herramienta.",
  "secciones": [
-  ("¿Qué pasa si te das de baja?", None, [
+  ("¿Qué pasa si te das de baja?", "Si te das de baja, el servicio termina sin coste y te llevas todos los registros, incluidos los de antiguos trabajadores, en PDF, Excel o CSV, formatos que se abren sin nuestro programa.", [
     ("Baja sin penalización", "Nos avisas y el servicio termina, sin coste de cancelación."),
     ("Exportación completa", "Fichajes, pausas, correcciones, ausencias e historial en PDF y en Excel o CSV."),
     ("Registros de extrabajadores", "También se incluyen, porque siguen dentro del plazo de conservación."),
@@ -613,12 +613,12 @@ PAGINAS = {
  "lead": "El alta del fichador en 24-48 horas es posible porque la configuración la hacemos nosotros: nos pasas la plantilla y los horarios y tu equipo recibe sus accesos.",
  "respuesta": "El alta en 24-48 horas consiste en que, desde que recibimos la lista de trabajadores, centros y horarios, configuramos el fichador, damos de alta a cada persona y enviamos sus accesos por correo o WhatsApp, de modo que la empresa empieza a registrar la jornada en uno o dos días laborables.",
  "secciones": [
-  ("¿Qué necesitamos de ti?", None, [
+  ("¿Qué necesitamos de ti?", "Necesitamos tres cosas: la lista de trabajadores con su contacto y centro, los horarios o turnos de cada uno y el método con el que va a fichar cada persona o cada centro.", [
     ("Lista de trabajadores", "Nombre, correo o móvil y centro. Vale un Excel o una foto de la lista."),
     ("Horarios o turnos", "La jornada de cada uno o los turnos tipo, para activar los avisos."),
     ("Cómo vais a fichar", "Móvil, tablet en la entrada, web, WhatsApp o tarjeta, por persona o por centro."),
   ]),
-  ("¿Qué hacemos en esas 24-48 horas?", None, [
+  ("¿Qué hacemos en esas 24-48 horas?", "En ese plazo configuramos centros, calendarios y permisos, enviamos el acceso a cada trabajador, probamos fichajes y avisos con el responsable y te damos un texto para presentar el sistema a la plantilla.", [
     ("Configuración", "Centros, calendarios, tipos de pausa y permisos de los responsables."),
     ("Accesos enviados", "Cada trabajador recibe su enlace o usuario con instrucciones de un minuto."),
     ("Fichajes de prueba", "Comprobamos con el responsable que horarios y avisos cuadran antes de arrancar."),

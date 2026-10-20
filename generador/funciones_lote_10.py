@@ -7,13 +7,13 @@ PAGINAS = {
  "lead": "La voz del cliente con IA convierte miles de comentarios sueltos (encuestas, reseñas, tickets y transcripciones de llamadas) en una lista de motivos ordenada por volumen y tendencia.",
  "respuesta": "Un sistema de voz del cliente con IA lee los comentarios abiertos que recibe la empresa por todos sus canales, los clasifica por motivo, producto y tono, y señala qué temas suben o bajan de una semana a otra. Cada conclusión va acompañada de los comentarios originales que la sostienen, para que nadie tenga que fiarse a ciegas del resumen.",
  "secciones": [
-  ("¿Qué fuentes puede leer?", None, [
+  ("¿Qué fuentes puede leer?", "Puede leer el texto libre de encuestas como NPS o CSAT, el historial de tickets y correos de soporte, las transcripciones de llamadas grabadas y las reseñas públicas en Google, tiendas de aplicaciones o marketplaces.", [
     ("Encuestas con texto libre", "NPS, CSAT o encuestas posventa: la parte escrita que nadie lee porque no cabe en un gráfico."),
     ("Tickets y correos de soporte", "El historial de incidencias de tu herramienta de atención, según lo que permita exportar o conectar."),
     ("Llamadas transcritas", "Si el centro de llamadas graba, la IA trabaja sobre la transcripción, no sobre el audio."),
     ("Reseñas y opiniones públicas", "Comentarios de tiendas de aplicaciones, Google o marketplaces donde vendes."),
   ]),
-  ("¿Qué recibe cada departamento?", None, [
+  ("¿Qué recibe cada departamento?", "Producto recibe las mejoras más pedidas con citas literales, operaciones detecta picos de quejas en un centro o ruta concretos y dirección obtiene cada mes los motivos que más pesan y su evolución.", [
     ("Producto", "Las peticiones de mejora más repetidas, con frases literales de clientes."),
     ("Operaciones", "Picos de quejas por retrasos, roturas o errores de un centro o una ruta concreta."),
     ("Dirección", "Un informe mensual con los motivos que más pesan y cómo evolucionan."),
@@ -34,13 +34,13 @@ PAGINAS = {
  "lead": "Las pruebas de agentes IA sirven para saber, con datos, si un agente responde bien, respeta sus límites y no hace cosas que nadie le pidió, antes de darle acceso a clientes o sistemas.",
  "respuesta": "Probar un agente de IA consiste en lanzarle una batería de casos preparados (peticiones normales, casos límite e intentos de manipulación) y comparar cada respuesta y cada acción que ejecuta con lo que debería haber hecho. El resultado es un informe con fallos concretos, su gravedad y qué cambiar, que se puede repetir cada vez que el agente se actualiza.",
  "secciones": [
-  ("¿Qué se prueba en un agente?", None, [
+  ("¿Qué se prueba en un agente?", "Se prueba si responde con datos correctos sin inventar, si respeta sus permisos, si resiste mensajes que buscan saltarse sus instrucciones o sacar información interna y si deriva a una persona cuando corresponde.", [
     ("Exactitud", "Si contesta con los datos correctos de tu empresa o se inventa lo que no sabe."),
     ("Límites de acción", "Si intenta crear, borrar o enviar algo fuera de los permisos que tiene."),
     ("Resistencia a la manipulación", "Mensajes diseñados para que ignore sus instrucciones o revele información interna."),
     ("Derivación a personas", "Si sabe pasar la conversación a alguien del equipo cuando toca."),
   ]),
-  ("¿Cómo se organizan las pruebas?", None, [
+  ("¿Cómo se organizan las pruebas?", "Las pruebas parten de casos reales anonimizados del área, combinan corrección automática con revisión humana según el tipo de respuesta y se repiten cada vez que cambia el modelo, las instrucciones o los datos.", [
     ("Batería a partir de casos reales", "Se construye con conversaciones y peticiones reales del área, anonimizadas."),
     ("Revisión mixta", "Corrección automática donde la respuesta es objetiva y revisión humana donde no lo es."),
     ("Pruebas de regresión", "Las mismas pruebas se repiten tras cada cambio de modelo, de instrucciones o de datos."),
@@ -61,13 +61,13 @@ PAGINAS = {
  "lead": "Con la IA en marca blanca, tu consultora ofrece agentes, automatizaciones y formación a sus clientes con su propia marca, mientras nosotros hacemos el trabajo técnico sin aparecer.",
  "respuesta": "La marca blanca de IA para consultoras es un acuerdo por el que un equipo técnico externo diseña, construye y mantiene soluciones de IA que la consultora entrega como propias. La consultora conserva la relación con el cliente y el margen; el equipo técnico firma confidencialidad y no contacta con el cliente final sin permiso.",
  "secciones": [
-  ("¿Qué puedes ofrecer con tu marca?", None, [
+  ("¿Qué puedes ofrecer con tu marca?", "Con tu marca puedes ofrecer agentes de IA para tus clientes, automatizaciones entre los programas que ya usan, formación impartida por tu equipo o por el nuestro y diagnósticos de oportunidades con tu imagen.", [
     ("Agentes de IA", "Para atención, administración o ventas de tus clientes, con tu logotipo y tu dominio."),
     ("Automatizaciones", "Flujos entre los programas que ya usan tus clientes: correo, CRM, ERP u hojas de cálculo."),
     ("Formación", "Sesiones y materiales que imparte tu equipo, o nosotros en tu nombre."),
     ("Diagnósticos", "Informes de oportunidades de IA maquetados con tu imagen corporativa."),
   ]),
-  ("¿Cómo se reparte el trabajo?", None, [
+  ("¿Cómo se reparte el trabajo?", "Tu consultora vende, cuida la relación y valida el resultado; nuestro equipo analiza, construye, prueba, despliega y mantiene, y cuando hace falta acudimos a reuniones técnicas como parte de tu equipo.", [
     ("Tu consultora", "Venta, relación con el cliente, conocimiento del sector y validación final."),
     ("Nuestro equipo", "Análisis técnico, construcción, pruebas, despliegue y mantenimiento."),
     ("Las reuniones técnicas", "Si hacen falta, asistimos presentados como parte de tu equipo."),
@@ -87,12 +87,12 @@ PAGINAS = {
  "lead": "Desarrollamos el MVP de tu startup en un plazo de 6 a 12 semanas, con un alcance pactado al principio y una versión usable que puedes enseñar a clientes e inversores.",
  "respuesta": "Un MVP en 6-12 semanas es un desarrollo con plazo cerrado en el que se decide al inicio qué entra y qué no, se entrega algo funcionando cada semana y se termina con un producto publicado, medible y documentado. Que se acerque a 6 o a 12 semanas depende de cuántos tipos de usuario, pagos e integraciones necesite.",
  "secciones": [
-  ("¿Cómo se reparten las semanas?", None, [
+  ("¿Cómo se reparten las semanas?", "La primera semana deja por escrito el recorrido principal y lo que queda fuera, las intermedias producen entregas semanales que puedes probar y la última publica el producto con analítica y documentación.", [
     ("Semana 1: alcance", "Se fija el recorrido principal del usuario y la lista de lo que se deja fuera, por escrito."),
     ("Semanas intermedias: construcción", "Entregas semanales en un entorno de pruebas que puedes abrir y enseñar."),
     ("Última semana: publicación", "Puesta en producción, analítica de uso activada y documentación técnica entregada."),
   ]),
-  ("¿Qué acerca el plazo a las 12 semanas?", None, [
+  ("¿Qué acerca el plazo a las 12 semanas?", "El plazo se alarga hacia las 12 semanas cuando el MVP necesita cobros recurrentes, varios tipos de usuario, integraciones con servicios externos o una app nativa publicada en las tiendas.", [
     ("Pagos y suscripciones", "Cobro recurrente, facturas y gestión de bajas."),
     ("Varios perfiles de usuario", "Por ejemplo, un marketplace con compradores, vendedores y administrador."),
     ("Integraciones", "Conectar con servicios externos o con datos de terceros."),
@@ -114,13 +114,13 @@ PAGINAS = {
  "lead": "Un CTO externalizado da a tu startup alguien que decide la tecnología, revisa lo que hacen programadores y proveedores y responde a los inversores, sin el coste de un directivo a jornada completa.",
  "respuesta": "Un CTO externalizado o fraccional es un responsable técnico que trabaja con dedicación parcial. En una startup marca la arquitectura, prioriza el desarrollo, entrevista a los primeros programadores, controla a los proveedores y defiende la parte técnica ante inversores, hasta que la empresa puede contratar a uno propio.",
  "secciones": [
-  ("¿Qué hace en el día a día?", None, [
+  ("¿Qué hace en el día a día?", "En el día a día decide la arquitectura y qué se compra o se construye, revisa el código y las entregas antes de pagarlas, selecciona al equipo técnico y explica la tecnología a los inversores.", [
     ("Decide la arquitectura", "Qué tecnología, qué servicios en la nube y qué se construye frente a lo que se compra hecho."),
     ("Revisa el trabajo", "Revisiones de código y de entregas de agencias o freelancers antes de pagarlas."),
     ("Forma el equipo", "Define perfiles, prepara las pruebas técnicas y acompaña la incorporación."),
     ("Habla con inversores", "Explica producto, hoja de ruta y riesgos técnicos con lenguaje claro."),
   ]),
-  ("¿Cuándo tiene sentido?", None, [
+  ("¿Cuándo tiene sentido?", "Tiene sentido si los fundadores no tienen perfil técnico y dependen de una agencia, si se acerca una ronda que exige ordenar la tecnología o si el equipo de desarrollo es junior y necesita criterio.", [
     ("Fundadores sin perfil técnico", "Que dependen de una agencia y no saben si lo que pagan está bien hecho."),
     ("Antes de una ronda", "Cuando hay que ordenar la tecnología para la revisión del inversor."),
     ("Equipo técnico junior", "Programadores capaces que necesitan a alguien con criterio por encima."),
@@ -146,7 +146,7 @@ PAGINAS = {
     ("Coste de captación y recuperación", "Cuánto cuesta conseguir un cliente y cuántos meses tarda en devolverlo."),
     ("Caja y meses de vida", "Gasto neto mensual y hasta cuándo llega el dinero sin nueva ronda."),
   ]),
-  ("¿De dónde salen los datos?", None, [
+  ("¿De dónde salen los datos?", "Los datos salen de tres fuentes: los eventos de uso que registra tu aplicación, la facturación y la pasarela de pago, y el banco o la contabilidad para medir el consumo real de caja.", [
     ("Producto", "Eventos de uso registrados en la aplicación."),
     ("Facturación y pasarela de pago", "Cobros, suscripciones y devoluciones."),
     ("Banco y contabilidad", "Gastos reales para calcular el consumo de caja."),
@@ -167,7 +167,7 @@ PAGINAS = {
  "lead": "Preparar la due diligence con antelación evita que la ronda se retrase por un contrato que no aparece, una licencia mal usada o un código que no está a nombre de la empresa.",
  "respuesta": "Preparar una due diligence es reunir y ordenar, antes de que el inversor lo pida, la documentación que va a revisar: sociedad, contratos, propiedad intelectual, tecnología, datos personales y finanzas. En la parte técnica supone demostrar que el código es de la startup, qué licencias de terceros usa y cómo protege los datos.",
  "secciones": [
-  ("¿Qué revisamos en la parte tecnológica?", None, [
+  ("¿Qué revisamos en la parte tecnológica?", "Revisamos que el código sea de la empresa con cesiones firmadas, las licencias de las librerías usadas, el cumplimiento en protección de datos y quién accede a qué, incluidas cuentas que siguen a nombre personal.", [
     ("Propiedad del código", "Cesiones de derechos firmadas por fundadores, empleados y freelancers que han programado."),
     ("Licencias de terceros", "Inventario de librerías y sus licencias, para detectar alguna que obligue a abrir el código."),
     ("Protección de datos", "Registro de tratamientos, contratos con proveedores que tratan datos y dónde están alojados."),
@@ -189,7 +189,7 @@ PAGINAS = {
  "lead": "La memoria técnica para ENISA o CDTI es el documento en el que se juega buena parte de la financiación: explica qué vas a desarrollar, por qué es novedoso y cómo lo harás.",
  "respuesta": "Una memoria técnica para ENISA o CDTI describe el proyecto de la empresa: el problema, la solución tecnológica, su grado de novedad frente a lo que ya existe, el plan de trabajo con hitos, el equipo y el presupuesto. Cada organismo y cada línea tiene su formulario y sus criterios, así que la memoria se adapta a la convocatoria concreta.",
  "secciones": [
-  ("¿Qué partes redactamos contigo?", None, [
+  ("¿Qué partes redactamos contigo?", "Redactamos contigo el estado del arte con referencias, la novedad e incertidumbre técnica que justifica la I+D, el plan de trabajo con hitos y entregables y un presupuesto ligado a cada tarea.", [
     ("Estado del arte", "Qué soluciones existen y en qué se diferencia la tuya, con referencias comprobables."),
     ("Novedad e incertidumbre técnica", "Qué no se sabe resolver todavía y cómo lo vais a abordar, lo que separa un proyecto de I+D de un desarrollo normal."),
     ("Plan de trabajo", "Paquetes de trabajo, hitos y entregables con fechas realistas."),
@@ -211,13 +211,13 @@ PAGINAS = {
  "lead": "Preparamos el pitch y la web en inglés de tu startup para que un inversor o cliente internacional entienda en un minuto qué haces, para quién y por qué ahora.",
  "respuesta": "Un pitch y una web en inglés para una startup no son una traducción del material en español: se reescriben para el lector internacional, con frases cortas, la terminología del sector y las cifras en el formato que espera. Deck, web y perfil de la empresa deben contar lo mismo con las mismas palabras.",
  "secciones": [
-  ("¿Qué incluye?", None, [
+  ("¿Qué incluye?", "Incluye el pitch deck con las secciones que esperan los inversores, una web en inglés coherente con él, un one-pager para enviar antes de la primera reunión y un guion para ensayar la presentación oral.", [
     ("Pitch deck", "Problema, solución, mercado, tracción, modelo de negocio, equipo y uso de fondos, en pocas diapositivas."),
     ("Web en inglés", "Portada y páginas de producto con el mismo mensaje del deck, con versión en español si la necesitas."),
     ("One-pager", "El resumen de una página que se envía antes de la primera reunión."),
     ("Guion de la presentación", "Para ensayar el pitch oral en inglés ajustado a tiempo."),
   ]),
-  ("¿Qué errores evitamos?", None, [
+  ("¿Qué errores evitamos?", "Evitamos traducciones literales que suenan forzadas en inglés, cifras sin moneda o métricas sin definir y diferencias de mensaje entre la web y el deck que hagan dudar al inversor.", [
     ("Traducción literal", "Expresiones que en inglés suenan raras o demasiado formales."),
     ("Cifras sin contexto", "Importes sin moneda clara o métricas sin definir."),
     ("Mensajes distintos", "Que la web diga una cosa y el deck otra."),
@@ -237,13 +237,13 @@ PAGINAS = {
  "lead": "La due diligence técnica le dice al inversor si la tecnología de una startup aguanta lo que promete el pitch: si escala, si es suya, si es segura y si depende de una sola persona.",
  "respuesta": "Una due diligence técnica es la revisión independiente de la tecnología de una empresa antes de invertir en ella o comprarla. Analiza código, arquitectura, seguridad, propiedad intelectual, deuda técnica y equipo, y termina en un informe con los riesgos clasificados por gravedad y lo que costaría, a grandes rasgos, corregirlos.",
  "secciones": [
-  ("¿Qué se revisa?", None, [
+  ("¿Qué se revisa?", "Se revisan la calidad del código y si la arquitectura aguanta el crecimiento, la seguridad, las dependencias de proveedores o personas clave y si lo construido coincide con lo que cuenta el pitch.", [
     ("Código y arquitectura", "Calidad, pruebas automáticas, documentación y si el diseño soporta el crecimiento previsto."),
     ("Seguridad", "Gestión de accesos, cifrado, copias y vulnerabilidades conocidas en las dependencias."),
     ("Dependencias críticas", "Proveedores, APIs o personas sin los que el producto deja de funcionar."),
     ("Coherencia con el pitch", "Si lo que existe coincide con lo que se ha presentado como hecho."),
   ]),
-  ("¿Qué recibe el inversor?", None, [
+  ("¿Qué recibe el inversor?", "El inversor recibe una página con la conclusión y los riesgos principales, el detalle de cada hallazgo con evidencia, gravedad y recomendación, y los puntos que conviene exigir antes o después del cierre.", [
     ("Informe ejecutivo", "Una página con la conclusión y los riesgos principales."),
     ("Detalle técnico", "Cada hallazgo con su evidencia, gravedad y recomendación."),
     ("Condiciones sugeridas", "Puntos que puede pedir resolver antes o después del cierre."),
@@ -263,7 +263,7 @@ PAGINAS = {
  "lead": "La valoración de proyectos con IA ayuda a un inversor a leer decenas de pitch decks y documentos al mes y a compararlos con los mismos criterios, sin delegar la decisión.",
  "respuesta": "Valorar proyectos con IA consiste en usar un agente que lee los materiales que envían las startups, extrae los datos clave (sector, fase, métricas, equipo y ronda), los compara con la tesis de inversión del fondo y prepara una ficha con dudas y datos que faltan. El análisis final y la decisión siguen siendo del equipo inversor.",
  "secciones": [
-  ("¿Qué hace el agente con cada proyecto?", None, [
+  ("¿Qué hace el agente con cada proyecto?", "El agente lee decks, modelos financieros y webs de cada solicitud, rellena una ficha con campos fijos, comprueba si encaja con tu tesis de inversión y anota los datos que faltan o no cuadran.", [
     ("Lee el material", "Decks, resúmenes, modelos financieros y webs que acompañan la solicitud."),
     ("Rellena una ficha", "Siempre con los mismos campos, para comparar proyectos de forma homogénea."),
     ("Contrasta con tu tesis", "Indica si encaja en tus sectores, fases y tamaños de ticket."),
@@ -285,13 +285,13 @@ PAGINAS = {
  "lead": "La mejora de participadas aplica software, automatización e IA a las empresas en las que ya has invertido, para que ganen eficiencia y lleguen mejor preparadas a la siguiente ronda o a la venta.",
  "respuesta": "Mejorar participadas significa revisar la tecnología y los procesos de cada empresa de la cartera, priorizar las mejoras con más impacto y ejecutarlas con un único equipo técnico. Al fondo le da una visión comparable de todas sus participadas y a cada empresa un plan concreto que no depende solo de sus recursos internos.",
  "secciones": [
-  ("¿Cómo se trabaja con la cartera?", None, [
+  ("¿Cómo se trabaja con la cartera?", "Se diagnostica cada participada, se reúnen sus oportunidades en un mapa común para priorizar, se ejecutan los proyectos de gestión, automatización o IA que necesite cada una y el fondo recibe informes de avance.", [
     ("Diagnóstico por empresa", "Procesos manuales, herramientas, datos y riesgos tecnológicos de cada participada."),
     ("Mapa común", "Un cuadro con las oportunidades de todas, para decidir dónde poner el esfuerzo primero."),
     ("Proyectos de mejora", "Programa de gestión, automatizaciones o agentes de IA, según lo que necesite cada una."),
     ("Seguimiento", "Informes periódicos al fondo con el avance de cada proyecto."),
   ]),
-  ("¿Qué aporta un solo equipo para varias empresas?", None, [
+  ("¿Qué aporta un solo equipo para varias empresas?", "Un único equipo permite reutilizar en una participada lo que ya funciona en otra del mismo sector, medir todas con indicadores comparables y tratar con un solo interlocutor técnico.", [
     ("Soluciones reutilizables", "Lo que funciona en una participada puede adaptarse a otra del mismo sector."),
     ("Datos comparables", "Indicadores con las mismas definiciones en toda la cartera."),
     ("Menos proveedores", "Un interlocutor técnico en lugar de uno distinto por empresa."),
@@ -311,13 +311,13 @@ PAGINAS = {
  "lead": "Un asistente personal con IA privado organiza tu agenda, tu correo, tus viajes y tus documentos sin que tu información se mezcle con la de nadie ni salga de un entorno controlado.",
  "respuesta": "Un asistente personal con IA privado es un agente configurado para una persona o una familia, conectado solo a sus cuentas y documentos, que prepara resúmenes, propone respuestas, organiza agenda y viajes y recuerda vencimientos. Funciona en un entorno aislado, con permisos limitados y sin enviar nada en tu nombre si no lo apruebas.",
  "secciones": [
-  ("¿Qué puede llevar por ti?", None, [
+  ("¿Qué puede llevar por ti?", "Tu asistente puede organizar la agenda y preparar cada reunión, resumir correo y mensajes con borradores para revisar, reunir tus viajes en un itinerario y avisarte de seguros, documentos y renovaciones que vencen.", [
     ("Agenda y compromisos", "Propone huecos, avisa de solapes y prepara una ficha breve de cada reunión."),
     ("Correo y mensajes", "Resume lo importante del día y redacta borradores que tú o tu secretaría revisáis."),
     ("Viajes", "Reúne reservas, horarios y documentos en un itinerario único."),
     ("Vencimientos", "Seguros, pasaportes, revisiones de vehículos y de propiedades, renovaciones."),
   ]),
-  ("¿Cómo se protege tu privacidad?", None, [
+  ("¿Cómo se protege tu privacidad?", "Tu privacidad se protege con un entorno exclusivo que no entrena modelos, la opción de alojarlo en un servidor propio, accesos limitados para cada persona de tu entorno y un único técnico con confidencialidad firmada.", [
     ("Entorno exclusivo", "Tus datos no se comparten con otros clientes ni se usan para entrenar modelos."),
     ("Opción en servidor propio", "Para quien no quiere que nada pase por la nube de un tercero."),
     ("Accesos por persona", "Tu secretaría, tu family office o tu familia ven solo lo que autorices."),
@@ -338,7 +338,7 @@ PAGINAS = {
  "lead": "Diseñamos la domótica de tu villa o casa de lujo junto al arquitecto y el interiorista, para que la tecnología se integre en la obra y no se note en la decoración.",
  "respuesta": "La domótica de una villa de lujo es un proyecto que une en un solo sistema iluminación, climatización, persianas, sonido, riego, piscina, accesos y seguridad. Se planifica sobre los planos, se instala con equipos de gama profesional y se entrega documentada, para que cualquier técnico autorizado pueda mantenerla.",
  "secciones": [
-  ("¿Cómo se desarrolla el proyecto?", None, [
+  ("¿Cómo se desarrolla el proyecto?", "El proyecto arranca sobre los planos con arquitecto e interiorista, integra clima, piscina, riego y seguridad en una sola interfaz, define perfiles para familia, invitados y servicio y termina con documentación completa.", [
     ("Sobre los planos", "Decidimos con arquitecto e interiorista dónde van pulsadores, sensores, altavoces y cuadros."),
     ("Integración de sistemas", "Clima, piscina, riego o seguridad de distintos fabricantes, gobernados desde una sola interfaz."),
     ("Perfiles de uso", "Control distinto para la familia, los invitados y el personal de servicio."),
@@ -360,7 +360,7 @@ PAGINAS = {
  "lead": "Si tienes varias viviendas, la gestión de varias propiedades desde un solo panel te dice qué pasa en cada una (alarmas, temperatura, consumos, visitas del personal) sin llamar a nadie.",
  "respuesta": "Un panel de gestión de varias propiedades agrupa la información de todas tus casas: estado de alarmas y sensores, consumos, tareas de mantenimiento, proveedores y visitas del personal. Sirve a propietarios con residencias en distintas ciudades o países y a quien administra el patrimonio inmobiliario de una familia.",
  "secciones": [
-  ("¿Qué ves de cada casa?", None, [
+  ("¿Qué ves de cada casa?", "De cada casa ves el estado de alarma, clima, agua y electricidad, el calendario de mantenimientos con su proveedor, los accesos del personal y la opción de prepararla antes de llegar.", [
     ("Estado en tiempo real", "Alarma, temperatura, humedad, agua y electricidad, con avisos solo cuando algo se sale de lo normal."),
     ("Mantenimientos", "Revisiones de caldera, piscina, jardín o ascensor con su calendario y su proveedor."),
     ("Personal y accesos", "Quién ha entrado, cuándo y con qué código, sin cámaras en zonas privadas."),
@@ -382,7 +382,7 @@ PAGINAS = {
  "lead": "La protección frente a deepfakes y suplantación prepara a tu familia y a tu equipo para no creerse una llamada, un audio o un vídeo falso con tu cara o tu voz.",
  "respuesta": "Protegerse de la suplantación y los deepfakes combina tres cosas: reducir la información pública con la que se puede imitar a una persona, vigilar perfiles y anuncios falsos que usan su nombre o su imagen, y tener un protocolo de verificación para que nadie mueva dinero ni datos solo por una llamada, un audio o una videollamada.",
  "secciones": [
-  ("¿Qué incluye?", None, [
+  ("¿Qué incluye?", "Incluye un protocolo para verificar peticiones urgentes por un canal alternativo, la búsqueda periódica de perfiles o anuncios que usen tu identidad, la reducción de tu exposición pública y formación práctica para tu entorno.", [
     ("Protocolo de verificación", "Clave o pregunta acordada y un canal alternativo para confirmar cualquier petición urgente."),
     ("Vigilancia de suplantaciones", "Búsqueda periódica de perfiles, webs o anuncios que usen tu nombre o tu imagen."),
     ("Reducción de exposición", "Revisión de qué audios, vídeos y datos tuyos son públicos y cuáles conviene retirar."),
@@ -404,13 +404,13 @@ PAGINAS = {
  "lead": "Un técnico personal 24/7 es tu contacto único para cualquier problema con móviles, ordenadores, redes, domótica o cuentas, a cualquier hora y con confidencialidad firmada.",
  "respuesta": "El servicio de técnico personal 24/7 asigna a una persona o familia un interlocutor fijo que conoce todos sus dispositivos y sistemas, atiende en remoto a cualquier hora y coordina la visita presencial cuando hace falta. También lleva el mantenimiento preventivo, las actualizaciones y las copias, para que los problemas aparezcan menos.",
  "secciones": [
-  ("¿Qué cubre?", None, [
+  ("¿Qué cubre?", "Cubre los dispositivos de toda la familia, las cuentas y su seguridad, la red, la domótica y los equipos de casa y despacho, y la asistencia remota cuando algo falla estando de viaje.", [
     ("Dispositivos", "Móviles, tabletas, ordenadores, televisores y equipos de sonido de toda la familia."),
     ("Cuentas y seguridad", "Contraseñas, verificación en dos pasos y recuperación de cuentas bloqueadas."),
     ("Casa y despacho", "Wifi, domótica, alarmas conectadas e impresoras."),
     ("De viaje", "Ayuda remota cuando algo falla fuera de casa, en cualquier país."),
   ]),
-  ("¿Por qué una sola persona?", None, [
+  ("¿Por qué una sola persona?", "Una sola persona ya conoce cómo está montado todo, reduce el número de gente con acceso a tu vida digital y responde con su nombre del resultado de cada intervención.", [
     ("Contexto", "No tienes que explicar cada vez cómo está montado todo."),
     ("Discreción", "Menos personas con acceso a tu vida digital."),
     ("Responsabilidad clara", "Un nombre al que llamar y que responde del resultado."),
@@ -430,7 +430,7 @@ PAGINAS = {
  "lead": "Un inventario digital de patrimonio reúne en un solo lugar tus bienes de valor (arte, joyas, relojes, vehículos, mobiliario o vino) con fotos, documentos y ubicación.",
  "respuesta": "Un inventario digital de patrimonio es una base de datos privada con cada bien de valor de una persona o familia: descripción, fotografías, número de serie, factura o certificado de autenticidad, tasación, póliza de seguro y casa en la que se encuentra. Facilita reclamar al seguro, organizar una mudanza o un préstamo a una exposición y ordenar una herencia.",
  "secciones": [
-  ("¿Qué se registra de cada bien?", None, [
+  ("¿Qué se registra de cada bien?", "De cada bien se registran fotos, medidas y marcas que lo identifican, sus facturas, certificados y procedencia, dónde está y por dónde ha pasado, y la póliza que lo asegura con su valor.", [
     ("Identificación", "Fotos de detalle, medidas, marcas, firma o número de serie."),
     ("Documentación", "Facturas, certificados, tasaciones y procedencia."),
     ("Ubicación y movimientos", "En qué casa está y si se ha prestado, restaurado o trasladado."),
@@ -452,13 +452,13 @@ PAGINAS = {
  "lead": "Preparar tu legado digital familiar evita que, el día que faltes o no puedas gestionarlo, tu familia se encuentre con cuentas bloqueadas, fotos perdidas y servicios que siguen cobrando.",
  "respuesta": "El legado digital familiar es el conjunto de cuentas, archivos, suscripciones y activos digitales de una persona, ordenado y documentado para que sus herederos o personas de confianza puedan acceder a ellos o cerrarlos. Se prepara en vida, con instrucciones claras y en coordinación con el notario o el abogado que lleve el testamento.",
  "secciones": [
-  ("¿Qué se ordena?", None, [
+  ("¿Qué se ordena?", "Se ordenan las cuentas online con instrucciones para cada una, las fotos y vídeos familiares con copia segura, los documentos importantes digitalizados y los activos digitales con valor, como dominios o webs.", [
     ("Cuentas", "Correo, redes sociales, banca online, nubes y suscripciones, con qué hacer con cada una."),
     ("Recuerdos", "Fotos y vídeos familiares reunidos, organizados y duplicados en una copia segura."),
     ("Documentos", "Escrituras, pólizas, contratos y archivos importantes digitalizados y localizables."),
     ("Activos digitales", "Dominios, webs y otros bienes digitales con valor, y cómo se transfieren."),
   ]),
-  ("¿Cómo se deja preparado?", None, [
+  ("¿Cómo se deja preparado?", "Se deja preparado activando los contactos de legado de las grandes plataformas, guardando las claves en un sistema de custodia seguro y redactando instrucciones claras para los herederos que puedan citarse en el testamento.", [
     ("Contactos de legado", "Activamos las opciones de herencia o contacto de legado que ofrecen las grandes plataformas."),
     ("Custodia de accesos", "Un sistema seguro para que las claves no estén en un papel ni en un solo móvil."),
     ("Instrucciones para herederos", "Un documento claro al que se puede hacer referencia en el testamento."),
@@ -478,13 +478,13 @@ PAGINAS = {
  "lead": "Llevamos la conectividad a toda la finca: wifi estable en la vivienda, el jardín, la piscina, la casa de invitados, las cuadras o la bodega, aunque estén a cientos de metros.",
  "respuesta": "Conectar toda una finca requiere un estudio de cobertura, enlaces entre edificios (por cable, fibra o radioenlace punto a punto), puntos de acceso profesionales de interior y exterior y, en zonas rurales, una segunda conexión a internet por satélite o por red móvil por si falla la principal. Todo se gestiona desde un único sistema.",
  "secciones": [
-  ("¿Qué incluye el proyecto?", None, [
+  ("¿Qué incluye el proyecto?", "El proyecto incluye medir la cobertura sobre el terreno, unir los edificios con fibra o radioenlaces, instalar wifi exterior en jardín y piscina y añadir una segunda conexión a internet que entra sola.", [
     ("Estudio de cobertura", "Medición sobre el terreno y plano de dónde va cada equipo."),
     ("Enlaces entre edificios", "Fibra o radioenlaces para llevar la red a construcciones alejadas sin zanjas innecesarias."),
     ("Wifi exterior", "Puntos de acceso preparados para la intemperie en jardín, piscina y zonas de estar."),
     ("Conexión de respaldo", "Una segunda salida a internet que entra sola si la principal se corta."),
   ]),
-  ("¿Qué más aprovecha esa red?", None, [
+  ("¿Qué más aprovecha esa red?", "La misma red sirve para riego, portones, sensores y cámaras exteriores, permite separar a familia, invitados, personal y equipos en redes distintas y nos deja detectar en remoto cualquier equipo caído.", [
     ("Sensores y seguridad perimetral", "La misma red da servicio a riego, portones, sensores y cámaras de exterior."),
     ("Redes separadas", "Familia, invitados, personal y equipos de la casa, cada uno en su red."),
     ("Vigilancia remota", "Si un equipo cae, nos enteramos antes de que lo notes."),
@@ -504,7 +504,7 @@ PAGINAS = {
  "lead": "Nos ocupamos de la tecnología de tu evento privado (red para invitados, sonido, pantallas, retransmisión y control de acceso) para que todo funcione y nada salga del evento sin tu permiso.",
  "respuesta": "La tecnología para eventos privados cubre lo que hace que una boda, una celebración o una reunión exclusiva funcione: internet para cientos de móviles a la vez, sonido y pantallas, retransmisión privada para quien no puede asistir, acreditaciones con QR y una política clara sobre fotos y redes sociales. Se coordina con quien organiza el evento.",
  "secciones": [
-  ("¿Qué podemos montar?", None, [
+  ("¿Qué podemos montar?", "Para un evento podemos montar wifi temporal para muchos invitados, una retransmisión privada para quien lo sigue a distancia, invitaciones con QR y control de aforo y una galería cerrada con las fotos.", [
     ("Red para invitados", "Wifi temporal pensado para mucha gente a la vez, separado de la red de la casa."),
     ("Retransmisión privada", "Emisión con acceso restringido para familiares o socios que siguen el evento a distancia."),
     ("Acreditaciones y aforo", "Invitaciones con QR, lista de invitados y control en la entrada."),

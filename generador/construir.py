@@ -1,4 +1,4 @@
-import os, shutil, sys
+import os, shutil, sys, re
 from html import escape as e
 sys.path.insert(0, os.path.dirname(__file__))
 import formacion as FORM
@@ -10,6 +10,8 @@ from blog import ARTICULOS
 from alt_blog import ALT
 import blog_formacion as BF
 import blog_pymes as BP
+import resumenes_blog as RB
+import enlaces_normas as EN
 ARTICULOS = [(a[0], a[1], a[2], a[3], a[4], a[5], a[6] + BP.EXCEL_EXTRA) if a[0] == "como-dejar-de-usar-excel-en-mi-empresa" else a for a in ARTICULOS]
 NUEVOS = {a[0] for a in BF.ARTICULOS + BP.ARTICULOS}
 ARTICULOS = BP.ARTICULOS + BF.ARTICULOS + ARTICULOS
@@ -107,7 +109,7 @@ def pie(r):
 <div class="pie-cols"><div><b>Productos</b>{prod}</div><div><b>Para quién</b>{quien}</div>
 <div><b>Recursos</b><a href="{r}guias/index.html">Guías para emprender</a><a href="{r}blog/index.html">Blog</a><a href="{r}normativas.html">Normativas</a><a href="{r}sectores.html">Sectores</a><a href="{r}precios.html">Precios</a><a href="{r}mapa-web.html">Mapa de la web</a></div>
 <div><b>Empresa</b><a href="{r}sobre-nosotros.html">Sobre nosotros</a><a href="{r}partners.html">Hazte partner</a><a href="{r}contacto.html">Contacto</a><a href="{r}contacto.html#diagnostico">Diagnóstico gratis</a></div><div><b>Contacto</b><a href="https://wa.me/34601869668" target="_blank" rel="noopener">WhatsApp 601 86 96 68</a><a href="mailto:info@studioemprende.com">info@studioemprende.com</a><span style="display:block;margin-top:8px">Calle Betis 3, 41449 Alcolea del Río (Sevilla)</span></div></div></div>
-<div class="pie-base"><span>© 2026 Studio Emprende · INTELIGENCIA SEVILLA SL · NIF B88763818</span><span><a href="{r}aviso-legal.html">Aviso legal</a> · <a href="{r}privacidad.html">Privacidad</a> · <a href="{r}cookies.html">Cookies</a> · <a href="#" data-abrir-cookies>Configurar cookies</a></span></div>
+<div class="pie-base"><span>© 2026 Studio Emprende · INTELIGENCIA SEVILLA SL · NIF B88763818 · Página actualizada el <!--FECHA_ACT--></span><span><a href="{r}aviso-legal.html">Aviso legal</a> · <a href="{r}privacidad.html">Privacidad</a> · <a href="{r}cookies.html">Cookies</a> · <a href="#" data-abrir-cookies>Configurar cookies</a></span></div>
 </div></footer>
 <script src="{r}assets/js/main.js"></script>
 <div class="cookies" id="cookies" role="dialog" aria-live="polite" aria-label="Aviso de cookies" hidden>
@@ -134,7 +136,7 @@ ORG = {"@type": "Organization", "@id": DOM + "/#org", "name": "Studio Emprende",
        "description": "Software de gestión modular, agentes de IA y webs con SEO para autónomos, pymes y empresas. 100 % online en toda España.",
        "areaServed": "ES", "knowsLanguage": "es", "email": EMAIL, "telephone": "+34 601 86 96 68",
        "contactPoint": {"@type": "ContactPoint", "telephone": "+34 601 86 96 68", "email": EMAIL, "contactType": "customer service", "availableLanguage": "es"},
-       "legalName": "INTELIGENCIA SEVILLA SL", "alternateName": "Studio Emprende", "taxID": "B88763818", "vatID": "ESB88763818",
+       "sameAs": ["https://www.linkedin.com/company/studio-emprende", "https://maps.google.com/?cid=15547878701347304086"], "legalName": "INTELIGENCIA SEVILLA SL", "alternateName": "Studio Emprende", "taxID": "B88763818", "vatID": "ESB88763818",
        "address": {"@type": "PostalAddress", "streetAddress": "Calle Betis 3", "postalCode": "41449", "addressLocality": "Alcolea del Río", "addressRegion": "Sevilla", "addressCountry": "ES"}}
 
 def _meta(d):
@@ -224,12 +226,18 @@ def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None,
     _k = _clave(ruta)
     if _k in AMPL:
         cuerpo, faqs = _ampliar(cuerpo, faqs, AMPL[_k]); AMPL_USADAS.add(_k)
+    for (_rr, _hh), _txt in RB.RESP_H.items():
+        if _clave(_rr) == _clave(ruta):
+            for _hx in (_hh, e(_hh)):
+                _m = re.search(r"(<h([23])[^>]*>)%s(</h\2>)" % re.escape(_hx), cuerpo)
+                if _m:
+                    cuerpo = cuerpo[:_m.end()] + '<p class="resp-directa">%s</p>' % e(_txt) + cuerpo[_m.end():]; break
     url = DOM + "/" + ruta.replace("index.html", "")
     titulo = {_clave(k): v for k, v in TITULOS.items()}.get(_clave(ruta), titulo)
     titulo = _tit(titulo); desc = _meta(desc)
     grafo = [ORG, {"@type": "WebSite", "@id": DOM + "/#web", "url": DOM + "/", "name": "Studio Emprende", "inLanguage": "es", "publisher": {"@id": DOM + "/#org"}}]
     wp = {"@type": tipo_pagina, "@id": url, "url": url, "name": titulo, "description": desc, "inLanguage": "es", "isPartOf": {"@id": DOM + "/#web"}, "about": {"@id": DOM + "/#org"}}
-    if fecha: wp["dateModified"] = fecha
+    wp["dateModified"] = "__FMOD__"
     if extra_pagina: wp.update(extra_pagina)
     grafo.append(wp)
     if MIGAS:
@@ -316,7 +324,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <span class="wa-burbuja"><b>¿Hablamos?</b>Te respondemos por WhatsApp</span>
 <span class="wa-icono"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.6 3 15.6c0 2.5.8 4.9 2.1 6.9L3.6 29l6.7-1.7c1.8 1 3.8 1.5 5.7 1.5 7.2 0 13-5.6 13-12.6S23.2 3 16 3zm0 23.1c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-4 1 .9-3.8-.2-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.6 10 10.2 5.5 16 5.5S26.4 10 26.4 15.6 21.8 26.1 16 26.1zm5.7-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.4 3.3c.2.2 2.4 3.6 5.8 5 2.9 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></span></a>
 </body>
-</html>""".format(t=e(titulo), d=e(desc), dom=DOM, ruta=ruta.replace("index.html", ""), canonical=("" if ruta == "404.html" else '<link rel="canonical" href="%s/%s">' % (DOM, CANON.get(ruta, ruta).replace("index.html", ""))), r=r, cab=cabecera(r), c=cuerpo, pie=pie(r), seo=seo, tipo=tipo, og=OGIMG[ruta], bing=('\n<meta name="msvalidate.01" content="AB0BB421B154681CB3B932E814F90956" />' if ruta == "index.html" else ""), wan=WA_NUM, wat=_q("Hola, vengo de la web de Studio Emprende (%s) y quiero información." % titulo.split(" · ")[0]))
+</html>""".format(t=e(titulo), d=e(desc), dom=DOM, ruta=ruta.replace("index.html", ""), canonical=("" if (ruta == "404.html" or ruta in NOINDEX) else '<link rel="canonical" href="%s/%s">' % (DOM, CANON.get(ruta, ruta).replace("index.html", ""))), r=r, cab=cabecera(r), c=cuerpo, pie=pie(r), seo=seo, tipo=tipo, og=OGIMG[ruta], bing=('\n<meta name="msvalidate.01" content="AB0BB421B154681CB3B932E814F90956" />' if ruta == "index.html" else ""), wan=WA_NUM, wat=_q("Hola, vengo de la web de Studio Emprende (%s) y quiero información." % titulo.split(" · ")[0]))
+    if ruta not in NOINDEX and ruta.split("/")[0] in ("blog", "guias", "servicios"):
+        html = EN.enlazar(html)
     p = os.path.join(OUT, ruta); os.makedirs(os.path.dirname(p), exist_ok=True)
     open(p, "w").write(html)
     PAGS.append(ruta)
@@ -388,7 +398,7 @@ inicio = """
 <h1>Tu negocio, <span class="acento">llave en mano</span>.</h1>
 <p class="lead">Programa de gestión modular, agentes de IA y web profesional en una sola cuenta. Empieza con lo que necesitas y crece cuando quieras.</p>
 <div class="botones"><a class="btn btn-p" href="contacto.html#diagnostico">Pide tu diagnóstico gratis</a><a class="btn btn-s" href="precios.html">Ver los packs</a></div>
-<div class="confianza"><span>Una sola cuenta</span><span>100 %% online</span><span>Toda España</span><span>Soporte que responde</span></div><p class="mut" style="font-size:13px;margin-top:14px">Página actualizada el <!--FECHA_ACT-->.</p></div>
+<div class="confianza"><span>Una sola cuenta</span><span>100 %% online</span><span>Toda España</span><span>Soporte que responde</span></div></div>
 <div class="hero-card" data-nosnippet aria-label="Ejemplo del agente PIX trabajando"><div class="estado"><span>Agente PIX · en marcha</span><b>● activo</b></div>
 <div class="fila">Nuevo contacto por WhatsApp: «Necesito una web y facturar con Verifactu»</div>
 <div class="fila ok"><span>✓ Contacto creado en el CRM</span><span>✓ Pack «Negocio en Marcha» propuesto</span><span>✓ Reunión agendada el jueves a las 10:00</span></div>
@@ -466,7 +476,7 @@ inicio = """
 </div></section>
 
 <section class="sec"><div class="w" style="display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:center">
-<div style="flex:999 1 420px;min-width:0"><p class="kicker">Normativas 2026-2027</p><h2>¿Te afecta Verifactu, el fichaje digital o el AI Act?</h2><p class="lead" style="margin-top:12px">Depende de tu forma jurídica y de tu actividad. Hacienda ha anunciado que Verifactu se retrasa a octubre de 2028 para todos; hasta que se publique en el BOE siguen vigentes el 1/1/2027 para sociedades y el 1/7/2027 para el resto. La factura electrónica entre empresas llega el 6/10/2027 (más de 8 M€) y el 6/10/2028 (resto). La formación en IA del AI Act es obligatoria desde el 2/2/2025 y el registro de jornada, desde 2019.</p><p class="mut" style="margin-top:10px;font-size:14px">Fuentes oficiales: <a href="https://www.boe.es/eli/es/rd/2023/12/05/1007" target="_blank" rel="noopener">RD 1007/2023 (Verifactu)</a>, <a href="https://www.boe.es/eli/es/l/2022/09/28/18" target="_blank" rel="noopener">Ley 18/2022 (factura electrónica)</a>, <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener">Reglamento (UE) 2024/1689 (AI Act)</a> y <a href="https://www.boe.es/eli/es/rdl/2019/03/08/8" target="_blank" rel="noopener">RDL 8/2019 (registro de jornada)</a>. Normativa revisada el <time datetime="2026-10-12">12 de octubre de 2026</time>.</p><p style="margin-top:6px"><a href="normativas.html">Ver todas las normas, plazos y fuentes oficiales →</a></p></div>
+<div style="flex:999 1 420px;min-width:0"><p class="kicker">Normativas 2026-2027</p><h2>¿Te afecta Verifactu, el fichaje digital o el AI Act?</h2><p class="lead" style="margin-top:12px">Depende de tu forma jurídica y tu actividad. Verifactu: 1/1/2027 para sociedades y 1/7/2027 para el resto, con un aplazamiento a octubre de 2028 anunciado y pendiente de BOE. Factura electrónica B2B: 6/10/2027 o 6/10/2028 según facturación. Formación en IA: obligatoria desde el 2/2/2025. Registro de jornada: desde 2019.</p><p class="mut" style="margin-top:10px;font-size:14px">Fuentes oficiales: <a href="https://www.boe.es/eli/es/rd/2023/12/05/1007" target="_blank" rel="noopener">RD 1007/2023 (Verifactu)</a>, <a href="https://www.boe.es/eli/es/l/2022/09/28/18" target="_blank" rel="noopener">Ley 18/2022 (factura electrónica)</a>, <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener">Reglamento (UE) 2024/1689 (AI Act)</a> y <a href="https://www.boe.es/eli/es/rdl/2019/03/08/8" target="_blank" rel="noopener">RDL 8/2019 (registro de jornada)</a>. Normativa revisada el <time datetime="2026-10-12">12 de octubre de 2026</time>.</p><p style="margin-top:6px"><a href="normativas.html">Ver todas las normas, plazos y fuentes oficiales →</a></p></div>
 <a class="btn btn-s" href="normativas.html">Ver normativas</a>
 </div></section>
 
@@ -687,39 +697,46 @@ pagina("gracias.html", "Mensaje recibido · Studio Emprende", "Hemos recibido tu
 
 # ---------- SOBRE NOSOTROS ----------
 pagina("sobre-nosotros.html", "Sobre nosotros · Studio Emprende", "Studio Emprende ayuda a emprendedores y pymes con software, IA y webs, 100 % online.",
-       '<section class="page-hero"><div class="w">%s<h1>Sobre nosotros</h1><p class="lead">Ayudamos a quien emprende a tener un negocio ordenado, visible y automatizado desde el primer día.</p></div></section><section class="sec"><div class="w rejilla"><div class="tarjeta"><h3>Siempre respondemos</h3><p>Un único interlocutor que conoce tu negocio.</p></div><div class="tarjeta"><h3>Entregamos en plazo</h3><p>Plazos cerrados desde el primer día.</p></div><div class="tarjeta"><h3>100 %% online</h3><p>Trabajamos con negocios de toda España.</p></div></div></div>%s</section>%s%s' % (migas("", ("Sobre nosotros", None)), HIST, FORM.equipo_html(""), cta("")), tipo_pagina="AboutPage", ld_extra=FORM.JORDAN)
+       '<section class="page-hero"><div class="w">%s<h1>Sobre nosotros</h1><p class="lead">Ayudamos a quien emprende a tener un negocio ordenado, visible y automatizado desde el primer día.</p></div></section><section class="sec"><div class="w rejilla"><div class="tarjeta"><h3>Un interlocutor fijo</h3><p>Hablas siempre con la misma persona, que conoce tu negocio.</p></div><div class="tarjeta"><h3>Plazos por escrito</h3><p>Cada propuesta lleva sus fases y fechas antes de empezar.</p></div><div class="tarjeta"><h3>100 %% online</h3><p>Trabajamos con negocios de toda España.</p></div></div></div>%s</section>%s%s' % (migas("", ("Sobre nosotros", None)), HIST, FORM.equipo_html(""), cta("")), tipo_pagina="AboutPage", ld_extra=FORM.JORDAN)
 
 pagina("partners.html", PT.TITULO + " · Studio Emprende", PT.META, PT.html(migas("", ("Partners", None)), _faq_html(PT.FAQS), DOM) + cta(""), faqs=PT.FAQS)
 
 LEG = {"aviso-legal": AVISO, "privacidad": PRIVACIDAD, "cookies": COOKIES}
 # ---------- LEGALES ----------
 for slug, t in [("aviso-legal", "Aviso legal"), ("privacidad", "Política de privacidad"), ("cookies", "Política de cookies")]:
-    pagina(slug + ".html", "%s · Studio Emprende" % t, t + " de Studio Emprende.",
-           '<section class="page-hero"><div class="w">%s<h1>%s</h1></div></section><section class="sec"><div class="w legal-txt"><p class="mut">Última actualización: octubre de 2026.</p>%s</div></section>' % (migas("", (t, None)), t, LEG[slug]))
+    _tl = {"aviso-legal": "Aviso legal y datos de la empresa · Studio Emprende", "privacidad": "Política de privacidad y protección de datos · Studio Emprende", "cookies": "Política de cookies y cómo gestionarlas · Studio Emprende"}[slug]
+    _ctx = {"aviso-legal": 'Aquí tienes los datos de la empresa titular de Studio Emprende y las condiciones de uso de la web. Para saber cómo tratamos tus datos, consulta la <a href="privacidad.html">política de privacidad</a>; si prefieres hablar con nosotros, tienes todas las vías en <a href="contacto.html">contacto</a>.',
+            "privacidad": 'Esta política explica qué datos recogemos cuando nos escribes o pides un <a href="contacto.html#diagnostico">diagnóstico gratis</a>, para qué los usamos y cómo ejercer tus derechos. Las cookies tienen su propia <a href="cookies.html">política de cookies</a>, y los datos de la empresa están en el <a href="aviso-legal.html">aviso legal</a>.',
+            "cookies": 'Esta página detalla qué cookies usa la web, para qué sirven y cómo cambiar tu elección. El tratamiento del resto de tus datos se explica en la <a href="privacidad.html">política de privacidad</a>, y quién está detrás de la web, en <a href="sobre-nosotros.html">sobre nosotros</a>.'}[slug]
+    pagina(slug + ".html", _tl, t + " de Studio Emprende.",
+           '<section class="page-hero"><div class="w">%s<h1>%s</h1></div></section><section class="sec"><div class="w legal-txt"><p class="mut">Última actualización: octubre de 2026.</p><p>%s</p>%s</div></section>' % (migas("", (t, None)), t, _ctx, LEG[slug]))
 
 pagina("404.html", "Página no encontrada · Studio Emprende", "La página que buscas no existe.",
        '<section class="sec"><div class="w" style="text-align:center;display:flex;flex-direction:column;gap:18px;align-items:center"><img src="assets/img/simbolo.svg" alt="" width="70" height="101"><h1>Esta página no existe</h1><p class="lead">Puede que el enlace haya cambiado.</p><div class="botones"><a class="btn btn-p" href="index.html">Ir al inicio</a><a class="btn btn-s" href="mapa-web.html">Ver el mapa de la web</a></div></div></section>', indexar=False)
 
 # ---------- BLOG ----------
 pagina("blog/index.html", "Blog · Studio Emprende", "Artículos sobre gestión, normativas, IA y webs para autónomos y pymes.",
-       '<section class="page-hero"><div class="w">%s<h1>Blog</h1><p class="lead">Ideas claras sobre gestión, normativas, inteligencia artificial y webs, sin tecnicismos.</p></div></section><section class="sec"><div class="w"><div class="rejilla">%s</div></div></section>%s' % (migas("../", ("Blog", None)), "".join(tarjeta_blog(a, "") for a in ARTICULOS), cta("../")))
+       '<section class="page-hero"><div class="w">%s<h1>Blog</h1><p class="lead">Ideas claras sobre gestión, normativas, inteligencia artificial y webs, sin tecnicismos.</p><p class="firma">Escritos y revisados por el equipo de Studio Emprende. <a href="../politica-editorial.html">Lee nuestra política editorial</a>.</p></div></section><section class="sec"><div class="w"><div class="rejilla">%s</div></div></section>%s' % (migas("../", ("Blog", None)), "".join(tarjeta_blog(a, "") for a in ARTICULOS), cta("../")))
 for slug, titulo, desc, fecha, cat, serv_rel, cuerpo in ARTICULOS:
     sr = [x for x in SECCIONES if x[0] == serv_rel][0]
     otros = "".join([tarjeta_blog(a, "") for a in ARTICULOS if a[0] != slug][:3])
     ld = ""
     _fq = FAQS_BLOG.get(slug)
     if _fq: cuerpo = cuerpo + '<h2>Preguntas frecuentes</h2>' + _faq_html(_fq)
-    _fp = BF.FECHA_ISO if slug in NUEVOS else "2026-10-12"
-    _fd = BF.FECHA_ISO if slug in FAQS_BLOG else "2026-10-12"
-    bp = {"@type": "BlogPosting", "headline": titulo, "description": desc, "inLanguage": "es", "articleSection": cat, "datePublished": _fp, "dateModified": _fd,
+    _d, _mm, _y = fecha.split(); _fp = "%s-%02d-%02d" % (_y, ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"].index(_mm) + 1, int(_d))
+    _fd = "__FMOD__"
+    _url = "%s/blog/%s" % (DOM, slug)
+    _res = RB.RESUMEN.get(slug)
+    if _res: cuerpo = '<div class="resumen"><b>En resumen</b><p>%s</p></div>' % e(_res) + cuerpo
+    bp = {"@type": "BlogPosting", "@id": _url + "#article", "headline": titulo, "description": desc, "inLanguage": "es", "articleSection": cat, "datePublished": _fp, "dateModified": _fd,
           "image": ["%s/assets/img/blog/%s.jpg" % (DOM, slug), "%s/assets/img/blog/og/%s.jpg" % (DOM, slug)], "author": {"@id": DOM + "/#org"}, "publisher": {"@id": DOM + "/#org"},
-          "mainEntityOfPage": "%s/blog/%s.html" % (DOM, slug)}
-    html = """<section class="page-hero"><div class="w">{m}<p class="kicker">{cat} · {f}</p><h1>{t}</h1><p class="lead">{d}</p></div></section>
+          "mainEntityOfPage": {"@id": _url}}
+    html = """<section class="page-hero"><div class="w">{m}<p class="kicker">{cat} · <time datetime="{fiso}">{f}</time></p><h1>{t}</h1><p class="lead">{d}</p><p class="firma">Por el <a href="../sobre-nosotros.html#equipo">equipo de Studio Emprende</a> · Actualizado el <!--FECHA_ACT-->{rev} · <a href="../politica-editorial.html">Cómo escribimos y revisamos</a></p></div></section>
 <section class="sec"><div class="w lateral"><article class="lateral-main articulo">{fp}{c}</article>
 <aside class="lateral-aside"><h3>{st}</h3><p style="color:#C9C1BB">{si}</p><a class="btn btn-claro" href="../servicios/{ss}.html">Ver el servicio</a><a class="btn btn-borde-claro" href="../contacto.html?servicio={ss}#diagnostico">Pedir diagnóstico</a></aside></div></section>
 <section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Sigue leyendo</p><h2>Otros artículos</h2></div><div class="rejilla">{o}</div></div></section>{ld}""".format(fp=foto_blog(slug, ALT.get(slug, titulo), True), 
-        m=migas("../", ("Blog", "index.html"), (titulo, None)), cat=e(cat), f=fecha, t=e(titulo), d=e(desc), c=cuerpo, sl=slug, st=e(sr[2]), si=e(sr[3]), ss=serv_rel, o=otros, ld=ld)
-    pagina("blog/%s.html" % slug, "%s · Studio Emprende" % titulo, desc, html + cta("../"), ld_extra=bp, tipo="article", og=DOM + "/assets/img/blog/og/%s.jpg" % slug, faqs=_fq)
+        m=migas("../", ("Blog", "index.html"), (titulo, None)), cat=e(cat), f=fecha, fiso=_fp, rev=(' · Normativa revisada el <time datetime="%s">%s</time>' % (REV_FECHA, "12 de octubre de 2026")) if cat == "Normativas" else "", t=e(titulo), d=e(desc), c=cuerpo, sl=slug, st=e(sr[2]), si=e(sr[3]), ss=serv_rel, o=otros, ld=ld)
+    pagina("blog/%s.html" % slug, "%s · Studio Emprende" % titulo, desc, html + cta("../"), ld_extra=bp, tipo="article", og=DOM + "/assets/img/blog/og/%s.jpg" % slug, faqs=_fq, tipo_pagina="WebPage", extra_pagina={"mainEntity": {"@id": _url + "#article"}})
 
 # ---------- GUIAS ----------
 GD = {g[0]: g for g in GUIAS}
@@ -741,24 +758,36 @@ for slug, grupo, titulo, meta, h1, resumen, secciones, faqs, servs, blogs, rel i
     aside = '<aside class="lateral-aside"><h3>Te ayudamos con esto</h3>%s<a class="btn btn-claro" href="../contacto.html?servicio=%s#diagnostico">Pedir diagnóstico gratis</a></aside>' % ("".join('<a href="../servicios/%s.html" style="color:#fff">%s →</a>' % (x[0], e(x[2])) for x in sv), servs[0])
     relh = "".join(tarjeta_guia(GD[x]) for x in rel if x in GD)
     blogh = "".join(tarjeta_blog(AD[b], "../blog/") for b in blogs if b in AD).replace('src="../../assets', 'src="../assets')
-    html = """<section class="page-hero"><div class="w">{m}<p class="kicker">Guía · {gn}</p><h1>{h1}</h1><p class="lead">{lead}</p></div></section>
+    html = """<section class="page-hero"><div class="w">{m}<p class="kicker">Guía · {gn}</p><h1>{h1}</h1><p class="lead">{lead}</p><p class="firma">Por el <a href="../sobre-nosotros.html#equipo">equipo de Studio Emprende</a> · Actualizado el <!--FECHA_ACT--> · <a href="../politica-editorial.html">Cómo escribimos y revisamos</a></p></div></section>
 <section class="sec"><div class="w lateral"><article class="lateral-main articulo"><div class="resumen"><b>Respuesta rápida</b><p>{res}</p></div>{ind}{secs}{faq}</article>{aside}</div></section>
 <section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Sigue aprendiendo</p><h2>Guías relacionadas</h2></div><div class="rejilla">{rel}</div>{blog}</div></section>""".format(
         m=migas("../", ("Guías", "index.html"), (h1, None)), gn=e(dict(GRUPOS)[grupo]), h1=e(h1), res=e(resumen), ind=indice, lead=e(meta), secs=secs, faq=faqh, aside=aside, rel=relh,
         blog=('<div class="cab" style="margin:40px 0 20px"><p class="kicker">Del blog</p></div><div class="rejilla">%s</div>' % blogh) if blogh else "")
     art = {"@type": "Article", "headline": h1, "description": meta, "inLanguage": "es", "author": {"@id": DOM + "/#org"}, "publisher": {"@id": DOM + "/#org"},
-           "datePublished": "2026-10-12", "dateModified": "2026-10-12", "mainEntityOfPage": "%s/guias/%s.html" % (DOM, slug), "image": DOM + "/assets/img/og-imagen.png",
+           "@id": "%s/guias/%s#article" % (DOM, slug), "datePublished": "2026-10-12", "dateModified": "__FMOD__", "mainEntityOfPage": {"@id": "%s/guias/%s" % (DOM, slug)}, "image": DOM + "/assets/img/og-imagen.png",
            "abstract": resumen}
-    pagina("guias/%s.html" % slug, titulo, meta, html + cta("../"), ld_extra=art, tipo="article", faqs=faqs)
+    pagina("guias/%s.html" % slug, titulo, meta, html + cta("../"), ld_extra=art, tipo="article", faqs=faqs, extra_pagina={"mainEntity": {"@id": "%s/guias/%s#article" % (DOM, slug)}})
 
 # ---------- MAPA ----------
-grupos = [("Principal", [("Inicio", "index.html"), ("Servicios", "servicios/index.html"), ("Precios y packs", "precios.html"), ("Sectores", "sectores.html"), ("Normativas", "normativas.html"), ("Sobre nosotros", "sobre-nosotros.html"), ("Programa de partners", "partners.html"), ("Contacto y diagnóstico", "contacto.html")])]
+grupos = [("Principal", [("Inicio", "index.html"), ("Servicios", "servicios/index.html"), ("Precios y packs", "precios.html"), ("Sectores", "sectores.html"), ("Normativas", "normativas.html"), ("Sobre nosotros", "sobre-nosotros.html"), ("Programa de partners", "partners.html"), ("Política editorial", "politica-editorial.html"), ("Contacto y diagnóstico", "contacto.html")])]
 for k, n in MENU:
     grupos.append((n, [(s[2], "servicios/%s.html" % s[0]) for s in by_menu(k)]))
 grupos.append(("Guías para emprender", [("Todas las guías", "guias/index.html")] + [(g[4], "guias/%s.html" % g[0]) for g in GUIAS]))
 grupos.append(("Blog", [("Todos los artículos", "blog/index.html")] + [(a[1], "blog/%s.html" % a[0]) for a in ARTICULOS]))
 grupos.append(("Legal", [("Aviso legal", "aviso-legal.html"), ("Privacidad", "privacidad.html"), ("Cookies", "cookies.html")]))
 mapa = '<div class="mapa-raiz"><a href="index.html">STUDIO EMPRENDE</a></div><div class="mapa">' + "".join('<div class="grupo"><h3>%s</h3>%s</div>' % (g, "".join('<a href="%s">%s</a>' % (h, e(t)) for t, h in ls)) for g, ls in grupos) + "</div>"
+# ---------- POLÍTICA EDITORIAL ----------
+_PE = """<section class="page-hero"><div class="w">%s<h1>Política editorial</h1><p class="lead">Cómo escribimos, revisamos y corregimos los artículos del blog y las guías de Studio Emprende.</p></div></section>
+<section class="sec"><div class="w"><div class="texto-largo">
+<h2>¿Quién escribe los artículos y las guías?</h2><p>Los escribe el equipo de Studio Emprende, la marca de INTELIGENCIA SEVILLA SL que desarrolla software de gestión, agentes de IA y webs. Usamos herramientas de inteligencia artificial como apoyo en la redacción, y una persona del equipo revisa cada texto antes de publicarlo. Puedes ver quiénes somos en <a href="sobre-nosotros.html">sobre nosotros</a>.</p>
+<h2>¿Cómo comprobamos los datos legales y los plazos?</h2><p>Cada obligación y cada fecha se contrasta con la fuente oficial: el <a href="https://www.boe.es/" target="_blank" rel="noopener">BOE</a>, la sede de la Agencia Tributaria o <a href="https://eur-lex.europa.eu/" target="_blank" rel="noopener">EUR-Lex</a> para las normas europeas. Enlazamos la norma en el propio texto y reunimos todas, con su fecha de revisión, en la página de <a href="normativas.html">normativas 2026-2027</a>. Cuando un plazo está anunciado pero no publicado en el BOE, lo decimos así.</p>
+<h2>¿Los ejemplos son casos reales?</h2><p>No. Cuando un artículo pone un ejemplo de un taller, una clínica o una academia, es un caso hipotético para explicar cómo funciona algo. No publicamos datos de clientes sin su permiso por escrito, ni testimonios ni cifras que no podamos demostrar.</p>
+<h2>¿Cada cuánto se actualizan?</h2><p>Revisamos los textos cuando cambia una norma, una herramienta o un plazo. Cada página muestra la fecha de su última actualización, y los artículos de normativa indican además cuándo se revisaron los plazos legales.</p>
+<h2>¿Por qué hablamos de nuestros servicios?</h2><p>Studio Emprende vende software, IA y webs, y algunos artículos enlazan a esos servicios cuando encajan con lo que se explica. La información de los artículos es válida aunque no nos contrates.</p>
+<h2>¿Has visto un error?</h2><p>Escríbenos a <a href="mailto:info@studioemprende.com">info@studioemprende.com</a> indicando la página y el dato. Lo revisamos y, si hay que corregirlo, actualizamos el texto y su fecha.</p>
+</div></div></section>"""
+pagina("politica-editorial.html", "Política editorial: cómo escribimos y revisamos · Studio Emprende", "Cómo redacta, revisa y corrige Studio Emprende los artículos del blog y las guías: fuentes oficiales, fechas de revisión y correo para avisar de errores.", _PE % migas("", ("Política editorial", None)) + cta(""))
+
 pagina("mapa-web.html", "Mapa de la web · Studio Emprende", "Todas las páginas de Studio Emprende.", '<section class="page-hero"><div class="w">%s<h1>Mapa de la web</h1><p class="lead">Todas las páginas y cómo se organizan.</p></div></section><section class="sec"><div class="w">%s</div></section>' % (migas("", ("Mapa de la web", None)), mapa))
 
 # ---------- SEO ----------
@@ -775,18 +804,15 @@ for p in PAGS:
     if len(_FECH[p][1]) == 10: _FECH[p][1] += "T12:00:00"
     LASTMOD[p] = _FECH[p][1][:10]
 _json.dump({k: _FECH[k] for k in sorted(_FECH) if k in LASTMOD}, open(_FP, "w"), indent=0)
-# dateModified coherente con el sitemap en las páginas que no tienen fecha propia
+# Fechas reales: "__FMOD__" (JSON-LD) y <!--FECHA_ACT--> (texto visible) = última modificación real del contenido
 _MESES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]
+def _fh(iso):
+    _y, _m, _d = iso.split("-"); return "%d de %s de %s" % (int(_d), _MESES[int(_m) - 1], _y)
 for p in PAGS:
     _f = os.path.join(OUT, p); _t = open(_f, encoding="utf-8").read()
-    if "<!--FECHA_ACT-->" in _t:
-        _y, _m, _d = LASTMOD[p].split("-")
-        open(_f, "w", encoding="utf-8").write(_t.replace("<!--FECHA_ACT-->", '<time datetime="%s">%d de %s de %s</time>' % (LASTMOD[p], int(_d), _MESES[int(_m) - 1], _y)))
-_ancla = '"isPartOf": {"@id": "%s/#web"}' % DOM
-for p in PAGS:
-    _f = os.path.join(OUT, p); _t = open(_f, encoding="utf-8").read()
-    if '"dateModified"' not in _t and _ancla in _t:
-        open(_f, "w", encoding="utf-8").write(_t.replace(_ancla, _ancla + ', "dateModified": "%s"' % LASTMOD[p], 1))
+    if "__FMOD__" in _t or "<!--FECHA_ACT-->" in _t:
+        _t = _t.replace("__FMOD__", LASTMOD[p]).replace("<!--FECHA_ACT-->", '<time datetime="%s">%s</time>' % (LASTMOD[p], _fh(LASTMOD[p])))
+        open(_f, "w", encoding="utf-8").write(_t)
 def _grupo(p):
     if p.startswith("blog/"): return "blog"
     if p.startswith("guias/"): return "guias"
@@ -813,7 +839,7 @@ for _php in ("consentimiento.php", "registro-consentimientos.php"):
 open(OUT + "/%s.txt" % INDEXNOW, "w").write(INDEXNOW)
 open(OUT + "/indexnow-urls.txt", "w").write("".join("%s/%s\n" % (DOM, p.replace("index.html", "")) for p in PAGS if p not in NOINDEX and p not in CANON))
 bots = ["Googlebot", "Bingbot", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot", "Meta-ExternalAgent"]
-open(OUT + "/robots.txt", "w").write("".join("User-agent: %s\nAllow: /\n\n" % b for b in bots) + "User-agent: *\nAllow: /\nDisallow: /404.html\nDisallow: /registro-consentimientos.php\nDisallow: /consentimiento.php\n\n# Indice y sitemaps por tipo\nSitemap: %s/sitemap.xml\n" % DOM + "".join("Sitemap: %s/%s\n" % (DOM, s) for s in SMS) + "\n# Resumen para IA: %s/llms.txt · %s/llms-full.txt\n" % (DOM, DOM))
+open(OUT + "/robots.txt", "w").write("".join("User-agent: %s\nAllow: /\n\n" % b for b in bots) + "User-agent: *\nAllow: /\nDisallow: /registro-consentimientos.php\nDisallow: /consentimiento.php\n\n# Indice y sitemaps por tipo\nSitemap: %s/sitemap.xml\n" % DOM + "".join("Sitemap: %s/%s\n" % (DOM, s) for s in SMS) + "\n# Resumen para IA: %s/llms.txt · %s/llms-full.txt\n" % (DOM, DOM))
 llms = "# Studio Emprende\n\n> %s\n\n## Empresa\n- Nombre comercial: Studio Emprende\n- Titular: INTELIGENCIA SEVILLA SL (NIF B88763818)\n- Domicilio social: Calle Betis 3, 41449 Alcolea del Río (Sevilla), España\n- Contacto: info@studioemprende.com · WhatsApp +34 601 86 96 68\n- Ámbito: 100 %% online, toda España\n\n## Precios\n" % ORG["description"] + "".join("- %s: %s%s. %s\n" % (n, p, "" if p == "A medida" else " + 40 €/mes de soporte (sin IVA)", d) for n, p, d, x in PACKS) + "\n## Servicios\n"
 llms += "".join("- [%s](%s/servicios/%s.html): %s\n" % (s[2], DOM, s[0], " ".join(s[3].split())) for s in SECCIONES)
 llms += "\n## PIX, agente de IA empresarial\n- [PIX](%s/servicios/pix/): %s\n" % (DOM, PIX_HUB["resumen"]) + "".join("- [%s](%s/servicios/pix/%s.html): %s\n" % (x["nav"], DOM, x["slug"], x["resumen"]) for x in PIX_PAGINAS)
