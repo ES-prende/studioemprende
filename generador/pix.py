@@ -27,6 +27,9 @@ PIX_HUB = {
   ("¿En qué se diferencia PIX de ChatGPT?", "Un chat genérico redacta textos, pero no conoce tu negocio ni ve tus sistemas. PIX trabaja con los datos que conectas, ejecuta acciones en tus herramientas, deja trazabilidad y escala a una persona cuando hay una excepción."),
   ("¿Cuánto cuesta PIX?", "Los planes públicos parten de 90 €/mes para 3 personas y 145 €/mes para 5 personas. Más usuarios, integraciones a medida o servidor dedicado se presupuestan según el alcance."),
   ("¿PIX sustituye a mi equipo?", "No. PIX automatiza lo repetitivo y mantiene al equipo al mando: el administrador define roles, permisos, límites y aprobaciones, y las decisiones sensibles pasan por una persona."),
+  ("¿Tengo que cambiar de correo o de programas para usar PIX?", "No. PIX se conecta al correo, al almacenamiento, al CRM y al programa de gestión que ya usáis, así que el equipo sigue trabajando con sus herramientas de siempre."),
+  ("¿PIX envía correos u ofertas sin que nadie los revise?", "Solo si tú lo decides. Por defecto prepara el trabajo y espera tu aprobación antes de enviarlo; después puedes marcar qué tareas puede completar sin revisión."),
+  ("¿En cuánto tiempo se nota PIX en el día a día?", "En días. En unas 48 horas está funcionando con tu equipo en un proceso, y las dos primeras semanas sirven para comparar los tiempos reales antes de ampliar."),
   ("¿Desde dónde se usa PIX?", "Desde el escritorio (Windows, macOS y Linux) y desde el móvil Android, en conversación natural, además de los canales de atención que configures: web, WhatsApp, correo y voz."),
  ],
 }
@@ -223,6 +226,11 @@ PIX_PAGINAS = [
   "resumen": "PIX cuesta desde 90 €/mes para 3 personas y 145 €/mes para 5 personas. Más usuarios, integraciones a medida o servidor dedicado se presupuestan según el alcance. La implantación sigue cinco fases y arranca con un piloto de unas cuatro semanas: un cliente, un proceso y una métrica clara.",
   "secciones": [
    ("Precio proporcional al alcance", "Los planes públicos parten de 90 €/mes (3 personas) y 145 €/mes (5 personas). Más de 5 personas, integraciones a medida o servidor dedicado se presupuestan según usuarios, departamentos, volumen, complejidad y soporte. Los proyectos específicos llevan valoración independiente.", []),
+   ("Planes de PIX: qué incluye cada uno", "Hay tres planes. Todos funcionan en Windows, macOS, Linux y Android, están disponibles en español, catalán, valenciano, gallego, euskera e inglés, y se contratan sin permanencia ni cuota de alta.", [
+     ("Esencial · 90 €/mes", "Para 3 personas con uso estándar. Conecta Gmail, Outlook, Google Drive, Teams, Trello y 14 integraciones más."),
+     ("Profesional · 145 €/mes", "Para 5 personas y un 25 % más de uso por persona. Suma HubSpot, Salesforce, Zoho, WhatsApp, Instagram, Facebook, LinkedIn y facturación con Stripe, QuickBooks o Zoho Books: 37 integraciones en total."),
+     ("A medida · desde 6 personas", "Integraciones hechas para tu empresa, capacidad reservada y servidor dedicado si lo necesitas. Se presupuesta según el alcance."),
+   ]),
    ("Cinco fases de implantación", "", [
      ("1. Auditoría inicial", "Procesos, herramientas, datos, riesgos, volumen, responsables y objetivos medibles."),
      ("2. Diseño del alcance", "Proceso prioritario, permisos, fuentes, canales, eventos, entregables y aprobaciones."),

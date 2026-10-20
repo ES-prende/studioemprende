@@ -366,3 +366,6 @@ h2.h3{font-size:21px}
 .firma{font-size:14px;color:var(--gris);margin-top:12px}
 .firma a{color:inherit;text-decoration:underline}
 .resp-directa{max-width:780px;margin:0 0 18px}
+.sec-oscura{background:#1E1B1C;color:#fff}
+.sec-oscura h2,.sec-oscura .lead{color:#fff}
+.sec-oscura .kicker{color:var(--ocre-claro)}
