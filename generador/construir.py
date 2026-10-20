@@ -142,6 +142,8 @@ def _meta(d):
     if len(d) > 155:
         c = d[:155]; c = c[:c.rfind(" ")].rstrip(",;:·-") ; d = c + "."
     for extra in [" 100 % online en toda España.", " Pide tu diagnóstico gratis."]:
+        if extra.strip().rstrip(".").lower() in d.lower(): continue
+        if "100 % online" in extra and "100 % online" in d: continue
         if len(d) < 140 and len(d + extra) <= 155: d += extra
     return d
 
@@ -190,12 +192,40 @@ def _ampliar(cuerpo, faqs, a):
         else: break
     return cuerpo[:fin] + bloque + cuerpo[fin:], faqs
 
+TITULOS = {
+ "servicios/software-de-gestion/gestion-de-flotas.html": "Gestión de flotas de vehículos en tu programa de gestión",
+ "servicios/software-de-gestion/integraciones-por-api.html": "Integraciones por API con tu programa de gestión",
+ "servicios/software-de-gestion/portal-de-pedidos-b2b.html": "Portal de pedidos B2B para distribuidores y clientes",
+ "blog/index.html": "Blog de software, IA y webs para emprender · Studio Emprende",
+ "servicios/webs/index.html": "Diseño de páginas web con SEO para negocios · Studio Emprende",
+ "servicios/index.html": "Servicios de software, IA y webs · Studio Emprende",
+ "servicios/whatsapp-ia/index.html": "WhatsApp con IA para atender y vender · Studio Emprende",
+ "servicios/erp-para-pymes/cuadro-de-mando-en-tiempo-real.html": "Cuadro de mando en tiempo real para pymes",
+ "servicios/agentes-de-ia/index.html": "Agentes de IA para empresas y pymes · Studio Emprende",
+ "mapa-web.html": "Mapa de la web: todas las páginas · Studio Emprende",
+ "servicios/erp-para-pymes/index.html": "ERP para pymes modular y a medida · Studio Emprende",
+ "sobre-nosotros.html": "Sobre nosotros: quiénes somos y cómo trabajamos · Studio Emprende",
+ "guias/como-crear-una-startup.html": "Cómo crear una startup tecnológica paso a paso",
+ "servicios/deluxe/index.html": "Servicios Deluxe: tecnología para hogar y familia · Studio Emprende",
+ "servicios/grandes-empresas/index.html": "Software e IA para grandes empresas · Studio Emprende",
+ "servicios/pequenas-empresas/index.html": "Software y webs para pequeñas empresas · Studio Emprende",
+ "guias/diferencia-entre-hardware-y-software.html": "Diferencia entre hardware y software, con ejemplos",
+ "servicios/software-de-gestion/presupuestador-y-configurador-online.html": "Presupuestador y configurador online para tu web",
+ "guias/cuanto-cuesta-una-pagina-web.html": "Cuánto cuesta una página web en España en 2026",
+ "guias/index.html": "Guías para emprender y digitalizar tu negocio · Studio Emprende",
+ "servicios/consultoria-y-ayudas/index.html": "Consultoría tecnológica y ayudas · Studio Emprende",
+ "guias/crear-pagina-web-para-vender.html": "Crear una página web para vender online paso a paso",
+ "servicios/apps-moviles/index.html": "Apps móviles a medida para negocios · Studio Emprende",
+ "servicios/startups-e-inversores/index.html": "Tecnología para startups e inversores · Studio Emprende",
+}
+
 def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None, tipo_pagina="WebPage", indexar=True, fecha=None, og=None, extra_pagina=None):
     global MIGAS
     _k = _clave(ruta)
     if _k in AMPL:
         cuerpo, faqs = _ampliar(cuerpo, faqs, AMPL[_k]); AMPL_USADAS.add(_k)
     url = DOM + "/" + ruta.replace("index.html", "")
+    titulo = {_clave(k): v for k, v in TITULOS.items()}.get(_clave(ruta), titulo)
     titulo = _tit(titulo); desc = _meta(desc)
     grafo = [ORG, {"@type": "WebSite", "@id": DOM + "/#web", "url": DOM + "/", "name": "Studio Emprende", "inLanguage": "es", "publisher": {"@id": DOM + "/#org"}}]
     wp = {"@type": tipo_pagina, "@id": url, "url": url, "name": titulo, "description": desc, "inLanguage": "es", "isPartOf": {"@id": DOM + "/#web"}, "about": {"@id": DOM + "/#org"}}
@@ -220,7 +250,6 @@ def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None,
     MIGAS = []
     ldj = '<script type="application/ld+json">%s</script>' % _json.dumps({"@context": "https://schema.org", "@graph": grafo}, ensure_ascii=False).replace("</", "<\\/")
     seo = """<meta name="robots" content="{rob}">
-<link rel="alternate" hreflang="es" href="{u}"><link rel="alternate" hreflang="x-default" href="{u}">
 <meta property="og:url" content="{u}"><meta property="og:locale" content="es_ES"><meta property="og:site_name" content="Studio Emprende">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{t}"><meta name="twitter:description" content="{d}"><meta name="twitter:image" content="{og}">
 {ld}""".format(u=url, t=e(titulo), d=e(desc), dom=DOM, ld=ldj, og=OGIMG[ruta], rob="index,follow,max-image-preview:large,max-snippet:-1" if indexar else "noindex,follow")
@@ -367,7 +396,7 @@ inicio = """
 </div></section>
 
 <section class="sec sec-suave"><div class="w">
-<div class="cab"><p class="kicker">Demo del programa</p><h2>Tus ventas, en un tablero</h2></div>
+<div class="cab"><p class="kicker">Demo del programa · datos de ejemplo</p><h2>Tus ventas, en un tablero</h2></div>
 <div class="demo" data-nosnippet><div class="demo-lat"><b style="color:#fff;font-weight:500">Studio Emprende</b><span class="act">CRM</span><span>Facturación</span><span>Agenda</span><span>Fichaje</span><span>PIX</span></div>
 <div class="tablero">
 <div class="col"><span>Nuevo · 3</span><div class="trato">Taller López<br><b>1.790 €</b></div><div class="trato">Clínica Sur<br><b>990 €</b></div></div>
@@ -376,6 +405,7 @@ inicio = """
 <div class="col"><span>Ganado · 4</span><div class="trato ganado">Café Central<br><b>990 €</b></div></div>
 </div></div>
 <p class="aviso">● Nuevo contacto desde la web: Fisioterapia Ruiz</p>
+<p class="mut" style="font-size:13px;margin-top:10px">Demostración con nombres y datos ficticios: así se ve el tablero de ventas del programa.</p>
 </div></section>
 
 <section class="sec"><div class="w">
@@ -436,7 +466,7 @@ inicio = """
 </div></section>
 
 <section class="sec"><div class="w" style="display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:center">
-<div style="flex:999 1 420px;min-width:0"><p class="kicker">Normativas 2026-2027</p><h2>¿Te afecta Verifactu, el fichaje digital o el AI Act?</h2><p class="lead" style="margin-top:12px">Depende de tu forma jurídica y de tu actividad. Hacienda ha anunciado que Verifactu se retrasa a octubre de 2028 para todos; hasta que se publique en el BOE siguen vigentes el 1/1/2027 para sociedades y el 1/7/2027 para el resto. La factura electrónica entre empresas llega el 6/10/2027 (más de 8 M€) y el 6/10/2028 (resto). La formación en IA del AI Act es obligatoria desde el 2/2/2025 y el registro de jornada, desde 2019.</p><p class="mut" style="margin-top:10px;font-size:14px">Revisado el <time datetime="2026-10-12">12 de octubre de 2026</time>.</p><p style="margin-top:6px"><a href="normativas.html">Ver todas las normas, plazos y fuentes oficiales →</a></p></div>
+<div style="flex:999 1 420px;min-width:0"><p class="kicker">Normativas 2026-2027</p><h2>¿Te afecta Verifactu, el fichaje digital o el AI Act?</h2><p class="lead" style="margin-top:12px">Depende de tu forma jurídica y de tu actividad. Hacienda ha anunciado que Verifactu se retrasa a octubre de 2028 para todos; hasta que se publique en el BOE siguen vigentes el 1/1/2027 para sociedades y el 1/7/2027 para el resto. La factura electrónica entre empresas llega el 6/10/2027 (más de 8 M€) y el 6/10/2028 (resto). La formación en IA del AI Act es obligatoria desde el 2/2/2025 y el registro de jornada, desde 2019.</p><p class="mut" style="margin-top:10px;font-size:14px">Fuentes oficiales: <a href="https://www.boe.es/eli/es/rd/2023/12/05/1007" target="_blank" rel="noopener">RD 1007/2023 (Verifactu)</a>, <a href="https://www.boe.es/eli/es/l/2022/09/28/18" target="_blank" rel="noopener">Ley 18/2022 (factura electrónica)</a>, <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener">Reglamento (UE) 2024/1689 (AI Act)</a> y <a href="https://www.boe.es/eli/es/rdl/2019/03/08/8" target="_blank" rel="noopener">RDL 8/2019 (registro de jornada)</a>. Revisado el <time datetime="2026-10-12">12 de octubre de 2026</time>.</p><p style="margin-top:6px"><a href="normativas.html">Ver todas las normas, plazos y fuentes oficiales →</a></p></div>
 <a class="btn btn-s" href="normativas.html">Ver normativas</a>
 </div></section>
 
@@ -541,7 +571,7 @@ def _pix_nav(actual):
 _PIXAPP = {"@type": "SoftwareApplication", "@id": DOM + "/servicios/pix/#app", "name": "PIX", "alternateName": "PIX, agente de IA empresarial",
            "applicationCategory": "BusinessApplication", "operatingSystem": "Windows, macOS, Linux, Android, Web",
            "description": PIX_HUB["resumen"], "url": DOM + "/servicios/pix/", "provider": {"@id": DOM + "/#org"},
-           "offers": [{"@type": "Offer", "name": n, "price": pr, "priceCurrency": "EUR", "priceSpecification": {"@type": "UnitPriceSpecification", "price": pr, "priceCurrency": "EUR", "unitCode": "MON", "valueAddedTaxIncluded": False}, "seller": {"@id": DOM + "/#org"}}
+           "offers": [{"@type": "Offer", "name": n, "availability": "https://schema.org/InStock", "price": pr, "priceCurrency": "EUR", "priceSpecification": {"@type": "UnitPriceSpecification", "price": pr, "priceCurrency": "EUR", "unitCode": "MON", "valueAddedTaxIncluded": False}, "seller": {"@id": DOM + "/#org"}}
                       for n, pr in [("PIX 3 personas", "90"), ("PIX 5 personas", "145")]]}
 _cap = "".join('<a class="tarjeta" href="%s.html"><h3>%s</h3><p>%s</p><span class="mas">Ver más →</span></a>' % (sl, e(t), e(d)) for t, d, sl in PIX_HUB["capacidades"])
 _dol = "".join('<div class="tarjeta"><h3>%s</h3><p>%s</p></div>' % (e(t), e(d)) for t, d in PIX_HUB["dolor"])
@@ -574,7 +604,7 @@ _offers = []
 for n, pr, d, dest in PACKS:
     sl = n.lower().replace(" ", "-").replace("á","a")
     srv = {"@type": "Service", "@id": DOM + "/precios#" + sl, "name": n, "description": d, "provider": {"@id": DOM + "/#org"}, "areaServed": "ES"}
-    of = {"@type": "Offer", "@id": DOM + "/precios#offer-" + sl, "url": DOM + "/precios", "seller": {"@id": DOM + "/#org"}, "itemOffered": srv}
+    of = {"@type": "Offer", "@id": DOM + "/precios#offer-" + sl, "name": "Pack " + n, "availability": "https://schema.org/InStock", "url": DOM + "/precios", "seller": {"@id": DOM + "/#org"}, "itemOffered": srv}
     if pr == "A medida":
         continue
     else:
@@ -584,7 +614,7 @@ for n, pr, d, dest in PACKS:
     _offers.append(of)
 _cat = {"@type": "OfferCatalog", "@id": DOM + "/precios#packs", "name": "Precios y packs", "url": DOM + "/precios", "itemListElement": _offers}
 pagina("precios.html", "Precios y packs de software, IA y webs · Studio Emprende", "Packs para empezar desde 990 € más 40 €/mes de soporte, o arma tu propio pack con solo lo que necesitas.",
-       '<section class="page-hero"><div class="w">%s<h1>Precios y packs</h1><p class="lead">Pago único por el pack y una cuota de 40 € al mes de soporte y mantenimiento. Precios sin IVA, vigentes desde octubre de 2026.</p></div></section><section class="sec"><div class="w"><h2 style="margin-bottom:24px">Packs para empezar</h2>%s</div></section>%s<section class="sec sec-suave"><div class="w"><div class="cab"><h2>Preguntas frecuentes</h2></div>%s</div></section>%s'
+       '<section class="page-hero"><div class="w">%s<h1>Precios y packs</h1><p class="lead">Pago único por el pack y una cuota de 40 € al mes de soporte y mantenimiento. Precios sin IVA, vigentes desde octubre de 2026.</p><p class="mut" style="font-size:14px;margin-top:10px">Última revisión de precios: <time datetime="2026-10-20">20 de octubre de 2026</time>.</p></div></section><section class="sec"><div class="w"><h2 style="margin-bottom:24px">Packs para empezar</h2>%s</div></section>%s<section class="sec sec-suave"><div class="w"><div class="cab"><h2>Preguntas frecuentes</h2></div>%s</div></section>%s'
        % (migas("", ("Precios", None)), packs(""), FORM.banda_precios(), faq(), cta("")), ld_extra=_cat, extra_pagina={"mainEntity": {"@id": DOM + "/precios#packs"}})
 
 # ---------- NORMATIVAS ----------
@@ -745,6 +775,12 @@ for p in PAGS:
     if len(_FECH[p][1]) == 10: _FECH[p][1] += "T12:00:00"
     LASTMOD[p] = _FECH[p][1][:10]
 _json.dump({k: _FECH[k] for k in sorted(_FECH) if k in LASTMOD}, open(_FP, "w"), indent=0)
+# dateModified coherente con el sitemap en las páginas que no tienen fecha propia
+_ancla = '"isPartOf": {"@id": "%s/#web"}' % DOM
+for p in PAGS:
+    _f = os.path.join(OUT, p); _t = open(_f, encoding="utf-8").read()
+    if '"dateModified"' not in _t and _ancla in _t:
+        open(_f, "w", encoding="utf-8").write(_t.replace(_ancla, _ancla + ', "dateModified": "%s"' % LASTMOD[p], 1))
 def _grupo(p):
     if p.startswith("blog/"): return "blog"
     if p.startswith("guias/"): return "guias"

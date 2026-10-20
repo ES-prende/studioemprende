@@ -354,3 +354,12 @@ h2.h3{font-size:21px}
 .texto-largo th,.texto-largo td,.ampliacion th,.ampliacion td{border-bottom:1px solid #E7E1DC;padding:8px 10px;text-align:left;vertical-align:top}
 .texto-largo th,.ampliacion th{background:#F6F2EE}
 .texto-largo .faq{margin-top:8px}
+/* Zonas táctiles cómodas en móvil (mín. 44 px) */
+@media (max-width:760px){
+.migas a{display:inline-block;padding:12px 2px;margin:-12px 0}
+.pie a{display:inline-block;padding:11px 0;min-height:44px}
+.lista li>a:only-child,.lista-enl a,.mega a{display:inline-block;padding:10px 0;min-height:44px}
+.tarjeta a.mas,.tarjeta p>a:only-child{display:inline-block;padding:10px 0}
+.form input[type=checkbox],input[type=checkbox]{width:22px;height:22px}
+.form input,.form select,.form textarea{min-height:44px}
+}

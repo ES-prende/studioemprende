@@ -4,7 +4,7 @@ WA = "https://wa.me/34601869668?text=Hola%2C%20quiero%20reservar%20una%20sesi%C3
 
 JORDAN = {"@type": "Person", "@id": DOM + "/sobre-nosotros#jordan-garcia", "name": "Jordan García",
           "jobTitle": "Formador de inteligencia artificial", "worksFor": {"@id": DOM + "/#org"},
-          "affiliation": {"@type": "Organization", "name": "Inteligencia Sevilla", "url": "https://inteligenciasevilla.com/"},
+          "affiliation": {"@id": DOM + "/#org"},
           "knowsAbout": ["Inteligencia artificial", "Prompt engineering", "ChatGPT", "Automatización de procesos", "Formación en IA para empresas"],
           "url": DOM + "/sobre-nosotros#equipo"}
 
@@ -144,7 +144,7 @@ def curso_sesion():
 
 # ---------- Sobre nosotros: equipo ----------
 def equipo_html(r):
-    return '<section class="sec sec-suave" id="equipo"><div class="w"><div class="cab"><p class="kicker">Equipo</p><h2>Quién está detrás</h2></div>%s</div></section>' % tarjeta_formador(r).replace(
+    return '<section class="sec sec-suave" id="equipo"><div class="w"><div class="cab"><p class="kicker">Equipo</p><h2>Quién está detrás</h2></div><p class="lead" style="max-width:780px;margin-bottom:22px">Studio Emprende es una marca comercial de INTELIGENCIA SEVILLA SL, empresa con sede en Alcolea del Río (Sevilla) que desarrolla software de gestión, agentes de IA y webs para negocios de toda España. La formación en IA la imparte Jordan García, prompt engineer y CEO de Inteligencia Sevilla; el equipo técnico se encarga de la implantación y el soporte de cada proyecto.</p>%s</div></section>' % tarjeta_formador(r).replace(
         '<p style="margin:10px 0 0"><a href="%ssobre-nosotros.html#equipo">Conoce al equipo →</a></p>' % r,
         '<p style="margin:10px 0 0"><a href="%sservicios/formacion-ia.html">Ver la formación en IA →</a></p>' % r)
 
