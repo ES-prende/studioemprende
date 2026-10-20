@@ -264,7 +264,7 @@ GUIAS2 = [
  [("¿Qué es el desarrollo de software a medida?", "El proceso de diseñar, programar y mantener un programa hecho para los procesos de una empresa concreta."),
   ("¿Cuánto se tarda en desarrollar un software a medida?", "Un primer módulo útil puede estar en pocas semanas; el sistema completo crece por fases."),
   ("¿De quién es el código de un software a medida?", "Depende del contrato: conviene dejar por escrito que el código y los datos son de la empresa cliente."),
-  ("¿Dónde puedo contratar desarrollo de software a medida en España?", "Con empresas de desarrollo que trabajen por fases y den soporte posterior. Nosotros lo hacemos 100 % online para toda España y Latinoamérica.")],
+  ("¿Dónde puedo contratar desarrollo de software a medida en España?", "Con empresas de desarrollo que trabajen por fases y den soporte posterior. Nosotros lo hacemos 100 % online para toda España.")],
  ["software-especializado", "erp-para-pymes", "agentes-de-ia"], ["que-puede-hacer-un-agente-de-ia"], ["software-a-medida", "que-es-un-software-de-gestion", "mejores-erp-para-pymes"]),
 
 ("software-tpv-para-hosteleria", "software",

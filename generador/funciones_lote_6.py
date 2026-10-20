@@ -118,7 +118,7 @@ PAGINAS = {
   ("¿Hace falta permiso para clonar una voz?", "Sí. Solo clonamos la voz de quien da su consentimiento por escrito, normalmente el dueño o el formador que aparece en el vídeo."),
   ("¿Qué conviene más, subtítulos o doblaje?", "Los subtítulos bastan en redes, donde mucha gente ve sin sonido. El doblaje funciona mejor en cursos, vídeos largos y anuncios donde la voz es lo que vende."),
  ],
- "rel": [("../webs/webs-multidioma-para-espana-y-latinoamerica.html", "Webs multidioma para España y Latinoamérica"), ("videos-y-anuncios-con-ia.html", "Vídeos y anuncios con IA"), ("../software-especializado/plataforma-de-formacion-interna-lms.html", "Plataforma de formación interna")],
+ "rel": [("../webs/webs-multidioma-para-espana-y-exportacion.html", "Webs multidioma para España y exportación"), ("videos-y-anuncios-con-ia.html", "Vídeos y anuncios con IA"), ("../software-especializado/plataforma-de-formacion-interna-lms.html", "Plataforma de formación interna")],
 },
 "presencia-digital/captacion-automatizada-de-clientes-b2b": {
  "titulo": "Captación automatizada de clientes B2B con IA",

@@ -14,7 +14,7 @@ HIST = """<div class="w legal-txt" style="margin-top:40px">
 <h2>Por qué existe Studio Emprende</h2>
 <p>Creamos Studio Emprende para que no tengas que pasar por lo mismo. Te damos desde el primer día lo que a nosotros nos faltó: un programa de gestión que crece contigo, tus datos seguros, procesos automatizados con inteligencia artificial y una web pensada para que te encuentren. Todo conectado y con alguien a tu lado que conoce tu negocio.</p>
 <h2>Cómo trabajamos</h2>
-<p>Empezamos escuchando cómo trabajas hoy. Después proponemos solo lo que te va a ahorrar tiempo o traerte clientes, lo implantamos por fases para no parar tu negocio y nos quedamos a tu lado con soporte y formación. Trabajamos 100 % online con empresas de toda España y Latinoamérica.</p>
+<p>Empezamos escuchando cómo trabajas hoy. Después proponemos solo lo que te va a ahorrar tiempo o traerte clientes, lo implantamos por fases para no parar tu negocio y nos quedamos a tu lado con soporte y formación. Trabajamos 100 % online con empresas de toda España.</p>
 <h2>A quién ayudamos</h2>
 <p>A autónomos que empiezan, pymes que quieren ordenarse, empresas que buscan automatizar con IA y startups que necesitan su primer producto. Si tienes dudas sobre por dónde empezar, el <a href="contacto.html#diagnostico">diagnóstico gratuito</a> es el mejor primer paso.</p>
 </div>"""

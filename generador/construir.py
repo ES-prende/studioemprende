@@ -103,7 +103,7 @@ def pie(r):
     prod = "".join('<a href="%sservicios/%s.html">%s</a>' % (r, s[0], e(s[2].split(" ·")[0])) for s in SECCIONES if s[1] in ("software", "producto", "ia"))
     quien = "".join('<a href="%sservicios/%s.html">%s</a>' % (r, s[0], e(s[2])) for s in by_menu("clientes"))
     return """<footer class="pie"><div class="w">
-<div class="pie-top"><div class="pie-marca"><img src="{r}assets/img/logo-horizontal-blanco.svg" alt="Studio Emprende" width="200" height="56"><p>Software, IA y webs para emprender. 100 % online, en España y Latinoamérica.</p></div>
+<div class="pie-top"><div class="pie-marca"><img src="{r}assets/img/logo-horizontal-blanco.svg" alt="Studio Emprende" width="200" height="56"><p>Software, IA y webs para emprender. 100 % online, para toda España.</p></div>
 <div class="pie-cols"><div><b>Productos</b>{prod}</div><div><b>Para quién</b>{quien}</div>
 <div><b>Recursos</b><a href="{r}guias/index.html">Guías para emprender</a><a href="{r}blog/index.html">Blog</a><a href="{r}normativas.html">Normativas</a><a href="{r}sectores.html">Sectores</a><a href="{r}precios.html">Precios</a><a href="{r}mapa-web.html">Mapa de la web</a></div>
 <div><b>Empresa</b><a href="{r}sobre-nosotros.html">Sobre nosotros</a><a href="{r}partners.html">Hazte partner</a><a href="{r}contacto.html">Contacto</a><a href="{r}contacto.html#diagnostico">Diagnóstico gratis</a></div><div><b>Contacto</b><a href="https://wa.me/34601869668" target="_blank" rel="noopener">WhatsApp 601 86 96 68</a><a href="mailto:info@studioemprende.com">info@studioemprende.com</a><span style="display:block;margin-top:8px">Calle Betis 3, 41449 Alcolea del Río (Sevilla)</span></div></div></div>
@@ -131,8 +131,8 @@ import json as _json
 from urllib.parse import urljoin as _uj
 MIGAS = []
 ORG = {"@type": "Organization", "@id": DOM + "/#org", "name": "Studio Emprende", "url": DOM + "/", "logo": DOM + "/assets/img/logo-vertical.svg",
-       "description": "Software de gestión modular, agentes de IA y webs con SEO para autónomos, pymes y empresas. 100 % online en España y Latinoamérica.",
-       "areaServed": ["ES", "Latinoamérica"], "knowsLanguage": "es", "email": EMAIL, "telephone": "+34 601 86 96 68",
+       "description": "Software de gestión modular, agentes de IA y webs con SEO para autónomos, pymes y empresas. 100 % online en toda España.",
+       "areaServed": "ES", "knowsLanguage": "es", "email": EMAIL, "telephone": "+34 601 86 96 68",
        "contactPoint": {"@type": "ContactPoint", "telephone": "+34 601 86 96 68", "email": EMAIL, "contactType": "customer service", "availableLanguage": "es"},
        "legalName": "INTELIGENCIA SEVILLA SL", "alternateName": "Studio Emprende", "taxID": "B88763818", "vatID": "ESB88763818",
        "address": {"@type": "PostalAddress", "streetAddress": "Calle Betis 3", "postalCode": "41449", "addressLocality": "Alcolea del Río", "addressRegion": "Sevilla", "addressCountry": "ES"}}
@@ -141,7 +141,7 @@ def _meta(d):
     d = " ".join(d.split())
     if len(d) > 155:
         c = d[:155]; c = c[:c.rfind(" ")].rstrip(",;:·-") ; d = c + "."
-    for extra in [" 100 % online en España y Latinoamérica.", " Pide tu diagnóstico gratis."]:
+    for extra in [" 100 % online en toda España.", " Pide tu diagnóstico gratis."]:
         if len(d) < 140 and len(d + extra) <= 155: d += extra
     return d
 
@@ -150,8 +150,51 @@ def _tit(t):
     base = t.split(" · ")[0]
     return base if len(base) <= 60 else base[:57].rsplit(" ", 1)[0] + "…"
 
+
+# ---- Ampliaciones de contenido (ampliaciones_lote_*.py) ----
+import glob as _glob, importlib as _imp
+AMPL = {}; AMPL_USADAS = set()
+for _f in sorted(_glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "ampliaciones_lote_*.py"))):
+    _m = _imp.import_module(os.path.basename(_f)[:-3])
+    for _r, _v in _m.AMPL.items():
+        AMPL[_r.replace("/index.html", "").replace(".html", "").strip("/")] = _v
+
+def _clave(ruta):
+    return ruta.replace("/index.html", "").replace(".html", "").strip("/")
+
+def _ampliar(cuerpo, faqs, a):
+    secs = "".join('<h2>%s</h2>%s' % (e(t), h) for t, h in a.get("secciones", []))
+    extra_faq = a.get("faq", [])
+    det = "".join("<details><summary>%s</summary><p>%s</p></details>" % (e(q), e(r)) for q, r in extra_faq)
+    tiene_faq = 'class="faq"' in cuerpo
+    if extra_faq and tiene_faq:
+        i = cuerpo.find('<div class="faq">'); j = cuerpo.find("</div>", i)
+        cuerpo = cuerpo[:j] + det + cuerpo[j:]
+        faqs = list(faqs or FAQ) + list(extra_faq)
+    elif extra_faq:
+        secs += '<h2>Preguntas frecuentes</h2><div class="faq">' + det + "</div>"
+        faqs = list(extra_faq)
+    if "</article>" in cuerpo:
+        i = cuerpo.rfind("</article>")
+        return cuerpo[:i] + '<div class="ampliacion">' + secs + "</div>" + cuerpo[i:], faqs
+    bloque = '<section class="sec ampliacion"><div class="w"><div class="texto-largo">' + secs + "</div></div></section>\n"
+    fin = cuerpo.find('<section class="cta">')
+    if fin < 0: fin = len(cuerpo)
+    # retrocede por encima de las secciones de "relacionados" y de FAQ final
+    while True:
+        k = cuerpo.rfind("<section", 0, fin)
+        if k < 0: break
+        trozo = cuerpo[k:fin]
+        if any(x in trozo for x in ('class="faq"', 'Más de ', 'También te puede interesar', 'Sigue leyendo', 'Relacionad', 'Preguntas frecuentes')) and k > cuerpo.find("</section>"):
+            fin = k
+        else: break
+    return cuerpo[:fin] + bloque + cuerpo[fin:], faqs
+
 def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None, tipo_pagina="WebPage", indexar=True, fecha=None, og=None, extra_pagina=None):
     global MIGAS
+    _k = _clave(ruta)
+    if _k in AMPL:
+        cuerpo, faqs = _ampliar(cuerpo, faqs, AMPL[_k]); AMPL_USADAS.add(_k)
     url = DOM + "/" + ruta.replace("index.html", "")
     titulo = _tit(titulo); desc = _meta(desc)
     grafo = [ORG, {"@type": "WebSite", "@id": DOM + "/#web", "url": DOM + "/", "name": "Studio Emprende", "inLanguage": "es", "publisher": {"@id": DOM + "/#org"}}]
@@ -166,7 +209,7 @@ def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None,
         grafo.append({"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": el})
         wp["breadcrumb"] = {"@id": url + "#breadcrumb"}
     if ruta.startswith("servicios/") and ruta != "servicios/index.html" and not ruta.startswith("servicios/pix/"):
-        grafo.append({"@type": "Service", "@id": url + "#servicio", "name": titulo.split(" · ")[0], "description": desc, "provider": {"@id": DOM + "/#org"}, "areaServed": ["ES", "Latinoamérica"], "url": url})
+        grafo.append({"@type": "Service", "@id": url + "#servicio", "name": titulo.split(" · ")[0], "description": desc, "provider": {"@id": DOM + "/#org"}, "areaServed": "ES", "url": url})
         wp["mainEntity"] = {"@id": url + "#servicio"}
     if 'class="faq"' in cuerpo:
         grafo.append({"@type": "FAQPage", "@id": url + "#faq", "isPartOf": {"@id": url}, "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in (faqs or FAQ)]})
@@ -271,7 +314,7 @@ def cta(r):
 FAQ = [("¿Cuánto tardáis en tenerlo todo listo?", "Impulso Inicial: de 2 a 3 semanas. Negocio en Marcha: de 3 a 4 semanas. Llave en Mano: unos 2 meses. Los plazos cuentan desde que nos pasas la información necesaria, y te damos una fecha cerrada al empezar."),
        ("¿Qué incluye la cuota de 40 € al mes?", "El soporte y el mantenimiento de tu programa de gestión."),
        ("¿Puedo contratar un solo servicio?", "Sí. Con «Arma tu pack» eliges solo lo que necesitas."),
-       ("¿Trabajáis fuera de España?", "Sí. Somos 100 % online y trabajamos con España y Latinoamérica."),
+       ("¿Trabajáis con negocios de cualquier provincia?", "Sí. Somos 100 % online y trabajamos con autónomos, pymes y empresas de toda España."),
        ("¿Podéis importar mis datos de Excel u otro programa?", "Sí, la migración está incluida al implantar el programa de gestión.")]
 
 def faq():
@@ -316,7 +359,7 @@ inicio = """
 <h1>Tu negocio, <span class="acento">llave en mano</span>.</h1>
 <p class="lead">Programa de gestión modular, agentes de IA y web profesional en una sola cuenta. Empieza con lo que necesitas y crece cuando quieras.</p>
 <div class="botones"><a class="btn btn-p" href="contacto.html#diagnostico">Pide tu diagnóstico gratis</a><a class="btn btn-s" href="precios.html">Ver los packs</a></div>
-<div class="confianza"><span>Una sola cuenta</span><span>100 %% online</span><span>España y Latinoamérica</span><span>Soporte que responde</span></div></div>
+<div class="confianza"><span>Una sola cuenta</span><span>100 %% online</span><span>Toda España</span><span>Soporte que responde</span></div></div>
 <div class="hero-card" data-nosnippet aria-label="Ejemplo del agente PIX trabajando"><div class="estado"><span>Agente PIX · en marcha</span><b>● activo</b></div>
 <div class="fila">Nuevo contacto por WhatsApp: «Necesito una web y facturar con Verifactu»</div>
 <div class="fila ok"><span>✓ Contacto creado en el CRM</span><span>✓ Pack «Negocio en Marcha» propuesto</span><span>✓ Reunión agendada el jueves a las 10:00</span></div>
@@ -400,7 +443,7 @@ inicio = """
 <section class="sec"><div class="w"><div class="cab"><p class="kicker">Blog</p><h2>Ideas claras para tu negocio</h2></div><div class="rejilla">%s</div><p style="margin-top:28px"><a class="btn btn-s" href="blog/index.html">Ver todos los artículos</a></p></div></section>
 <section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Preguntas frecuentes</p><h2>Lo que más nos preguntan</h2></div>%s</div></section>
 """ % (tec, serv, packs(""), "".join('<a class="pildora" href="sectores.html#%s">%s</a>' % (s.lower().replace(" ", "-"), s) for s in SECTORES), BLOGHOME, '<div class="faq">' + "".join("<details><summary>%s</summary><p>%s</p></details>" % (e(q), e(a)) for q, a in FAQ_HOME) + "</div>")
-pagina("index.html", "Studio Emprende · Software, IA y webs para emprender", "Programa de gestión modular, agentes de IA y webs con SEO en una sola cuenta. Para autónomos, pymes y empresas en España y Latinoamérica.", inicio + cta(""), faqs=FAQ_HOME)
+pagina("index.html", "Studio Emprende · Software, IA y webs para emprender", "Programa de gestión modular, agentes de IA y webs con SEO en una sola cuenta. Para autónomos, pymes y empresas de toda España.", inicio + cta(""), faqs=FAQ_HOME)
 
 import unicodedata, re as _re
 def slugify(t):
@@ -530,7 +573,7 @@ def _num(p): return p.replace(" €", "").replace(".", "")
 _offers = []
 for n, pr, d, dest in PACKS:
     sl = n.lower().replace(" ", "-").replace("á","a")
-    srv = {"@type": "Service", "@id": DOM + "/precios#" + sl, "name": n, "description": d, "provider": {"@id": DOM + "/#org"}, "areaServed": ["ES", "Latinoamérica"]}
+    srv = {"@type": "Service", "@id": DOM + "/precios#" + sl, "name": n, "description": d, "provider": {"@id": DOM + "/#org"}, "areaServed": "ES"}
     of = {"@type": "Offer", "@id": DOM + "/precios#offer-" + sl, "url": DOM + "/precios", "seller": {"@id": DOM + "/#org"}, "itemOffered": srv}
     if pr == "A medida":
         continue
@@ -614,7 +657,7 @@ pagina("gracias.html", "Mensaje recibido · Studio Emprende", "Hemos recibido tu
 
 # ---------- SOBRE NOSOTROS ----------
 pagina("sobre-nosotros.html", "Sobre nosotros · Studio Emprende", "Studio Emprende ayuda a emprendedores y pymes con software, IA y webs, 100 % online.",
-       '<section class="page-hero"><div class="w">%s<h1>Sobre nosotros</h1><p class="lead">Ayudamos a quien emprende a tener un negocio ordenado, visible y automatizado desde el primer día.</p></div></section><section class="sec"><div class="w rejilla"><div class="tarjeta"><h3>Siempre respondemos</h3><p>Un único interlocutor que conoce tu negocio.</p></div><div class="tarjeta"><h3>Entregamos en plazo</h3><p>Plazos cerrados desde el primer día.</p></div><div class="tarjeta"><h3>100 %% online</h3><p>Trabajamos con toda España y Latinoamérica.</p></div></div></div>%s</section>%s%s' % (migas("", ("Sobre nosotros", None)), HIST, FORM.equipo_html(""), cta("")), tipo_pagina="AboutPage", ld_extra=FORM.JORDAN)
+       '<section class="page-hero"><div class="w">%s<h1>Sobre nosotros</h1><p class="lead">Ayudamos a quien emprende a tener un negocio ordenado, visible y automatizado desde el primer día.</p></div></section><section class="sec"><div class="w rejilla"><div class="tarjeta"><h3>Siempre respondemos</h3><p>Un único interlocutor que conoce tu negocio.</p></div><div class="tarjeta"><h3>Entregamos en plazo</h3><p>Plazos cerrados desde el primer día.</p></div><div class="tarjeta"><h3>100 %% online</h3><p>Trabajamos con negocios de toda España.</p></div></div></div>%s</section>%s%s' % (migas("", ("Sobre nosotros", None)), HIST, FORM.equipo_html(""), cta("")), tipo_pagina="AboutPage", ld_extra=FORM.JORDAN)
 
 pagina("partners.html", PT.TITULO + " · Studio Emprende", PT.META, PT.html(migas("", ("Partners", None)), _faq_html(PT.FAQS), DOM) + cta(""), faqs=PT.FAQS)
 
@@ -729,7 +772,7 @@ open(OUT + "/%s.txt" % INDEXNOW, "w").write(INDEXNOW)
 open(OUT + "/indexnow-urls.txt", "w").write("".join("%s/%s\n" % (DOM, p.replace("index.html", "")) for p in PAGS if p not in NOINDEX and p not in CANON))
 bots = ["Googlebot", "Bingbot", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot", "Meta-ExternalAgent"]
 open(OUT + "/robots.txt", "w").write("".join("User-agent: %s\nAllow: /\n\n" % b for b in bots) + "User-agent: *\nAllow: /\nDisallow: /404.html\nDisallow: /registro-consentimientos.php\nDisallow: /consentimiento.php\n\n# Indice y sitemaps por tipo\nSitemap: %s/sitemap.xml\n" % DOM + "".join("Sitemap: %s/%s\n" % (DOM, s) for s in SMS) + "\n# Resumen para IA: %s/llms.txt · %s/llms-full.txt\n" % (DOM, DOM))
-llms = "# Studio Emprende\n\n> %s\n\n## Empresa\n- Nombre comercial: Studio Emprende\n- Titular: INTELIGENCIA SEVILLA SL (NIF B88763818)\n- Domicilio social: Calle Betis 3, 41449 Alcolea del Río (Sevilla), España\n- Contacto: info@studioemprende.com · WhatsApp +34 601 86 96 68\n- Ámbito: 100 %% online, España y Latinoamérica\n\n## Precios\n" % ORG["description"] + "".join("- %s: %s%s. %s\n" % (n, p, "" if p == "A medida" else " + 40 €/mes de soporte (sin IVA)", d) for n, p, d, x in PACKS) + "\n## Servicios\n"
+llms = "# Studio Emprende\n\n> %s\n\n## Empresa\n- Nombre comercial: Studio Emprende\n- Titular: INTELIGENCIA SEVILLA SL (NIF B88763818)\n- Domicilio social: Calle Betis 3, 41449 Alcolea del Río (Sevilla), España\n- Contacto: info@studioemprende.com · WhatsApp +34 601 86 96 68\n- Ámbito: 100 %% online, toda España\n\n## Precios\n" % ORG["description"] + "".join("- %s: %s%s. %s\n" % (n, p, "" if p == "A medida" else " + 40 €/mes de soporte (sin IVA)", d) for n, p, d, x in PACKS) + "\n## Servicios\n"
 llms += "".join("- [%s](%s/servicios/%s.html): %s\n" % (s[2], DOM, s[0], " ".join(s[3].split())) for s in SECCIONES)
 llms += "\n## PIX, agente de IA empresarial\n- [PIX](%s/servicios/pix/): %s\n" % (DOM, PIX_HUB["resumen"]) + "".join("- [%s](%s/servicios/pix/%s.html): %s\n" % (x["nav"], DOM, x["slug"], x["resumen"]) for x in PIX_PAGINAS)
 llms += "\n## Guías para emprender\n" + "".join("- [%s](%s/guias/%s.html): %s\n" % (g[4], DOM, g[0], g[5].split(". ")[0] + ".") for g in GUIAS)
@@ -737,7 +780,7 @@ llms += "\n## Páginas clave\n- [Precios y packs](%s/precios.html)\n- [Normativa
 llms += "".join("- [%s](%s/blog/%s.html): %s\n" % (a[1], DOM, a[0], a[2]) for a in ARTICULOS)
 llms += "\n## Optional\n- [Todas las funciones, página a página](%s/llms-full.txt)\n- [Mapa de la web](%s/mapa-web.html)\n- [Sitemap](%s/sitemap.xml)\n" % (DOM, DOM, DOM)
 open(OUT + "/llms.txt", "w").write(llms)
-full = "# Studio Emprende — contenido completo\n\n> %s\n\nAtendemos 100 %% online en España y Latinoamérica. Contacto y diagnóstico gratis: %s/contacto.html\n" % (ORG["description"], DOM)
+full = "# Studio Emprende — contenido completo\n\n> %s\n\nAtendemos 100 %% online en toda España. Contacto y diagnóstico gratis: %s/contacto.html\n" % (ORG["description"], DOM)
 full += "\n## Packs y precios\n" + "".join("- %s: %s. %s\n" % (n, p, d) for n, p, d, _ in PACKS)
 for slug, menu, titulo, intro, bloques in SECCIONES:
     full += "\n## %s\nURL: %s/servicios/%s.html\n%s\n" % (titulo, DOM, slug, " ".join(intro.split()))
@@ -797,6 +840,9 @@ CheckCaseOnly Off
 DirectoryIndex index.html
 ErrorDocument 404 /404.html
 RewriteEngine On
+
+# URL antigua de la web multidioma
+RewriteRule ^servicios/webs/webs-multidioma-para-espana-y-latinoamerica(\\.html)?/?$ https://studioemprende.com/servicios/webs/webs-multidioma-para-espana-y-exportacion [R=301,L]
 
 # http o www -> https sin www en UN solo salto (quitando tambien la barra final o el .html)
 RewriteCond %{HTTPS} off [OR]

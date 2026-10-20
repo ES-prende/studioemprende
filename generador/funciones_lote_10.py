@@ -228,7 +228,7 @@ PAGINAS = {
   ("¿Cuántas diapositivas debe tener un pitch deck?", "Entre diez y quince suele bastar para la primera reunión; el detalle va en un anexo o en el data room."),
   ("¿Podéis revisar un pitch deck que ya tenemos hecho?", "Sí. Revisamos estructura, mensaje e inglés y te devolvemos una versión corregida."),
  ],
- "rel": [("../webs/webs-para-startups.html", "Webs para startups"), ("../webs/webs-multidioma-para-espana-y-latinoamerica.html", "Webs multidioma"), ("metricas-para-inversores.html", "Métricas para inversores")],
+ "rel": [("../webs/webs-para-startups.html", "Webs para startups"), ("../webs/webs-multidioma-para-espana-y-exportacion.html", "Webs multidioma"), ("metricas-para-inversores.html", "Métricas para inversores")],
 },
 "startups-e-inversores/due-diligence-tecnica": {
  "titulo": "Due diligence técnica para inversores y fondos",

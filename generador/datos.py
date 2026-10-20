@@ -41,7 +41,7 @@ SECCIONES = [
  [("Servicios", ["Automatización de administración, facturas y cobros", "Lectura automática de documentos hacia tu programa", "Previsión de ventas y stock", "Clientes en riesgo de irse", "Previsión de tesorería y control de costes", "Cuadro de mando de dirección", "Informe semanal por WhatsApp o voz", "Optimización de rutas"])]),
 ("webs", "web", "Webs",
  "Webs rápidas, accesibles y conectadas a tu gestión: cada contacto entra directo a tu CRM.",
- [("Tipos de web", ["Web corporativa con SEO", "Landing pages para campañas", "Tienda online", "Webs scroll 3D inmersivas", "Web con CRM integrado", "Web con reservas y citas", "Webs multidioma para España y Latinoamérica", "Webs para startups"]),
+ [("Tipos de web", ["Web corporativa con SEO", "Landing pages para campañas", "Tienda online", "Webs scroll 3D inmersivas", "Web con CRM integrado", "Web con reservas y citas", "Webs multidioma para España y exportación", "Webs para startups"]),
   ("IA en la web", ["Chatbot PIX", "Contenido personalizado según el visitante", "Pruebas A/B automáticas", "Buscador inteligente"]),
   ("Rendimiento y cumplimiento", ["Velocidad y Core Web Vitals", "Auditoría de conversión", "Accesibilidad web (Ley 11/2023)", "Aviso legal, privacidad y cookies"]),
   ("Mantenimiento", ["Mantenimiento mensual", "Rescate de webs antiguas o hackeadas", "Migración desde Wix o Squarespace"])]),
