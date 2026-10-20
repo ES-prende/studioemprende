@@ -295,7 +295,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{t}</title>
 <meta name="description" content="{d}">
-<link rel="canonical" href="{dom}/{canon}">{bing}
+{canonical}{bing}
 <meta property="og:title" content="{t}"><meta property="og:description" content="{d}"><meta property="og:image" content="{og}"><meta property="og:type" content="{tipo}">
 {seo}
 <link rel="icon" href="{r}favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="{r}favicon.svg"><link rel="apple-touch-icon" href="{r}apple-touch-icon.png"><link rel="manifest" href="{r}site.webmanifest"><meta name="theme-color" content="#7A2638">
@@ -316,7 +316,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <span class="wa-burbuja"><b>¿Hablamos?</b>Te respondemos por WhatsApp</span>
 <span class="wa-icono"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.6 3 15.6c0 2.5.8 4.9 2.1 6.9L3.6 29l6.7-1.7c1.8 1 3.8 1.5 5.7 1.5 7.2 0 13-5.6 13-12.6S23.2 3 16 3zm0 23.1c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-4 1 .9-3.8-.2-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.6 10 10.2 5.5 16 5.5S26.4 10 26.4 15.6 21.8 26.1 16 26.1zm5.7-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.4 3.3c.2.2 2.4 3.6 5.8 5 2.9 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></span></a>
 </body>
-</html>""".format(t=e(titulo), d=e(desc), dom=DOM, ruta=ruta.replace("index.html", ""), canon=CANON.get(ruta, ruta).replace("index.html", ""), r=r, cab=cabecera(r), c=cuerpo, pie=pie(r), seo=seo, tipo=tipo, og=OGIMG[ruta], bing=('\n<meta name="msvalidate.01" content="AB0BB421B154681CB3B932E814F90956" />' if ruta == "index.html" else ""), wan=WA_NUM, wat=_q("Hola, vengo de la web de Studio Emprende (%s) y quiero información." % titulo.split(" · ")[0]))
+</html>""".format(t=e(titulo), d=e(desc), dom=DOM, ruta=ruta.replace("index.html", ""), canonical=("" if ruta == "404.html" else '<link rel="canonical" href="%s/%s">' % (DOM, CANON.get(ruta, ruta).replace("index.html", ""))), r=r, cab=cabecera(r), c=cuerpo, pie=pie(r), seo=seo, tipo=tipo, og=OGIMG[ruta], bing=('\n<meta name="msvalidate.01" content="AB0BB421B154681CB3B932E814F90956" />' if ruta == "index.html" else ""), wan=WA_NUM, wat=_q("Hola, vengo de la web de Studio Emprende (%s) y quiero información." % titulo.split(" · ")[0]))
     p = os.path.join(OUT, ruta); os.makedirs(os.path.dirname(p), exist_ok=True)
     open(p, "w").write(html)
     PAGS.append(ruta)
@@ -388,7 +388,7 @@ inicio = """
 <h1>Tu negocio, <span class="acento">llave en mano</span>.</h1>
 <p class="lead">Programa de gestión modular, agentes de IA y web profesional en una sola cuenta. Empieza con lo que necesitas y crece cuando quieras.</p>
 <div class="botones"><a class="btn btn-p" href="contacto.html#diagnostico">Pide tu diagnóstico gratis</a><a class="btn btn-s" href="precios.html">Ver los packs</a></div>
-<div class="confianza"><span>Una sola cuenta</span><span>100 %% online</span><span>Toda España</span><span>Soporte que responde</span></div></div>
+<div class="confianza"><span>Una sola cuenta</span><span>100 %% online</span><span>Toda España</span><span>Soporte que responde</span></div><p class="mut" style="font-size:13px;margin-top:14px">Página actualizada el <!--FECHA_ACT-->.</p></div>
 <div class="hero-card" data-nosnippet aria-label="Ejemplo del agente PIX trabajando"><div class="estado"><span>Agente PIX · en marcha</span><b>● activo</b></div>
 <div class="fila">Nuevo contacto por WhatsApp: «Necesito una web y facturar con Verifactu»</div>
 <div class="fila ok"><span>✓ Contacto creado en el CRM</span><span>✓ Pack «Negocio en Marcha» propuesto</span><span>✓ Reunión agendada el jueves a las 10:00</span></div>
@@ -466,7 +466,7 @@ inicio = """
 </div></section>
 
 <section class="sec"><div class="w" style="display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:center">
-<div style="flex:999 1 420px;min-width:0"><p class="kicker">Normativas 2026-2027</p><h2>¿Te afecta Verifactu, el fichaje digital o el AI Act?</h2><p class="lead" style="margin-top:12px">Depende de tu forma jurídica y de tu actividad. Hacienda ha anunciado que Verifactu se retrasa a octubre de 2028 para todos; hasta que se publique en el BOE siguen vigentes el 1/1/2027 para sociedades y el 1/7/2027 para el resto. La factura electrónica entre empresas llega el 6/10/2027 (más de 8 M€) y el 6/10/2028 (resto). La formación en IA del AI Act es obligatoria desde el 2/2/2025 y el registro de jornada, desde 2019.</p><p class="mut" style="margin-top:10px;font-size:14px">Fuentes oficiales: <a href="https://www.boe.es/eli/es/rd/2023/12/05/1007" target="_blank" rel="noopener">RD 1007/2023 (Verifactu)</a>, <a href="https://www.boe.es/eli/es/l/2022/09/28/18" target="_blank" rel="noopener">Ley 18/2022 (factura electrónica)</a>, <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener">Reglamento (UE) 2024/1689 (AI Act)</a> y <a href="https://www.boe.es/eli/es/rdl/2019/03/08/8" target="_blank" rel="noopener">RDL 8/2019 (registro de jornada)</a>. Revisado el <time datetime="2026-10-12">12 de octubre de 2026</time>.</p><p style="margin-top:6px"><a href="normativas.html">Ver todas las normas, plazos y fuentes oficiales →</a></p></div>
+<div style="flex:999 1 420px;min-width:0"><p class="kicker">Normativas 2026-2027</p><h2>¿Te afecta Verifactu, el fichaje digital o el AI Act?</h2><p class="lead" style="margin-top:12px">Depende de tu forma jurídica y de tu actividad. Hacienda ha anunciado que Verifactu se retrasa a octubre de 2028 para todos; hasta que se publique en el BOE siguen vigentes el 1/1/2027 para sociedades y el 1/7/2027 para el resto. La factura electrónica entre empresas llega el 6/10/2027 (más de 8 M€) y el 6/10/2028 (resto). La formación en IA del AI Act es obligatoria desde el 2/2/2025 y el registro de jornada, desde 2019.</p><p class="mut" style="margin-top:10px;font-size:14px">Fuentes oficiales: <a href="https://www.boe.es/eli/es/rd/2023/12/05/1007" target="_blank" rel="noopener">RD 1007/2023 (Verifactu)</a>, <a href="https://www.boe.es/eli/es/l/2022/09/28/18" target="_blank" rel="noopener">Ley 18/2022 (factura electrónica)</a>, <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener">Reglamento (UE) 2024/1689 (AI Act)</a> y <a href="https://www.boe.es/eli/es/rdl/2019/03/08/8" target="_blank" rel="noopener">RDL 8/2019 (registro de jornada)</a>. Normativa revisada el <time datetime="2026-10-12">12 de octubre de 2026</time>.</p><p style="margin-top:6px"><a href="normativas.html">Ver todas las normas, plazos y fuentes oficiales →</a></p></div>
 <a class="btn btn-s" href="normativas.html">Ver normativas</a>
 </div></section>
 
@@ -776,6 +776,12 @@ for p in PAGS:
     LASTMOD[p] = _FECH[p][1][:10]
 _json.dump({k: _FECH[k] for k in sorted(_FECH) if k in LASTMOD}, open(_FP, "w"), indent=0)
 # dateModified coherente con el sitemap en las páginas que no tienen fecha propia
+_MESES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]
+for p in PAGS:
+    _f = os.path.join(OUT, p); _t = open(_f, encoding="utf-8").read()
+    if "<!--FECHA_ACT-->" in _t:
+        _y, _m, _d = LASTMOD[p].split("-")
+        open(_f, "w", encoding="utf-8").write(_t.replace("<!--FECHA_ACT-->", '<time datetime="%s">%d de %s de %s</time>' % (LASTMOD[p], int(_d), _MESES[int(_m) - 1], _y)))
 _ancla = '"isPartOf": {"@id": "%s/#web"}' % DOM
 for p in PAGS:
     _f = os.path.join(OUT, p); _t = open(_f, encoding="utf-8").read()
