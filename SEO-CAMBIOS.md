@@ -31,6 +31,9 @@ La web se genera entera con `generador/construir.py`, y cabecera, pie y estilos 
 | 24/10 | 1 | Títulos y H1 diferenciados en 7 páginas canibalizadas: previsión de ventas, chatbot para página web, recordatorios de cobros y entregas, resumen semanal, control de costes, cobros pendientes y cubrir ausencias. | `8070313` |
 | 24/10 | 6 | Cola de envío a indexación (`seo/COLA-INDEXACION.md`): 310 URLs, 31 días en Google (10/día) y 4 en Bing (100/día), empezando por lo nuevo y los hubs sin descubrir. | ver git log |
 | 24/10 | 5 | Kit para Sandra (`seo/BLOQUE5-SANDRA.md`): datos NAP idénticos, textos corto, medio y largo, y orden de directorios y enlaces. | ver git log |
+| 24/10 | 1 | Precio real del fichador: 8 €/empleado/mes, precio de grupo 5 € para plantillas grandes (a consultar), terminal físico 300 € pago único, sin IVA ni permanencia. Destacado en hub y página de precio (con 3 Offer en schema) y resumido en 21 páginas más. | `9518345` |
+| 24/10 | 1 | Bloque de precio y plazo por familia en 242 páginas no indexadas, solo con datos publicados (packs y plazos, PIX y piloto, formación 40 €/h); donde no hay precio público: presupuesto cerrado tras diagnóstico gratuito. | `9518345` |
+| 24/10 | 1 | **Tandas 1-13 completas:** ejemplo aplicado (130-220 palabras, negocio tipo sin nombres inventados) y 2 FAQ propias en las 291 páginas no indexadas, escritos en 8 lotes y validados (`seo/scripts/validar_ejemplos.py`): FAQ únicas en toda la web y siempre visibles junto a su schema. Antes/después: mediana de 1.000 → 1.346 palabras, 6 → 8 FAQ; con ejemplo 213 → 299 de 302. | `5fbe61f` |
 
 ## Revisado y ya estaba bien (no se cambia)
 
@@ -57,9 +60,10 @@ La web se genera entera con `generador/construir.py`, y cabecera, pie y estilos 
 ## Pendiente
 
 - [ ] Revisión de la tabla de priorización por parte de Sandra.
-- [ ] Datos reales: precio del fichador y plazos por servicio. (Caso citable y capturas: hecho con ContrataLux.)
+- [x] Precio del fichador. (Caso citable y capturas: ContrataLux.)
+- [ ] Plazos de implantación de los servicios a medida (hoy: «fases y fechas por escrito en la propuesta»).
 - [x] Anexo C reescrito.
-- [ ] Bloque 1, tandas 1-13: añadir precio, plazo y ejemplo a cada página (pendiente de los datos de Sandra).
+- [x] Bloque 1, tandas 1-13: precio, plazo, ejemplo y FAQ propias en todas las páginas no indexadas.
 - [x] Bloque 2: malla de grupos de intención y enlaces hacia las páginas poco enlazadas.
 - [x] Bloque 3: caso de éxito, CRM para autónomos (precio), agentes IA WhatsApp y temas del blog.
 - [ ] Bloque 3: comparativas tipo «Holded vs …» (necesitan precios y funciones de terceros verificados en la fecha de publicación).
