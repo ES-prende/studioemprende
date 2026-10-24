@@ -28,9 +28,9 @@ PAGINAS = {
  "rel": [("../whatsapp-ia/reactivacion-de-clientes-y-pacientes-inactivos.html", "Reactivación de clientes inactivos"), ("cuadro-de-mando-de-direccion.html", "Cuadro de mando de dirección"), ("../software-de-gestion/ficha-de-cliente-360.html", "Ficha de cliente 360")],
 },
 "automatizacion-y-datos/prevision-de-tesoreria-y-control-de-costes": {
- "titulo": "Control de costes y previsión de caja con IA",
- "meta": "Control de costes y previsión de caja automáticos: la IA clasifica gastos, detecta subidas de proveedores y avisa de los meses con poca liquidez.",
- "h1": "Previsión de tesorería y control de costes sin hojas de cálculo",
+ "titulo": "Control de costes de la empresa sin hojas de cálculo",
+ "meta": "Control de costes para pymes con los datos de tus programas: gastos por partida, desviaciones frente a lo previsto y alertas antes de que afecten a la caja.",
+ "h1": "Control de costes de la empresa: dónde se va el dinero cada mes",
  "lead": "La previsión de tesorería y el control de costes dejan de ser un Excel que se actualiza cuando hay tiempo: los datos salen del banco y de tus facturas, y la IA te avisa de lo que se tuerce.",
  "respuesta": "Este servicio conecta tus movimientos bancarios, facturas emitidas y facturas de proveedores para calcular cuánto dinero tendrás cada semana y en qué se va. La IA clasifica los gastos por partida, compara precios de proveedores mes a mes y avisa cuando un coste sube o cuando la caja prevista baja de un mínimo que tú fijas.",
  "secciones": [
@@ -319,9 +319,9 @@ PAGINAS = {
  "rel": [("../startups-e-inversores/mvp-en-6-12-semanas.html", "MVP en 6-12 semanas"), ("../startups-e-inversores/pitch-y-web-en-ingles.html", "Pitch y web en inglés"), ("../../blog/mvp-startup.html", "Cómo construir el MVP de tu startup")],
 },
 "webs/chatbot-pix": {
- "titulo": "Chatbot con IA para tu web que responde y capta",
- "meta": "Chatbot con IA para tu web entrenado con la información de tu empresa: responde dudas, recoge contactos, reserva citas y lo pasa todo a tu CRM.",
- "h1": "Chatbot PIX: el chatbot con IA que atiende tu web a cualquier hora",
+ "titulo": "Chatbot para página web: integrado en tu diseño",
+ "meta": "Chatbot para página web con el diseño de tu marca, que capta contactos, responde con tu información y pasa cada conversación a tu CRM.",
+ "h1": "Chatbot para tu página web, integrado en el diseño y conectado a tu CRM",
  "lead": "El chatbot PIX es un chatbot con IA para tu web que responde con la información real de tu empresa y, cuando detecta interés, recoge los datos del visitante y los deja en tu CRM.",
  "respuesta": "PIX es un agente de IA que, colocado en tu web como chat, responde a los visitantes usando los servicios, precios, horarios y preguntas frecuentes de tu empresa. A diferencia de un chatbot de botones, entiende preguntas escritas con sus palabras, puede proponer una cita, pedir los datos de contacto y pasar la conversación a una persona cuando hace falta.",
  "secciones": [

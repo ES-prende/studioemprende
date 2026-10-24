@@ -607,9 +607,9 @@ PAGINAS = {
  "rel": [("../software-de-gestion/lectura-automatica-de-facturas-de-proveedores.html", "Lectura de facturas de proveedores"), ("../migraciones-e-integraciones/digitalizacion-de-archivo-en-papel.html", "Digitalización de archivo en papel"), ("automatizacion-de-administracion-facturas-y-cobros.html", "Automatización de administración")],
 },
 "automatizacion-y-datos/prevision-de-ventas-y-stock": {
- "titulo": "Previsión de ventas y stock con IA para pymes",
- "meta": "Previsión de ventas y stock con IA: anticipa qué venderás según tu histórico y temporada, y recibe la propuesta de compra antes de quedarte sin género.",
- "h1": "Previsión de ventas y stock: compra lo que vas a vender",
+ "titulo": "Previsión de ventas para pymes con tus propios datos",
+ "meta": "Previsión de ventas para pymes a partir de tu histórico, la temporada y los pedidos abiertos, para planificar compras, equipo y tesorería con números.",
+ "h1": "Previsión de ventas para pymes: cuánto vas a vender el mes que viene",
  "lead": "La previsión de ventas y stock usa tu histórico para anticipar qué vas a vender en las próximas semanas y cuánto tienes que pedir para no quedarte corto ni llenar el almacén.",
  "respuesta": "Una previsión de ventas y stock analiza el histórico de ventas de cada artículo, su estacionalidad, las tendencias recientes y los pedidos ya comprometidos para estimar la demanda de las próximas semanas. Con esa estimación, el stock actual y el plazo de cada proveedor, propone qué y cuánto comprar y avisa de los artículos que se van a agotar.",
  "secciones": [

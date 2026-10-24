@@ -31,6 +31,7 @@
    "/blog/copias-de-seguridad-que-funcionan",
    "/blog/crm-para-autonomos",
    "/blog/crm-para-empresas-de-servicios",
+   "/blog/cuanto-cuesta-un-crm-para-autonomos",
    "/blog/departamento-tecnologico-externo",
    "/blog/es-obligatorio-el-fichaje-digital",
    "/blog/formacion-bonificada-para-empresas-fundae",
@@ -431,9 +432,16 @@
    "/servicios/whatsapp-ia/asistente-de-ia-para-whatsapp",
    "/servicios/whatsapp-ia/citas-y-recordatorios-automaticos",
    "/servicios/whatsapp-ia/reactivacion-de-clientes-y-pacientes-inactivos",
-   "/sobre-nosotros"
+   "/sobre-nosotros",
+   "/temas/",
+   "/temas/emprender-y-crecer",
+   "/temas/formacion-para-empresas",
+   "/temas/gestion-y-crm",
+   "/temas/inteligencia-artificial",
+   "/temas/normativas-y-cumplimiento",
+   "/temas/webs-y-visibilidad"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/blog/crm-para-empresas-de-servicios",
   "parecido": 0.081
  },
@@ -455,7 +463,7 @@
    "/mapa-web",
    "/privacidad"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/privacidad",
   "parecido": 0.015
  },
@@ -489,6 +497,7 @@
    "/blog/copias-de-seguridad-que-funcionan",
    "/blog/crm-para-autonomos",
    "/blog/crm-para-empresas-de-servicios",
+   "/blog/cuanto-cuesta-un-crm-para-autonomos",
    "/blog/departamento-tecnologico-externo",
    "/blog/es-obligatorio-el-fichaje-digital",
    "/blog/formacion-bonificada-para-empresas-fundae",
@@ -513,7 +522,7 @@
    "/blog/whatsapp-para-no-perder-clientes",
    "/mapa-web"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/mapa-web",
   "parecido": 0.107
  },
@@ -524,7 +533,7 @@
   "h1": "Agente de IA para WhatsApp: cómo automatizar las respuestas de WhatsApp Business",
   "canonical": "https://studioemprende.com/blog/agente-de-ia-para-whatsapp",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 903,
+  "palabras": 911,
   "faq": 4,
   "precio": false,
   "plazo": false,
@@ -574,9 +583,10 @@
    "/servicios/pequenas-empresas/no-pierdas-clientes-whatsapp-ia-y-recepcionista-de-voz",
    "/servicios/software-de-gestion/captacion-de-leads-desde-web-whatsapp-y-anuncios",
    "/servicios/whatsapp-ia/",
-   "/servicios/whatsapp-ia/asistente-de-ia-para-whatsapp"
+   "/servicios/whatsapp-ia/asistente-de-ia-para-whatsapp",
+   "/temas/inteligencia-artificial"
   ],
-  "entrantes_total": 43,
+  "entrantes_total": 44,
   "mas_parecida": "/blog/crm-para-empresas-de-servicios",
   "parecido": 0.138
  },
@@ -587,7 +597,7 @@
   "h1": "App de control horario para pequeñas empresas: qué debe tener",
   "canonical": "https://studioemprende.com/blog/app-de-control-horario-para-pequenas-empresas",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 807,
+  "palabras": 820,
   "faq": 3,
   "precio": false,
   "plazo": false,
@@ -596,6 +606,7 @@
   "svg": 0,
   "entrantes_contenido": [
    "/blog/",
+   "/blog/cuanto-cuesta-un-crm-para-autonomos",
    "/blog/es-obligatorio-el-fichaje-digital",
    "/mapa-web",
    "/servicios/apps-moviles/app-interna-para-empleados-y-tecnicos",
@@ -606,11 +617,12 @@
    "/servicios/fichador/pausas-y-descansos",
    "/servicios/fichador/prueba-gratuita",
    "/servicios/pequenas-empresas/cumple-la-ley-verifactu-y-registro-de-jornada",
-   "/servicios/software-de-gestion/fichador-y-registro-de-jornada"
+   "/servicios/software-de-gestion/fichador-y-registro-de-jornada",
+   "/temas/gestion-y-crm"
   ],
-  "entrantes_total": 12,
+  "entrantes_total": 14,
   "mas_parecida": "/blog/es-obligatorio-el-fichaje-digital",
-  "parecido": 0.124
+  "parecido": 0.123
  },
  "/blog/app-movil-para-mi-negocio": {
   "existe": true,
@@ -632,9 +644,10 @@
    "/servicios/apps-moviles/",
    "/servicios/apps-moviles/app-para-clientes-reservas-pedidos-fidelizacion-y-avisos",
    "/servicios/apps-moviles/publicacion-en-google-play-y-app-store",
-   "/servicios/software-de-gestion/app-movil"
+   "/servicios/software-de-gestion/app-movil",
+   "/temas/gestion-y-crm"
   ],
-  "entrantes_total": 6,
+  "entrantes_total": 7,
   "mas_parecida": "/blog/como-dejar-de-usar-excel-en-mi-empresa",
   "parecido": 0.115
  },
@@ -660,9 +673,10 @@
    "/sectores",
    "/servicios/presencia-digital/menus-digitales-para-hosteleria",
    "/servicios/software-de-gestion/lotes-trazabilidad-y-caducidades",
-   "/servicios/software-especializado/appcc-digital-para-hosteleria-y-alimentacion"
+   "/servicios/software-especializado/appcc-digital-para-hosteleria-y-alimentacion",
+   "/temas/normativas-y-cumplimiento"
   ],
-  "entrantes_total": 8,
+  "entrantes_total": 9,
   "mas_parecida": "/blog/como-dejar-de-usar-excel-en-mi-empresa",
   "parecido": 0.113
  },
@@ -685,9 +699,10 @@
    "/mapa-web",
    "/servicios/alojamientos-y-domotica/hogar-inteligente-y-modo-vacaciones",
    "/servicios/deluxe/conectividad-en-toda-la-finca",
-   "/servicios/deluxe/villa-o-casa-inteligente-de-lujo"
+   "/servicios/deluxe/villa-o-casa-inteligente-de-lujo",
+   "/temas/emprender-y-crecer"
   ],
-  "entrantes_total": 5,
+  "entrantes_total": 6,
   "mas_parecida": "/blog/crm-para-empresas-de-servicios",
   "parecido": 0.117
  },
@@ -714,9 +729,10 @@
    "/servicios/formacion-ia/",
    "/servicios/formacion-ia/ia-para-autonomos-por-profesion",
    "/servicios/formacion-ia/sesion-de-ia-1-a-1",
-   "/servicios/pix/asistente-empresarial"
+   "/servicios/pix/asistente-empresarial",
+   "/temas/inteligencia-artificial"
   ],
-  "entrantes_total": 9,
+  "entrantes_total": 10,
   "mas_parecida": "/blog/formacion-en-ia-desde-cero",
   "parecido": 0.142
  },
@@ -741,9 +757,10 @@
    "/guias/crear-pagina-web-con-ia",
    "/mapa-web",
    "/servicios/presencia-digital/aparecer-en-chatgpt-y-gemini-geo",
-   "/servicios/presencia-digital/seo-programatico"
+   "/servicios/presencia-digital/seo-programatico",
+   "/temas/webs-y-visibilidad"
   ],
-  "entrantes_total": 7,
+  "entrantes_total": 8,
   "mas_parecida": "/blog/como-aparecer-en-google-con-tu-pequena-empresa",
   "parecido": 0.127
  },
@@ -769,9 +786,10 @@
    "/servicios/pequenas-empresas/digitalizacion-de-negocios-rurales",
    "/servicios/presencia-digital/google-business-profile",
    "/servicios/presencia-digital/seo-local-y-por-sectores",
-   "/servicios/webs/web-corporativa-con-seo"
+   "/servicios/webs/web-corporativa-con-seo",
+   "/temas/webs-y-visibilidad"
   ],
-  "entrantes_total": 8,
+  "entrantes_total": 9,
   "mas_parecida": "/blog/crm-para-empresas-de-servicios",
   "parecido": 0.139
  },
@@ -806,9 +824,10 @@
    "/servicios/migraciones-e-integraciones/digitalizacion-de-archivo-en-papel",
    "/servicios/migraciones-e-integraciones/migracion-de-excel-a-programa-de-gestion",
    "/servicios/pix/nexgestion",
-   "/servicios/software-de-gestion/facturacion-con-verifactu"
+   "/servicios/software-de-gestion/facturacion-con-verifactu",
+   "/temas/gestion-y-crm"
   ],
-  "entrantes_total": 17,
+  "entrantes_total": 18,
   "mas_parecida": "/blog/crm-para-empresas-de-servicios",
   "parecido": 0.137
  },
@@ -865,9 +884,10 @@
    "/blog/web-que-vende",
    "/blog/whatsapp-para-no-perder-clientes",
    "/mapa-web",
-   "/servicios/formacion-ia/ia-para-duenos-de-negocios-de-toda-la-vida"
+   "/servicios/formacion-ia/ia-para-duenos-de-negocios-de-toda-la-vida",
+   "/temas/inteligencia-artificial"
   ],
-  "entrantes_total": 39,
+  "entrantes_total": 40,
   "mas_parecida": "/blog/crm-para-empresas-de-servicios",
   "parecido": 0.165
  },
@@ -895,9 +915,10 @@
    "/servicios/problemas-sin-resolver/semaforo-de-clientes-morosos",
    "/servicios/problemas-sin-resolver/sistema-anti-impagos",
    "/servicios/software-de-gestion/cobros-impagos-y-semaforo-de-clientes",
-   "/servicios/software-de-gestion/remesas-y-domiciliaciones"
+   "/servicios/software-de-gestion/remesas-y-domiciliaciones",
+   "/temas/emprender-y-crecer"
   ],
-  "entrantes_total": 10,
+  "entrantes_total": 11,
   "mas_parecida": "/blog/crm-para-empresas-de-servicios",
   "parecido": 0.118
  },
@@ -926,9 +947,10 @@
    "/servicios/fichador/conservacion-durante-4-anos",
    "/servicios/migraciones-e-integraciones/",
    "/servicios/migraciones-e-integraciones/rescate-de-software-antiguo",
-   "/servicios/webs/mantenimiento-mensual"
+   "/servicios/webs/mantenimiento-mensual",
+   "/temas/emprender-y-crecer"
   ],
-  "entrantes_total": 11,
+  "entrantes_total": 12,
   "mas_parecida": "/blog/crm-para-empresas-de-servicios",
   "parecido": 0.111
  },
@@ -949,12 +971,14 @@
   "entrantes_contenido": [
    "/blog/",
    "/blog/crm-para-empresas-de-servicios",
+   "/blog/cuanto-cuesta-un-crm-para-autonomos",
    "/blog/primeros-pasos-autonomo-digital",
    "/mapa-web",
    "/servicios/autonomos/automatizacion-del-dia-a-dia",
-   "/servicios/software-de-gestion/embudo-de-ventas-y-oportunidades"
+   "/servicios/software-de-gestion/embudo-de-ventas-y-oportunidades",
+   "/temas/gestion-y-crm"
   ],
-  "entrantes_total": 6,
+  "entrantes_total": 8,
   "mas_parecida": "/blog/crm-para-empresas-de-servicios",
   "parecido": 0.134
  },
@@ -976,6 +1000,7 @@
    "/blog/",
    "/blog/agente-de-ia-para-whatsapp",
    "/blog/como-empezar-a-usar-la-ia-en-tu-pequena-empresa",
+   "/blog/cuanto-cuesta-un-crm-para-autonomos",
    "/blog/ia-o-contratar-personal-en-una-pequena-empresa",
    "/guias/erp-vs-crm",
    "/mapa-web",
@@ -983,9 +1008,10 @@
    "/servicios/software-de-gestion/embudo-de-ventas-y-oportunidades",
    "/servicios/software-de-gestion/ficha-de-cliente-360",
    "/servicios/software-de-gestion/seguimiento-comercial-y-tareas",
-   "/servicios/webs/web-con-crm-integrado"
+   "/servicios/webs/web-con-crm-integrado",
+   "/temas/gestion-y-crm"
   ],
-  "entrantes_total": 11,
+  "entrantes_total": 13,
   "mas_parecida": "/blog/como-empezar-a-usar-la-ia-en-tu-pequena-empresa",
   "parecido": 0.165
  },
@@ -1009,9 +1035,10 @@
    "/servicios/agentes-de-ia/departamento-de-ia-externalizado",
    "/servicios/departamento-tecnologico/",
    "/servicios/departamento-tecnologico/asesor-de-compras-tecnologicas",
-   "/servicios/departamento-tecnologico/soporte-con-un-unico-interlocutor"
+   "/servicios/departamento-tecnologico/soporte-con-un-unico-interlocutor",
+   "/temas/emprender-y-crecer"
   ],
-  "entrantes_total": 6,
+  "entrantes_total": 7,
   "mas_parecida": "/blog/crm-para-empresas-de-servicios",
   "parecido": 0.118
  },
@@ -1042,11 +1069,12 @@
    "/servicios/fichador/registros-inalterables-con-historial",
    "/servicios/pequenas-empresas/cumple-la-ley-verifactu-y-registro-de-jornada",
    "/servicios/problemas-sin-resolver/turnos-y-ausencias-integrados",
-   "/servicios/software-de-gestion/fichador-y-registro-de-jornada"
+   "/servicios/software-de-gestion/fichador-y-registro-de-jornada",
+   "/temas/normativas-y-cumplimiento"
   ],
-  "entrantes_total": 13,
+  "entrantes_total": 14,
   "mas_parecida": "/blog/app-de-control-horario-para-pequenas-empresas",
-  "parecido": 0.124
+  "parecido": 0.123
  },
  "/blog/formacion-bonificada-para-empresas-fundae": {
   "existe": true,
@@ -1073,9 +1101,10 @@
    "/servicios/formacion-ia/cursos-de-formacion-a-medida-para-empresas",
    "/servicios/formacion-ia/formacion-obligatoria-ai-act",
    "/servicios/formacion-ia/formacion-por-sectores",
-   "/servicios/grandes-empresas/formacion-in-company-por-departamentos"
+   "/servicios/grandes-empresas/formacion-in-company-por-departamentos",
+   "/temas/formacion-para-empresas"
   ],
-  "entrantes_total": 11,
+  "entrantes_total": 12,
   "mas_parecida": "/blog/chatgpt-gemini-copilot-o-claude-para-empresas",
   "parecido": 0.127
  },
@@ -1097,9 +1126,11 @@
    "/blog/",
    "/blog/chatgpt-gemini-copilot-o-claude-para-empresas",
    "/mapa-web",
-   "/servicios/formacion-ia/ia-para-autonomos-por-profesion"
+   "/servicios/formacion-ia/ia-para-autonomos-por-profesion",
+   "/temas/formacion-para-empresas",
+   "/temas/inteligencia-artificial"
   ],
-  "entrantes_total": 4,
+  "entrantes_total": 6,
   "mas_parecida": "/blog/chatgpt-gemini-copilot-o-claude-para-empresas",
   "parecido": 0.142
  },
@@ -1125,9 +1156,11 @@
    "/servicios/ciberseguridad-y-sistemas/adaptacion-al-ai-act",
    "/servicios/formacion-ia/formacion-obligatoria-ai-act",
    "/servicios/grandes-empresas/formacion-in-company-por-departamentos",
-   "/servicios/software-especializado/plataforma-de-formacion-interna-lms"
+   "/servicios/software-especializado/plataforma-de-formacion-interna-lms",
+   "/temas/formacion-para-empresas",
+   "/temas/normativas-y-cumplimiento"
   ],
-  "entrantes_total": 8,
+  "entrantes_total": 10,
   "mas_parecida": "/blog/formacion-obligatoria-en-empresas",
   "parecido": 0.123
  },
@@ -1154,9 +1187,11 @@
    "/servicios/formacion-ia/plan-de-formacion-para-nuevos-empleados",
    "/servicios/problemas-sin-resolver/formacion-rapida-de-nuevos-empleados",
    "/servicios/software-de-gestion/onboarding-con-ia",
-   "/servicios/software-especializado/plataforma-de-formacion-interna-lms"
+   "/servicios/software-especializado/plataforma-de-formacion-interna-lms",
+   "/temas/formacion-para-empresas",
+   "/temas/normativas-y-cumplimiento"
   ],
-  "entrantes_total": 9,
+  "entrantes_total": 11,
   "mas_parecida": "/blog/chatgpt-gemini-copilot-o-claude-para-empresas",
   "parecido": 0.13
  },
@@ -1214,9 +1249,10 @@
    "/blog/whatsapp-para-no-perder-clientes",
    "/mapa-web",
    "/servicios/consultoria-y-ayudas/auditoria-de-ia-para-pymes",
-   "/servicios/problemas-sin-resolver/empleado-digital"
+   "/servicios/problemas-sin-resolver/empleado-digital",
+   "/temas/inteligencia-artificial"
   ],
-  "entrantes_total": 40,
+  "entrantes_total": 41,
   "mas_parecida": "/blog/como-empezar-a-usar-la-ia-en-tu-pequena-empresa",
   "parecido": 0.163
  },
@@ -1241,9 +1277,10 @@
    "/mapa-web",
    "/servicios/consultoria-y-ayudas/gestion-del-kit-digital-y-kit-consulting",
    "/servicios/consultoria-y-ayudas/vigilancia-de-subvenciones",
-   "/servicios/pix/implantacion-y-precios"
+   "/servicios/pix/implantacion-y-precios",
+   "/temas/inteligencia-artificial"
   ],
-  "entrantes_total": 7,
+  "entrantes_total": 8,
   "mas_parecida": "/blog/crm-para-empresas-de-servicios",
   "parecido": 0.114
  },
@@ -1269,9 +1306,10 @@
    "/guias/tipos-de-emprendimiento",
    "/mapa-web",
    "/servicios/startups-e-inversores/mvp-en-6-12-semanas",
-   "/servicios/webs/webs-para-startups"
+   "/servicios/webs/webs-para-startups",
+   "/temas/emprender-y-crecer"
   ],
-  "entrantes_total": 8,
+  "entrantes_total": 9,
   "mas_parecida": "/blog/como-dejar-de-usar-excel-en-mi-empresa",
   "parecido": 0.116
  },
@@ -1295,9 +1333,10 @@
    "/servicios/formacion-ia/mentoria-para-directivos",
    "/servicios/grandes-empresas/",
    "/servicios/grandes-empresas/piloto-de-agente-ia-en-30-60-dias",
-   "/servicios/grandes-empresas/voz-del-cliente-con-ia"
+   "/servicios/grandes-empresas/voz-del-cliente-con-ia",
+   "/temas/inteligencia-artificial"
   ],
-  "entrantes_total": 6,
+  "entrantes_total": 7,
   "mas_parecida": "/blog/crm-para-empresas-de-servicios",
   "parecido": 0.117
  },
@@ -1308,7 +1347,7 @@
   "h1": "Plan de formación para empresas: cómo hacerlo en 6 pasos",
   "canonical": "https://studioemprende.com/blog/plan-de-formacion-para-empresas",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 870,
+  "palabras": 879,
   "faq": 3,
   "precio": false,
   "plazo": false,
@@ -1325,11 +1364,12 @@
    "/servicios/formacion-ia/plan-de-formacion-para-nuevos-empleados",
    "/servicios/problemas-sin-resolver/formacion-rapida-de-nuevos-empleados",
    "/servicios/software-de-gestion/onboarding-con-ia",
-   "/servicios/software-especializado/plataforma-de-formacion-interna-lms"
+   "/servicios/software-especializado/plataforma-de-formacion-interna-lms",
+   "/temas/formacion-para-empresas"
   ],
-  "entrantes_total": 10,
+  "entrantes_total": 11,
   "mas_parecida": "/blog/chatgpt-gemini-copilot-o-claude-para-empresas",
-  "parecido": 0.129
+  "parecido": 0.128
  },
  "/blog/primeros-pasos-autonomo-digital": {
   "existe": true,
@@ -1352,9 +1392,11 @@
    "/guias/que-es-un-emprendedor",
    "/mapa-web",
    "/servicios/autonomos/",
-   "/servicios/autonomos/kit-de-arranque-web-google-business-y-facturacion"
+   "/servicios/autonomos/kit-de-arranque-web-google-business-y-facturacion",
+   "/temas/emprender-y-crecer",
+   "/temas/webs-y-visibilidad"
   ],
-  "entrantes_total": 7,
+  "entrantes_total": 9,
   "mas_parecida": "/blog/como-aparecer-en-google-con-tu-pequena-empresa",
   "parecido": 0.117
  },
@@ -1382,9 +1424,10 @@
    "/servicios/automatizacion-y-datos/automatizacion-de-administracion-facturas-y-cobros",
    "/servicios/consultoria-y-ayudas/diagnostico-de-digitalizacion-gratuito",
    "/servicios/pequenas-empresas/ahorra-horas-programa-de-gestion-y-facturas-automaticas",
-   "/servicios/software-de-gestion/productividad-y-objetivos"
+   "/servicios/software-de-gestion/productividad-y-objetivos",
+   "/temas/emprender-y-crecer"
   ],
-  "entrantes_total": 10,
+  "entrantes_total": 11,
   "mas_parecida": "/blog/crm-para-empresas-de-servicios",
   "parecido": 0.117
  },
@@ -1395,7 +1438,7 @@
   "h1": "Qué es un ERP y cuándo lo necesita tu empresa",
   "canonical": "https://studioemprende.com/blog/que-es-un-erp-y-cuando-lo-necesito",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 1178,
+  "palabras": 1187,
   "faq": 3,
   "precio": false,
   "plazo": false,
@@ -1410,11 +1453,12 @@
    "/mapa-web",
    "/servicios/erp-para-pymes/analisis-de-tus-procesos-y-eleccion-de-modulos",
    "/servicios/erp-para-pymes/crm-y-ventas-conectados-a-facturacion",
-   "/servicios/grandes-empresas/ia-conectada-a-erp-y-sistemas-antiguos"
+   "/servicios/grandes-empresas/ia-conectada-a-erp-y-sistemas-antiguos",
+   "/temas/gestion-y-crm"
   ],
-  "entrantes_total": 8,
+  "entrantes_total": 9,
   "mas_parecida": "/blog/app-de-control-horario-para-pequenas-empresas",
-  "parecido": 0.098
+  "parecido": 0.1
  },
  "/blog/que-es-verifactu-y-cuando-me-afecta": {
   "existe": true,
@@ -1423,7 +1467,7 @@
   "h1": "Qué es Verifactu y cuándo te afecta",
   "canonical": "https://studioemprende.com/blog/que-es-verifactu-y-cuando-me-afecta",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 1179,
+  "palabras": 1186,
   "faq": 3,
   "precio": false,
   "plazo": false,
@@ -1446,11 +1490,12 @@
    "/servicios/software-de-gestion/conexion-con-tu-asesoria",
    "/servicios/software-de-gestion/factura-electronica-b2b",
    "/servicios/software-de-gestion/facturacion-con-verifactu",
-   "/servicios/software-especializado/portal-en-marca-blanca-para-gestorias"
+   "/servicios/software-especializado/portal-en-marca-blanca-para-gestorias",
+   "/temas/normativas-y-cumplimiento"
   ],
-  "entrantes_total": 16,
+  "entrantes_total": 17,
   "mas_parecida": "/blog/crm-para-empresas-de-servicios",
-  "parecido": 0.119
+  "parecido": 0.118
  },
  "/blog/que-puede-hacer-un-agente-de-ia": {
   "existe": true,
@@ -1477,9 +1522,10 @@
    "/servicios/consultoria-y-ayudas/auditoria-de-ia-para-pymes",
    "/servicios/erp-para-pymes/pix-dentro-del-erp-preguntale-en-lenguaje-normal",
    "/servicios/fichador/fichaje-por-whatsapp-o-con-pix",
-   "/servicios/problemas-sin-resolver/agente-de-tramites"
+   "/servicios/problemas-sin-resolver/agente-de-tramites",
+   "/temas/inteligencia-artificial"
   ],
-  "entrantes_total": 11,
+  "entrantes_total": 12,
   "mas_parecida": "/blog/como-empezar-a-usar-la-ia-en-tu-pequena-empresa",
   "parecido": 0.122
  },
@@ -1503,9 +1549,10 @@
    "/normativas",
    "/servicios/alojamientos-y-domotica/check-in-online-con-firma",
    "/servicios/alojamientos-y-domotica/control-de-nrua-y-licencias",
-   "/servicios/alojamientos-y-domotica/envio-automatico-a-ses-hospedajes"
+   "/servicios/alojamientos-y-domotica/envio-automatico-a-ses-hospedajes",
+   "/temas/normativas-y-cumplimiento"
   ],
-  "entrantes_total": 6,
+  "entrantes_total": 7,
   "mas_parecida": "/blog/crm-para-empresas-de-servicios",
   "parecido": 0.107
  },
@@ -1528,9 +1575,10 @@
    "/mapa-web",
    "/servicios/relevo-y-continuidad/",
    "/servicios/relevo-y-continuidad/diagnostico-de-continuidad",
-   "/servicios/relevo-y-continuidad/digitalizacion-para-el-sucesor"
+   "/servicios/relevo-y-continuidad/digitalizacion-para-el-sucesor",
+   "/temas/emprender-y-crecer"
   ],
-  "entrantes_total": 5,
+  "entrantes_total": 6,
   "mas_parecida": "/blog/como-dejar-de-usar-excel-en-mi-empresa",
   "parecido": 0.113
  },
@@ -1556,9 +1604,10 @@
    "/servicios/erp-para-pymes/crece-contigo-anades-modulos-cuando-los-necesitas",
    "/servicios/migraciones-e-integraciones/migracion-desde-holded-clientify-hubspot-y-otros",
    "/servicios/migraciones-e-integraciones/unificar-varios-programas-en-uno",
-   "/servicios/pequenas-empresas/ahorra-horas-programa-de-gestion-y-facturas-automaticas"
+   "/servicios/pequenas-empresas/ahorra-horas-programa-de-gestion-y-facturas-automaticas",
+   "/temas/gestion-y-crm"
   ],
-  "entrantes_total": 8,
+  "entrantes_total": 9,
   "mas_parecida": "/blog/crm-para-empresas-de-servicios",
   "parecido": 0.125
  },
@@ -1589,9 +1638,10 @@
    "/servicios/consultoria-y-ayudas/auditoria-de-procesos-con-informe-de-ahorro",
    "/servicios/pix/flujos-de-trabajo",
    "/servicios/presencia-digital/automatizacion-de-redes-sociales",
-   "/servicios/software-especializado/contratos-y-firma-automatizados"
+   "/servicios/software-especializado/contratos-y-firma-automatizados",
+   "/temas/inteligencia-artificial"
   ],
-  "entrantes_total": 13,
+  "entrantes_total": 14,
   "mas_parecida": "/blog/ia-o-contratar-personal-en-una-pequena-empresa",
   "parecido": 0.121
  },
@@ -1621,9 +1671,10 @@
    "/servicios/agentes-de-ia/chatbot-para-tu-web-con-pix",
    "/servicios/software-especializado/presupuestador-y-configurador-online",
    "/servicios/webs/auditoria-de-conversion",
-   "/servicios/webs/web-corporativa-con-seo"
+   "/servicios/webs/web-corporativa-con-seo",
+   "/temas/webs-y-visibilidad"
   ],
-  "entrantes_total": 12,
+  "entrantes_total": 13,
   "mas_parecida": "/blog/como-aparecer-en-google-con-tu-pequena-empresa",
   "parecido": 0.12
  },
@@ -1651,9 +1702,10 @@
    "/servicios/software-de-gestion/recordatorios-automaticos-por-whatsapp",
    "/servicios/software-de-gestion/seguimiento-comercial-y-tareas",
    "/servicios/whatsapp-ia/",
-   "/servicios/whatsapp-ia/asistente-de-ia-para-whatsapp"
+   "/servicios/whatsapp-ia/asistente-de-ia-para-whatsapp",
+   "/temas/inteligencia-artificial"
   ],
-  "entrantes_total": 10,
+  "entrantes_total": 11,
   "mas_parecida": "/blog/como-dejar-de-usar-excel-en-mi-empresa",
   "parecido": 0.117
  },
@@ -1687,7 +1739,7 @@
   "h1": "ContrataLux: de una idea a un software con marca, web indexada y redes en marcha",
   "canonical": "https://studioemprende.com/casos/contratalux",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 1597,
+  "palabras": 1606,
   "faq": 5,
   "precio": false,
   "plazo": false,
@@ -1695,6 +1747,7 @@
   "imagen": 8,
   "svg": 1,
   "entrantes_contenido": [
+   "/blog/cuanto-cuesta-un-crm-para-autonomos",
    "/casos/",
    "/servicios/autonomos/packs-con-precio-cerrado",
    "/servicios/departamento-tecnologico/correo-que-no-llega-a-spam",
@@ -1709,10 +1762,11 @@
    "/servicios/software-de-gestion/comerciales-y-comisiones",
    "/servicios/software-de-gestion/cuadro-de-mando-en-tiempo-real",
    "/servicios/software-especializado/",
-   "/sobre-nosotros"
+   "/sobre-nosotros",
+   "/temas/webs-y-visibilidad"
   ],
-  "entrantes_total": 15,
-  "mas_parecida": "/casos/",
+  "entrantes_total": 17,
+  "mas_parecida": "/servicios/presencia-digital/seo-programatico",
   "parecido": 0.006
  },
  "/contacto": {
@@ -1747,6 +1801,7 @@
    "/blog/copias-de-seguridad-que-funcionan",
    "/blog/crm-para-autonomos",
    "/blog/crm-para-empresas-de-servicios",
+   "/blog/cuanto-cuesta-un-crm-para-autonomos",
    "/blog/departamento-tecnologico-externo",
    "/blog/es-obligatorio-el-fichaje-digital",
    "/blog/formacion-bonificada-para-empresas-fundae",
@@ -2144,9 +2199,16 @@
    "/servicios/whatsapp-ia/asistente-de-ia-para-whatsapp",
    "/servicios/whatsapp-ia/citas-y-recordatorios-automaticos",
    "/servicios/whatsapp-ia/reactivacion-de-clientes-y-pacientes-inactivos",
-   "/sobre-nosotros"
+   "/sobre-nosotros",
+   "/temas/",
+   "/temas/emprender-y-crecer",
+   "/temas/formacion-para-empresas",
+   "/temas/gestion-y-crm",
+   "/temas/inteligencia-artificial",
+   "/temas/normativas-y-cumplimiento",
+   "/temas/webs-y-visibilidad"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/mapa-web",
   "parecido": 0.05
  },
@@ -2168,7 +2230,7 @@
    "/mapa-web",
    "/privacidad"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/privacidad",
   "parecido": 0.004
  },
@@ -2240,7 +2302,7 @@
    "/guias/tipos-de-software",
    "/mapa-web"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/mapa-web",
   "parecido": 0.139
  },
@@ -3725,7 +3787,7 @@
   "entrantes_contenido": [
    "/404"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/guias/",
   "parecido": 0.139
  },
@@ -3763,9 +3825,10 @@
    "/servicios/software-especializado/coordinacion-de-actividades-empresariales-cae",
    "/servicios/software-especializado/huella-de-carbono-para-proveedores",
    "/servicios/webs/accesibilidad-web-ley-11-2023",
-   "/servicios/webs/aviso-legal-privacidad-y-cookies"
+   "/servicios/webs/aviso-legal-privacidad-y-cookies",
+   "/temas/normativas-y-cumplimiento"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/software-de-gestion/",
   "parecido": 0.027
  },
@@ -3788,7 +3851,7 @@
    "/servicios/grandes-empresas/marca-blanca-para-consultoras",
    "/servicios/software-de-gestion/conexion-con-tu-asesoria"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/contacto",
   "parecido": 0.008
  },
@@ -3799,7 +3862,7 @@
   "h1": "Política editorial",
   "canonical": "https://studioemprende.com/politica-editorial",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 310,
+  "palabras": 319,
   "faq": 0,
   "precio": false,
   "plazo": false,
@@ -3822,6 +3885,7 @@
    "/blog/copias-de-seguridad-que-funcionan",
    "/blog/crm-para-autonomos",
    "/blog/crm-para-empresas-de-servicios",
+   "/blog/cuanto-cuesta-un-crm-para-autonomos",
    "/blog/departamento-tecnologico-externo",
    "/blog/es-obligatorio-el-fichaje-digital",
    "/blog/formacion-bonificada-para-empresas-fundae",
@@ -3897,9 +3961,9 @@
    "/guias/tipos-de-software",
    "/mapa-web"
   ],
-  "entrantes_total": 89,
-  "mas_parecida": "/casos/",
-  "parecido": 0.015
+  "entrantes_total": 90,
+  "mas_parecida": "/sobre-nosotros",
+  "parecido": 0.016
  },
  "/precios": {
   "existe": true,
@@ -3917,6 +3981,7 @@
   "svg": 0,
   "entrantes_contenido": [
    "/",
+   "/blog/cuanto-cuesta-un-crm-para-autonomos",
    "/casos/contratalux",
    "/contacto",
    "/guias/como-emprender-un-negocio",
@@ -3959,7 +4024,7 @@
    "/servicios/webs/",
    "/servicios/whatsapp-ia/"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/",
   "parecido": 0.054
  },
@@ -3984,7 +4049,7 @@
    "/mapa-web",
    "/partners"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/aviso-legal",
   "parecido": 0.015
  },
@@ -4007,7 +4072,7 @@
    "/mapa-web",
    "/servicios/pix/casos-por-sector"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/pix/casos-por-sector",
   "parecido": 0.006
  },
@@ -4398,9 +4463,10 @@
    "/servicios/automatizacion-y-datos/",
    "/servicios/erp-para-pymes/pix-dentro-del-erp-preguntale-en-lenguaje-normal",
    "/servicios/migraciones-e-integraciones/integraciones-por-api",
-   "/servicios/whatsapp-ia/"
+   "/servicios/whatsapp-ia/",
+   "/temas/inteligencia-artificial"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/automatizacion-y-datos/",
   "parecido": 0.065
  },
@@ -4550,7 +4616,7 @@
   ],
   "entrantes_total": 4,
   "mas_parecida": "/servicios/webs/chatbot-pix",
-  "parecido": 0.022
+  "parecido": 0.018
  },
  "/servicios/agentes-de-ia/clasificacion-y-respuesta-de-correos": {
   "existe": true,
@@ -4889,7 +4955,7 @@
    "/servicios/alojamientos-y-domotica/teleasistencia-para-mayores",
    "/servicios/fichador/"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/fichador/",
   "parecido": 0.035
  },
@@ -5289,7 +5355,7 @@
    "/servicios/software-de-gestion/app-movil",
    "/servicios/software-especializado/"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/software-especializado/",
   "parecido": 0.081
  },
@@ -5484,9 +5550,9 @@
    "/servicios/formacion-ia/curso-de-excel-para-empresas",
    "/servicios/whatsapp-ia/"
   ],
-  "entrantes_total": 418,
-  "mas_parecida": "/servicios/whatsapp-ia/",
-  "parecido": 0.071
+  "entrantes_total": 426,
+  "mas_parecida": "/servicios/agentes-de-ia/",
+  "parecido": 0.065
  },
  "/servicios/automatizacion-y-datos/automatizacion-de-administracion-facturas-y-cobros": {
   "existe": true,
@@ -5661,12 +5727,12 @@
  },
  "/servicios/automatizacion-y-datos/prevision-de-tesoreria-y-control-de-costes": {
   "existe": true,
-  "title": "Control de costes y previsión de caja con IA",
-  "desc": "Control de costes y previsión de caja automáticos: la IA clasifica gastos, detecta subidas de proveedores y avisa de los meses con poca liquidez.",
-  "h1": "Previsión de tesorería y control de costes sin hojas de cálculo",
+  "title": "Control de costes de la empresa sin hojas de cálculo",
+  "desc": "Control de costes para pymes con los datos de tus programas: gastos por partida, desviaciones frente a lo previsto y alertas antes de que afecten a la.",
+  "h1": "Control de costes de la empresa: dónde se va el dinero cada mes",
   "canonical": "https://studioemprende.com/servicios/automatizacion-y-datos/prevision-de-tesoreria-y-control-de-costes",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 1010,
+  "palabras": 1012,
   "faq": 6,
   "precio": false,
   "plazo": true,
@@ -5680,16 +5746,16 @@
   ],
   "entrantes_total": 3,
   "mas_parecida": "/servicios/software-de-gestion/prevision-de-tesoreria",
-  "parecido": 0.017
+  "parecido": 0.016
  },
  "/servicios/automatizacion-y-datos/prevision-de-ventas-y-stock": {
   "existe": true,
-  "title": "Previsión de ventas y stock con IA para pymes",
-  "desc": "Previsión de ventas y stock con IA: anticipa qué venderás según tu histórico y temporada, y recibe la propuesta de compra antes de quedarte sin género.",
-  "h1": "Previsión de ventas y stock: compra lo que vas a vender",
+  "title": "Previsión de ventas para pymes con tus propios datos",
+  "desc": "Previsión de ventas para pymes a partir de tu histórico, la temporada y los pedidos abiertos, para planificar compras, equipo y tesorería con números.",
+  "h1": "Previsión de ventas para pymes: cuánto vas a vender el mes que viene",
   "canonical": "https://studioemprende.com/servicios/automatizacion-y-datos/prevision-de-ventas-y-stock",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 964,
+  "palabras": 966,
   "faq": 6,
   "precio": false,
   "plazo": false,
@@ -5704,7 +5770,7 @@
   ],
   "entrantes_total": 4,
   "mas_parecida": "/servicios/software-de-gestion/prevision-de-stock-con-ia",
-  "parecido": 0.026
+  "parecido": 0.023
  },
  "/servicios/autonomos/": {
   "existe": true,
@@ -5722,6 +5788,7 @@
   "svg": 0,
   "entrantes_contenido": [
    "/blog/crm-para-autonomos",
+   "/blog/cuanto-cuesta-un-crm-para-autonomos",
    "/blog/primeros-pasos-autonomo-digital",
    "/guias/ayudas-para-jovenes-emprendedores",
    "/guias/caracteristicas-de-un-emprendedor",
@@ -5737,11 +5804,12 @@
    "/servicios/deluxe/",
    "/servicios/grandes-empresas/",
    "/servicios/pequenas-empresas/",
-   "/servicios/startups-e-inversores/"
+   "/servicios/startups-e-inversores/",
+   "/temas/emprender-y-crecer"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/pequenas-empresas/",
-  "parecido": 0.053
+  "parecido": 0.05
  },
  "/servicios/autonomos/automatizacion-del-dia-a-dia": {
   "existe": true,
@@ -5798,7 +5866,7 @@
   "h1": "Packs con precio cerrado para empezar sin sorpresas en la factura",
   "canonical": "https://studioemprende.com/servicios/autonomos/packs-con-precio-cerrado",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 1067,
+  "palabras": 1080,
   "faq": 6,
   "precio": true,
   "plazo": true,
@@ -5847,9 +5915,10 @@
    "/servicios/ciberseguridad-y-sistemas/responsable-de-ciberseguridad-externalizado",
    "/servicios/departamento-tecnologico/",
    "/servicios/software-de-gestion/canal-de-denuncias-ley-2-2023",
-   "/servicios/webs/rescate-de-webs-antiguas-o-hackeadas"
+   "/servicios/webs/rescate-de-webs-antiguas-o-hackeadas",
+   "/temas/normativas-y-cumplimiento"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/departamento-tecnologico/",
   "parecido": 0.024
  },
@@ -6067,9 +6136,9 @@
    "/servicios/problemas-sin-resolver/",
    "/servicios/relevo-y-continuidad/"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/relevo-y-continuidad/",
-  "parecido": 0.058
+  "parecido": 0.055
  },
  "/servicios/consultoria-y-ayudas/auditoria-de-ia-para-pymes": {
   "existe": true,
@@ -6138,6 +6207,7 @@
   "imagen": 0,
   "svg": 0,
   "entrantes_contenido": [
+   "/blog/cuanto-cuesta-un-crm-para-autonomos",
    "/blog/kit-digital-ia",
    "/precios",
    "/servicios/consultoria-y-ayudas/",
@@ -6147,7 +6217,7 @@
    "/servicios/problemas-sin-resolver/",
    "/servicios/software-de-gestion/"
   ],
-  "entrantes_total": 8,
+  "entrantes_total": 9,
   "mas_parecida": "/servicios/consultoria-y-ayudas/auditoria-de-procesos-con-informe-de-ahorro",
   "parecido": 0.014
  },
@@ -6279,7 +6349,7 @@
    "/servicios/deluxe/tecnico-personal-24-7",
    "/servicios/deluxe/villa-o-casa-inteligente-de-lujo"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/startups-e-inversores/",
   "parecido": 0.047
  },
@@ -6538,9 +6608,10 @@
    "/servicios/departamento-tecnologico/prueba-mensual-de-copias-de-seguridad",
    "/servicios/departamento-tecnologico/soporte-con-un-unico-interlocutor",
    "/servicios/departamento-tecnologico/vigilancia-de-suplantacion",
-   "/servicios/erp-para-pymes/acompanamiento-de-30-a-90-dias"
+   "/servicios/erp-para-pymes/acompanamiento-de-30-a-90-dias",
+   "/temas/emprender-y-crecer"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/ciberseguridad-y-sistemas/",
   "parecido": 0.024
  },
@@ -6882,7 +6953,7 @@
    "/servicios/pequenas-empresas/todo-incluido-por-cuota-mensual"
   ],
   "entrantes_total": 7,
-  "mas_parecida": "/servicios/autonomos/packs-con-precio-cerrado",
+  "mas_parecida": "/servicios/departamento-tecnologico/informe-mensual-en-lenguaje-claro",
   "parecido": 0.01
  },
  "/servicios/departamento-tecnologico/vigilancia-de-suplantacion": {
@@ -6962,9 +7033,10 @@
    "/servicios/pix/integraciones",
    "/servicios/software-de-gestion/",
    "/servicios/software-especializado/",
-   "/servicios/startups-e-inversores/mejora-de-participadas"
+   "/servicios/startups-e-inversores/mejora-de-participadas",
+   "/temas/gestion-y-crm"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/software-de-gestion/",
   "parecido": 0.082
  },
@@ -7293,7 +7365,7 @@
   "h1": "Un ERP modular en el que pagas solo lo que usas",
   "canonical": "https://studioemprende.com/servicios/erp-para-pymes/pagas-solo-los-modulos-que-usas",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 1051,
+  "palabras": 1061,
   "faq": 6,
   "precio": true,
   "plazo": false,
@@ -7434,9 +7506,10 @@
    "/servicios/fichador/turnos-y-cuadrantes",
    "/servicios/fichador/vacaciones-y-ausencias",
    "/servicios/pequenas-empresas/cumple-la-ley-verifactu-y-registro-de-jornada",
-   "/servicios/software-de-gestion/fichador-y-registro-de-jornada"
+   "/servicios/software-de-gestion/fichador-y-registro-de-jornada",
+   "/temas/normativas-y-cumplimiento"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/blog/app-de-control-horario-para-pequenas-empresas",
   "parecido": 0.057
  },
@@ -7932,9 +8005,10 @@
    "/servicios/pix/asistente-empresarial",
    "/servicios/problemas-sin-resolver/",
    "/servicios/relevo-y-continuidad/",
-   "/sobre-nosotros"
+   "/sobre-nosotros",
+   "/temas/formacion-para-empresas"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/formacion-ia/cursos-de-formacion-a-medida-para-empresas",
   "parecido": 0.053
  },
@@ -8018,7 +8092,7 @@
   ],
   "entrantes_total": 11,
   "mas_parecida": "/servicios/formacion-ia/plan-de-formacion-para-nuevos-empleados",
-  "parecido": 0.081
+  "parecido": 0.082
  },
  "/servicios/formacion-ia/formacion-obligatoria-ai-act": {
   "existe": true,
@@ -8148,7 +8222,7 @@
   "h1": "Plan de formación para nuevos empleados que no depende de una sola persona",
   "canonical": "https://studioemprende.com/servicios/formacion-ia/plan-de-formacion-para-nuevos-empleados",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 1180,
+  "palabras": 1189,
   "faq": 7,
   "precio": false,
   "plazo": false,
@@ -8168,7 +8242,7 @@
   ],
   "entrantes_total": 9,
   "mas_parecida": "/servicios/formacion-ia/formacion-de-empleados-en-un-programa-nuevo",
-  "parecido": 0.081
+  "parecido": 0.082
  },
  "/servicios/formacion-ia/politica-de-uso-de-ia-para-empresas": {
   "existe": true,
@@ -8257,9 +8331,9 @@
    "/servicios/pequenas-empresas/",
    "/servicios/startups-e-inversores/"
   ],
-  "entrantes_total": 418,
-  "mas_parecida": "/servicios/pequenas-empresas/",
-  "parecido": 0.049
+  "entrantes_total": 426,
+  "mas_parecida": "/servicios/autonomos/",
+  "parecido": 0.048
  },
  "/servicios/grandes-empresas/formacion-in-company-por-departamentos": {
   "existe": true,
@@ -8486,9 +8560,10 @@
    "/servicios/migraciones-e-integraciones/migracion-desde-holded-clientify-hubspot-y-otros",
    "/servicios/migraciones-e-integraciones/rescate-de-software-antiguo",
    "/servicios/migraciones-e-integraciones/unificar-varios-programas-en-uno",
-   "/servicios/pix/integraciones"
+   "/servicios/pix/integraciones",
+   "/temas/gestion-y-crm"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/apps-moviles/",
   "parecido": 0.074
  },
@@ -8620,13 +8695,14 @@
   "imagen": 0,
   "svg": 0,
   "entrantes_contenido": [
+   "/blog/cuanto-cuesta-un-crm-para-autonomos",
    "/blog/software-todo-en-uno-para-pequenas-empresas",
    "/servicios/departamento-tecnologico/propiedad-de-tu-web-y-tus-datos",
    "/servicios/erp-para-pymes/migracion-desde-excel-u-otro-programa",
    "/servicios/migraciones-e-integraciones/",
    "/servicios/pequenas-empresas/todo-incluido-por-cuota-mensual"
   ],
-  "entrantes_total": 5,
+  "entrantes_total": 6,
   "mas_parecida": "/servicios/migraciones-e-integraciones/unificar-varios-programas-en-uno",
   "parecido": 0.012
  },
@@ -8697,7 +8773,7 @@
   "h1": "Pequeñas empresas",
   "canonical": "https://studioemprende.com/servicios/pequenas-empresas/",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 804,
+  "palabras": 813,
   "faq": 3,
   "precio": true,
   "plazo": false,
@@ -8721,11 +8797,12 @@
    "/servicios/pequenas-empresas/no-pierdas-clientes-whatsapp-ia-y-recepcionista-de-voz",
    "/servicios/pequenas-empresas/todo-incluido-por-cuota-mensual",
    "/servicios/pequenas-empresas/vende-mas-en-redes",
-   "/servicios/startups-e-inversores/"
+   "/servicios/startups-e-inversores/",
+   "/temas/emprender-y-crecer"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/autonomos/",
-  "parecido": 0.053
+  "parecido": 0.05
  },
  "/servicios/pequenas-empresas/ahorra-horas-programa-de-gestion-y-facturas-automaticas": {
   "existe": true,
@@ -8784,7 +8861,7 @@
   "h1": "Cumple la ley: Verifactu y registro de jornada sin dos programas distintos",
   "canonical": "https://studioemprende.com/servicios/pequenas-empresas/cumple-la-ley-verifactu-y-registro-de-jornada",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 1197,
+  "palabras": 1204,
   "faq": 6,
   "precio": false,
   "plazo": false,
@@ -8801,8 +8878,8 @@
    "/servicios/software-de-gestion/fichador-y-registro-de-jornada"
   ],
   "entrantes_total": 7,
-  "mas_parecida": "/servicios/software-de-gestion/fichador-y-registro-de-jornada",
-  "parecido": 0.039
+  "mas_parecida": "/blog/app-de-control-horario-para-pequenas-empresas",
+  "parecido": 0.04
  },
  "/servicios/pequenas-empresas/digitalizacion-de-negocios-rurales": {
   "existe": true,
@@ -8851,8 +8928,8 @@
    "/servicios/whatsapp-ia/asistente-de-ia-para-whatsapp"
   ],
   "entrantes_total": 6,
-  "mas_parecida": "/servicios/whatsapp-ia/",
-  "parecido": 0.037
+  "mas_parecida": "/servicios/whatsapp-ia/asistente-de-ia-para-whatsapp",
+  "parecido": 0.036
  },
  "/servicios/pequenas-empresas/todo-incluido-por-cuota-mensual": {
   "existe": true,
@@ -8943,9 +9020,10 @@
    "/servicios/software-de-gestion/informe-semanal-automatico-por-whatsapp-o-voz",
    "/servicios/software-de-gestion/prevision-de-stock-con-ia",
    "/servicios/webs/chatbot-pix",
-   "/servicios/whatsapp-ia/"
+   "/servicios/whatsapp-ia/",
+   "/temas/inteligencia-artificial"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/pix/implantacion-y-precios",
   "parecido": 0.012
  },
@@ -9019,7 +9097,7 @@
   "h1": "Casos de uso de agentes de IA por sector: qué proceso automatizar primero",
   "canonical": "https://studioemprende.com/servicios/pix/casos-por-sector",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 1321,
+  "palabras": 1329,
   "faq": 8,
   "precio": true,
   "plazo": true,
@@ -9092,6 +9170,7 @@
   "imagen": 0,
   "svg": 0,
   "entrantes_contenido": [
+   "/blog/cuanto-cuesta-un-crm-para-autonomos",
    "/servicios/agentes-de-ia/",
    "/servicios/agentes-de-ia/ia-en-servidor-propio",
    "/servicios/automatizacion-y-datos/",
@@ -9109,7 +9188,7 @@
    "/servicios/software-de-gestion/",
    "/servicios/whatsapp-ia/"
   ],
-  "entrantes_total": 16,
+  "entrantes_total": 17,
   "mas_parecida": "/servicios/pix/inteligencia-conectada",
   "parecido": 0.023
  },
@@ -9286,9 +9365,10 @@
    "/servicios/presencia-digital/seo-programatico",
    "/servicios/presencia-digital/traduccion-y-doblaje-con-ia",
    "/servicios/presencia-digital/videos-y-anuncios-con-ia",
-   "/servicios/webs/"
+   "/servicios/webs/",
+   "/temas/webs-y-visibilidad"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/webs/",
   "parecido": 0.025
  },
@@ -9364,7 +9444,7 @@
   ],
   "entrantes_total": 4,
   "mas_parecida": "/servicios/presencia-digital/google-business-profile",
-  "parecido": 0.016
+  "parecido": 0.014
  },
  "/servicios/presencia-digital/captacion-automatizada-de-clientes-b2b": {
   "existe": true,
@@ -9444,7 +9524,7 @@
   "h1": "Google Business Profile: tu ficha trabajando cada semana",
   "canonical": "https://studioemprende.com/servicios/presencia-digital/google-business-profile",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 965,
+  "palabras": 971,
   "faq": 6,
   "precio": false,
   "plazo": false,
@@ -9464,7 +9544,7 @@
   ],
   "entrantes_total": 9,
   "mas_parecida": "/servicios/presencia-digital/automatizacion-de-redes-sociales",
-  "parecido": 0.016
+  "parecido": 0.014
  },
  "/servicios/presencia-digital/menus-digitales-para-hosteleria": {
   "existe": true,
@@ -9554,7 +9634,7 @@
   "h1": "SEO programático: muchas páginas que posicionan, no relleno",
   "canonical": "https://studioemprende.com/servicios/presencia-digital/seo-programatico",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 1124,
+  "palabras": 1133,
   "faq": 6,
   "precio": false,
   "plazo": false,
@@ -9568,7 +9648,7 @@
    "/servicios/presencia-digital/seo-local-y-por-sectores"
   ],
   "entrantes_total": 4,
-  "mas_parecida": "/servicios/presencia-digital/aparecer-en-chatgpt-y-gemini-geo",
+  "mas_parecida": "/servicios/presencia-digital/google-business-profile",
   "parecido": 0.011
  },
  "/servicios/presencia-digital/traduccion-y-doblaje-con-ia": {
@@ -9654,7 +9734,7 @@
    "/servicios/problemas-sin-resolver/turnos-y-ausencias-integrados",
    "/servicios/relevo-y-continuidad/"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/relevo-y-continuidad/",
   "parecido": 0.052
  },
@@ -9836,7 +9916,7 @@
   ],
   "entrantes_total": 10,
   "mas_parecida": "/blog/plan-de-formacion-para-empresas",
-  "parecido": 0.053
+  "parecido": 0.052
  },
  "/servicios/problemas-sin-resolver/semaforo-de-clientes-morosos": {
   "existe": true,
@@ -9894,12 +9974,12 @@
  },
  "/servicios/problemas-sin-resolver/turnos-y-ausencias-integrados": {
   "existe": true,
-  "title": "Cuadrante de turnos y ausencias conectado a la agenda",
-  "desc": "Cuadrante de turnos y ausencias conectado a la agenda y al fichaje: si alguien falta, ves qué citas se quedan sin cubrir y quién puede sustituirle.",
-  "h1": "Turnos y ausencias integrados: cuando falta alguien, el sistema ya lo sabe",
+  "title": "Cubrir ausencias de empleados sin rehacer el cuadrante",
+  "desc": "Cuando falta alguien, el sistema propone quién puede cubrir el turno según disponibilidad, horas y cualificación, y avisa al equipo.",
+  "h1": "Cubrir ausencias sin llamar a medio equipo: turnos y bajas integrados",
   "canonical": "https://studioemprende.com/servicios/problemas-sin-resolver/turnos-y-ausencias-integrados",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 1008,
+  "palabras": 1007,
   "faq": 6,
   "precio": false,
   "plazo": false,
@@ -9915,7 +9995,7 @@
   ],
   "entrantes_total": 5,
   "mas_parecida": "/servicios/fichador/vacaciones-y-ausencias",
-  "parecido": 0.031
+  "parecido": 0.027
  },
  "/servicios/relevo-y-continuidad/": {
   "existe": true,
@@ -9924,7 +10004,7 @@
   "h1": "Relevo y continuidad del negocio",
   "canonical": "https://studioemprende.com/servicios/relevo-y-continuidad/",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 847,
+  "palabras": 856,
   "faq": 3,
   "precio": false,
   "plazo": false,
@@ -9948,9 +10028,9 @@
    "/servicios/relevo-y-continuidad/empresa-lista-para-traspasar-o-vender",
    "/servicios/relevo-y-continuidad/manual-de-operaciones-con-video-e-ia"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/consultoria-y-ayudas/",
-  "parecido": 0.058
+  "parecido": 0.055
  },
  "/servicios/relevo-y-continuidad/acompanamiento-del-traspaso": {
   "existe": true,
@@ -10234,9 +10314,10 @@
    "/servicios/software-de-gestion/tienda-online-conectada",
    "/servicios/software-de-gestion/tpv",
    "/servicios/software-de-gestion/turnos-vacaciones-y-ausencias",
-   "/servicios/software-especializado/"
+   "/servicios/software-especializado/",
+   "/temas/gestion-y-crm"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/erp-para-pymes/",
   "parecido": 0.082
  },
@@ -10437,7 +10518,7 @@
   ],
   "entrantes_total": 9,
   "mas_parecida": "/servicios/software-de-gestion/seguimiento-comercial-y-tareas",
-  "parecido": 0.016
+  "parecido": 0.013
  },
  "/servicios/software-de-gestion/catalogo-y-tarifas": {
   "existe": true,
@@ -10469,12 +10550,12 @@
  },
  "/servicios/software-de-gestion/cobros-impagos-y-semaforo-de-clientes": {
   "existe": true,
-  "title": "Control de cobros e impagos con semáforo de clientes",
-  "desc": "Controla cobros e impagos con un semáforo por cliente: avisos antes y después del vencimiento, recordatorios por WhatsApp y bloqueo de nuevos pedidos si.",
-  "h1": "Control de cobros e impagos: el semáforo de tus clientes",
+  "title": "Programa para controlar cobros pendientes y vencimientos",
+  "desc": "Programa para controlar cobros pendientes: qué factura vence, quién debe y cuánto, con avisos automáticos y el historial de pago de cada cliente.",
+  "h1": "Control de cobros pendientes: vencimientos, avisos y estado de cada factura",
   "canonical": "https://studioemprende.com/servicios/software-de-gestion/cobros-impagos-y-semaforo-de-clientes",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 1067,
+  "palabras": 1068,
   "faq": 6,
   "precio": false,
   "plazo": true,
@@ -10857,12 +10938,12 @@
  },
  "/servicios/software-de-gestion/informe-semanal-automatico-por-whatsapp-o-voz": {
   "existe": true,
-  "title": "Informe semanal de tu negocio por WhatsApp o audio",
-  "desc": "Recibe cada lunes un informe automático de tu negocio por WhatsApp o en audio: ventas, cobros, trabajos y avisos, sacado de tu programa de gestión.",
-  "h1": "Informe semanal automático por WhatsApp o en una nota de voz",
+  "title": "Resumen semanal del negocio en el móvil, desde tu programa",
+  "desc": "Cada lunes, ventas, cobros, presupuestos y alertas de tu programa de gestión resumidos en un mensaje o una nota de voz en tu móvil.",
+  "h1": "El resumen semanal de tu negocio, en el móvil, sacado de tu programa de gestión",
   "canonical": "https://studioemprende.com/servicios/software-de-gestion/informe-semanal-automatico-por-whatsapp-o-voz",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 995,
+  "palabras": 999,
   "faq": 6,
   "precio": true,
   "plazo": false,
@@ -11048,7 +11129,7 @@
   ],
   "entrantes_total": 9,
   "mas_parecida": "/blog/plan-de-formacion-para-empresas",
-  "parecido": 0.055
+  "parecido": 0.054
  },
  "/servicios/software-de-gestion/ordenes-y-partes-de-trabajo-con-firma-y-fotos": {
   "existe": true,
@@ -11278,7 +11359,7 @@
   ],
   "entrantes_total": 5,
   "mas_parecida": "/servicios/automatizacion-y-datos/prevision-de-ventas-y-stock",
-  "parecido": 0.026
+  "parecido": 0.023
  },
  "/servicios/software-de-gestion/prevision-de-tesoreria": {
   "existe": true,
@@ -11306,7 +11387,7 @@
   ],
   "entrantes_total": 8,
   "mas_parecida": "/servicios/automatizacion-y-datos/prevision-de-tesoreria-y-control-de-costes",
-  "parecido": 0.017
+  "parecido": 0.016
  },
  "/servicios/software-de-gestion/productividad-y-objetivos": {
   "existe": true,
@@ -11333,12 +11414,12 @@
  },
  "/servicios/software-de-gestion/recordatorios-automaticos-por-whatsapp": {
   "existe": true,
-  "title": "Recordatorios de citas automáticos por WhatsApp",
-  "desc": "Recordatorios de citas por WhatsApp automáticos: el cliente confirma, cancela o cambia con un botón y tu agenda se actualiza sola, sin llamadas.",
-  "h1": "Recordatorios automáticos por WhatsApp que el cliente contesta",
+  "title": "Recordatorios por WhatsApp de cobros, entregas y…",
+  "desc": "Recordatorios automáticos por WhatsApp desde tu programa de gestión: facturas que vencen, pedidos listos, revisiones y renovaciones, con respuesta del.",
+  "h1": "Recordatorios automáticos por WhatsApp de cobros, entregas y renovaciones",
   "canonical": "https://studioemprende.com/servicios/software-de-gestion/recordatorios-automaticos-por-whatsapp",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 1016,
+  "palabras": 1017,
   "faq": 6,
   "precio": true,
   "plazo": false,
@@ -11361,7 +11442,7 @@
   ],
   "entrantes_total": 12,
   "mas_parecida": "/servicios/whatsapp-ia/citas-y-recordatorios-automaticos",
-  "parecido": 0.017
+  "parecido": 0.015
  },
  "/servicios/software-de-gestion/remesas-y-domiciliaciones": {
   "existe": true,
@@ -11389,7 +11470,7 @@
    "/servicios/software-de-gestion/prevision-de-tesoreria"
   ],
   "entrantes_total": 9,
-  "mas_parecida": "/servicios/software-de-gestion/cobros-impagos-y-semaforo-de-clientes",
+  "mas_parecida": "/servicios/software-de-gestion/facturacion-con-verifactu",
   "parecido": 0.012
  },
  "/servicios/software-de-gestion/rentabilidad-por-cliente-servicio-y-empleado": {
@@ -11461,7 +11542,7 @@
   "h1": "Seguimiento comercial: cada cliente con su próxima acción",
   "canonical": "https://studioemprende.com/servicios/software-de-gestion/seguimiento-comercial-y-tareas",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 976,
+  "palabras": 983,
   "faq": 6,
   "precio": false,
   "plazo": false,
@@ -11483,7 +11564,7 @@
   ],
   "entrantes_total": 11,
   "mas_parecida": "/servicios/software-de-gestion/captacion-de-leads-desde-web-whatsapp-y-anuncios",
-  "parecido": 0.016
+  "parecido": 0.013
  },
  "/servicios/software-de-gestion/tienda-online-conectada": {
   "existe": true,
@@ -11633,7 +11714,7 @@
    "/servicios/software-especializado/registro-de-mantenimientos-obligatorios",
    "/servicios/software-especializado/tarificador-para-corredurias"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/apps-moviles/",
   "parecido": 0.081
  },
@@ -11866,7 +11947,7 @@
   "h1": "Plataforma LMS propia: formación obligatoria con registro que aguanta una inspección",
   "canonical": "https://studioemprende.com/servicios/software-especializado/plataforma-de-formacion-interna-lms",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 1287,
+  "palabras": 1296,
   "faq": 7,
   "precio": false,
   "plazo": false,
@@ -11877,11 +11958,12 @@
    "/guias/software-a-medida-para-academias",
    "/guias/software-a-medida-por-sectores",
    "/servicios/presencia-digital/traduccion-y-doblaje-con-ia",
-   "/servicios/software-especializado/"
+   "/servicios/software-especializado/",
+   "/temas/formacion-para-empresas"
   ],
-  "entrantes_total": 4,
-  "mas_parecida": "/servicios/software-de-gestion/onboarding-con-ia",
-  "parecido": 0.05
+  "entrantes_total": 5,
+  "mas_parecida": "/blog/plan-de-formacion-para-empresas",
+  "parecido": 0.054
  },
  "/servicios/software-especializado/portal-de-pedidos-b2b": {
   "existe": true,
@@ -12050,7 +12132,7 @@
    "/servicios/startups-e-inversores/preparacion-de-due-diligence",
    "/servicios/startups-e-inversores/valoracion-de-proyectos-con-ia"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/grandes-empresas/",
   "parecido": 0.047
  },
@@ -12331,9 +12413,10 @@
    "/servicios/webs/web-corporativa-con-seo",
    "/servicios/webs/webs-multidioma-para-espana-y-exportacion",
    "/servicios/webs/webs-para-startups",
-   "/servicios/webs/webs-scroll-3d-inmersivas"
+   "/servicios/webs/webs-scroll-3d-inmersivas",
+   "/temas/webs-y-visibilidad"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/presencia-digital/",
   "parecido": 0.025
  },
@@ -12439,12 +12522,12 @@
  },
  "/servicios/webs/chatbot-pix": {
   "existe": true,
-  "title": "Chatbot con IA para tu web que responde y capta",
-  "desc": "Chatbot con IA para tu web entrenado con la información de tu empresa: responde dudas, recoge contactos, reserva citas y lo pasa todo a tu CRM.",
-  "h1": "Chatbot PIX: el chatbot con IA que atiende tu web a cualquier hora",
+  "title": "Chatbot para página web: integrado en tu diseño",
+  "desc": "Chatbot para página web con el diseño de tu marca, que capta contactos, responde con tu información y pasa cada conversación a tu CRM.",
+  "h1": "Chatbot para tu página web, integrado en el diseño y conectado a tu CRM",
   "canonical": "https://studioemprende.com/servicios/webs/chatbot-pix",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 1086,
+  "palabras": 1087,
   "faq": 6,
   "precio": false,
   "plazo": false,
@@ -12460,7 +12543,7 @@
   ],
   "entrantes_total": 5,
   "mas_parecida": "/servicios/agentes-de-ia/chatbot-para-tu-web-con-pix",
-  "parecido": 0.022
+  "parecido": 0.018
  },
  "/servicios/webs/contenido-personalizado-segun-el-visitante": {
   "existe": true,
@@ -12819,12 +12902,12 @@
  },
  "/servicios/whatsapp-ia/": {
   "existe": true,
-  "title": "WhatsApp con IA para atender y vender · Studio Emprende",
+  "title": "Agentes de IA para WhatsApp Business · Studio Emprende",
   "desc": "Tu WhatsApp atiende, agenda y recuerda citas solo, sin que pierdas ningún cliente. 100 % online en toda España. Pide tu diagnóstico gratis.",
-  "h1": "WhatsApp IA",
+  "h1": "Agentes de IA para WhatsApp: atienden, agendan y recuerdan citas por ti",
   "canonical": "https://studioemprende.com/servicios/whatsapp-ia/",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 912,
+  "palabras": 1209,
   "faq": 3,
   "precio": true,
   "plazo": true,
@@ -12849,11 +12932,12 @@
    "/servicios/webs/chatbot-pix",
    "/servicios/whatsapp-ia/asistente-de-ia-para-whatsapp",
    "/servicios/whatsapp-ia/citas-y-recordatorios-automaticos",
-   "/servicios/whatsapp-ia/reactivacion-de-clientes-y-pacientes-inactivos"
+   "/servicios/whatsapp-ia/reactivacion-de-clientes-y-pacientes-inactivos",
+   "/temas/inteligencia-artificial"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/automatizacion-y-datos/",
-  "parecido": 0.071
+  "parecido": 0.058
  },
  "/servicios/whatsapp-ia/asistente-de-ia-para-whatsapp": {
   "existe": true,
@@ -12885,7 +12969,7 @@
   ],
   "entrantes_total": 12,
   "mas_parecida": "/servicios/whatsapp-ia/",
-  "parecido": 0.045
+  "parecido": 0.043
  },
  "/servicios/whatsapp-ia/citas-y-recordatorios-automaticos": {
   "existe": true,
@@ -12913,7 +12997,7 @@
   ],
   "entrantes_total": 8,
   "mas_parecida": "/servicios/software-de-gestion/recordatorios-automaticos-por-whatsapp",
-  "parecido": 0.017
+  "parecido": 0.015
  },
  "/servicios/whatsapp-ia/reactivacion-de-clientes-y-pacientes-inactivos": {
   "existe": true,
@@ -12947,7 +13031,7 @@
   "h1": "Sobre nosotros",
   "canonical": "https://studioemprende.com/sobre-nosotros",
   "robots": "index,follow,max-image-preview:large,max-snippet:-1",
-  "palabras": 1041,
+  "palabras": 1047,
   "faq": 3,
   "precio": false,
   "plazo": false,
@@ -12969,6 +13053,7 @@
    "/blog/copias-de-seguridad-que-funcionan",
    "/blog/crm-para-autonomos",
    "/blog/crm-para-empresas-de-servicios",
+   "/blog/cuanto-cuesta-un-crm-para-autonomos",
    "/blog/departamento-tecnologico-externo",
    "/blog/es-obligatorio-el-fichaje-digital",
    "/blog/formacion-bonificada-para-empresas-fundae",
@@ -13052,7 +13137,7 @@
    "/servicios/formacion-ia/plan-de-formacion-para-nuevos-empleados",
    "/servicios/formacion-ia/sesion-de-ia-1-a-1"
   ],
-  "entrantes_total": 418,
+  "entrantes_total": 426,
   "mas_parecida": "/servicios/formacion-ia/cursos-de-formacion-a-medida-para-empresas",
   "parecido": 0.039
  }

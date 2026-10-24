@@ -281,9 +281,9 @@ PAGINAS = {
  "rel": [("../formacion-ia/plan-de-formacion-para-nuevos-empleados.html", "Plan de formación para nuevos empleados"), ("../relevo-y-continuidad/manual-de-operaciones-con-video-e-ia.html", "Manual de operaciones con vídeo e IA"), ("turnos-y-ausencias-integrados.html", "Turnos y ausencias integrados")],
 },
 "problemas-sin-resolver/turnos-y-ausencias-integrados": {
- "titulo": "Cuadrante de turnos y ausencias conectado a la agenda",
- "meta": "Cuadrante de turnos y ausencias conectado a la agenda y al fichaje: si alguien falta, ves qué citas se quedan sin cubrir y quién puede sustituirle.",
- "h1": "Turnos y ausencias integrados: cuando falta alguien, el sistema ya lo sabe",
+ "titulo": "Cubrir ausencias de empleados sin rehacer el cuadrante",
+ "meta": "Cuando falta alguien, el sistema propone quién puede cubrir el turno según disponibilidad, horas y cualificación, y avisa al equipo.",
+ "h1": "Cubrir ausencias sin llamar a medio equipo: turnos y bajas integrados",
  "lead": "Con el cuadrante de turnos y ausencias conectado a la agenda y al fichaje, una baja de última hora no te pilla a ciegas.",
  "respuesta": "Integrar turnos y ausencias significa que el cuadrante de personal está conectado con el registro de jornada y con la agenda de citas o trabajos. Cuando alguien pide vacaciones o falta, el programa muestra qué servicios quedan sin cubrir, propone quién puede sustituirle y permite avisar a los clientes afectados si hay que mover algo.",
  "secciones": [

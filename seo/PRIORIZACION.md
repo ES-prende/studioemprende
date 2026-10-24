@@ -11,11 +11,11 @@ Columnas: **entr.** = enlaces entrantes desde el contenido de otras páginas (si
 
 | URL | Estado | Keyword principal | Pal. | FAQ | Entr. | Qué le falta |
 |---|---|---|--:|--:|--:|---|
-| `/servicios/pix/casos-por-sector` | Rastreada sin indexar | casos de uso de agentes de ia por sector | 1321 | 8 | 13 | REESCRITURA A FONDO; visual (SVG/captura) |
+| `/servicios/pix/casos-por-sector` | Rastreada sin indexar | casos de uso de agentes de ia por sector | 1329 | 8 | 13 | REESCRITURA A FONDO; visual (SVG/captura) |
 | `/servicios/pix/inteligencia-conectada` | Rastreada sin indexar | ia conectada al erp y al crm de la empresa | 1456 | 7 | 14 | REESCRITURA A FONDO; visual (SVG/captura); diferenciar · grupo ia-datos-empresa |
-| `/servicios/software-especializado/plataforma-de-formacion-interna-lms` | Rastreada sin indexar | plataforma lms para formación interna de empresas | 1287 | 7 | 4 | REESCRITURA A FONDO; precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo formacion-empleados |
-| `/servicios/fichador/` | Aún no descubierta | app de fichaje para empresas | 992 | 3 | 34 | enviar a indexar; precio o rango; visual (SVG/captura); diferenciar · grupo fichaje |
-| `/blog/app-de-control-horario-para-pequenas-empresas` | Aún no descubierta | app de control horario para pequeñas empresas | 807 | 3 | 12 | enviar a indexar; precio o rango; plazo de implantación; ejemplo aplicado; diferenciar · grupo fichaje |
+| `/servicios/software-especializado/plataforma-de-formacion-interna-lms` | Rastreada sin indexar | plataforma lms para formación interna de empresas | 1296 | 7 | 5 | REESCRITURA A FONDO; precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo formacion-empleados |
+| `/servicios/fichador/` | Aún no descubierta | app de fichaje para empresas | 992 | 3 | 35 | enviar a indexar; precio o rango; visual (SVG/captura); diferenciar · grupo fichaje |
+| `/blog/app-de-control-horario-para-pequenas-empresas` | Aún no descubierta | app de control horario para pequeñas empresas | 820 | 3 | 14 | enviar a indexar; precio o rango; plazo de implantación; ejemplo aplicado; diferenciar · grupo fichaje |
 | `/servicios/fichador/acceso-del-trabajador-a-sus-registros` | Descubierta sin indexar | derecho del trabajador a ver su registro de jornada | 994 | 6 | 3 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/fichador/alertas-de-olvidos-y-retrasos` | Descubierta sin indexar | olvido de fichaje qué hacer | 980 | 6 | 5 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/fichador/alta-en-24-48-horas` | Descubierta sin indexar | implantar control horario rápido | 998 | 6 | 4 | precio o rango; visual (SVG/captura) |
@@ -50,7 +50,7 @@ Columnas: **entr.** = enlaces entrantes desde el contenido de otras páginas (si
 | `/servicios/erp-para-pymes/formacion-del-equipo-con-casos-reales` | Descubierta sin indexar | formación en erp para empleados | 1118 | 6 | 10 | precio o rango; visual (SVG/captura); diferenciar · grupo formacion-empleados |
 | `/servicios/erp-para-pymes/implantacion-por-fases-para-no-parar-el-negocio` | Descubierta sin indexar | implantación de un erp por fases | 987 | 6 | 9 | precio o rango; visual (SVG/captura) |
 | `/servicios/erp-para-pymes/migracion-desde-excel-u-otro-programa` | Descubierta sin indexar | migrar datos a un erp | 1064 | 6 | 8 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura); diferenciar · grupo migracion-excel |
-| `/servicios/erp-para-pymes/pagas-solo-los-modulos-que-usas` | Descubierta sin indexar | precio de un erp por módulos | 1051 | 6 | 7 | plazo de implantación; visual (SVG/captura); diferenciar · grupo erp-modular |
+| `/servicios/erp-para-pymes/pagas-solo-los-modulos-que-usas` | Descubierta sin indexar | precio de un erp por módulos | 1061 | 6 | 7 | plazo de implantación; visual (SVG/captura); diferenciar · grupo erp-modular |
 | `/servicios/erp-para-pymes/pix-dentro-del-erp-preguntale-en-lenguaje-normal` | Descubierta sin indexar | erp con inteligencia artificial | 1119 | 6 | 4 | precio o rango; ejemplo aplicado; visual (SVG/captura) |
 | `/servicios/erp-para-pymes/produccion-obras-o-servicios-segun-tu-sector` | Descubierta sin indexar | erp por sectores | 953 | 6 | 5 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/erp-para-pymes/se-adapta-a-tu-forma-de-trabajar-no-al-reves` | Descubierta sin indexar | erp a medida o erp estándar | 1029 | 6 | 4 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo erp-modular |
@@ -61,7 +61,7 @@ Columnas: **entr.** = enlaces entrantes desde el contenido de otras páginas (si
 | `/servicios/software-de-gestion/campanas-de-email-y-whatsapp` | Descubierta sin indexar | campañas de whatsapp a clientes | 1150 | 6 | 6 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/software-de-gestion/captacion-de-leads-desde-web-whatsapp-y-anuncios` | Descubierta sin indexar | crm para captar leads de whatsapp y web | 1025 | 6 | 9 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/software-de-gestion/catalogo-y-tarifas` | Descubierta sin indexar | programa de gestión de tarifas de precios | 988 | 6 | 8 | precio o rango; plazo de implantación; visual (SVG/captura) |
-| `/servicios/software-de-gestion/cobros-impagos-y-semaforo-de-clientes` | Descubierta sin indexar | programa para controlar cobros pendientes | 1067 | 6 | 14 | precio o rango; visual (SVG/captura); diferenciar · grupo cobros |
+| `/servicios/software-de-gestion/cobros-impagos-y-semaforo-de-clientes` | Descubierta sin indexar | programa para controlar cobros pendientes | 1068 | 6 | 14 | precio o rango; visual (SVG/captura); diferenciar · grupo cobros |
 | `/servicios/software-de-gestion/comerciales-y-comisiones` | Descubierta sin indexar | programa para calcular comisiones de comerciales | 995 | 6 | 8 | precio o rango; plazo de implantación |
 | `/servicios/software-de-gestion/conexion-con-tu-asesoria` | Descubierta sin indexar | programa de facturación conectado con la gestoría | 1010 | 6 | 11 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura); diferenciar · grupo asesoria |
 | `/servicios/software-de-gestion/cuadro-de-mando-en-tiempo-real` | Descubierta sin indexar | cuadro de mando para pymes | 1026 | 6 | 6 | precio o rango; plazo de implantación; diferenciar · grupo cuadro-mando |
@@ -75,7 +75,7 @@ Columnas: **entr.** = enlaces entrantes desde el contenido de otras páginas (si
 | `/servicios/software-de-gestion/factura-electronica-b2b` | Descubierta sin indexar | factura electrónica obligatoria b2b | 1069 | 6 | 9 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura); diferenciar · grupo verifactu |
 | `/servicios/software-de-gestion/fichador-y-registro-de-jornada` | Descubierta sin indexar | programa de gestión con registro de jornada | 1121 | 6 | 9 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura); diferenciar · grupo fichaje |
 | `/servicios/software-de-gestion/fidelizacion-y-bonos` | Descubierta sin indexar | programa de fidelización de clientes | 970 | 6 | 5 | plazo de implantación; visual (SVG/captura) |
-| `/servicios/software-de-gestion/informe-semanal-automatico-por-whatsapp-o-voz` | Descubierta sin indexar | resumen semanal del negocio en el móvil | 995 | 6 | 3 | plazo de implantación; visual (SVG/captura); diferenciar · grupo informe-semanal |
+| `/servicios/software-de-gestion/informe-semanal-automatico-por-whatsapp-o-voz` | Descubierta sin indexar | resumen semanal del negocio en el móvil | 999 | 6 | 3 | plazo de implantación; visual (SVG/captura); diferenciar · grupo informe-semanal |
 | `/servicios/software-de-gestion/inventario-en-varios-almacenes` | Descubierta sin indexar | programa de inventario multialmacén | 971 | 6 | 12 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/software-de-gestion/lotes-trazabilidad-y-caducidades` | Descubierta sin indexar | software de trazabilidad de lotes | 1104 | 6 | 5 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/software-de-gestion/mantenimientos-programados` | Descubierta sin indexar | software de mantenimientos periódicos a clientes | 1048 | 6 | 9 | precio o rango; visual (SVG/captura) |
@@ -88,14 +88,14 @@ Columnas: **entr.** = enlaces entrantes desde el contenido de otras páginas (si
 | `/servicios/software-de-gestion/prevision-de-stock-con-ia` | Descubierta sin indexar | previsión de stock con inteligencia artificial | 1016 | 6 | 5 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura); diferenciar · grupo prevision-stock |
 | `/servicios/software-de-gestion/prevision-de-tesoreria` | Descubierta sin indexar | previsión de tesorería automática | 971 | 6 | 8 | precio o rango; visual (SVG/captura); diferenciar · grupo tesoreria |
 | `/servicios/software-de-gestion/productividad-y-objetivos` | Descubierta sin indexar | medir la productividad de los empleados | 1072 | 6 | 3 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
-| `/servicios/software-de-gestion/recordatorios-automaticos-por-whatsapp` | Descubierta sin indexar | recordatorios de cobro y entregas por whatsapp | 1016 | 6 | 12 | plazo de implantación; visual (SVG/captura); diferenciar · grupo recordatorios |
+| `/servicios/software-de-gestion/recordatorios-automaticos-por-whatsapp` | Descubierta sin indexar | recordatorios de cobro y entregas por whatsapp | 1017 | 6 | 12 | plazo de implantación; visual (SVG/captura); diferenciar · grupo recordatorios |
 | `/servicios/software-de-gestion/rentabilidad-por-cliente-servicio-y-empleado` | Descubierta sin indexar | calcular rentabilidad por cliente | 1048 | 6 | 11 | plazo de implantación; visual (SVG/captura) |
 | `/servicios/software-de-gestion/reservas-de-mesas-salas-clases-o-servicios` | Descubierta sin indexar | sistema de reservas online para negocios | 1024 | 6 | 11 | precio o rango; plazo de implantación; visual (SVG/captura) |
-| `/servicios/software-de-gestion/seguimiento-comercial-y-tareas` | Descubierta sin indexar | crm de seguimiento comercial | 976 | 6 | 11 | precio o rango; plazo de implantación; visual (SVG/captura) |
+| `/servicios/software-de-gestion/seguimiento-comercial-y-tareas` | Descubierta sin indexar | crm de seguimiento comercial | 983 | 6 | 11 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/software-de-gestion/tienda-online-conectada` | Descubierta sin indexar | tienda online sincronizada con stock | 1108 | 6 | 14 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo integraciones |
-| `/servicios/whatsapp-ia/` | Aún no descubierta | agentes ia whatsapp | 912 | 3 | 18 | enviar a indexar; ejemplo aplicado; visual (SVG/captura); diferenciar · grupo whatsapp-ia |
-| `/blog/agente-de-ia-para-whatsapp` | Aún no descubierta | cómo automatizar respuestas de whatsapp con ia | 903 | 4 | 43 | enviar a indexar; precio o rango; plazo de implantación; ejemplo aplicado; diferenciar · grupo whatsapp-ia |
-| `/servicios/pix/` | Descubierta sin indexar | agente de ia para empresas | 1551 | 8 | 28 | solo enlazado y seguimiento |
+| `/servicios/whatsapp-ia/` | Aún no descubierta | agentes ia whatsapp | 1209 | 3 | 19 | enviar a indexar; ejemplo aplicado; visual (SVG/captura); diferenciar · grupo whatsapp-ia |
+| `/blog/agente-de-ia-para-whatsapp` | Aún no descubierta | cómo automatizar respuestas de whatsapp con ia | 911 | 4 | 44 | enviar a indexar; precio o rango; plazo de implantación; ejemplo aplicado; diferenciar · grupo whatsapp-ia |
+| `/servicios/pix/` | Descubierta sin indexar | agente de ia para empresas | 1551 | 8 | 29 | solo enlazado y seguimiento |
 
 ## Tanda 4
 
@@ -125,7 +125,7 @@ Columnas: **entr.** = enlaces entrantes desde el contenido de otras páginas (si
 | `/servicios/pix/seguridad-y-control` | Descubierta sin indexar | seguridad de los agentes de ia en la empresa | 1008 | 5 | 17 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo ia-datos-empresa |
 | `/servicios/whatsapp-ia/asistente-de-ia-para-whatsapp` | Descubierta sin indexar | asistente de ia para whatsapp business | 1056 | 6 | 12 | precio o rango; visual (SVG/captura); diferenciar · grupo whatsapp-ia |
 | `/servicios/whatsapp-ia/citas-y-recordatorios-automaticos` | Descubierta sin indexar | recordatorio de citas por whatsapp | 1028 | 6 | 8 | precio o rango; visual (SVG/captura); diferenciar · grupo recordatorios |
-| `/servicios/presencia-digital/` | Aún no descubierta | presencia digital para pymes | 874 | 3 | 26 | enviar a indexar; precio o rango; plazo de implantación |
+| `/servicios/presencia-digital/` | Aún no descubierta | presencia digital para pymes | 874 | 3 | 27 | enviar a indexar; precio o rango; plazo de implantación |
 
 ## Tanda 5
 
@@ -136,17 +136,17 @@ Columnas: **entr.** = enlaces entrantes desde el contenido de otras páginas (si
 | `/servicios/presencia-digital/captacion-automatizada-de-clientes-b2b` | Descubierta sin indexar | captación de clientes b2b automatizada | 1035 | 6 | 3 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/presencia-digital/escaparates-y-promociones` | Descubierta sin indexar | pantallas de escaparate para tiendas | 1045 | 6 | 4 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo cartelera |
 | `/servicios/presencia-digital/gestion-remota-desde-el-movil` | Descubierta sin indexar | cartelería digital gestionada desde el móvil | 1017 | 6 | 4 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo cartelera |
-| `/servicios/presencia-digital/google-business-profile` | Descubierta sin indexar | gestión de google business profile | 965 | 6 | 9 | precio o rango; plazo de implantación; visual (SVG/captura) |
+| `/servicios/presencia-digital/google-business-profile` | Descubierta sin indexar | gestión de google business profile | 971 | 6 | 9 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/presencia-digital/menus-digitales-para-hosteleria` | Descubierta sin indexar | carta digital en pantalla para restaurantes | 1029 | 6 | 7 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura); diferenciar · grupo cartelera |
 | `/servicios/presencia-digital/pantallas-de-turnos-y-sala-de-espera` | Descubierta sin indexar | pantalla de turnos para sala de espera | 1011 | 6 | 4 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo cartelera |
-| `/servicios/presencia-digital/seo-programatico` | Descubierta sin indexar | seo programático | 1124 | 6 | 4 | precio o rango; plazo de implantación |
+| `/servicios/presencia-digital/seo-programatico` | Descubierta sin indexar | seo programático | 1133 | 6 | 4 | precio o rango; plazo de implantación |
 | `/servicios/presencia-digital/traduccion-y-doblaje-con-ia` | Descubierta sin indexar | doblaje de vídeos con ia | 1000 | 6 | 3 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
 | `/servicios/presencia-digital/videos-y-anuncios-con-ia` | Descubierta sin indexar | crear anuncios con ia | 1017 | 6 | 7 | precio o rango; plazo de implantación |
 | `/servicios/webs/accesibilidad-web-ley-11-2023` | Descubierta sin indexar | accesibilidad web obligatoria ley 11/2023 | 1018 | 6 | 3 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/webs/auditoria-de-conversion` | Descubierta sin indexar | auditoría de conversión web | 1022 | 6 | 9 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/webs/aviso-legal-privacidad-y-cookies` | Descubierta sin indexar | textos legales para página web | 1054 | 6 | 5 | precio o rango; ejemplo aplicado; visual (SVG/captura) |
 | `/servicios/webs/buscador-inteligente` | Descubierta sin indexar | buscador inteligente para web | 994 | 6 | 3 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
-| `/servicios/webs/chatbot-pix` | Descubierta sin indexar | chatbot para página web | 1086 | 6 | 5 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo chatbot |
+| `/servicios/webs/chatbot-pix` | Descubierta sin indexar | chatbot para página web | 1087 | 6 | 5 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo chatbot |
 | `/servicios/webs/contenido-personalizado-segun-el-visitante` | Descubierta sin indexar | contenido web personalizado por visitante | 1016 | 6 | 4 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/webs/landing-pages-para-campanas` | Descubierta sin indexar | landing page para campañas de google ads | 1090 | 6 | 5 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/webs/mantenimiento-mensual` | Descubierta sin indexar | mantenimiento web mensual precio | 1059 | 6 | 6 | precio o rango; visual (SVG/captura) |
@@ -166,23 +166,23 @@ Columnas: **entr.** = enlaces entrantes desde el contenido de otras páginas (si
 | `/servicios/webs/webs-scroll-3d-inmersivas` | Descubierta sin indexar | web con animación 3d al hacer scroll | 1011 | 6 | 3 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/apps-moviles/` | Aún no descubierta | desarrollo de apps a medida para empresas | 820 | 3 | 22 | enviar a indexar; precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
 | `/servicios/automatizacion-y-datos/` | Aún no descubierta | automatización de procesos para pymes | 805 | 3 | 25 | enviar a indexar; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
-| `/servicios/migraciones-e-integraciones/` | Aún no descubierta | migración de datos entre programas de gestión | 955 | 3 | 17 | enviar a indexar; precio o rango; plazo de implantación; visual (SVG/captura) |
-| `/servicios/pequenas-empresas/` | Aún no descubierta | digitalización de pequeñas empresas | 804 | 3 | 17 | enviar a indexar; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
+| `/servicios/migraciones-e-integraciones/` | Aún no descubierta | migración de datos entre programas de gestión | 955 | 3 | 18 | enviar a indexar; precio o rango; plazo de implantación; visual (SVG/captura) |
+| `/servicios/pequenas-empresas/` | Aún no descubierta | digitalización de pequeñas empresas | 813 | 3 | 18 | enviar a indexar; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
 | `/servicios/apps-moviles/app-de-catalogo-y-pedidos-para-distribuidores` | Descubierta sin indexar | app de pedidos para distribuidores | 1003 | 6 | 6 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo pedidos-b2b |
 | `/servicios/apps-moviles/app-interna-para-empleados-y-tecnicos` | Descubierta sin indexar | app interna para empleados | 1042 | 6 | 6 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura); diferenciar · grupo app-equipo |
 | `/servicios/apps-moviles/app-para-socios-alumnos-o-pacientes` | Descubierta sin indexar | app para gimnasios, academias y clínicas | 938 | 6 | 4 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
 | `/servicios/apps-moviles/mantenimiento-y-actualizaciones` | Descubierta sin indexar | mantenimiento de apps móviles precio | 961 | 6 | 4 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
 | `/servicios/apps-moviles/publicacion-en-google-play-y-app-store` | Descubierta sin indexar | publicar una app en app store y google play | 1003 | 6 | 6 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/automatizacion-y-datos/cuadro-de-mando-de-direccion` | Descubierta sin indexar | cuadro de mando con datos de varios programas | 980 | 6 | 10 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo cuadro-mando |
-| `/servicios/automatizacion-y-datos/prevision-de-tesoreria-y-control-de-costes` | Descubierta sin indexar | control de costes de la empresa | 1010 | 6 | 3 | precio o rango; visual (SVG/captura); diferenciar · grupo tesoreria |
-| `/servicios/automatizacion-y-datos/prevision-de-ventas-y-stock` | Descubierta sin indexar | previsión de ventas para pymes | 964 | 6 | 4 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo prevision-stock |
+| `/servicios/automatizacion-y-datos/prevision-de-tesoreria-y-control-de-costes` | Descubierta sin indexar | control de costes de la empresa | 1012 | 6 | 3 | precio o rango; visual (SVG/captura); diferenciar · grupo tesoreria |
+| `/servicios/automatizacion-y-datos/prevision-de-ventas-y-stock` | Descubierta sin indexar | previsión de ventas para pymes | 966 | 6 | 4 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo prevision-stock |
 | `/servicios/autonomos/automatizacion-del-dia-a-dia` | Descubierta sin indexar | automatizaciones para autónomos | 939 | 6 | 3 | precio o rango; plazo de implantación; visual (SVG/captura) |
-| `/servicios/autonomos/packs-con-precio-cerrado` | Descubierta sin indexar | pack digital para autónomos precio cerrado | 1067 | 6 | 5 | solo enlazado y seguimiento |
+| `/servicios/autonomos/packs-con-precio-cerrado` | Descubierta sin indexar | pack digital para autónomos precio cerrado | 1080 | 6 | 5 | solo enlazado y seguimiento |
 | `/servicios/migraciones-e-integraciones/conectar-erp-tienda-crm-y-contabilidad` | Descubierta sin indexar | conectar woocommerce o shopify con el erp | 1189 | 6 | 9 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo integraciones |
 | `/servicios/migraciones-e-integraciones/digitalizacion-de-archivo-en-papel` | Descubierta sin indexar | digitalizar archivo en papel empresa | 982 | 6 | 6 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/migraciones-e-integraciones/integraciones-por-api` | Descubierta sin indexar | integración de programas por api | 1093 | 6 | 10 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo integraciones |
 | `/servicios/migraciones-e-integraciones/migracion-de-excel-a-programa-de-gestion` | Descubierta sin indexar | pasar de excel a un programa de gestión | 1030 | 6 | 8 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo migracion-excel |
-| `/servicios/migraciones-e-integraciones/migracion-desde-holded-clientify-hubspot-y-otros` | Descubierta sin indexar | migrar desde holded | 922 | 6 | 5 | precio o rango; plazo de implantación; visual (SVG/captura) |
+| `/servicios/migraciones-e-integraciones/migracion-desde-holded-clientify-hubspot-y-otros` | Descubierta sin indexar | migrar desde holded | 922 | 6 | 6 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/migraciones-e-integraciones/rescate-de-software-antiguo` | Descubierta sin indexar | recuperar datos de un programa antiguo | 1081 | 6 | 10 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
 | `/servicios/pequenas-empresas/ahorra-horas-programa-de-gestion-y-facturas-automaticas` | Descubierta sin indexar | facturas automáticas para pequeñas empresas | 965 | 6 | 3 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/pequenas-empresas/cobra-antes-cobros-y-tesoreria` | Descubierta sin indexar | cómo cobrar antes a los clientes | 1183 | 6 | 7 | visual (SVG/captura); diferenciar · grupo cobros |
@@ -191,12 +191,12 @@ Columnas: **entr.** = enlaces entrantes desde el contenido de otras páginas (si
 
 | URL | Estado | Keyword principal | Pal. | FAQ | Entr. | Qué le falta |
 |---|---|---|--:|--:|--:|---|
-| `/servicios/pequenas-empresas/cumple-la-ley-verifactu-y-registro-de-jornada` | Descubierta sin indexar | verifactu y registro de jornada para pymes | 1197 | 6 | 7 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura); diferenciar · grupo fichaje |
+| `/servicios/pequenas-empresas/cumple-la-ley-verifactu-y-registro-de-jornada` | Descubierta sin indexar | verifactu y registro de jornada para pymes | 1204 | 6 | 7 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura); diferenciar · grupo fichaje |
 | `/servicios/pequenas-empresas/digitalizacion-de-negocios-rurales` | Descubierta sin indexar | digitalización de negocios rurales | 959 | 6 | 4 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/pequenas-empresas/no-pierdas-clientes-whatsapp-ia-y-recepcionista-de-voz` | Descubierta sin indexar | atender llamadas y whatsapp perdidos en una pyme | 1156 | 6 | 6 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo whatsapp-ia |
 | `/servicios/pequenas-empresas/todo-incluido-por-cuota-mensual` | Descubierta sin indexar | servicio informático por cuota mensual para pymes | 1029 | 6 | 4 | plazo de implantación; visual (SVG/captura) |
 | `/servicios/pequenas-empresas/vende-mas-en-redes` | Descubierta sin indexar | vender más en redes sociales pequeño negocio | 951 | 6 | 3 | precio o rango; plazo de implantación; visual (SVG/captura) |
-| `/servicios/ciberseguridad-y-sistemas/` | Aún no descubierta | ciberseguridad para pymes | 850 | 3 | 17 | enviar a indexar; precio o rango; ejemplo aplicado; visual (SVG/captura) |
+| `/servicios/ciberseguridad-y-sistemas/` | Aún no descubierta | ciberseguridad para pymes | 850 | 3 | 18 | enviar a indexar; precio o rango; ejemplo aplicado; visual (SVG/captura) |
 | `/servicios/software-especializado/` | Aún no descubierta | software a medida de alto valor | 1000 | 3 | 38 | enviar a indexar; precio o rango; plazo de implantación |
 | `/servicios/ciberseguridad-y-sistemas/adaptacion-a-nis2-para-proveedores` | Descubierta sin indexar | nis2 para proveedores | 948 | 6 | 3 | precio o rango; ejemplo aplicado; visual (SVG/captura) |
 | `/servicios/ciberseguridad-y-sistemas/adaptacion-al-ai-act` | Descubierta sin indexar | adaptación al reglamento europeo de ia | 1114 | 6 | 6 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo ai-act |
@@ -236,12 +236,12 @@ Columnas: **entr.** = enlaces entrantes desde el contenido de otras páginas (si
 | `/servicios/software-especializado/tarificador-para-corredurias` | Descubierta sin indexar | tarificador de seguros para corredurías | 887 | 6 | 5 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/alojamientos-y-domotica/` | Aún no descubierta | software para viviendas turísticas | 836 | 3 | 22 | enviar a indexar; precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/consultoria-y-ayudas/` | Aún no descubierta | consultoría de digitalización para pymes | 857 | 3 | 23 | enviar a indexar; precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
-| `/servicios/formacion-ia/` | Aún no descubierta | formación en inteligencia artificial para empresas | 1122 | 10 | 31 | enviar a indexar; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
-| `/blog/plan-de-formacion-para-empresas` | Aún no descubierta | plan de formación para empresas | 870 | 3 | 10 | enviar a indexar; precio o rango; plazo de implantación; ejemplo aplicado; diferenciar · grupo formacion-empleados |
+| `/servicios/formacion-ia/` | Aún no descubierta | formación en inteligencia artificial para empresas | 1122 | 10 | 32 | enviar a indexar; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
+| `/blog/plan-de-formacion-para-empresas` | Aún no descubierta | plan de formación para empresas | 879 | 3 | 11 | enviar a indexar; precio o rango; plazo de implantación; ejemplo aplicado; diferenciar · grupo formacion-empleados |
 | `/servicios/formacion-ia/curso-de-excel-para-empresas` | Aún no descubierta | curso de excel para empresas | 1059 | 7 | 4 | enviar a indexar; precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
 | `/servicios/formacion-ia/cursos-de-formacion-a-medida-para-empresas` | Aún no descubierta | cursos a medida para empresas | 768 | 4 | 7 | enviar a indexar; precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/formacion-ia/formacion-de-empleados-en-un-programa-nuevo` | Aún no descubierta | formación de empleados en un software nuevo | 1251 | 7 | 11 | enviar a indexar; precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo formacion-empleados |
-| `/servicios/formacion-ia/plan-de-formacion-para-nuevos-empleados` | Aún no descubierta | plan de acogida de nuevos empleados | 1180 | 7 | 9 | enviar a indexar; precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo formacion-empleados |
+| `/servicios/formacion-ia/plan-de-formacion-para-nuevos-empleados` | Aún no descubierta | plan de acogida de nuevos empleados | 1189 | 7 | 9 | enviar a indexar; precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo formacion-empleados |
 | `/servicios/formacion-ia/sesion-de-ia-1-a-1` | Aún no descubierta | clase particular de inteligencia artificial | 1129 | 8 | 5 | enviar a indexar; plazo de implantación; visual (SVG/captura) |
 | `/servicios/alojamientos-y-domotica/asistente-del-huesped-por-whatsapp-24-7` | Descubierta sin indexar | asistente de whatsapp para huéspedes | 1002 | 6 | 11 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo whatsapp-ia |
 | `/servicios/alojamientos-y-domotica/aviso-automatico-a-limpieza` | Descubierta sin indexar | gestión de limpiezas de apartamentos turísticos | 982 | 6 | 5 | precio o rango; plazo de implantación; visual (SVG/captura) |
@@ -261,7 +261,7 @@ Columnas: **entr.** = enlaces entrantes desde el contenido de otras páginas (si
 | `/servicios/alojamientos-y-domotica/panel-de-propietarios` | Descubierta sin indexar | software para gestores de viviendas turísticas | 968 | 6 | 6 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/alojamientos-y-domotica/sensor-de-ruido-sin-camaras` | Descubierta sin indexar | sensor de ruido para apartamentos turísticos | 959 | 6 | 3 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/consultoria-y-ayudas/auditoria-de-procesos-con-informe-de-ahorro` | Descubierta sin indexar | auditoría de procesos empresa | 912 | 6 | 7 | precio o rango; visual (SVG/captura) |
-| `/servicios/consultoria-y-ayudas/diagnostico-de-digitalizacion-gratuito` | Descubierta sin indexar | diagnóstico de digitalización gratis | 900 | 6 | 8 | precio o rango; plazo de implantación; visual (SVG/captura) |
+| `/servicios/consultoria-y-ayudas/diagnostico-de-digitalizacion-gratuito` | Descubierta sin indexar | diagnóstico de digitalización gratis | 900 | 6 | 9 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/consultoria-y-ayudas/gestion-del-kit-digital-y-kit-consulting` | Descubierta sin indexar | kit consulting | 964 | 6 | 4 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
 | `/servicios/consultoria-y-ayudas/segunda-opinion-tecnologica` | Descubierta sin indexar | revisar presupuesto de software antes de firmar | 892 | 6 | 6 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
 | `/servicios/consultoria-y-ayudas/transformacion-digital-por-fases` | Descubierta sin indexar | plan de transformación digital pyme | 970 | 6 | 3 | precio o rango; plazo de implantación; visual (SVG/captura) |
@@ -271,7 +271,7 @@ Columnas: **entr.** = enlaces entrantes desde el contenido de otras páginas (si
 | `/servicios/formacion-ia/ia-para-autonomos-por-profesion` | Descubierta sin indexar | ia para autónomos | 1104 | 6 | 3 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/formacion-ia/mentoria-para-directivos` | Descubierta sin indexar | formación en ia para directivos | 1118 | 6 | 3 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/formacion-ia/politica-de-uso-de-ia-para-empresas` | Descubierta sin indexar | política de uso de ia en la empresa | 1067 | 6 | 11 | precio o rango; plazo de implantación; visual (SVG/captura) |
-| `/servicios/relevo-y-continuidad/` | Aún no descubierta | relevo generacional en la empresa familiar | 847 | 3 | 15 | enviar a indexar; precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
+| `/servicios/relevo-y-continuidad/` | Aún no descubierta | relevo generacional en la empresa familiar | 856 | 3 | 15 | enviar a indexar; precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
 | `/servicios/startups-e-inversores/` | Aún no descubierta | desarrollo tecnológico para startups | 894 | 3 | 20 | enviar a indexar; precio o rango; visual (SVG/captura) |
 | `/servicios/grandes-empresas/formacion-in-company-por-departamentos` | Descubierta sin indexar | formación in company en ia | 1056 | 6 | 4 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
 | `/servicios/grandes-empresas/gobernanza-de-ia` | Descubierta sin indexar | gobernanza de la ia en empresas | 969 | 6 | 7 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
@@ -295,7 +295,7 @@ Columnas: **entr.** = enlaces entrantes desde el contenido de otras páginas (si
 | `/servicios/problemas-sin-resolver/formacion-rapida-de-nuevos-empleados` | Descubierta sin indexar | formar empleados rápido con mucha rotación | 1153 | 6 | 10 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo formacion-empleados |
 | `/servicios/problemas-sin-resolver/semaforo-de-clientes-morosos` | Descubierta sin indexar | detectar clientes morosos | 1059 | 6 | 7 | precio o rango; visual (SVG/captura); diferenciar · grupo cobros |
 | `/servicios/problemas-sin-resolver/sistema-anti-impagos` | Descubierta sin indexar | cómo evitar impagos de clientes | 1144 | 6 | 7 | visual (SVG/captura); diferenciar · grupo cobros |
-| `/servicios/problemas-sin-resolver/turnos-y-ausencias-integrados` | Descubierta sin indexar | cubrir ausencias de empleados | 1008 | 6 | 5 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo turnos |
+| `/servicios/problemas-sin-resolver/turnos-y-ausencias-integrados` | Descubierta sin indexar | cubrir ausencias de empleados | 1007 | 6 | 5 | precio o rango; plazo de implantación; visual (SVG/captura); diferenciar · grupo turnos |
 | `/servicios/relevo-y-continuidad/acompanamiento-del-traspaso` | Descubierta sin indexar | traspaso de negocio | 1016 | 6 | 4 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura) |
 | `/servicios/relevo-y-continuidad/cerebro-digital-del-negocio-con-pix` | Descubierta sin indexar | base de conocimiento de la empresa con ia | 934 | 6 | 5 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/relevo-y-continuidad/cuadro-de-mando-de-valor` | Descubierta sin indexar | cómo valorar un negocio para venderlo | 947 | 6 | 3 | precio o rango; plazo de implantación; visual (SVG/captura) |
@@ -316,8 +316,8 @@ Columnas: **entr.** = enlaces entrantes desde el contenido de otras páginas (si
 | `/servicios/startups-e-inversores/pitch-y-web-en-ingles` | Descubierta sin indexar | pitch deck en inglés | 975 | 6 | 3 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/startups-e-inversores/preparacion-de-due-diligence` | Descubierta sin indexar | preparar due diligence startup | 942 | 6 | 7 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/startups-e-inversores/valoracion-de-proyectos-con-ia` | Descubierta sin indexar | evaluar startups con ia | 938 | 6 | 3 | precio o rango; plazo de implantación; visual (SVG/captura) |
-| `/blog/que-es-un-erp-y-cuando-lo-necesito` | Descubierta sin indexar | señales de que tu empresa necesita un erp | 1178 | 3 | 8 | precio o rango; plazo de implantación; ejemplo aplicado; diferenciar · grupo erp-crm |
-| `/blog/que-es-verifactu-y-cuando-me-afecta` | Descubierta sin indexar | verifactu plazos autónomos y sociedades | 1179 | 3 | 16 | precio o rango; plazo de implantación; ejemplo aplicado; diferenciar · grupo verifactu |
+| `/blog/que-es-un-erp-y-cuando-lo-necesito` | Descubierta sin indexar | señales de que tu empresa necesita un erp | 1187 | 3 | 9 | precio o rango; plazo de implantación; ejemplo aplicado; diferenciar · grupo erp-crm |
+| `/blog/que-es-verifactu-y-cuando-me-afecta` | Descubierta sin indexar | verifactu plazos autónomos y sociedades | 1186 | 3 | 17 | precio o rango; plazo de implantación; ejemplo aplicado; diferenciar · grupo verifactu |
 | `/servicios/deluxe/asistente-personal-con-ia-privado` | Descubierta sin indexar | asistente personal con ia privado | 934 | 6 | 4 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/deluxe/conectividad-en-toda-la-finca` | Descubierta sin indexar | wifi en toda la finca | 933 | 6 | 4 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/servicios/deluxe/eventos-con-tecnologia` | Descubierta sin indexar | tecnología para bodas y eventos privados | 897 | 6 | 4 | precio o rango; plazo de implantación; visual (SVG/captura) |
@@ -361,9 +361,9 @@ Columnas: **entr.** = enlaces entrantes desde el contenido de otras páginas (si
 | `/guias/tipos-de-emprendimiento` | Descubierta sin indexar | tipos de emprendimiento | 1092 | 6 | 5 | precio o rango; plazo de implantación; ejemplo aplicado |
 | `/guias/tipos-de-software` | Descubierta sin indexar | tipos de software y ejemplos | 1129 | 6 | 7 | precio o rango; plazo de implantación; visual (SVG/captura) |
 | `/casos/` | Aún no descubierta | casos de éxito de software y webs | 166 | 0 | 3 | enviar a indexar; precio o rango; plazo de implantación; FAQ propias (0) |
-| `/casos/contratalux` | Aún no descubierta | caso de éxito crm para asesorías energéticas | 1597 | 5 | 15 | enviar a indexar; precio o rango; plazo de implantación |
+| `/casos/contratalux` | Aún no descubierta | caso de éxito crm para asesorías energéticas | 1606 | 5 | 17 | enviar a indexar; precio o rango; plazo de implantación |
 | `/partners` | Aún no descubierta | programa de partners agencia digital | 943 | 5 | 3 | enviar a indexar; precio o rango; ejemplo aplicado; visual (SVG/captura) |
-| `/politica-editorial` | Aún no descubierta | política editorial studio emprende | 310 | 0 | 89 | enviar a indexar; precio o rango; plazo de implantación; visual (SVG/captura); FAQ propias (0) |
+| `/politica-editorial` | Aún no descubierta | política editorial studio emprende | 319 | 0 | 90 | enviar a indexar; precio o rango; plazo de implantación; visual (SVG/captura); FAQ propias (0) |
 | `/aviso-legal` | Descubierta sin indexar | aviso legal studio emprende | 340 | 0 | 2 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura); enlaces entrantes (2); FAQ propias (0) |
 | `/cookies` | Descubierta sin indexar | política de cookies studio emprende | 414 | 0 | 2 | precio o rango; plazo de implantación; ejemplo aplicado; visual (SVG/captura); enlaces entrantes (2); FAQ propias (0) |
 
@@ -372,7 +372,7 @@ Columnas: **entr.** = enlaces entrantes desde el contenido de otras páginas (si
 | URL | Estado | Keyword principal | Pal. | FAQ | Entr. | Qué le falta |
 |---|---|---|--:|--:|--:|---|
 | `/privacidad` | Descubierta sin indexar | política de privacidad studio emprende | 339 | 0 | 5 | precio o rango; plazo de implantación; visual (SVG/captura); FAQ propias (0) |
-| `/sobre-nosotros` | Descubierta sin indexar | studio emprende quiénes somos | 1041 | 3 | 96 | precio o rango; plazo de implantación |
+| `/sobre-nosotros` | Descubierta sin indexar | studio emprende quiénes somos | 1047 | 3 | 97 | precio o rango; plazo de implantación |
 
 ## Grupos de canibalización
 

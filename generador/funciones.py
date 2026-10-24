@@ -51,9 +51,9 @@ PAGINAS = {
  "rel": [("facturacion-con-verifactu.html", "Programa de facturación con Verifactu"), ("../../normativas.html", "Normativas y plazos"), ("prevision-de-tesoreria.html", "Previsión de tesorería")],
 },
 "software-de-gestion/cobros-impagos-y-semaforo-de-clientes": {
- "titulo": "Control de cobros e impagos con semáforo de clientes",
- "meta": "Controla cobros e impagos con un semáforo por cliente: avisos antes y después del vencimiento, recordatorios por WhatsApp y bloqueo de nuevos pedidos si hay deuda.",
- "h1": "Control de cobros e impagos: el semáforo de tus clientes",
+ "titulo": "Programa para controlar cobros pendientes y vencimientos",
+ "meta": "Programa para controlar cobros pendientes: qué factura vence, quién debe y cuánto, con avisos automáticos y el historial de pago de cada cliente.",
+ "h1": "Control de cobros pendientes: vencimientos, avisos y estado de cada factura",
  "lead": "Controlar los cobros y los impagos no debería depender de revisar el banco cada mañana. El semáforo te dice de un vistazo quién paga bien, quién se retrasa y a quién no conviene servir.",
  "respuesta": "Un control de cobros con semáforo clasifica a cada cliente en verde (paga a tiempo), ámbar (se retrasa) o rojo (tiene deuda vencida), envía recordatorios automáticos antes y después del vencimiento y avisa al equipo antes de aceptar un pedido nuevo de un cliente en rojo.",
  "secciones": [

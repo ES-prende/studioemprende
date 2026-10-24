@@ -1,6 +1,6 @@
 # Grupos de intención (canibalización): páginas que responden a búsquedas parecidas.
-# Generado desde seo/keywords.txt. Cada página NO indexada del grupo enlaza a las demás con su keyword como anchor;
-# las del Anexo A (INDEXADAS) solo reciben enlaces, nunca se modifican.
+# GENERADO por seo/scripts/generar_intenciones.py desde seo/keywords.txt. No editar a mano.
+# Cada página NO indexada del grupo enlaza a las demás con su keyword como anchor; las del Anexo A solo reciben enlaces.
 INDEXADAS = ['/', '/blog/', '/blog/app-movil-para-mi-negocio', '/blog/appcc-digital-hosteleria', '/blog/casa-inteligente-de-lujo', '/blog/chatgpt-gemini-copilot-o-claude-para-empresas', '/blog/como-aparecer-en-chatgpt', '/blog/como-aparecer-en-google-con-tu-pequena-empresa', '/blog/como-dejar-de-usar-excel-en-mi-empresa', '/blog/como-empezar-a-usar-la-ia-en-tu-pequena-empresa', '/blog/como-reducir-impagos', '/blog/copias-de-seguridad-que-funcionan', '/blog/crm-para-autonomos', '/blog/crm-para-empresas-de-servicios', '/blog/departamento-tecnologico-externo', '/blog/es-obligatorio-el-fichaje-digital', '/blog/formacion-bonificada-para-empresas-fundae', '/blog/formacion-en-ia-desde-cero', '/blog/formacion-ia-obligatoria-ai-act', '/blog/formacion-obligatoria-en-empresas', '/blog/ia-o-contratar-personal-en-una-pequena-empresa', '/blog/kit-digital-ia', '/blog/mvp-startup', '/blog/piloto-ia-grandes-empresas', '/blog/primeros-pasos-autonomo-digital', '/blog/pyme-ahorrar-horas', '/blog/que-puede-hacer-un-agente-de-ia', '/blog/registro-de-viajeros-ses-hospedajes', '/blog/relevo-generacional-preparar-mi-negocio', '/blog/software-todo-en-uno-para-pequenas-empresas', '/blog/tareas-que-puedes-automatizar', '/blog/web-que-vende', '/blog/whatsapp-para-no-perder-clientes', '/contacto', '/guias/', '/guias/caracteristicas-de-un-emprendedor', '/guias/como-crear-una-pagina-web', '/guias/como-crear-una-startup', '/guias/como-pedir-presupuesto-de-software-a-medida', '/guias/como-registrar-una-empresa-en-espana', '/guias/crear-pagina-web-con-ia', '/guias/diferencia-entre-hardware-y-software', '/guias/fases-del-diseno-web', '/guias/que-es-saas-software-como-servicio', '/guias/que-es-un-emprendedor', '/guias/que-es-un-erp', '/guias/que-es-un-software', '/guias/que-es-un-software-de-gestion', '/guias/software-a-medida-para-comercio', '/guias/software-a-medida-para-despachos', '/guias/software-a-medida-para-empresas-de-servicios', '/guias/software-a-medida-para-energia', '/guias/software-a-medida-para-gimnasios', '/guias/software-a-medida-para-residencias-y-ong', '/guias/software-a-medida-para-startups-y-agencias', '/guias/software-a-medida-para-talleres', '/guias/software-a-medida-por-sectores', '/mapa-web', '/normativas', '/precios', '/sectores', '/servicios/', '/servicios/agentes-de-ia/', '/servicios/alojamientos-y-domotica/clima-y-luces-automaticas', '/servicios/alojamientos-y-domotica/teleasistencia-para-mayores', '/servicios/apps-moviles/app-para-clientes-reservas-pedidos-fidelizacion-y-avisos', '/servicios/automatizacion-y-datos/automatizacion-de-administracion-facturas-y-cobros', '/servicios/automatizacion-y-datos/clientes-en-riesgo-de-irse', '/servicios/automatizacion-y-datos/informe-semanal-por-whatsapp-o-voz', '/servicios/automatizacion-y-datos/lectura-automatica-de-documentos-hacia-tu-programa', '/servicios/automatizacion-y-datos/optimizacion-de-rutas', '/servicios/autonomos/', '/servicios/autonomos/kit-de-arranque-web-google-business-y-facturacion', '/servicios/ciberseguridad-y-sistemas/renovacion-de-equipos-y-fin-de-windows-10', '/servicios/consultoria-y-ayudas/auditoria-de-ia-para-pymes', '/servicios/deluxe/', '/servicios/deluxe/villa-o-casa-inteligente-de-lujo', '/servicios/departamento-tecnologico/', '/servicios/departamento-tecnologico/documentacion-de-sistemas', '/servicios/erp-para-pymes/', '/servicios/erp-para-pymes/equipo-fichaje-y-turnos', '/servicios/formacion-ia/ia-para-duenos-de-negocios-de-toda-la-vida', '/servicios/grandes-empresas/', '/servicios/migraciones-e-integraciones/unificar-varios-programas-en-uno', '/servicios/pix/asistente-empresarial', '/servicios/pix/implantacion-y-precios', '/servicios/pix/nexgestion', '/servicios/presencia-digital/analitica-web', '/servicios/presencia-digital/aparecer-en-chatgpt-y-gemini-geo', '/servicios/presencia-digital/seo-local-y-por-sectores', '/servicios/problemas-sin-resolver/', '/servicios/software-de-gestion/', '/servicios/software-de-gestion/canal-de-denuncias-ley-2-2023', '/servicios/software-de-gestion/contratos-con-firma-online', '/servicios/software-de-gestion/embudo-de-ventas-y-oportunidades', '/servicios/software-de-gestion/facturacion-con-verifactu', '/servicios/software-de-gestion/ficha-de-cliente-360', '/servicios/software-de-gestion/gestion-de-flotas', '/servicios/software-de-gestion/lectura-automatica-de-facturas-de-proveedores', '/servicios/software-de-gestion/planificacion-de-rutas', '/servicios/software-de-gestion/portal-del-cliente-y-del-proveedor', '/servicios/software-de-gestion/presupuestos-que-pasan-a-pedido-y-factura', '/servicios/software-de-gestion/remesas-y-domiciliaciones', '/servicios/software-de-gestion/tpv', '/servicios/software-de-gestion/turnos-vacaciones-y-ausencias', '/servicios/software-especializado/contratos-y-firma-automatizados', '/servicios/software-especializado/huella-de-carbono-para-proveedores', '/servicios/startups-e-inversores/due-diligence-tecnica', '/servicios/webs/', '/servicios/webs/web-corporativa-con-seo', '/servicios/whatsapp-ia/reactivacion-de-clientes-y-pacientes-inactivos']
 GRUPOS = {
   'ai-act': [
@@ -25,7 +25,7 @@ GRUPOS = {
   ],
   'chatbot': [
     ('/servicios/agentes-de-ia/chatbot-para-tu-web-con-pix', 'chatbot con ia entrenado con tu negocio', 'Chatbot para tu web con PIX: responde con lo que sabe tu negocio'),
-    ('/servicios/webs/chatbot-pix', 'chatbot para página web', 'Chatbot PIX: el chatbot con IA que atiende tu web a cualquier hora'),
+    ('/servicios/webs/chatbot-pix', 'chatbot para página web', 'Chatbot para tu página web, integrado en el diseño y conectado a tu CRM'),
   ],
   'cobros': [
     ('/blog/como-reducir-impagos', 'cómo reducir impagos', 'Cómo reducir los impagos en tu negocio'),
@@ -36,7 +36,7 @@ GRUPOS = {
     ('/servicios/problemas-sin-resolver/expediente-de-reclamacion-listo', 'reclamar deuda a un cliente documentación', 'Expediente de reclamación listo para entregar a tu abogado o asesoría'),
     ('/servicios/problemas-sin-resolver/semaforo-de-clientes-morosos', 'detectar clientes morosos', 'Semáforo de clientes morosos calculado con datos reales de pago'),
     ('/servicios/problemas-sin-resolver/sistema-anti-impagos', 'cómo evitar impagos de clientes', 'Sistema anti-impagos: reglas de cobro que trabajan sin que estés encima'),
-    ('/servicios/software-de-gestion/cobros-impagos-y-semaforo-de-clientes', 'programa para controlar cobros pendientes', 'Control de cobros e impagos: el semáforo de tus clientes'),
+    ('/servicios/software-de-gestion/cobros-impagos-y-semaforo-de-clientes', 'programa para controlar cobros pendientes', 'Control de cobros pendientes: vencimientos, avisos y estado de cada factura'),
   ],
   'copias': [
     ('/blog/copias-de-seguridad-que-funcionan', 'copias de seguridad que funcionan', 'Tus copias de seguridad, ¿funcionan de verdad?'),
@@ -102,7 +102,7 @@ GRUPOS = {
   ],
   'informe-semanal': [
     ('/servicios/automatizacion-y-datos/informe-semanal-por-whatsapp-o-voz', 'informe semanal por whatsapp o voz', 'Informe semanal por WhatsApp o voz: tu negocio en dos minutos'),
-    ('/servicios/software-de-gestion/informe-semanal-automatico-por-whatsapp-o-voz', 'resumen semanal del negocio en el móvil', 'Informe semanal automático por WhatsApp o en una nota de voz'),
+    ('/servicios/software-de-gestion/informe-semanal-automatico-por-whatsapp-o-voz', 'resumen semanal del negocio en el móvil', 'El resumen semanal de tu negocio, en el móvil, sacado de tu programa de gestión'),
   ],
   'integraciones': [
     ('/servicios/erp-para-pymes/conexion-con-tu-tienda-banco-y-otras-herramientas', 'erp conectado con tienda online y banco', 'Tu ERP conectado con la tienda online, el banco y lo que ya usas'),
@@ -128,11 +128,11 @@ GRUPOS = {
     ('/servicios/software-especializado/presupuestador-y-configurador-online', 'configurador de presupuestos online', 'Presupuestador y configurador online: el precio, sin esperar'),
   ],
   'prevision-stock': [
-    ('/servicios/automatizacion-y-datos/prevision-de-ventas-y-stock', 'previsión de ventas para pymes', 'Previsión de ventas y stock: compra lo que vas a vender'),
+    ('/servicios/automatizacion-y-datos/prevision-de-ventas-y-stock', 'previsión de ventas para pymes', 'Previsión de ventas para pymes: cuánto vas a vender el mes que viene'),
     ('/servicios/software-de-gestion/prevision-de-stock-con-ia', 'previsión de stock con inteligencia artificial', 'Previsión de stock con IA: compra lo que vas a vender'),
   ],
   'recordatorios': [
-    ('/servicios/software-de-gestion/recordatorios-automaticos-por-whatsapp', 'recordatorios de cobro y entregas por whatsapp', 'Recordatorios automáticos por WhatsApp que el cliente contesta'),
+    ('/servicios/software-de-gestion/recordatorios-automaticos-por-whatsapp', 'recordatorios de cobro y entregas por whatsapp', 'Recordatorios automáticos por WhatsApp de cobros, entregas y renovaciones'),
     ('/servicios/whatsapp-ia/citas-y-recordatorios-automaticos', 'recordatorio de citas por whatsapp', 'Citas y recordatorios automáticos por WhatsApp, sin llamar a nadie'),
   ],
   'software-medida': [
@@ -144,13 +144,13 @@ GRUPOS = {
     ('/servicios/departamento-tecnologico/vigilancia-de-suplantacion', 'suplantación de identidad de empresa', 'Vigilancia de suplantación: que nadie se haga pasar por tu empresa'),
   ],
   'tesoreria': [
-    ('/servicios/automatizacion-y-datos/prevision-de-tesoreria-y-control-de-costes', 'control de costes de la empresa', 'Previsión de tesorería y control de costes sin hojas de cálculo'),
+    ('/servicios/automatizacion-y-datos/prevision-de-tesoreria-y-control-de-costes', 'control de costes de la empresa', 'Control de costes de la empresa: dónde se va el dinero cada mes'),
     ('/servicios/software-de-gestion/prevision-de-tesoreria', 'previsión de tesorería automática', 'Previsión de tesorería automática: sabe hoy cómo irá tu caja'),
   ],
   'turnos': [
     ('/servicios/fichador/turnos-y-cuadrantes', 'cuadrante de turnos conectado al fichaje', 'Turnos y cuadrantes conectados al fichaje'),
     ('/servicios/fichador/vacaciones-y-ausencias', 'app para gestionar vacaciones de empleados', 'Vacaciones y ausencias: solicitud, aprobación y saldo en un sitio'),
-    ('/servicios/problemas-sin-resolver/turnos-y-ausencias-integrados', 'cubrir ausencias de empleados', 'Turnos y ausencias integrados: cuando falta alguien, el sistema ya lo sabe'),
+    ('/servicios/problemas-sin-resolver/turnos-y-ausencias-integrados', 'cubrir ausencias de empleados', 'Cubrir ausencias sin llamar a medio equipo: turnos y bajas integrados'),
     ('/servicios/software-de-gestion/turnos-vacaciones-y-ausencias', 'turnos, vacaciones y ausencias en el programa de gestión', 'Turnos, vacaciones y ausencias en un mismo calendario'),
   ],
   'verifactu': [
@@ -167,7 +167,7 @@ GRUPOS = {
     ('/blog/agente-de-ia-para-whatsapp', 'cómo automatizar respuestas de whatsapp con ia', 'Agente de IA para WhatsApp: cómo automatizar las respuestas de WhatsApp Business'),
     ('/servicios/alojamientos-y-domotica/asistente-del-huesped-por-whatsapp-24-7', 'asistente de whatsapp para huéspedes', 'Asistente de WhatsApp que atiende a tus huéspedes día y noche'),
     ('/servicios/pequenas-empresas/no-pierdas-clientes-whatsapp-ia-y-recepcionista-de-voz', 'atender llamadas y whatsapp perdidos en una pyme', 'No pierdas clientes: WhatsApp con IA y recepcionista de voz para tu pyme'),
-    ('/servicios/whatsapp-ia/', 'agentes ia whatsapp', 'WhatsApp IA'),
+    ('/servicios/whatsapp-ia/', 'agentes ia whatsapp', 'Agentes de IA para WhatsApp: atienden, agendan y recuerdan citas por ti'),
     ('/servicios/whatsapp-ia/asistente-de-ia-para-whatsapp', 'asistente de ia para whatsapp business', 'Asistente de IA para WhatsApp: contesta, agenda y deriva por ti'),
   ],
 }

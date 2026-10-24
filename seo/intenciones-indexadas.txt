@@ -1,0 +1,17 @@
+# Páginas del Anexo A que compiten en un grupo de intención (destino de enlaces, nunca se modifican). URL|keyword|grupo
+/blog/es-obligatorio-el-fichaje-digital|obligación legal del fichaje digital|fichaje
+/servicios/erp-para-pymes/equipo-fichaje-y-turnos|erp con fichaje y turnos|fichaje
+/servicios/software-de-gestion/turnos-vacaciones-y-ausencias|turnos, vacaciones y ausencias en el programa de gestión|turnos
+/blog/como-reducir-impagos|cómo reducir impagos|cobros
+/servicios/automatizacion-y-datos/automatizacion-de-administracion-facturas-y-cobros|automatizar facturas y cobros|cobros
+/servicios/automatizacion-y-datos/informe-semanal-por-whatsapp-o-voz|informe semanal por whatsapp o voz|informe-semanal
+/servicios/software-de-gestion/facturacion-con-verifactu|facturación con verifactu|verifactu
+/guias/que-es-un-erp|qué es un erp|erp-crm
+/servicios/software-de-gestion/embudo-de-ventas-y-oportunidades|embudo de ventas en el crm|erp-crm
+/blog/como-dejar-de-usar-excel-en-mi-empresa|cómo dejar de usar excel en la empresa|migracion-excel
+/servicios/software-de-gestion/presupuestos-que-pasan-a-pedido-y-factura|presupuestos que pasan a pedido y factura|presupuestos
+/blog/copias-de-seguridad-que-funcionan|copias de seguridad que funcionan|copias
+/blog/formacion-ia-obligatoria-ai-act|formación en ia obligatoria por el ai act|ai-act
+/blog/formacion-obligatoria-en-empresas|formación obligatoria en empresas|formacion-empleados
+/guias/software-a-medida-por-sectores|software a medida por sectores|guias-sector
+/servicios/migraciones-e-integraciones/unificar-varios-programas-en-uno|unificar varios programas en uno|integraciones

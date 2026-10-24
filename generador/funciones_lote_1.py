@@ -280,9 +280,9 @@ PAGINAS = {
  "rel": [("agenda-y-citas-online.html", "Agenda y citas online"), ("../webs/web-con-reservas-y-citas.html", "Web con reservas y citas"), ("../../guias/software-a-medida-para-gimnasios.html", "Software para gimnasios y clubes")],
 },
 "software-de-gestion/recordatorios-automaticos-por-whatsapp": {
- "titulo": "Recordatorios de citas automáticos por WhatsApp",
- "meta": "Recordatorios de citas por WhatsApp automáticos: el cliente confirma, cancela o cambia con un botón y tu agenda se actualiza sola, sin llamadas.",
- "h1": "Recordatorios automáticos por WhatsApp que el cliente contesta",
+ "titulo": "Recordatorios por WhatsApp de cobros, entregas y renovaciones",
+ "meta": "Recordatorios automáticos por WhatsApp desde tu programa de gestión: facturas que vencen, pedidos listos, revisiones y renovaciones, con respuesta del cliente.",
+ "h1": "Recordatorios automáticos por WhatsApp de cobros, entregas y renovaciones",
  "lead": "Los recordatorios automáticos por WhatsApp avisan a cada cliente de su cita y le dejan confirmar, cambiar o anular con un toque, y la respuesta llega directa a tu agenda.",
  "respuesta": "Los recordatorios automáticos por WhatsApp son mensajes que el programa de gestión envía a cada cliente un tiempo antes de su cita, con la fecha, la hora y el lugar. El cliente responde con botones para confirmar, cancelar o pedir otra hora, y esa respuesta actualiza la agenda sin que nadie del equipo tenga que llamar ni anotar nada.",
  "secciones": [

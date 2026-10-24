@@ -177,9 +177,9 @@ PAGINAS = {
  "rel": [("informe-semanal-automatico-por-whatsapp-o-voz.html", "Informe semanal por WhatsApp o voz"), ("rentabilidad-por-cliente-servicio-y-empleado.html", "Rentabilidad por cliente y servicio"), ("../automatizacion-y-datos/cuadro-de-mando-de-direccion.html", "Cuadro de mando de dirección")],
 },
 "software-de-gestion/informe-semanal-automatico-por-whatsapp-o-voz": {
- "titulo": "Informe semanal de tu negocio por WhatsApp o audio",
- "meta": "Recibe cada lunes un informe automático de tu negocio por WhatsApp o en audio: ventas, cobros, trabajos y avisos, sacado de tu programa de gestión.",
- "h1": "Informe semanal automático por WhatsApp o en una nota de voz",
+ "titulo": "Resumen semanal del negocio en el móvil, desde tu programa",
+ "meta": "Cada lunes, ventas, cobros, presupuestos y alertas de tu programa de gestión resumidos en un mensaje o una nota de voz en tu móvil.",
+ "h1": "El resumen semanal de tu negocio, en el móvil, sacado de tu programa de gestión",
  "lead": "Un informe semanal automático por WhatsApp o voz te cuenta cómo ha ido la semana sin abrir el ordenador: lo que se vendió, lo que falta por cobrar y lo que necesita tu atención.",
  "respuesta": "El informe semanal automático es un resumen que el programa de gestión prepara y envía el día y la hora que elijas, en texto por WhatsApp o como nota de voz. Lo redacta el agente PIX a partir de los datos reales de la semana y destaca lo que ha cambiado y lo que conviene decidir.",
  "secciones": [
