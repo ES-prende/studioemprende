@@ -30,6 +30,7 @@ EXTRA = {
  "/servicios/webs/webs-para-startups": ("Webs para startups que validan la idea", ["/servicios/startups-e-inversores/mvp-en-6-12-semanas", "/servicios/webs/landing-pages-para-campanas"]),
  "/servicios/webs/webs-scroll-3d-inmersivas": ("Webs con animación 3D al hacer scroll", ["/servicios/webs/contenido-personalizado-segun-el-visitante", "/servicios/presencia-digital/videos-y-anuncios-con-ia"]),
  "/casos/": ("Todos los casos de éxito", ["/partners", "/sobre-nosotros"]),
+ "/blog/cuanto-cuesta-un-crm-para-autonomos": ("Cuánto cuesta un CRM para autónomos", ["/servicios/autonomos/packs-con-precio-cerrado", "/servicios/software-de-gestion/seguimiento-comercial-y-tareas", "/servicios/erp-para-pymes/pagas-solo-los-modulos-que-usas"]),
 }
 
 # origen -> [(destino, anchor)]

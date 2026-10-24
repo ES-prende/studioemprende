@@ -8,6 +8,7 @@ import partners as PT
 import casos as CS
 import intenciones as INT
 import enlaces_extra as EX
+import blog_nuevos as BN
 from datos import SECCIONES, NORMATIVAS, NORM_EXTRA, SECTORES, PACKS, MENU
 from blog import ARTICULOS
 from alt_blog import ALT
@@ -19,7 +20,8 @@ ARTICULOS = [(a[0], a[1], a[2], a[3], a[4], a[5], a[6] + BP.EXCEL_EXTRA) if a[0]
 NUEVOS = {a[0] for a in BF.ARTICULOS + BP.ARTICULOS}
 ARTICULOS = BP.ARTICULOS + BF.ARTICULOS + ARTICULOS
 ALT.update(BF.ALT); ALT.update(BP.ALT)
-FAQS_BLOG = dict(BF.FAQS); FAQS_BLOG.update(BP.FAQS)
+FAQS_BLOG = dict(BF.FAQS); FAQS_BLOG.update(BP.FAQS); FAQS_BLOG.update(BN.FAQS)
+ALT.update(BN.ALT); RB.RESUMEN.update(BN.RESUMEN)
 from guias import GUIAS, GRUPOS, SERVICIO_GUIAS
 from pix import PIX_HUB, PIX_PAGINAS
 from legales import HIST, AVISO, PRIVACIDAD, COOKIES
@@ -790,9 +792,13 @@ pagina("404.html", "Página no encontrada · Studio Emprende", "La página que b
 # ---------- BLOG ----------
 pagina("blog/index.html", "Blog · Studio Emprende", "Artículos sobre gestión, normativas, IA y webs para autónomos y pymes.",
        '<section class="page-hero"><div class="w">%s<h1>Blog</h1><p class="lead">Ideas claras sobre gestión, normativas, inteligencia artificial y webs, sin tecnicismos.</p><p class="firma">Escritos y revisados por el equipo de Studio Emprende. <a href="../politica-editorial.html">Lee nuestra política editorial</a>.</p></div></section><section class="sec"><div class="w"><div class="rejilla">%s</div></div></section>%s' % (migas("../", ("Blog", None)), "".join(tarjeta_blog(a, "") for a in ARTICULOS), cta("../")))
-for slug, titulo, desc, fecha, cat, serv_rel, cuerpo in ARTICULOS:
+_BN = {a[0] for a in BN.ARTICULOS}  # artículos nuevos: fuera de portada, índice, mapa web y "otros artículos" de los demás
+for slug, titulo, desc, fecha, cat, serv_rel, cuerpo in ARTICULOS + BN.ARTICULOS:
     sr = [x for x in SECCIONES if x[0] == serv_rel][0]
-    otros = "".join([tarjeta_blog(a, "") for a in ARTICULOS if a[0] != slug][:3])
+    if slug in _BN:
+        otros = "".join([tarjeta_blog(a, "") for a in sorted(ARTICULOS, key=lambda a: a[4] != cat)][:3])
+    else:
+        otros = "".join([tarjeta_blog(a, "") for a in ARTICULOS if a[0] != slug][:3])
     ld = ""
     _fq = FAQS_BLOG.get(slug)
     if _fq: cuerpo = cuerpo + '<h2>Preguntas frecuentes</h2>' + _faq_html(_fq)
@@ -923,7 +929,7 @@ llms += "\n## PIX, agente de IA empresarial\n- [PIX](%s/servicios/pix/): %s\n" %
 llms += "\n## Guías para emprender\n" + "".join("- [%s](%s/guias/%s.html): %s\n" % (g[4], DOM, g[0], g[5].split(". ")[0] + ".") for g in GUIAS)
 llms += "\n## Casos de éxito\n- [Caso ContrataLux: marca, web, SEO, redes y CRM a medida](%s/casos/contratalux)\n" % DOM
 llms += "\n## Páginas clave\n- [Precios y packs](%s/precios.html)\n- [Normativas 2026-2027](%s/normativas.html)\n- [Sectores](%s/sectores.html)\n- [Programa de partners](%s/partners.html)\n- [Contacto](%s/contacto.html)\n\n## Blog\n" % (DOM, DOM, DOM, DOM, DOM)
-llms += "".join("- [%s](%s/blog/%s.html): %s\n" % (a[1], DOM, a[0], a[2]) for a in ARTICULOS)
+llms += "".join("- [%s](%s/blog/%s.html): %s\n" % (a[1], DOM, a[0], a[2]) for a in ARTICULOS + BN.ARTICULOS)
 llms += "\n## Optional\n- [Todas las funciones, página a página](%s/llms-full.txt)\n- [Mapa de la web](%s/mapa-web.html)\n- [Sitemap](%s/sitemap.xml)\n" % (DOM, DOM, DOM)
 open(OUT + "/llms.txt", "w").write(llms)
 full = "# Studio Emprende — contenido completo\n\n> %s\n\nAtendemos 100 %% online en toda España. Contacto y diagnóstico gratis: %s/contacto.html\n" % (ORG["description"], DOM)
@@ -937,7 +943,7 @@ for g in GUIAS:
     full += "\n## %s\nURL: %s/guias/%s.html\n%s\n" % (g[4], DOM, g[0], g[5]) + "".join("**%s**\n%s\n\n" % (q, a) for q, a in g[7])
 full += "\n## Normativas\n" + "".join("- %s (%s): %s\n" % (a, b, c) for a, b, c, d in NORMATIVAS)
 full += "\n## Preguntas frecuentes\n" + "".join("**%s**\n%s\n\n" % (q, a) for q, a in FAQ)
-full += "## Blog\n" + "".join("- [%s](%s/blog/%s.html): %s\n" % (a[1], DOM, a[0], a[2]) for a in ARTICULOS)
+full += "## Blog\n" + "".join("- [%s](%s/blog/%s.html): %s\n" % (a[1], DOM, a[0], a[2]) for a in ARTICULOS + BN.ARTICULOS)
 open(OUT + "/llms-full.txt", "w").write(full)
 print(len(PAGS), "páginas")
 

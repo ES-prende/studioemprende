@@ -152,6 +152,7 @@
 - [Cómo plantear un piloto de IA que dé resultados](https://studioemprende.com/blog/piloto-ia-grandes-empresas): Claves para que una prueba de IA en una empresa grande no se quede en una demo.
 - [Cómo construir el MVP de tu startup sin quemar el dinero](https://studioemprende.com/blog/mvp-startup): Qué debe incluir un producto mínimo viable y cómo prepararlo para inversores.
 - [Casa inteligente de lujo: tecnología que no se nota](https://studioemprende.com/blog/casa-inteligente-de-lujo): Cómo debe ser la domótica en una vivienda exclusiva: discreta, fiable y fácil de usar.
+- [Cuánto cuesta un CRM para autónomos en 2026](https://studioemprende.com/blog/cuanto-cuesta-un-crm-para-autonomos): Precio de un CRM para autónomos en 2026: qué ofrecen los gratuitos, cómo se paga una suscripción, cuánto cuesta uno implantado y los costes ocultos que conviene mirar antes.
 
 ## Optional
 - [Todas las funciones, página a página](https://studioemprende.com/llms-full.txt)
