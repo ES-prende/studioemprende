@@ -48,9 +48,31 @@ Disallow: /consentimiento.php
 # Indice y sitemaps por tipo
 Sitemap: https://studioemprende.com/sitemap.xml
 Sitemap: https://studioemprende.com/sitemap-paginas.xml
-Sitemap: https://studioemprende.com/sitemap-servicios.xml
 Sitemap: https://studioemprende.com/sitemap-guias.xml
-Sitemap: https://studioemprende.com/sitemap-funciones.xml
 Sitemap: https://studioemprende.com/sitemap-blog.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-agentes-de-ia.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-alojamientos-y-domotica.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-apps-moviles.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-automatizacion-y-datos.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-autonomos.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-ciberseguridad-y-sistemas.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-consultoria-y-ayudas.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-deluxe.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-departamento-tecnologico.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-erp-para-pymes.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-fichador.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-formacion-ia.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-grandes-empresas.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-migraciones-e-integraciones.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-pequenas-empresas.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-pix.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-presencia-digital.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-problemas-sin-resolver.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-relevo-y-continuidad.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-software-de-gestion.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-software-especializado.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-startups-e-inversores.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-webs.xml
+Sitemap: https://studioemprende.com/sitemap-servicios-whatsapp-ia.xml
 
 # Resumen para IA: https://studioemprende.com/llms.txt · https://studioemprende.com/llms-full.txt

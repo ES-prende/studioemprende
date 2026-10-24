@@ -831,23 +831,26 @@ for p in PAGS:
     if "__FMOD__" in _t or "<!--FECHA_ACT-->" in _t:
         _t = _t.replace("__FMOD__", LASTMOD[p]).replace("<!--FECHA_ACT-->", '<time datetime="%s">%s</time>' % (LASTMOD[p], _fh(LASTMOD[p])))
         open(_f, "w", encoding="utf-8").write(_t)
+# Un sitemap por familia de servicio (hub + sus funciones) para ver la indexación sección a sección en Search Console
 def _grupo(p):
     if p.startswith("blog/"): return "blog"
     if p.startswith("guias/"): return "guias"
-    if p.startswith("servicios/") and p.count("/") == 2: return "funciones"
-    if p.startswith("servicios/"): return "servicios"
+    if p.startswith("servicios/") and p != "servicios/index.html": return "servicios-" + p.split("/")[1].replace(".html", "")
     return "paginas"
-PRIO = {"guias": "0.8", "paginas": "0.8", "servicios": "0.9", "funciones": "0.6", "blog": "0.7"}
+PRIO = {"guias": "0.8", "paginas": "0.8", "blog": "0.7"}
 SMS = []
-for g in ["paginas", "servicios", "guias", "funciones", "blog"]:
+_GRUPOS = ["paginas", "guias", "blog"] + sorted({_grupo(p) for p in PAGS if _grupo(p).startswith("servicios-")})
+for g in _GRUPOS:
     xs = ""
-    for p in PAGS:
+    # el hub de la familia va primero
+    for p in sorted(PAGS, key=lambda q: q.count("/") > 1) if g.startswith("servicios-") else PAGS:
         if p in NOINDEX or p in CANON or _grupo(p) != g: continue
         img = ""
         if g == "blog" and p != "blog/index.html":
             img = "<image:image><image:loc>%s/assets/img/blog/%s.jpg</image:loc></image:image>" % (DOM, p[5:-5])
-        pr = "1.0" if p == "index.html" else PRIO[g]
+        pr = "1.0" if p == "index.html" else PRIO.get(g, "0.9" if p.count("/") == 1 else "0.6")
         xs += "<url><loc>%s/%s</loc><lastmod>%s</lastmod><changefreq>%s</changefreq><priority>%s</priority>%s</url>\n" % (DOM, p.replace("index.html", ""), LASTMOD[p], "weekly" if g in ("blog", "paginas", "guias") else "monthly", pr, img)
+    if not xs: continue
     open(OUT + "/sitemap-%s.xml" % g, "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' + xs + "</urlset>\n")
     SMS.append("sitemap-%s.xml" % g)
 open(OUT + "/sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join("<sitemap><loc>%s/%s</loc><lastmod>%s</lastmod></sitemap>\n" % (DOM, s, max(LASTMOD[p] for p in PAGS if p not in NOINDEX and _grupo(p) == s[8:-4])) for s in SMS) + "</sitemapindex>\n")
@@ -929,6 +932,9 @@ RewriteEngine On
 
 # URL antigua de la web multidioma
 RewriteRule ^servicios/webs/webs-multidioma-para-espana-y-latinoamerica(\\.html)?/?$ https://studioemprende.com/servicios/webs/webs-multidioma-para-espana-y-exportacion [R=301,L]
+
+# Sitemaps antiguos (hoy hay uno por familia de servicio): al indice
+RewriteRule ^sitemap-(funciones|servicios)\\.xml$ https://studioemprende.com/sitemap.xml [R=301,L]
 
 # http o www -> https sin www en UN solo salto (quitando tambien la barra final o el .html)
 RewriteCond %{HTTPS} off [OR]

@@ -10,6 +10,9 @@ RewriteEngine On
 # URL antigua de la web multidioma
 RewriteRule ^servicios/webs/webs-multidioma-para-espana-y-latinoamerica(\.html)?/?$ https://studioemprende.com/servicios/webs/webs-multidioma-para-espana-y-exportacion [R=301,L]
 
+# Sitemaps antiguos (hoy hay uno por familia de servicio): al indice
+RewriteRule ^sitemap-(funciones|servicios)\.xml$ https://studioemprende.com/sitemap.xml [R=301,L]
+
 # http o www -> https sin www en UN solo salto (quitando tambien la barra final o el .html)
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
