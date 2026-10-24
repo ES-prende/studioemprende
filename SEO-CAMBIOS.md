@@ -22,6 +22,15 @@ La web se genera entera con `generador/construir.py`, y cabecera, pie y estilos 
 | 24/10 | — | Control de las 111 indexadas (`seo/scripts/proteger.py`). | `dd625af` |
 | 24/10 | 3 · 3 bis | Sección nueva y plana `/casos/` (hub + `/casos/contratalux`), con sitemap propio `sitemap-casos.xml`. Caso real ContrataLux: 1.590 palabras, Article + VideoObject + 4 ImageObject + FAQPage + BreadcrumbList. Capturas WebP 1280×720 con `width`/`height`/`lazy`, clip de 20 s (734 KB, sin audio, `preload="none"`, póster WebP) y línea de tiempo SVG animada con `IntersectionObserver` y `prefers-reduced-motion`. Estilos y script propios (`casos.css`, `casos.js`), no se cargan en el resto de la web. | ver git log |
 | 24/10 | 2 | Bloque "Caso real" con enlace a `/casos/contratalux` en 12 páginas no indexadas relacionadas (presencia digital, SEO programático, redes, dominios, correo, comisiones, cuadro de mando, software especializado, PIX, packs, sobre nosotros). | ver git log |
+| 24/10 | 3 | Nota discreta en el caso: «Proyecto desarrollado para una empresa del mismo grupo». | `bb10637` |
+| 24/10 | 1 · Anexo C | Reescritura a fondo de las 3 «rastreadas sin indexar»: **PIX inteligencia conectada** (nuevo ángulo «IA conectada a tu ERP y CRM», diferencia con IA privada, ejemplo real en ContrataLux, precio 90/145 €/mes, piloto de 4 semanas), **PIX casos por sector** (tabla de primer proceso y métrica por sector, caso real, 5 FAQ propias) y **LMS** (ángulo de formación obligatoria auditable, comparativa con Moodle y plataformas genéricas). | `5f3f11b` |
+| 24/10 | 2 | Malla de los 29 grupos de intención: 93 páginas no indexadas enlazan a las de su grupo con su keyword como anchor (máx. 6). Enlaces contextuales hacia las 29 páginas que tenían menos de 3 entradas: ahora solo aviso legal y cookies tienen 2 (más el pie). Mediana de enlaces entrantes: de 5 a 6. | `048c0bb` |
+| 24/10 | 3 | Hub `/servicios/whatsapp-ia/` orientado a «agentes de IA para WhatsApp» (consulta en posición 22,5): título, H1, qué hace y qué no, precio real y por dónde empezar. El nombre en los menús no cambia. | `46f054a` |
+| 24/10 | 3 | Artículo nuevo **«Cuánto cuesta un CRM para autónomos en 2026»** (apoya a `/blog/crm-para-autonomos`, posición 67, sin tocarla): tres modelos de precio, costes ocultos, fórmula a 24 meses y precios reales de Studio Emprende. Portada propia en la paleta de marca. Los artículos nuevos van en `blog_nuevos.py` y **no entran en portada, índice del blog, mapa web ni "otros artículos"** de los posts indexados. | `34f88fc` |
+| 24/10 | 3 | Sección `/temas/`: hub y 6 temas del blog (IA, gestión y CRM, normativas, formación, webs, emprender), con CollectionPage + ItemList y `sitemap-temas.xml`. | `43f4741` |
+| 24/10 | 1 | Títulos y H1 diferenciados en 7 páginas canibalizadas: previsión de ventas, chatbot para página web, recordatorios de cobros y entregas, resumen semanal, control de costes, cobros pendientes y cubrir ausencias. | `8070313` |
+| 24/10 | 6 | Cola de envío a indexación (`seo/COLA-INDEXACION.md`): 310 URLs, 31 días en Google (10/día) y 4 en Bing (100/día), empezando por lo nuevo y los hubs sin descubrir. | ver git log |
+| 24/10 | 5 | Kit para Sandra (`seo/BLOQUE5-SANDRA.md`): datos NAP idénticos, textos corto, medio y largo, y orden de directorios y enlaces. | ver git log |
 
 ## Revisado y ya estaba bien (no se cambia)
 
@@ -48,9 +57,12 @@ La web se genera entera con `generador/construir.py`, y cabecera, pie y estilos 
 ## Pendiente
 
 - [ ] Revisión de la tabla de priorización por parte de Sandra.
-- [ ] Datos reales: precio del fichador, plazos por servicio, casos de clientes citables y capturas del programa.
-- [ ] Bloque 1, tandas 1-12 (reescritura del Anexo C primero).
-- [ ] Bloque 2: enlaces contextuales cruzados entre familias y desde los grupos de canibalización.
-- [ ] Bloque 3: "CRM para autónomos" (precio), "agentes IA WhatsApp", páginas de precio y comparativas, casos de éxito (solo con datos reales), categorías del blog.
-- [ ] Bloque 3 bis: SVG animados en hoja de estilos aparte, solo fuera del Anexo A.
+- [ ] Datos reales: precio del fichador y plazos por servicio. (Caso citable y capturas: hecho con ContrataLux.)
+- [x] Anexo C reescrito.
+- [ ] Bloque 1, tandas 1-13: añadir precio, plazo y ejemplo a cada página (pendiente de los datos de Sandra).
+- [x] Bloque 2: malla de grupos de intención y enlaces hacia las páginas poco enlazadas.
+- [x] Bloque 3: caso de éxito, CRM para autónomos (precio), agentes IA WhatsApp y temas del blog.
+- [ ] Bloque 3: comparativas tipo «Holded vs …» (necesitan precios y funciones de terceros verificados en la fecha de publicación).
+- [x] Bloque 3 bis: SVG animado, WebP y vídeo con póster en /casos/ (hoja y script propios).
+- [ ] Bloque 3 bis: extender las ilustraciones SVG a los hubs no indexados.
 - [ ] Tras fusionar: reenviar `sitemap.xml` en Search Console y Bing.
