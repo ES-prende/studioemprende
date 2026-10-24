@@ -30,6 +30,13 @@ EXTRA = {
  "/servicios/webs/webs-para-startups": ("Webs para startups que validan la idea", ["/servicios/startups-e-inversores/mvp-en-6-12-semanas", "/servicios/webs/landing-pages-para-campanas"]),
  "/servicios/webs/webs-scroll-3d-inmersivas": ("Webs con animación 3D al hacer scroll", ["/servicios/webs/contenido-personalizado-segun-el-visitante", "/servicios/presencia-digital/videos-y-anuncios-con-ia"]),
  "/casos/": ("Todos los casos de éxito", ["/partners", "/sobre-nosotros"]),
+ "/temas/": ("Todos los temas del blog", ["/politica-editorial", "/sobre-nosotros", "/blog/cuanto-cuesta-un-crm-para-autonomos"]),
+ "/temas/gestion-y-crm": ("Más sobre gestión y CRM", ["/blog/cuanto-cuesta-un-crm-para-autonomos", "/blog/que-es-un-erp-y-cuando-lo-necesito", "/blog/app-de-control-horario-para-pequenas-empresas"]),
+ "/temas/normativas-y-cumplimiento": ("Más sobre normativas", ["/blog/que-es-verifactu-y-cuando-me-afecta", "/blog/app-de-control-horario-para-pequenas-empresas", "/servicios/pequenas-empresas/cumple-la-ley-verifactu-y-registro-de-jornada"]),
+ "/temas/inteligencia-artificial": ("Más sobre inteligencia artificial", ["/blog/agente-de-ia-para-whatsapp", "/servicios/pix/casos-por-sector", "/servicios/whatsapp-ia/"]),
+ "/temas/formacion-para-empresas": ("Más sobre formación para empresas", ["/blog/plan-de-formacion-para-empresas", "/servicios/software-especializado/plataforma-de-formacion-interna-lms", "/servicios/formacion-ia/plan-de-formacion-para-nuevos-empleados"]),
+ "/temas/webs-y-visibilidad": ("Más sobre webs y visibilidad", ["/casos/contratalux", "/servicios/presencia-digital/seo-programatico", "/servicios/presencia-digital/google-business-profile"]),
+ "/temas/emprender-y-crecer": ("Más sobre emprender y crecer", ["/servicios/autonomos/packs-con-precio-cerrado", "/servicios/pequenas-empresas/", "/servicios/relevo-y-continuidad/"]),
  "/blog/cuanto-cuesta-un-crm-para-autonomos": ("Cuánto cuesta un CRM para autónomos", ["/servicios/autonomos/packs-con-precio-cerrado", "/servicios/software-de-gestion/seguimiento-comercial-y-tareas", "/servicios/erp-para-pymes/pagas-solo-los-modulos-que-usas"]),
 }
 

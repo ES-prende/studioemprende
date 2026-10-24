@@ -9,6 +9,7 @@ import casos as CS
 import intenciones as INT
 import enlaces_extra as EX
 import blog_nuevos as BN
+import temas as TM
 from datos import SECCIONES, NORMATIVAS, NORM_EXTRA, SECTORES, PACKS, MENU
 from blog import ARTICULOS
 from alt_blog import ALT
@@ -817,6 +818,16 @@ for slug, titulo, desc, fecha, cat, serv_rel, cuerpo in ARTICULOS + BN.ARTICULOS
         m=migas("../", ("Blog", "index.html"), (titulo, None)), cat=e(cat), f=fecha, fiso=_fp, rev=(' · Normativa revisada el <time datetime="%s">%s</time>' % (REV_FECHA, "12 de octubre de 2026")) if cat == "Normativas" else "", t=e(titulo), d=e(desc), c=cuerpo, sl=slug, st=e(sr[2]), si=e(sr[3]), ss=serv_rel, o=otros, ld=ld)
     pagina("blog/%s.html" % slug, "%s · Studio Emprende" % titulo, desc, html + cta("../"), ld_extra=bp, tipo="article", og=DOM + "/assets/img/blog/og/%s.jpg" % slug, faqs=_fq, tipo_pagina="WebPage", extra_pagina={"mainEntity": {"@id": _url + "#article"}})
 
+# ---------- TEMAS DEL BLOG (/temas/) ----------
+_TODOS = {a[0]: a for a in ARTICULOS + BN.ARTICULOS}
+pagina("temas/index.html", "Temas del blog de Studio Emprende", "Los artículos del blog de Studio Emprende ordenados por tema: inteligencia artificial, gestión y CRM, normativas, formación, webs y emprender.",
+       TM.html_hub("../", migas("../", ("Temas del blog", None)), cta("../")), tipo_pagina="CollectionPage")
+for _t in TM.TEMAS:
+    _arts = [_TODOS[x] for x in _t[4] if x in _TODOS]
+    _il = {"@type": "ItemList", "@id": "%s/temas/%s#lista" % (DOM, _t[0]), "itemListElement": [{"@type": "ListItem", "position": i, "url": "%s/blog/%s" % (DOM, a[0]), "name": a[1]} for i, a in enumerate(_arts, 1)]}
+    pagina("temas/%s.html" % _t[0], _t[1], _t[2], TM.html_tema("../", migas("../", ("Temas del blog", "index.html"), (_t[1], None)), _t, "".join(tarjeta_blog(a, "../blog/") for a in _arts), cta("../")),
+           ld_extra=_il, tipo_pagina="CollectionPage", extra_pagina={"mainEntity": {"@id": "%s/temas/%s#lista" % (DOM, _t[0])}})
+
 # ---------- GUIAS ----------
 GD = {g[0]: g for g in GUIAS}
 SD = {x[0]: x for x in SECCIONES}
@@ -897,15 +908,16 @@ def _grupo(p):
     if p.startswith("blog/"): return "blog"
     if p.startswith("guias/"): return "guias"
     if p.startswith("casos/"): return "casos"
+    if p.startswith("temas/"): return "temas"
     if p.startswith("servicios/") and p != "servicios/index.html": return "servicios-" + p.split("/")[1].replace(".html", "")
     return "paginas"
-PRIO = {"guias": "0.8", "paginas": "0.8", "blog": "0.7", "casos": "0.8"}
+PRIO = {"guias": "0.8", "paginas": "0.8", "blog": "0.7", "casos": "0.8", "temas": "0.6"}
 SMS = []
-_GRUPOS = ["paginas", "casos", "guias", "blog"] + sorted({_grupo(p) for p in PAGS if _grupo(p).startswith("servicios-")})
+_GRUPOS = ["paginas", "casos", "temas", "guias", "blog"] + sorted({_grupo(p) for p in PAGS if _grupo(p).startswith("servicios-")})
 for g in _GRUPOS:
     xs = ""
     # el hub de la familia va primero
-    for p in sorted(PAGS, key=lambda q: q.count("/") > 1) if g.startswith("servicios-") else sorted(PAGS, key=lambda q: not q.endswith("index.html")) if g == "casos" else PAGS:
+    for p in sorted(PAGS, key=lambda q: q.count("/") > 1) if g.startswith("servicios-") else sorted(PAGS, key=lambda q: not q.endswith("index.html")) if g in ("casos", "temas") else PAGS:
         if p in NOINDEX or p in CANON or _grupo(p) != g: continue
         img = ""
         if g == "blog" and p != "blog/index.html":

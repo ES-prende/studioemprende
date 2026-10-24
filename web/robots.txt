@@ -49,6 +49,7 @@ Disallow: /consentimiento.php
 Sitemap: https://studioemprende.com/sitemap.xml
 Sitemap: https://studioemprende.com/sitemap-paginas.xml
 Sitemap: https://studioemprende.com/sitemap-casos.xml
+Sitemap: https://studioemprende.com/sitemap-temas.xml
 Sitemap: https://studioemprende.com/sitemap-guias.xml
 Sitemap: https://studioemprende.com/sitemap-blog.xml
 Sitemap: https://studioemprende.com/sitemap-servicios-agentes-de-ia.xml
