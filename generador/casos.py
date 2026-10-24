@@ -83,7 +83,7 @@ def html_caso(c, r, migas_html, faq_html, cta_html):
         for f, a, p in CAPTURAS)
     return """<section class="page-hero"><div class="w">{migas}<p class="kicker">Caso de éxito · {sector}</p><h1>{h1}</h1>
 <p class="lead">Un lanzamiento digital completo, hecho de principio a fin por Studio Emprende: marca, dominio y correo, web con SEO, Google y Bing, redes con contenido automatizado y un programa de gestión a medida.</p>
-<div class="cr-cliente"><img src="{m}contratalux-logo.svg" alt="Logotipo de ContrataLux, software para asesorías energéticas" width="310" height="100"><a href="{web}" target="_blank" rel="noopener">contratalux.com ↗</a></div></div></section>
+<div class="cr-cliente"><img src="{m}contratalux-logo.svg" alt="Logotipo de ContrataLux, software para asesorías energéticas" width="310" height="100"><a href="{web}" target="_blank" rel="noopener">contratalux.com ↗</a></div><p class="cr-nota">Proyecto desarrollado para una empresa del mismo grupo.</p></div></section>
 
 <section class="sec" style="padding-bottom:0"><div class="w"><div class="respuesta"><p class="kicker" style="margin:0 0 6px">Resumen</p><p style="margin:0">{resumen}</p></div></div></section>
 
