@@ -26,7 +26,7 @@ def bloque(clave):
 </div></section>""".format(c=CUOTA, g=CUOTA_GRUPO, t=TERMINAL, e6=6 * CUOTA)
     return """<section class="sec" style="padding-top:0"><div class="w"><div class="tarjeta" style="flex-direction:row;flex-wrap:wrap;align-items:center;gap:14px 28px">
 <span class="kicker" style="margin:0">Precio del fichador</span>
-<span><b style="font-weight:500">{c} € por empleado y mes</b> · precio de grupo de {g} € para plantillas grandes · terminal físico opcional, {t} € pago único · sin permanencia. Precios sin IVA.</span>
+<span><b style="font-weight:500">{c} € por empleado y mes</b> · precio de grupo de {g} € para plantillas grandes (consúltanos) · terminal físico opcional, {t} € pago único · sin permanencia. Precios sin IVA.</span>
 <a class="mas" href="/servicios/fichador/precio-por-trabajador-al-mes">Ver el precio →</a></div></div></section>""".format(c=CUOTA, g=CUOTA_GRUPO, t=TERMINAL)
 
 
