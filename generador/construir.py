@@ -12,6 +12,7 @@ import blog_nuevos as BN
 import temas as TM
 import precio_fichador as PF
 import precio_plazo as PP
+from ejemplos import EJEMPLOS as EJ
 from datos import SECCIONES, NORMATIVAS, NORM_EXTRA, SECTORES, PACKS, MENU
 from blog import ARTICULOS
 from alt_blog import ALT
@@ -258,6 +259,25 @@ def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None,
         else:
             _i = cuerpo.rfind('<section class="cta">')
             cuerpo = cuerpo[:_i] + _bp + cuerpo[_i:] if _i >= 0 else cuerpo + _bp
+    _uk = "/" + _k + ("/" if ruta.endswith("index.html") or ruta.count("/") == 1 and ruta.startswith("servicios/") else "")
+    if _uk in EJ and _uk not in INT.INDEXADAS:  # ejemplo aplicado y FAQ propias
+        _ej = EJ[_uk]
+        _be = '<section class="sec" style="padding-top:0"><div class="w"><div class="tarjeta"><p class="kicker" style="margin:0">Ejemplo aplicado</p><h2 class="h3" style="margin:0">%s</h2>%s</div></div></section>' % (e(_ej["titulo"]), _ej["html"])
+        _i = cuerpo.rfind('<section class="cta">')
+        cuerpo = cuerpo[:_i] + _be + cuerpo[_i:] if _i >= 0 else cuerpo + _be
+        _nf = list(_ej.get("faqs", []))
+        if _nf:
+            faqs = list(faqs or FAQ) + _nf
+            _i = cuerpo.rfind('<div class="faq">')
+            _dh = "".join("<details><summary>%s</summary><p>%s</p></details>" % (e(q), e(a)) for q, a in _nf)
+            if _i >= 0:
+                _i += len('<div class="faq">')
+                cuerpo = cuerpo[:_i] + _dh + cuerpo[_i:]
+            else:  # sin bloque de FAQ: se crea visible, para que el schema y la página coincidan
+                faqs = _nf
+                _sf = '<section class="sec sec-suave"><div class="w"><div class="cab"><h2>Preguntas frecuentes</h2></div><div class="faq">%s</div></div></section>' % _dh
+                _i = cuerpo.rfind('<section class="cta">')
+                cuerpo = cuerpo[:_i] + _sf + cuerpo[_i:] if _i >= 0 else cuerpo + _sf
     _bpp = PP.bloque(_k)
     if _bpp and "/" + _k + ("/" if ruta.endswith("index.html") or ruta.count("/") == 1 else "") not in INT.INDEXADAS:
         _i = cuerpo.rfind('<section class="cta">')
