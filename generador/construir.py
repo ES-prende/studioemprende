@@ -627,6 +627,7 @@ for x in PIX_PAGINAS:
         cuerpo += '<h2 style="margin:32px 0 12px">%s</h2>' % e(h2)
         if intro: cuerpo += "<p>%s</p>" % e(intro)
         if items: cuerpo += '<div class="rejilla" style="margin-top:16px">%s</div>' % "".join('<div class="tarjeta"><h3>%s</h3><p>%s</p></div>' % (e(a), e(b)) for a, b in items)
+    cuerpo += x.get("html", "")  # HTML propio (tablas, enlaces); solo lo usan páginas no indexadas
     html = """<section class="page-hero"><div class="w">{m}<p class="kicker">{k}</p><h1>{h1}</h1><p class="lead">{lead}</p></div></section>
 <section class="sec"><div class="w lateral"><div class="lateral-main">{c}</div>{a}</div></section>
 <section class="sec sec-suave"><div class="w"><div class="cab"><h2>Preguntas frecuentes</h2></div>{faq}</div></section>""".format(
