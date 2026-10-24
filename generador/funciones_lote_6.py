@@ -563,15 +563,14 @@ PAGINAS = {
  "rel": [("geolocalizacion-con-aviso-al-trabajador.html", "Geolocalización con aviso al trabajador"), ("movil-tablet-web-o-tarjeta-nfc.html", "Fichar con móvil, tablet, web o NFC"), ("vacaciones-y-ausencias.html", "Vacaciones y ausencias")],
 },
 "fichador/precio-por-trabajador-al-mes": {
- "titulo": "Fichador con precio por trabajador al mes",
- "meta": "Fichador con precio por trabajador al mes: la cuota depende de cuántas personas fichan y se ajusta cuando tu plantilla crece o se reduce.",
- "h1": "Precio del fichador: una cuota por trabajador y mes",
- "lead": "El fichador se paga por trabajador al mes: la cuota depende de cuántas personas fichan, así que una empresa de cinco no paga lo mismo que una de cincuenta.",
- "respuesta": "El modelo de precio por trabajador al mes consiste en pagar una cuota mensual según el número de empleados dados de alta en el fichador. Si contratas o das de baja a alguien, la cuota se ajusta. Antes de empezar te damos el precio exacto según tu plantilla y las funciones que necesites.",
+ "titulo": "Precio del fichador: 8 € por empleado y mes",
+ "meta": "Precio del fichador: 8 € por empleado y mes, precio de grupo de 5 € para plantillas grandes y terminal físico opcional por 300 € de pago único. Sin permanencia.",
+ "h1": "Precio del fichador: 8 € por empleado y mes, sin permanencia",
+ "lead": "El fichador cuesta 8 € por empleado y mes. Las plantillas grandes tienen precio de grupo a 5 €, y si quieres un terminal físico en la entrada son 300 € una sola vez.",
+ "respuesta": "El fichador de Studio Emprende cuesta 8 € por empleado y mes, sin permanencia y sin IVA. Para plantillas grandes hay precio de grupo de 5 € por empleado y mes. El terminal físico es opcional y cuesta 300 € en un único pago. Si contratas o das de baja a alguien, la cuota se ajusta al mes siguiente.",
  "secciones": [
-  ("¿De qué depende el precio?", "La cuota depende de cuántas personas fichan, de las funciones que actives, del hardware que quieras añadir, como tablet o tarjetas NFC, y de si conectamos las horas con otros programas.", [
+  ("¿De qué depende el total?", "La cuota es fija por empleado. Lo que cambia el total es cuántas personas fichan cada mes, si tu plantilla entra en el precio de grupo y si añades un terminal físico o tarjetas NFC.", [
     ("Número de trabajadores", "Las personas dadas de alta que registran su jornada."),
-    ("Funciones que activas", "Turnos, vacaciones, fichaje por WhatsApp con PIX o tarjetas NFC, solo si las vas a usar."),
     ("Hardware opcional", "Tablet de entrada o lectores y tarjetas NFC, únicamente si los necesitas."),
     ("Conexión con otros programas", "Si quieres que las horas pasen a tu programa de gestión o a tu asesoría de forma automática."),
   ]),

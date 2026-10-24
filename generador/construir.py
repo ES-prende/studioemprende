@@ -10,6 +10,8 @@ import intenciones as INT
 import enlaces_extra as EX
 import blog_nuevos as BN
 import temas as TM
+import precio_fichador as PF
+import precio_plazo as PP
 from datos import SECCIONES, NORMATIVAS, NORM_EXTRA, SECTORES, PACKS, MENU
 from blog import ARTICULOS
 from alt_blog import ALT
@@ -247,6 +249,19 @@ def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None,
     if _k in CS.ENLACES_ENTRANTES:  # enlace al caso de éxito, solo en páginas no indexadas
         _b = CS.bloque_entrante("../" * ruta.count("/"), CS.ENLACES_ENTRANTES[_k]); _i = cuerpo.rfind('<section class="cta">')
         cuerpo = cuerpo[:_i] + _b + cuerpo[_i:] if _i >= 0 else cuerpo + _b
+    if PF.aplica(_k) and "/" + _k + ("/" if ruta.endswith("index.html") or ruta.count("/") == 1 else "") not in INT.INDEXADAS:
+        _bp = PF.bloque(_k)
+        if _k in PF.DESTACADO:
+            _i = cuerpo.find("</section>") + len("</section>")
+            cuerpo = cuerpo[:_i] + _bp + cuerpo[_i:]
+            ld_extra = (ld_extra if isinstance(ld_extra, list) else ([ld_extra] if ld_extra else [])) + PF.ofertas(DOM)
+        else:
+            _i = cuerpo.rfind('<section class="cta">')
+            cuerpo = cuerpo[:_i] + _bp + cuerpo[_i:] if _i >= 0 else cuerpo + _bp
+    _bpp = PP.bloque(_k)
+    if _bpp and "/" + _k + ("/" if ruta.endswith("index.html") or ruta.count("/") == 1 else "") not in INT.INDEXADAS:
+        _i = cuerpo.rfind('<section class="cta">')
+        cuerpo = cuerpo[:_i] + _bpp + cuerpo[_i:] if _i >= 0 else cuerpo + _bpp
     _u = "/" + _k + ("/" if ruta.endswith("index.html") or ruta.count("/") == 1 and ruta.startswith("servicios/") else "")
     _bi = _bloque_intencion(_u)
     if _u in EX.POR_ORIGEN and _u not in INT.INDEXADAS:  # enlaces contextuales hacia páginas poco enlazadas
