@@ -300,3 +300,5 @@
 /aviso-legal|aviso legal studio emprende|
 /privacidad|política de privacidad studio emprende|
 /cookies|política de cookies studio emprende|
+/casos/|casos de éxito de software y webs|
+/casos/contratalux|caso de éxito crm para asesorías energéticas|

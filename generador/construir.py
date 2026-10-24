@@ -6,6 +6,8 @@ import cursos_empresa as CE
 import funciones as FN
 import partners as PT
 import casos as CS
+import intenciones as INT
+import enlaces_extra as EX
 from datos import SECCIONES, NORMATIVAS, NORM_EXTRA, SECTORES, PACKS, MENU
 from blog import ARTICULOS
 from alt_blog import ALT
@@ -225,12 +227,31 @@ TITULOS = {
  "servicios/startups-e-inversores/index.html": "Tecnología para startups e inversores · Studio Emprende",
 }
 
+# Enlaces entre páginas que responden a búsquedas parecidas (grupos de intención), solo en páginas no indexadas
+_INT_DE = {u: (g, k) for g, ms in INT.GRUPOS.items() for u, k, h in ms}
+def _bloque_intencion(u):
+    if u not in _INT_DE or u in INT.INDEXADAS: return ""
+    g, _ = _INT_DE[u]
+    otros = [(v, k, h) for v, k, h in INT.GRUPOS[g] if v != u][:6]
+    if not otros: return ""
+    li = "".join('<li><a href="%s">%s</a>: %s</li>' % (v, e(EX.cap(k)), e(h)) for v, k, h in otros)
+    return ('<section class="sec" style="padding-top:0"><div class="w"><div class="tarjeta"><h2 class="h3" style="margin:0">¿Buscabas otra cosa? Lo mismo, con otro enfoque</h2>'
+            '<ul class="lista lista-enl" style="margin-top:6px">%s</ul></div></div></section>' % li)
+
 def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None, tipo_pagina="WebPage", indexar=True, fecha=None, og=None, extra_pagina=None, css=""):
     global MIGAS
     _k = _clave(ruta)
     if _k in CS.ENLACES_ENTRANTES:  # enlace al caso de éxito, solo en páginas no indexadas
         _b = CS.bloque_entrante("../" * ruta.count("/"), CS.ENLACES_ENTRANTES[_k]); _i = cuerpo.rfind('<section class="cta">')
         cuerpo = cuerpo[:_i] + _b + cuerpo[_i:] if _i >= 0 else cuerpo + _b
+    _u = "/" + _k + ("/" if ruta.endswith("index.html") or ruta.count("/") == 1 and ruta.startswith("servicios/") else "")
+    _bi = _bloque_intencion(_u)
+    if _u in EX.POR_ORIGEN and _u not in INT.INDEXADAS:  # enlaces contextuales hacia páginas poco enlazadas
+        _bi += ('<section class="sec" style="padding-top:0"><div class="w"><p class="kicker" style="margin:0 0 8px">También te puede interesar</p><p>%s</p></div></section>'
+                % " · ".join('<a href="%s">%s</a>' % (d, e(a)) for d, a in EX.POR_ORIGEN[_u]))
+    if _bi:
+        _i = cuerpo.rfind('<section class="cta">')
+        cuerpo = cuerpo[:_i] + _bi + cuerpo[_i:] if _i >= 0 else cuerpo + _bi
     if _k in AMPL:
         cuerpo, faqs = _ampliar(cuerpo, faqs, AMPL[_k]); AMPL_USADAS.add(_k)
     for (_rr, _hh), _txt in RB.RESP_H.items():

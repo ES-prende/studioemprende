@@ -37,6 +37,8 @@
 /blog/tareas-que-puedes-automatizar
 /blog/web-que-vende
 /blog/whatsapp-para-no-perder-clientes
+/casos/
+/casos/contratalux
 /contacto
 /cookies
 /guias/
