@@ -207,7 +207,7 @@ TITULOS = {
  "blog/index.html": "Blog de software, IA y webs para emprender · Studio Emprende",
  "servicios/webs/index.html": "Diseño de páginas web con SEO para negocios · Studio Emprende",
  "servicios/index.html": "Servicios de software, IA y webs · Studio Emprende",
- "servicios/whatsapp-ia/index.html": "WhatsApp con IA para atender y vender · Studio Emprende",
+ "servicios/whatsapp-ia/index.html": "Agentes de IA para WhatsApp Business · Studio Emprende",
  "servicios/erp-para-pymes/cuadro-de-mando-en-tiempo-real.html": "Cuadro de mando en tiempo real para pymes",
  "servicios/agentes-de-ia/index.html": "Agentes de IA para empresas y pymes · Studio Emprende",
  "mapa-web.html": "Mapa de la web: todas las páginas · Studio Emprende",
@@ -537,6 +537,21 @@ for k, n, d in cats + [("clientes", "Para quién", "Autónomos, pymes, grandes e
 pagina("servicios/index.html", "Servicios · Studio Emprende", "Todos los servicios de Studio Emprende: software de gestión, IA, webs, soporte, formación y más.",
        '<section class="page-hero"><div class="w">%s<h1>Servicios</h1><p class="lead">Todo lo que hacemos, organizado por áreas. Empieza por lo que más te urge.</p></div></section><section class="sec" style="padding-top:24px"><div class="w">%s</div></section>%s' % (migas("../", ("Servicios", None)), hub, cta("../")))
 
+# H1 y bloque propio en hubs no indexados (el nombre del servicio sigue igual en menús)
+HUB_H1 = {"whatsapp-ia": "Agentes de IA para WhatsApp: atienden, agendan y recuerdan citas por ti"}
+HUB_EXTRA = {"whatsapp-ia": """<section class="sec"><div class="w"><div class="cab"><p class="kicker">Agentes de IA para WhatsApp</p><h2>¿Qué es un agente de IA para WhatsApp y qué hace en un negocio?</h2></div>
+<p>Un agente de IA para WhatsApp es un asistente conectado a tu número de WhatsApp Business que contesta a los clientes con la información de tu negocio, agenda citas en tu calendario, envía recordatorios y pasa la conversación a una persona cuando hace falta. No es un menú de opciones: entiende lo que el cliente escribe y responde con tus horarios, tarifas y disponibilidad reales.</p>
+<table><thead><tr><th>Lo que hace</th><th>Lo que no hace</th></tr></thead><tbody>
+<tr><td>Responde preguntas frecuentes a cualquier hora</td><td>Inventar precios o plazos que no le has dado</td></tr>
+<tr><td>Da cita y la apunta en tu agenda</td><td>Cerrar acuerdos delicados sin tu aprobación</td></tr>
+<tr><td>Recuerda la cita y recoloca huecos</td><td>Escribir en masa a quien no ha dado su consentimiento</td></tr>
+<tr><td>Crea la ficha del cliente en tu CRM</td><td>Sustituir la atención humana cuando el cliente la pide</td></tr>
+</tbody></table>
+<h3 style="margin-top:28px">¿Cuánto cuesta?</h3>
+<p>Con PIX, WhatsApp va incluido en el plan Profesional, de <strong>145 €/mes para 5 personas</strong>, junto con Instagram, Facebook, LinkedIn y las principales herramientas de CRM. Aparte, Meta cobra los mensajes de plantilla que se envían fuera de una conversación abierta, según el país y el tipo de mensaje. Precios y fases del piloto en <a href="../servicios/pix/implantacion-y-precios.html">implantación y precios de PIX</a>.</p>
+<h3 style="margin-top:28px">Por dónde empezar</h3>
+<p>Por el proceso que más mensajes genera: casi siempre, pedir cita o preguntar disponibilidad. Se configura con tus respuestas reales, se prueba unas semanas con revisión humana y se amplía después a recordatorios y a la <a href="whatsapp-ia/reactivacion-de-clientes-y-pacientes-inactivos.html">reactivación de clientes inactivos</a>. Si quieres entender antes cómo funciona, tienes la guía <a href="../blog/agente-de-ia-para-whatsapp.html">cómo automatizar las respuestas de WhatsApp con IA</a>.</p>
+</div></section>"""}
 for slug, menu, titulo, intro, bloques in SECCIONES:
     cuerpo = ""
     for b, items in bloques:
@@ -550,8 +565,9 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
     html = """<section class="page-hero"><div class="w">{m}<p class="kicker">{cat}</p><h1>{t}</h1><p class="lead">{i}</p>
 <div class="botones" style="margin-top:24px"><a class="btn btn-p" href="../contacto.html?servicio={s}#diagnostico">Pedir información</a><a class="btn btn-s" href="index.html">Ver todos los servicios</a></div></div></section>
 <section class="sec"><div class="w lateral"><div class="lateral-main">{c}</div>{a}</div></section>
-{x}{rel}""".format(x=FORM.hub_extra("../").format(formador=FORM.tarjeta_formador("../"), faq=_faq_html(FORM.HUB_FAQS)) if slug == "formacion-ia" else "", m=migas("../", ("Servicios", "index.html"), (titulo, None)), cat=dict(MENU)[menu], t=e(titulo), i=e(intro), s=slug, c=cuerpo, a=aside,
+{x}{rel}""".format(x=FORM.hub_extra("../").format(formador=FORM.tarjeta_formador("../"), faq=_faq_html(FORM.HUB_FAQS)) if slug == "formacion-ia" else "", m=migas("../", ("Servicios", "index.html"), (titulo, None)), cat=dict(MENU)[menu], t=e(HUB_H1.get(slug, titulo)), i=e(intro), s=slug, c=cuerpo, a=aside,
                  rel=('<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">También te puede interesar</p><h2>Servicios relacionados</h2></div><div class="rejilla">%s</div></div></section>' % relh) if relh else "")
+    html += HUB_EXTRA.get(slug, "")
     gs = [g for g in GUIAS if g[0] in SERVICIO_GUIAS.get(slug, [])]
     if gs:
         html += '<section class="sec"><div class="w"><div class="cab"><p class="kicker">Guías para emprender</p><h2>Antes de empezar, te puede servir</h2></div><div class="rejilla">%s</div></div></section>' % "".join('<a class="tarjeta" href="../guias/%s.html"><h3>%s</h3><p>%s</p><span class="mas">Leer guía →</span></a>' % (g[0], e(g[4]), e(g[3][:120].rsplit(" ",1)[0] + "…")) for g in gs[:3])
