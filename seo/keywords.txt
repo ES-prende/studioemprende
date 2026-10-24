@@ -1,0 +1,302 @@
+# URL | keyword principal propuesta | grupo de canibalización (vacío si no hay)
+# Grupos: varias páginas que hoy atacan la misma intención. Cada una conserva su keyword propia.
+/servicios/pix/inteligencia-conectada|ia conectada al erp y al crm de la empresa|ia-datos-empresa
+/servicios/pix/casos-por-sector|casos de uso de agentes de ia por sector|
+/servicios/software-especializado/plataforma-de-formacion-interna-lms|plataforma lms para formación interna de empresas|formacion-empleados
+/servicios/fichador/|app de fichaje para empresas|fichaje
+/servicios/fichador/precio-por-trabajador-al-mes|precio app de fichaje por trabajador|
+/servicios/fichador/prueba-gratuita|app de fichaje gratis prueba|
+/servicios/fichador/informe-para-inspeccion-en-un-clic|registro de jornada para inspección de trabajo|
+/servicios/fichador/movil-tablet-web-o-tarjeta-nfc|fichar con nfc, móvil o tablet|
+/servicios/fichador/geolocalizacion-con-aviso-al-trabajador|fichaje con geolocalización legal|
+/servicios/fichador/horas-extra|control de horas extra de los trabajadores|
+/servicios/fichador/modo-sin-conexion-para-obras|fichaje sin conexión en obras|
+/servicios/fichador/turnos-y-cuadrantes|cuadrante de turnos conectado al fichaje|turnos
+/servicios/fichador/vacaciones-y-ausencias|app para gestionar vacaciones de empleados|turnos
+/servicios/fichador/teletrabajo-y-varios-centros|registro de jornada en teletrabajo|
+/servicios/fichador/registros-inalterables-con-historial|registro de jornada inalterable|
+/servicios/fichador/conservacion-durante-4-anos|cuánto tiempo guardar el registro de jornada|
+/servicios/fichador/acceso-del-trabajador-a-sus-registros|derecho del trabajador a ver su registro de jornada|
+/servicios/fichador/alertas-de-olvidos-y-retrasos|olvido de fichaje qué hacer|
+/servicios/fichador/pausas-y-descansos|registrar pausas en el registro de jornada|
+/servicios/fichador/alta-en-24-48-horas|implantar control horario rápido|
+/servicios/fichador/fichaje-por-whatsapp-o-con-pix|fichar por whatsapp|
+/servicios/fichador/sin-permanencia|control horario sin permanencia|
+/servicios/software-de-gestion/fichador-y-registro-de-jornada|programa de gestión con registro de jornada|fichaje
+/servicios/pequenas-empresas/cumple-la-ley-verifactu-y-registro-de-jornada|verifactu y registro de jornada para pymes|fichaje
+/blog/app-de-control-horario-para-pequenas-empresas|app de control horario para pequeñas empresas|fichaje
+/servicios/erp-para-pymes/pagas-solo-los-modulos-que-usas|precio de un erp por módulos|erp-modular
+/servicios/erp-para-pymes/crece-contigo-anades-modulos-cuando-los-necesitas|erp escalable para empresas en crecimiento|erp-modular
+/servicios/erp-para-pymes/se-adapta-a-tu-forma-de-trabajar-no-al-reves|erp a medida o erp estándar|erp-modular
+/servicios/erp-para-pymes/implantacion-por-fases-para-no-parar-el-negocio|implantación de un erp por fases|
+/servicios/erp-para-pymes/migracion-desde-excel-u-otro-programa|migrar datos a un erp|migracion-excel
+/servicios/erp-para-pymes/analisis-de-tus-procesos-y-eleccion-de-modulos|cómo elegir los módulos de un erp|
+/servicios/erp-para-pymes/compras-proveedores-y-almacen|erp con gestión de compras y almacén|
+/servicios/erp-para-pymes/contabilidad-o-conexion-con-tu-asesoria|erp con contabilidad integrada|asesoria
+/servicios/erp-para-pymes/conexion-con-tu-tienda-banco-y-otras-herramientas|erp conectado con tienda online y banco|integraciones
+/servicios/erp-para-pymes/crm-y-ventas-conectados-a-facturacion|erp con crm integrado|erp-crm
+/servicios/erp-para-pymes/facturacion-con-verifactu-y-factura-electronica-b2b|erp con verifactu|verifactu
+/servicios/erp-para-pymes/pix-dentro-del-erp-preguntale-en-lenguaje-normal|erp con inteligencia artificial|
+/servicios/erp-para-pymes/produccion-obras-o-servicios-segun-tu-sector|erp por sectores|
+/servicios/erp-para-pymes/formacion-del-equipo-con-casos-reales|formación en erp para empleados|formacion-empleados
+/servicios/erp-para-pymes/acompanamiento-de-30-a-90-dias|soporte tras implantar un erp|
+/servicios/software-de-gestion/agenda-y-citas-online|programa de citas online para negocios|
+/servicios/software-de-gestion/reservas-de-mesas-salas-clases-o-servicios|sistema de reservas online para negocios|
+/servicios/software-de-gestion/ordenes-y-partes-de-trabajo-con-firma-y-fotos|app de partes de trabajo con firma|
+/servicios/software-de-gestion/app-para-tecnicos-de-campo|app para técnicos de campo|app-equipo
+/servicios/software-de-gestion/app-movil|programa de gestión con app móvil|app-equipo
+/servicios/software-de-gestion/cobros-impagos-y-semaforo-de-clientes|programa para controlar cobros pendientes|cobros
+/servicios/software-de-gestion/factura-electronica-b2b|factura electrónica obligatoria b2b|verifactu
+/servicios/software-de-gestion/conexion-con-tu-asesoria|programa de facturación conectado con la gestoría|asesoria
+/servicios/software-de-gestion/captacion-de-leads-desde-web-whatsapp-y-anuncios|crm para captar leads de whatsapp y web|
+/servicios/software-de-gestion/seguimiento-comercial-y-tareas|crm de seguimiento comercial|
+/servicios/software-de-gestion/campanas-de-email-y-whatsapp|campañas de whatsapp a clientes|
+/servicios/software-de-gestion/bonos-cuotas-y-suscripciones|programa para gestionar bonos y cuotas|
+/servicios/software-de-gestion/fidelizacion-y-bonos|programa de fidelización de clientes|
+/servicios/software-de-gestion/inventario-en-varios-almacenes|programa de inventario multialmacén|
+/servicios/software-de-gestion/tienda-online-conectada|tienda online sincronizada con stock|integraciones
+/servicios/software-de-gestion/catalogo-y-tarifas|programa de gestión de tarifas de precios|
+/servicios/software-de-gestion/pedidos-a-proveedores|programa de pedidos a proveedores|
+/servicios/software-de-gestion/lotes-trazabilidad-y-caducidades|software de trazabilidad de lotes|
+/servicios/software-de-gestion/etiquetas-codigos-de-barras-y-qr|programa para imprimir etiquetas con código de barras|
+/servicios/software-de-gestion/mantenimientos-programados|software de mantenimientos periódicos a clientes|
+/servicios/software-de-gestion/postventa-garantias-e-incidencias|software de gestión de incidencias y garantías|
+/servicios/software-de-gestion/obras-y-proyectos-presupuesto-frente-a-real|control de costes de obra presupuesto vs real|
+/servicios/software-de-gestion/presupuestos-desde-mediciones|programa de presupuestos con mediciones|presupuestos
+/servicios/software-de-gestion/comerciales-y-comisiones|programa para calcular comisiones de comerciales|
+/servicios/software-de-gestion/rentabilidad-por-cliente-servicio-y-empleado|calcular rentabilidad por cliente|
+/servicios/software-de-gestion/cuadro-de-mando-en-tiempo-real|cuadro de mando para pymes|cuadro-mando
+/servicios/software-de-gestion/prevision-de-tesoreria|previsión de tesorería automática|tesoreria
+/servicios/software-de-gestion/prevision-de-stock-con-ia|previsión de stock con inteligencia artificial|prevision-stock
+/servicios/software-de-gestion/productividad-y-objetivos|medir la productividad de los empleados|
+/servicios/software-de-gestion/documentacion-del-empleado|gestión documental de empleados|
+/servicios/software-de-gestion/onboarding-con-ia|onboarding de empleados con ia|formacion-empleados
+/servicios/software-de-gestion/informe-semanal-automatico-por-whatsapp-o-voz|resumen semanal del negocio en el móvil|informe-semanal
+/servicios/software-de-gestion/recordatorios-automaticos-por-whatsapp|recordatorios de cobro y entregas por whatsapp|recordatorios
+/servicios/pix/|agente de ia para empresas|
+/servicios/pix/agentes-de-voz|agente de voz con ia para empresas|voz
+/servicios/pix/flujos-de-trabajo|automatizar procesos con agentes de ia|
+/servicios/pix/integraciones|agente de ia integrado con crm y erp|
+/servicios/pix/seguridad-y-control|seguridad de los agentes de ia en la empresa|ia-datos-empresa
+/servicios/agentes-de-ia/chatbot-para-tu-web-con-pix|chatbot con ia entrenado con tu negocio|chatbot
+/servicios/agentes-de-ia/recepcionista-de-voz-y-atencion-fuera-de-horario|recepcionista virtual con ia|voz
+/servicios/agentes-de-ia/presupuestos-automaticos|presupuestos automáticos con ia|presupuestos
+/servicios/agentes-de-ia/cobros-e-impagos|agente de ia para reclamar impagos|cobros
+/servicios/agentes-de-ia/agentes-que-gestionan-pedidos-presupuestos-o-incidencias-de-principio-|agentes de ia que gestionan pedidos|
+/servicios/agentes-de-ia/clasificacion-y-respuesta-de-correos|responder correos automáticamente con ia|
+/servicios/agentes-de-ia/respuesta-a-resenas-de-google|responder reseñas de google con ia|
+/servicios/agentes-de-ia/alta-automatica-de-clientes-y-pacientes|alta de clientes automática con ia|
+/servicios/agentes-de-ia/agente-documental-para-gestorias|ia para gestorías|
+/servicios/agentes-de-ia/agente-inmobiliario|agente de ia para inmobiliarias|
+/servicios/agentes-de-ia/revision-de-contratos-para-despachos|revisar contratos con ia|
+/servicios/agentes-de-ia/licitaciones-publicas|ia para licitaciones públicas|
+/servicios/agentes-de-ia/venta-adicional-en-pedidos-y-reservas|venta cruzada automática con ia|
+/servicios/agentes-de-ia/ia-con-los-datos-de-tu-empresa-sin-que-salgan-fuera|ia privada con datos de la empresa|ia-datos-empresa
+/servicios/agentes-de-ia/ia-en-servidor-propio|ia en servidor propio para empresas|ia-datos-empresa
+/servicios/agentes-de-ia/asistente-interno-de-procedimientos|asistente de ia para procedimientos internos|
+/servicios/agentes-de-ia/departamento-de-ia-externalizado|departamento de ia externalizado|ia-externa
+/servicios/agentes-de-ia/mantenimiento-de-agentes-y-automatizaciones|mantenimiento de agentes de ia|
+/servicios/whatsapp-ia/|agentes ia whatsapp|whatsapp-ia
+/servicios/whatsapp-ia/asistente-de-ia-para-whatsapp|asistente de ia para whatsapp business|whatsapp-ia
+/servicios/whatsapp-ia/citas-y-recordatorios-automaticos|recordatorio de citas por whatsapp|recordatorios
+/blog/agente-de-ia-para-whatsapp|cómo automatizar respuestas de whatsapp con ia|whatsapp-ia
+/servicios/webs/tienda-online|diseño de tienda online para pymes|integraciones
+/servicios/webs/web-con-reservas-y-citas|página web con reservas online|
+/servicios/webs/web-con-crm-integrado|página web con crm integrado|
+/servicios/webs/landing-pages-para-campanas|landing page para campañas de google ads|
+/servicios/webs/mantenimiento-mensual|mantenimiento web mensual precio|
+/servicios/webs/migracion-desde-wix-o-squarespace|migrar web de wix a otra plataforma|
+/servicios/webs/rescate-de-webs-antiguas-o-hackeadas|recuperar web hackeada|
+/servicios/webs/velocidad-y-core-web-vitals|mejorar velocidad web core web vitals|
+/servicios/webs/accesibilidad-web-ley-11-2023|accesibilidad web obligatoria ley 11/2023|
+/servicios/webs/aviso-legal-privacidad-y-cookies|textos legales para página web|
+/servicios/webs/auditoria-de-conversion|auditoría de conversión web|
+/servicios/webs/chatbot-pix|chatbot para página web|chatbot
+/servicios/webs/buscador-inteligente|buscador inteligente para web|
+/servicios/webs/contenido-personalizado-segun-el-visitante|contenido web personalizado por visitante|
+/servicios/webs/pruebas-a-b-automaticas|test a/b en página web|
+/servicios/webs/webs-multidioma-para-espana-y-exportacion|página web multidioma para exportar|
+/servicios/webs/webs-para-startups|página web para startups|
+/servicios/webs/webs-scroll-3d-inmersivas|web con animación 3d al hacer scroll|
+/servicios/presencia-digital/|presencia digital para pymes|
+/servicios/presencia-digital/google-business-profile|gestión de google business profile|
+/servicios/presencia-digital/automatizacion-de-redes-sociales|automatizar publicaciones en redes sociales|
+/servicios/presencia-digital/captacion-automatizada-de-clientes-b2b|captación de clientes b2b automatizada|
+/servicios/presencia-digital/seo-programatico|seo programático|
+/servicios/presencia-digital/videos-y-anuncios-con-ia|crear anuncios con ia|
+/servicios/presencia-digital/traduccion-y-doblaje-con-ia|doblaje de vídeos con ia|
+/servicios/presencia-digital/menus-digitales-para-hosteleria|carta digital en pantalla para restaurantes|cartelera
+/servicios/presencia-digital/escaparates-y-promociones|pantallas de escaparate para tiendas|cartelera
+/servicios/presencia-digital/pantallas-de-turnos-y-sala-de-espera|pantalla de turnos para sala de espera|cartelera
+/servicios/presencia-digital/gestion-remota-desde-el-movil|cartelería digital gestionada desde el móvil|cartelera
+/servicios/migraciones-e-integraciones/|migración de datos entre programas de gestión|
+/servicios/migraciones-e-integraciones/migracion-de-excel-a-programa-de-gestion|pasar de excel a un programa de gestión|migracion-excel
+/servicios/migraciones-e-integraciones/migracion-desde-holded-clientify-hubspot-y-otros|migrar desde holded|
+/servicios/migraciones-e-integraciones/integraciones-por-api|integración de programas por api|integraciones
+/servicios/migraciones-e-integraciones/conectar-erp-tienda-crm-y-contabilidad|conectar woocommerce o shopify con el erp|integraciones
+/servicios/migraciones-e-integraciones/rescate-de-software-antiguo|recuperar datos de un programa antiguo|
+/servicios/migraciones-e-integraciones/digitalizacion-de-archivo-en-papel|digitalizar archivo en papel empresa|
+/servicios/apps-moviles/|desarrollo de apps a medida para empresas|
+/servicios/apps-moviles/app-de-catalogo-y-pedidos-para-distribuidores|app de pedidos para distribuidores|pedidos-b2b
+/servicios/apps-moviles/app-interna-para-empleados-y-tecnicos|app interna para empleados|app-equipo
+/servicios/apps-moviles/app-para-socios-alumnos-o-pacientes|app para gimnasios, academias y clínicas|
+/servicios/apps-moviles/publicacion-en-google-play-y-app-store|publicar una app en app store y google play|
+/servicios/apps-moviles/mantenimiento-y-actualizaciones|mantenimiento de apps móviles precio|
+/servicios/automatizacion-y-datos/|automatización de procesos para pymes|
+/servicios/automatizacion-y-datos/cuadro-de-mando-de-direccion|cuadro de mando con datos de varios programas|cuadro-mando
+/servicios/automatizacion-y-datos/prevision-de-tesoreria-y-control-de-costes|control de costes de la empresa|tesoreria
+/servicios/automatizacion-y-datos/prevision-de-ventas-y-stock|previsión de ventas para pymes|prevision-stock
+/servicios/software-especializado/|software a medida de alto valor|
+/servicios/software-especializado/gestion-de-flotas|software de gestión de flotas|
+/servicios/software-especializado/portal-de-pedidos-b2b|portal de pedidos b2b para clientes|pedidos-b2b
+/servicios/software-especializado/presupuestador-y-configurador-online|configurador de presupuestos online|presupuestos
+/servicios/software-especializado/appcc-digital-para-hosteleria-y-alimentacion|appcc digital|
+/servicios/software-especializado/coordinacion-de-actividades-empresariales-cae|software cae coordinación de actividades empresariales|
+/servicios/software-especializado/gestion-de-calidad-iso-sin-papel|software de gestión de calidad iso 9001|
+/servicios/software-especializado/mantenimiento-predictivo-con-sensores|mantenimiento predictivo con sensores|
+/servicios/software-especializado/planificacion-de-produccion|software de planificación de la producción|
+/servicios/software-especializado/registro-de-mantenimientos-obligatorios|registro de mantenimientos obligatorios de instalaciones|
+/servicios/software-especializado/tarificador-para-corredurias|tarificador de seguros para corredurías|
+/servicios/software-especializado/portal-en-marca-blanca-para-gestorias|portal del cliente para gestorías|
+/servicios/software-especializado/app-propia-para-negocios-con-clientes-recurrentes|app con tu marca para fidelizar clientes|
+/servicios/pequenas-empresas/|digitalización de pequeñas empresas|
+/servicios/pequenas-empresas/ahorra-horas-programa-de-gestion-y-facturas-automaticas|facturas automáticas para pequeñas empresas|
+/servicios/pequenas-empresas/cobra-antes-cobros-y-tesoreria|cómo cobrar antes a los clientes|cobros
+/servicios/pequenas-empresas/no-pierdas-clientes-whatsapp-ia-y-recepcionista-de-voz|atender llamadas y whatsapp perdidos en una pyme|whatsapp-ia
+/servicios/pequenas-empresas/todo-incluido-por-cuota-mensual|servicio informático por cuota mensual para pymes|
+/servicios/pequenas-empresas/vende-mas-en-redes|vender más en redes sociales pequeño negocio|
+/servicios/pequenas-empresas/digitalizacion-de-negocios-rurales|digitalización de negocios rurales|
+/servicios/autonomos/packs-con-precio-cerrado|pack digital para autónomos precio cerrado|
+/servicios/autonomos/automatizacion-del-dia-a-dia|automatizaciones para autónomos|
+/servicios/ciberseguridad-y-sistemas/|ciberseguridad para pymes|
+/servicios/ciberseguridad-y-sistemas/copias-de-seguridad-y-plan-de-continuidad|plan de continuidad de negocio pyme|copias
+/servicios/ciberseguridad-y-sistemas/migracion-a-la-nube|migración a la nube para pymes|
+/servicios/ciberseguridad-y-sistemas/responsable-de-ciberseguridad-externalizado|responsable de ciberseguridad externo|
+/servicios/ciberseguridad-y-sistemas/adaptacion-a-nis2-para-proveedores|nis2 para proveedores|
+/servicios/ciberseguridad-y-sistemas/adaptacion-al-ai-act|adaptación al reglamento europeo de ia|ai-act
+/servicios/ciberseguridad-y-sistemas/adaptacion-al-reglamento-de-ciberresiliencia|reglamento de ciberresiliencia empresas|
+/servicios/departamento-tecnologico/correo-que-no-llega-a-spam|mis correos llegan a spam|
+/servicios/departamento-tecnologico/propiedad-de-tu-web-y-tus-datos|la web está a nombre de la agencia|
+/servicios/departamento-tecnologico/control-del-gasto-en-ia-y-suscripciones|controlar gasto en suscripciones de software|
+/servicios/departamento-tecnologico/soporte-con-un-unico-interlocutor|soporte informático para empresas|
+/servicios/departamento-tecnologico/monitorizacion-de-la-web-24-7|monitorización de web caída|
+/servicios/departamento-tecnologico/dominios-y-renovaciones|gestión de dominios para empresas|
+/servicios/departamento-tecnologico/prueba-mensual-de-copias-de-seguridad|comprobar copias de seguridad|copias
+/servicios/departamento-tecnologico/auditoria-de-accesos-y-licencias|auditoría de licencias de software|
+/servicios/departamento-tecnologico/asesor-de-compras-tecnologicas|asesoramiento compra de software|
+/servicios/departamento-tecnologico/mantenemos-programas-abandonados-por-su-proveedor|mantenimiento de software sin soporte del proveedor|
+/servicios/departamento-tecnologico/herencia-digital-de-la-empresa|contraseñas de la empresa cuando se va un empleado|
+/servicios/departamento-tecnologico/informe-mensual-en-lenguaje-claro|informe mensual de it para gerencia|
+/servicios/departamento-tecnologico/vigilancia-de-suplantacion|suplantación de identidad de empresa|suplantacion
+/servicios/consultoria-y-ayudas/|consultoría de digitalización para pymes|
+/servicios/consultoria-y-ayudas/diagnostico-de-digitalizacion-gratuito|diagnóstico de digitalización gratis|
+/servicios/consultoria-y-ayudas/gestion-del-kit-digital-y-kit-consulting|kit consulting|
+/servicios/consultoria-y-ayudas/vigilancia-de-subvenciones|subvenciones para digitalización de empresas|
+/servicios/consultoria-y-ayudas/auditoria-de-procesos-con-informe-de-ahorro|auditoría de procesos empresa|
+/servicios/consultoria-y-ayudas/segunda-opinion-tecnologica|revisar presupuesto de software antes de firmar|
+/servicios/consultoria-y-ayudas/transformacion-digital-por-fases|plan de transformación digital pyme|
+/servicios/formacion-ia/|formación en inteligencia artificial para empresas|
+/servicios/formacion-ia/formacion-obligatoria-ai-act|curso alfabetización en ia ai act|ai-act
+/servicios/formacion-ia/sesion-de-ia-1-a-1|clase particular de inteligencia artificial|
+/servicios/formacion-ia/curso-de-excel-para-empresas|curso de excel para empresas|
+/servicios/formacion-ia/cursos-de-formacion-a-medida-para-empresas|cursos a medida para empresas|
+/servicios/formacion-ia/formacion-de-empleados-en-un-programa-nuevo|formación de empleados en un software nuevo|formacion-empleados
+/servicios/formacion-ia/plan-de-formacion-para-nuevos-empleados|plan de acogida de nuevos empleados|formacion-empleados
+/servicios/formacion-ia/politica-de-uso-de-ia-para-empresas|política de uso de ia en la empresa|
+/servicios/formacion-ia/ia-para-autonomos-por-profesion|ia para autónomos|
+/servicios/formacion-ia/formacion-por-sectores|formación en ia por sectores|
+/servicios/formacion-ia/mentoria-para-directivos|formación en ia para directivos|
+/blog/plan-de-formacion-para-empresas|plan de formación para empresas|formacion-empleados
+/servicios/alojamientos-y-domotica/|software para viviendas turísticas|
+/servicios/alojamientos-y-domotica/envio-automatico-a-ses-hospedajes|envío automático a ses hospedajes|
+/servicios/alojamientos-y-domotica/calendario-unificado-con-airbnb-booking-y-web-propia|sincronizar calendario airbnb y booking|
+/servicios/alojamientos-y-domotica/check-in-online-con-firma|check-in online para apartamentos turísticos|
+/servicios/alojamientos-y-domotica/cerradura-con-codigo-por-reserva|cerradura con código para apartamento turístico|
+/servicios/alojamientos-y-domotica/control-de-nrua-y-licencias|registro único nrua vivienda turística|
+/servicios/alojamientos-y-domotica/asistente-del-huesped-por-whatsapp-24-7|asistente de whatsapp para huéspedes|whatsapp-ia
+/servicios/alojamientos-y-domotica/aviso-automatico-a-limpieza|gestión de limpiezas de apartamentos turísticos|
+/servicios/alojamientos-y-domotica/panel-de-propietarios|software para gestores de viviendas turísticas|
+/servicios/alojamientos-y-domotica/sensor-de-ruido-sin-camaras|sensor de ruido para apartamentos turísticos|
+/servicios/alojamientos-y-domotica/detector-de-fugas-y-humo|detector de fugas de agua wifi|
+/servicios/alojamientos-y-domotica/consumo-por-estancia|controlar consumo de luz por reserva|
+/servicios/alojamientos-y-domotica/hogar-inteligente-y-modo-vacaciones|domótica para segunda residencia|
+/servicios/grandes-empresas/piloto-de-agente-ia-en-30-60-dias|piloto de inteligencia artificial en empresa|
+/servicios/grandes-empresas/gobernanza-de-ia|gobernanza de la ia en empresas|
+/servicios/grandes-empresas/ia-conectada-a-erp-y-sistemas-antiguos|integrar ia con sap o erp antiguo|
+/servicios/grandes-empresas/preparacion-de-datos-para-ia|preparar datos para ia|
+/servicios/grandes-empresas/pruebas-de-agentes-ia|evaluación de agentes de ia|
+/servicios/grandes-empresas/voz-del-cliente-con-ia|análisis de opiniones de clientes con ia|
+/servicios/grandes-empresas/formacion-in-company-por-departamentos|formación in company en ia|
+/servicios/grandes-empresas/marca-blanca-para-consultoras|ia en marca blanca para consultoras|
+/servicios/startups-e-inversores/|desarrollo tecnológico para startups|
+/servicios/startups-e-inversores/mvp-en-6-12-semanas|desarrollo de mvp para startups|
+/servicios/startups-e-inversores/cto-externalizado|cto externo para startups|ia-externa
+/servicios/startups-e-inversores/memoria-tecnica-para-enisa-y-cdti|memoria técnica enisa|
+/servicios/startups-e-inversores/preparacion-de-due-diligence|preparar due diligence startup|
+/servicios/startups-e-inversores/metricas-para-inversores|métricas saas para inversores|
+/servicios/startups-e-inversores/pitch-y-web-en-ingles|pitch deck en inglés|
+/servicios/startups-e-inversores/valoracion-de-proyectos-con-ia|evaluar startups con ia|
+/servicios/startups-e-inversores/mejora-de-participadas|mejora tecnológica de participadas|
+/servicios/problemas-sin-resolver/sistema-anti-impagos|cómo evitar impagos de clientes|cobros
+/servicios/problemas-sin-resolver/semaforo-de-clientes-morosos|detectar clientes morosos|cobros
+/servicios/problemas-sin-resolver/cobro-facil-con-enlaces-de-pago|enlace de pago en facturas|cobros
+/servicios/problemas-sin-resolver/expediente-de-reclamacion-listo|reclamar deuda a un cliente documentación|cobros
+/servicios/problemas-sin-resolver/calendario-de-obligaciones|calendario de obligaciones fiscales empresa|
+/servicios/problemas-sin-resolver/buzon-de-notificaciones-vigilado|notificaciones electrónicas de hacienda caducadas|
+/servicios/problemas-sin-resolver/agente-de-tramites|automatizar trámites administrativos|
+/servicios/problemas-sin-resolver/empleado-digital|empleado digital con ia|ia-externa
+/servicios/problemas-sin-resolver/formacion-rapida-de-nuevos-empleados|formar empleados rápido con mucha rotación|formacion-empleados
+/servicios/problemas-sin-resolver/turnos-y-ausencias-integrados|cubrir ausencias de empleados|turnos
+/servicios/relevo-y-continuidad/|relevo generacional en la empresa familiar|
+/servicios/relevo-y-continuidad/empresa-lista-para-traspasar-o-vender|preparar empresa para vender|
+/servicios/relevo-y-continuidad/acompanamiento-del-traspaso|traspaso de negocio|
+/servicios/relevo-y-continuidad/diagnostico-de-continuidad|qué pasa con mi negocio si me pongo enfermo|
+/servicios/relevo-y-continuidad/cuadro-de-mando-de-valor|cómo valorar un negocio para venderlo|
+/servicios/relevo-y-continuidad/digitalizacion-para-el-sucesor|digitalizar la empresa antes de la sucesión|
+/servicios/relevo-y-continuidad/manual-de-operaciones-con-video-e-ia|manual de procedimientos con vídeo|
+/servicios/relevo-y-continuidad/cerebro-digital-del-negocio-con-pix|base de conocimiento de la empresa con ia|
+/servicios/deluxe/asistente-personal-con-ia-privado|asistente personal con ia privado|
+/servicios/deluxe/proteccion-frente-a-suplantacion-y-deepfakes|protección frente a deepfakes|suplantacion
+/servicios/deluxe/gestion-de-varias-propiedades|gestión de varias viviendas en un panel|
+/servicios/deluxe/conectividad-en-toda-la-finca|wifi en toda la finca|
+/servicios/deluxe/tecnico-personal-24-7|técnico informático personal|
+/servicios/deluxe/eventos-con-tecnologia|tecnología para bodas y eventos privados|
+/servicios/deluxe/inventario-digital-de-patrimonio|inventario de obras de arte y patrimonio|
+/servicios/deluxe/legado-digital-familiar|legado digital herencia|
+/blog/que-es-verifactu-y-cuando-me-afecta|verifactu plazos autónomos y sociedades|verifactu
+/blog/que-es-un-erp-y-cuando-lo-necesito|señales de que tu empresa necesita un erp|erp-crm
+/guias/software-a-medida|software a medida ventajas y ejemplos|software-medida
+/guias/desarrollo-de-software-a-medida|empresa de desarrollo de software a medida|software-medida
+/guias/mejores-erp-para-pymes|mejores erp para pymes|
+/guias/erp-vs-crm|diferencia entre erp y crm|erp-crm
+/guias/erp-gratis-y-open-source|erp gratis open source|
+/guias/erp-para-logistica-y-almacen|software de gestión de almacenes|
+/guias/software-tpv-para-hosteleria|tpv para hostelería|
+/guias/cuanto-cuesta-una-pagina-web|cuánto cuesta una página web|
+/guias/crear-pagina-web-para-vender|crear página web para vender|
+/guias/como-iniciar-un-negocio-online|cómo iniciar un negocio online|
+/guias/como-emprender-un-negocio|cómo emprender un negocio desde cero|
+/guias/ayudas-para-jovenes-emprendedores|ayudas para jóvenes emprendedores|
+/guias/financiacion-para-emprendedores|financiación para emprendedores|
+/guias/ideas-de-negocio-en-espana|ideas de negocio rentables en españa|
+/guias/herramientas-para-emprendedores|herramientas digitales para emprendedores|
+/guias/emprendedor-de-responsabilidad-limitada|emprendedor de responsabilidad limitada|
+/guias/emprendedor-vs-empresario|diferencia entre emprendedor y empresario|
+/guias/tipos-de-emprendimiento|tipos de emprendimiento|
+/guias/tipos-de-software|tipos de software y ejemplos|
+/guias/software-libre-y-software-propietario|software libre y software propietario|
+/guias/software-a-medida-para-clinicas|software para clínicas a medida|guias-sector
+/guias/software-a-medida-para-construccion|software para empresas de construcción y reformas|guias-sector
+/guias/software-a-medida-para-hosteleria|software de gestión para restaurantes|guias-sector
+/guias/software-a-medida-para-inmobiliarias|software para inmobiliarias|guias-sector
+/guias/software-a-medida-para-academias|software para academias y autoescuelas|guias-sector
+/guias/software-a-medida-para-logistica|software para empresas de transporte|guias-sector
+/guias/software-a-medida-para-industria|software para empresas industriales|guias-sector
+/guias/software-a-medida-para-agricultura|software para explotaciones agrícolas|guias-sector
+/guias/software-a-medida-para-turismo|software para agencias de viajes|guias-sector
+/sobre-nosotros|studio emprende quiénes somos|
+/partners|programa de partners agencia digital|
+/politica-editorial|política editorial studio emprende|
+/aviso-legal|aviso legal studio emprende|
+/privacidad|política de privacidad studio emprende|
+/cookies|política de cookies studio emprende|
