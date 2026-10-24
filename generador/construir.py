@@ -5,6 +5,7 @@ import formacion as FORM
 import cursos_empresa as CE
 import funciones as FN
 import partners as PT
+import casos as CS
 from datos import SECCIONES, NORMATIVAS, NORM_EXTRA, SECTORES, PACKS, MENU
 from blog import ARTICULOS
 from alt_blog import ALT
@@ -34,6 +35,9 @@ shutil.copytree(sys.argv[3], OUT + "/assets/img/blog")
 # Las imagenes og (1200x630) de cada articulo estan en portadas/og/
 shutil.copy(os.path.join(AQUI, "estilos.css"), OUT + "/assets/css/estilos.css")
 shutil.copytree(os.path.join(AQUI, "fonts"), OUT + "/assets/fonts")
+# Casos de éxito: estilos, script y medios propios (no se cargan en el resto de páginas)
+shutil.copy(os.path.join(AQUI, "casos.css"), OUT + "/assets/css/casos.css")
+shutil.copytree(os.path.join(AQUI, "casos_media"), OUT + "/assets/img/casos")
 for src, dst in [("horizontal/studio-emprende-horizontal-color.svg", "logo-horizontal.svg"),
                  ("horizontal/studio-emprende-horizontal-blanco.svg", "logo-horizontal-blanco.svg"),
                  ("vertical/studio-emprende-vertical-color.svg", "logo-vertical.svg"),
@@ -221,9 +225,12 @@ TITULOS = {
  "servicios/startups-e-inversores/index.html": "Tecnología para startups e inversores · Studio Emprende",
 }
 
-def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None, tipo_pagina="WebPage", indexar=True, fecha=None, og=None, extra_pagina=None):
+def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None, tipo_pagina="WebPage", indexar=True, fecha=None, og=None, extra_pagina=None, css=""):
     global MIGAS
     _k = _clave(ruta)
+    if _k in CS.ENLACES_ENTRANTES:  # enlace al caso de éxito, solo en páginas no indexadas
+        _b = CS.bloque_entrante("../" * ruta.count("/"), CS.ENLACES_ENTRANTES[_k]); _i = cuerpo.rfind('<section class="cta">')
+        cuerpo = cuerpo[:_i] + _b + cuerpo[_i:] if _i >= 0 else cuerpo + _b
     if _k in AMPL:
         cuerpo, faqs = _ampliar(cuerpo, faqs, AMPL[_k]); AMPL_USADAS.add(_k)
     for (_rr, _hh), _txt in RB.RESP_H.items():
@@ -262,7 +269,7 @@ def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None,
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{t}"><meta name="twitter:description" content="{d}"><meta name="twitter:image" content="{og}">
 {ld}""".format(u=url, t=e(titulo), d=e(desc), dom=DOM, ld=ldj, og=OGIMG[ruta], rob="index,follow,max-image-preview:large,max-snippet:-1" if indexar else "noindex,follow")
     cuerpo = cuerpo + "\n" + seo + "\n" if False else cuerpo
-    _pagina(ruta, titulo, desc, cuerpo, seo, tipo)
+    _pagina(ruta, titulo, desc, cuerpo, seo, tipo, css)
 
 def _ordenar_h(html):
     # Evita saltos H1 -> H3: un h3 sin h2 previo se convierte en h2 con aspecto de h3
@@ -283,7 +290,7 @@ def _ordenar_h(html):
 import re as _rem
 _re_h = _rem.compile(r"<(/?)h([1-6])\b[^>]*>")
 
-def _pagina(ruta, titulo, desc, cuerpo, seo, tipo):
+def _pagina(ruta, titulo, desc, cuerpo, seo, tipo, css=""):
     cuerpo = _ordenar_h(cuerpo)
     r = "../" * ruta.count("/")
     html = """<!doctype html>
@@ -308,7 +315,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {seo}
 <link rel="icon" href="{r}favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="{r}favicon.svg"><link rel="apple-touch-icon" href="{r}apple-touch-icon.png"><link rel="manifest" href="{r}site.webmanifest"><meta name="theme-color" content="#7A2638">
 <link rel="preload" href="/assets/fonts/jost.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/marcellus.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{r}assets/css/estilos.css">
+<link rel="stylesheet" href="{r}assets/css/estilos.css">{css}
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -324,7 +331,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <span class="wa-burbuja"><b>¿Hablamos?</b>Te respondemos por WhatsApp</span>
 <span class="wa-icono"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.6 3 15.6c0 2.5.8 4.9 2.1 6.9L3.6 29l6.7-1.7c1.8 1 3.8 1.5 5.7 1.5 7.2 0 13-5.6 13-12.6S23.2 3 16 3zm0 23.1c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-4 1 .9-3.8-.2-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.6 10 10.2 5.5 16 5.5S26.4 10 26.4 15.6 21.8 26.1 16 26.1zm5.7-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.4 3.3c.2.2 2.4 3.6 5.8 5 2.9 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></span></a>
 </body>
-</html>""".format(t=e(titulo), d=e(desc), dom=DOM, ruta=ruta.replace("index.html", ""), canonical=("" if (ruta == "404.html" or ruta in NOINDEX) else '<link rel="canonical" href="%s/%s">' % (DOM, CANON.get(ruta, ruta).replace("index.html", ""))), r=r, cab=cabecera(r), c=cuerpo, pie=pie(r), seo=seo, tipo=tipo, og=OGIMG[ruta], bing=('\n<meta name="msvalidate.01" content="AB0BB421B154681CB3B932E814F90956" />' if ruta == "index.html" else ""), wan=WA_NUM, wat=_q("Hola, vengo de la web de Studio Emprende (%s) y quiero información." % titulo.split(" · ")[0]))
+</html>""".format(t=e(titulo), d=e(desc), dom=DOM, ruta=ruta.replace("index.html", ""), canonical=("" if (ruta == "404.html" or ruta in NOINDEX) else '<link rel="canonical" href="%s/%s">' % (DOM, CANON.get(ruta, ruta).replace("index.html", ""))), r=r, css=('<link rel="stylesheet" href="%sassets/css/%s">' % (r, css) if css else ""), cab=cabecera(r), c=cuerpo, pie=pie(r), seo=seo, tipo=tipo, og=OGIMG[ruta], bing=('\n<meta name="msvalidate.01" content="AB0BB421B154681CB3B932E814F90956" />' if ruta == "index.html" else ""), wan=WA_NUM, wat=_q("Hola, vengo de la web de Studio Emprende (%s) y quiero información." % titulo.split(" · ")[0]))
     if ruta not in NOINDEX and ruta.split("/")[0] in ("blog", "guias", "servicios"):
         html = EN.enlazar(html)
     p = os.path.join(OUT, ruta); os.makedirs(os.path.dirname(p), exist_ok=True)
@@ -719,6 +726,16 @@ pagina("sobre-nosotros.html", "Sobre nosotros · Studio Emprende", "Studio Empre
 
 pagina("partners.html", PT.TITULO + " · Studio Emprende", PT.META, PT.html(migas("", ("Partners", None)), _faq_html(PT.FAQS), DOM) + cta(""), faqs=PT.FAQS)
 
+# ---------- CASOS DE ÉXITO (/casos/) ----------
+open(OUT + "/assets/js/casos.js", "w").write(open(os.path.join(AQUI, "casos.js")).read())
+_CL = CS.CONTRATALUX
+pagina("casos/index.html", "Casos de éxito de software, webs y SEO · Studio Emprende", "Casos reales de Studio Emprende: qué hicimos, en qué orden y con qué datos. Marca, web con SEO, indexación, redes y programas de gestión a medida.",
+       CS.html_hub("../", migas("../", ("Casos de éxito", None)), [_CL], cta("../")), css="casos.css", og=DOM + "/" + CS.MEDIA + "contratalux-og.jpg")
+pagina("casos/%s.html" % _CL["slug"], _CL["titulo"], _CL["meta"],
+       CS.html_caso(_CL, "../", migas("../", ("Casos de éxito", "index.html"), (_CL["nombre"], None)), _faq_html(CS.FAQS), cta("../")),
+       ld_extra=CS.ld_caso(_CL, DOM), tipo="article", faqs=CS.FAQS, css="casos.css", og=DOM + "/" + CS.MEDIA + "contratalux-og.jpg",
+       extra_pagina={"mainEntity": {"@id": DOM + "/casos/%s#caso" % _CL["slug"]}, "datePublished": _CL["fecha"]})
+
 LEG = {"aviso-legal": AVISO, "privacidad": PRIVACIDAD, "cookies": COOKIES}
 # ---------- LEGALES ----------
 for slug, t in [("aviso-legal", "Aviso legal"), ("privacidad", "Política de privacidad"), ("cookies", "Política de cookies")]:
@@ -835,15 +852,16 @@ for p in PAGS:
 def _grupo(p):
     if p.startswith("blog/"): return "blog"
     if p.startswith("guias/"): return "guias"
+    if p.startswith("casos/"): return "casos"
     if p.startswith("servicios/") and p != "servicios/index.html": return "servicios-" + p.split("/")[1].replace(".html", "")
     return "paginas"
-PRIO = {"guias": "0.8", "paginas": "0.8", "blog": "0.7"}
+PRIO = {"guias": "0.8", "paginas": "0.8", "blog": "0.7", "casos": "0.8"}
 SMS = []
-_GRUPOS = ["paginas", "guias", "blog"] + sorted({_grupo(p) for p in PAGS if _grupo(p).startswith("servicios-")})
+_GRUPOS = ["paginas", "casos", "guias", "blog"] + sorted({_grupo(p) for p in PAGS if _grupo(p).startswith("servicios-")})
 for g in _GRUPOS:
     xs = ""
     # el hub de la familia va primero
-    for p in sorted(PAGS, key=lambda q: q.count("/") > 1) if g.startswith("servicios-") else PAGS:
+    for p in sorted(PAGS, key=lambda q: q.count("/") > 1) if g.startswith("servicios-") else sorted(PAGS, key=lambda q: not q.endswith("index.html")) if g == "casos" else PAGS:
         if p in NOINDEX or p in CANON or _grupo(p) != g: continue
         img = ""
         if g == "blog" and p != "blog/index.html":
@@ -865,6 +883,7 @@ llms = "# Studio Emprende\n\n> %s\n\n## Empresa\n- Nombre comercial: Studio Empr
 llms += "".join("- [%s](%s/servicios/%s.html): %s\n" % (s[2], DOM, s[0], " ".join(s[3].split())) for s in SECCIONES)
 llms += "\n## PIX, agente de IA empresarial\n- [PIX](%s/servicios/pix/): %s\n" % (DOM, PIX_HUB["resumen"]) + "".join("- [%s](%s/servicios/pix/%s.html): %s\n" % (x["nav"], DOM, x["slug"], x["resumen"]) for x in PIX_PAGINAS)
 llms += "\n## Guías para emprender\n" + "".join("- [%s](%s/guias/%s.html): %s\n" % (g[4], DOM, g[0], g[5].split(". ")[0] + ".") for g in GUIAS)
+llms += "\n## Casos de éxito\n- [Caso ContrataLux: marca, web, SEO, redes y CRM a medida](%s/casos/contratalux)\n" % DOM
 llms += "\n## Páginas clave\n- [Precios y packs](%s/precios.html)\n- [Normativas 2026-2027](%s/normativas.html)\n- [Sectores](%s/sectores.html)\n- [Programa de partners](%s/partners.html)\n- [Contacto](%s/contacto.html)\n\n## Blog\n" % (DOM, DOM, DOM, DOM, DOM)
 llms += "".join("- [%s](%s/blog/%s.html): %s\n" % (a[1], DOM, a[0], a[2]) for a in ARTICULOS)
 llms += "\n## Optional\n- [Todas las funciones, página a página](%s/llms-full.txt)\n- [Mapa de la web](%s/mapa-web.html)\n- [Sitemap](%s/sitemap.xml)\n" % (DOM, DOM, DOM)

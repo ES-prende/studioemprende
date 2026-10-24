@@ -105,6 +105,9 @@
 - [Software a medida para energía, renovables y medio ambiente](https://studioemprende.com/guias/software-a-medida-para-energia): Instalar placas, gestionar residuos o auditar consumos son actividades con mucha documentación y muchas visitas.
 - [Software a medida para startups, agencias y empresas tecnológicas](https://studioemprende.com/guias/software-a-medida-para-startups-y-agencias): Las empresas tecnológicas y creativas suelen tener buen producto y mala gestión interna.
 
+## Casos de éxito
+- [Caso ContrataLux: marca, web, SEO, redes y CRM a medida](https://studioemprende.com/casos/contratalux)
+
 ## Páginas clave
 - [Precios y packs](https://studioemprende.com/precios)
 - [Normativas 2026-2027](https://studioemprende.com/normativas)

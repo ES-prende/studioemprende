@@ -155,6 +155,14 @@
 "823eff475a29ec1113da0a312c455d064f8a5667",
 "2026-10-20T16:08:16"
 ],
+"casos/contratalux.html": [
+"4b51cff8052685b09347813641e4f20472549f7a",
+"2026-10-24T17:05:28"
+],
+"casos/index.html": [
+"01c246e9ffa7844d22453fee01c3742d842d27b3",
+"2026-10-24T17:05:38"
+],
 "contacto.html": [
 "12ece588eeedf60c3a61c1b8aba4b0c32ea8d79c",
 "2026-10-20T16:08:16"
@@ -620,8 +628,8 @@
 "2026-10-20T16:08:16"
 ],
 "servicios/autonomos/packs-con-precio-cerrado.html": [
-"968029c6cb5fa402b9abda146b7150dc156268df",
-"2026-10-20T16:08:16"
+"5e2ee98d89798444d3e45cd5a28b7f911f7fdbcb",
+"2026-10-24T17:05:02"
 ],
 "servicios/ciberseguridad-y-sistemas.html": [
 "2871e3b154e65b419c3241311ca5c9d1107bae6c",
@@ -744,16 +752,16 @@
 "2026-10-20T16:08:16"
 ],
 "servicios/departamento-tecnologico/correo-que-no-llega-a-spam.html": [
-"a141bf0162aceec6c5766fc8964d1b33b4ddbad6",
-"2026-10-20T16:08:16"
+"1baa26beae33e2c964e959939eb3714f277bcd8f",
+"2026-10-24T17:05:02"
 ],
 "servicios/departamento-tecnologico/documentacion-de-sistemas.html": [
 "21dc5408294ca73a9d934c15374f3e862b593050",
 "2026-10-20T16:08:16"
 ],
 "servicios/departamento-tecnologico/dominios-y-renovaciones.html": [
-"cb8a5371cc70c565f82453f633ac6e6205c0edbd",
-"2026-10-20T16:08:16"
+"3fb88f8538c9505fa60ac3f89200b591c5e0dd61",
+"2026-10-24T17:05:02"
 ],
 "servicios/departamento-tecnologico/herencia-digital-de-la-empresa.html": [
 "642e250bf3cc198a24165c8755ea0f21b66916af",
@@ -1108,8 +1116,8 @@
 "2026-10-20T17:14:51"
 ],
 "servicios/pix/index.html": [
-"7930b70346ada766dc157c0e112eaf00d18d4d8b",
-"2026-10-20T17:14:51"
+"b57ece7f10e7d00fcc34254a93f8f73d2f336427",
+"2026-10-24T17:05:02"
 ],
 "servicios/pix/integraciones.html": [
 "ab43f263bd0fc4c841df2f28870c8c273ca3bec9",
@@ -1128,8 +1136,8 @@
 "2026-10-20T16:08:16"
 ],
 "servicios/presencia-digital.html": [
-"8e0e82f0111dff57affee04b0c73720f7eff77fb",
-"2026-10-20T16:08:16"
+"03afec1a42c9d0901c57fab5520826d3cae81f86",
+"2026-10-24T17:05:02"
 ],
 "servicios/presencia-digital/analitica-web.html": [
 "51f2e1aa5c58855088c07db39123497b2108cc65",
@@ -1140,8 +1148,8 @@
 "2026-10-20T16:08:16"
 ],
 "servicios/presencia-digital/automatizacion-de-redes-sociales.html": [
-"e3699c800d609c345b6b000cb7e652f7637e7b82",
-"2026-10-20T16:08:16"
+"8c7558056a84c47561b65c3174fdd454e428c89a",
+"2026-10-24T17:05:02"
 ],
 "servicios/presencia-digital/captacion-automatizada-de-clientes-b2b.html": [
 "88f215f318aa1d8ef4f2b0a8d1faba0fd7d742df",
@@ -1172,16 +1180,16 @@
 "2026-10-20T16:08:16"
 ],
 "servicios/presencia-digital/seo-programatico.html": [
-"e39f79ae754a5f9ef841ae22c085de066269bd5d",
-"2026-10-20T16:08:16"
+"40f0f11b20d880bd56af69354594278b4b3c51e0",
+"2026-10-24T17:05:02"
 ],
 "servicios/presencia-digital/traduccion-y-doblaje-con-ia.html": [
 "040214428c30570b3cbf2da7159bec114210fd8f",
 "2026-10-20T16:08:16"
 ],
 "servicios/presencia-digital/videos-y-anuncios-con-ia.html": [
-"b7c3ee5707adda3ae7a663df3319f3bedd8a539b",
-"2026-10-20T16:08:16"
+"01d852ceeb8f8356788127a1202b6e1cb31ca8b7",
+"2026-10-24T17:05:02"
 ],
 "servicios/problemas-sin-resolver.html": [
 "0f11cd4efa9626d71ae10a97a89c4a03160d1490",
@@ -1300,8 +1308,8 @@
 "2026-10-20T16:08:16"
 ],
 "servicios/software-de-gestion/comerciales-y-comisiones.html": [
-"287f73e319a7f516a1f8f80f06f086e1e6ab1702",
-"2026-10-20T16:08:16"
+"de4a1c97052853fac57ab2ac7542bd0d3f1dcb5f",
+"2026-10-24T17:05:02"
 ],
 "servicios/software-de-gestion/conexion-con-tu-asesoria.html": [
 "867cd64fd463696c0bc79106f07244bddddd3ec3",
@@ -1312,8 +1320,8 @@
 "2026-10-20T16:08:16"
 ],
 "servicios/software-de-gestion/cuadro-de-mando-en-tiempo-real.html": [
-"43310d0a0190553975f6c8ff1d6c6479ac712829",
-"2026-10-20T16:08:16"
+"29cf3e3a6c83e52545febcf122afcf4f316a300c",
+"2026-10-24T17:05:02"
 ],
 "servicios/software-de-gestion/documentacion-del-empleado.html": [
 "f6f0eecb272380f0c63ff6be2133b68485877850",
@@ -1464,8 +1472,8 @@
 "2026-10-20T16:08:16"
 ],
 "servicios/software-especializado.html": [
-"95029162ce5b05af77501a0534f7055a7f722b4d",
-"2026-10-20T16:08:16"
+"80297d3b93c0774b9be91c69620cf2fbfd9a4bdf",
+"2026-10-24T17:05:02"
 ],
 "servicios/software-especializado/app-propia-para-negocios-con-clientes-recurrentes.html": [
 "443daee08a5d9712a110adafa3d824ca0fff77af",
@@ -1664,7 +1672,7 @@
 "2026-10-20T16:08:16"
 ],
 "sobre-nosotros.html": [
-"ac7639729091b31dca160b13e212ab8ee700af9d",
-"2026-10-20T16:08:16"
+"1ef4e94697605090719df8dc3b02bb1e7ac9f75a",
+"2026-10-24T17:05:02"
 ]
 }
