@@ -7,7 +7,7 @@ ARTICULOS = [
 ("cuanto-cuesta-un-crm-para-autonomos", "Cuánto cuesta un CRM para autónomos en 2026",
  "Precio de un CRM para autónomos en 2026: qué ofrecen los gratuitos, cómo se paga una suscripción, cuánto cuesta uno implantado y los costes ocultos que conviene mirar antes.",
  "24 oct 2026", "Gestión", "autonomos", _resp(
- "Un CRM para autónomos puede costar cero euros, una cuota mensual por usuario o un pago de implantación más una cuota de soporte. El gratuito sirve para empezar con pocos contactos; la suscripción encaja si te vale una herramienta estándar; el implantado compensa cuando necesitas que el CRM se conecte con tu facturación, tu WhatsApp y tu forma de trabajar. En Studio Emprende, el programa de gestión va incluido en el pack Negocio en Marcha: 1.790 € más 40 €/mes de soporte, sin IVA.") + """
+ "Un CRM para autónomos puede costar cero euros, una cuota mensual por usuario o un pago de implantación más una cuota de soporte. El gratuito sirve para empezar con pocos contactos; la suscripción encaja si te vale una herramienta estándar; el implantado compensa cuando necesitas que el CRM se conecte con tu facturación, tu WhatsApp y tu forma de trabajar. En un CRM implantado, pide siempre un presupuesto cerrado que incluya migración, formación e integraciones.") + """
 <p>«¿Cuánto cuesta un CRM?» tiene tres respuestas distintas según el tipo de CRM, y compararlas por la cuota mensual engaña: lo caro de un CRM casi nunca es la cuota, sino lo que no incluye. Esta guía separa los tres modelos, dice qué pagas en cada uno y te deja una fórmula para comparar con tus números.</p>
 <p>Si todavía estás decidiendo qué funciones necesitas, empieza por la guía de <a href="/blog/crm-para-autonomos">CRM para autónomos y freelancers: cuál elegir y qué debe tener</a>. Aquí hablamos solo de dinero.</p>
 <h2>Los tres modelos de precio de un CRM</h2>
@@ -23,12 +23,14 @@ ARTICULOS = [
 <p>Los CRM de suscripción cobran por usuario y mes, y casi siempre tienen tres o cuatro planes. Los de entrada son asequibles para una persona, pero las funciones que suele necesitar un autónomo que crece, como automatizaciones, informes o integraciones, están en los planes intermedios. Los precios cambian a menudo, así que consulta siempre la tarifa vigente en la web de cada proveedor y fíjate en si el precio es con permanencia anual o mes a mes.</p>
 <p>Lo que la cuota no suele incluir: la migración de tus datos, la configuración inicial, la formación y la conexión con tu programa de facturación. Si no lo haces tú, alguien te lo cobrará aparte.</p>
 <h2>¿Cuánto cuesta un CRM implantado a medida?</h2>
-<p>Aquí pagas por tener el CRM montado con tus etapas de venta, tus plantillas, tu facturación y tus canales, y por que alguien lo mantenga. Para dar una referencia con precios reales, estos son los nuestros (sin IVA):</p>
+<p>Aquí pagas por tener el CRM montado con tus etapas de venta, tus plantillas, tu facturación y tus canales, y por que alguien lo mantenga. El precio depende de los módulos, de las integraciones y de cuántos datos hay que migrar, así que lo serio es pedir un <b>presupuesto cerrado</b> que diga qué incluye y qué no. Antes de firmar, comprueba que el presupuesto detalla:</p>
 <ul>
-<li><b>Pack Negocio en Marcha, 1.790 € + 40 €/mes</b>: web completa con blog y SEO, programa de gestión básico con CRM y automatizaciones. La cuota cubre soporte y mantenimiento. <a href="/precios">Ver todos los packs</a>.</li>
-<li><b>PIX, desde 90 €/mes</b>: el agente de IA que trabaja dentro del CRM, responde por WhatsApp y prepara seguimientos. <a href="/servicios/pix/implantacion-y-precios">Planes de PIX</a>.</li>
-<li><b>Un CRM sectorial</b>, como el que desarrollamos para asesorías energéticas: <a href="/casos/contratalux">caso ContrataLux</a>, que se vende desde 90 €/mes + IVA a ese sector.</li>
+<li>El pago inicial de implantación y la cuota mensual de soporte, por separado.</li>
+<li>Si la migración de tus datos y la formación están incluidas.</li>
+<li>Qué integraciones entran (facturación, web, WhatsApp) y cuáles se pagan aparte.</li>
+<li>Que los datos son tuyos y cómo te los llevas si cambias de proveedor.</li>
 </ul>
+<p>Un CRM sectorial, pensado para un tipo de negocio concreto, suele salir más rentable que adaptar uno genérico. Un ejemplo es el que desarrollamos para asesorías energéticas: <a href="/casos/contratalux">caso ContrataLux</a>.</p>
 <h2>Los costes que no aparecen en la cuota</h2>
 <ol>
 <li><b>Migración</b>: pasar tus clientes desde Excel u otro programa. Si lo haces a mano, cuéntalo en horas.</li>
@@ -48,7 +50,7 @@ ARTICULOS = [
 FAQS = {
  "cuanto-cuesta-un-crm-para-autonomos": [
   ("¿Hay algún CRM gratis que sirva de verdad a un autónomo?", "Sí, para empezar con pocos contactos. Antes de elegirlo, comprueba que puedes exportar todos tus datos sin coste y dónde se guardan."),
-  ("¿Cuánto cuesta un CRM con facturación incluida?", "Depende del modelo. En Studio Emprende, el programa de gestión con CRM y facturación va en el pack Negocio en Marcha: 1.790 € más 40 €/mes de soporte, sin IVA."),
+  ("¿Cuánto cuesta un CRM con facturación incluida?", "Depende del modelo y de lo que haya que conectar. En un CRM implantado, pide un presupuesto cerrado que separe la implantación de la cuota mensual y diga si incluye migración y formación."),
   ("¿Qué es más barato a largo plazo, suscripción o a medida?", "Haz la cuenta a 24 meses sumando cuotas, usuarios, migración, formación e integraciones. Con un solo usuario y pocas necesidades suele ganar la suscripción; si necesitas integraciones y que alguien lo mantenga, el implantado se acerca o compensa."),
   ("¿Puedo cambiar de CRM sin perder mis clientes?", "Sí, si tu CRM actual permite exportar los datos. La migración desde Excel, Holded, Clientify, HubSpot y otros está incluida al implantar nuestro programa de gestión."),
  ],
