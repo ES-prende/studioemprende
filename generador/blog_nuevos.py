@@ -4,6 +4,43 @@
 from blog_formacion import _resp
 
 ARTICULOS = [
+("como-calcular-el-credito-de-formacion-fundae", "Cómo calcular el crédito de formación FUNDAE de tu empresa",
+ "Cómo saber cuánto crédito de formación bonificada tiene tu empresa en FUNDAE: la fórmula, los porcentajes según plantilla, el mínimo de 420 € y un ejemplo paso a paso.",
+ "26 oct 2026", "Formación", "formacion-ia", _resp(
+ "El crédito de formación de FUNDAE se calcula aplicando un porcentaje a lo que tu empresa cotizó por formación profesional el año anterior: el 100 % si tienes de 6 a 9 trabajadores, el 75 % de 10 a 49, el 60 % de 50 a 249 y el 50 % a partir de 250. Las empresas de 1 a 5 trabajadores tienen un crédito mínimo de 420 € al año. El dato exacto lo consultas en la aplicación de Formación Programada de FUNDAE.") + """
+<p>Casi todas las empresas tienen un crédito para formar a su equipo que se descuenta de los seguros sociales, y muchas no lo usan porque no saben cuánto es. Esta guía explica de dónde sale, cómo calcularlo tú y qué cubre de verdad.</p>
+<p>Si todavía no sabes qué es la formación bonificada ni cómo funciona, empieza por la guía de <a href="/blog/formacion-bonificada-para-empresas-fundae">formación bonificada para empresas con FUNDAE</a>. Aquí vamos a los números.</p>
+<h2>De dónde sale el crédito de formación</h2>
+<p>Cada mes, en las cotizaciones a la Seguridad Social, se paga una <b>cuota de formación profesional</b> del 0,70 % de la base de cotización: el 0,60 % lo pone la empresa y el 0,10 % el trabajador. Una parte de lo cotizado el año anterior vuelve a la empresa como crédito para formar a su plantilla al año siguiente. Cuánta parte depende del tamaño de la empresa.</p>
+<h2>Porcentaje según el tamaño de la plantilla</h2>
+<table><thead><tr><th>Plantilla media</th><th>Crédito</th></tr></thead><tbody>
+<tr><td>De 1 a 5 trabajadores</td><td>Mínimo de 420 € al año</td></tr>
+<tr><td>De 6 a 9 trabajadores</td><td>100 % de lo cotizado por formación profesional</td></tr>
+<tr><td>De 10 a 49 trabajadores</td><td>75 %</td></tr>
+<tr><td>De 50 a 249 trabajadores</td><td>60 %</td></tr>
+<tr><td>250 trabajadores o más</td><td>50 %</td></tr>
+</tbody></table>
+<p>Los porcentajes se fijan cada año en los Presupuestos Generales del Estado. Antes de planificar, comprueba los vigentes en la web de <a href="https://www.fundae.es" rel="noopener" target="_blank">FUNDAE</a>.</p>
+<h2>Cómo calcularlo paso a paso</h2>
+<ol>
+<li><b>Busca lo cotizado por formación profesional el año anterior.</b> Lo tienes en los recibos de liquidación de cotizaciones o te lo da tu gestoría.</li>
+<li><b>Mira tu plantilla media</b> de ese año para saber en qué tramo estás.</li>
+<li><b>Aplica el porcentaje del tramo.</b> Si te sale menos de 420 € y tienes hasta 5 trabajadores, tu crédito es 420 €.</li>
+</ol>
+<p><b>Ejemplo:</b> una empresa con una plantilla media de 20 personas cotizó el año pasado 6.000 € por formación profesional. Está en el tramo de 10 a 49 trabajadores, así que su crédito para este año es 6.000 × 75 % = <b>4.500 €</b>.</p>
+<p>Un autónomo con dos empleados que cotizó 300 € tiene igualmente un crédito de 420 €, porque es el mínimo para empresas de hasta 5 trabajadores.</p>
+<h2>Cómo consultar el crédito exacto</h2>
+<p>FUNDAE calcula el crédito de cada empresa con los datos de la Seguridad Social. Para verlo tienes que acceder a la aplicación de Formación Programada de su web, con certificado digital, o pedírselo a tu gestoría o a la entidad que te organice la formación.</p>
+<h2>Qué cubre y qué no</h2>
+<ul>
+<li><b>No cubre cualquier precio.</b> El importe bonificable de cada curso tiene un máximo por hora y participante según la modalidad, así que un curso caro puede no quedar bonificado del todo.</li>
+<li><b>Salvo las microempresas, la empresa suele aportar una parte</b> del coste de la formación con fondos propios (la cofinanciación privada), que depende del tamaño de la plantilla.</li>
+<li><b>El crédito es anual.</b> Lo que no se usa en el año se pierde, aunque las empresas de menos de 50 trabajadores pueden acumularlo en determinados casos si lo comunican en plazo. Pregunta a tu gestoría por tu caso.</li>
+<li><b>Hay que comunicar la formación antes de empezar</b> y justificarla al terminar para poder aplicar la bonificación en los seguros sociales.</li>
+</ul>
+<h2>Qué formación conviene hacer con el crédito</h2>
+<p>La que tu equipo vaya a usar el lunes siguiente: el programa de gestión que acabáis de implantar, hojas de cálculo que se usan cada día o el uso de la inteligencia artificial en el trabajo, que el AI Act exige a las empresas que usan IA. Si quieres un curso pensado con tus herramientas y tus casos reales, mira los <a href="/servicios/formacion-ia/cursos-de-formacion-a-medida-para-empresas">cursos de formación a medida para empresas</a>.</p>
+"""),
 ("cuanto-cuesta-un-crm-para-autonomos", "Cuánto cuesta un CRM para autónomos en 2026",
  "Precio de un CRM para autónomos en 2026: qué ofrecen los gratuitos, cómo se paga una suscripción, cuánto cuesta uno implantado y los costes ocultos que conviene mirar antes.",
  "24 oct 2026", "Gestión", "autonomos", _resp(
@@ -48,6 +85,12 @@ ARTICULOS = [
 ]
 
 FAQS = {
+ "como-calcular-el-credito-de-formacion-fundae": [
+  ("¿Cómo sé cuánto crédito FUNDAE tiene mi empresa?", "Entrando en la aplicación de Formación Programada de FUNDAE con certificado digital, o pidiéndoselo a tu gestoría. El cálculo aproximado es lo cotizado por formación profesional el año anterior por el porcentaje de tu tramo de plantilla."),
+  ("¿Un autónomo sin empleados tiene crédito de formación?", "No. El crédito va ligado a la cotización por formación profesional de los trabajadores por cuenta ajena. Con al menos un empleado, la empresa tiene un mínimo de 420 € al año."),
+  ("¿Qué pasa si no gasto el crédito este año?", "En general se pierde al terminar el año. Las empresas de menos de 50 trabajadores pueden acumularlo en determinados casos si lo comunican en plazo; consulta tu situación con tu gestoría."),
+  ("¿Puedo bonificar un curso hecho a medida para mi equipo?", "Sí, si se comunica a FUNDAE antes de empezar y cumple los requisitos de duración, asistencia y justificación. El importe bonificable tiene un máximo por hora y participante."),
+ ],
  "cuanto-cuesta-un-crm-para-autonomos": [
   ("¿Hay algún CRM gratis que sirva de verdad a un autónomo?", "Sí, para empezar con pocos contactos. Antes de elegirlo, comprueba que puedes exportar todos tus datos sin coste y dónde se guardan."),
   ("¿Cuánto cuesta un CRM con facturación incluida?", "Depende del modelo y de lo que haya que conectar. En un CRM implantado, pide un presupuesto cerrado que separe la implantación de la cuota mensual y diga si incluye migración y formación."),
@@ -56,6 +99,6 @@ FAQS = {
  ],
 }
 
-ALT = {"cuanto-cuesta-un-crm-para-autonomos": "Ilustración con tres etiquetas de precio de CRM: gratis, suscripción y a medida"}
+ALT = {"como-calcular-el-credito-de-formacion-fundae": "Ilustración con la fórmula del crédito de formación: cotización por porcentaje según plantilla", "cuanto-cuesta-un-crm-para-autonomos": "Ilustración con tres etiquetas de precio de CRM: gratis, suscripción y a medida"}
 
-RESUMEN = {"cuanto-cuesta-un-crm-para-autonomos": "Un CRM para autónomos puede ser gratuito, de suscripción por usuario y mes o implantado a medida. Compáralos a 24 meses sumando cuotas, usuarios, migración, formación e integraciones, no solo por la cuota."}
+RESUMEN = {"como-calcular-el-credito-de-formacion-fundae": "Crédito FUNDAE = lo cotizado por formación profesional el año anterior × el porcentaje de tu tramo (100 %, 75 %, 60 % o 50 %). De 1 a 5 trabajadores, mínimo de 420 € al año.", "cuanto-cuesta-un-crm-para-autonomos": "Un CRM para autónomos puede ser gratuito, de suscripción por usuario y mes o implantado a medida. Compáralos a 24 meses sumando cuotas, usuarios, migración, formación e integraciones, no solo por la cuota."}

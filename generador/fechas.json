@@ -8,12 +8,12 @@
 "2026-10-20T16:08:16"
 ],
 "blog/agente-de-ia-para-whatsapp.html": [
-"34695179c5414b0dc441dba08e02b280dfdbe2aa",
-"2026-10-24T18:07:02"
+"3319d6f06ccc7ed8a0dc24e4ca38e7667b2b3777",
+"2026-10-26T09:52:10"
 ],
 "blog/app-de-control-horario-para-pequenas-empresas.html": [
-"9bfaf1608da76a515b7792e4138f7d173f4f1086",
-"2026-10-24T18:07:02"
+"d05eedbfb671e8770ece06225fc5100c15395c74",
+"2026-10-26T09:52:10"
 ],
 "blog/app-movil-para-mi-negocio.html": [
 "a4c84f08607680676565ab37e7c197d48c3fcf72",
@@ -38,6 +38,10 @@
 "blog/como-aparecer-en-google-con-tu-pequena-empresa.html": [
 "63c3f52010b72bfb8ce1ee024b991978918de08d",
 "2026-10-20T16:08:16"
+],
+"blog/como-calcular-el-credito-de-formacion-fundae.html": [
+"360038554835deb463facc2b6fa6bfd7deb96101",
+"2026-10-26T09:54:45"
 ],
 "blog/como-dejar-de-usar-excel-en-mi-empresa.html": [
 "14a2d6c16bc8f32581314bf757ff566845a620ec",
@@ -112,8 +116,8 @@
 "2026-10-20T16:08:16"
 ],
 "blog/plan-de-formacion-para-empresas.html": [
-"5bc3cf45362797d528d5b2f913057c79784f2d31",
-"2026-10-24T18:07:02"
+"16211341c9e81f6c5355973e99e54d9dae7a93ce",
+"2026-10-26T09:54:45"
 ],
 "blog/primeros-pasos-autonomo-digital.html": [
 "0fb46b853beaee4f850bb65707de5938d7070627",
@@ -124,8 +128,8 @@
 "2026-10-20T16:08:16"
 ],
 "blog/que-es-un-erp-y-cuando-lo-necesito.html": [
-"0327ec38c3c2d241e46918aa1127607e2e34ad01",
-"2026-10-24T18:07:02"
+"54ac7406388c091fac65a8508644aed8278093e6",
+"2026-10-26T09:52:57"
 ],
 "blog/que-es-verifactu-y-cuando-me-afecta.html": [
 "d5eff212ba157dc85c8dcee3294d1ea30999451b",
@@ -164,8 +168,8 @@
 "2026-10-24T17:46:24"
 ],
 "casos/index.html": [
-"01c246e9ffa7844d22453fee01c3742d842d27b3",
-"2026-10-24T17:05:38"
+"c843eb19a47c18a311ef7626e579c04041ce7bf2",
+"2026-10-26T09:52:57"
 ],
 "contacto.html": [
 "12ece588eeedf60c3a61c1b8aba4b0c32ea8d79c",
@@ -496,8 +500,8 @@
 "2026-10-24T18:07:02"
 ],
 "servicios/alojamientos-y-domotica.html": [
-"584c0aff2451e4eadf427048e1edd099bebb05fd",
-"2026-10-24T18:07:02"
+"095ec531461d3c0fd389c39e5bcea6e017372007",
+"2026-10-26T09:52:10"
 ],
 "servicios/alojamientos-y-domotica/asistente-del-huesped-por-whatsapp-24-7.html": [
 "19a35b7f36447e35397efb7bf2aa414c6b929670",
@@ -584,8 +588,8 @@
 "2026-10-24T18:07:02"
 ],
 "servicios/automatizacion-y-datos.html": [
-"3ccea8b2768ee182b3e8162914a3f1bd374e62c9",
-"2026-10-26T09:47:16"
+"ae0b30e5cb634d244d33e77b6a7e3a6e3f6b7c21",
+"2026-10-26T09:52:10"
 ],
 "servicios/automatizacion-y-datos/automatizacion-de-administracion-facturas-y-cobros.html": [
 "9e0fc73e8e72a1940f4c19eafdfad8cc3e052ace",
@@ -636,8 +640,8 @@
 "2026-10-24T18:07:02"
 ],
 "servicios/ciberseguridad-y-sistemas.html": [
-"4e93e69bf58d6345d16c21375b502774961bfa8e",
-"2026-10-24T18:07:02"
+"0d14e002150902c8236876c7a0f43375d72566dc",
+"2026-10-26T09:52:10"
 ],
 "servicios/ciberseguridad-y-sistemas/adaptacion-a-nis2-para-proveedores.html": [
 "0088ba49a221badef1e57ac1b2c8a82052d99566",
@@ -668,8 +672,8 @@
 "2026-10-24T18:07:02"
 ],
 "servicios/consultoria-y-ayudas.html": [
-"1ed296fe010f70a300c1286a3fa23000fdee49ff",
-"2026-10-24T18:07:02"
+"f667e2c878473681b5dfe7bfbe1840fc91001748",
+"2026-10-26T09:52:10"
 ],
 "servicios/consultoria-y-ayudas/auditoria-de-ia-para-pymes.html": [
 "6df8462b53225f50570476a50505717c8a15313b",
@@ -872,8 +876,8 @@
 "2026-10-26T09:47:16"
 ],
 "servicios/fichador.html": [
-"1e2271b5d8ff116a95ca79591f3cd63edb3c7b12",
-"2026-10-24T18:07:02"
+"e13b7e6ff81313db642d05982cf9512fb3b19817",
+"2026-10-26T09:52:10"
 ],
 "servicios/fichador/acceso-del-trabajador-a-sus-registros.html": [
 "2fcff7f204f4fd97b99120d1570aa729e8a4e750",
@@ -948,16 +952,16 @@
 "2026-10-24T18:07:02"
 ],
 "servicios/formacion-ia.html": [
-"6a72758c8f483609c7253eb3f43227394c2efeb6",
-"2026-10-24T18:07:02"
+"b9e3bd90c7bb537ebbcb47c1a43766c6a8d30d86",
+"2026-10-26T09:54:45"
 ],
 "servicios/formacion-ia/curso-de-excel-para-empresas.html": [
 "3efaaa311dd747baae41fdaaa1c8e98ff608c5e5",
 "2026-10-24T18:07:02"
 ],
 "servicios/formacion-ia/cursos-de-formacion-a-medida-para-empresas.html": [
-"262a49e8e24c6426ec17516ae22084402f39b927",
-"2026-10-24T18:07:02"
+"df120dd2da0cfd9ac812667ad72a1b05af0b8c3f",
+"2026-10-26T09:54:45"
 ],
 "servicios/formacion-ia/formacion-de-empleados-en-un-programa-nuevo.html": [
 "aa532945e2e160a7a9dedca23faba9b49e30fa29",
@@ -1036,8 +1040,8 @@
 "2026-10-20T16:08:16"
 ],
 "servicios/migraciones-e-integraciones.html": [
-"46899f1ac712022d169a18ad7665c5832f4555e5",
-"2026-10-26T09:47:16"
+"0cb16537b305fe6effa2db407a41487f5a496739",
+"2026-10-26T09:52:10"
 ],
 "servicios/migraciones-e-integraciones/conectar-erp-tienda-crm-y-contabilidad.html": [
 "1feaff99cc6f3724e412116d94f9b7eaa7ace3b8",
@@ -1240,8 +1244,8 @@
 "2026-10-24T18:07:02"
 ],
 "servicios/relevo-y-continuidad.html": [
-"4a421f6b4cbf6fa1a36b4083c76f24a565cb90b8",
-"2026-10-24T18:07:02"
+"80a2091d2281bdddc0a3418ae1a0cfe5e1af4f48",
+"2026-10-26T09:52:10"
 ],
 "servicios/relevo-y-continuidad/acompanamiento-del-traspaso.html": [
 "b7b03edc9918ae77316948b1a1a300de6f8cc422",
@@ -1444,8 +1448,8 @@
 "2026-10-26T09:47:16"
 ],
 "servicios/software-de-gestion/recordatorios-automaticos-por-whatsapp.html": [
-"682a39fd2a741d648a5cb165a9efe1e4b3166168",
-"2026-10-26T09:47:16"
+"daf35fcbd95ccb4d68b90e4979c294a41d330cd4",
+"2026-10-26T09:52:10"
 ],
 "servicios/software-de-gestion/remesas-y-domiciliaciones.html": [
 "80888ec2d89d414244ea9058ce6bd9b354f77cd3",
@@ -1540,8 +1544,8 @@
 "2026-10-24T18:07:02"
 ],
 "servicios/startups-e-inversores.html": [
-"70071f5332a44f49eab5e29c34d5e43c0fdfdfee",
-"2026-10-24T18:07:02"
+"4c1b6249ee36ac7c70d7b1db1d4443904082ac55",
+"2026-10-26T09:52:57"
 ],
 "servicios/startups-e-inversores/cto-externalizado.html": [
 "61e5f02b663220c9b22a4a7264b9c415fcaf5149",
@@ -1684,16 +1688,16 @@
 "2026-10-24T17:46:24"
 ],
 "temas/formacion-para-empresas.html": [
-"c8d9d309f5a15f0c5a65bb886a78c0ea605538bb",
-"2026-10-24T17:46:24"
+"0a5c28fcc1cb5ba8ab3e8ba1044f5b8024a97260",
+"2026-10-26T09:54:45"
 ],
 "temas/gestion-y-crm.html": [
 "841dc7ff2804e88e82b21212ccad0d06ede78600",
 "2026-10-24T17:46:24"
 ],
 "temas/index.html": [
-"4b6d4f5edaefac297b2418977ef87a9a8961d319",
-"2026-10-24T17:46:24"
+"e9b81849a65df3e8fa9be8694df0ea587c0a7f80",
+"2026-10-26T09:54:45"
 ],
 "temas/inteligencia-artificial.html": [
 "2e09aeec0dcfc60ecbf152714bfa03a9a26972d8",

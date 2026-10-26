@@ -182,6 +182,10 @@ def html_hub(r, migas_html, casos, cta_html):
     return """<section class="page-hero"><div class="w">{migas}<p class="kicker">Casos de éxito</p><h1>Casos de éxito: proyectos reales de software, web y SEO</h1>
 <p class="lead">Proyectos que hemos hecho de principio a fin, contados con lo que se hizo, en qué orden y qué datos podemos enseñar. Sin cifras infladas: lo que no se puede medir, no lo contamos.</p></div></section>
 <section class="sec"><div class="w"><div class="rejilla">{tarjetas}</div></div></section>
+<section class="sec"><div class="w"><div class="cab"><p class="kicker">Por qué los publicamos</p><h2>Casos de éxito con datos que se pueden comprobar</h2></div>
+<p>Cuando eliges a quién encargar tu web, tu programa de gestión o tu agente de IA, lo que más ayuda es ver un proyecto parecido terminado: qué había al principio, qué se hizo, en qué orden y qué resultado se puede medir. Por eso cada caso incluye capturas del producto con datos de demostración, enlaces a la web real del proyecto y, cuando existen, las cifras de Google Search Console o Bing Webmaster Tools.</p>
+<p>El primer caso es <a href="contratalux.html">ContrataLux</a>, un software para asesorías energéticas al que hicimos todo el lanzamiento: identidad de marca, dominio y correo, una web de 251 URLs leída sin errores por Google y Bing, perfiles en redes con contenido automatizado y un CRM a medida para gestionar contratos y comisiones. Es un buen ejemplo de lo que incluye un <a href="../precios.html">pack completo</a> cuando se hace con un único interlocutor.</p>
+<p>Si tu proyecto se parece a alguno de estos, en el <a href="../contacto.html#diagnostico">diagnóstico gratuito</a> te decimos qué piezas necesitas y en qué orden.</p></div></section>
 <section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Cómo los contamos</p><h2>Qué encontrarás en cada caso</h2></div><div class="rejilla">
 <div class="tarjeta"><h3>El punto de partida</h3><p>Qué tenía el negocio y qué le faltaba antes de empezar.</p></div>
 <div class="tarjeta"><h3>Lo que hicimos y en qué orden</h3><p>Cada servicio, enlazado a su página, para que veas qué incluye.</p></div>

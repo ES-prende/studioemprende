@@ -30,6 +30,7 @@ EXTRA = {
  "/servicios/webs/webs-para-startups": ("Webs para startups que validan la idea", ["/servicios/startups-e-inversores/mvp-en-6-12-semanas", "/servicios/webs/landing-pages-para-campanas"]),
  "/servicios/webs/webs-scroll-3d-inmersivas": ("Webs con animación 3D al hacer scroll", ["/servicios/webs/contenido-personalizado-segun-el-visitante", "/servicios/presencia-digital/videos-y-anuncios-con-ia"]),
  "/casos/": ("Todos los casos de éxito", ["/partners", "/sobre-nosotros"]),
+ "/blog/como-calcular-el-credito-de-formacion-fundae": ("Cómo calcular el crédito de formación FUNDAE", ["/servicios/formacion-ia/", "/servicios/formacion-ia/cursos-de-formacion-a-medida-para-empresas", "/blog/plan-de-formacion-para-empresas"]),
  "/temas/": ("Todos los temas del blog", ["/politica-editorial", "/sobre-nosotros", "/blog/cuanto-cuesta-un-crm-para-autonomos"]),
  "/temas/gestion-y-crm": ("Más sobre gestión y CRM", ["/blog/cuanto-cuesta-un-crm-para-autonomos", "/blog/que-es-un-erp-y-cuando-lo-necesito", "/blog/app-de-control-horario-para-pequenas-empresas"]),
  "/temas/normativas-y-cumplimiento": ("Más sobre normativas", ["/blog/que-es-verifactu-y-cuando-me-afecta", "/blog/app-de-control-horario-para-pequenas-empresas", "/servicios/pequenas-empresas/cumple-la-ley-verifactu-y-registro-de-jornada"]),

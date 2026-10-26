@@ -9,12 +9,14 @@
 /blog/chatgpt-gemini-copilot-o-claude-para-empresas
 /blog/como-aparecer-en-chatgpt
 /blog/como-aparecer-en-google-con-tu-pequena-empresa
+/blog/como-calcular-el-credito-de-formacion-fundae
 /blog/como-dejar-de-usar-excel-en-mi-empresa
 /blog/como-empezar-a-usar-la-ia-en-tu-pequena-empresa
 /blog/como-reducir-impagos
 /blog/copias-de-seguridad-que-funcionan
 /blog/crm-para-autonomos
 /blog/crm-para-empresas-de-servicios
+/blog/cuanto-cuesta-un-crm-para-autonomos
 /blog/departamento-tecnologico-externo
 /blog/es-obligatorio-el-fichaje-digital
 /blog/formacion-bonificada-para-empresas-fundae
@@ -410,3 +412,10 @@
 /servicios/whatsapp-ia/citas-y-recordatorios-automaticos
 /servicios/whatsapp-ia/reactivacion-de-clientes-y-pacientes-inactivos
 /sobre-nosotros
+/temas/
+/temas/emprender-y-crecer
+/temas/formacion-para-empresas
+/temas/gestion-y-crm
+/temas/inteligencia-artificial
+/temas/normativas-y-cumplimiento
+/temas/webs-y-visibilidad

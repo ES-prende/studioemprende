@@ -227,10 +227,19 @@ TITULOS = {
  "servicios/software-de-gestion/presupuestador-y-configurador-online.html": "Presupuestador y configurador online para tu web",
  "guias/cuanto-cuesta-una-pagina-web.html": "Cuánto cuesta una página web en España en 2026",
  "guias/index.html": "Guías para emprender y digitalizar tu negocio · Studio Emprende",
- "servicios/consultoria-y-ayudas/index.html": "Consultoría tecnológica y ayudas · Studio Emprende",
  "guias/crear-pagina-web-para-vender.html": "Crear una página web para vender online paso a paso",
  "servicios/apps-moviles/index.html": "Apps móviles a medida para negocios · Studio Emprende",
- "servicios/startups-e-inversores/index.html": "Tecnología para startups e inversores · Studio Emprende",
+ "servicios/alojamientos-y-domotica/index.html": "Software y domótica para viviendas turísticas · Studio Emprende",
+ "servicios/automatizacion-y-datos/index.html": "Automatización de procesos para pymes · Studio Emprende",
+ "servicios/ciberseguridad-y-sistemas/index.html": "Ciberseguridad para pymes y cumplimiento normativo",
+ "servicios/consultoria-y-ayudas/index.html": "Consultoría de digitalización y ayudas para pymes",
+ "servicios/fichador/index.html": "App de fichaje y control horario para empresas",
+ "servicios/migraciones-e-integraciones/index.html": "Migración de datos e integraciones entre programas",
+ "servicios/relevo-y-continuidad/index.html": "Relevo generacional y continuidad del negocio familiar",
+ "blog/agente-de-ia-para-whatsapp.html": "Agente de IA para WhatsApp: automatiza las respuestas",
+ "blog/app-de-control-horario-para-pequenas-empresas.html": "App de control horario para pequeñas empresas",
+ "servicios/startups-e-inversores/index.html": "Software y desarrollo tecnológico para startups",
+ "blog/que-es-un-erp-y-cuando-lo-necesito.html": "ERP para pymes: cuándo dejar de usar Excel",
 }
 
 # Enlaces entre páginas que responden a búsquedas parecidas (grupos de intención), solo en páginas no indexadas
@@ -576,7 +585,15 @@ pagina("servicios/index.html", "Servicios · Studio Emprende", "Todos los servic
        '<section class="page-hero"><div class="w">%s<h1>Servicios</h1><p class="lead">Todo lo que hacemos, organizado por áreas. Empieza por lo que más te urge.</p></div></section><section class="sec" style="padding-top:24px"><div class="w">%s</div></section>%s' % (migas("../", ("Servicios", None)), hub, cta("../")))
 
 # H1 y bloque propio en hubs no indexados (el nombre del servicio sigue igual en menús)
-HUB_H1 = {"whatsapp-ia": "Agentes de IA para WhatsApp: atienden, agendan y recuerdan citas por ti"}
+HUB_H1 = {"whatsapp-ia": "Agentes de IA para WhatsApp: atienden, agendan y recuerdan citas por ti",
+          "alojamientos-y-domotica": "Software y domótica para viviendas turísticas y casas",
+          "automatizacion-y-datos": "Automatización de procesos y datos para pymes",
+          "ciberseguridad-y-sistemas": "Ciberseguridad, sistemas y cumplimiento para pymes",
+          "consultoria-y-ayudas": "Consultoría de digitalización y ayudas para pymes",
+          "fichador": "App de fichaje y control horario para empresas",
+          "startups-e-inversores": "Software y desarrollo tecnológico para startups",
+          "migraciones-e-integraciones": "Migración de datos e integraciones entre programas",
+          "relevo-y-continuidad": "Relevo generacional y continuidad del negocio"}
 HUB_EXTRA = {"whatsapp-ia": """<section class="sec"><div class="w"><div class="cab"><p class="kicker">Agentes de IA para WhatsApp</p><h2>¿Qué es un agente de IA para WhatsApp y qué hace en un negocio?</h2></div>
 <p>Un agente de IA para WhatsApp es un asistente conectado a tu número de WhatsApp Business que contesta a los clientes con la información de tu negocio, agenda citas en tu calendario, envía recordatorios y pasa la conversación a una persona cuando hace falta. No es un menú de opciones: entiende lo que el cliente escribe y responde con tus horarios, tarifas y disponibilidad reales.</p>
 <table><thead><tr><th>Lo que hace</th><th>Lo que no hace</th></tr></thead><tbody>
@@ -1096,6 +1113,16 @@ ExpiresByType image/jpeg "access plus 1 year"
 ExpiresByType image/webp "access plus 1 year"
 </IfModule>
 """)
+# Hubs (carpetas con index.html): .html, sin barra, http o www -> URL final con barra en UN solo salto.
+# Sin esto: /servicios/x.html -> /servicios/x -> /servicios/x/ (dos 301, y tres desde http o www).
+_hubs = ["casos", "temas", "blog", "guias", "servicios"] + sorted("servicios/" + x for x in os.listdir(OUT + "/servicios") if os.path.isdir(OUT + "/servicios/" + x))
+_alt = "|".join(re.escape(h) for h in _hubs)
+_regla = ("# Hubs: variantes antiguas (.html, /index.html, sin barra, http, www) a la URL final con barra, en un solo salto\n"
+          "RewriteRule ^(" + _alt + ")(\\.html|/index\\.html)?$ https://studioemprende.com/$1/ [R=301,L]\n"
+          "RewriteCond %{HTTPS} off [OR]\nRewriteCond %{HTTP_HOST} ^www\\. [NC]\n"
+          "RewriteRule ^(" + _alt + ")/$ https://studioemprende.com/$1/ [R=301,L]\n\n")
+_ht = open(OUT + "/.htaccess").read().replace("# Sitemaps antiguos", _regla + "# Sitemaps antiguos", 1)
+open(OUT + "/.htaccess", "w").write(_ht)
 # Nota: no se cambia la fecha de los archivos (os.utime): el despliegue usa --only-newer
 # y fechas antiguas impedian que se subieran las paginas modificadas.
 

@@ -10,6 +10,12 @@ RewriteEngine On
 # URL antigua de la web multidioma
 RewriteRule ^servicios/webs/webs-multidioma-para-espana-y-latinoamerica(\.html)?/?$ https://studioemprende.com/servicios/webs/webs-multidioma-para-espana-y-exportacion [R=301,L]
 
+# Hubs: variantes antiguas (.html, /index.html, sin barra, http, www) a la URL final con barra, en un solo salto
+RewriteRule ^(casos|temas|blog|guias|servicios|servicios/agentes\-de\-ia|servicios/alojamientos\-y\-domotica|servicios/apps\-moviles|servicios/automatizacion\-y\-datos|servicios/autonomos|servicios/ciberseguridad\-y\-sistemas|servicios/consultoria\-y\-ayudas|servicios/deluxe|servicios/departamento\-tecnologico|servicios/erp\-para\-pymes|servicios/fichador|servicios/formacion\-ia|servicios/grandes\-empresas|servicios/migraciones\-e\-integraciones|servicios/pequenas\-empresas|servicios/pix|servicios/presencia\-digital|servicios/problemas\-sin\-resolver|servicios/relevo\-y\-continuidad|servicios/software\-de\-gestion|servicios/software\-especializado|servicios/startups\-e\-inversores|servicios/webs|servicios/whatsapp\-ia)(\.html|/index\.html)?$ https://studioemprende.com/$1/ [R=301,L]
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(casos|temas|blog|guias|servicios|servicios/agentes\-de\-ia|servicios/alojamientos\-y\-domotica|servicios/apps\-moviles|servicios/automatizacion\-y\-datos|servicios/autonomos|servicios/ciberseguridad\-y\-sistemas|servicios/consultoria\-y\-ayudas|servicios/deluxe|servicios/departamento\-tecnologico|servicios/erp\-para\-pymes|servicios/fichador|servicios/formacion\-ia|servicios/grandes\-empresas|servicios/migraciones\-e\-integraciones|servicios/pequenas\-empresas|servicios/pix|servicios/presencia\-digital|servicios/problemas\-sin\-resolver|servicios/relevo\-y\-continuidad|servicios/software\-de\-gestion|servicios/software\-especializado|servicios/startups\-e\-inversores|servicios/webs|servicios/whatsapp\-ia)/$ https://studioemprende.com/$1/ [R=301,L]
+
 # Sitemaps antiguos (hoy hay uno por familia de servicio): al indice
 RewriteRule ^sitemap-(funciones|servicios)\.xml$ https://studioemprende.com/sitemap.xml [R=301,L]
 

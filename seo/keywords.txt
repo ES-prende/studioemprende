@@ -264,7 +264,7 @@
 /servicios/deluxe/inventario-digital-de-patrimonio|inventario de obras de arte y patrimonio|
 /servicios/deluxe/legado-digital-familiar|legado digital herencia|
 /blog/que-es-verifactu-y-cuando-me-afecta|verifactu plazos autónomos y sociedades|verifactu
-/blog/que-es-un-erp-y-cuando-lo-necesito|señales de que tu empresa necesita un erp|erp-crm
+/blog/que-es-un-erp-y-cuando-lo-necesito|erp para pymes cuándo dejar de usar excel|erp-crm
 /guias/software-a-medida|software a medida ventajas y ejemplos|software-medida
 /guias/desarrollo-de-software-a-medida|empresa de desarrollo de software a medida|software-medida
 /guias/mejores-erp-para-pymes|mejores erp para pymes|
@@ -302,3 +302,4 @@
 /cookies|política de cookies studio emprende|
 /casos/|casos de éxito de software y webs|
 /casos/contratalux|caso de éxito crm para asesorías energéticas|
+/blog/como-calcular-el-credito-de-formacion-fundae|calcular crédito fundae|

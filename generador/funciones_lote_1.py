@@ -280,7 +280,7 @@ PAGINAS = {
  "rel": [("agenda-y-citas-online.html", "Agenda y citas online"), ("../webs/web-con-reservas-y-citas.html", "Web con reservas y citas"), ("../../guias/software-a-medida-para-gimnasios.html", "Software para gimnasios y clubes")],
 },
 "software-de-gestion/recordatorios-automaticos-por-whatsapp": {
- "titulo": "Recordatorios por WhatsApp de cobros, entregas y renovaciones",
+ "titulo": "Recordatorios por WhatsApp de cobros y entregas",
  "meta": "Recordatorios automáticos por WhatsApp desde tu programa de gestión: facturas que vencen, pedidos listos, revisiones y renovaciones, con respuesta del cliente.",
  "h1": "Recordatorios automáticos por WhatsApp de cobros, entregas y renovaciones",
  "lead": "Los recordatorios automáticos por WhatsApp avisan a cada cliente de su cita y le dejan confirmar, cambiar o anular con un toque, y la respuesta llega directa a tu agenda.",

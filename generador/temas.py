@@ -20,7 +20,7 @@ TEMAS = [
  ("formacion-para-empresas", "Formación para empresas y equipos",
   "Cómo organizar la formación de tu equipo: obligatoria, bonificada con FUNDAE, en IA y para nuevas incorporaciones.",
   "Formar al equipo es obligatorio en algunos casos y rentable en casi todos, pero suele hacerse tarde y sin registro. Aquí explicamos qué formación es obligatoria, cómo bonificarla con FUNDAE, cómo montar un plan de formación en seis pasos y cómo empezar con la IA sin conocimientos previos.",
-  ["plan-de-formacion-para-empresas", "formacion-bonificada-para-empresas-fundae", "formacion-obligatoria-en-empresas", "formacion-ia-obligatoria-ai-act", "formacion-en-ia-desde-cero"],
+  ["como-calcular-el-credito-de-formacion-fundae", "plan-de-formacion-para-empresas", "formacion-bonificada-para-empresas-fundae", "formacion-obligatoria-en-empresas", "formacion-ia-obligatoria-ai-act", "formacion-en-ia-desde-cero"],
   [("Formación en IA", "servicios/formacion-ia/index.html"), ("Plataforma de formación interna", "servicios/software-especializado/plataforma-de-formacion-interna-lms.html")]),
  ("webs-y-visibilidad", "Webs y visibilidad en Google y en la IA",
   "Cómo conseguir una web que venda y aparecer en Google y en ChatGPT con un negocio pequeño.",
