@@ -6,7 +6,12 @@ KEY = "0e7088fe2e96eae098138bb5db5e8322"
 def cargar(ref):
     try: return json.loads(subprocess.check_output(["git", "show", ref + ":generador/fechas.json"]))
     except Exception: return {}
-nuevo, viejo = cargar("HEAD"), cargar("HEAD~1")
+# Compara con lo publicado en el despliegue anterior (todos los commits del push), no solo con HEAD~1
+import os
+_antes = os.environ.get("ANTES", "")
+if not _antes or set(_antes) == {"0"} or subprocess.call(["git", "cat-file", "-e", _antes + "^{commit}"], stderr=subprocess.DEVNULL):
+    _antes = "HEAD~1"
+nuevo, viejo = cargar("HEAD"), cargar(_antes)
 NOINDEX = {"404.html", "gracias.html"}
 urls = []
 for p, v in nuevo.items():

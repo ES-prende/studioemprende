@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -33,4 +33,6 @@ jobs:
           lftp -e "set sftp:auto-confirm yes; set net:max-retries 3; mirror -R --verbose --exclude-glob .git* web/ ${RUTA:-/}; bye" -u "$USER","$PASS" sftp://$HOST
 
       - name: Avisar a IndexNow (Bing, Yandex...) de las paginas nuevas o modificadas
+        env:
+          ANTES: ${{ github.event.before }}
         run: python generador/scripts/indexnow.py
