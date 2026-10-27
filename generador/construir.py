@@ -240,6 +240,7 @@ TITULOS = {
  "blog/app-de-control-horario-para-pequenas-empresas.html": "App de control horario para pequeñas empresas",
  "servicios/startups-e-inversores/index.html": "Software y desarrollo tecnológico para startups",
  "blog/que-es-un-erp-y-cuando-lo-necesito.html": "ERP para pymes: cuándo dejar de usar Excel",
+ "blog/software-de-gestion-modular-con-automatizaciones.html": "Software de gestión modular con automatizaciones",
 }
 
 # Enlaces entre páginas que responden a búsquedas parecidas (grupos de intención), solo en páginas no indexadas

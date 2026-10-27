@@ -31,6 +31,7 @@ EXTRA = {
  "/servicios/webs/webs-scroll-3d-inmersivas": ("Webs con animación 3D al hacer scroll", ["/servicios/webs/contenido-personalizado-segun-el-visitante", "/servicios/presencia-digital/videos-y-anuncios-con-ia"]),
  "/casos/": ("Todos los casos de éxito", ["/partners", "/sobre-nosotros"]),
  "/blog/como-calcular-el-credito-de-formacion-fundae": ("Cómo calcular el crédito de formación FUNDAE", ["/servicios/formacion-ia/", "/servicios/formacion-ia/cursos-de-formacion-a-medida-para-empresas", "/blog/plan-de-formacion-para-empresas"]),
+ "/blog/software-de-gestion-modular-con-automatizaciones": ("Software de gestión modular con automatizaciones en lenguaje natural", ["/servicios/erp-para-pymes/pagas-solo-los-modulos-que-usas", "/servicios/erp-para-pymes/crece-contigo-anades-modulos-cuando-los-necesitas", "/servicios/automatizacion-y-datos/", "/blog/cuanto-cuesta-un-crm-para-autonomos"]),
  "/temas/": ("Todos los temas del blog", ["/politica-editorial", "/sobre-nosotros", "/blog/cuanto-cuesta-un-crm-para-autonomos"]),
  "/temas/gestion-y-crm": ("Más sobre gestión y CRM", ["/blog/cuanto-cuesta-un-crm-para-autonomos", "/blog/que-es-un-erp-y-cuando-lo-necesito", "/blog/app-de-control-horario-para-pequenas-empresas"]),
  "/temas/normativas-y-cumplimiento": ("Más sobre normativas", ["/blog/que-es-verifactu-y-cuando-me-afecta", "/blog/app-de-control-horario-para-pequenas-empresas", "/servicios/pequenas-empresas/cumple-la-ley-verifactu-y-registro-de-jornada"]),

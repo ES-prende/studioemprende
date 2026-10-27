@@ -4,6 +4,48 @@
 from blog_formacion import _resp
 
 ARTICULOS = [
+("software-de-gestion-modular-con-automatizaciones", "Software de gestión modular: automatiza tu empresa en lenguaje natural",
+ "Qué es un software de gestión modular, en qué se diferencia de uno cerrado y cómo crear tus propias automatizaciones escribiéndolas en lenguaje normal, sin programar.",
+ "27 oct 2026", "Software", "software-de-gestion", _resp(
+ "Un software de gestión modular es un programa para llevar clientes, ventas, facturas, equipo o almacén en el que activas solo los módulos que necesitas y añades otros cuando creces. En nuestros CRM y programas de gestión, además, la propia empresa crea sus automatizaciones internas escribiéndolas en lenguaje normal, por ejemplo «cuando un presupuesto lleve 7 días sin respuesta, avisa al comercial», sin programar ni depender de un técnico.") + """
+<p>«Software» es una de las palabras más buscadas por quien empieza a digitalizar su negocio. Si lo que necesitas es la definición y los tipos que existen, la tienes en la guía <a href="/guias/que-es-un-software">qué es un software, con ejemplos</a>. Este artículo va un paso más allá: qué software necesita una empresa para gestionarse y por qué el modelo modular, con automatizaciones que creas tú mismo, cambia la forma de trabajar.</p>
+<h2>Qué es un software de gestión</h2>
+<p>Es el programa donde vive el día a día de la empresa: los clientes y su historial (CRM), los presupuestos, las facturas, los cobros, el equipo, la agenda o el almacén. Sustituye al Excel, a las libretas y a los mensajes sueltos de WhatsApp por un único sitio donde todo está conectado. Si quieres ampliar, tienes la guía <a href="/guias/que-es-un-software-de-gestion">qué es un software de gestión</a>.</p>
+<h2>Software cerrado o software modular</h2>
+<table><thead><tr><th></th><th>Software cerrado (todo en uno rígido)</th><th>Software modular</th></tr></thead><tbody>
+<tr><td>Qué incluye</td><td>Un paquete fijo de funciones, las uses o no</td><td>Solo los módulos que activas: CRM, facturación, agenda, fichaje, almacén…</td></tr>
+<tr><td>Cuando creces</td><td>Cambias de plan o de programa</td><td>Añades el módulo que te falta y sigue todo conectado</td></tr>
+<tr><td>Forma de trabajar</td><td>Te adaptas tú al programa</td><td>El programa se adapta a tu proceso</td></tr>
+<tr><td>Automatizaciones</td><td>Las que trae de serie, o las que programe un técnico</td><td>Las tuyas, escritas en lenguaje natural por tu equipo</td></tr>
+</tbody></table>
+<h2>Automatizaciones internas escritas en lenguaje natural</h2>
+<p>En nuestros CRM y programas de gestión, cada empresa puede añadir sus propias automatizaciones internas sin programar. En lugar de configurar reglas en menús complicados, el responsable escribe lo que quiere que pase, tal como se lo diría a un compañero:</p>
+<table><thead><tr><th>Lo que escribe la empresa</th><th>Lo que hace el programa</th></tr></thead><tbody>
+<tr><td>«Cuando un presupuesto lleve 7 días sin respuesta, avisa al comercial que lo envió.»</td><td>Revisa cada día los presupuestos pendientes y crea una tarea para su comercial.</td></tr>
+<tr><td>«Si una factura vence mañana y no está cobrada, manda un recordatorio al cliente por correo.»</td><td>Envía el recordatorio con la factura adjunta y lo anota en la ficha del cliente.</td></tr>
+<tr><td>«Cuando entre un contacto desde la web, asígnalo al comercial de su provincia.»</td><td>Reparte cada contacto nuevo según la provincia y avisa a quien le toca.</td></tr>
+<tr><td>«Los lunes a las 9, envíame un resumen de ventas y cobros de la semana.»</td><td>Prepara el resumen con los datos reales y lo manda a la hora indicada.</td></tr>
+</tbody></table>
+<h3>Cómo funciona, paso a paso</h3>
+<ol>
+<li><b>Lo escribes</b> en lenguaje normal, dentro del propio programa.</li>
+<li><b>El programa lo traduce a una regla</b> y te la enseña: qué la dispara, qué comprueba y qué hace.</li>
+<li><b>La revisas y la activas.</b> Nada se pone en marcha sin tu aprobación.</li>
+<li><b>Queda registrada:</b> puedes ver cuándo se ha ejecutado, pausarla, cambiarla o borrarla cuando quieras.</li>
+</ol>
+<p>Las automatizaciones respetan los permisos de cada usuario: un comercial no puede crear una regla que toque datos que no ve. Y para procesos más complejos, como atender por WhatsApp o preparar presupuestos, está <a href="/servicios/pix/">PIX, nuestro agente de IA</a>, que trabaja dentro del mismo programa.</p>
+<h2>Ejemplo: una empresa de instalaciones con 6 técnicos</h2>
+<p>Una empresa de climatización llevaba los avisos en una libreta y los presupuestos en el correo. Empezó con dos módulos, CRM y facturación. En la primera semana, la gerente escribió tres automatizaciones: avisar de los presupuestos sin respuesta a los 5 días, recordar las facturas a punto de vencer y repartir los avisos nuevos según la zona de cada técnico. A los tres meses añadió el módulo de partes de trabajo con firma en el móvil, sin cambiar de programa ni rehacer lo anterior.</p>
+<h2>Qué mirar antes de elegir un software de gestión</h2>
+<ul>
+<li><b>Que sea modular</b>: que puedas empezar con poco y añadir módulos sin migrar a otro programa.</li>
+<li><b>Que tú puedas automatizar</b> sin depender de un técnico para cada cambio.</li>
+<li><b>Que cumpla la normativa</b> que te afecta: Verifactu para facturar y registro de jornada si tienes equipo.</li>
+<li><b>Que los datos sean tuyos</b> y puedas exportarlos cuando quieras.</li>
+<li><b>Que haya alguien al otro lado</b> para la migración, la formación y el soporte.</li>
+</ul>
+<p>Puedes ver cómo es por dentro un CRM sectorial hecho con este modelo en el <a href="/casos/contratalux">caso ContrataLux</a>, y todos los módulos disponibles en <a href="/servicios/software-de-gestion/">software de gestión modular a medida</a>.</p>
+"""),
 ("como-calcular-el-credito-de-formacion-fundae", "Cómo calcular el crédito de formación FUNDAE de tu empresa",
  "Cómo saber cuánto crédito de formación bonificada tiene tu empresa en FUNDAE: la fórmula, los porcentajes según plantilla, el mínimo de 420 € y un ejemplo paso a paso.",
  "26 oct 2026", "Formación", "formacion-ia", _resp(
@@ -85,6 +127,12 @@ ARTICULOS = [
 ]
 
 FAQS = {
+ "software-de-gestion-modular-con-automatizaciones": [
+  ("¿Qué diferencia hay entre un software de gestión y un CRM?", "El CRM es la parte que gestiona clientes, oportunidades y seguimiento comercial. El software de gestión es más amplio: suma facturación, cobros, equipo, agenda o almacén. En un programa modular, el CRM es uno de los módulos."),
+  ("¿Necesito saber programar para crear automatizaciones?", "No. Escribes en lenguaje normal lo que quieres que pase, el programa te enseña la regla que ha entendido y tú la apruebas antes de activarla."),
+  ("¿Qué pasa si una automatización no hace lo que esperaba?", "La puedes pausar, cambiar o borrar en cualquier momento. Cada ejecución queda registrada, así que se ve qué ha hecho y cuándo."),
+  ("¿Puedo empezar solo con el CRM y añadir facturación después?", "Sí. Es la idea del modelo modular: empiezas con lo que necesitas hoy y activas otros módulos cuando los necesites, con los datos ya conectados."),
+ ],
  "como-calcular-el-credito-de-formacion-fundae": [
   ("¿Cómo sé cuánto crédito FUNDAE tiene mi empresa?", "Entrando en la aplicación de Formación Programada de FUNDAE con certificado digital, o pidiéndoselo a tu gestoría. El cálculo aproximado es lo cotizado por formación profesional el año anterior por el porcentaje de tu tramo de plantilla."),
   ("¿Un autónomo sin empleados tiene crédito de formación?", "No. El crédito va ligado a la cotización por formación profesional de los trabajadores por cuenta ajena. Con al menos un empleado, la empresa tiene un mínimo de 420 € al año."),
@@ -99,6 +147,6 @@ FAQS = {
  ],
 }
 
-ALT = {"como-calcular-el-credito-de-formacion-fundae": "Ilustración con la fórmula del crédito de formación: cotización por porcentaje según plantilla", "cuanto-cuesta-un-crm-para-autonomos": "Ilustración con tres etiquetas de precio de CRM: gratis, suscripción y a medida"}
+ALT = {"software-de-gestion-modular-con-automatizaciones": "Ilustración de un software de gestión modular con una automatización escrita en lenguaje natural", "como-calcular-el-credito-de-formacion-fundae": "Ilustración con la fórmula del crédito de formación: cotización por porcentaje según plantilla", "cuanto-cuesta-un-crm-para-autonomos": "Ilustración con tres etiquetas de precio de CRM: gratis, suscripción y a medida"}
 
-RESUMEN = {"como-calcular-el-credito-de-formacion-fundae": "Crédito FUNDAE = lo cotizado por formación profesional el año anterior × el porcentaje de tu tramo (100 %, 75 %, 60 % o 50 %). De 1 a 5 trabajadores, mínimo de 420 € al año.", "cuanto-cuesta-un-crm-para-autonomos": "Un CRM para autónomos puede ser gratuito, de suscripción por usuario y mes o implantado a medida. Compáralos a 24 meses sumando cuotas, usuarios, migración, formación e integraciones, no solo por la cuota."}
+RESUMEN = {"software-de-gestion-modular-con-automatizaciones": "Un software de gestión modular te deja activar solo los módulos que usas. En nuestros CRM, la propia empresa crea sus automatizaciones escribiéndolas en lenguaje normal y las aprueba antes de activarlas.", "como-calcular-el-credito-de-formacion-fundae": "Crédito FUNDAE = lo cotizado por formación profesional el año anterior × el porcentaje de tu tramo (100 %, 75 %, 60 % o 50 %). De 1 a 5 trabajadores, mínimo de 420 € al año.", "cuanto-cuesta-un-crm-para-autonomos": "Un CRM para autónomos puede ser gratuito, de suscripción por usuario y mes o implantado a medida. Compáralos a 24 meses sumando cuotas, usuarios, migración, formación e integraciones, no solo por la cuota."}

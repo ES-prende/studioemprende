@@ -10,7 +10,7 @@ TEMAS = [
  ("gestion-y-crm", "Gestión, CRM y programas para tu negocio",
   "Artículos sobre CRM, ERP, programas de gestión y cómo dejar el Excel: qué elegir, cuánto cuesta y cómo implantarlo.",
   "Si llevas clientes en una libreta, presupuestos en el correo y facturas en Excel, estos artículos son para ti. Explican qué es un CRM y un ERP sin tecnicismos, cuánto cuestan de verdad, cómo saber cuándo te hace falta uno y cómo pasar tus datos sin perder nada ni parar el negocio.",
-  ["cuanto-cuesta-un-crm-para-autonomos", "crm-para-autonomos", "crm-para-empresas-de-servicios", "que-es-un-erp-y-cuando-lo-necesito", "como-dejar-de-usar-excel-en-mi-empresa", "software-todo-en-uno-para-pequenas-empresas", "app-de-control-horario-para-pequenas-empresas", "app-movil-para-mi-negocio"],
+  ["software-de-gestion-modular-con-automatizaciones", "cuanto-cuesta-un-crm-para-autonomos", "crm-para-autonomos", "crm-para-empresas-de-servicios", "que-es-un-erp-y-cuando-lo-necesito", "como-dejar-de-usar-excel-en-mi-empresa", "software-todo-en-uno-para-pequenas-empresas", "app-de-control-horario-para-pequenas-empresas", "app-movil-para-mi-negocio"],
   [("Programa de gestión", "servicios/software-de-gestion/index.html"), ("ERP para pymes", "servicios/erp-para-pymes/index.html"), ("Migraciones", "servicios/migraciones-e-integraciones/index.html")]),
  ("normativas-y-cumplimiento", "Normativas que afectan a tu negocio",
   "Verifactu, fichaje digital, AI Act, APPCC y registro de viajeros: qué dicen las normas, a quién afectan y cómo cumplirlas.",

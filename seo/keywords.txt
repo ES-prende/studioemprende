@@ -303,3 +303,4 @@
 /casos/|casos de éxito de software y webs|
 /casos/contratalux|caso de éxito crm para asesorías energéticas|
 /blog/como-calcular-el-credito-de-formacion-fundae|calcular crédito fundae|
+/blog/software-de-gestion-modular-con-automatizaciones|software de gestión modular|
