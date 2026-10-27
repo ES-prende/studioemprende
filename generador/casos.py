@@ -58,7 +58,7 @@ FAQS = [
     ("¿Los datos de las capturas son de clientes reales?", "No. Todas las capturas y el vídeo usan datos de demostración, con nombres como «Demo 11 Cliente», para no exponer información de nadie."),
 ]
 
-VIDEO = {"archivo": "contratalux-demo.mp4", "poster": "contratalux-demo-poster.webp", "duracion": "PT20S", "subido": "2026-10-13",
+VIDEO = {"archivo": "contratalux-demo.mp4", "poster": "contratalux-demo-poster.webp", "duracion": "PT20S", "subido": "2026-10-13T12:00:00+02:00",
          "nombre": "Recorrido por el panel del CRM de ContrataLux",
          "desc": "Veinte segundos por el panel de dirección del programa de gestión de ContrataLux: avisos, contratos por estado, mix de cartera y actividad del equipo. Datos de demostración."}
 
