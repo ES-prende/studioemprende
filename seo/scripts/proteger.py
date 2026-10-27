@@ -18,6 +18,8 @@ def archivo(url):
 
 
 urls = [l.strip() for l in open(os.path.join(SEO, "anexo-a-indexadas.txt")) if l.strip()]
+# Indexadas después del 16/10: se protegen en su versión publicada
+urls += [l.strip() for l in open(os.path.join(SEO, "indexadas-nuevas.txt")) if l.strip() and not l.startswith("#")]
 actual = {}
 for u in urls:
     f = os.path.join(WEB, archivo(u))
@@ -35,4 +37,4 @@ if cambiadas:
     for u in cambiadas:
         print("  ", u)
     sys.exit(1)
-print("OK: las %d páginas del Anexo A siguen idénticas." % len(urls))
+print("OK: las %d páginas indexadas protegidas siguen idénticas." % len(urls))

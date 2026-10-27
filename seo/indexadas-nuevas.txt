@@ -1,0 +1,10 @@
+# Páginas que han entrado en el índice después del 16/10 (confirmadas por impresiones en Search Console).
+# Se protegen en su versión publicada el 26/10. Ampliar con la exportación de «páginas indexadas».
+/guias/ayudas-para-jovenes-emprendedores
+/guias/como-emprender-un-negocio
+/guias/cuanto-cuesta-una-pagina-web
+/guias/desarrollo-de-software-a-medida
+/servicios/alojamientos-y-domotica/envio-automatico-a-ses-hospedajes
+/servicios/software-especializado/plataforma-de-formacion-interna-lms
+/blog/agente-de-ia-para-whatsapp
+/blog/plan-de-formacion-para-empresas
