@@ -5,6 +5,11 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# Un despliegue cada vez: si llega otro push mientras se sube, espera a que termine (no se solapan)
+concurrency:
+  group: despliegue-ionos
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
