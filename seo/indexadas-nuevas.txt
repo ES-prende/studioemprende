@@ -8,3 +8,26 @@
 /servicios/software-especializado/plataforma-de-formacion-interna-lms
 /blog/agente-de-ia-para-whatsapp
 /blog/plan-de-formacion-para-empresas
+# Con impresiones en Search Console a 6/11/2026 (rendimiento de los últimos 3 meses). Protegidas en su versión publicada el 6/11.
+/guias/tipos-de-emprendimiento
+/guias/emprendedor-vs-empresario
+/blog/como-calcular-el-credito-de-formacion-fundae
+/blog/cuanto-cuesta-un-crm-para-autonomos
+/casos/
+/temas/gestion-y-crm
+/servicios/startups-e-inversores/valoracion-de-proyectos-con-ia
+/sobre-nosotros
+/blog/app-de-control-horario-para-pequenas-empresas
+/servicios/migraciones-e-integraciones/migracion-desde-holded-clientify-hubspot-y-otros
+/temas/emprender-y-crecer
+/servicios/pix/
+/casos/contratalux
+/servicios/pix/agentes-de-voz
+/servicios/startups-e-inversores/preparacion-de-due-diligence
+/servicios/erp-para-pymes/contabilidad-o-conexion-con-tu-asesoria
+/blog/que-es-verifactu-y-cuando-me-afecta
+/servicios/startups-e-inversores/mvp-en-6-12-semanas
+/servicios/alojamientos-y-domotica/asistente-del-huesped-por-whatsapp-24-7
+/partners
+/temas/formacion-para-empresas
+/temas/inteligencia-artificial

@@ -1108,6 +1108,8 @@ AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application
 ExpiresActive On
 ExpiresByType text/css "access plus 7 days"
 ExpiresByType application/javascript "access plus 7 days"
+ExpiresByType text/javascript "access plus 7 days"
+ExpiresByType application/x-javascript "access plus 7 days"
 ExpiresByType image/svg+xml "access plus 30 days"
 ExpiresByType image/png "access plus 30 days"\nExpiresByType font/woff2 "access plus 1 year"
 ExpiresByType image/jpeg "access plus 1 year"
