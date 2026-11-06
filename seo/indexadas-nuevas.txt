@@ -31,3 +31,7 @@
 /partners
 /temas/formacion-para-empresas
 /temas/inteligencia-artificial
+# Indexadas según la inspección de URL del 6/11/2026
+/servicios/pix/inteligencia-conectada
+/servicios/pix/casos-por-sector
+/temas/
