@@ -41,4 +41,4 @@ La siguiente tanda empieza siempre por **Pendientes**, y después sigue el orden
 | 07/11/2026 | /servicios/fichador/geolocalizacion-con-aviso-al-trabajador |
 | 07/11/2026 | /servicios/fichador/horas-extra |
 
-Las del 6/11 también se enviaron a Bing por IndexNow, igual que las 9 primeras del 7/11.
+También se enviaron a Bing por IndexNow el 6/11: /servicios/apps-moviles/ y las 9 primeras del 7/11.
