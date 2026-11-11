@@ -5,11 +5,7 @@ La siguiente tanda empieza siempre por **Pendientes**, y después sigue el orden
 
 ## Pendientes (no indexadas, sin pedir)
 
-- [ ] https://studioemprende.com/servicios/fichador/informe-para-inspeccion-en-un-clic
-- [ ] https://studioemprende.com/servicios/fichador/modo-sin-conexion-para-obras
-- [ ] https://studioemprende.com/servicios/fichador/movil-tablet-web-o-tarjeta-nfc
-- [ ] https://studioemprende.com/servicios/fichador/pausas-y-descansos
-- [ ] https://studioemprende.com/servicios/fichador/prueba-gratuita
+Ninguna.
 
 ## Pedidas
 
@@ -40,5 +36,16 @@ La siguiente tanda empieza siempre por **Pendientes**, y después sigue el orden
 | 07/11/2026 | /servicios/fichador/fichaje-por-whatsapp-o-con-pix |
 | 07/11/2026 | /servicios/fichador/geolocalizacion-con-aviso-al-trabajador |
 | 07/11/2026 | /servicios/fichador/horas-extra |
+| 11/11/2026 | /servicios/fichador/informe-para-inspeccion-en-un-clic |
+| 11/11/2026 | /servicios/fichador/modo-sin-conexion-para-obras |
+| 11/11/2026 | /servicios/fichador/movil-tablet-web-o-tarjeta-nfc |
+| 11/11/2026 | /servicios/fichador/pausas-y-descansos |
+| 11/11/2026 | /servicios/fichador/prueba-gratuita |
+| 11/11/2026 | /servicios/fichador/registros-inalterables-con-historial |
+| 11/11/2026 | /servicios/fichador/sin-permanencia |
+| 11/11/2026 | /servicios/fichador/teletrabajo-y-varios-centros |
+| 11/11/2026 | /servicios/fichador/turnos-y-cuadrantes |
+| 11/11/2026 | /servicios/fichador/vacaciones-y-ausencias |
 
 También se enviaron a Bing por IndexNow el 6/11: /servicios/apps-moviles/ y las 9 primeras del 7/11.
+El 11/11, las 10 del día también se enviaron a Bing por IndexNow.
