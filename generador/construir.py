@@ -46,6 +46,7 @@ shutil.copy(os.path.join(AQUI, "estilos.css"), OUT + "/assets/css/estilos.css")
 shutil.copytree(os.path.join(AQUI, "fonts"), OUT + "/assets/fonts")
 # Casos de éxito: estilos, script y medios propios (no se cargan en el resto de páginas)
 shutil.copy(os.path.join(AQUI, "casos.css"), OUT + "/assets/css/casos.css")
+shutil.copy(os.path.join(AQUI, "landings.css"), OUT + "/assets/css/landings.css")
 shutil.copytree(os.path.join(AQUI, "casos_media"), OUT + "/assets/img/casos")
 for src, dst in [("horizontal/studio-emprende-horizontal-color.svg", "logo-horizontal.svg"),
                  ("horizontal/studio-emprende-horizontal-blanco.svg", "logo-horizontal-blanco.svg"),
@@ -822,7 +823,7 @@ pagina("sobre-nosotros.html", "Sobre nosotros · Studio Emprende", "Studio Empre
 pagina("partners.html", PT.TITULO + " · Studio Emprende", PT.META, PT.html(migas("", ("Partners", None)), _faq_html(PT.FAQS), DOM) + cta(""), faqs=PT.FAQS)
 # ---------- LANDINGS DE CAPTACIÓN (dolores + formulario) ----------
 for _L in LD.LANDINGS:
-    pagina(_L["slug"] + ".html", _L["titulo"], _L["meta"], LD.html(_L, migas("", (_L["miga"], None)), DOM), faqs=_L["faqs"])
+    pagina(_L["slug"] + ".html", _L["titulo"], _L["meta"], LD.html(_L, migas("", (_L["miga"], None)), DOM), faqs=_L["faqs"], css="landings.css")
 
 # ---------- CASOS DE ÉXITO (/casos/) ----------
 open(OUT + "/assets/js/casos.js", "w").write(open(os.path.join(AQUI, "casos.js")).read())

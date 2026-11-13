@@ -1,0 +1,44 @@
+/* Landings de captación: estilos propios, solo se cargan en estas páginas */
+.lp .page-hero{position:relative;overflow:hidden;background:var(--noche);color:#E9E4E0;border-bottom:0;padding:84px 0 92px}
+.lp .page-hero::before{content:"";position:absolute;inset:-40%;background:radial-gradient(closest-side at 22% 30%,rgba(122,38,56,.55),transparent 70%),radial-gradient(closest-side at 80% 70%,rgba(201,169,97,.28),transparent 70%);animation:lp-flota 18s ease-in-out infinite alternate;pointer-events:none}
+.lp .page-hero .w{position:relative}
+.lp .page-hero .migas,.lp .page-hero .migas a{color:#B9AFA9}
+.lp .page-hero .kicker{color:var(--ocre-claro)}
+.lp .page-hero h1{color:#fff;max-width:16ch;font-size:clamp(40px,6.4vw,76px)}
+.lp .page-hero h1 .acento{background:linear-gradient(90deg,#E7C27A,#D9677F);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lp .page-hero .lead{color:#D6CEC8;max-width:640px;font-size:20px}
+.lp-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.lp-chips span{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);border-radius:999px;padding:7px 14px;font-size:14px;color:#F1ECE8}
+.lp-chips span::before{content:"✓ ";color:var(--ocre-claro)}
+.lp .page-hero .btn-p{background:linear-gradient(90deg,var(--burdeos),#A23A50);box-shadow:0 10px 30px rgba(162,58,80,.45);padding:16px 28px;font-size:17px}
+.lp .page-hero .btn-p:hover{transform:translateY(-2px)}
+@keyframes lp-flota{to{transform:translate(6%,-4%) scale(1.08)}}
+/* Dolores */
+.lp-dolores .tarjeta{position:relative;border-left:4px solid var(--burdeos);padding-top:34px;transition:transform .2s,box-shadow .2s}
+.lp-dolores .tarjeta::before{content:"“";position:absolute;top:-6px;left:18px;font-family:var(--serif);font-size:64px;line-height:1;color:var(--ocre-claro)}
+.lp-dolores .tarjeta:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(31,26,28,.10)}
+.lp-dolores .tarjeta h3{font-size:20px}
+/* Incluye */
+.lp-incluye .rejilla{counter-reset:inc}
+.lp-incluye .tarjeta{counter-increment:inc;transition:transform .2s,box-shadow .2s,border-color .2s}
+.lp-incluye .tarjeta::before{content:counter(inc,decimal-leading-zero);display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--burdeos),var(--ocre));color:#fff;font-weight:500;font-size:15px}
+.lp-incluye .tarjeta:hover{transform:translateY(-4px);border-color:var(--ocre-claro);box-shadow:0 16px 36px rgba(31,26,28,.10)}
+/* Fases: línea de tiempo */
+.lp-fases .rejilla{position:relative;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.lp-fases .tarjeta{border-top:4px solid var(--burdeos)}
+.lp-fases .tarjeta .kicker{font-size:13px}
+/* Ferrari */
+.lp-noes{background:linear-gradient(120deg,#1F1A1C 0%,#3B1A24 100%)}
+.lp-noes h2 .tachado{text-decoration:line-through;text-decoration-color:var(--ocre-claro);text-decoration-thickness:4px}
+.lp-noes .tarjeta:last-child{background:linear-gradient(135deg,var(--burdeos),#6B2A2E)!important;border-color:transparent!important}
+.lp-noes .tarjeta:last-child p{color:#fff!important;font-weight:500}
+/* Formulario */
+.lp #formulario .lateral-main{background:#fff;border:1px solid var(--borde);border-radius:20px;padding:32px;box-shadow:0 20px 50px rgba(31,26,28,.08)}
+.lp #formulario .btn-p{width:100%;padding:16px;font-size:17px}
+/* Botón fijo en móvil */
+.lp-fijo{display:none}
+@media (max-width:760px){.lp-fijo{display:block;position:fixed;left:12px;right:84px;bottom:14px;z-index:40;text-align:center;padding:14px;border-radius:12px;background:var(--burdeos);color:#fff;text-decoration:none;font-weight:500;box-shadow:0 10px 30px rgba(0,0,0,.25);transition:opacity .2s}.lp-fijo.oculto{opacity:0;pointer-events:none}.lp #formulario .lateral-main{padding:22px}}
+/* Aparición al hacer scroll */
+.lp .rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.lp .rv.si{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.lp .page-hero::before{animation:none}.lp .rv{opacity:1;transform:none;transition:none}.lp-dolores .tarjeta,.lp-incluye .tarjeta{transition:none}}

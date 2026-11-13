@@ -1,6 +1,7 @@
 # Landings de captación (desde el 13/11/2026). Páginas nuevas en la raíz: hablan solo de los dolores de la persona
 # y terminan en un formulario. Público: quien quiere montar su propio negocio vendiendo a empresas las soluciones
-# de Studio Emprende (agencia de IA; programas de gestión con IA).
+# de Studio Emprende. Son dos negocios distintos y no se mezclan: agencia de IA (asistentes, agentes, automatizaciones)
+# y venta de programas de gestión a medida. Sin enlaces cruzados entre ellas.
 # Reglas del texto: sin precios, sin promesas de ingresos ni plazos, sin cifras ni testimonios inventados,
 # sin condiciones económicas (no están definidas) y no se presenta como gestoría ni asesoría: se ayuda a encontrarlas.
 import html as _h
@@ -24,24 +25,27 @@ def html(L, migas_html, dom):
     if preguntas: preguntas = '<div class="dos">%s</div>' % preguntas
     extra = ""
     if L.get("incluye"):
-        extra += ('<section class="sec"><div class="w"><div class="cab"><p class="kicker">Qué incluye</p><h2>Todo lo que te damos para arrancar</h2></div><div class="rejilla">%s</div></div></section>'
+        extra += ('<section class="sec lp-incluye"><div class="w"><div class="cab"><p class="kicker">Qué incluye</p><h2>Todo lo que te damos para arrancar</h2></div><div class="rejilla">%s</div></div></section>'
                   % "".join('<div class="tarjeta"><h3>%s</h3><p>%s</p></div>' % (_e(a), _e(b)) for a, b in L["incluye"]))
     if L.get("fases"):
-        extra += ('<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Cómo es el programa</p><h2>%s</h2><p class="lead" style="margin-top:8px">%s</p></div><div class="rejilla">%s</div></div></section>'
+        extra += ('<section class="sec sec-suave lp-fases"><div class="w"><div class="cab"><p class="kicker">Cómo es el programa</p><h2>%s</h2><p class="lead" style="margin-top:8px">%s</p></div><div class="rejilla">%s</div></div></section>'
                   % (_e(L["fases_titulo"]), _e(L["fases_intro"]), "".join('<div class="tarjeta"><p class="kicker" style="margin:0">Fase %d</p><h3>%s</h3><p>%s</p></div>' % (i + 1, _e(a), _e(b)) for i, (a, b) in enumerate(L["fases"]))))
     if L.get("profesor"):
         extra += ('<section class="sec"><div class="w lateral"><div class="lateral-main"><div class="cab" style="margin-bottom:16px"><p class="kicker">Quién te forma</p><h2>%s</h2></div><p class="lead">%s</p></div>'
                   '<aside class="lateral-aside"><h2 class="h3">Para quién es</h2>%s<h2 class="h3" style="margin-top:10px">Para quién no es</h2>%s</aside></div></section>'
                   % (_e(L["profesor"][0]), _e(L["profesor"][1]), "".join('<p style="color:#C9C1BB">✓ %s</p>' % _e(x) for x in L["para_si"]), "".join('<p style="color:#C9C1BB">✗ %s</p>' % _e(x) for x in L["para_no"])))
         if L.get("no_es"):
-            extra += ('<section class="sec sec-noche"><div class="w"><div class="cab"><p class="kicker">Antes de seguir</p><h2>%s</h2></div><div class="rejilla">%s</div></div></section>'
-                      % (_e(L["no_es"][0]), "".join('<div class="tarjeta" style="background:#2B2427;border-color:#3A3134"><p style="color:#E9E4E0">%s</p></div>' % _e(x) for x in L["no_es"][1])))
+            extra += ('<section class="sec sec-noche lp-noes"><div class="w"><div class="cab"><p class="kicker">Antes de seguir</p><h2>%s</h2></div><div class="rejilla">%s</div></div></section>'
+                      % (_e(L["no_es"][0]).replace("Ferrari", '<span class="tachado">Ferrari</span>'), "".join('<div class="tarjeta" style="background:#2B2427;border-color:#3A3134"><p style="color:#E9E4E0">%s</p></div>' % _e(x) for x in L["no_es"][1])))
         extra += '<section class="sec"><div class="w"><div class="botones"><a class="btn btn-p" href="#formulario">%s</a></div></div></section>' % _e(L["boton_hero"])
-    return """<section class="page-hero"><div class="w">{m}<p class="kicker">{kicker}</p><h1>{h1}</h1>
+    _h1 = _e(L["h1"]); _k = _h1.find(". ")
+    h1 = _h1[:_k + 1] + ' <span class="acento">' + _h1[_k + 2:] + "</span>" if _k > 0 else _h1
+    chips = '<div class="lp-chips"><span>Formación online</span><span>Profesor con certificado de docencia</span><span>Equipo comercial</span><span>Soporte continuo</span></div>'
+    return """<div class="lp"><section class="page-hero"><div class="w">{m}<p class="kicker">{kicker}</p><h1>{h1_html}</h1>
 <p class="lead">{entradilla}</p>
-<div class="botones" style="margin-top:24px"><a class="btn btn-p" href="#formulario">{boton_hero}</a></div></div></section>
+<div class="botones" style="margin-top:24px"><a class="btn btn-p" href="#formulario">{boton_hero}</a></div>{chips}</div></section>
 
-<section class="sec"><div class="w"><div class="cab"><h2>{titulo_dolores}</h2></div>
+<section class="sec lp-dolores"><div class="w"><div class="cab"><h2>{titulo_dolores}</h2></div>
 <div class="rejilla">{dolores}</div></div></section>
 
 <section class="sec sec-noche"><div class="w"><div class="cab" style="margin-bottom:0"><h2>{puente_titulo}</h2><p class="lead" style="margin-top:10px">{puente}</p>
@@ -77,7 +81,11 @@ def html(L, migas_html, dom):
 <p style="color:#C9C1BB">3. Hablamos de tu caso por videollamada o por teléfono.</p></aside>
 </div></section>
 {faq}{otra}
-<script>(function(){{var q=new URLSearchParams(location.search);["utm_source","utm_medium","utm_campaign","utm_content"].forEach(function(k){{var v=q.get(k),i=document.querySelector('form[data-contacto] input[name="'+k+'"]');if(v&&i)i.value=v.slice(0,100)}})}})();</script>""".format(m=migas_html, dom=dom, dolores=dolores, otra=otra, extra=extra, preguntas=preguntas, opciones=opciones, faq=faq,
+<a class="lp-fijo" href="#formulario">{boton_hero}</a></div>
+<script>(function(){{var q=new URLSearchParams(location.search);["utm_source","utm_medium","utm_campaign","utm_content"].forEach(function(k){{var v=q.get(k),i=document.querySelector('form[data-contacto] input[name="'+k+'"]');if(v&&i)i.value=v.slice(0,100)}});
+var rd=matchMedia('(prefers-reduced-motion: reduce)').matches;var els=document.querySelectorAll('.lp .tarjeta,.lp .cab,.lp .faq');
+if(!rd&&'IntersectionObserver' in window){{els.forEach(function(e){{e.classList.add('rv')}});var io=new IntersectionObserver(function(es){{es.forEach(function(x){{if(x.isIntersecting){{x.target.classList.add('si');io.unobserve(x.target)}}}})}},{{rootMargin:'0px 0px -8% 0px'}});els.forEach(function(e){{io.observe(e)}})}}
+var f=document.getElementById('formulario'),b=document.querySelector('.lp-fijo');if(f&&b&&'IntersectionObserver' in window){{new IntersectionObserver(function(es){{b.classList.toggle('oculto',es[0].isIntersecting)}}).observe(f)}}}})();</script>""".format(h1_html=h1, chips=chips, m=migas_html, dom=dom, dolores=dolores, otra=otra, extra=extra, preguntas=preguntas, opciones=opciones, faq=faq,
                 **{k: _e(L[k]) for k in ("kicker", "h1", "entradilla", "boton_hero", "titulo_dolores", "puente_titulo", "puente", "form_titulo",
                                          "form_intro", "asunto", "origen", "etiqueta_punto", "etiqueta_texto", "boton")})
 
@@ -107,6 +115,8 @@ _FASES = [
 ]
 _PROFESOR = ("Un profesor con certificado de docencia, asesores y un equipo que desarrolla software cada día",
              "La formación la imparte un profesor con certificado de docencia. Tendrás reuniones uno a uno con asesores en fiscalidad y ayudas, y charlas de economía con una persona experta. Detrás está el equipo de Studio Emprende, que desarrolla las herramientas que vas a vender. No aprendes de alguien que solo vende cursos, sino de quien hace las herramientas.")
+_PROFESOR_IA = (_PROFESOR[0].replace("desarrolla software", "desarrolla asistentes de IA"), _PROFESOR[1].replace("las herramientas que vas a vender", "los asistentes y las automatizaciones que vas a vender"))
+_PROFESOR_SW = (_PROFESOR[0], _PROFESOR[1].replace("las herramientas que vas a vender", "los programas de gestión que vas a vender"))
 _FASES_INTRO = "Formación online y acompañamiento en todo tu inicio, por fases. Te contamos la duración y el calendario en la primera conversación."
 _NO_ES = ("Si ya quieres tu Ferrari, este no es tu sitio", [
  "Si buscas hacerte rico en 90 días, aquí no lo vas a encontrar. No prometemos ingresos.",
@@ -122,7 +132,7 @@ _PREGUNTAS = [
 ]
 
 LANDINGS = [
- {"slug": "montar-agencia-de-ia", "no_es": _NO_ES, "preguntas": _PREGUNTAS, "incluye": _INCLUYE, "fases": _FASES, "fases_titulo": 'De cero a tu agencia de IA, paso a paso', "fases_intro": _FASES_INTRO, "profesor": _PROFESOR, "para_si": ['Quieres montar tu propia agencia de IA y no sabes por dónde empezar', 'Has hecho cursos o visto vídeos y te falta saber vender', 'Puedes dedicarle tiempo de verdad'], "para_no": ['Buscas dinero rápido sin trabajar', 'No quieres hablar con empresas'], "miga": "Montar tu agencia de IA",
+ {"slug": "montar-agencia-de-ia", "no_es": _NO_ES, "preguntas": _PREGUNTAS, "incluye": _INCLUYE, "fases": _FASES, "fases_titulo": 'De cero a tu agencia de IA, paso a paso', "fases_intro": _FASES_INTRO, "profesor": _PROFESOR_IA, "para_si": ['Quieres montar tu propia agencia de IA y no sabes por dónde empezar', 'Has hecho cursos o visto vídeos y te falta saber vender', 'Puedes dedicarle tiempo de verdad'], "para_no": ['Buscas dinero rápido sin trabajar', 'No quieres hablar con empresas'], "miga": "Montar tu agencia de IA",
   "titulo": "Montar una agencia de IA: por dónde empezar a vender",
   "meta": "Meses de tutoriales de IA y ningún cliente. Si no sabes qué vender ni a quién, cuéntanos en qué punto estás. La primera conversación es gratuita.",
   "kicker": "Para quien quiere montar su agencia de IA",
@@ -138,9 +148,8 @@ LANDINGS = [
    ("Me da miedo que algo falle delante del cliente.", "Que el asistente se invente una respuesta o que algo deje de funcionar. Quien da la cara soy yo, y no tengo a nadie al lado a quien preguntar."),
    ("Y de papeles no sé nada.", "Si tengo que darme de alta de autónomo antes de vender, qué contrato firmo, qué pasa con los datos de los clientes de mi cliente."),
   ],
-  "otra": ("¿Lo tuyo son más los programas de gestión?", "vender-programas-de-gestion-con-ia.html", "Tenemos otra página para ti →"),
   "puente_titulo": "Te formamos y te acompañamos en todo tu inicio",
-  "puente": ("En Studio Emprende hacemos los asistentes de IA y los programas de gestión; tú los vendes y los pones en marcha en las empresas, con tu propia empresa. "
+  "puente": ("En Studio Emprende desarrollamos asistentes de IA, agentes y automatizaciones; tú los vendes y los pones en marcha en las empresas, con tu propia agencia. "
              + _PUENTE_FIN + "No prometemos ingresos: la empresa la levantas tú, pero no a ciegas."),
   "form_titulo": "Cuéntanos en qué punto estás", "form_intro": _FORM_INTRO,
   "asunto": "Landing agencia de IA: nuevo contacto", "origen": "landing-agencia-de-ia",
@@ -155,7 +164,7 @@ LANDINGS = [
    ("¿Cuánto cuesta y qué condiciones tiene montar la agencia con vosotros?", "Depende de tu caso. Te explicamos las condiciones con claridad en la primera conversación, antes de que te comprometas a nada."),
    ("¿Sois gestoría o asesoría?", "No. Te damos charlas y reuniones uno a uno con asesores sobre fiscalidad y ayudas, y te ayudamos a encontrar la gestoría, la asesoría o el coworking que te encaje. Los trámites los cierras con ellos."),
   ]},
- {"slug": "vender-programas-de-gestion-con-ia", "no_es": _NO_ES, "preguntas": _PREGUNTAS, "incluye": _INCLUYE, "fases": _FASES, "fases_titulo": 'De cero a vender programas de gestión con IA', "fases_intro": _FASES_INTRO, "profesor": _PROFESOR, "para_si": ['Conoces un sector y ves que las empresas siguen con Excel', 'No sabes programar o no tienes producto propio', 'Puedes dedicarle tiempo de verdad'], "para_no": ['Buscas dinero rápido sin trabajar', 'No quieres hablar con empresas'], "miga": "Vender programas de gestión con IA",
+ {"slug": "vender-programas-de-gestion-con-ia", "no_es": _NO_ES, "preguntas": _PREGUNTAS, "incluye": _INCLUYE, "fases": _FASES, "fases_titulo": 'De cero a vender programas de gestión con IA', "fases_intro": _FASES_INTRO, "profesor": _PROFESOR_SW, "para_si": ['Conoces un sector y ves que las empresas siguen con Excel', 'No sabes programar o no tienes producto propio', 'Puedes dedicarle tiempo de verdad'], "para_no": ['Buscas dinero rápido sin trabajar', 'No quieres hablar con empresas'], "miga": "Vender programas de gestión con IA",
   "titulo": "Vender programas de gestión con IA: por dónde empezar",
   "meta": "Conoces un sector que sigue con Excel y papel, pero no sabes programar ni tienes producto. Cuéntanos en qué punto estás. La primera charla es gratuita.",
   "kicker": "Para quien quiere vender programas de gestión a empresas",
@@ -166,14 +175,13 @@ LANDINGS = [
   "dolores": [
    ("Sé qué les hace falta, pero no tengo nada que enseñarles.", "Entro en una empresa, veo cómo trabajan y lo tengo claro. Pero no sé programar y no tengo ningún programa."),
    ("Encargar un programa a medida se me va de presupuesto.", "Pagar un desarrollo desde cero para luego ver si lo vendo es un riesgo que no puedo asumir."),
-   ("No sé qué ofrecer ni a qué sector.", "Un día pienso en un CRM, otro en la facturación, otro en algo con IA. Y elegir me da vértigo, porque siento que cierro puertas."),
+   ("No sé qué ofrecer ni a qué sector.", "Un día pienso en un CRM, otro en la facturación, otro en el almacén. Y elegir me da vértigo, porque siento que cierro puertas."),
    ("Sé mucho de mi sector, pero no sé vender.", "Cuando tengo delante al dueño me pongo a hablar de tecnología en vez de hablar de su negocio. Me dice que se lo piensa y ya no vuelvo a saber de él."),
    ("Llevo meses dándole vueltas y sigo sin un solo cliente.", "He mirado herramientas, he pensado el nombre y he hecho números. Todo menos ofrecérselo a una empresa, que es justo lo que no sé cómo hacer."),
    ("Me da miedo venderlo y no tener a quién acudir cuando algo falle.", "Pasar los datos del Excel del cliente, que algo salga mal, que me llamen y no sepa arreglarlo. Y de contratos y protección de datos no sé nada."),
   ],
-  "otra": ("¿Lo tuyo son más los asistentes de IA y las automatizaciones?", "montar-agencia-de-ia.html", "Tenemos otra página para ti →"),
   "puente_titulo": "Te formamos y te acompañamos en todo tu inicio",
-  "puente": ("En Studio Emprende hacemos los programas de gestión con IA; tú los vendes y los pones en marcha en las empresas, con tu propia empresa. "
+  "puente": ("En Studio Emprende desarrollamos programas de gestión a medida; tú los vendes y los pones en marcha en las empresas, con tu propia empresa. "
              + _PUENTE_FIN + "No prometemos ingresos: la empresa la levantas tú, pero no partes de cero."),
   "form_titulo": "Cuéntanos en qué punto estás", "form_intro": _FORM_INTRO,
   "asunto": "Landing programas de gestión con IA: nuevo contacto", "origen": "landing-vender-programas-de-gestion",
