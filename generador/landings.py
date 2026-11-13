@@ -1,8 +1,8 @@
 # Landings de captación (desde el 13/11/2026). Páginas nuevas en la raíz: hablan solo de los dolores de la persona
 # y terminan en un formulario. Público: quien quiere montar su propio negocio vendiendo a empresas las soluciones
 # de Studio Emprende (agencia de IA; programas de gestión con IA).
-# Reglas del texto: sin precios, sin promesas de ingresos, clientes ni plazos, sin cifras ni testimonios inventados,
-# sin condiciones económicas (no están definidas) y, en lo legal, «te orientamos», nunca asesoría jurídica.
+# Reglas del texto: sin precios, sin promesas de ingresos ni plazos, sin cifras ni testimonios inventados,
+# sin condiciones económicas (no están definidas) y no se presenta como gestoría ni asesoría: se ayuda a encontrarlas.
 import html as _h
 
 
@@ -19,6 +19,9 @@ def html(L, migas_html, dom):
         faq = ('<section class="sec"><div class="w"><div class="cab"><h2>Dudas antes de escribirnos</h2></div><div class="faq">%s</div></div></section>'
                % "".join("<details><summary>%s</summary><p>%s</p></details>" % (_e(q), _e(a)) for q, a in L["faqs"]))
     otra = ('<section class="sec" style="padding-top:0"><div class="w"><p class="mut">%s <a href="%s">%s</a></p></div></section>' % (_e(L["otra"][0]), L["otra"][1], _e(L["otra"][2]))) if L.get("otra") else ""
+    preguntas = "".join('<div class="campo"><label for="%s">%s</label><select id="%s" name="%s" required><option value="">Elige una opción</option>%s</select><span class="error" hidden style="color:#A3222F;font-size:13px">Elige una opción</span></div>'
+                        % (n, _e(t), n, n, "".join("<option>%s</option>" % _e(o) for o in ops)) for n, t, ops in L.get("preguntas", []))
+    if preguntas: preguntas = '<div class="dos">%s</div>' % preguntas
     extra = ""
     if L.get("incluye"):
         extra += ('<section class="sec"><div class="w"><div class="cab"><p class="kicker">Qué incluye</p><h2>Todo lo que te damos para arrancar</h2></div><div class="rejilla">%s</div></div></section>'
@@ -30,7 +33,10 @@ def html(L, migas_html, dom):
         extra += ('<section class="sec"><div class="w lateral"><div class="lateral-main"><div class="cab" style="margin-bottom:16px"><p class="kicker">Quién te forma</p><h2>%s</h2></div><p class="lead">%s</p></div>'
                   '<aside class="lateral-aside"><h2 class="h3">Para quién es</h2>%s<h2 class="h3" style="margin-top:10px">Para quién no es</h2>%s</aside></div></section>'
                   % (_e(L["profesor"][0]), _e(L["profesor"][1]), "".join('<p style="color:#C9C1BB">✓ %s</p>' % _e(x) for x in L["para_si"]), "".join('<p style="color:#C9C1BB">✗ %s</p>' % _e(x) for x in L["para_no"])))
-        extra += '<section class="sec" style="padding-top:0"><div class="w"><div class="botones"><a class="btn btn-p" href="#formulario">%s</a></div></div></section>' % _e(L["boton_hero"])
+        if L.get("no_es"):
+            extra += ('<section class="sec sec-noche"><div class="w"><div class="cab"><p class="kicker">Antes de seguir</p><h2>%s</h2></div><div class="rejilla">%s</div></div></section>'
+                      % (_e(L["no_es"][0]), "".join('<div class="tarjeta" style="background:#2B2427;border-color:#3A3134"><p style="color:#E9E4E0">%s</p></div>' % _e(x) for x in L["no_es"][1])))
+        extra += '<section class="sec"><div class="w"><div class="botones"><a class="btn btn-p" href="#formulario">%s</a></div></div></section>' % _e(L["boton_hero"])
     return """<section class="page-hero"><div class="w">{m}<p class="kicker">{kicker}</p><h1>{h1}</h1>
 <p class="lead">{entradilla}</p>
 <div class="botones" style="margin-top:24px"><a class="btn btn-p" href="#formulario">{boton_hero}</a></div></div></section>
@@ -53,13 +59,14 @@ def html(L, migas_html, dom):
 <input type="hidden" name="_blacklist" value="viagra, casino, crypto, bitcoin, forex, loan, seo services, backlinks, porn, betting, http://, https://bit.ly">
 <input type="hidden" name="_autoresponse" value="Hola, hemos recibido tu mensaje en Studio Emprende. Te escribimos en menos de 24 horas laborables para hablar de tu caso.">
 <input type="hidden" name="_t" id="_t" value="">
+<input type="hidden" name="utm_source" value=""><input type="hidden" name="utm_medium" value=""><input type="hidden" name="utm_campaign" value=""><input type="hidden" name="utm_content" value="">
 <div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden"><label>No rellenar<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label><label>Web<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
 <p class="form-aviso" id="form-aviso" role="alert" hidden></p>
 <div class="dos"><div class="campo"><label for="nombre">Nombre</label><input id="nombre" name="nombre" autocomplete="name" required minlength="2" maxlength="80" pattern=".*\\S.*"><span class="error" hidden style="color:#A3222F;font-size:13px">Escribe tu nombre</span></div>
 <div class="campo"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="120"><span class="error" hidden style="color:#A3222F;font-size:13px">Escribe tu email</span></div></div>
 <div class="dos"><div class="campo"><label for="telefono">Teléfono (opcional, si prefieres que te llamemos)</label><input id="telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" pattern="[+0-9 .\\(\\)\\-]{{9,20}}" title="Solo números, mínimo 9 cifras"></div>
 <div class="campo"><label for="punto">{etiqueta_punto}</label><select id="punto" name="punto" required><option value="">Elige una opción</option>{opciones}</select><span class="error" hidden style="color:#A3222F;font-size:13px">Elige una opción</span></div></div>
-<div class="campo"><label for="mensaje">{etiqueta_texto}</label><textarea id="mensaje" name="mensaje" rows="5" maxlength="2000" aria-describedby="mensaje-ayuda"></textarea><span id="mensaje-ayuda" class="mut" style="font-size:13px">Basta con unas líneas sobre tu situación profesional. No incluyas datos de salud ni otros datos sensibles.</span></div>
+{preguntas}<div class="campo"><label for="mensaje">{etiqueta_texto}</label><textarea id="mensaje" name="mensaje" rows="5" maxlength="2000" aria-describedby="mensaje-ayuda"></textarea><span id="mensaje-ayuda" class="mut" style="font-size:13px">Basta con unas líneas sobre tu situación profesional. No incluyas datos de salud ni otros datos sensibles.</span></div>
 <label style="display:flex;gap:10px;font-size:14px;align-items:flex-start"><input type="checkbox" name="privacidad" required style="margin-top:4px"> <span>He leído y acepto la <a href="privacidad.html">política de privacidad</a>.</span></label>
 <p class="mut" style="font-size:13px;margin:0">Responsable: INTELIGENCIA SEVILLA SL (Studio Emprende). Finalidad: responder a tu solicitud y valorar contigo si encaja montar tu negocio con nuestras soluciones. Base: tu consentimiento. Puedes ejercer tus derechos de acceso, rectificación y supresión en info@studioemprende.com.</p>
 <div><button class="btn btn-p" type="submit">{boton}</button></div>
@@ -69,35 +76,53 @@ def html(L, migas_html, dom):
 <p style="color:#C9C1BB">2. Te escribimos en menos de 24 horas laborables.</p>
 <p style="color:#C9C1BB">3. Hablamos de tu caso por videollamada o por teléfono.</p></aside>
 </div></section>
-{faq}{otra}""".format(m=migas_html, dom=dom, dolores=dolores, otra=otra, extra=extra, opciones=opciones, faq=faq,
+{faq}{otra}
+<script>(function(){{var q=new URLSearchParams(location.search);["utm_source","utm_medium","utm_campaign","utm_content"].forEach(function(k){{var v=q.get(k),i=document.querySelector('form[data-contacto] input[name="'+k+'"]');if(v&&i)i.value=v.slice(0,100)}})}})();</script>""".format(m=migas_html, dom=dom, dolores=dolores, otra=otra, extra=extra, preguntas=preguntas, opciones=opciones, faq=faq,
                 **{k: _e(L[k]) for k in ("kicker", "h1", "entradilla", "boton_hero", "titulo_dolores", "puente_titulo", "puente", "form_titulo",
                                          "form_intro", "asunto", "origen", "etiqueta_punto", "etiqueta_texto", "boton")})
 
 
 _FORM_INTRO = "Rellena el formulario y te respondemos en menos de 24 horas laborables. La primera conversación es gratuita y sin compromiso: vemos tu caso y te decimos con sinceridad si esto encaja contigo."
-_PUENTE_FIN = ("Te montamos tu entorno de trabajo con los accesos y las herramientas, te formamos y te apoyamos en la parte comercial, desde qué ofrecer y a quién hasta cómo presentarlo. "
-               "Te orientamos en los primeros pasos legales, de gestoría y de protección de datos, y cuando te atasques tienes a quién preguntar: seguimos detrás con soporte. ")
+_PUENTE_FIN = ("Te formamos, te montamos tu empresa digital y te damos las herramientas y el equipo comercial para vender. "
+               "Te aconsejamos en la gestión, en lo fiscal y en las ayudas, y seguimos detrás como soporte. Con tus clientes no nos metemos: el negocio es tuyo. ")
 
 _INCLUYE = [
- ("Formación online", "Clases en directo y grabadas, para que puedas seguirlas desde cualquier sitio y a tu ritmo. Impartidas por un profesor con certificado de docencia."),
- ("Acompañamiento en tu inicio", "No te dejamos solo con los vídeos: te acompañamos mientras eliges sector, preparas tu oferta y hablas con tus primeras empresas."),
- ("Tus herramientas, listas", "Te montamos tu propio entorno con los accesos y las herramientas ya hechas, para que no empieces de cero."),
- ("Apoyo comercial", "Qué ofrecer, a quién y cómo presentarlo. Preparamos contigo la oferta para cada empresa."),
- ("Legal, gestoría y protección de datos", "Te orientamos en los primeros pasos y te decimos a quién acudir para cerrar cada trámite."),
- ("Soporte cuando lo necesites", "Cuando te atasques tienes a quién preguntar. Seguimos detrás también cuando termina la formación."),
+ ("Formación online con profesor certificado", "Clases en directo y grabadas, desde cualquier sitio, impartidas por un profesor con certificado de docencia. Y te acompañamos durante todo tu inicio."),
+ ("Tu web y tu presencia digital", "Te montamos la web, la infraestructura y la presencia digital de tu empresa, con los accesos y las herramientas ya listos."),
+ ("Qué vender y a quién", "Te ayudamos a decidir en qué productos y en qué sectores centrarte, y a preparar la oferta para cada empresa."),
+ ("Herramientas para vender", "Todo lo necesario para presentar y vender las soluciones a las empresas, y para buscar clientes."),
+ ("Equipo comercial", "Te damos un equipo comercial que capta clientes e incluso cierra ventas, con una base de datos con la que trabajar. Y te aconsejamos en cómo gestionarlo."),
+ ("Cómo hacer una consultoría", "Te enseñamos a analizar una empresa y a hacerle una propuesta, algo que casi nadie sabe hacer cuando empieza."),
+ ("Gestión y organización", "Facturas, presupuestos, organización del día a día: te ayudamos a llevarlo todo con orden desde el principio."),
+ ("Fiscalidad y ayudas", "Charlas y reuniones uno a uno con asesores para conocer la parte fiscal, las ayudas y subvenciones y las plataformas para pedirlas. Te acompañamos en todo el proceso."),
+ ("Charlas de economía", "Una persona experta en economía te da charlas para que, cuando empieces a ganar, sepas conservar ese dinero y hacer crecer tu patrimonio."),
+ ("Te ayudamos a encontrar a tus profesionales", "No somos gestoría ni asesoría, ni tenemos espacio de coworking, pero te ayudamos a encontrar los que te encajen."),
+ ("Soporte cuando lo necesites", "Cuando te atasques tienes a quién preguntar, también cuando termine la formación. A ti te ayudamos en todo; con tus clientes no nos metemos."),
 ]
 _FASES = [
- ("Base", "Entiendes las herramientas, cómo se instalan y cómo se gestionan, con casos prácticos."),
- ("Tu oferta", "Eliges sector y preparas una oferta concreta para un tipo de empresa concreto."),
- ("Salir a vender", "Preparas tus primeras conversaciones con empresas y las revisamos contigo."),
- ("Implantar y seguir", "Pones en marcha tu primer proyecto con nuestro soporte detrás."),
+ ("Base", "Formación en las herramientas, cómo se instalan y cómo se gestionan, con casos prácticos."),
+ ("Tu empresa", "Te montamos la web, la presencia digital y tu entorno de trabajo, y eliges sector y producto."),
+ ("Salir a vender", "Aprendes a hacer una consultoría y a preparar ofertas. Arranca el equipo comercial."),
+ ("Crecer con orden", "Gestión, fiscalidad, ayudas y economía, con reuniones uno a uno y soporte continuo."),
 ]
-_PROFESOR = ("Un profesor con certificado de docencia y un equipo que desarrolla software cada día",
-             "La formación la imparte un profesor con certificado de docencia, y detrás está el equipo de Studio Emprende, que desarrolla los programas y los asistentes que vas a vender. No aprendes de alguien que solo vende cursos, sino de quien hace las herramientas.")
-_FASES_INTRO = "Formación online y acompañamiento en tu inicio, por fases. Te contamos la duración y el calendario en la primera conversación."
+_PROFESOR = ("Un profesor con certificado de docencia, asesores y un equipo que desarrolla software cada día",
+             "La formación la imparte un profesor con certificado de docencia. Tendrás reuniones uno a uno con asesores en fiscalidad y ayudas, y charlas de economía con una persona experta. Detrás está el equipo de Studio Emprende, que desarrolla las herramientas que vas a vender. No aprendes de alguien que solo vende cursos, sino de quien hace las herramientas.")
+_FASES_INTRO = "Formación online y acompañamiento en todo tu inicio, por fases. Te contamos la duración y el calendario en la primera conversación."
+_NO_ES = ("Si ya quieres tu Ferrari, este no es tu sitio", [
+ "Si buscas hacerte rico en 90 días, aquí no lo vas a encontrar. No prometemos ingresos.",
+ "Si no quieres hablar con empresas ni trabajar tu negocio, esto no es para ti.",
+ "Si esperas que otro lo haga todo por ti, tampoco. Te damos la base, el equipo y el apoyo; la empresa la levantas tú.",
+ "Si quieres construir algo serio, empezar con poco, gestionarlo bien y saber conservar lo que ganes, hablemos.",
+])
+_PREGUNTAS = [
+ ("tiempo", "¿Cuánto tiempo puedes dedicarle a la semana?", ["Menos de 5 horas", "Entre 5 y 15 horas", "Entre 15 y 30 horas", "Más de 30 horas, a tiempo completo"]),
+ ("situacion", "¿Cuál es tu situación ahora?", ["Trabajo por cuenta ajena", "Soy autónomo o tengo empresa", "Estoy en paro o buscando algo nuevo", "Estudio", "Otra"]),
+ ("cuando", "¿Cuándo te gustaría empezar?", ["Ya, cuanto antes", "En el próximo mes", "En unos meses", "Solo quiero información"]),
+ ("invertir", "¿Estás dispuesto a invertir en tu formación y en tu negocio?", ["Sí", "Depende de las condiciones", "Ahora mismo no"]),
+]
 
 LANDINGS = [
- {"slug": "montar-agencia-de-ia", "incluye": _INCLUYE, "fases": _FASES, "fases_titulo": 'De cero a tu agencia de IA, paso a paso', "fases_intro": _FASES_INTRO, "profesor": _PROFESOR, "para_si": ['Quieres montar tu propia agencia de IA y no sabes por dónde empezar', 'Has hecho cursos o visto vídeos y te falta saber vender', 'Puedes dedicarle tiempo de verdad'], "para_no": ['Buscas dinero rápido sin trabajar', 'No quieres hablar con empresas'], "miga": "Montar tu agencia de IA",
+ {"slug": "montar-agencia-de-ia", "no_es": _NO_ES, "preguntas": _PREGUNTAS, "incluye": _INCLUYE, "fases": _FASES, "fases_titulo": 'De cero a tu agencia de IA, paso a paso', "fases_intro": _FASES_INTRO, "profesor": _PROFESOR, "para_si": ['Quieres montar tu propia agencia de IA y no sabes por dónde empezar', 'Has hecho cursos o visto vídeos y te falta saber vender', 'Puedes dedicarle tiempo de verdad'], "para_no": ['Buscas dinero rápido sin trabajar', 'No quieres hablar con empresas'], "miga": "Montar tu agencia de IA",
   "titulo": "Montar una agencia de IA: por dónde empezar a vender",
   "meta": "Meses de tutoriales de IA y ningún cliente. Si no sabes qué vender ni a quién, cuéntanos en qué punto estás. La primera conversación es gratuita.",
   "kicker": "Para quien quiere montar su agencia de IA",
@@ -116,7 +141,7 @@ LANDINGS = [
   "otra": ("¿Lo tuyo son más los programas de gestión?", "vender-programas-de-gestion-con-ia.html", "Tenemos otra página para ti →"),
   "puente_titulo": "Te formamos y te acompañamos en todo tu inicio",
   "puente": ("En Studio Emprende hacemos los asistentes de IA y los programas de gestión; tú los vendes y los pones en marcha en las empresas, con tu propia empresa. "
-             + _PUENTE_FIN + "No te prometemos clientes: vender es trabajo tuyo, pero no a ciegas."),
+             + _PUENTE_FIN + "No prometemos ingresos: la empresa la levantas tú, pero no a ciegas."),
   "form_titulo": "Cuéntanos en qué punto estás", "form_intro": _FORM_INTRO,
   "asunto": "Landing agencia de IA: nuevo contacto", "origen": "landing-agencia-de-ia",
   "etiqueta_punto": "¿En qué punto estás?",
@@ -126,11 +151,11 @@ LANDINGS = [
   "boton": "Quiero que hablemos",
   "faqs": [
    ("¿Hace falta saber programar para montar una agencia de IA con vosotros?", "No hace falta saber programar: las herramientas ya están hechas. Sí hace falta entender cómo funcionan, porque quien las pone en marcha y responde ante el cliente eres tú."),
-   ("¿Me conseguís vosotros los clientes de la agencia?", "No. Vender es parte del trabajo y lo haces tú; nosotros te enseñamos y te apoyamos en la parte comercial. Tampoco garantizamos clientes ni ingresos: es tu negocio y depende de tu trabajo."),
+   ("¿Me ayudáis a conseguir clientes?", "Sí. Te damos un equipo comercial que capta clientes e incluso cierra ventas, y te enseñamos a gestionarlo. El negocio y la relación con tus clientes son tuyos. Tampoco garantizamos clientes ni ingresos: es tu negocio y depende de tu trabajo."),
    ("¿Cuánto cuesta y qué condiciones tiene montar la agencia con vosotros?", "Depende de tu caso. Te explicamos las condiciones con claridad en la primera conversación, antes de que te comprometas a nada."),
-   ("¿Me hacéis los contratos y el alta de autónomo?", "Te orientamos en los primeros pasos: qué necesitas y a quién acudir. Los contratos y los trámites los cierras con un profesional colegiado."),
+   ("¿Sois gestoría o asesoría?", "No. Te damos charlas y reuniones uno a uno con asesores sobre fiscalidad y ayudas, y te ayudamos a encontrar la gestoría, la asesoría o el coworking que te encaje. Los trámites los cierras con ellos."),
   ]},
- {"slug": "vender-programas-de-gestion-con-ia", "incluye": _INCLUYE, "fases": _FASES, "fases_titulo": 'De cero a vender programas de gestión con IA', "fases_intro": _FASES_INTRO, "profesor": _PROFESOR, "para_si": ['Conoces un sector y ves que las empresas siguen con Excel', 'No sabes programar o no tienes producto propio', 'Puedes dedicarle tiempo de verdad'], "para_no": ['Buscas dinero rápido sin trabajar', 'No quieres hablar con empresas'], "miga": "Vender programas de gestión con IA",
+ {"slug": "vender-programas-de-gestion-con-ia", "no_es": _NO_ES, "preguntas": _PREGUNTAS, "incluye": _INCLUYE, "fases": _FASES, "fases_titulo": 'De cero a vender programas de gestión con IA', "fases_intro": _FASES_INTRO, "profesor": _PROFESOR, "para_si": ['Conoces un sector y ves que las empresas siguen con Excel', 'No sabes programar o no tienes producto propio', 'Puedes dedicarle tiempo de verdad'], "para_no": ['Buscas dinero rápido sin trabajar', 'No quieres hablar con empresas'], "miga": "Vender programas de gestión con IA",
   "titulo": "Vender programas de gestión con IA: por dónde empezar",
   "meta": "Conoces un sector que sigue con Excel y papel, pero no sabes programar ni tienes producto. Cuéntanos en qué punto estás. La primera charla es gratuita.",
   "kicker": "Para quien quiere vender programas de gestión a empresas",
@@ -149,7 +174,7 @@ LANDINGS = [
   "otra": ("¿Lo tuyo son más los asistentes de IA y las automatizaciones?", "montar-agencia-de-ia.html", "Tenemos otra página para ti →"),
   "puente_titulo": "Te formamos y te acompañamos en todo tu inicio",
   "puente": ("En Studio Emprende hacemos los programas de gestión con IA; tú los vendes y los pones en marcha en las empresas, con tu propia empresa. "
-             + _PUENTE_FIN + "No partes de cero, pero vender es trabajo tuyo."),
+             + _PUENTE_FIN + "No prometemos ingresos: la empresa la levantas tú, pero no partes de cero."),
   "form_titulo": "Cuéntanos en qué punto estás", "form_intro": _FORM_INTRO,
   "asunto": "Landing programas de gestión con IA: nuevo contacto", "origen": "landing-vender-programas-de-gestion",
   "etiqueta_punto": "¿En qué punto estás?",
@@ -159,8 +184,8 @@ LANDINGS = [
   "boton": "Quiero que hablemos",
   "faqs": [
    ("¿Hace falta saber programar para vender programas de gestión?", "No. Las herramientas ya están hechas y tienes nuestro soporte técnico para consultarnos. Lo que sí tendrás que aprender es a ponerlas en marcha y a gestionarlas, porque quien responde ante tu cliente eres tú."),
-   ("¿Me conseguís vosotros las empresas a las que vender?", "No. Vender es parte del trabajo y lo haces tú; nosotros te enseñamos y te apoyamos en la parte comercial. Tampoco garantizamos clientes ni ingresos: es tu negocio y depende de tu trabajo."),
+   ("¿Me ayudáis a conseguir clientes?", "Sí. Te damos un equipo comercial que capta clientes e incluso cierra ventas, y te enseñamos a gestionarlo. El negocio y la relación con tus clientes son tuyos. Tampoco garantizamos clientes ni ingresos: es tu negocio y depende de tu trabajo."),
    ("¿Cuánto cuesta y qué condiciones tiene vender vuestros programas?", "Depende de tu caso. Te explicamos las condiciones con claridad en la primera conversación, antes de que te comprometas a nada."),
-   ("¿Me preparáis los contratos con mis clientes?", "Te orientamos en los primeros pasos: qué necesitas y a quién acudir. Los contratos y los trámites los cierras con un profesional colegiado."),
+   ("¿Sois gestoría o asesoría?", "No. Te damos charlas y reuniones uno a uno con asesores sobre fiscalidad y ayudas, y te ayudamos a encontrar la gestoría, la asesoría o el coworking que te encaje. Los trámites los cierras con ellos."),
   ]},
 ]
