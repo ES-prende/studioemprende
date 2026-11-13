@@ -403,6 +403,10 @@
 "69976b3a1f7f014e1147463379f1a186acee1bbe",
 "2026-10-20T16:08:16"
 ],
+"montar-agencia-de-ia.html": [
+"5cd9c08becd0aa0533e51f49ef101b03d8570989",
+"2026-11-13T11:46:46"
+],
 "normativas.html": [
 "4f423eb3ddd961b751f5f0a8df3e30d13e9031ab",
 "2026-10-20T16:08:16"
@@ -464,8 +468,8 @@
 "2026-10-24T18:07:02"
 ],
 "servicios/agentes-de-ia/departamento-de-ia-externalizado.html": [
-"f77a3546c85ec5180d25c485cdc4494ca16a2aaf",
-"2026-10-24T18:07:02"
+"413f9a34691eba914f5e41c451b61809afd6d3e1",
+"2026-11-13T11:46:46"
 ],
 "servicios/agentes-de-ia/ia-con-los-datos-de-tu-empresa-sin-que-salgan-fuera.html": [
 "2e4bfecd5bc04a04a5913b654c10935119ea6f29",
@@ -864,8 +868,8 @@
 "2026-10-26T09:47:16"
 ],
 "servicios/erp-para-pymes/pagas-solo-los-modulos-que-usas.html": [
-"841fa63a1c8baf2ec0f83bc087832fc87e57f5af",
-"2026-10-27T22:30:51"
+"bf5203386ed5d02f4e743180c11140605bf3d054",
+"2026-11-13T11:46:46"
 ],
 "servicios/erp-para-pymes/pix-dentro-del-erp-preguntale-en-lenguaje-normal.html": [
 "e85f8aa67ce93135cfc8276080963c6283a34d75",
@@ -980,8 +984,8 @@
 "2026-10-24T18:07:02"
 ],
 "servicios/formacion-ia/ia-para-autonomos-por-profesion.html": [
-"0cb1344a26b87ae2a5b174c3d23a20764f5b88ce",
-"2026-10-24T18:07:02"
+"8ba80ddf3dd81c85218af9e3872ec856d524a602",
+"2026-11-13T11:46:46"
 ],
 "servicios/formacion-ia/ia-para-duenos-de-negocios-de-toda-la-vida.html": [
 "8891360828278baddcf5c8869edcb7c09c50ae90",
@@ -1020,8 +1024,8 @@
 "2026-10-24T18:07:02"
 ],
 "servicios/grandes-empresas/marca-blanca-para-consultoras.html": [
-"453ffec40186d5496ebf16cc0f2fdbf462bf18b1",
-"2026-10-24T18:07:02"
+"1dc404f700031fcbab29a7b32e7d46966c7bc317",
+"2026-11-13T11:46:46"
 ],
 "servicios/grandes-empresas/piloto-de-agente-ia-en-30-60-dias.html": [
 "57df9e2661b1985f4244e867c255a6e4e0b5cf11",
@@ -1056,8 +1060,8 @@
 "2026-10-26T09:47:16"
 ],
 "servicios/migraciones-e-integraciones/integraciones-por-api.html": [
-"3764560e40c8766a49e2ef37d1da9546303fd2ee",
-"2026-10-26T09:47:16"
+"f90bce32045d3255c3418d6aeaad791a5aa02f9f",
+"2026-11-13T11:46:46"
 ],
 "servicios/migraciones-e-integraciones/migracion-de-excel-a-programa-de-gestion.html": [
 "f6c63e48e26035956b56fa1cbab41c07efc7820d",
@@ -1532,8 +1536,8 @@
 "2026-10-24T18:07:02"
 ],
 "servicios/software-especializado/portal-en-marca-blanca-para-gestorias.html": [
-"8325a2d28e1f0e3240126f9f331e890111915a09",
-"2026-10-24T18:07:02"
+"e114c75dcaa9c41d8625f19ca07e5ec490850447",
+"2026-11-13T11:46:46"
 ],
 "servicios/software-especializado/presupuestador-y-configurador-online.html": [
 "e414c7cfcc224b4316b76997af8b5c3bd10fbacb",
@@ -1714,5 +1718,9 @@
 "temas/webs-y-visibilidad.html": [
 "e8c907c02f06cd39adc9994296ee761276dc6bee",
 "2026-10-24T17:46:24"
+],
+"vender-programas-de-gestion-con-ia.html": [
+"cb970c6afb5e0dc2fff15cec8ce571efe482b981",
+"2026-11-13T11:46:46"
 ]
 }

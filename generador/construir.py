@@ -5,6 +5,7 @@ import formacion as FORM
 import cursos_empresa as CE
 import funciones as FN
 import partners as PT
+import landings as LD
 import casos as CS
 import intenciones as INT
 import enlaces_extra as EX
@@ -819,6 +820,9 @@ pagina("sobre-nosotros.html", "Sobre nosotros · Studio Emprende", "Studio Empre
        '<section class="page-hero"><div class="w">%s<h1>Sobre nosotros</h1><p class="lead">Ayudamos a quien emprende a tener un negocio ordenado, visible y automatizado desde el primer día.</p></div></section><section class="sec"><div class="w rejilla"><div class="tarjeta"><h3>Un interlocutor fijo</h3><p>Hablas siempre con la misma persona, que conoce tu negocio.</p></div><div class="tarjeta"><h3>Plazos por escrito</h3><p>Cada propuesta lleva sus fases y fechas antes de empezar.</p></div><div class="tarjeta"><h3>100 %% online</h3><p>Trabajamos con negocios de toda España.</p></div></div></div>%s</section>%s%s' % (migas("", ("Sobre nosotros", None)), HIST, FORM.equipo_html(""), cta("")), tipo_pagina="AboutPage", ld_extra=FORM.JORDAN)
 
 pagina("partners.html", PT.TITULO + " · Studio Emprende", PT.META, PT.html(migas("", ("Partners", None)), _faq_html(PT.FAQS), DOM) + cta(""), faqs=PT.FAQS)
+# ---------- LANDINGS DE CAPTACIÓN (dolores + formulario) ----------
+for _L in LD.LANDINGS:
+    pagina(_L["slug"] + ".html", _L["titulo"], _L["meta"], LD.html(_L, migas("", (_L["miga"], None)), DOM), faqs=_L["faqs"])
 
 # ---------- CASOS DE ÉXITO (/casos/) ----------
 open(OUT + "/assets/js/casos.js", "w").write(open(os.path.join(AQUI, "casos.js")).read())

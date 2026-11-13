@@ -70,3 +70,10 @@ La web se genera entera con `generador/construir.py`, y cabecera, pie y estilos 
 - [x] Bloque 3 bis: SVG animado, WebP y vídeo con póster en /casos/ (hoja y script propios).
 - [ ] Bloque 3 bis: extender las ilustraciones SVG a los hubs no indexados.
 - [ ] Tras fusionar: reenviar `sitemap.xml` en Search Console y Bing.
+
+## 13/11/2026 · Landings de captación
+
+- Dos páginas nuevas en la raíz, `/montar-agencia-de-ia` y `/vender-programas-de-gestion-con-ia` (`generador/landings.py`): solo dolores y formulario, para quien quiere montar su negocio vendiendo las soluciones de Studio Emprende. Sin precios ni promesas de ingresos, clientes o plazos.
+- Enlazadas entre sí y desde 6 fichas no indexadas (`enlaces_extra.py`). No se han tocado menú, pie, mapa web ni ninguna página protegida (144 idénticas).
+- Informe de competencia en `seo/COMPETENCIA-PROGRAMA-AGENCIAS.md`.
+- Pendiente del dueño: ampliar la política de privacidad para cubrir estas solicitudes; decidir si el teléfono es obligatorio; definir condiciones del programa.
