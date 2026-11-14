@@ -43,7 +43,7 @@ def html(migas_html, faq_html, dom):
 
 <section class="sec sec-suave"><div class="w lateral"><div class="lateral-main"><div class="cab"><p class="kicker">Qué pedimos</p><h2>Requisitos para ser partner</h2></div>
 <ul class="lista"><li>Tener clientes a los que ya prestas servicio o una red de emprendedores.</li><li>Recomendar solo lo que el cliente necesita, sin prometer de más.</li><li>Trabajar con clientes en España.</li><li>Ganas de construir una relación a largo plazo.</li></ul></div>
-<aside class="lateral-aside"><h3>¿Tienes dudas?</h3><p style="color:#C9C1BB">Escríbenos y te contamos cómo encaja el programa con lo que haces.</p><a class="btn btn-claro" href="https://wa.me/34601869668?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20programa%20de%20partners" target="_blank" rel="noopener">Hablar por WhatsApp</a></aside></div></section>
+<aside class="lateral-aside"><h3>¿Tienes dudas?</h3><p style="color:#C9C1BB">Escríbenos y te contamos cómo encaja el programa con lo que haces.</p><a class="btn btn-claro" href="https://api.whatsapp.com/send/?phone=34601869668&text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20programa%20de%20partners&type=phone_number&app_absent=0" target="_blank" rel="noopener">Hablar por WhatsApp</a></aside></div></section>
 
 <section class="sec"><div class="w"><div class="cab"><p class="kicker">Cómo funciona</p><h2>Cómo hacerse partner en cuatro pasos</h2></div><div class="rejilla">
 <div class="tarjeta"><h3>1. Envías la solicitud</h3><p>Nos cuentas a qué te dedicas y qué tipo de clientes tienes.</p></div>
@@ -75,6 +75,6 @@ def html(migas_html, faq_html, dom):
 <label style="display:flex;gap:10px;font-size:14px;align-items:flex-start"><input type="checkbox" name="privacidad" required style="margin-top:4px"> He leído y acepto la <a href="privacidad.html">política de privacidad</a>.</label>
 <div><button class="btn btn-p" type="submit">Enviar solicitud</button></div>
 </form></div>
-<aside class="lateral-aside"><h3>Otras formas de contacto</h3><p style="color:#C9C1BB"><a style="color:#fff" href="mailto:info@studioemprende.com">info@studioemprende.com</a><br><a style="color:#fff" href="https://wa.me/34601869668" target="_blank" rel="noopener">WhatsApp 601 86 96 68</a></p></aside></div></section>
+<aside class="lateral-aside"><h3>Otras formas de contacto</h3><p style="color:#C9C1BB"><a style="color:#fff" href="mailto:info@studioemprende.com">info@studioemprende.com</a><br><a style="color:#fff" href="https://api.whatsapp.com/send/?phone=34601869668&type=phone_number&app_absent=0" target="_blank" rel="noopener">WhatsApp 601 86 96 68</a></p></aside></div></section>
 
 <section class="sec"><div class="w"><div class="cab"><h2>Preguntas frecuentes</h2></div>{faq}</div></section>""".format(m=migas_html, faq=faq_html, dom=dom)

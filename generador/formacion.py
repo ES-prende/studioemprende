@@ -1,6 +1,6 @@
 # Contenido de Formación en IA: página principal, sesión 1 a 1 y formador
 DOM = "https://studioemprende.com"
-WA = "https://wa.me/34601869668?text=Hola%2C%20quiero%20reservar%20una%20sesi%C3%B3n%20de%20IA%201%20a%201"
+WA = "https://api.whatsapp.com/send/?phone=34601869668&text=Hola%2C%20quiero%20reservar%20una%20sesi%C3%B3n%20de%20IA%201%20a%201&type=phone_number&app_absent=0"
 
 JORDAN = {"@type": "Person", "@id": DOM + "/sobre-nosotros#jordan-garcia", "name": "Jordan García",
           "jobTitle": "Formador de inteligencia artificial", "worksFor": {"@id": DOM + "/#org"},
