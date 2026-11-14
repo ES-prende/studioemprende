@@ -1121,6 +1121,13 @@ ExpiresByType image/png "access plus 30 days"\nExpiresByType font/woff2 "access 
 ExpiresByType image/jpeg "access plus 1 year"
 ExpiresByType image/webp "access plus 1 year"
 </IfModule>
+
+# Vídeos de demostración: son apoyo de la página, no se indexan como vídeo
+<IfModule mod_headers.c>
+<FilesMatch "\\.(mp4|webm)$">
+Header set X-Robots-Tag "noindex"
+</FilesMatch>
+</IfModule>
 """)
 # Hubs (carpetas con index.html): .html, sin barra, http o www -> URL final con barra en UN solo salto.
 # Sin esto: /servicios/x.html -> /servicios/x -> /servicios/x/ (dos 301, y tres desde http o www).
