@@ -47,5 +47,17 @@ Ninguna.
 | 11/11/2026 | /servicios/fichador/turnos-y-cuadrantes |
 | 11/11/2026 | /servicios/fichador/vacaciones-y-ausencias |
 
+| 14/11/2026 | /guias/como-iniciar-un-negocio-online |
+| 14/11/2026 | /guias/financiacion-para-emprendedores |
+| 14/11/2026 | /guias/ideas-de-negocio-en-espana |
+| 14/11/2026 | /guias/herramientas-para-emprendedores |
+| 14/11/2026 | /guias/mejores-erp-para-pymes |
+| 14/11/2026 | /guias/erp-vs-crm |
+| 14/11/2026 | /guias/software-a-medida |
+| 14/11/2026 | /guias/erp-gratis-y-open-source |
+| 14/11/2026 | /guias/emprendedor-de-responsabilidad-limitada |
+
 También se enviaron a Bing por IndexNow el 6/11: /servicios/apps-moviles/ y las 9 primeras del 7/11.
 El 11/11, las 10 del día también se enviaron a Bing por IndexNow.
+
+Pendiente para el 15/11 (cuota agotada el 14/11): /guias/erp-para-logistica-y-almacen
