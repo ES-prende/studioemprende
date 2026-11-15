@@ -6,6 +6,7 @@ import cursos_empresa as CE
 import funciones as FN
 import partners as PT
 import landings as LD
+import inicio as INI
 import casos as CS
 import intenciones as INT
 import enlaces_extra as EX
@@ -466,103 +467,12 @@ cats = [("software", "Software de gestión", "ERP, CRM, apps y software especial
         ("soporte", "Soporte y seguridad", "Tu departamento tecnológico, sistemas y ciberseguridad."),
         ("formacion", "Consultoría y formación", "Formación IA, ayudas, relevo y problemas sin resolver."),
         ("producto", "Productos propios", "Fichador y CRM con domótica para alojamientos.")]
-serv = ""
-for k, n, d in cats:
-    links = "".join('<li><a href="servicios/%s.html">%s</a></li>' % (s[0], e(s[2])) for s in by_menu(k))
-    serv += '<div class="tarjeta"><h3>%s</h3><p>%s</p><ul class="lista" style="margin-top:6px">%s</ul></div>' % (n, d, links)
-tec = "".join("<span>%s</span>" % t for t in ["WhatsApp", "Google Business", "OpenAI", "Claude", "Verifactu", "WordPress", "Next.js", "Stripe", "Microsoft 365", "Android", "iOS", "API REST"] * 2)
-inicio = """
-<section class="hero"><div class="w">
-<div class="hero-txt"><p class="kicker">Software · IA · Webs para emprender</p>
-<h1>Tu negocio, <span class="acento">llave en mano</span>.</h1>
-<p class="lead">Programa de gestión modular, agentes de IA y web profesional en una sola cuenta. Empieza con lo que necesitas y crece cuando quieras.</p>
-<div class="botones"><a class="btn btn-p" href="contacto.html#diagnostico">Pide tu diagnóstico gratis</a><a class="btn btn-s" href="precios.html">Ver los packs</a></div>
-<div class="confianza"><span>Una sola cuenta</span><span>100 %% online</span><span>Toda España</span><span>Soporte que responde</span></div></div>
-<div class="hero-card" data-nosnippet aria-label="Ejemplo del agente PIX trabajando"><div class="estado"><span>Agente PIX · en marcha</span><b>● activo</b></div>
-<div class="fila">Nuevo contacto por WhatsApp: «Necesito una web y facturar con Verifactu»</div>
-<div class="fila ok"><span>✓ Contacto creado en el CRM</span><span>✓ Pack «Negocio en Marcha» propuesto</span><span>✓ Reunión agendada el jueves a las 10:00</span></div>
-<div class="fin">Presupuesto enviado al cliente</div></div>
-</div></section>
-
-<section class="sec sec-suave"><div class="w">
-<div class="cab"><p class="kicker">Demo del programa · datos de ejemplo</p><h2>Tus ventas, en un tablero</h2></div>
-<div class="demo" data-nosnippet><div class="demo-lat"><b style="color:#fff;font-weight:500">Studio Emprende</b><span class="act">CRM</span><span>Facturación</span><span>Agenda</span><span>Fichaje</span><span>PIX</span></div>
-<div class="tablero">
-<div class="col"><span>Nuevo · 3</span><div class="trato">Taller López<br><b>1.790 €</b></div><div class="trato">Clínica Sur<br><b>990 €</b></div></div>
-<div class="col"><span>Propuesta · 2</span><div class="trato">Reformas Vega<br><b>3.690 €</b></div></div>
-<div class="col"><span>Negociación · 1</span><div class="trato">Academia Norte<br><b>1.790 €</b></div></div>
-<div class="col"><span>Ganado · 4</span><div class="trato ganado">Café Central<br><b>990 €</b></div></div>
-</div></div>
-<p class="aviso">● Nuevo contacto desde la web: Fisioterapia Ruiz</p>
-<p class="mut" style="font-size:13px;margin-top:10px">Demostración con nombres y datos ficticios: así se ve el tablero de ventas del programa.</p>
-</div></section>
-
-<section class="sec"><div class="w">
-<div class="cab"><p class="kicker">Lo que hacemos</p><h2>Todo lo que necesitas para emprender</h2></div>
-<div class="rejilla">
-<a class="tarjeta" href="servicios/software-de-gestion.html"><span class="num">01</span><h3>Programa de gestión modular</h3><p>CRM, facturación con Verifactu, agenda y fichaje. Solo los módulos que uses.</p><span class="mas">Ver módulos →</span></a>
-<a class="tarjeta" href="servicios/agentes-de-ia.html"><span class="num">02</span><h3>Agentes de IA</h3><p>PIX atiende, presupuesta y agenda por WhatsApp, entrenado con tu negocio.</p><span class="mas">Conocer a PIX →</span></a>
-<a class="tarjeta" href="servicios/webs.html"><span class="num">03</span><h3>Webs y presencia digital</h3><p>Web con SEO, Google Business y redes listas desde el primer día.</p><span class="mas">Ver webs →</span></a>
-<a class="tarjeta" href="servicios/departamento-tecnologico.html"><span class="num">04</span><h3>Acompañamiento</h3><p>Soporte mensual, formación y un único interlocutor para que no estés solo.</p><span class="mas">Ver soporte →</span></a>
-</div></div></section>
-
-<section class="tecno" aria-label="Tecnologías con las que trabajamos"><div class="cinta">%s</div></section>
-
-<section class="sec"><div class="w">
-<div class="cab"><p class="kicker">Lo que frena al que empieza</p><h2>Si te suena alguno, te ayudamos</h2></div>
-<div class="rejilla">
-<div class="tarjeta dolor"><h3>No sabes por dónde empezar</h3><p>Mil herramientas, cursos milagro y meses perdidos. Te damos un plan claro.</p></div>
-<div class="tarjeta dolor d2"><h3>Lo haces todo tú</h3><p>Facturas, clientes y redes en Excel y WhatsApp. Lo ordenamos y automatizamos.</p></div>
-<div class="tarjeta dolor d3"><h3>No te encuentran</h3><p>Sin web, sin Google ni credibilidad. Te damos presencia profesional desde el primer día.</p></div>
-</div></div></section>
-
-<section class="sec sec-suave"><div class="w conectado">
-<div style="flex:999 1 420px;min-width:0;display:flex;flex-direction:column;gap:14px"><p class="kicker">Una cuenta, todo conectado</p><h2>Clientes, cobros, equipo y web hablan entre sí</h2><p class="lead">Lo que entra por la web aparece en tu CRM, se factura con Verifactu, se cobra con recordatorios y PIX te lo resume cada lunes.</p></div>
-<div class="nodos"><div class="nodo">Clientes</div><div class="nodo">Web</div><div class="nodo">Cobros</div><div class="nodo">Equipo</div><div class="nodo centro">PIX</div><div class="nodo">Facturas</div><div class="nodo">Agenda</div><div class="nodo">WhatsApp</div><div class="nodo">Informes</div></div>
-</div></section>
-
-<section class="sec"><div class="w">
-<div class="bloque"><div class="bloque-txt"><p class="kicker">Facturación</p><h2>Factura con Verifactu sin pensarlo</h2><p class="lead">Facturas, presupuestos y cobros conectados a tus clientes. Preparado para 2027.</p><a href="servicios/software-de-gestion.html">Ver facturación →</a></div>
-<div class="bloque-vis"><div class="factura"><div class="l"><b style="color:var(--tinta);font-weight:500">Factura 2026-0142</b><span class="pagada">Cobrada</span></div><div class="l"><span>Pack Negocio en Marcha</span><span>1.790,00 €</span></div><div class="l"><span>IVA 21 %%</span><span>375,90 €</span></div><div class="t"><span>Total</span><span>2.165,90 €</span></div><span class="mut" style="font-size:13px">QR Verifactu · registro enviado</span></div></div></div>
-<div class="bloque inv"><div class="bloque-vis"><div class="chat"><div class="msg yo">¿Qué clientes no han pagado este mes?</div><div class="msg pix">Tienes 3 facturas pendientes por 2.470 €. ¿Les envío un recordatorio por WhatsApp?</div><div class="msg yo">Sí, envíalo</div></div></div>
-<div class="bloque-txt"><p class="kicker">Agente de IA</p><h2>PIX trabaja mientras tú emprendes</h2><p class="lead">Pregúntale en lenguaje normal: consulta, crea y automatiza dentro de tu programa.</p><a href="servicios/agentes-de-ia.html">Conocer a PIX →</a></div></div>
-<div class="bloque"><div class="bloque-txt"><p class="kicker">Fichaje</p><h2>Registro de jornada desde el móvil</h2><p class="lead">Cumple la ley desde el primer empleado. Informe para Inspección en un clic.</p><a href="servicios/fichador.html">Ver fichador →</a></div>
-<div class="bloque-vis"><div class="movil"><span class="mut" style="font-size:13px">Lunes, 12 oct</span><span class="hora">08:59</span><span class="fichar">Fichar entrada</span><span class="mut" style="font-size:12px">Jornada de hoy: 0 h 00 min</span></div></div></div>
-</div></section>
-
-<section class="sec sec-suave"><div class="w bloque">
-<div class="bloque-txt"><p class="kicker">A medida</p><h2>Si no existe, lo desarrollamos</h2><p class="lead">Módulos, apps e integraciones a medida de tu forma de trabajar, conectados a lo que ya usas.</p><a href="servicios/software-especializado.html">Ver software especializado →</a></div>
-<div class="bloque-vis"><div class="terminal"><span>$ studio desplegar --cliente taller-lopez</span><span class="v">✓ Módulo órdenes de trabajo</span><span class="v">✓ Conexión con WhatsApp</span><span class="v">✓ Agente PIX entrenado</span><span class="v">✓ App móvil publicada</span><span>Listo en producción</span></div></div>
-</div></section>
-
-<section class="sec"><div class="w">
-<div class="cab"><p class="kicker">Servicios</p><h2>Todo lo que hacemos, por áreas</h2></div>
-<div class="rejilla">%s</div>
-<p style="margin-top:28px"><a class="btn btn-s" href="servicios/index.html">Ver todos los servicios</a></p>
-</div></section>
-
-<section class="sec sec-noche"><div class="w cifras">
-<div class="cifra"><b>4</b><span>Packs para empezar</span></div><div class="cifra"><b>+150</b><span>Servicios a elegir</span></div><div class="cifra"><b>40 €</b><span>Soporte al mes</span></div><div class="cifra"><b>0 €</b><span>Diagnóstico inicial</span></div>
-</div></section>
-
-<section class="sec"><div class="w">
-<div class="cab"><p class="kicker">Precios</p><h2>Elige tu punto de partida</h2></div>%s
-</div></section>
-
-<section class="sec sec-suave"><div class="w">
-<div class="cab"><p class="kicker">Para tu sector</p><h2>Soluciones pensadas para tu día a día</h2></div>
-<div class="pildoras">%s</div>
-</div></section>
-
-<section class="sec"><div class="w" style="display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:center">
-<div style="flex:999 1 420px;min-width:0"><p class="kicker">Normativas 2026-2027</p><h2>¿Te afecta Verifactu, el fichaje digital o el AI Act?</h2><p class="lead" style="margin-top:12px">Depende de tu forma jurídica y tu actividad. Verifactu: 1/1/2027 para sociedades y 1/7/2027 para el resto, con un aplazamiento a octubre de 2028 anunciado y pendiente de BOE. Factura electrónica B2B: 6/10/2027 o 6/10/2028 según facturación. Formación en IA: obligatoria desde el 2/2/2025. Registro de jornada: desde 2019.</p><p class="mut" style="margin-top:10px;font-size:14px">Fuentes oficiales: <a href="https://www.boe.es/eli/es/rd/2023/12/05/1007" target="_blank" rel="noopener">RD 1007/2023 (Verifactu)</a>, <a href="https://www.boe.es/eli/es/l/2022/09/28/18" target="_blank" rel="noopener">Ley 18/2022 (factura electrónica)</a>, <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener">Reglamento (UE) 2024/1689 (AI Act)</a> y <a href="https://www.boe.es/eli/es/rdl/2019/03/08/8" target="_blank" rel="noopener">RDL 8/2019 (registro de jornada)</a>. Normativa revisada el <time datetime="2026-10-12">12 de octubre de 2026</time>.</p><p style="margin-top:6px"><a href="normativas.html">Ver todas las normas, plazos y fuentes oficiales →</a></p></div>
-<a class="btn btn-s" href="normativas.html">Ver normativas</a>
-</div></section>
-
-<section class="sec"><div class="w"><div class="cab"><p class="kicker">Blog</p><h2>Ideas claras para tu negocio</h2></div><div class="rejilla">%s</div><p style="margin-top:28px"><a class="btn btn-s" href="blog/index.html">Ver todos los artículos</a></p></div></section>
-<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Preguntas frecuentes</p><h2>Lo que más nos preguntan</h2></div>%s</div></section>
-""" % (tec, serv, packs(""), "".join('<a class="pildora" href="sectores.html#%s">%s</a>' % (s.lower().replace(" ", "-"), s) for s in SECTORES), BLOGHOME, '<div class="faq">' + "".join("<details><summary>%s</summary><p>%s</p></details>" % (e(q), e(a)) for q, a in FAQ_HOME) + "</div>")
-pagina("index.html", "Studio Emprende · Software, IA y webs para emprender", "Programa de gestión modular, agentes de IA y webs con SEO en una sola cuenta. Para autónomos, pymes y empresas de toda España.", inicio + cta(""), faqs=FAQ_HOME)
+shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "inicio.css"), OUT + "/assets/css/inicio.css")
+inicio = INI.html(e, DOM, FORM.tarjeta_formador(""),
+                  "".join('<a class="pildora" href="sectores.html#%s">%s</a>' % (s.lower().replace(" ", "-"), s) for s in SECTORES), BLOGHOME,
+                  '<div class="faq">' + "".join("<details><summary>%s</summary><p>%s</p></details>" % (e(q), e(a)) for q, a in FAQ_HOME) + "</div>",
+                  lambda u: any(x[0] == u.split("/")[-1][:-5] for x in SECCIONES))
+pagina("index.html", INI.TITULO, INI.META, inicio, faqs=FAQ_HOME, css="inicio.css")
 
 import unicodedata, re as _re
 def slugify(t):
