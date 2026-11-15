@@ -574,7 +574,10 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
     if slug == "formacion-ia":
         pagina("servicios/formacion-ia.html", "Formación en IA para empresas y equipos · Studio Emprende", "Formación en IA práctica para tu equipo: casos reales de cada área, normas de uso y seguimiento. Online o presencial, con Jordan García.", html + cta("../"), faqs=FORM.HUB_FAQS, ld_extra=[FORM.curso_hub(), FORM.JORDAN])
     else:
-        pagina("servicios/%s.html" % slug, "%s · Studio Emprende" % titulo, intro[:155], html + cta("../"))
+        _pf = PER.F.get(slug)
+        if _pf:
+            html += '<section class="sec"><div class="w"><div class="cab"><p class="kicker">Preguntas frecuentes</p><h2>%s</h2></div>%s</div></section>' % (e(PER.FH.get(slug, "Preguntas frecuentes")), _faq_html(_pf))
+        pagina("servicios/%s.html" % slug, "%s · Studio Emprende" % titulo, intro[:155], html + cta("../"), **({"faqs": _pf} if _pf else {}))
 
 
 # ---------- PAGINAS DE CADA FUNCION ----------
