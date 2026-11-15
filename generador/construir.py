@@ -333,6 +333,11 @@ def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None,
         grafo.append({"@type": "FAQPage", "@id": url + "#faq", "isPartOf": {"@id": url}, "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in (faqs or FAQ)]})
         wp["hasPart"] = {"@id": url + "#faq"}
     if ld_extra: grafo.extend(ld_extra if isinstance(ld_extra, list) else [ld_extra])
+    _es_art = (ruta.startswith("servicios/") and ruta.count("/") == 2 and not ruta.endswith("index.html")) or ruta in ARTICULO_LD
+    if _es_art and indexar and not any(isinstance(x, dict) and x.get("@type") in ("Article", "BlogPosting", "TechArticle") for x in grafo):
+        grafo.append({"@type": "Article", "@id": url + "#article", "headline": titulo.split(" · ")[0][:110], "description": desc, "inLanguage": "es",
+                      "dateModified": "__FMOD__", "mainEntityOfPage": {"@id": url}, "image": og or (DOM + "/assets/img/og-imagen.png"),
+                      "author": {"@id": DOM + "/#org"}, "publisher": {"@id": DOM + "/#org"}})
     if not indexar: NOINDEX.add(ruta)
     OGIMG[ruta] = og or (DOM + "/assets/img/og-imagen.png")
     MIGAS = []
@@ -426,6 +431,8 @@ FAQ_HOME = [("¿Qué es Studio Emprende?", "Un estudio que monta todo lo digital
  ("¿Cómo funciona el diagnóstico gratis?", "Nos cuentas cómo trabajas y te decimos qué digitalizar o automatizar primero y cuánto costaría, sin compromiso."),
  ("¿Dais formación?", "Sí: formación en IA para equipos, sesiones individuales y cursos a medida según la operativa de tu empresa.")]
 OGIMG = {}
+# Páginas de texto explicativo (fuera de blog y guías) que llevan marcado Article
+ARTICULO_LD = {"normativas.html", "montar-agencia-de-ia.html", "vender-programas-de-gestion-con-ia.html"}
 
 def cta(r):
     return """<section class="cta"><div class="w"><h2>Empieza hoy con tu diagnóstico gratis</h2>
@@ -788,7 +795,9 @@ for slug, t in [("aviso-legal", "Aviso legal"), ("privacidad", "Política de pri
     _ctx = {"aviso-legal": 'Aquí tienes los datos de la empresa titular de Studio Emprende y las condiciones de uso de la web. Para saber cómo tratamos tus datos, consulta la <a href="privacidad.html">política de privacidad</a>; si prefieres hablar con nosotros, tienes todas las vías en <a href="contacto.html">contacto</a>.',
             "privacidad": 'Esta política explica qué datos recogemos cuando nos escribes o pides un <a href="contacto.html#diagnostico">diagnóstico gratis</a>, para qué los usamos y cómo ejercer tus derechos. Las cookies tienen su propia <a href="cookies.html">política de cookies</a>, y los datos de la empresa están en el <a href="aviso-legal.html">aviso legal</a>.',
             "cookies": 'Esta página detalla qué cookies usa la web, para qué sirven y cómo cambiar tu elección. El tratamiento del resto de tus datos se explica en la <a href="privacidad.html">política de privacidad</a>, y quién está detrás de la web, en <a href="sobre-nosotros.html">sobre nosotros</a>.'}[slug]
-    pagina(slug + ".html", _tl, t + " de Studio Emprende.",
+    pagina(slug + ".html", _tl, {"aviso-legal": "Aviso legal de Studio Emprende: empresa titular (INTELIGENCIA SEVILLA SL), datos de contacto y condiciones de uso de la web.",
+                                   "privacidad": "Política de privacidad de Studio Emprende: qué datos recogemos cuando nos escribes, para qué los usamos y cómo ejercer tus derechos.",
+                                   "cookies": "Política de cookies de Studio Emprende: qué cookies usa la web, para qué sirve cada una y cómo cambiar tu elección cuando quieras."}[slug],
            '<section class="page-hero"><div class="w">%s<h1>%s</h1></div></section><section class="sec"><div class="w legal-txt"><p class="mut">Última actualización: octubre de 2026.</p><p>%s</p>%s</div></section>' % (migas("", (t, None)), t, _ctx, LEG[slug]))
 
 pagina("404.html", "Página no encontrada · Studio Emprende", "La página que buscas no existe.",
@@ -882,7 +891,7 @@ _PE = """<section class="page-hero"><div class="w">%s<h1>Política editorial</h1
 </div></div></section>"""
 pagina("politica-editorial.html", "Política editorial: cómo escribimos y revisamos · Studio Emprende", "Cómo redacta, revisa y corrige Studio Emprende los artículos del blog y las guías: fuentes oficiales, fechas de revisión y correo para avisar de errores.", _PE % migas("", ("Política editorial", None)) + cta(""))
 
-pagina("mapa-web.html", "Mapa de la web · Studio Emprende", "Todas las páginas de Studio Emprende.", '<section class="page-hero"><div class="w">%s<h1>Mapa de la web</h1><p class="lead">Todas las páginas y cómo se organizan.</p></div></section><section class="sec"><div class="w">%s</div></section>' % (migas("", ("Mapa de la web", None)), mapa))
+pagina("mapa-web.html", "Mapa de la web · Studio Emprende", "Mapa de la web de Studio Emprende: servicios, guías, blog, normativas y páginas legales, ordenados por secciones para encontrar cada página.", '<section class="page-hero"><div class="w">%s<h1>Mapa de la web</h1><p class="lead">Todas las páginas y cómo se organizan.</p></div></section><section class="sec"><div class="w">%s</div></section>' % (migas("", ("Mapa de la web", None)), mapa))
 
 # ---------- SEO ----------
 import datetime as _dt
