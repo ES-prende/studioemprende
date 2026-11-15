@@ -7,6 +7,7 @@ import funciones as FN
 import partners as PT
 import landings as LD
 import inicio as INI
+import personas as PER
 import casos as CS
 import intenciones as INT
 import enlaces_extra as EX
@@ -524,7 +525,7 @@ for k, n, d in cats + [("clientes", "Para quién", "Autónomos, pymes, grandes e
         hub += '<a class="tarjeta" href="%s.html"><h3>%s</h3><p>%s</p><span class="mas">Ver servicio →</span></a>' % (s[0], e(s[2]), e(s[3]))
     hub += "</div>"
 pagina("servicios/index.html", "Servicios · Studio Emprende", "Todos los servicios de Studio Emprende: software de gestión, IA, webs, soporte, formación y más.",
-       '<section class="page-hero"><div class="w">%s<h1>Servicios</h1><p class="lead">Todo lo que hacemos, organizado por áreas. Empieza por lo que más te urge.</p></div></section><section class="sec" style="padding-top:24px"><div class="w">%s</div></section>%s' % (migas("../", ("Servicios", None)), hub, cta("../")))
+       '<section class="page-hero"><div class="w">%s<h1>Servicios</h1><p class="lead">Todo lo que hacemos, organizado por áreas. Empieza por lo que más te urge.</p></div></section>%s<section class="sec" style="padding-top:24px"><div class="w">%s</div></section>%s' % (migas("../", ("Servicios", None)), PER.SELECTOR, hub, cta("../")))
 
 # H1 y bloque propio en hubs no indexados (el nombre del servicio sigue igual en menús)
 HUB_H1 = {"whatsapp-ia": "Agentes de IA para WhatsApp: atienden, agendan y recuerdan citas por ti",
@@ -561,8 +562,8 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
 <a class="btn btn-claro" href="../contacto.html?servicio={s}#diagnostico">Pedir diagnóstico gratis</a><a class="btn btn-borde-claro" href="../precios.html">Ver packs</a></aside>""".format(s=slug, n=normh)
     html = """<section class="page-hero"><div class="w">{m}<p class="kicker">{cat}</p><h1>{t}</h1><p class="lead">{i}</p>
 <div class="botones" style="margin-top:24px"><a class="btn btn-p" href="../contacto.html?servicio={s}#diagnostico">Pedir información</a><a class="btn btn-s" href="index.html">Ver todos los servicios</a></div></div></section>
-<section class="sec"><div class="w lateral"><div class="lateral-main">{c}</div>{a}</div></section>
-{x}{rel}""".format(x=FORM.hub_extra("../").format(formador=FORM.tarjeta_formador("../"), faq=_faq_html(FORM.HUB_FAQS)) if slug == "formacion-ia" else "", m=migas("../", ("Servicios", "index.html"), (titulo, None)), cat=dict(MENU)[menu], t=e(HUB_H1.get(slug, titulo)), i=e(intro), s=slug, c=cuerpo, a=aside,
+{antes}<section class="sec"><div class="w lateral"><div class="lateral-main">{c}</div>{a}</div></section>
+{x}{rel}""".format(antes=PER.HUB_ANTES.get(slug, ""), x=FORM.hub_extra("../").format(formador=FORM.tarjeta_formador("../"), faq=_faq_html(FORM.HUB_FAQS)) if slug == "formacion-ia" else "", m=migas("../", ("Servicios", "index.html"), (titulo, None)), cat=dict(MENU)[menu], t=e(HUB_H1.get(slug, titulo)), i=e(intro), s=slug, c=cuerpo, a=aside,
                  rel=('<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">También te puede interesar</p><h2>Servicios relacionados</h2></div><div class="rejilla">%s</div></div></section>' % relh) if relh else "")
     html += HUB_EXTRA.get(slug, "")
     gs = [g for g in GUIAS if g[0] in SERVICIO_GUIAS.get(slug, [])]
@@ -727,6 +728,8 @@ pagina("sectores.html", "Software, IA y webs por sector · Studio Emprende", "So
 opts = "".join('<option value="%s">%s</option>' % (s[0], e(s[2])) for s in SECCIONES)
 contacto = """<section class="page-hero"><div class="w">{m}<h1>Hablemos de tu negocio</h1><p class="lead">Cuéntanos qué necesitas y te respondemos con un diagnóstico gratuito y una propuesta clara. Si ya sabes lo que buscas, mira antes los <a href="precios.html">precios y packs</a> o nuestros servicios de <a href="servicios/software-de-gestion.html">software de gestión</a>, <a href="servicios/webs.html">webs con SEO</a> y <a href="servicios/agentes-de-ia.html">agentes de IA</a>.</p></div></section>
 <section class="sec" id="diagnostico"><div class="w lateral"><div class="lateral-main">
+<div class="cab" style="margin-bottom:24px"><h2>Cuéntanos tu idea, tu proyecto o lo que te está frenando</h2><p class="lead" style="margin-top:8px">No hace falta que lo traigas todo pensado. Con unas líneas nos basta para empezar.</p></div>
+<div class="tarjeta" style="margin-bottom:26px;background:var(--suave)"><h3>En qué consiste el diagnóstico gratuito</h3><ul class="lista"><li>Nos cuentas cómo trabajas hoy o qué idea tienes.</li><li>Te decimos qué conviene hacer primero y qué puede esperar.</li><li>Te damos una estimación de lo que costaría, sin compromiso.</li></ul><p>Te respondemos en menos de 24 horas laborables.</p></div>
 <form class="form" data-contacto action="https://formsubmit.co/info@studioemprende.com" method="post">
 <input type="hidden" name="_subject" value="Nuevo contacto desde studioemprende.com">
 <input type="hidden" name="_cc" value="socialstudioemprende@gmail.com">
@@ -743,8 +746,9 @@ contacto = """<section class="page-hero"><div class="w">{m}<h1>Hablemos de tu ne
 <div class="campo"><label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel" autocomplete="tel" required inputmode="tel" maxlength="20" pattern="[+0-9 ()-]{{9,20}}"><span class="error" hidden style="color:#A3222F;font-size:13px">Escribe tu teléfono</span></div></div>
 <div class="dos"><div class="campo"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="120"><span class="error" hidden style="color:#A3222F;font-size:13px">Escribe tu email</span></div>
 <div class="campo"><label for="empresa">Empresa (opcional)</label><input id="empresa" name="empresa" autocomplete="organization" maxlength="120"></div></div>
+<div class="campo"><label for="etapa">¿En qué punto estás?</label><select id="etapa" name="etapa"><option value="">Elige una opción</option><option>Tengo una idea</option><option>Estoy empezando</option><option>Ya tengo un negocio en marcha</option></select></div>
 <div class="campo"><label for="servicio">¿Qué te interesa?</label><select id="servicio" name="servicio"><option value="">Aún no lo sé, quiero el diagnóstico</option>{o}</select></div>
-<div class="campo"><label for="mensaje">Cuéntanos tu caso</label><textarea id="mensaje" name="mensaje" rows="5" maxlength="2000"></textarea></div>
+<div class="campo"><label for="mensaje">¿Qué te está frenando o qué te gustaría conseguir?</label><textarea id="mensaje" name="mensaje" rows="5" maxlength="2000"></textarea></div>
 <label style="display:flex;gap:10px;font-size:14px;align-items:flex-start"><input type="checkbox" name="privacidad" required style="margin-top:4px"> He leído y acepto la <a href="privacidad.html">política de privacidad</a>.</label>
 <div><button class="btn btn-p" type="submit">Enviar y recibir mi diagnóstico</button></div>
 </form></div>
