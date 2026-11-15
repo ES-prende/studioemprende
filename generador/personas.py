@@ -359,3 +359,63 @@ FH = {"webs": "Antes de encargar tu web", "presencia-digital": "Lo que suele pre
       "deluxe": "Confidencialidad y alcance", "ciberseguridad-y-sistemas": "Seguridad informática: tres dudas comunes", "departamento-tecnologico": "Cómo funciona el soporte externo",
       "consultoria-y-ayudas": "Diagnóstico y ayudas: lo que hay que saber", "relevo-y-continuidad": "Preguntas sobre el relevo", "fichador": "Registro de jornada: respuestas rápidas",
       "alojamientos-y-domotica": "Dudas de propietarios y gestores"}
+
+
+# =====================================================================
+# Páginas generales: sobre nosotros, sectores, PIX, blog, guías y precios
+# =====================================================================
+
+# Sobre nosotros (rutas relativas a la raíz)
+SOBRE = _sec("A quién acompañamos", "Tres momentos distintos de un mismo camino", _rej(
+    '<div class="tarjeta" style="border-top:4px solid var(--burdeos)"><h3>Quien tiene una idea</h3><p>Todavía no hay negocio, solo ganas y muchas dudas. Ayudamos a decidir qué hace falta para arrancar y qué puede esperar.</p><a class="mas" href="servicios/autonomos.html">Emprendedores y autónomos →</a></div>',
+    '<div class="tarjeta" style="border-top:4px solid #83503A"><h3>Quien acaba de empezar</h3><p>Ya hay clientes, pero falta visibilidad y orden. Ponemos la base: presencia profesional y una forma sencilla de llevar el día a día.</p><a class="mas" href="servicios/presencia-digital.html">Presencia digital →</a></div>',
+    '<div class="tarjeta" style="border-top:4px solid var(--ocre)"><h3>Quien ya tiene empresa</h3><p>El negocio funciona y toca ganar tiempo, cobrar antes o preparar el crecimiento sin perder el control.</p><a class="mas" href="servicios/pequenas-empresas.html">Pequeñas empresas →</a></div>')
+    + '<div class="rejilla" style="margin-top:26px">'
+    + _t("Lo que hacemos", "Presencia digital, programas de gestión, automatización, inteligencia artificial y formación, con soporte posterior.")
+    + _t("Lo que no hacemos", "No somos gestoría ni asesoría fiscal o jurídica. Si la necesitas, te ayudamos a encontrar a ese profesional.")
+    + _t("Dónde trabajamos", "100 % online para toda España. La sede está en Alcolea del Río (Sevilla).")
+    + '</div>', True)
+
+# Sectores: acceso por forma de trabajar (los anclajes son los id de las tarjetas que ya existen)
+def _anc(*ss):
+    return " · ".join('<a href="#%s">%s</a>' % (s.lower().replace(" ", "-"), s) for s in ss)
+
+SECTORES = _sec("Encuentra el tuyo", "¿Cómo es tu día a día?", _tabla(
+    ["Tu forma de trabajar", "Lo que suele complicarse", "Sectores"],
+    [["Atiendes con cita previa", "Huecos vacíos, ausencias sin avisar y el teléfono sonando mientras atiendes", _anc("Clínicas", "Academias", "Talleres")],
+     ["Trabajas en casa del cliente", "Presupuestos a mano, partes en papel y desplazamientos mal repartidos", _anc("Reformas e instaladores")],
+     ["Vendes producto", "Stock que no cuadra, pedidos por varios canales y márgenes poco claros", _anc("Comercios", "Distribuidores", "Industria", "Hostelería")],
+     ["Gestionas inmuebles o estancias", "Reservas, visitas y documentación repartidas en varias aplicaciones", _anc("Inmobiliarias", "Alojamientos turísticos")],
+     ["Llevas expedientes de clientes", "Plazos, documentos y seguimiento de cada caso", _anc("Gestorías", "Asesorías energéticas")]])
+    + '<p style="margin-top:18px">¿Tu sector no aparece? <a href="contacto.html#diagnostico">Cuéntanos a qué te dedicas</a> y vemos qué se puede adaptar.</p>', True)
+
+# PIX: tres situaciones reales (rutas relativas a /servicios/pix/)
+PIX = _sec("Tres momentos de cualquier semana", "Cuándo se nota tener a PIX en la empresa", _rej(
+    _d("Lunes, 9:00", "Quieres saber cómo fue la semana y los datos están en tres programas. PIX los reúne y te da el resumen, con lo que requiere tu atención."),
+    _d("Martes, 22:15", "Un cliente escribe por WhatsApp con el negocio cerrado. PIX responde con tu información y, si hace falta, deja la cita apuntada.", " d2"),
+    _d("Jueves, 13:30", "Hay facturas vencidas y nadie encuentra el momento de reclamarlas. PIX prepara los avisos y espera tu visto bueno antes de enviarlos.", " d3"))
+    + '<p style="margin-top:22px;max-width:820px"><b>Siempre con supervisión.</b> Tú decides qué puede hacer PIX por su cuenta y qué necesita aprobación. Las condiciones y las fases de puesta en marcha están en <a href="implantacion-y-precios.html">implantación y precios</a>.</p>', True)
+
+# Blog: acceso por temas (rutas relativas a /blog/)
+BLOG = '<section class="sec sec-suave" style="padding:48px 0"><div class="w"><div class="cab" style="margin-bottom:22px"><p class="kicker">Por temas</p><h2>¿Qué te interesa leer?</h2></div><div class="pildoras">' + "".join(
+    '<a class="pildora" href="../temas/%s.html">%s</a>' % (s, n) for s, n in [
+        ("emprender-y-crecer", "Emprender y crecer"), ("webs-y-visibilidad", "Webs y visibilidad"), ("gestion-y-crm", "Gestión y CRM"),
+        ("inteligencia-artificial", "Inteligencia artificial"), ("normativas-y-cumplimiento", "Normativas"), ("formacion-para-empresas", "Formación para empresas")]
+) + '</div><p class="mut" style="margin-top:18px;font-size:15px">Cada artículo responde a una pregunta concreta. Si la tuya no está, <a href="../contacto.html">escríbenos</a> y la tendremos en cuenta.</p></div></section>'
+
+# Guías: recorrido recomendado (rutas relativas a /guias/)
+GUIAS = _sec("Si no sabes por cuál empezar", "Un recorrido en cuatro lecturas", _pasos(
+    ("Aclara la idea", '<a href="como-emprender-un-negocio.html">Cómo emprender un negocio</a>, paso a paso.'),
+    ("Mira cómo financiarla", '<a href="financiacion-para-emprendedores.html">Financiación para emprendedores</a> y <a href="ayudas-para-jovenes-emprendedores.html">ayudas para jóvenes</a>.'),
+    ("Dale forma legal", '<a href="como-registrar-una-empresa-en-espana.html">Cómo registrar una empresa en España</a>. Los trámites los lleva tu gestor.'),
+    ("Hazte visible", '<a href="como-crear-una-pagina-web.html">Cómo crear una página web</a> para que te encuentren.'))
+    + '<p style="margin-top:20px">¿Prefieres comentarlo con alguien? <a href="../contacto.html#diagnostico">Cuéntanos en qué punto estás</a>.</p>', True)
+
+# Precios: para quién es cada pack, antes de los importes (rutas relativas a la raíz)
+PRECIOS = _sec("Antes de mirar importes", "¿Qué pack resuelve tu situación?", _tabla(
+    ["Tu situación", "Pack", "Qué problema resuelve"],
+    [["Acabas de empezar y nadie te encuentra en internet", "Impulso Inicial", "Te da imagen, una web sencilla y presencia en Google para recibir los primeros contactos"],
+     ["Ya tienes clientes y el papeleo se come tus tardes", "Negocio en Marcha", "Añade un programa de gestión y automatizaciones a una web con blog preparada para buscadores"],
+     ["Lanzas un proyecto y quieres que lo monten de principio a fin", "Llave en Mano", "Marca, web, embudo de ventas y gestión, con dos meses de acompañamiento"],
+     ["Solo necesitas una parte", "Arma tu pack", "Eliges los servicios sueltos y recibes el precio antes de empezar"]])
+    + '<p style="margin-top:18px">¿Dudas entre dos? En el <a href="contacto.html#diagnostico">diagnóstico gratuito</a> lo vemos contigo. El detalle de cada pack está en <a href="#que-incluye">qué incluye cada pack</a>.</p>', True)
