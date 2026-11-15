@@ -443,9 +443,37 @@ def packs(r):
     out = '<div class="rejilla">'
     for n, p, d, dest in PACKS:
         out += '<div class="tarjeta pack%s">%s<h3>%s</h3><p>%s</p><div class="precio">%s</div><span class="cuota">%s</span><a class="btn %s" href="%scontacto.html?pack=%s#diagnostico">%s</a></div>' % (
-            " dest" if dest else "", '<span class="etiqueta">Más elegido</span>' if dest else "", e(n), e(d), p,
+            " dest" if dest else "", '<span class="etiqueta">Más elegido</span>' if dest else "", e(n), e(d), p if p == "A medida" else "Desde " + p,
             "Según los servicios" if p == "A medida" else "+ 40 €/mes de soporte", "btn-p" if dest else "btn-s", r, n.replace(" ", "-").lower(), "Montar mi pack" if p == "A medida" else "Lo quiero")
     return out + "</div>"
+
+PACKS_DETALLE = [
+    ("Impulso Inicial", "Desde 990 €", "Para quien acaba de empezar y todavía no aparece en internet.",
+     ["Identidad visual de tu negocio", "Web de una página (One Page)", "Ficha de Google Business", "Redes sociales preparadas", "Una sesión de coaching"],
+     "De 2 a 3 semanas"),
+    ("Negocio en Marcha", "Desde 1.790 €", "Para quien ya tiene clientes y necesita ordenar el día a día.",
+     ["Web completa con blog", "SEO para que te encuentren en Google", "Programa de gestión básico", "Automatizaciones de las tareas que repites"],
+     "De 3 a 4 semanas"),
+    ("Llave en Mano", "Desde 3.690 €", "Para quien lanza un proyecto y quiere que se lo monten de principio a fin.",
+     ["Branding completo", "Web premium", "Embudo de ventas", "Programa de gestión avanzado", "Dos meses de acompañamiento"],
+     "Unos 2 meses"),
+    ("Arma tu pack", "A medida", "Para quien solo necesita una parte.",
+     ["Eliges solo los servicios que necesitas", "Te damos el precio antes de empezar"],
+     "Según los servicios"),
+]
+def packs_detalle():
+    out = '<section class="sec sec-suave" id="que-incluye"><div class="w"><div class="cab"><p class="kicker">Pack a pack</p><h2>Qué incluye cada pack</h2><p class="lead" style="margin-top:8px">El precio de cada pack es el punto de partida: te confirmamos el importe final por escrito antes de empezar, según lo que necesite tu proyecto.</p></div><div class="rejilla">'
+    for n, p, q, items, plazo in PACKS_DETALLE:
+        out += '<div class="tarjeta"><h3>%s</h3><div class="precio">%s</div><p>%s</p><ul class="lista" style="margin-top:6px">%s</ul><p style="margin-top:auto"><b>Plazo:</b> %s</p></div>' % (
+            e(n), p, e(q), "".join("<li>%s</li>" % e(i) for i in items), e(plazo))
+    return out + """</div>
+<div class="tarjeta" style="margin-top:18px"><h3>Cuotas y gastos que debes conocer</h3><ul class="lista">
+<li><b>Soporte y mantenimiento: 40 € al mes.</b> Se suma a los packs Impulso Inicial, Negocio en Marcha y Llave en Mano, y cubre el soporte y el mantenimiento de tu programa de gestión.</li>
+<li><b>Gastos de terceros,</b> como el dominio, que se pagan aparte.</li>
+<li><b>IVA no incluido</b> en ningún precio de esta página.</li>
+<li><b>Plazos:</b> cuentan desde que nos pasas la información necesaria. Te damos una fecha cerrada al empezar.</li>
+<li><b>Migración de datos</b> desde Excel u otro programa: incluida al implantar el programa de gestión.</li>
+</ul></div></div></section>"""
 
 def foto_blog(sl, alt, portada=False):
     b = "/assets/img/blog/" + sl
@@ -657,7 +685,7 @@ for n, pr, d, dest in PACKS:
 _cat = {"@type": "OfferCatalog", "@id": DOM + "/precios#packs", "name": "Precios y packs", "url": DOM + "/precios", "itemListElement": _offers}
 pagina("precios.html", "Precios y packs de software, IA y webs · Studio Emprende", "Packs para empezar desde 990 € más 40 €/mes de soporte, o arma tu propio pack con solo lo que necesitas.",
        '<section class="page-hero"><div class="w">%s<h1>Precios y packs</h1><p class="lead">Pago único por el pack y una cuota de 40 € al mes de soporte y mantenimiento. Precios sin IVA, vigentes desde octubre de 2026.</p><p class="mut" style="font-size:14px;margin-top:10px">Última revisión de precios: <time datetime="2026-10-20">20 de octubre de 2026</time>.</p></div></section><section class="sec"><div class="w"><h2 style="margin-bottom:24px">Packs para empezar</h2>%s</div></section>%s<section class="sec sec-suave"><div class="w"><div class="cab"><h2>Preguntas frecuentes</h2></div>%s</div></section>%s'
-       % (migas("", ("Precios", None)), packs(""), FORM.banda_precios(), faq(), cta("")), ld_extra=_cat, extra_pagina={"mainEntity": {"@id": DOM + "/precios#packs"}})
+       % (migas("", ("Precios", None)), packs(""), packs_detalle() + FORM.banda_precios(), faq(), cta("")), ld_extra=_cat, extra_pagina={"mainEntity": {"@id": DOM + "/precios#packs"}})
 
 # ---------- NORMATIVAS ----------
 REV_FECHA = "2026-10-12"
