@@ -69,7 +69,10 @@ open(OUT + "/assets/js/main.js", "w").write("""
   });
   document.addEventListener('click',function(ev){document.querySelectorAll('.desplegable.abierto').forEach(function(d){if(!d.contains(ev.target)){d.classList.remove('abierto');d.querySelector('button').setAttribute('aria-expanded','false')}})});
   document.addEventListener('keydown',function(ev){if(ev.key==='Escape'){document.querySelectorAll('.desplegable.abierto').forEach(function(d){d.classList.remove('abierto')})}});
-  var q=new URLSearchParams(location.search),sv=document.getElementById('servicio'),fn=document.getElementById('funcion');if(sv&&q.get('servicio')){sv.value=q.get('servicio')}if(fn&&q.get('funcion')){fn.value=q.get('funcion')}
+  document.querySelectorAll('a[data-q]').forEach(function(a){a.addEventListener('click',function(){try{sessionStorage.setItem('se_q',a.getAttribute('data-q'))}catch(x){}})});
+  var _sq='';try{if(document.querySelector('form[data-contacto]')){_sq=sessionStorage.getItem('se_q')||'';sessionStorage.removeItem('se_q')}}catch(x){}
+  if(_sq){var _fc=document.querySelector('form[data-contacto]'),_hi=document.createElement('input');_hi.type='hidden';_hi.name='viene_de';_hi.value=_sq.slice(0,150);_fc.appendChild(_hi)}
+  var q=new URLSearchParams(location.search.length>1?location.search:_sq),sv=document.getElementById('servicio'),fn=document.getElementById('funcion');if(sv&&q.get('servicio')){sv.value=q.get('servicio')}if(fn&&q.get('funcion')){fn.value=q.get('funcion')}
   var f=document.querySelector('form[data-contacto]');
   if(f){var t0=Date.now(),hum=false,tk=document.getElementById('_t'),av=document.getElementById('form-aviso');
     ['mousemove','touchstart','keydown','scroll'].forEach(function(e){window.addEventListener(e,function(){hum=true},{once:true,passive:true})});
@@ -413,6 +416,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </html>""".format(t=e(titulo), d=e(desc), dom=DOM, ruta=ruta.replace("index.html", ""), canonical=("" if (ruta == "404.html" or ruta in NOINDEX) else '<link rel="canonical" href="%s/%s">' % (DOM, CANON.get(ruta, ruta).replace("index.html", ""))), r=r, css=('<link rel="stylesheet" href="%sassets/css/%s">' % (r, css) if css else ""), cab=cabecera(r), c=cuerpo, pie=pie(r), seo=seo, tipo=tipo, og=OGIMG[ruta], bing=('\n<meta name="msvalidate.01" content="AB0BB421B154681CB3B932E814F90956" />' if ruta == "index.html" else ""), wan=WA_NUM, wat=_q("Hola, vengo de la web de Studio Emprende (%s) y quiero información." % titulo.split(" · ")[0]))
     if ruta not in NOINDEX and ruta.split("/")[0] in ("blog", "guias", "servicios"):
         html = EN.enlazar(html)
+    # Enlaces al formulario sin parámetros en la URL (evita cientos de URLs duplicadas de /contacto para los rastreadores):
+    # el servicio, la función, el pack o el sector viajan en data-q y main.js los pasa al formulario.
+    html = re.sub(r'href="((?:\.\./)*contacto\.html|/contacto)\?([^"#]+)(#[^"]*)?"', lambda m: 'href="%s%s" data-q="%s"' % (m.group(1), m.group(3) or "", m.group(2)), html)
     p = os.path.join(OUT, ruta); os.makedirs(os.path.dirname(p), exist_ok=True)
     open(p, "w").write(html)
     PAGS.append(ruta)
