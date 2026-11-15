@@ -419,11 +419,11 @@ CANON = {"servicios/software-de-gestion/gestion-de-flotas.html": "servicios/soft
          "servicios/software-de-gestion/portal-de-pedidos-b2b.html": "servicios/software-especializado/portal-de-pedidos-b2b.html",
          "servicios/erp-para-pymes/cuadro-de-mando-en-tiempo-real.html": "servicios/software-de-gestion/cuadro-de-mando-en-tiempo-real.html",
          "servicios/software-de-gestion/integraciones-por-api.html": "servicios/migraciones-e-integraciones/integraciones-por-api.html"}
-FAQ_HOME = [("¿Qué es Studio Emprende?", "Un estudio que monta todo lo digital de un negocio: marca, web con SEO, programa de gestión, automatizaciones e inteligencia artificial, en packs con precio cerrado."),
+FAQ_HOME = [("¿Qué es Studio Emprende?", "Un estudio que monta todo lo digital de un negocio: marca, web con SEO, programa de gestión, automatizaciones e inteligencia artificial, en packs desde 990 €."),
  ("¿A quién ayudáis?", "A emprendedores, autónomos y pequeñas empresas que empiezan o quieren ordenar su negocio, y a asesores que montan negocios para sus clientes."),
  ("¿Usáis inteligencia artificial en los proyectos?", "Sí, cuando ahorra trabajo de verdad: automatizaciones, asistentes en WhatsApp y nuestro agente PIX conectado a tu programa de gestión, siempre con tu aprobación en lo importante."),
  ("¿Cómo funciona el diagnóstico gratis?", "Nos cuentas cómo trabajas y te decimos qué digitalizar o automatizar primero y cuánto costaría, sin compromiso."),
- ("¿Dais formación?", "Sí: formación en IA para equipos, sesiones individuales desde 40 € la hora y cursos a medida según la operativa de tu empresa.")]
+ ("¿Dais formación?", "Sí: formación en IA para equipos, sesiones individuales y cursos a medida según la operativa de tu empresa.")]
 OGIMG = {}
 
 def cta(r):

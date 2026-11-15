@@ -53,3 +53,5 @@
   .ini-frases li{font-size:16px}
 }
 @media (prefers-reduced-motion:reduce){.ini .rv{opacity:1;transform:none;transition:none}}
+.ini-hueco{background:var(--suave);border:2px dashed #D9CFC6;justify-content:center}
+.ini-hueco h3{color:var(--gris)}

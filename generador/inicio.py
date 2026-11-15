@@ -65,6 +65,11 @@ SERVICIOS = [
      [("Software especializado", "servicios/software-especializado.html"), ("Migraciones e integraciones", "servicios/migraciones-e-integraciones.html"), ("Apps móviles", "servicios/apps-moviles.html")]),
 ]
 
+HUECOS = [
+    ("Nuevo caso en preparación", "Estamos documentando el siguiente proyecto: punto de partida, lo que hicimos y los datos que se pueden comprobar."),
+    ("Tu proyecto puede ser el próximo", "Cuéntanos en qué punto estás y vemos juntos cuál es el siguiente paso."),
+]
+
 
 def html(e, dom, formador, sectores, blog, faq, existe):
     caminos = "".join(
@@ -77,6 +82,8 @@ def html(e, dom, formador, sectores, blog, faq, existe):
         '<div class="tarjeta"><h3>%s</h3><p class="ini-benef">%s</p><p>%s</p><ul class="lista" style="margin-top:6px">%s</ul></div>'
         % (e(t), e(b), e(h), "".join('<li><a href="%s">%s</a></li>' % (u, e(n)) for n, u in ls if existe(u)))
         for t, b, h, ls in SERVICIOS)
+    # Huecos para los próximos casos: al publicar uno nuevo, se sustituye un hueco por su tarjeta
+    huecos = ''.join('<div class="tarjeta ini-hueco"><span class="etiqueta">Próximamente</span><h3>%s</h3><p>%s</p><a class="mas" href="#contacto">Quiero que el siguiente sea el mío →</a></div>' % (e(t), e(d)) for t, d in HUECOS)
     opciones = "".join('<option>%s</option>' % e(v) for _, _, _, _, v in CAMINOS)
     return """<div class="ini">
 <section class="hero ini-hero"><div class="w"><div class="hero-txt">
@@ -126,11 +133,12 @@ def html(e, dom, formador, sectores, blog, faq, existe):
 </div></section>
 
 <section class="sec"><div class="w">
-<div class="cab"><p class="kicker">Confianza</p><h2>Proyectos, personas y soluciones reales</h2><p class="lead" style="margin-top:8px">Contamos cada proyecto con lo que se hizo, en qué orden y los datos que se pueden comprobar.</p></div>
+<div class="cab"><p class="kicker">Confianza</p><h2>Proyectos, personas y soluciones reales</h2><p class="lead" style="margin-top:8px">Contamos cada proyecto con lo que se hizo, en qué orden y los datos que se pueden comprobar. Sin cifras infladas.</p></div>
 <div class="rejilla ini-casos">
 <a class="tarjeta" href="casos/contratalux.html"><img src="assets/img/casos/contratalux-panel.webp" alt="Panel del programa de gestión de ContrataLux" width="1280" height="720" loading="lazy" decoding="async" style="border-radius:10px"><span class="etiqueta">Asesorías energéticas</span><h3>ContrataLux: de la idea al lanzamiento completo</h3><p><b>El problema:</b> un proyecto nuevo sin marca, web ni herramienta para gestionar contratos y comisiones.</p><p><b>La solución:</b> identidad, dominio y correo, web preparada para buscadores, redes y un programa de gestión a medida.</p><span class="mas">Leer el caso →</span></a>
-<div class="tarjeta"><h3>Cómo contamos cada caso</h3><ul class="lista"><li>El punto de partida del negocio.</li><li>Lo que hicimos y en qué orden.</li><li>Capturas reales y datos comprobables.</li></ul><p>Sin cifras infladas: lo que no se puede medir, no lo contamos.</p><a class="mas" href="casos/index.html">Ver todos los casos →</a></div>
+{huecos}
 </div>
+<p style="margin-top:28px"><a class="btn btn-s" href="casos/index.html">Ver todos los casos</a></p>
 </div></section>
 
 <section class="sec sec-suave"><div class="w">
@@ -182,5 +190,5 @@ def html(e, dom, formador, sectores, blog, faq, existe):
 <script>(function(){{var s=document.getElementById('punto');document.querySelectorAll('a[data-perfil]').forEach(function(a){{a.addEventListener('click',function(){{if(s)s.value=a.getAttribute('data-perfil')}})}});
 var rd=matchMedia('(prefers-reduced-motion: reduce)').matches,els=document.querySelectorAll('.ini .tarjeta,.ini .cab,.ini-frases li');
 if(!rd&&'IntersectionObserver' in window){{els.forEach(function(x){{x.classList.add('rv')}});var io=new IntersectionObserver(function(es){{es.forEach(function(x){{if(x.isIntersecting){{x.target.classList.add('si');io.unobserve(x.target)}}}})}},{{rootMargin:'0px 0px -6% 0px'}});els.forEach(function(x){{io.observe(x)}})}}}})();</script>""".format(
-        caminos=caminos, problemas=problemas, beneficios=beneficios, fases=fases, servicios=servicios, opciones=opciones,
+        caminos=caminos, problemas=problemas, beneficios=beneficios, fases=fases, servicios=servicios, opciones=opciones, huecos=huecos,
         formador=formador, sectores=sectores, blog=blog, faq=faq, dom=dom)
