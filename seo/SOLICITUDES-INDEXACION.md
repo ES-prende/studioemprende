@@ -61,3 +61,5 @@ También se enviaron a Bing por IndexNow el 6/11: /servicios/apps-moviles/ y las
 El 11/11, las 10 del día también se enviaron a Bing por IndexNow.
 
 Pendiente para el 15/11 (cuota agotada el 14/11): /guias/erp-para-logistica-y-almacen
+
+El 15/11/2026 se enviaron a Bing por IndexNow las 424 URLs de los sitemaps tras la reescritura de páginas internas.
