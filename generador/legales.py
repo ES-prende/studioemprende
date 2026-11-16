@@ -38,15 +38,15 @@ AVISO = """<h2>1. Titular del sitio web</h2>
 PRIVACIDAD = """<h2>1. Responsable del tratamiento</h2>
 <p>INTELIGENCIA SEVILLA SL (nombre comercial: Studio Emprende), con NIF B88763818 y domicilio social en Calle Betis 3, 41449 Alcolea del Río (Sevilla). Contacto: <a href="mailto:{e}">{e}</a> · 601 86 96 68.</p>
 <h2>2. Qué datos tratamos</h2>
-<p>Los que nos facilitas en el formulario de contacto o por WhatsApp y correo: nombre, teléfono, email, empresa y el contenido de tu mensaje. No pedimos datos especialmente protegidos; te rogamos que no los incluyas en el mensaje.</p>
+<p>Los que nos facilitas en el formulario de contacto o por WhatsApp y correo: nombre, teléfono, email, empresa y el contenido de tu mensaje. Si te suscribes para recibir una guía o nuestros correos, tratamos tu nombre, tu email y, si lo indicas, tu teléfono. No pedimos datos especialmente protegidos; te rogamos que no los incluyas en el mensaje.</p>
 <h2>3. Para qué los usamos</h2>
-<ul><li>Responder a tu consulta y prepararte un diagnóstico o presupuesto.</li><li>Mantener la relación comercial si llegas a ser cliente.</li><li>Enviarte información relacionada con lo que nos has pedido, nunca publicidad ajena.</li></ul>
+<ul><li>Responder a tu consulta y prepararte un diagnóstico o presupuesto.</li><li>Mantener la relación comercial si llegas a ser cliente.</li><li>Enviarte información relacionada con lo que nos has pedido, nunca publicidad ajena.</li><li>Si te suscribes al descargar una guía: enviarte esa guía y, de vez en cuando, correos con consejos y novedades de Studio Emprende. Puedes darte de baja en cualquier momento con el enlace que aparece en cada correo.</li></ul>
 <h2>4. Base legal</h2>
-<p>Tu consentimiento al enviar el formulario y, en su caso, la aplicación de medidas precontractuales o la ejecución del contrato.</p>
+<p>Tu consentimiento al enviar el formulario o al suscribirte, que puedes retirar cuando quieras, y, en su caso, la aplicación de medidas precontractuales o la ejecución del contrato.</p>
 <h2>5. Cuánto tiempo los conservamos</h2>
-<p>Mientras sea necesario para atender tu solicitud y, si eres cliente, durante la relación y los plazos legales posteriores. Si no llegamos a trabajar juntos, los eliminamos cuando ya no son necesarios.</p>
+<p>Mientras sea necesario para atender tu solicitud y, si eres cliente, durante la relación y los plazos legales posteriores. Si no llegamos a trabajar juntos, los eliminamos cuando ya no son necesarios. Los datos de suscripción se conservan hasta que te des de baja.</p>
 <h2>6. Con quién los compartimos</h2>
-<p>No vendemos ni cedemos tus datos. Para recibir los mensajes del formulario usamos un servicio de envío de formularios (FormSubmit), que actúa como proveedor técnico. Puede haber proveedores fuera del Espacio Económico Europeo con las garantías que exige el RGPD.</p>
+<p>No vendemos ni cedemos tus datos. Para recibir los mensajes del formulario usamos un servicio de envío de formularios (FormSubmit), que actúa como proveedor técnico. Para las suscripciones y el envío de correos usamos Brevo (Sendinblue SAS, Francia), que guarda tus datos de contacto como encargado del tratamiento. Puede haber proveedores fuera del Espacio Económico Europeo con las garantías que exige el RGPD.</p>
 <h2>7. Tus derechos</h2>
 <p>Puedes pedir acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <a href="mailto:{e}">{e}</a>. Si crees que no hemos atendido bien tu solicitud, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" rel="noopener" target="_blank">aepd.es</a>).</p>
 <h2>8. Seguridad</h2>
