@@ -45,6 +45,8 @@ os.makedirs(os.path.join(OUT, "blog"), exist_ok=True)
 shutil.copytree(sys.argv[3], OUT + "/assets/img/blog")
 # Las imagenes og (1200x630) de cada articulo estan en portadas/og/
 shutil.copy(os.path.join(AQUI, "estilos.css"), OUT + "/assets/css/estilos.css")
+# Descargas que se envían por correo (no enlazadas ni indexables)
+shutil.copytree(os.path.join(AQUI, "descargas"), OUT + "/descargas")
 shutil.copytree(os.path.join(AQUI, "fonts"), OUT + "/assets/fonts")
 # Casos de éxito: estilos, script y medios propios (no se cargan en el resto de páginas)
 shutil.copy(os.path.join(AQUI, "casos.css"), OUT + "/assets/css/casos.css")
@@ -992,7 +994,7 @@ for _php in ("consentimiento.php", "registro-consentimientos.php"):
 open(OUT + "/%s.txt" % INDEXNOW, "w").write(INDEXNOW)
 open(OUT + "/indexnow-urls.txt", "w").write("".join("%s/%s\n" % (DOM, p.replace("index.html", "")) for p in PAGS if p not in NOINDEX and p not in CANON))
 bots = ["Googlebot", "Bingbot", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot", "Meta-ExternalAgent"]
-open(OUT + "/robots.txt", "w").write("".join("User-agent: %s\nAllow: /\n\n" % b for b in bots) + "User-agent: *\nAllow: /\nDisallow: /registro-consentimientos.php\nDisallow: /consentimiento.php\n\n# Indice y sitemaps por tipo\nSitemap: %s/sitemap.xml\n" % DOM + "".join("Sitemap: %s/%s\n" % (DOM, s) for s in SMS) + "\n# Resumen para IA: %s/llms.txt · %s/llms-full.txt\n" % (DOM, DOM))
+open(OUT + "/robots.txt", "w").write("".join("User-agent: %s\nAllow: /\n\n" % b for b in bots) + "User-agent: *\nAllow: /\nDisallow: /registro-consentimientos.php\nDisallow: /consentimiento.php\nDisallow: /descargas/\n\n# Indice y sitemaps por tipo\nSitemap: %s/sitemap.xml\n" % DOM + "".join("Sitemap: %s/%s\n" % (DOM, s) for s in SMS) + "\n# Resumen para IA: %s/llms.txt · %s/llms-full.txt\n" % (DOM, DOM))
 llms = "# Studio Emprende\n\n> %s\n\n## Empresa\n- Nombre comercial: Studio Emprende\n- Titular: INTELIGENCIA SEVILLA SL (NIF B88763818)\n- Domicilio social: Calle Betis 3, 41449 Alcolea del Río (Sevilla), España\n- Contacto: info@studioemprende.com · WhatsApp +34 601 86 96 68\n- Ámbito: 100 %% online, toda España\n\n## Precios\n" % ORG["description"] + "".join("- %s: %s%s. %s\n" % (n, p, "" if p == "A medida" else " + 40 €/mes de soporte (sin IVA)", d) for n, p, d, x in PACKS) + "\n## Servicios\n"
 llms += "".join("- [%s](%s/servicios/%s.html): %s\n" % (s[2], DOM, s[0], " ".join(s[3].split())) for s in SECCIONES)
 llms += "\n## PIX, agente de IA empresarial\n- [PIX](%s/servicios/pix/): %s\n" % (DOM, PIX_HUB["resumen"]) + "".join("- [%s](%s/servicios/pix/%s.html): %s\n" % (x["nav"], DOM, x["slug"], x["resumen"]) for x in PIX_PAGINAS)
