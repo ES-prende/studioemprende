@@ -98,6 +98,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <h2>¿Merece la pena hacerlo ya?</h2>
 <p>Si tu negocio tiene web, sí: no necesitas contratar nada más y te aseguras de que los datos básicos los pones tú y no un tercero. Eso sí, el perfil es solo una parte. ChatGPT sigue leyendo tu web y otras fuentes, así que una página clara, con lo que haces, para quién y dónde, sigue siendo lo que más pesa. De eso va nuestro trabajo de <a href="/servicios/presencia-digital/">presencia digital</a> y lo que contamos en <a href="/blog/chatgpt-gemini-copilot-o-claude-para-empresas">ChatGPT, Gemini, Copilot o Claude para empresas</a>.</p>
 <p>Si tienes un local físico en España, toca esperar: apunta la fecha y vuelve a mirar en unas semanas.</p>
+<div class="guia-cta"><div><b>Guía paso a paso en PDF</b><p>Los cinco pasos con capturas reales, los enlaces oficiales para ir haciéndolo mientras lees y una lista de comprobación. Te la enviamos a tu correo.</p></div><button type="button" class="btn btn-p" data-guia-abrir>Descargar la guía gratis</button></div>
+<dialog class="guia-dlg" id="guia-dlg" aria-labelledby="guia-t"><form method="post" action="https://eb3e1314.sibforms.com/serve/MUIFAMdw3qIhp9c2iTigkpd39NskZ7GrXJ58_MDLag9Fx8wmcGOq-Ywh3cByLvLl5ck8GGD6eHGLBrKh_ZYMGxDDD9KBsnTl3Isg5I7oAQmwIdnrVkRMh_0yYMBQF_uiLBfol6FSHM9XxKw-5mi1JWtj6LyoZwNMNnb2gcko-YIH3jkx8Bm0rMr5Uug6vmCUkjog7O_JW6Ti3chr0A==" id="guia-f" novalidate>
+<button type="button" class="guia-x" data-guia-cerrar aria-label="Cerrar">×</button>
+<h2 id="guia-t">Recibe la guía en tu correo</h2>
+<p class="guia-sub">Dinos a dónde te la enviamos. Llega en un par de minutos.</p>
+<label>Nombre<input type="text" name="NOMBRE" autocomplete="given-name" required maxlength="60"></label>
+<label>Correo electrónico<input type="email" name="EMAIL" autocomplete="email" required></label>
+<label>Teléfono (opcional)<input type="tel" name="SMS" autocomplete="tel-national" inputmode="numeric" placeholder="600 000 000"></label>
+<input type="hidden" name="SMS__COUNTRY_CODE" value="+34"><input type="hidden" name="OPT_IN" value="1"><input type="hidden" name="locale" value="es"><input type="hidden" name="html_type" value="simple">
+<input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" class="guia-hp" aria-hidden="true">
+<p class="guia-err" id="guia-err" role="alert" hidden></p>
+<button type="submit" class="btn btn-p">Suscribirme y recibir la guía</button>
+<p class="guia-legal">Al pulsar te suscribes a los correos de Studio Emprende: te enviamos la guía y, de vez en cuando, consejos y novedades para tu negocio. Puedes darte de baja con un clic en cualquier correo. Responsable: INTELIGENCIA SEVILLA SL. Más información en la <a href="/privacidad" target="_blank">política de privacidad</a>.</p>
+</form><div class="guia-ok" id="guia-ok" hidden><h2>¡Enviada!</h2><p>Revisa tu correo en un par de minutos. Si no la ves, mira en la carpeta de spam o promociones.</p><button type="button" class="btn btn-s" data-guia-cerrar>Cerrar</button></div></dialog>
+<script>(function(){var d=document.getElementById('guia-dlg'),f=document.getElementById('guia-f'),ok=document.getElementById('guia-ok'),er=document.getElementById('guia-err');if(!d||!d.showModal)return;
+document.querySelectorAll('[data-guia-abrir]').forEach(function(b){b.addEventListener('click',function(){d.showModal()})});
+document.querySelectorAll('[data-guia-cerrar]').forEach(function(b){b.addEventListener('click',function(){d.close()})});
+d.addEventListener('click',function(e){if(e.target===d)d.close()});
+function mal(m){er.textContent=m;er.hidden=false}
+f.addEventListener('submit',function(e){e.preventDefault();er.hidden=true;var n=f.NOMBRE.value.trim(),m=f.EMAIL.value.trim(),t=f.SMS.value.replace(/[^0-9]/g,'');
+if(!n)return mal('Escribe tu nombre.');if(!/^[^@ ]+@[^@ ]+[.][a-z]{2,}$/i.test(m))return mal('Revisa el correo: no parece correcto.');
+if(t&&!/^[6789][0-9]{8}$/.test(t))return mal('El teléfono debe tener 9 cifras, o déjalo vacío.');
+var fd=new FormData(f);fd.set('NOMBRE',n);fd.set('EMAIL',m);if(t)fd.set('SMS',t);else{fd.delete('SMS');fd.delete('SMS__COUNTRY_CODE')}
+var b=f.querySelector('[type=submit]');b.disabled=true;b.textContent='Enviando…';
+fetch(f.action,{method:'POST',body:fd,mode:'no-cors'}).then(function(){f.hidden=true;ok.hidden=false}).catch(function(){b.disabled=false;b.textContent='Suscribirme y recibir la guía';mal('No se ha podido enviar. Inténtalo de nuevo en un momento.')})})})();</script>
 <h2>Fuentes</h2>
 <ul>
 <li><a href="https://openai.com/es-ES/index/introducing-businesses-chatgpt/" rel="noopener" target="_blank">OpenAI: «Presentamos Empresas en ChatGPT»</a> (10/11/2026)</li>
