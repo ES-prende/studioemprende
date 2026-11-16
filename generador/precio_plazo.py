@@ -8,9 +8,6 @@ _PACK_GESTION = ("Presupuesto <b style=\"font-weight:500\">cerrado</b> antes de 
                  "Te damos las fases y las fechas por escrito en la propuesta. La migración de tus datos está incluida.")
 _PIX = ("Presupuesto <b style=\"font-weight:500\">cerrado</b> según las personas que lo usan, los procesos y las integraciones, después de un diagnóstico gratuito. Sin permanencia.",
         "Se empieza con un piloto de unas 4 semanas sobre un proceso concreto, con resultados medidos antes de ampliar.")
-_PIX_INDEXADAS = ("Con PIX, el agente de IA: <b style=\"font-weight:500\">desde 90 €/mes</b> para 3 personas o <b style=\"font-weight:500\">145 €/mes</b> para 5, sin permanencia ni cuota de alta. "
-        "Más usuarios o integraciones a medida, con presupuesto aparte.",
-        "Se empieza con un piloto de unas 4 semanas sobre un proceso concreto, con resultados medidos antes de ampliar.")
 _WEB = ("<b style=\"font-weight:500\">Impulso Inicial, 990 €</b> (web One Page, Google Business y redes), <b style=\"font-weight:500\">Negocio en Marcha, 1.790 €</b> (web completa con blog y SEO) "
         "o <b style=\"font-weight:500\">Llave en Mano, 3.690 €</b> (web premium y embudo de ventas). Todos con 40 €/mes de soporte.",
         "De 2 a 3 semanas el Impulso Inicial, de 3 a 4 Negocio en Marcha y unos 2 meses Llave en Mano, desde que nos pasas la información.")
@@ -45,8 +42,6 @@ def bloque(clave):
     if not f or clave in EXCLUIR or f == "fichador":
         return ""
     precio, plazo = FAMILIA[f]
-    if clave in ("servicios/pix", "servicios/pix/index", "servicios/pix/agentes-de-voz"):
-        precio, plazo = _PIX_INDEXADAS
     return ('<section class="sec" style="padding-top:0"><div class="w"><div class="rejilla">'
             '<div class="tarjeta"><p class="kicker" style="margin:0">Precio</p><p>%s</p><a class="mas" href="/precios">Ver precios y packs →</a></div>'
             '<div class="tarjeta"><p class="kicker" style="margin:0">Plazo</p><p>%s</p><a class="mas" href="/contacto?servicio=%s#diagnostico">Pedir diagnóstico gratis →</a></div>'
