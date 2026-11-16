@@ -942,6 +942,30 @@ pagina("mapa-web.html", "Mapa de la web · Studio Emprende", "Mapa de la web de 
 
 # ---------- SEO ----------
 import datetime as _dt
+# ---------- Captcha de Cloudflare (Turnstile) y envío propio ----------
+# Con una clave de sitio en generador/turnstile.txt los formularios dejan de usar FormSubmit y pasan por /enviar.php,
+# que verifica el captcha en el servidor. Sin clave, todo queda como estaba. La clave SECRETA nunca va en el repositorio.
+try: _TS = open(os.path.join(AQUI, "turnstile.txt")).read().strip()
+except Exception: _TS = ""
+_TS = os.environ.get("TURNSTILE_SITEKEY", _TS)
+if _TS:
+    _W = '<div class="cf-turnstile" data-sitekey="%s" data-language="es" data-theme="light"></div>\n' % _TS
+    _SC = '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>'
+    for p in PAGS:
+        _f = os.path.join(OUT, p); _t = open(_f, encoding="utf-8").read(); _o = _t
+        if 'action="https://formsubmit.co/' in _t:
+            _t = re.sub(r'action="https://formsubmit\.co/[^"]+"', 'action="/enviar.php"', _t)
+            _t = _t.replace('<div><button class="btn btn-p" type="submit">', _W + '<div><button class="btn btn-p" type="submit">')
+        if 'id="guia-f"' in _t:
+            _t = re.sub(r'action="https://[a-z0-9]+\.sibforms\.com/serve/[^"]+" id="guia-f"', 'action="/enviar.php" id="guia-f"', _t)
+            _t = _t.replace('<button type="submit" class="btn btn-p">Suscribirme', '<input type="hidden" name="tipo" value="guia">' + _W + '<button type="submit" class="btn btn-p">Suscribirme')
+            _t = _t.replace("fetch(f.action,{method:'POST',body:fd,mode:'no-cors'}).then(function(){f.hidden=true;ok.hidden=false})",
+                            "if(!fd.get('cf-turnstile-response')){b.disabled=false;b.textContent='Suscribirme y recibir la guía';return mal('Espera a que termine la comprobación de seguridad.')}"
+                            "fetch(f.action,{method:'POST',body:fd}).then(function(r){return r.json()}).then(function(j){if(j.ok){f.hidden=true;ok.hidden=false}else{b.disabled=false;b.textContent='Suscribirme y recibir la guía';mal(j.msg||'No se ha podido enviar.');if(window.turnstile)turnstile.reset()}})")
+        if _t != _o:
+            assert "cf-turnstile" in _t, p
+            _t = _t.replace("</body>", _SC + "</body>", 1)
+            open(_f, "w", encoding="utf-8").write(_t)
 HOY = _dt.date.today().isoformat()
 import hashlib as _hl
 _FP = os.path.join(AQUI, "fechas.json")
@@ -989,7 +1013,7 @@ for g in _GRUPOS:
     SMS.append("sitemap-%s.xml" % g)
 open(OUT + "/sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join("<sitemap><loc>%s/%s</loc><lastmod>%s</lastmod></sitemap>\n" % (DOM, s, max(LASTMOD[p] for p in PAGS if p not in NOINDEX and _grupo(p) == s[8:-4])) for s in SMS) + "</sitemapindex>\n")
 INDEXNOW = "0e7088fe2e96eae098138bb5db5e8322"
-for _php in ("consentimiento.php", "registro-consentimientos.php"):
+for _php in ("consentimiento.php", "registro-consentimientos.php", "enviar.php"):
     shutil.copy(os.path.join(AQUI, "php", _php), OUT + "/" + _php)
 open(OUT + "/%s.txt" % INDEXNOW, "w").write(INDEXNOW)
 open(OUT + "/indexnow-urls.txt", "w").write("".join("%s/%s\n" % (DOM, p.replace("index.html", "")) for p in PAGS if p not in NOINDEX and p not in CANON))
@@ -1057,6 +1081,9 @@ for _d, _, _fs in os.walk(OUT):
 for _c in _CHOQUES:
     shutil.move(os.path.join(OUT, _c + ".html"), os.path.join(OUT, _c, "index.html"))
 open(OUT + "/.htaccess", "w").write("""Options -MultiViews
+<FilesMatch "^_config\\.php$">
+Require all denied
+</FilesMatch>
 <IfModule mod_speling.c>
 CheckSpelling Off
 CheckCaseOnly Off

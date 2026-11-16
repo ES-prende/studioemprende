@@ -25,6 +25,12 @@ jobs:
       - name: Construir la web
         run: python generador/construir.py marca web portadas
 
+      - name: Clave secreta del captcha (no esta en el repositorio)
+        env:
+          TS: ${{ secrets.TURNSTILE_SECRET }}
+        run: |
+          if [ -n "$TS" ]; then printf "<?php return ['turnstile' => '%s'];\n" "$TS" > web/_config.php; fi
+
       - name: Instalar lftp
         run: sudo apt-get update && sudo apt-get install -y lftp
 

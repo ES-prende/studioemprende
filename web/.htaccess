@@ -1,4 +1,7 @@
 Options -MultiViews
+<FilesMatch "^_config\.php$">
+Require all denied
+</FilesMatch>
 <IfModule mod_speling.c>
 CheckSpelling Off
 CheckCaseOnly Off
