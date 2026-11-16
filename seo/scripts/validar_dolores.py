@@ -8,7 +8,8 @@ R = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(R, "generador")); os.chdir(R)
 D = {}; ORIGEN = {}
 for f in sorted(glob.glob("generador/dolores_*.py")):
-    m = importlib.import_module(os.path.basename(f)[:-3])
+    try: m = importlib.import_module(os.path.basename(f)[:-3])
+    except Exception as ex: print("AVISO: %s no se puede cargar todavía (%s)" % (f, ex)); continue
     for k, v in m.D.items():
         if k in D: print("DUPLICADA en dos archivos:", k)
         D[k.strip("/")] = v; ORIGEN[k.strip("/")] = os.path.basename(f)
