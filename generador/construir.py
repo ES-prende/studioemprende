@@ -346,6 +346,8 @@ def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None,
     if _k in DOL:
         cuerpo, faqs = _dolor(cuerpo, faqs, DOL[_k])
         if DOL[_k].get("meta"): desc = DOL[_k]["meta"]
+    if _k in ("servicios/alojamientos-y-domotica/hogar-inteligente-y-modo-vacaciones", "servicios/alojamientos-y-domotica/detector-de-fugas-y-humo"):
+        cuerpo = cuerpo.replace("Quiero esto en mi negocio", "Quiero esto en mi casa")
     for (_rr, _hh), _txt in RB.RESP_H.items():
         if _clave(_rr) == _clave(ruta):
             for _hx in (_hh, e(_hh)):
@@ -596,7 +598,7 @@ HUB_EXTRA = {"whatsapp-ia": """<section class="sec"><div class="w"><div class="c
 <tr><td>Crea la ficha del cliente en tu CRM</td><td>Sustituir la atención humana cuando el cliente la pide</td></tr>
 </tbody></table>
 <h3 style="margin-top:28px">¿Cuánto cuesta?</h3>
-<p>Con PIX, WhatsApp va incluido en el plan Profesional, de <strong>145 €/mes para 5 personas</strong>, junto con Instagram, Facebook, LinkedIn y las principales herramientas de CRM. Aparte, Meta cobra los mensajes de plantilla que se envían fuera de una conversación abierta, según el país y el tipo de mensaje. Precios y fases del piloto en <a href="../servicios/pix/implantacion-y-precios.html">implantación y precios de PIX</a>.</p>
+<p>Con PIX, WhatsApp va incluido en el plan Profesional, junto con Instagram, Facebook, LinkedIn y las principales herramientas de CRM. Aparte, Meta cobra los mensajes de plantilla que se envían fuera de una conversación abierta, según el país y el tipo de mensaje. Precios y fases del piloto en <a href="../servicios/pix/implantacion-y-precios.html">implantación y precios de PIX</a>.</p>
 <h3 style="margin-top:28px">Por dónde empezar</h3>
 <p>Por el proceso que más mensajes genera: casi siempre, pedir cita o preguntar disponibilidad. Se configura con tus respuestas reales, se prueba unas semanas con revisión humana y se amplía después a recordatorios y a la <a href="whatsapp-ia/reactivacion-de-clientes-y-pacientes-inactivos.html">reactivación de clientes inactivos</a>. Si quieres entender antes cómo funciona, tienes la guía <a href="../blog/agente-de-ia-para-whatsapp.html">cómo automatizar las respuestas de WhatsApp con IA</a>.</p>
 </div></section>"""}
@@ -620,7 +622,7 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
     if gs:
         html += '<section class="sec"><div class="w"><div class="cab"><p class="kicker">Guías para emprender</p><h2>Antes de empezar, te puede servir</h2></div><div class="rejilla">%s</div></div></section>' % "".join('<a class="tarjeta" href="../guias/%s.html"><h3>%s</h3><p>%s</p><span class="mas">Leer guía →</span></a>' % (g[0], e(g[4]), e(g[3][:120].rsplit(" ",1)[0] + "…")) for g in gs[:3])
     if slug in ("agentes-de-ia", "whatsapp-ia", "automatizacion-y-datos", "software-de-gestion", "erp-para-pymes"):
-        html += '<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Nuestro agente de IA</p><h2>Conoce PIX, la IA que trabaja dentro de tu empresa</h2></div><p class="lead" style="max-width:760px">PIX se conecta a tus datos y herramientas, atiende por web, WhatsApp, correo y voz y completa procesos con aprobación humana. Desde 90 €/mes.</p><div class="botones" style="margin-top:20px"><a class="btn btn-p" href="pix/index.html">Descubrir PIX</a><a class="btn btn-s" href="pix/implantacion-y-precios.html">Precios de PIX</a></div></div></section>'
+        html += '<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Nuestro agente de IA</p><h2>Conoce PIX, la IA que trabaja dentro de tu empresa</h2></div><p class="lead" style="max-width:760px">PIX se conecta a tus datos y herramientas, atiende por web, WhatsApp, correo y voz y completa procesos con aprobación humana.%s</div></div></section>' % ((' Desde 90 €/mes.</p><div class="botones" style="margin-top:20px"><a class="btn btn-p" href="pix/index.html">Descubrir PIX</a><a class="btn btn-s" href="pix/implantacion-y-precios.html">Precios de PIX</a>') if slug in ("agentes-de-ia", "software-de-gestion", "erp-para-pymes") else ('</p><div class="botones" style="margin-top:20px"><a class="btn btn-p" href="pix/index.html">Descubrir PIX</a><a class="btn btn-s" href="pix/implantacion-y-precios.html">Cómo se implanta PIX</a>'))
     if slug == "formacion-ia":
         pagina("servicios/formacion-ia.html", "Formación en IA para empresas y equipos · Studio Emprende", "Formación en IA práctica para tu equipo: casos reales de cada área, normas de uso y seguimiento. Online o presencial, con Jordan García.", html + cta("../"), faqs=FORM.HUB_FAQS, ld_extra=[FORM.curso_hub(), FORM.JORDAN])
     else:
