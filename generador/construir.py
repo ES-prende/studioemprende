@@ -185,6 +185,40 @@ for _f in sorted(_glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file_
 def _clave(ruta):
     return ruta.replace("/index.html", "").replace(".html", "").strip("/")
 
+# ---- Reescritura «dolores primero» página a página (dolores_*.py, noviembre 2026) ----
+# Cada entrada: lead (sustituye la entradilla), bloque (HTML propio de esa página), faq (preguntas nuevas), meta (opcional).
+DOL = {}
+for _f in sorted(_glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "dolores_*.py"))):
+    for _r, _v in _imp.import_module(os.path.basename(_f)[:-3]).D.items():
+        DOL[_r.strip("/")] = _v
+
+def _dolor(cuerpo, faqs, d):
+    if d.get("lead"):
+        cuerpo = re.sub(r'(<p class="lead">).*?(</p>)', lambda m: m.group(1) + d["lead"] + m.group(2), cuerpo, count=1, flags=re.S)
+    b = d.get("bloque", "")
+    if b:
+        ia = cuerpo.find("<article")
+        if ia >= 0:  # guías y blog: tras la respuesta rápida y el índice, antes del primer H2
+            i = cuerpo.find("<h2", ia)
+            b = '<div class="dolor-ini">' + b + "</div>"
+        else:  # servicios: tras la cabecera y la respuesta corta
+            i = cuerpo.find("</section>") + len("</section>")
+            j = cuerpo.find("</section>", i)
+            if j >= 0 and 'class="respuesta"' in cuerpo[i:j]: i = j + len("</section>")
+        cuerpo = cuerpo[:i] + b + cuerpo[i:]
+    extra = d.get("faq", [])
+    if extra:
+        det = "".join("<details><summary>%s</summary><p>%s</p></details>" % (e(q), e(r)) for q, r in extra)
+        i = cuerpo.find('<div class="faq">')
+        if i >= 0:
+            i += len('<div class="faq">'); cuerpo = cuerpo[:i] + det + cuerpo[i:]
+            faqs = list(extra) + list(faqs or FAQ)
+        else:
+            sec = '<section class="sec"><div class="w"><div class="cab"><h2>Preguntas frecuentes</h2></div><div class="faq">' + det + "</div></div></section>"
+            i = cuerpo.rfind('<section class="cta">'); cuerpo = cuerpo[:i] + sec + cuerpo[i:] if i >= 0 else cuerpo + sec
+            faqs = list(extra)
+    return cuerpo, faqs
+
 def _ampliar(cuerpo, faqs, a):
     secs = "".join('<h2>%s</h2>%s' % (e(t), h) for t, h in a.get("secciones", []))
     extra_faq = a.get("faq", [])
@@ -309,6 +343,9 @@ def pagina(ruta, titulo, desc, cuerpo, ld_extra=None, tipo="website", faqs=None,
         cuerpo = cuerpo[:_i] + _bi + cuerpo[_i:] if _i >= 0 else cuerpo + _bi
     if _k in AMPL:
         cuerpo, faqs = _ampliar(cuerpo, faqs, AMPL[_k]); AMPL_USADAS.add(_k)
+    if _k in DOL:
+        cuerpo, faqs = _dolor(cuerpo, faqs, DOL[_k])
+        if DOL[_k].get("meta"): desc = DOL[_k]["meta"]
     for (_rr, _hh), _txt in RB.RESP_H.items():
         if _clave(_rr) == _clave(ruta):
             for _hx in (_hh, e(_hh)):
