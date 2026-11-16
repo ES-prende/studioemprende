@@ -845,7 +845,7 @@ for slug, t in [("aviso-legal", "Aviso legal"), ("privacidad", "Política de pri
     pagina(slug + ".html", _tl, {"aviso-legal": "Aviso legal de Studio Emprende: empresa titular (INTELIGENCIA SEVILLA SL), datos de contacto y condiciones de uso de la web.",
                                    "privacidad": "Política de privacidad de Studio Emprende: qué datos recogemos cuando nos escribes, para qué los usamos y cómo ejercer tus derechos.",
                                    "cookies": "Política de cookies de Studio Emprende: qué cookies usa la web, para qué sirve cada una y cómo cambiar tu elección cuando quieras."}[slug],
-           '<section class="page-hero"><div class="w">%s<h1>%s</h1></div></section><section class="sec"><div class="w legal-txt"><p class="mut">Última actualización: octubre de 2026.</p><p>%s</p>%s</div></section>' % (migas("", (t, None)), t, _ctx, LEG[slug]))
+           '<section class="page-hero"><div class="w">%%s<h1>%%s</h1></div></section><section class="sec"><div class="w legal-txt"><p class="mut">Última actualización: %s de 2026.</p><p>%%s</p>%%s</div></section>' % ("noviembre" if slug == "privacidad" else "octubre") % (migas("", (t, None)), t, _ctx, LEG[slug]))
 
 pagina("404.html", "Página no encontrada · Studio Emprende", "La página que buscas no existe.",
        '<section class="sec"><div class="w" style="text-align:center;display:flex;flex-direction:column;gap:18px;align-items:center"><img src="assets/img/simbolo.svg" alt="" width="70" height="101"><h1>Esta página no existe</h1><p class="lead">Puede que el enlace haya cambiado.</p><div class="botones"><a class="btn btn-p" href="index.html">Ir al inicio</a><a class="btn btn-s" href="mapa-web.html">Ver el mapa de la web</a></div></div></section>', indexar=False)

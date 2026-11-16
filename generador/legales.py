@@ -46,7 +46,7 @@ PRIVACIDAD = """<h2>1. Responsable del tratamiento</h2>
 <h2>5. Cuánto tiempo los conservamos</h2>
 <p>Mientras sea necesario para atender tu solicitud y, si eres cliente, durante la relación y los plazos legales posteriores. Si no llegamos a trabajar juntos, los eliminamos cuando ya no son necesarios. Los datos de suscripción se conservan hasta que te des de baja.</p>
 <h2>6. Con quién los compartimos</h2>
-<p>No vendemos ni cedemos tus datos. Para recibir los mensajes del formulario usamos un servicio de envío de formularios (FormSubmit), que actúa como proveedor técnico. Para las suscripciones y el envío de correos usamos Brevo (Sendinblue SAS, Francia), que guarda tus datos de contacto como encargado del tratamiento. Puede haber proveedores fuera del Espacio Económico Europeo con las garantías que exige el RGPD.</p>
+<p>No vendemos ni cedemos tus datos. Para recibir los mensajes del formulario usamos un servicio de envío de formularios (FormSubmit), que actúa como proveedor técnico. Para las suscripciones y el envío de correos usamos Brevo, un proveedor de envío de correos con sede en Francia, que guarda tus datos de contacto como encargado del tratamiento. Puede haber proveedores fuera del Espacio Económico Europeo con las garantías que exige el RGPD.</p>
 <h2>7. Tus derechos</h2>
 <p>Puedes pedir acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <a href="mailto:{e}">{e}</a>. Si crees que no hemos atendido bien tu solicitud, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" rel="noopener" target="_blank">aepd.es</a>).</p>
 <h2>8. Seguridad</h2>
