@@ -124,9 +124,73 @@ ARTICULOS = [
 <p>Y ponle al lado las horas que te ahorra: si el CRM te quita dos horas a la semana de buscar en WhatsApp y perseguir presupuestos, son más de 200 horas en dos años. Multiplícalas por lo que vale tu hora y verás cuál de los tres modelos te sale realmente más barato.</p>
 <p>Si ya usas otro programa y quieres cambiar, la <a href="/servicios/migraciones-e-integraciones/migracion-desde-holded-clientify-hubspot-y-otros">migración desde Holded, Clientify, HubSpot y otros</a> está incluida al implantar el nuestro. Y si quieres que te hagamos la cuenta con tu caso, el <a href="/servicios/consultoria-y-ayudas/diagnostico-de-digitalizacion-gratuito">diagnóstico es gratuito</a>.</p>
 """),
+("chatgpt-business-hub-centro-de-empresas", "ChatGPT Business Hub: qué es y cómo reclamar tu negocio",
+ "Qué es el Centro de empresas de ChatGPT (Business Hub), quién puede reclamar el perfil de su negocio, qué datos enseña y qué no hace. Con fuentes de OpenAI.",
+ "16 nov 2026", "Inteligencia artificial", "presencia-digital", _resp(
+ "ChatGPT Business Hub, en español Centro de empresas, es el panel de OpenAI donde una empresa reclama su perfil en ChatGPT, lo verifica, actualiza sus datos y ve cuántas veces se la menciona y cuántos clics recibe su web. OpenAI lo presentó en versión beta el 10 de noviembre de 2026. Reclamar el perfil no garantiza que ChatGPT recomiende más tu negocio.") + """
+<p>Cada vez más gente pregunta a ChatGPT antes de comprar o de contratar: «qué empresa me monta una web», «dónde arreglo la caldera», «qué programa uso para facturar». Hasta ahora, lo que ChatGPT contaba de tu negocio salía de lo que encontraba por internet y tú no podías corregirlo. Con el Centro de empresas, por primera vez hay una puerta oficial para decirle a ChatGPT quién eres.</p>
+<p>Todo lo que lees aquí sale de las páginas oficiales de OpenAI, consultadas el 16 de noviembre de 2026. Es una versión beta: las condiciones pueden cambiar.</p>
+<h2>Qué es el Centro de empresas de ChatGPT</h2>
+<p>Es una sección dentro de ChatGPT, parte de un programa que OpenAI llama «Negocios en ChatGPT» (en inglés, <em>Businesses in ChatGPT</em>). Sirve para tres cosas:</p>
+<ul>
+<li><strong>Reclamar tu perfil</strong>: dices que esa empresa es tuya y lo demuestras.</li>
+<li><strong>Mantener tus datos al día</strong>: web, descripción, categoría, logotipo, política de envíos y de devoluciones. Si vendes productos, también un catálogo con precios y disponibilidad.</li>
+<li><strong>Ver estadísticas</strong>: cuántas veces se menciona tu negocio y cuántos clics llegan a tu web.</li>
+</ul>
+<p>No hay que confundirlo con «ChatGPT Business», que es el plan de pago para que un equipo use ChatGPT en su trabajo. Son dos cosas distintas con nombres parecidos.</p>
+<figure><img src="/assets/img/blog/chatgpt-business-hub-centro-de-empresas-paso-1.jpg" alt="Página oficial de OpenAI «Tu negocio, en ChatGPT» con el botón Reclama tu negocio" width="1160" height="712" loading="lazy"><figcaption>La página oficial de OpenAI, con el botón «Reclama tu negocio». Captura del 16/11/2026.</figcaption></figure>
+<h2>Quién puede reclamar su negocio</h2>
+<p>Según OpenAI, cualquier empresa que cumpla los requisitos y esté en un país donde ChatGPT esté disponible. Tienes que ser el dueño o estar autorizado para representarla. No hace falta una cuenta de anuncios ni un contrato de empresa con OpenAI.</p>
+<p>Hay dos límites que conviene saber antes de ilusionarse:</p>
+<ul>
+<li>Al principio solo pueden reclamar su perfil los negocios <strong>con sitio web</strong>.</li>
+<li>Las tiendas y restaurantes con local físico solo pueden reclamar, por ahora, fichas que ya existan <strong>en Estados Unidos</strong>. Un negocio online sí puede ver la opción de añadirse si no aparece.</li>
+</ul>
+<p>Nosotros lo abrimos desde España con una cuenta gratuita de ChatGPT y el buscador de empresas aparece sin problema.</p>
+<figure><img src="/assets/img/blog/chatgpt-business-hub-centro-de-empresas-paso-2.jpg" alt="Buscador «Buscar empresa» del Centro de empresas de ChatGPT" width="1070" height="510" loading="lazy"><figcaption>El buscador del Centro de empresas, en chatgpt.com/business-hub. Captura del 16/11/2026.</figcaption></figure>
+<h2>Cómo se reclama, en cinco pasos</h2>
+<ol>
+<li>Entra en ChatGPT con tu cuenta y abre el Centro de empresas desde la barra lateral, o directamente en <a href="https://chatgpt.com/business-hub" rel="noopener" target="_blank">chatgpt.com/business-hub</a>.</li>
+<li>Busca tu empresa por su nombre y elige la ficha que coincide.</li>
+<li>Elige un método de verificación de los que te ofrezca: correo de empresa, dominio de la web (un registro TXT en el DNS), teléfono o tienda Shopify.</li>
+<li>Espera el correo de OpenAI con la aprobación. Después toca un segundo control de identidad con un proveedor llamado Persona, que puede pedir documento de identidad y datos registrales de la empresa.</li>
+<li>Con todo aprobado, actualiza tus datos y consulta las estadísticas.</li>
+</ol>
+<p>La insignia azul de «verificado» aparece cuando se aprueba ese segundo control, no al reclamar.</p>
+<h2>Qué estadísticas enseña</h2>
+<table><thead><tr><th>Dato</th><th>Qué significa</th></tr></thead><tbody>
+<tr><td>Menciones</td><td>Veces que ChatGPT cita tu web en los últimos 28 días. Que nombre tu marca sin citar la web no cuenta.</td></tr>
+<tr><td>Clics a la web</td><td>Cuántas personas pasan de ChatGPT a tu página.</td></tr>
+<tr><td>Temas de descubrimiento</td><td>Los asuntos de las respuestas en las que apareces, agrupados.</td></tr>
+</tbody></table>
+<p>No verás las preguntas de nadie ni sus conversaciones: los datos son agregados. Y un dato en blanco no quiere decir cero; puede que todavía no haya actividad suficiente para mostrarlo.</p>
+<h2>Lo que no hace</h2>
+<ul>
+<li><strong>No te sube en las respuestas.</strong> OpenAI lo dice claro: reclamar tu negocio no garantiza más visibilidad ni ventas, y ChatGPT sigue recomendando por su cuenta.</li>
+<li><strong>Pagar publicidad tampoco cambia esas respuestas.</strong></li>
+<li><strong>Los «agentes para empresas»</strong>, un asistente que contesta por tu negocio dentro de ChatGPT, solo están disponibles de momento para comercio electrónico y servicios online de Estados Unidos.</li>
+<li><strong>Un perfil publicado no se borra</strong> pidiéndolo a soporte. Solo se pueden eliminar los borradores.</li>
+<li>Los cambios que guardas los revisa OpenAI y pueden tardar en verse.</li>
+</ul>
+<h2>¿Merece la pena hacerlo ya?</h2>
+<p>Si tu negocio tiene web, sí: no necesitas contratar nada más y te aseguras de que los datos básicos los pones tú y no un tercero. Eso sí, el perfil es solo una parte. ChatGPT sigue leyendo tu web y otras fuentes, así que una página clara, con lo que haces, para quién y dónde, sigue siendo lo que más pesa. De eso va nuestro trabajo de <a href="/servicios/presencia-digital/">presencia digital</a> y lo que contamos en <a href="/blog/chatgpt-gemini-copilot-o-claude-para-empresas">ChatGPT, Gemini, Copilot o Claude para empresas</a>.</p>
+<p>Si tienes un local físico en España, toca esperar: apunta la fecha y vuelve a mirar en unas semanas.</p>
+<h2>Fuentes</h2>
+<ul>
+<li><a href="https://openai.com/es-ES/index/introducing-businesses-chatgpt/" rel="noopener" target="_blank">OpenAI: «Presentamos Empresas en ChatGPT»</a> (10/11/2026)</li>
+<li><a href="https://openai.com/es-ES/business/businesses-in-chatgpt/" rel="noopener" target="_blank">OpenAI: «Negocios en ChatGPT: reclama tu negocio»</a></li>
+<li><a href="https://help.openai.com/en/articles/20001635-setting-up-your-business-on-chatgpt" rel="noopener" target="_blank">Ayuda de OpenAI: «Setting up your business on ChatGPT»</a></li>
+</ul>
+"""),
 ]
 
 FAQS = {
+ "chatgpt-business-hub-centro-de-empresas": [
+  ("¿Cuánto cuesta reclamar mi negocio en ChatGPT?", "OpenAI no indica ningún precio por reclamar el perfil y aclara que no hace falta cuenta de anuncios ni contrato de empresa. Nosotros abrimos el Centro de empresas con una cuenta gratuita de ChatGPT."),
+  ("¿Está disponible el Business Hub en España?", "OpenAI dice que está disponible donde se ofrece ChatGPT, según la ubicación y el tipo de negocio. Desde España se abre el buscador. Los negocios online con web pueden reclamar o añadirse; las tiendas y restaurantes con local solo pueden reclamar, por ahora, fichas existentes en Estados Unidos."),
+  ("¿Reclamar mi perfil hará que ChatGPT me recomiende más?", "No. OpenAI indica que reclamar el negocio no garantiza más visibilidad ni ventas y que ChatGPT sigue haciendo recomendaciones independientes."),
+  ("¿Es lo mismo ChatGPT Business que el Business Hub?", "No. ChatGPT Business es un plan de pago para que un equipo use ChatGPT. El Business Hub, o Centro de empresas, es donde un negocio gestiona cómo aparece ante quienes usan ChatGPT."),
+ ],
  "software-de-gestion-modular-con-automatizaciones": [
   ("¿Qué diferencia hay entre un software de gestión y un CRM?", "El CRM es la parte que gestiona clientes, oportunidades y seguimiento comercial. El software de gestión es más amplio: suma facturación, cobros, equipo, agenda o almacén. En un programa modular, el CRM es uno de los módulos."),
   ("¿Necesito saber programar para crear automatizaciones?", "No. Escribes en lenguaje normal lo que quieres que pase, el programa te enseña la regla que ha entendido y tú la apruebas antes de activarla."),
@@ -147,6 +211,6 @@ FAQS = {
  ],
 }
 
-ALT = {"software-de-gestion-modular-con-automatizaciones": "Ilustración de un software de gestión modular con una automatización escrita en lenguaje natural", "como-calcular-el-credito-de-formacion-fundae": "Ilustración con la fórmula del crédito de formación: cotización por porcentaje según plantilla", "cuanto-cuesta-un-crm-para-autonomos": "Ilustración con tres etiquetas de precio de CRM: gratis, suscripción y a medida"}
+ALT = {"chatgpt-business-hub-centro-de-empresas": "Ilustración de la ficha de una empresa verificada en ChatGPT con los pasos reclamar, verificar y actualizar", "software-de-gestion-modular-con-automatizaciones": "Ilustración de un software de gestión modular con una automatización escrita en lenguaje natural", "como-calcular-el-credito-de-formacion-fundae": "Ilustración con la fórmula del crédito de formación: cotización por porcentaje según plantilla", "cuanto-cuesta-un-crm-para-autonomos": "Ilustración con tres etiquetas de precio de CRM: gratis, suscripción y a medida"}
 
-RESUMEN = {"software-de-gestion-modular-con-automatizaciones": "Un software de gestión modular te deja activar solo los módulos que usas. En nuestros CRM, la propia empresa crea sus automatizaciones escribiéndolas en lenguaje normal y las aprueba antes de activarlas.", "como-calcular-el-credito-de-formacion-fundae": "Crédito FUNDAE = lo cotizado por formación profesional el año anterior × el porcentaje de tu tramo (100 %, 75 %, 60 % o 50 %). De 1 a 5 trabajadores, mínimo de 420 € al año.", "cuanto-cuesta-un-crm-para-autonomos": "Un CRM para autónomos puede ser gratuito, de suscripción por usuario y mes o implantado a medida. Compáralos a 24 meses sumando cuotas, usuarios, migración, formación e integraciones, no solo por la cuota."}
+RESUMEN = {"chatgpt-business-hub-centro-de-empresas": "El Centro de empresas de ChatGPT (Business Hub) permite reclamar el perfil de tu negocio, verificarlo, actualizar sus datos y ver menciones y clics. Está en beta desde el 10/11/2026 y no garantiza más recomendaciones.", "software-de-gestion-modular-con-automatizaciones": "Un software de gestión modular te deja activar solo los módulos que usas. En nuestros CRM, la propia empresa crea sus automatizaciones escribiéndolas en lenguaje normal y las aprueba antes de activarlas.", "como-calcular-el-credito-de-formacion-fundae": "Crédito FUNDAE = lo cotizado por formación profesional el año anterior × el porcentaje de tu tramo (100 %, 75 %, 60 % o 50 %). De 1 a 5 trabajadores, mínimo de 420 € al año.", "cuanto-cuesta-un-crm-para-autonomos": "Un CRM para autónomos puede ser gratuito, de suscripción por usuario y mes o implantado a medida. Compáralos a 24 meses sumando cuotas, usuarios, migración, formación e integraciones, no solo por la cuota."}

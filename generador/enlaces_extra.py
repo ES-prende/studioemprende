@@ -1,6 +1,7 @@
 # Enlaces contextuales hacia las páginas no indexadas con menos de 3 enlaces entrantes (Bloque 2).
 # destino: (anchor, [páginas origen]). Los orígenes nunca son páginas del Anexo A.
 EXTRA = {
+ "/blog/chatgpt-business-hub-centro-de-empresas": ("ChatGPT Business Hub: cómo reclamar tu negocio en ChatGPT", ["/servicios/presencia-digital/aparecer-en-chatgpt-y-gemini-geo", "/servicios/presencia-digital/google-business-profile", "/servicios/presencia-digital/seo-local-y-por-sectores", "/servicios/agentes-de-ia/chatbot-para-tu-web-con-pix"]),
  '/montar-agencia-de-ia': ('Montar tu propia agencia de IA con nuestras herramientas', ['/servicios/agentes-de-ia/departamento-de-ia-externalizado', '/servicios/grandes-empresas/marca-blanca-para-consultoras', '/servicios/formacion-ia/ia-para-autonomos-por-profesion']),
  '/vender-programas-de-gestion-con-ia': ('Vender programas de gestión con IA a empresas', ['/servicios/software-especializado/portal-en-marca-blanca-para-gestorias', '/servicios/erp-para-pymes/pagas-solo-los-modulos-que-usas', '/servicios/migraciones-e-integraciones/integraciones-por-api']),
  "/servicios/agentes-de-ia/alta-automatica-de-clientes-y-pacientes": ("Alta automática de clientes y pacientes con IA", ["/servicios/agentes-de-ia/chatbot-para-tu-web-con-pix", "/servicios/whatsapp-ia/asistente-de-ia-para-whatsapp"]),

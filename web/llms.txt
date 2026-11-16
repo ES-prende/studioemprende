@@ -155,6 +155,7 @@
 - [Software de gestión modular: automatiza tu empresa en lenguaje natural](https://studioemprende.com/blog/software-de-gestion-modular-con-automatizaciones): Qué es un software de gestión modular, en qué se diferencia de uno cerrado y cómo crear tus propias automatizaciones escribiéndolas en lenguaje normal, sin programar.
 - [Cómo calcular el crédito de formación FUNDAE de tu empresa](https://studioemprende.com/blog/como-calcular-el-credito-de-formacion-fundae): Cómo saber cuánto crédito de formación bonificada tiene tu empresa en FUNDAE: la fórmula, los porcentajes según plantilla, el mínimo de 420 € y un ejemplo paso a paso.
 - [Cuánto cuesta un CRM para autónomos en 2026](https://studioemprende.com/blog/cuanto-cuesta-un-crm-para-autonomos): Precio de un CRM para autónomos en 2026: qué ofrecen los gratuitos, cómo se paga una suscripción, cuánto cuesta uno implantado y los costes ocultos que conviene mirar antes.
+- [ChatGPT Business Hub: qué es y cómo reclamar tu negocio](https://studioemprende.com/blog/chatgpt-business-hub-centro-de-empresas): Qué es el Centro de empresas de ChatGPT (Business Hub), quién puede reclamar el perfil de su negocio, qué datos enseña y qué no hace. Con fuentes de OpenAI.
 
 ## Optional
 - [Todas las funciones, página a página](https://studioemprende.com/llms-full.txt)
