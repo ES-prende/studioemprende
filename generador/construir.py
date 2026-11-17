@@ -853,6 +853,7 @@ pagina("404.html", "Página no encontrada · Studio Emprende", "La página que b
 # ---------- BLOG ----------
 pagina("blog/index.html", "Blog · Studio Emprende", "Artículos sobre gestión, normativas, IA y webs para autónomos y pymes.",
        '<section class="page-hero"><div class="w">%s<h1>Blog</h1><p class="lead">Ideas claras sobre gestión, normativas, inteligencia artificial y webs, sin tecnicismos.</p><p class="firma">Escritos y revisados por el equipo de Studio Emprende. <a href="../politica-editorial.html">Lee nuestra política editorial</a>.</p></div></section>%s<section class="sec"><div class="w"><div class="rejilla">%s</div></div></section>%s' % (migas("../", ("Blog", None)), PER.BLOG, "".join(tarjeta_blog(a, "") for a in ARTICULOS), cta("../")))
+RESUMEN_AL_FINAL = {"chatgpt-business-hub-centro-de-empresas"}  # el resumen cierra el artículo en vez de abrirlo
 _BN = {a[0] for a in BN.ARTICULOS}  # artículos nuevos: fuera de portada, índice, mapa web y "otros artículos" de los demás
 for slug, titulo, desc, fecha, cat, serv_rel, cuerpo in ARTICULOS + BN.ARTICULOS:
     sr = [x for x in SECCIONES if x[0] == serv_rel][0]
@@ -867,7 +868,8 @@ for slug, titulo, desc, fecha, cat, serv_rel, cuerpo in ARTICULOS + BN.ARTICULOS
     _fd = "__FMOD__"
     _url = "%s/blog/%s" % (DOM, slug)
     _res = RB.RESUMEN.get(slug)
-    if _res: cuerpo = '<div class="resumen"><b>En resumen</b><p>%s</p></div>' % e(_res) + cuerpo
+    if _res and slug in RESUMEN_AL_FINAL: cuerpo = cuerpo + '<div class="resumen" style="margin-top:36px"><b>En resumen</b><p>%s</p></div>' % e(_res)
+    elif _res: cuerpo = '<div class="resumen"><b>En resumen</b><p>%s</p></div>' % e(_res) + cuerpo
     bp = {"@type": "BlogPosting", "@id": _url + "#article", "headline": titulo, "description": desc, "inLanguage": "es", "articleSection": cat, "datePublished": _fp, "dateModified": _fd,
           "image": ["%s/assets/img/blog/%s.jpg" % (DOM, slug), "%s/assets/img/blog/og/%s.jpg" % (DOM, slug)], "author": {"@id": DOM + "/#org"}, "publisher": {"@id": DOM + "/#org"},
           "mainEntityOfPage": {"@id": _url}}
