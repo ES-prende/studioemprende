@@ -175,20 +175,50 @@ ARTICULOS = [
 <h2>¿Merece la pena hacerlo ya?</h2>
 <p>Si tu negocio tiene web, sí: no necesitas contratar nada más y te aseguras de que los datos básicos los pones tú y no un tercero. Eso sí, el perfil es solo una parte. ChatGPT sigue leyendo tu web y otras fuentes, así que una página clara, con lo que haces, para quién y dónde, sigue siendo lo que más pesa. De eso va nuestro trabajo de <a href="/servicios/presencia-digital/">presencia digital</a> y lo que contamos en <a href="/blog/chatgpt-gemini-copilot-o-claude-para-empresas">ChatGPT, Gemini, Copilot o Claude para empresas</a>.</p>
 <p>Si tienes un local físico en España, toca esperar: apunta la fecha y vuelve a mirar en unas semanas.</p>
+<style>
+.guia-cta{display:flex;gap:22px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:linear-gradient(135deg,#FAF7F4,#F3EBE3);border:1px solid #E4DCD4;border-left:5px solid #7A2638;border-radius:0 18px 18px 0;padding:26px 28px;margin:36px 0}
+.guia-cta>div{flex:1;min-width:240px}.guia-cta b{display:block;font-family:'Marcellus',Georgia,serif;font-weight:400;font-size:24px;color:#1C1C1E}.guia-cta p{margin:8px 0 0;font-size:16px;color:#5E5A57}
+.guia-dlg{border:0;border-radius:22px;padding:0;width:min(480px,calc(100vw - 28px));max-height:calc(100vh - 28px);overflow:auto;background:#fff;color:#1C1C1E;box-shadow:0 30px 90px rgba(31,26,28,.4);font-family:'Jost',system-ui,sans-serif}
+.guia-dlg::backdrop{background:rgba(31,26,28,.6);backdrop-filter:blur(3px)}
+.guia-cab{position:relative;background:linear-gradient(135deg,#7A2638 0%,#5C1B29 100%);color:#fff;padding:24px 30px 20px;overflow:hidden}
+.guia-cab::after{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(closest-side,rgba(201,169,97,.45),transparent)}
+.guia-dlg .guia-k{position:relative;margin:0 0 8px;font-size:12px;letter-spacing:1.5px;font-weight:500;color:#E6CF96!important;text-transform:uppercase}
+.guia-dlg h2{position:relative;margin:0!important;font-family:'Marcellus',Georgia,serif;font-weight:400;font-size:28px;line-height:1.2;color:inherit}
+.guia-dlg .guia-sub{position:relative;margin:10px 0 0;font-size:15px;line-height:1.5;color:#F6ECEE!important}
+.guia-x{position:absolute;z-index:2;top:12px;right:14px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(255,255,255,.16);color:#fff;font-size:22px;line-height:1;cursor:pointer}
+.guia-x:hover{background:rgba(255,255,255,.3)}
+.guia-cuerpo{padding:20px 30px 24px;display:flex;flex-direction:column;gap:12px}
+.guia-dlg .guia-lista{list-style:none;margin:0 0 2px!important;padding:0!important;display:flex;flex-direction:column;gap:7px;font-size:15px;color:#3A3537}
+.guia-dlg .guia-lista li{padding-left:26px;position:relative;margin:0}.guia-lista li::before{content:"✓";position:absolute;left:0;top:0;width:18px;height:18px;border-radius:50%;background:#7A2638;color:#fff;font-size:11px;line-height:18px;text-align:center;margin-top:2px}
+.guia-dlg label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500;color:#1C1C1E}
+.guia-dlg label input{font:inherit;font-size:16px;font-weight:400;padding:11px 14px;border:1px solid #CFC5BC;border-radius:12px;background:#FAF7F4;width:100%;box-sizing:border-box}
+.guia-dlg label input:focus{outline:2px solid #7A2638;outline-offset:1px;background:#fff}
+.guia-hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
+.guia-err{margin:0;padding:10px 12px;border-radius:10px;background:#FBECEA;color:#A3261B;font-size:14px}
+.guia-env{font:inherit;font-size:17px;font-weight:500;width:100%;padding:16px;border:0;border-radius:999px;background:#7A2638;color:#fff;cursor:pointer;box-shadow:0 10px 26px rgba(122,38,56,.28)}
+.guia-env:hover{background:#5C1B29}.guia-env:disabled{opacity:.6;cursor:wait}
+.guia-dlg .guia-legal{margin:0!important;font-size:12px!important;line-height:1.5;color:#6B6562}.guia-legal a{color:#7A2638}
+.guia-ok{padding:40px 30px;text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}.guia-ok h2{color:#7A2638}.guia-ok p{margin:0;color:#5E5A57}
+.guia-ok::before{content:"✓";width:56px;height:56px;border-radius:50%;background:#7A2638;color:#fff;font-size:28px;line-height:56px}
+.guia-dlg [hidden]{display:none!important}
+@media (max-width:480px){.guia-cab{padding:24px 22px 20px}.guia-cuerpo{padding:18px 22px 22px}.guia-dlg h2{font-size:24px}}
+</style>
 <div class="guia-cta"><div><b>Guía paso a paso en PDF</b><p>Los cinco pasos con capturas reales, los enlaces oficiales para ir haciéndolo mientras lees y una lista de comprobación. Te la enviamos a tu correo.</p></div><button type="button" class="btn btn-p" data-guia-abrir>Descargar la guía gratis</button></div>
 <dialog class="guia-dlg" id="guia-dlg" aria-labelledby="guia-t"><form method="post" action="https://eb3e1314.sibforms.com/serve/MUIFAMdw3qIhp9c2iTigkpd39NskZ7GrXJ58_MDLag9Fx8wmcGOq-Ywh3cByLvLl5ck8GGD6eHGLBrKh_ZYMGxDDD9KBsnTl3Isg5I7oAQmwIdnrVkRMh_0yYMBQF_uiLBfol6FSHM9XxKw-5mi1JWtj6LyoZwNMNnb2gcko-YIH3jkx8Bm0rMr5Uug6vmCUkjog7O_JW6Ti3chr0A==" id="guia-f" novalidate>
-<button type="button" class="guia-x" data-guia-cerrar aria-label="Cerrar">×</button>
-<h2 id="guia-t">Recibe la guía en tu correo</h2>
-<p class="guia-sub">Dinos a dónde te la enviamos. Llega en un par de minutos.</p>
+<div class="guia-cab"><button type="button" class="guia-x" data-guia-cerrar aria-label="Cerrar">×</button>
+<p class="guia-k">Guía gratuita · PDF</p><h2 id="guia-t">Tu negocio en ChatGPT, paso a paso</h2>
+<p class="guia-sub">Dinos a dónde te la enviamos. Llega a tu correo en un par de minutos.</p></div>
+<div class="guia-cuerpo">
+<ul class="guia-lista"><li>Los cinco pasos, con capturas reales</li><li>Enlaces oficiales para hacerlo mientras lees</li><li>Lista de comprobación final</li></ul>
 <label>Nombre<input type="text" name="NOMBRE" autocomplete="given-name" required maxlength="60"></label>
 <label>Correo electrónico<input type="email" name="EMAIL" autocomplete="email" required></label>
 <label>Teléfono (opcional)<input type="tel" name="SMS" autocomplete="tel-national" inputmode="numeric" placeholder="600 000 000"></label>
 <input type="hidden" name="SMS__COUNTRY_CODE" value="+34"><input type="hidden" name="OPT_IN" value="1"><input type="hidden" name="locale" value="es"><input type="hidden" name="html_type" value="simple">
 <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" class="guia-hp" aria-hidden="true">
 <p class="guia-err" id="guia-err" role="alert" hidden></p>
-<button type="submit" class="btn btn-p">Suscribirme y recibir la guía</button>
+<button type="submit" class="btn btn-p guia-env">Suscribirme y recibir la guía</button>
 <p class="guia-legal">Al pulsar te suscribes a los correos de Studio Emprende: te enviamos la guía y, de vez en cuando, consejos y novedades para tu negocio. Puedes darte de baja con un clic en cualquier correo. Responsable: INTELIGENCIA SEVILLA SL. Más información en la <a href="/privacidad" target="_blank">política de privacidad</a>.</p>
-</form><div class="guia-ok" id="guia-ok" hidden><h2>¡Enviada!</h2><p>Revisa tu correo en un par de minutos. Si no la ves, mira en la carpeta de spam o promociones.</p><button type="button" class="btn btn-s" data-guia-cerrar>Cerrar</button></div></dialog>
+</div></form><div class="guia-ok" id="guia-ok" hidden><h2>¡Enviada!</h2><p>Revisa tu correo en un par de minutos. Si no la ves, mira en la carpeta de spam o promociones.</p><button type="button" class="btn btn-s" data-guia-cerrar>Cerrar</button></div></dialog>
 <script>(function(){var d=document.getElementById('guia-dlg'),f=document.getElementById('guia-f'),ok=document.getElementById('guia-ok'),er=document.getElementById('guia-err');if(!d||!d.showModal)return;
 document.querySelectorAll('[data-guia-abrir]').forEach(function(b){b.addEventListener('click',function(){d.showModal()})});
 document.querySelectorAll('[data-guia-cerrar]').forEach(function(b){b.addEventListener('click',function(){d.close()})});

@@ -958,12 +958,12 @@ if _TS:
             _t = _t.replace('<div><button class="btn btn-p" type="submit">', _W + '<div><button class="btn btn-p" type="submit">')
         if 'id="guia-f"' in _t:
             _t = re.sub(r'action="https://[a-z0-9]+\.sibforms\.com/serve/[^"]+" id="guia-f"', 'action="/enviar.php" id="guia-f"', _t)
-            _t = _t.replace('<button type="submit" class="btn btn-p">Suscribirme', '<input type="hidden" name="tipo" value="guia">' + _W + '<button type="submit" class="btn btn-p">Suscribirme')
+            _t = _t.replace('<button type="submit" class="btn btn-p guia-env">Suscribirme', '<input type="hidden" name="tipo" value="guia">' + _W + '<button type="submit" class="btn btn-p guia-env">Suscribirme')
             _t = _t.replace("fetch(f.action,{method:'POST',body:fd,mode:'no-cors'}).then(function(){f.hidden=true;ok.hidden=false})",
                             "if(!fd.get('cf-turnstile-response')){b.disabled=false;b.textContent='Suscribirme y recibir la guía';return mal('Espera a que termine la comprobación de seguridad.')}"
                             "fetch(f.action,{method:'POST',body:fd}).then(function(r){return r.json()}).then(function(j){if(j.ok){f.hidden=true;ok.hidden=false}else{b.disabled=false;b.textContent='Suscribirme y recibir la guía';mal(j.msg||'No se ha podido enviar.');if(window.turnstile)turnstile.reset()}})")
         if _t != _o:
-            assert "cf-turnstile" in _t, p
+            assert "cf-turnstile" in _t and ('id="guia-f"' not in _t or ('name="tipo"' in _t and "r.json()" in _t)), p
             _t = _t.replace("</body>", _SC + "</body>", 1)
             open(_f, "w", encoding="utf-8").write(_t)
 HOY = _dt.date.today().isoformat()
