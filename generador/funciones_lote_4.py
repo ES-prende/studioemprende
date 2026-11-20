@@ -79,9 +79,9 @@ PAGINAS = {
 "agentes-de-ia/chatbot-para-tu-web-con-pix": {
  "titulo": "Chatbot con IA para tu web entrenado con tu negocio",
  "meta": "Chatbot con IA para tu web que responde con la información real de tu negocio, recoge contactos, consulta disponibilidad y pasa el caso a tu equipo.",
- "h1": "Chatbot para tu web con PIX: responde con lo que sabe tu negocio",
- "lead": "Un chatbot para tu web con PIX contesta a tus visitas con tus precios, servicios y horarios reales, y convierte una consulta en un contacto con nombre y teléfono.",
- "respuesta": "Un chatbot con IA para la web es un asistente que conversa con los visitantes en lenguaje natural. Con PIX se entrena con la información de tu empresa y se conecta a tus sistemas autorizados, así que puede responder dudas, recoger los datos del interesado, dejarlo en tu CRM y pasar la conversación a una persona cuando hace falta, con todo el contexto.",
+ "h1": "Chatbot para tu web con la IA empresarial: responde con lo que sabe tu negocio",
+ "lead": "Un chatbot para tu web con la IA empresarial contesta a tus visitas con tus precios, servicios y horarios reales, y convierte una consulta en un contacto con nombre y teléfono.",
+ "respuesta": "Un chatbot con IA para la web es un asistente que conversa con los visitantes en lenguaje natural. Con la IA empresarial se entrena con la información de tu empresa y se conecta a tus sistemas autorizados, así que puede responder dudas, recoger los datos del interesado, dejarlo en tu CRM y pasar la conversación a una persona cuando hace falta, con todo el contexto.",
  "secciones": [
   ("¿Qué hace el chatbot en tu web?", "Contesta dudas sobre tus servicios con la información que le has dado, recoge los datos del interesado para tu CRM, consulta citas o pedidos si lo autorizas y pasa a tu equipo lo que requiere una persona.", [
     ("Responde preguntas concretas", "Servicios, condiciones, plazos o zonas de trabajo, con la información que le das y sin inventar lo que no sabe."),
@@ -89,21 +89,21 @@ PAGINAS = {
     ("Consulta tus sistemas", "Con acceso autorizado, puede mirar disponibilidad, estado de un pedido o una cita en tu programa."),
     ("Pasa el caso al equipo", "Si la pregunta es delicada o el cliente lo pide, avisa a una persona con el resumen de lo hablado."),
   ]),
-  ("¿En qué se diferencia de un chat de botones?", "Los chats de toda la vida siguen un árbol de opciones y se atascan en cuanto el visitante escribe algo distinto. PIX entiende la pregunta tal como llega, la responde con tu información y recuerda la conversación si el cliente vuelve después por WhatsApp o correo.", []),
+  ("¿En qué se diferencia de un chat de botones?", "Los chats de toda la vida siguen un árbol de opciones y se atascan en cuanto el visitante escribe algo distinto. La IA empresarial entiende la pregunta tal como llega, la responde con tu información y recuerda la conversación si el cliente vuelve después por WhatsApp o correo.", []),
  ],
  "faqs": [
   ("¿Qué pasa si el chatbot no sabe la respuesta?", "Lo dice, en lugar de inventarla, y ofrece dejar los datos para que una persona del equipo conteste."),
   ("¿El chatbot funciona en cualquier web, aunque no la hayáis hecho vosotros?", "Sí, se añade a tu web actual; solo necesitamos poder insertar un pequeño código en sus páginas."),
   ("¿Puedo revisar las conversaciones que ha tenido el chatbot?", "Sí. Quedan registradas y el administrador puede consultarlas para mejorar las respuestas."),
  ],
- "rel": [("../pix/asistente-empresarial.html", "Asistente empresarial PIX"), ("../webs/chatbot-pix.html", "Chatbot PIX en tu web"), ("../../blog/que-puede-hacer-un-agente-de-ia.html", "Qué puede hacer un agente de IA")],
+ "rel": [("../pix/asistente-empresarial.html", "Asistente empresarial"), ("../webs/chatbot-pix.html", "Chatbot con IA empresarial en tu web"), ("../../blog/que-puede-hacer-un-agente-de-ia.html", "Qué puede hacer un agente de IA")],
 },
 "agentes-de-ia/recepcionista-de-voz-y-atencion-fuera-de-horario": {
  "titulo": "Recepcionista virtual con IA para llamadas sin atender",
  "meta": "Recepcionista virtual con IA que coge las llamadas cuando tú no puedes: atiende, toma el recado, da cita y te deja el resumen en el CRM.",
  "h1": "Recepcionista de voz con IA: ninguna llamada se queda sin respuesta",
  "lead": "Una recepcionista virtual con IA atiende el teléfono a la hora de comer, por la noche o cuando estás con un cliente, y te deja anotado quién llamó y qué quería.",
- "respuesta": "Una recepcionista de voz con IA es un agente que contesta las llamadas de tu negocio con voz natural, entiende lo que pide quien llama, responde a las dudas habituales, toma recados o gestiona citas y registra el resultado. Con PIX se configura con tu número propio, tu horario y tus reglas, y avisa a una persona cuando la llamada lo necesita.",
+ "respuesta": "Una recepcionista de voz con IA es un agente que contesta las llamadas de tu negocio con voz natural, entiende lo que pide quien llama, responde a las dudas habituales, toma recados o gestiona citas y registra el resultado. Con la IA empresarial se configura con tu número propio, tu horario y tus reglas, y avisa a una persona cuando la llamada lo necesita.",
  "secciones": [
   ("¿Qué resuelve en una llamada?", "Resuelve las preguntas habituales, da o cambia citas en tu agenda, toma recados con el motivo y la hora preferida para devolver la llamada y avisa al momento si detecta una urgencia según tus reglas.", [
     ("Dudas de siempre", "Horario, dirección, servicios o documentación necesaria, respondido con tu información."),
@@ -122,7 +122,7 @@ PAGINAS = {
   ("¿Puedo elegir qué dice y con qué tono?", "Sí. El guion, el tono, las respuestas permitidas y los casos que deben ir a una persona se definen al configurarla."),
   ("¿Dónde veo las llamadas que ha atendido?", "Cada llamada queda registrada con su resumen en el CRM o en el canal que elijas, como el correo o WhatsApp."),
  ],
- "rel": [("../pix/agentes-de-voz.html", "Agentes de voz con PIX"), ("../pequenas-empresas/no-pierdas-clientes-whatsapp-ia-y-recepcionista-de-voz.html", "No pierdas clientes con WhatsApp IA y voz"), ("chatbot-para-tu-web-con-pix.html", "Chatbot para tu web con PIX")],
+ "rel": [("../pix/agentes-de-voz.html", "Agentes de voz con la IA empresarial"), ("../pequenas-empresas/no-pierdas-clientes-whatsapp-ia-y-recepcionista-de-voz.html", "No pierdas clientes con WhatsApp IA y voz"), ("chatbot-para-tu-web-con-pix.html", "Chatbot para tu web con la IA empresarial")],
 },
 "agentes-de-ia/clasificacion-y-respuesta-de-correos": {
  "titulo": "Clasificar y responder correos con IA en la empresa",
@@ -140,11 +140,11 @@ PAGINAS = {
   ("¿Qué se responde solo y qué no?", "Tú decides. Lo habitual es que los acuses de recibo y las consultas repetidas salgan solos, y que las reclamaciones, las negociaciones o cualquier correo con dinero de por medio queden como borrador para que una persona lo revise y lo envíe.", []),
  ],
  "faqs": [
-  ("¿Funciona con Gmail y con Outlook?", "Sí, PIX se integra con Gmail y con Outlook, y trabaja sobre las cuentas y buzones compartidos que autorices."),
+  ("¿Funciona con Gmail y con Outlook?", "Sí, la IA empresarial se integra con Gmail y con Outlook, y trabaja sobre las cuentas y buzones compartidos que autorices."),
   ("¿Puede vigilar un buzón compartido tipo info@ o pedidos@?", "Sí, y es donde más se nota: reparte cada mensaje entre el equipo para que ninguno se quede sin dueño."),
   ("¿Se puede limitar a qué correos tiene acceso la IA?", "Sí. Se conectan solo los buzones y carpetas que elijas, con los permisos que defina el administrador."),
  ],
- "rel": [("../pix/integraciones.html", "Integraciones de PIX"), ("alta-automatica-de-clientes-y-pacientes.html", "Alta automática de clientes y pacientes"), ("../../blog/tareas-que-puedes-automatizar.html", "Tareas que puedes automatizar")],
+ "rel": [("../pix/integraciones.html", "Integraciones de la IA empresarial"), ("alta-automatica-de-clientes-y-pacientes.html", "Alta automática de clientes y pacientes"), ("../../blog/tareas-que-puedes-automatizar.html", "Tareas que puedes automatizar")],
 },
 "agentes-de-ia/respuesta-a-resenas-de-google": {
  "titulo": "Responder reseñas de Google con IA y tu propio tono",
@@ -213,7 +213,7 @@ PAGINAS = {
   ("¿Por qué proceso conviene empezar?", "Por el que más se repite y más tiempo se come en tu empresa, con un responsable interno que lo conozca bien."),
   ("¿Queda registro de lo que ha hecho el agente en cada caso?", "Sí. Cada paso queda anotado con fecha, datos usados y resultado, para revisarlo cuando quieras."),
  ],
- "rel": [("../pix/flujos-de-trabajo.html", "Flujos de trabajo con PIX"), ("presupuestos-automaticos.html", "Presupuestos automáticos"), ("../software-de-gestion/postventa-garantias-e-incidencias.html", "Postventa, garantías e incidencias")],
+ "rel": [("../pix/flujos-de-trabajo.html", "Flujos de trabajo con la IA empresarial"), ("presupuestos-automaticos.html", "Presupuestos automáticos"), ("../software-de-gestion/postventa-garantias-e-incidencias.html", "Postventa, garantías e incidencias")],
 },
 "agentes-de-ia/presupuestos-automaticos": {
  "titulo": "Presupuestos automáticos con IA desde la consulta",
@@ -279,7 +279,7 @@ PAGINAS = {
   ("¿Cómo envían los clientes los documentos al agente?", "Por el canal que ya usan: correo, WhatsApp o un portal. El agente los recoge allí y los ordena."),
   ("¿Puede el agente avisar al cliente de que le falta un documento concreto?", "Sí. Le escribe con la lista exacta de lo pendiente para ese periodo y vuelve a recordárselo si no llega."),
  ],
- "rel": [("../pix/casos-por-sector.html", "Casos de PIX por sector"), ("../software-especializado/portal-en-marca-blanca-para-gestorias.html", "Portal en marca blanca para gestorías"), ("../../guias/software-a-medida-para-despachos.html", "Software a medida para despachos")],
+ "rel": [("../pix/casos-por-sector.html", "Casos de la IA empresarial por sector"), ("../software-especializado/portal-en-marca-blanca-para-gestorias.html", "Portal en marca blanca para gestorías"), ("../../guias/software-a-medida-para-despachos.html", "Software a medida para despachos")],
 },
 "agentes-de-ia/agente-inmobiliario": {
  "titulo": "Agente de IA inmobiliario para captar y atender leads",
@@ -301,7 +301,7 @@ PAGINAS = {
   ("¿El agente puede negociar el precio de un inmueble?", "No. Informa y califica; cualquier oferta o negociación la recibe el comercial con todo el contexto."),
   ("¿Se integra con mi CRM inmobiliario?", "Se puede conectar si tu CRM tiene API; si no, trabajamos con tu programa de gestión o con el que te propongamos."),
  ],
- "rel": [("../../guias/software-a-medida-para-inmobiliarias.html", "Software a medida para inmobiliarias"), ("../software-de-gestion/captacion-de-leads-desde-web-whatsapp-y-anuncios.html", "Captación de leads"), ("../pix/casos-por-sector.html", "PIX por sector")],
+ "rel": [("../../guias/software-a-medida-para-inmobiliarias.html", "Software a medida para inmobiliarias"), ("../software-de-gestion/captacion-de-leads-desde-web-whatsapp-y-anuncios.html", "Captación de leads"), ("../pix/casos-por-sector.html", "La IA empresarial por sector")],
 },
 "agentes-de-ia/revision-de-contratos-para-despachos": {
  "titulo": "Revisión de contratos con IA para despachos de abogados",
@@ -323,7 +323,7 @@ PAGINAS = {
   ("¿Puede revisar contratos en otros idiomas?", "Sí, puede leer contratos en inglés y otros idiomas habituales y resumirlos en español, siempre con revisión del abogado."),
   ("¿Aprende los criterios propios del despacho?", "Se configura con tus plantillas, tus cláusulas aceptadas y tus líneas rojas, y se ajusta con los casos reales."),
  ],
- "rel": [("../../guias/software-a-medida-para-despachos.html", "Software a medida para despachos"), ("ia-con-los-datos-de-tu-empresa-sin-que-salgan-fuera.html", "IA con tus datos, sin que salgan fuera"), ("../pix/seguridad-y-control.html", "Seguridad y control de PIX")],
+ "rel": [("../../guias/software-a-medida-para-despachos.html", "Software a medida para despachos"), ("ia-con-los-datos-de-tu-empresa-sin-que-salgan-fuera.html", "IA con tus datos, sin que salgan fuera"), ("../pix/seguridad-y-control.html", "Seguridad y control de la IA empresarial")],
 },
 "agentes-de-ia/licitaciones-publicas": {
  "titulo": "Agente de IA para licitaciones públicas y concursos",
@@ -345,7 +345,7 @@ PAGINAS = {
   ("¿Ayuda a redactar la memoria técnica de la oferta?", "Puede preparar un primer borrador a partir de tus memorias anteriores y del pliego, que tu equipo completa y revisa."),
   ("¿Guarda la documentación administrativa para reutilizarla?", "Sí. Certificados, escrituras y acreditaciones quedan en un archivo con su caducidad, y te avisa antes de que venzan."),
  ],
- "rel": [("agente-documental-para-gestorias.html", "Agente documental"), ("../pix/flujos-de-trabajo.html", "Flujos de trabajo con PIX"), ("../../blog/que-puede-hacer-un-agente-de-ia.html", "Qué puede hacer un agente de IA en una pyme")],
+ "rel": [("agente-documental-para-gestorias.html", "Agente documental"), ("../pix/flujos-de-trabajo.html", "Flujos de trabajo con la IA empresarial"), ("../../blog/que-puede-hacer-un-agente-de-ia.html", "Qué puede hacer un agente de IA en una pyme")],
 },
 "agentes-de-ia/venta-adicional-en-pedidos-y-reservas": {
  "titulo": "Venta adicional automática en pedidos y reservas",
@@ -415,7 +415,7 @@ PAGINAS = {
   ("¿El servidor tiene que estar físicamente en mi oficina?", "No. Puede ser un servidor dedicado en un centro de datos; dónde se aloja se decide según tus requisitos."),
   ("¿Quién se encarga de mantener el servidor de la IA?", "Nosotros, dentro del proyecto: actualizaciones, copias de seguridad, vigilancia y ajustes del agente."),
  ],
- "rel": [("ia-con-los-datos-de-tu-empresa-sin-que-salgan-fuera.html", "IA con tus datos, sin que salgan fuera"), ("../pix/implantacion-y-precios.html", "Implantación y precios de PIX"), ("mantenimiento-de-agentes-y-automatizaciones.html", "Mantenimiento de agentes")],
+ "rel": [("ia-con-los-datos-de-tu-empresa-sin-que-salgan-fuera.html", "IA con tus datos, sin que salgan fuera"), ("../pix/implantacion-y-precios.html", "Implantación y precios de la IA empresarial"), ("mantenimiento-de-agentes-y-automatizaciones.html", "Mantenimiento de agentes")],
 },
 "agentes-de-ia/asistente-interno-de-procedimientos": {
  "titulo": "Asistente de IA interno para procedimientos y manuales",
@@ -437,7 +437,7 @@ PAGINAS = {
   ("¿Puede haber procedimientos que solo vean algunos departamentos?", "Sí. Los permisos por rol limitan qué documentos puede consultar cada persona a través del asistente."),
   ("¿Desde dónde lo consulta el equipo?", "Desde el escritorio o el móvil, en una conversación, sin tener que buscar en carpetas."),
  ],
- "rel": [("../relevo-y-continuidad/manual-de-operaciones-con-video-e-ia.html", "Manual de operaciones con vídeo e IA"), ("../problemas-sin-resolver/formacion-rapida-de-nuevos-empleados.html", "Formación rápida de nuevos empleados"), ("../pix/inteligencia-conectada.html", "Inteligencia conectada de PIX")],
+ "rel": [("../relevo-y-continuidad/manual-de-operaciones-con-video-e-ia.html", "Manual de operaciones con vídeo e IA"), ("../problemas-sin-resolver/formacion-rapida-de-nuevos-empleados.html", "Formación rápida de nuevos empleados"), ("../pix/inteligencia-conectada.html", "Inteligencia conectada de la IA empresarial")],
 },
 "agentes-de-ia/departamento-de-ia-externalizado": {
  "titulo": "Departamento de IA externalizado para pymes",
@@ -486,14 +486,14 @@ PAGINAS = {
   ("¿Cómo me entero si una automatización ha fallado?", "Recibes un aviso y nosotros también; además, en el informe periódico ves los fallos y cómo se resolvieron."),
   ("¿Cada cuánto hay que actualizar la información del agente?", "Cada vez que cambie algo que el agente necesita saber, como precios u horarios; con el mantenimiento lo hacemos nosotros."),
  ],
- "rel": [("departamento-de-ia-externalizado.html", "Departamento de IA externalizado"), ("../pix/flujos-de-trabajo.html", "Flujos de trabajo de PIX"), ("../departamento-tecnologico/soporte-con-un-unico-interlocutor.html", "Soporte con un único interlocutor")],
+ "rel": [("departamento-de-ia-externalizado.html", "Departamento de IA externalizado"), ("../pix/flujos-de-trabajo.html", "Flujos de trabajo de la IA empresarial"), ("../departamento-tecnologico/soporte-con-un-unico-interlocutor.html", "Soporte con un único interlocutor")],
 },
 "whatsapp-ia/asistente-de-ia-para-whatsapp": {
  "titulo": "Asistente de IA para WhatsApp Business que atiende 24 h",
  "meta": "Asistente de IA para WhatsApp que responde al momento con la información de tu negocio, da citas, toma pedidos y pasa la conversación a tu equipo.",
  "h1": "Asistente de IA para WhatsApp: contesta, agenda y deriva por ti",
  "lead": "Un asistente de IA para WhatsApp contesta a tus clientes al momento, a cualquier hora, y te deja el trabajo hecho: la cita dada, el pedido apuntado o el caso listo para ti.",
- "respuesta": "Un asistente de IA para WhatsApp es un agente conectado al número de tu negocio que lee cada mensaje, entiende lo que pide el cliente, responde con tu información, ejecuta acciones en tus programas (dar una cita, registrar un pedido, consultar un estado) y pasa la conversación a una persona cuando hace falta. Con PIX, la conversación conserva el contexto aunque el cliente cambie de canal.",
+ "respuesta": "Un asistente de IA para WhatsApp es un agente conectado al número de tu negocio que lee cada mensaje, entiende lo que pide el cliente, responde con tu información, ejecuta acciones en tus programas (dar una cita, registrar un pedido, consultar un estado) y pasa la conversación a una persona cuando hace falta. Con la IA empresarial, la conversación conserva el contexto aunque el cliente cambie de canal.",
  "secciones": [
   ("¿Qué hace en tu WhatsApp?", "Responde a cualquier hora con tus datos, recuerda lo que el cliente habló días antes, registra citas, pedidos o incidencias en tu programa y pasa la conversación a tu equipo con un resumen cuando hace falta.", [
     ("Responde al momento", "Precios, horarios, disponibilidad o cómo llegar, con tus datos y a cualquier hora."),

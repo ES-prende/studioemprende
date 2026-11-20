@@ -123,7 +123,7 @@ D["servicios/fichador/fichaje-por-whatsapp-o-con-pix"] = {
 <div class="tarjeta"><h3>Encaja a medias</h3><p>Oficinas y teletrabajo, donde un botón en el navegador resulta igual de rápido, o plantillas que entran todas por una única puerta.</p></div>
 <div class="tarjeta"><h3>No es el método adecuado</h3><p>Sótanos, fincas o naves sin señal: el mensaje no sale hasta que hay red. Ahí funciona mejor el <a href="/servicios/fichador/modo-sin-conexion-para-obras">modo sin conexión</a>. Tampoco sirve para quien no dispone de teléfono.</p></div>
 </div>
-<p style="max-width:820px;margin-top:22px">Para que un fichaje por chat sea algo más que un mensaje tienen que cumplirse tres cosas: que cada número esté asociado a una sola persona, que la hora la ponga el sistema y no quien escribe, y que cualquier corrección siga un procedimiento con rastro en lugar de editar o borrar el texto. Un grupo donde cada cual avisa de que ha llegado no cumple ninguna. Antes de activarlo conviene explicar a la plantilla qué se registra y ofrecer una alternativa a quien prefiera no usar su teléfono personal, como la tablet o la tarjeta que verás en <a href="/servicios/fichador/movil-tablet-web-o-tarjeta-nfc">formas de fichar</a>. Quién contesta al otro lado es <a href="/servicios/pix">PIX</a>, el agente de IA de Studio Emprende.</p>
+<p style="max-width:820px;margin-top:22px">Para que un fichaje por chat sea algo más que un mensaje tienen que cumplirse tres cosas: que cada número esté asociado a una sola persona, que la hora la ponga el sistema y no quien escribe, y que cualquier corrección siga un procedimiento con rastro en lugar de editar o borrar el texto. Un grupo donde cada cual avisa de que ha llegado no cumple ninguna. Antes de activarlo conviene explicar a la plantilla qué se registra y ofrecer una alternativa a quien prefiera no usar su teléfono personal, como la tablet o la tarjeta que verás en <a href="/servicios/fichador/movil-tablet-web-o-tarjeta-nfc">formas de fichar</a>. Quién contesta al otro lado es <a href="/servicios/pix">IA empresarial</a>, el agente de IA de Studio Emprende.</p>
 </div></section>""",
  "faq": [
   ("¿Cómo fichar en el trabajo sin instalar ninguna aplicación?", "Enviando un mensaje o un audio por WhatsApp a un número de la empresa conectado al fichador. El sistema reconoce al trabajador por su teléfono, anota la hora de recepción y le devuelve la confirmación."),
@@ -148,7 +148,7 @@ D["servicios/fichador/geolocalizacion-con-aviso-al-trabajador"] = {
 <h3 style="margin-top:30px">Cómo plantearlo para que no levante ampollas</h3>
 <p style="max-width:820px">Actívalo solo para quien trabaja fuera: instaladores, comerciales, limpieza en casa de clientes, reparto, mantenimiento. El personal de tienda u oficina puede fichar en un dispositivo fijo y no necesita ubicación. Explícalo en una reunión breve antes de encenderlo y deja que cada persona vea el punto guardado junto a sus propios fichajes, algo que permite el <a href="/servicios/fichador/acceso-del-trabajador-a-sus-registros">acceso del trabajador a sus registros</a>. Y pide a tu asesoría laboral o a tu responsable de protección de datos que revise el texto informativo: nosotros te damos una base, pero esa valoración no nos corresponde.</p>
 <blockquote style="max-width:820px;margin-top:20px">«A partir del lunes, cuando fichéis desde el móvil se guardará el punto donde estáis en ese instante. No hay seguimiento durante la jornada, y cada uno puede ver su dato en la aplicación.»</blockquote>
-<p style="max-width:820px;margin-top:16px">Una frase así, dicha antes y no después, evita la mayor parte de los recelos. Para equipos que además trabajan donde falla la señal, la posición se combina con el <a href="/servicios/fichador/modo-sin-conexion-para-obras">fichaje sin conexión</a>.</p>
+<p style="max-width:820px;margin-top:16px">Una frase así, dicha antes y no después, evita la mayor parte de los recelos. Para equipos que además trabajan donde falla señal, la posición se combina con el <a href="/servicios/fichador/modo-sin-conexion-para-obras">fichaje sin conexión</a>.</p>
 </div></section>""",
  "faq": [
   ("¿Cómo comprobar que un trabajador ficha desde el lugar de trabajo y no desde casa?", "Activando la ubicación en el momento del fichaje y definiendo una zona alrededor de la obra, la tienda o el domicilio del cliente. Los fichajes hechos fuera de esa zona quedan señalados para que el responsable los revise."),
@@ -305,7 +305,7 @@ D["servicios/fichador/precio-por-trabajador-al-mes"] = {
 <h3 style="margin-top:26px">Lo que va aparte o no forma parte del fichador</h3>
 <ul class="lista" style="max-width:820px">
 <li>El terminal físico para la entrada y las tarjetas o lectores, que son opcionales y se abonan una única vez.</li>
-<li>El fichaje por chat con PIX, que puede llevar un coste añadido según el volumen de mensajes.</li>
+<li>El fichaje por chat con la IA empresarial, que puede llevar un coste añadido según el volumen de mensajes.</li>
 <li>El IVA, que no está incluido en las cifras publicadas.</li>
 <li>Conectar los fichajes con tu programa de nóminas u otro sistema: se presupuesta según el caso.</li>
 <li>El asesoramiento laboral. No somos asesoría: te entregamos el dato ordenado y las decisiones sobre convenio o contratos las tomas con la tuya.</li>

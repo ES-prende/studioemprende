@@ -1,4 +1,4 @@
-# Reescritura «dolores primero» · familia PIX (noviembre 2026).
+# Reescritura «dolores primero» · familia la IA empresarial (noviembre 2026).
 # Aquí se habla de capacidades del producto; los casos de uso concretos viven en /servicios/agentes-de-ia/… y se enlazan.
 D = {}
 
@@ -17,7 +17,7 @@ D["servicios/pix/flujos-de-trabajo"] = {
 <li>Las aprobaciones se dan por mensaje y luego no se encuentran.</li>
 </ul>
 <h3 style="margin-top:28px">Una tarea automática y un flujo no son lo mismo</h3>
-<div class="tabla-wrap"><table class="tabla-norm"><thead><tr><th></th><th>Tarea automatizada</th><th>Flujo completo en PIX</th></tr></thead><tbody>
+<div class="tabla-wrap"><table class="tabla-norm"><thead><tr><th></th><th>Tarea automatizada</th><th>Flujo completo en la IA empresarial</th></tr></thead><tbody>
 <tr><td>Alcance</td><td>Un paso: enviar, copiar, recordar</td><td>Desde lo que lo origina hasta el resultado registrado</td></tr>
 <tr><td>Si falta información</td><td>Falla o envía algo incompleto</td><td>La pide, espera y continúa, o avisa a quien corresponde</td></tr>
 <tr><td>Decisiones</td><td>No las contempla</td><td>Se detiene en los puntos de aprobación que hayas marcado</td></tr>
@@ -26,19 +26,19 @@ D["servicios/pix/flujos-de-trabajo"] = {
 </tbody></table></div>
 <p style="max-width:820px;margin-top:18px">La diferencia práctica es que la IA interpreta lo que llega (un correo escrito de cualquier manera, un documento, una nota de voz) y decide qué paso toca, algo que las reglas fijas no hacen. Esa misma flexibilidad es su punto débil: puede interpretar mal. Por eso cada flujo lleva puntos de control humano y deja rastro de lo que hizo.</p>
 <h3 style="margin-top:28px">Cuándo un flujo es matar moscas a cañonazos</h3>
-<p style="max-width:820px">Si el proceso ocurre dos veces al mes, si cada caso es distinto del anterior o si ni siquiera en tu equipo os ponéis de acuerdo en cómo se hace, no lo automatices todavía: escríbelo primero. Tampoco tiene sentido encadenar pasos sobre datos que no son fiables. Lo habitual es empezar por un solo recorrido, medirlo durante unas semanas y ampliar después. Ejemplos ya desarrollados: <a href="/servicios/agentes-de-ia/presupuestos-automaticos">presupuestos automáticos con IA</a> y <a href="/servicios/agentes-de-ia/agentes-que-gestionan-pedidos-presupuestos-o-incidencias-de-principio-">agentes que gestionan pedidos e incidencias</a>. Con qué programas puede trabajar cada paso lo tienes en <a href="/servicios/pix/integraciones">integraciones de PIX</a>, y qué acciones exigen tu aprobación, en <a href="/servicios/pix/seguridad-y-control">seguridad y control</a>.</p>
+<p style="max-width:820px">Si el proceso ocurre dos veces al mes, si cada caso es distinto del anterior o si ni siquiera en tu equipo os ponéis de acuerdo en cómo se hace, no lo automatices todavía: escríbelo primero. Tampoco tiene sentido encadenar pasos sobre datos que no son fiables. Lo habitual es empezar por un solo recorrido, medirlo durante unas semanas y ampliar después. Ejemplos ya desarrollados: <a href="/servicios/agentes-de-ia/presupuestos-automaticos">presupuestos automáticos con IA</a> y <a href="/servicios/agentes-de-ia/agentes-que-gestionan-pedidos-presupuestos-o-incidencias-de-principio-">agentes que gestionan pedidos e incidencias</a>. Con qué programas puede trabajar cada paso lo tienes en <a href="/servicios/pix/integraciones">integraciones de la IA empresarial</a>, y qué acciones exigen tu aprobación, en <a href="/servicios/pix/seguridad-y-control">seguridad y control</a>.</p>
 </div></section>""",
  "faq": [
-  ("¿Cómo automatizar un proceso entero de mi empresa y no solo una tarea?", "Dibujando primero el recorrido completo: qué lo inicia, qué datos necesita cada paso, quién aprueba y dónde queda registrado el resultado. Con ese mapa, PIX encadena los pasos, pide lo que falta y se detiene donde has decidido que intervenga una persona."),
+  ("¿Cómo automatizar un proceso entero de mi empresa y no solo una tarea?", "Dibujando primero el recorrido completo: qué lo inicia, qué datos necesita cada paso, quién aprueba y dónde queda registrado el resultado. Con ese mapa, la IA empresarial encadena los pasos, pide lo que falta y se detiene donde has decidido que intervenga una persona."),
   ("¿Qué pasa si la IA toma una decisión equivocada en mitad de un flujo?", "Las acciones sensibles no se ejecutan sin aprobación, y todo lo que hace queda registrado con el dato en que se basó. Si un paso sale mal, se puede ver dónde, corregir el caso y ajustar la instrucción para que no se repita."),
-  ("¿Cuánto se tarda en poner en marcha el primer flujo de trabajo con PIX?", "El primer flujo suele plantearse como un piloto de unas cuatro semanas. La mayor parte del tiempo se va en acordar cómo es el proceso y en conectar los programas, no en la configuración de la IA."),
+  ("¿Cuánto se tarda en poner en marcha el primer flujo de trabajo con la IA empresarial?", "El primer flujo suele plantearse como un piloto de unas cuatro semanas. La mayor parte del tiempo se va en acordar cómo es el proceso y en conectar los programas, no en la configuración de la IA."),
  ],
 }
 
 # Estructura: tres perfiles en tarjetas según lo que ya usan + preguntas previas a cada conexión (definiciones)
 D["servicios/pix/integraciones"] = {
  "estructura": "tarjetas-por-punto-de-partida + preguntas-previas-en-definiciones",
- "lead": "El cliente está en el CRM, sus correos en Outlook, el presupuesto en una hoja de cálculo y lo que te dijo por WhatsApp, en tu móvil. Para contestarle abres cuatro ventanas. Las integraciones de PIX con Gmail, Outlook, WhatsApp, CRM y API sirven para que un asistente consulte todo eso por ti, con los permisos que marques.",
+ "lead": "El cliente está en el CRM, sus correos en Outlook, el presupuesto en una hoja de cálculo y lo que te dijo por WhatsApp, en tu móvil. Para contestarle abres cuatro ventanas. Las integraciones de la IA empresarial con Gmail, Outlook, WhatsApp, CRM y API sirven para que un asistente consulte todo eso por ti, con los permisos que marques.",
  "bloque": """<section class="sec"><div class="w">
 <div class="cab"><p class="kicker">Cuatro programas, cuatro verdades</p><h2>¿Tus programas no se hablan y eres tú quien hace de cable?</h2><p class="lead" style="margin-top:8px">Copiar un dato de una pantalla a otra no es trabajar: es suplir una conexión que falta.</p></div>
 <div class="rejilla">
@@ -58,7 +58,7 @@ D["servicios/pix/integraciones"] = {
 </div></section>""",
  "faq": [
   ("¿Cómo saber si mi programa de gestión se puede conectar con un asistente de IA?", "Buscando en su documentación o preguntando al fabricante si ofrece una API o, al menos, exportación e importación de datos. Con el nombre del programa y la versión lo comprobamos nosotros en el diagnóstico, antes de presupuestar."),
-  ("¿Qué pasa si una integración de PIX deja de funcionar tras una actualización?", "El flujo afectado se detiene y salta un aviso. Se revisa qué cambió en el programa conectado y se adapta la conexión; mientras tanto, los pasos que dependen de ella quedan en espera o se hacen a mano."),
+  ("¿Qué pasa si una integración de la IA empresarial deja de funcionar tras una actualización?", "El flujo afectado se detiene y salta un aviso. Se revisa qué cambió en el programa conectado y se adapta la conexión; mientras tanto, los pasos que dependen de ella quedan en espera o se hacen a mano."),
  ],
 }
 
@@ -75,7 +75,7 @@ D["servicios/pix/seguridad-y-control"] = {
 <li>«Si algo sale mal, ¿cómo sé qué hizo y por qué?»</li>
 </ul>
 <p style="max-width:820px;margin-top:18px">Son las preguntas correctas. Un agente que actúa en tus programas no es un chat de consulta: puede enviar, modificar y borrar. La confianza no viene de que el proveedor te diga que es seguro, sino de que puedas comprobar qué tiene permitido.</p>
-<h3 style="margin-top:28px">Seis cosas que deberías poder exigir a cualquier agente, no solo a PIX</h3>
+<h3 style="margin-top:28px">Seis cosas que deberías poder exigir a cualquier agente, no solo a la IA empresarial</h3>
 <ol style="max-width:820px">
 <li>Una lista clara de a qué programas y carpetas accede, y poder recortarla.</li>
 <li>Diferenciar entre lo que puede leer y lo que puede cambiar.</li>
@@ -91,6 +91,6 @@ D["servicios/pix/seguridad-y-control"] = {
  "faq": [
   ("¿Cómo dejar que una IA trabaje con mis datos sin perder el control de lo que hace?", "Dándole acceso solo a lo imprescindible, separando lectura de escritura, exigiendo aprobación humana para las acciones sensibles y revisando el registro de actividad. Se empieza con permisos mínimos y se amplían a medida que se comprueba cómo responde."),
   ("¿Quién responde si el agente de IA comete un error con un cliente?", "Ante el cliente responde tu empresa, igual que si el error lo cometiera un empleado. Por eso importa decidir qué puede hacer solo el agente y qué necesita revisión, y conservar el registro que permite ver qué ocurrió y corregirlo."),
-  ("¿Cuánto trabajo le supone al administrador supervisar PIX?", "Al principio más, porque conviene revisar a diario lo que se aprueba y cómo responde. Una vez estable, suele bastar con atender las aprobaciones pendientes y repasar permisos y actividad de forma periódica."),
+  ("¿Cuánto trabajo le supone al administrador supervisar la IA empresarial?", "Al principio más, porque conviene revisar a diario lo que se aprueba y cómo responde. Una vez estable, suele bastar con atender las aprobaciones pendientes y repasar permisos y actividad de forma periódica."),
  ],
 }

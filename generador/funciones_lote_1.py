@@ -13,10 +13,10 @@ PAGINAS = {
     ("Situación de pago", "Importe pendiente, facturas vencidas y forma de pago habitual, visibles antes de aceptar un pedido nuevo."),
     ("Avisos abiertos", "Incidencias, garantías o tareas sin cerrar, para no prometer algo a quien ya está molesto."),
   ]),
-  ("¿Para qué te sirve en el día a día?", "Te sirve para atender una llamada sabiendo ya de qué va, para que un compañero retome a un cliente cuando otro falta y para pedirle a PIX un resumen de compras y pendientes en segundos.", [
+  ("¿Para qué te sirve en el día a día?", "Te sirve para atender una llamada sabiendo ya de qué va, para que un compañero retome a un cliente cuando otro falta y para pedirle a la IA empresarial un resumen de compras y pendientes en segundos.", [
     ("Contestar sin hacer esperar", "Cuando llama un cliente, su ficha aparece y sabes de qué te habla antes de que termine la frase."),
     ("Cubrir ausencias", "Si el comercial está de vacaciones, otra persona retoma la relación con todo el contexto."),
-    ("Preguntarle a PIX", "Escribes «¿qué compró este cliente el año pasado y qué tiene pendiente?» y te lo resume en segundos."),
+    ("Preguntarle a la IA empresarial", "Escribes «¿qué compró este cliente el año pasado y qué tiene pendiente?» y te lo resume en segundos."),
   ]),
   ("¿Y si un cliente tiene varias sedes o contactos?", "La ficha distingue la empresa de las personas: puedes guardar varios contactos con su cargo, varias direcciones de entrega y empresas del mismo grupo enlazadas, sin duplicar clientes.", []),
  ],
@@ -97,7 +97,7 @@ PAGINAS = {
  "faqs": [
   ("¿Cómo hago para no olvidar llamar a un cliente?", "Al terminar cada contacto programas la siguiente acción con fecha; el CRM te la recuerda ese día y la marca en rojo si se pasa."),
   ("¿Se pueden crear tareas automáticas al enviar un presupuesto?", "Sí, por ejemplo una llamada de seguimiento tres días después de cada envío, asignada al comercial que lo hizo."),
-  ("¿PIX puede apuntar las tareas por mí?", "Sí, le dices por voz o por escrito «recuérdame llamar a este cliente el jueves» y queda creada en el CRM."),
+  ("¿La IA empresarial puede apuntar las tareas por mí?", "Sí, le dices por voz o por escrito «recuérdame llamar a este cliente el jueves» y queda creada en el CRM."),
  ],
  "rel": [("ficha-de-cliente-360.html", "Ficha de cliente 360°"), ("comerciales-y-comisiones.html", "Comerciales y comisiones"), ("../../blog/whatsapp-para-no-perder-clientes.html", "WhatsApp para no perder clientes")],
 },
@@ -121,7 +121,7 @@ PAGINAS = {
   ]),
  ],
  "faqs": [
-  ("¿Cómo se calcula la comisión de un comercial si el cliente devuelve la compra?", "El abono descuenta automáticamente la comisión en la siguiente liquidación, según la regla que hayas definido."),
+  ("¿Cómo se calcula comisión de un comercial si el cliente devuelve la compra?", "El abono descuenta automáticamente la comisión en la siguiente liquidación, según la regla que hayas definido."),
   ("¿Se pueden asignar zonas o clientes fijos a cada comercial?", "Sí, cada cliente tiene su comercial y los nuevos se reparten por zona, sector o turno según prefieras."),
   ("¿Puede un comercial ver las ventas de sus compañeros?", "Solo si tú lo permites; por defecto cada uno ve su cartera y sus resultados."),
  ],
@@ -295,7 +295,7 @@ PAGINAS = {
   ("¿Qué pasa con la respuesta del cliente?", "La respuesta cambia la agenda sola: si confirma, la cita queda confirmada; si cancela, el hueco se libera para la lista de espera; y si quiere otra hora, recibe las disponibles en el mismo chat.", [
     ("Confirma", "La cita se marca como confirmada en la agenda."),
     ("Cancela", "El hueco queda libre y puede ofrecerse a la lista de espera."),
-    ("Quiere cambiar", "Recibe las horas libres o PIX le propone una nueva en la misma conversación."),
+    ("Quiere cambiar", "Recibe las horas libres o la IA empresarial le propone una nueva en la misma conversación."),
   ]),
  ],
  "faqs": [
@@ -425,7 +425,7 @@ PAGINAS = {
   ("¿Qué aprendes de tus incidencias?", "Un informe por producto, proveedor, instalador o tipo de fallo te dice dónde se concentran los problemas. Sirve para reclamar al fabricante con datos, revisar un procedimiento de montaje o dejar de vender un artículo que da guerra.", []),
  ],
  "faqs": [
-  ("¿Cómo se controla la garantía de cada producto vendido?", "Al vender se guarda el número de serie y la fecha; desde ahí el programa calcula la garantía de ese artículo concreto."),
+  ("¿Cómo se controla garantía de cada producto vendido?", "Al vender se guarda el número de serie y la fecha; desde ahí el programa calcula garantía de ese artículo concreto."),
   ("¿El cliente puede consultar el estado de su reclamación?", "Sí, recibe avisos en cada cambio de estado y puede consultarlo con un enlace sin necesidad de llamar."),
   ("¿Se puede reclamar al proveedor la garantía desde el mismo programa?", "Sí, la incidencia se enlaza con la compra al proveedor y se genera la solicitud de devolución o reposición."),
  ],
@@ -585,7 +585,7 @@ PAGINAS = {
   ("¿La IA hace los pedidos sola o los tengo que aprobar?", "Propone la compra y tú decides; puedes aprobarla tal cual, cambiar cantidades o descartarla."),
   ("¿Funciona con artículos nuevos que no tienen ventas?", "Para esos se usa como referencia un artículo parecido o una cantidad inicial que tú indiques."),
  ],
- "rel": [("../automatizacion-y-datos/prevision-de-ventas-y-stock.html", "Previsión de ventas y stock"), ("pedidos-a-proveedores.html", "Pedidos a proveedores"), ("../pix/index.html", "PIX, el agente de IA")],
+ "rel": [("../automatizacion-y-datos/prevision-de-ventas-y-stock.html", "Previsión de ventas y stock"), ("pedidos-a-proveedores.html", "Pedidos a proveedores"), ("../pix/index.html", "la IA empresarial")],
 },
 "software-de-gestion/etiquetas-codigos-de-barras-y-qr": {
  "titulo": "Programa para imprimir etiquetas con código de barras",
@@ -620,10 +620,10 @@ PAGINAS = {
  "lead": "El fichador y registro de jornada de tu programa de gestión recoge entradas, salidas y pausas, y esas horas se cruzan con turnos, partes de trabajo y vacaciones.",
  "respuesta": "Un fichador integrado en el programa de gestión registra la hora de inicio y fin de la jornada de cada trabajador, con sus pausas, desde el móvil, una tablet o una tarjeta. El registro de jornada es obligatorio desde 2019 (Real Decreto-ley 8/2019) y debe conservarse cuatro años; al estar dentro de tu gestión, esas horas sirven también para costes, partes y turnos.",
  "secciones": [
-  ("¿Cómo fichan tus trabajadores?", "Tus trabajadores fichan con un toque en la app del móvil, en una tablet a la entrada con código o tarjeta NFC, o enviando un mensaje por WhatsApp a PIX si prefieren algo más sencillo.", [
+  ("¿Cómo fichan tus trabajadores?", "Tus trabajadores fichan con un toque en la app del móvil, en una tablet a la entrada con código o tarjeta NFC, o enviando un mensaje por WhatsApp a la IA empresarial si prefieren algo más sencillo.", [
     ("Móvil", "Con un toque en la app, también para quien empieza la jornada en casa de un cliente."),
     ("Tablet en el centro", "Un punto de fichaje a la entrada con código personal o tarjeta NFC."),
-    ("Por WhatsApp o con PIX", "Un mensaje basta para registrar entrada o salida en equipos poco tecnológicos."),
+    ("Por WhatsApp o con la IA empresarial", "Un mensaje basta para registrar entrada o salida en equipos poco tecnológicos."),
   ]),
   ("¿Qué gana tu programa de gestión con el fichaje?", "Con el fichaje dentro, el programa compara horas fichadas con las imputadas en partes, marca retrasos o fichajes fuera de turno, calcula horas extra con tus reglas y exporta los registros si llega una inspección.", [
     ("Coste real de cada trabajo", "Las horas fichadas se comparan con las imputadas en partes y obras."),

@@ -40,7 +40,7 @@ PAGINAS = {
     ("Suscripciones olvidadas", "Cargos recurrentes que nadie usa aparecen en una lista para darlos de baja."),
     ("Coste frente a presupuesto", "Defines cuánto quieres gastar por partida y ves en qué vas desviado."),
   ]),
-  ("¿Cómo se calcula la caja de las próximas semanas?", "Se suman los cobros pendientes según cómo paga realmente cada cliente, no según la fecha de la factura, y se restan pagos fijos, nóminas, impuestos y compras previstas. Así puedes ver con tiempo si tendrás que aplazar una compra, pedir financiación o apretar los cobros.", []),
+  ("¿Cómo se calcula caja de las próximas semanas?", "Se suman los cobros pendientes según cómo paga realmente cada cliente, no según la fecha de la factura, y se restan pagos fijos, nóminas, impuestos y compras previstas. Así puedes ver con tiempo si tendrás que aplazar una compra, pedir financiación o apretar los cobros.", []),
  ],
  "faqs": [
   ("¿Cómo detectar en qué se va el dinero de mi empresa?", "Clasificando todos los movimientos del banco por partidas y comparándolos mes a mes; el sistema lo hace solo y te señala lo que más ha crecido."),
@@ -92,10 +92,10 @@ PAGINAS = {
  ],
  "faqs": [
   ("¿Qué día y a qué hora llega el informe?", "Cuando tú digas; lo habitual es el lunes a primera hora, pero puede ser diario o mensual."),
-  ("¿Puedo contestar al informe para pedir más datos?", "Sí. Con PIX puedes preguntar por WhatsApp, por ejemplo, qué cliente ha comprado más o qué facturas vencen esta semana."),
+  ("¿Puedo contestar al informe para pedir más datos?", "Sí. Con la IA empresarial puedes preguntar por WhatsApp, por ejemplo, qué cliente ha comprado más o qué facturas vencen esta semana."),
   ("¿Lo pueden recibir varias personas con datos distintos?", "Sí, cada responsable puede recibir solo la parte que le toca: comercial, almacén o administración."),
  ],
- "rel": [("../pix/index.html", "PIX, el agente de IA"), ("cuadro-de-mando-de-direccion.html", "Cuadro de mando de dirección"), ("../../blog/tareas-que-puedes-automatizar.html", "7 tareas que puedes automatizar")],
+ "rel": [("../pix/index.html", "la IA empresarial"), ("cuadro-de-mando-de-direccion.html", "Cuadro de mando de dirección"), ("../../blog/tareas-que-puedes-automatizar.html", "7 tareas que puedes automatizar")],
 },
 "automatizacion-y-datos/optimizacion-de-rutas": {
  "titulo": "Optimización de rutas de reparto y visitas con IA",
@@ -322,8 +322,8 @@ PAGINAS = {
  "titulo": "Chatbot para página web: integrado en tu diseño",
  "meta": "Chatbot para página web con el diseño de tu marca, que capta contactos, responde con tu información y pasa cada conversación a tu CRM.",
  "h1": "Chatbot para tu página web, integrado en el diseño y conectado a tu CRM",
- "lead": "El chatbot PIX es un chatbot con IA para tu web que responde con la información real de tu empresa y, cuando detecta interés, recoge los datos del visitante y los deja en tu CRM.",
- "respuesta": "PIX es un agente de IA que, colocado en tu web como chat, responde a los visitantes usando los servicios, precios, horarios y preguntas frecuentes de tu empresa. A diferencia de un chatbot de botones, entiende preguntas escritas con sus palabras, puede proponer una cita, pedir los datos de contacto y pasar la conversación a una persona cuando hace falta.",
+ "lead": "El chatbot la IA empresarial es un chatbot con IA para tu web que responde con la información real de tu empresa y, cuando detecta interés, recoge los datos del visitante y los deja en tu CRM.",
+ "respuesta": "La IA empresarial es un agente de IA que, colocado en tu web como chat, responde a los visitantes usando los servicios, precios, horarios y preguntas frecuentes de tu empresa. A diferencia de un chatbot de botones, entiende preguntas escritas con sus palabras, puede proponer una cita, pedir los datos de contacto y pasar la conversación a una persona cuando hace falta.",
  "secciones": [
   ("¿Qué puede hacer en tu web?", "Resuelve dudas a cualquier hora, averigua qué necesita cada visitante antes de pasarlo a ventas, reserva en tu agenda o recoge datos para presupuestar y deja el caso por escrito a tu equipo cuando hace falta.", [
     ("Resolver dudas antes de que se vayan", "Plazos, zonas de servicio, qué incluye cada servicio o cómo funciona el proceso, a las once de la noche igual que a mediodía."),
@@ -331,14 +331,14 @@ PAGINAS = {
     ("Reservar o pedir presupuesto", "Ofrece huecos de tu agenda o recoge los datos para preparar el presupuesto."),
     ("Derivar a una persona", "Si la consulta es delicada o el visitante lo pide, avisa al equipo y deja el resumen escrito."),
   ]),
-  ("¿Qué sabe y qué no?", "PIX solo responde con la información que le das: web, catálogo, tarifas, documentos internos que decidas compartir. Si no sabe algo, lo dice y ofrece contacto, en lugar de inventarlo. Tú revisas las conversaciones y vas ajustando sus respuestas. Para conocer todo lo que hace fuera de la web, mira la página de PIX.", []),
+  ("¿Qué sabe y qué no?", "La IA empresarial solo responde con la información que le das: web, catálogo, tarifas, documentos internos que decidas compartir. Si no sabe algo, lo dice y ofrece contacto, en lugar de inventarlo. Tú revisas las conversaciones y vas ajustando sus respuestas. Para conocer todo lo que hace fuera de la web, mira la página de la IA empresarial.", []),
  ],
  "faqs": [
   ("¿Qué diferencia hay entre un chatbot con IA y uno de botones?", "El de botones solo sigue un menú fijo; el de IA entiende preguntas libres y responde con la información de tu empresa."),
   ("¿El chatbot puede atender en varios idiomas?", "Sí, responde en el idioma en que le escriben, usando la misma información de tu negocio."),
   ("¿Puedo leer las conversaciones del chatbot?", "Sí, todas quedan guardadas y las que acaban en contacto se vinculan a la ficha del cliente."),
  ],
- "rel": [("../pix/index.html", "Qué es PIX"), ("../agentes-de-ia/chatbot-para-tu-web-con-pix.html", "Chatbot para tu web con PIX"), ("buscador-inteligente.html", "Buscador inteligente")],
+ "rel": [("../pix/index.html", "Qué es la IA empresarial"), ("../agentes-de-ia/chatbot-para-tu-web-con-pix.html", "Chatbot para tu web con la IA empresarial"), ("buscador-inteligente.html", "Buscador inteligente")],
 },
 "webs/contenido-personalizado-segun-el-visitante": {
  "titulo": "Personalización web según el visitante con IA",
@@ -408,7 +408,7 @@ PAGINAS = {
   ("¿El buscador inteligente funciona con mi tienda actual?", "Depende de la plataforma; en muchas se puede sustituir el buscador de serie conectándolo al catálogo."),
   ("¿Puedo ver qué buscan los clientes y no encuentran?", "Sí, tienes un informe de búsquedas sin resultado y de las más frecuentes."),
  ],
- "rel": [("tienda-online.html", "Tienda online"), ("chatbot-pix.html", "Chatbot PIX"), ("../software-de-gestion/catalogo-y-tarifas.html", "Catálogo y tarifas")],
+ "rel": [("tienda-online.html", "Tienda online"), ("chatbot-pix.html", "Chatbot con IA empresarial"), ("../software-de-gestion/catalogo-y-tarifas.html", "Catálogo y tarifas")],
 },
 "webs/velocidad-y-core-web-vitals": {
  "titulo": "Optimización de velocidad web y Core Web Vitals",

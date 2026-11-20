@@ -60,7 +60,7 @@ for _d, (_a, _os) in EXTRA.items():
 SIGLAS = {"erp": "ERP", "crm": "CRM", "ia": "IA", "ai": "AI", "act": "Act", "lms": "LMS", "api": "API", "b2b": "B2B", "appcc": "APPCC",
           "nis2": "NIS2", "seo": "SEO", "tpv": "TPV", "cae": "CAE", "caes": "CAEs", "nrua": "NRUA", "ses": "SES", "mvp": "MVP", "cto": "CTO",
           "enisa": "ENISA", "cdti": "CDTI", "iso": "ISO", "nfc": "NFC", "whatsapp": "WhatsApp", "google": "Google", "bing": "Bing",
-          "excel": "Excel", "holded": "Holded", "airbnb": "Airbnb", "booking": "Booking", "verifactu": "Verifactu", "pix": "PIX",
+          "excel": "Excel", "holded": "Holded", "airbnb": "Airbnb", "booking": "Booking", "verifactu": "Verifactu", "pix": "IA empresarial",
           "hospedajes": "HOSPEDAJES", "it": "IT", "gemini": "Gemini", "chatgpt": "ChatGPT", "moodle": "Moodle", "sap": "SAP",
           "woocommerce": "WooCommerce", "shopify": "Shopify", "wix": "Wix", "squarespace": "Squarespace", "a/b": "A/B"}
 

@@ -258,7 +258,7 @@ PAGINAS = {
   ("¿Qué pasa si un trabajador pierde su tarjeta NFC?", "Se desactiva desde el panel en un momento y se le asigna otra; la tarjeta perdida deja de servir para fichar."),
   ("¿Hay que instalar algo en el ordenador para fichar por web?", "No, basta con el navegador y el usuario de cada trabajador."),
  ],
- "rel": [("../../blog/app-de-control-horario-para-pequenas-empresas.html", "App de control horario: qué debe tener"), ("fichaje-por-whatsapp-o-con-pix.html", "Fichaje por WhatsApp o con PIX"), ("modo-sin-conexion-para-obras.html", "Modo sin conexión para obras")],
+ "rel": [("../../blog/app-de-control-horario-para-pequenas-empresas.html", "App de control horario: qué debe tener"), ("fichaje-por-whatsapp-o-con-pix.html", "Fichaje por WhatsApp o con la IA empresarial"), ("modo-sin-conexion-para-obras.html", "Modo sin conexión para obras")],
 },
 "fichador/geolocalizacion-con-aviso-al-trabajador": {
  "titulo": "Fichaje con geolocalización y aviso al trabajador",
@@ -284,14 +284,14 @@ PAGINAS = {
 },
 "fichador/fichaje-por-whatsapp-o-con-pix": {
  "titulo": "Fichar por WhatsApp: control horario sin app",
- "meta": "Ficha por WhatsApp o hablando con PIX: escribe «entro» o «salgo» y queda registrado. Sin instalar nada, con consulta de horas y avisos en el mismo chat.",
- "h1": "Fichaje por WhatsApp o con PIX, sin instalar nada",
- "lead": "Fichar por WhatsApp es tan simple como enviar «entro» o «salgo» a un número de la empresa. PIX, nuestro agente de IA, lo registra y contesta al momento.",
- "respuesta": "El fichaje por WhatsApp permite registrar entrada, salida y pausas enviando un mensaje a un número de la empresa conectado al fichador. PIX identifica al trabajador por su número, guarda el fichaje con la hora del sistema y responde con una confirmación; también contesta preguntas como cuántas horas lleva esta semana.",
+ "meta": "Ficha por WhatsApp o hablando con la IA empresarial: escribe «entro» o «salgo» y queda registrado. Sin instalar nada, con consulta de horas y avisos en el mismo chat.",
+ "h1": "Fichaje por WhatsApp o con la IA empresarial, sin instalar nada",
+ "lead": "Fichar por WhatsApp es tan simple como enviar «entro» o «salgo» a un número de la empresa. nuestra IA empresarial, lo registra y contesta al momento.",
+ "respuesta": "El fichaje por WhatsApp permite registrar entrada, salida y pausas enviando un mensaje a un número de la empresa conectado al fichador. La IA empresarial identifica al trabajador por su número, guarda el fichaje con la hora del sistema y responde con una confirmación; también contesta preguntas como cuántas horas lleva esta semana.",
  "secciones": [
   ("¿Qué se puede hacer desde el chat?", "Desde el chat el trabajador ficha con una palabra o un audio, pregunta cuántas horas lleva, solicita corregir un fichaje olvidado y recibe un aviso cuando no ha marcado la entrada a su hora.", [
     ("Fichar con una palabra", "«Entro», «salgo», «pausa» o «vuelvo». También vale un mensaje de voz."),
-    ("Consultar tus horas", "«¿Cuántas horas llevo este mes?» y PIX responde con el dato del registro."),
+    ("Consultar tus horas", "«¿Cuántas horas llevo este mes?» y la IA empresarial responde con el dato del registro."),
     ("Pedir una corrección", "Si se te olvidó fichar, lo pides en el chat y la solicitud llega al responsable para aprobarla."),
     ("Recibir recordatorios", "Aviso si no has fichado a tu hora habitual de entrada."),
   ]),
@@ -302,7 +302,7 @@ PAGINAS = {
   ("¿Qué hora queda registrada si el mensaje de WhatsApp llega tarde?", "La de recepción en el sistema. Si alguien envió sin cobertura y llegó más tarde, puede pedir la corrección y queda en el historial."),
   ("¿Hace falta WhatsApp Business para fichar por WhatsApp?", "La empresa necesita un número conectado a la API oficial de WhatsApp; los trabajadores usan su WhatsApp de siempre."),
  ],
- "rel": [("../pix/index.html", "Qué es PIX"), ("../whatsapp-ia/asistente-de-ia-para-whatsapp.html", "Asistente de IA para WhatsApp"), ("alertas-de-olvidos-y-retrasos.html", "Alertas de olvidos y retrasos")],
+ "rel": [("../pix/index.html", "Qué es la IA empresarial"), ("../whatsapp-ia/asistente-de-ia-para-whatsapp.html", "Asistente de IA para WhatsApp"), ("alertas-de-olvidos-y-retrasos.html", "Alertas de olvidos y retrasos")],
 },
 "fichador/modo-sin-conexion-para-obras": {
  "titulo": "App de fichaje sin conexión para obras y campo",
@@ -532,9 +532,9 @@ PAGINAS = {
  "faqs": [
   ("¿Las alertas de retraso sirven para sancionar?", "Sirven para tener el dato y corregir olvidos. Qué hacer con los retrasos repetidos lo decide la empresa, ajustándose a la normativa laboral y al convenio."),
   ("¿Se desactivan los avisos durante las vacaciones o una baja?", "Sí, solos: si el día está marcado como ausencia, no se envía ningún aviso."),
-  ("¿El aviso de fichaje olvidado puede llegar por WhatsApp?", "Sí. Si usáis el fichaje por WhatsApp o con PIX, el recordatorio llega al mismo chat y se ficha respondiendo."),
+  ("¿El aviso de fichaje olvidado puede llegar por WhatsApp?", "Sí. Si usáis el fichaje por WhatsApp o con la IA empresarial, el recordatorio llega al mismo chat y se ficha respondiendo."),
  ],
- "rel": [("fichaje-por-whatsapp-o-con-pix.html", "Fichaje por WhatsApp o con PIX"), ("turnos-y-cuadrantes.html", "Turnos y cuadrantes"), ("../../blog/app-de-control-horario-para-pequenas-empresas.html", "App de control horario para pequeñas empresas")],
+ "rel": [("fichaje-por-whatsapp-o-con-pix.html", "Fichaje por WhatsApp o con la IA empresarial"), ("turnos-y-cuadrantes.html", "Turnos y cuadrantes"), ("../../blog/app-de-control-horario-para-pequenas-empresas.html", "App de control horario para pequeñas empresas")],
 },
 "fichador/teletrabajo-y-varios-centros": {
  "titulo": "Control horario para teletrabajo y varios centros",

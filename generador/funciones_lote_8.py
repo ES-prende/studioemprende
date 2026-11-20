@@ -275,7 +275,7 @@ PAGINAS = {
   ("¿Se puede hacer un curso de IA para un despacho de abogados?", "Sí, con especial atención a la confidencialidad y a la revisión de lo que redacta la IA antes de presentarlo."),
   ("¿Qué diferencia hay entre el curso por sectores y uno a medida?", "El sectorial parte de las tareas típicas de tu sector; el a medida se diseña sobre los procesos concretos de tu empresa."),
  ],
- "rel": [("cursos-de-formacion-a-medida-para-empresas.html", "Cursos a medida para empresas"), ("../pix/casos-por-sector.html", "Casos de uso de PIX por sector"), ("../../blog/formacion-bonificada-para-empresas-fundae.html", "Formación bonificada por FUNDAE")],
+ "rel": [("cursos-de-formacion-a-medida-para-empresas.html", "Cursos a medida para empresas"), ("../pix/casos-por-sector.html", "Casos de uso de la IA empresarial por sector"), ("../../blog/formacion-bonificada-para-empresas-fundae.html", "Formación bonificada por FUNDAE")],
 },
 "formacion-ia/ia-para-autonomos-por-profesion": {
  "titulo": "IA para autónomos: formación según tu profesión",
@@ -418,10 +418,10 @@ PAGINAS = {
  ],
  "faqs": [
   ("¿Qué tareas de una pyme no conviene automatizar con IA?", "Las que dependen de un criterio difícil de explicar, las que tienen consecuencias legales sin revisión o las que ocurren tan pocas veces que no compensa."),
-  ("¿La auditoría de IA incluye implantar el agente?", "No necesariamente. Es un análisis independiente; la implantación, con PIX u otra solución, se decide después."),
+  ("¿La auditoría de IA incluye implantar el agente?", "No necesariamente. Es un análisis independiente; la implantación, con la IA empresarial u otra solución, se decide después."),
   ("¿Mis datos tienen que estar ordenados antes de la auditoría de IA?", "No. Precisamente uno de los resultados es saber qué datos hay que ordenar antes de aplicar IA."),
  ],
- "rel": [("../../blog/que-puede-hacer-un-agente-de-ia.html", "Qué puede hacer un agente de IA en una pyme"), ("../pix/index.html", "PIX, agente de IA empresarial"), ("auditoria-de-procesos-con-informe-de-ahorro.html", "Auditoría de procesos con informe de ahorro")],
+ "rel": [("../../blog/que-puede-hacer-un-agente-de-ia.html", "Qué puede hacer un agente de IA en una pyme"), ("../pix/index.html", "IA empresarial"), ("auditoria-de-procesos-con-informe-de-ahorro.html", "Auditoría de procesos con informe de ahorro")],
 },
 "consultoria-y-ayudas/auditoria-de-procesos-con-informe-de-ahorro": {
  "titulo": "Auditoría de procesos con informe de ahorro de horas",
@@ -560,21 +560,21 @@ PAGINAS = {
     ("Relaciones", "Clientes y proveedores que solo hablan contigo y no conocen a nadie más en la empresa."),
     ("Decisiones diarias", "Lo que el equipo te pregunta cada día porque no tiene otro sitio donde mirarlo."),
   ]),
-  ("¿Qué resultado obtienes?", "Un mapa de riesgos con tres niveles: lo que pararía el negocio en días, lo que lo frenaría en semanas y lo que solo sería incómodo. Para cada riesgo alto proponemos una solución concreta, ya sea un manual, un acceso compartido, un cuadro de mando o PIX como memoria del negocio, y un orden para abordarlas.", []),
+  ("¿Qué resultado obtienes?", "Un mapa de riesgos con tres niveles: lo que pararía el negocio en días, lo que lo frenaría en semanas y lo que solo sería incómodo. Para cada riesgo alto proponemos una solución concreta, ya sea un manual, un acceso compartido, un cuadro de mando o la IA empresarial como memoria del negocio, y un orden para abordarlas.", []),
  ],
  "faqs": [
   ("¿Cómo sé si mi negocio depende demasiado de mí?", "Si no puedes irte una semana sin recibir llamadas diarias, o si nadie más sabe preparar un presupuesto o pagar a un proveedor, depende demasiado."),
   ("¿El diagnóstico de continuidad sirve aunque no piense jubilarme?", "Sí. Una baja, un accidente o simplemente unas vacaciones ponen a prueba lo mismo que un relevo."),
   ("¿Quién participa en el diagnóstico de continuidad?", "El dueño y, si quiere, las personas clave del equipo y el posible sucesor, porque ven dependencias que el dueño no percibe."),
  ],
- "rel": [("../../blog/relevo-generacional-preparar-mi-negocio.html", "Relevo generacional: cómo preparar tu negocio"), ("cerebro-digital-del-negocio-con-pix.html", "Cerebro digital del negocio con PIX"), ("../departamento-tecnologico/herencia-digital-de-la-empresa.html", "Herencia digital de la empresa")],
+ "rel": [("../../blog/relevo-generacional-preparar-mi-negocio.html", "Relevo generacional: cómo preparar tu negocio"), ("cerebro-digital-del-negocio-con-pix.html", "Cerebro digital del negocio con la IA empresarial"), ("../departamento-tecnologico/herencia-digital-de-la-empresa.html", "Herencia digital de la empresa")],
 },
 "relevo-y-continuidad/cerebro-digital-del-negocio-con-pix": {
- "titulo": "Cerebro digital del negocio con IA: PIX",
- "meta": "Convierte lo que sabes en un cerebro digital del negocio con PIX: el equipo pregunta precios, procedimientos o historial y obtiene tu respuesta.",
- "h1": "Cerebro digital del negocio con PIX: tu experiencia, siempre a mano",
- "lead": "Un cerebro digital del negocio con PIX guarda lo que sabes, los criterios, las excepciones y el historial de clientes, para que el equipo pueda preguntarle en lenguaje normal cuando tú no estés.",
- "respuesta": "Es una base de conocimiento de la empresa conectada a PIX, el agente de IA de Studio Emprende. Se alimenta con documentos, notas de voz, correos y datos del programa de gestión, y responde a las preguntas del equipo citando de dónde saca cada respuesta. Así el conocimiento del dueño queda disponible aunque él no esté.",
+ "titulo": "Cerebro digital del negocio con IA empresarial",
+ "meta": "Convierte lo que sabes en un cerebro digital del negocio con la IA empresarial: el equipo pregunta precios, procedimientos o historial y obtiene tu respuesta.",
+ "h1": "Cerebro digital del negocio con la IA empresarial: tu experiencia, siempre a mano",
+ "lead": "Un cerebro digital del negocio con la IA empresarial guarda lo que sabes, los criterios, las excepciones y el historial de clientes, para que el equipo pueda preguntarle en lenguaje normal cuando tú no estés.",
+ "respuesta": "Es una base de conocimiento de la empresa conectada a la IA empresarial de Studio Emprende. Se alimenta con documentos, notas de voz, correos y datos del programa de gestión, y responde a las preguntas del equipo citando de dónde saca cada respuesta. Así el conocimiento del dueño queda disponible aunque él no esté.",
  "secciones": [
   ("¿Qué guarda el cerebro digital?", "Guarda cómo fijas precios y descuentos, el historial y los acuerdos de cada cliente, los pasos ante devoluciones, averías o urgencias, y con quién contactar para cada cosa y en qué condiciones.", [
     ("Criterios de precio", "Cómo calculas un presupuesto, qué descuentos das y a quién."),
@@ -582,10 +582,10 @@ PAGINAS = {
     ("Procedimientos", "Qué hacer con una devolución, una avería o un pedido urgente."),
     ("Contactos y proveedores", "A quién llamar para cada cosa y qué condiciones tiene cada uno."),
   ]),
-  ("¿Cómo se llena sin escribir un libro?", "Se alimenta con audios cortos que grabas en el móvil, con los documentos que ya tienes y con las respuestas que das cuando PIX te consulta algo que todavía no sabe.", [
-    ("Notas de voz", "Grabas explicaciones cortas desde el móvil y PIX las ordena por tema."),
+  ("¿Cómo se llena sin escribir un libro?", "Se alimenta con audios cortos que grabas en el móvil, con los documentos que ya tienes y con las respuestas que das cuando la IA empresarial te consulta algo que todavía no sabe.", [
+    ("Notas de voz", "Grabas explicaciones cortas desde el móvil y la IA empresarial las ordena por tema."),
     ("Documentos existentes", "Tarifas, contratos, correos y manuales que ya tienes se cargan tal cual."),
-    ("Preguntas del equipo", "Cuando PIX no sabe algo, te lo pregunta a ti y guarda la respuesta para la próxima vez."),
+    ("Preguntas del equipo", "Cuando la IA empresarial no sabe algo, te lo pregunta a ti y guarda la respuesta para la próxima vez."),
   ]),
  ],
  "faqs": [
@@ -608,14 +608,14 @@ PAGINAS = {
     ("Ficha generada con IA", "Pasos numerados, avisos importantes e imágenes extraídas del vídeo."),
     ("Revisión del experto", "Quien grabó la tarea corrige la ficha antes de publicarla."),
   ]),
-  ("¿Dónde se consulta?", "Las fichas y los vídeos quedan en un espacio de la empresa organizado por áreas, accesible desde el móvil o el ordenador. Si tienes PIX, el equipo puede preguntarle cómo se hace una tarea y le responde con la ficha y el fragmento de vídeo correspondiente.", []),
+  ("¿Dónde se consulta?", "Las fichas y los vídeos quedan en un espacio de la empresa organizado por áreas, accesible desde el móvil o el ordenador. Si tienes la IA empresarial, el equipo puede preguntarle cómo se hace una tarea y le responde con la ficha y el fragmento de vídeo correspondiente.", []),
  ],
  "faqs": [
   ("¿Qué tareas conviene grabar primero para el manual?", "Las que solo sabe hacer una persona y las que se hacen pocas veces al año, como un cierre, un inventario o una configuración, porque son las que más se olvidan."),
   ("¿Hace falta grabar con buena calidad?", "No. Basta el móvil y una explicación en voz alta; la IA trabaja con el audio y extrae imágenes útiles."),
   ("¿El manual sirve para formar a nuevos empleados?", "Sí, es una de sus utilidades principales: el nuevo puede repasar cada tarea las veces que necesite."),
  ],
- "rel": [("../formacion-ia/plan-de-formacion-para-nuevos-empleados.html", "Plan de formación para nuevos empleados"), ("cerebro-digital-del-negocio-con-pix.html", "Cerebro digital del negocio con PIX"), ("../problemas-sin-resolver/formacion-rapida-de-nuevos-empleados.html", "Formación rápida de nuevos empleados")],
+ "rel": [("../formacion-ia/plan-de-formacion-para-nuevos-empleados.html", "Plan de formación para nuevos empleados"), ("cerebro-digital-del-negocio-con-pix.html", "Cerebro digital del negocio con la IA empresarial"), ("../problemas-sin-resolver/formacion-rapida-de-nuevos-empleados.html", "Formación rápida de nuevos empleados")],
 },
 "relevo-y-continuidad/empresa-lista-para-traspasar-o-vender": {
  "titulo": "Preparar una empresa para traspasar o vender",
@@ -661,7 +661,7 @@ PAGINAS = {
  "faqs": [
   ("¿Qué indicadores aumentan el valor de una pequeña empresa?", "Ingresos que se repiten, clientes repartidos, buenos márgenes y una operativa que no dependa de una sola persona."),
   ("¿De dónde saca los datos el cuadro de mando de valor?", "Del programa de gestión y la facturación. Si hoy están en hojas de cálculo, primero los unificamos."),
-  ("¿Puedo ver el cuadro de mando de valor desde el móvil?", "Sí, y PIX puede enviarte un resumen periódico con los cambios más relevantes."),
+  ("¿Puedo ver el cuadro de mando de valor desde el móvil?", "Sí, y la IA empresarial puede enviarte un resumen periódico con los cambios más relevantes."),
  ],
  "rel": [("../automatizacion-y-datos/cuadro-de-mando-de-direccion.html", "Cuadro de mando de dirección"), ("empresa-lista-para-traspasar-o-vender.html", "Empresa lista para traspasar o vender"), ("../software-de-gestion/rentabilidad-por-cliente-servicio-y-empleado.html", "Rentabilidad por cliente, servicio y empleado")],
 },

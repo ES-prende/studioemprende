@@ -2,30 +2,30 @@
 PAGINAS = {
 "erp-para-pymes/pix-dentro-del-erp-preguntale-en-lenguaje-normal": {
  "titulo": "ERP con inteligencia artificial: pregunta a tus datos",
- "meta": "ERP con inteligencia artificial integrada: pregunta a PIX por ventas, stock o cobros en lenguaje normal y recibe la respuesta sin abrir informes.",
+ "meta": "ERP con inteligencia artificial integrada: pregunta a la IA empresarial por ventas, stock o cobros en lenguaje normal y recibe la respuesta sin abrir informes.",
  "h1": "Un ERP con inteligencia artificial al que le hablas como a una persona",
- "lead": "Un ERP con inteligencia artificial te ahorra el paso de buscar: escribes o dices «¿qué clientes no han comprado este trimestre?» y PIX te lo devuelve con los datos de tu propio programa.",
- "respuesta": "Un ERP con IA integrada permite consultar y mover datos con frases normales en lugar de menús y filtros. PIX, el agente de IA que va dentro de nuestro ERP, lee ventas, compras, almacén, facturas y equipo, responde con cifras reales de tu empresa y puede preparar tareas, como un pedido o un recordatorio, que tú apruebas antes de que se ejecuten.",
+ "lead": "Un ERP con inteligencia artificial te ahorra el paso de buscar: escribes o dices «¿qué clientes no han comprado este trimestre?» y la IA empresarial te lo devuelve con los datos de tu propio programa.",
+ "respuesta": "Un ERP con IA integrada permite consultar y mover datos con frases normales en lugar de menús y filtros. la IA empresarial que va dentro de nuestro ERP, lee ventas, compras, almacén, facturas y equipo, responde con cifras reales de tu empresa y puede preparar tareas, como un pedido o un recordatorio, que tú apruebas antes de que se ejecuten.",
  "secciones": [
-  ("¿Qué le puedes preguntar a PIX dentro del ERP?", "Puedes preguntarle por ventas, márgenes, stock, deudas de clientes o ausencias del equipo, tal como lo dirías en voz alta. PIX busca la respuesta en los datos del ERP y, si hace falta, te propone el siguiente paso.", [
+  ("¿Qué le puedes preguntar a la IA empresarial dentro del ERP?", "Puedes preguntarle por ventas, márgenes, stock, deudas de clientes o ausencias del equipo, tal como lo dirías en voz alta. La IA empresarial busca la respuesta en los datos del ERP y, si hace falta, te propone el siguiente paso.", [
     ("Ventas y márgenes", "«¿Cuánto hemos facturado este mes frente al mismo mes del año pasado?» o «¿qué familia de productos deja menos margen?»."),
     ("Almacén", "«¿Qué referencias se quedan sin stock antes del viernes?» y te propone el pedido al proveedor habitual."),
     ("Cobros", "«¿Quién nos debe más de 60 días?» con la lista de facturas y el importe pendiente de cada cliente."),
     ("Equipo", "«¿Quién está de vacaciones la semana que viene?» cruzando turnos, ausencias y fichajes."),
   ]),
-  ("¿Por qué es distinto de usar ChatGPT con un Excel?", "Porque PIX trabaja sobre el ERP en vivo, respeta lo que cada usuario tiene permitido ver y nunca cambia un dato sin tu aprobación. Con un Excel exportado tendrías cifras de ayer y ningún control de accesos.", [
-    ("Datos vivos", "PIX consulta el ERP en el momento; no trabaja sobre una exportación que se queda vieja al día siguiente."),
+  ("¿Por qué es distinto de usar ChatGPT con un Excel?", "Porque IA empresarial trabaja sobre el ERP en vivo, respeta lo que cada usuario tiene permitido ver y nunca cambia un dato sin tu aprobación. Con un Excel exportado tendrías cifras de ayer y ningún control de accesos.", [
+    ("Datos vivos", "La IA empresarial consulta el ERP en el momento; no trabaja sobre una exportación que se queda vieja al día siguiente."),
     ("Permisos de cada usuario", "Un comercial solo ve lo que su perfil le deja ver, igual que en las pantallas del programa."),
-    ("Acciones con aprobación", "Cuando PIX prepara algo que cambia datos, te lo enseña y espera tu visto bueno."),
+    ("Acciones con aprobación", "Cuando la IA empresarial prepara algo que cambia datos, te lo enseña y espera tu visto bueno."),
   ]),
   ("Para quién tiene sentido", "Para gerentes que no tienen tiempo de aprender a montar informes, para equipos de oficina que pasan el día buscando datos para otros y para comerciales en la calle que necesitan una respuesta rápida desde el móvil, por texto o por voz.", []),
  ],
  "faqs": [
-  ("¿Necesito saber hacer consultas o informes para usar PIX en el ERP?", "No. Escribes la pregunta como se la harías a alguien de tu oficina y PIX traduce eso a la consulta correcta."),
-  ("¿PIX puede inventarse una cifra del ERP?", "Responde con los datos que lee del programa y te indica de dónde salen; si una pregunta es ambigua, te pide que la concretes."),
-  ("¿Se puede usar el ERP sin activar PIX?", "Sí. El ERP funciona igual con sus pantallas de siempre y PIX se puede activar después."),
+  ("¿Necesito saber hacer consultas o informes para usar la IA empresarial en el ERP?", "No. Escribes la pregunta como se la harías a alguien de tu oficina y la IA empresarial traduce eso a la consulta correcta."),
+  ("¿La IA empresarial puede inventarse una cifra del ERP?", "Responde con los datos que lee del programa y te indica de dónde salen; si una pregunta es ambigua, te pide que la concretes."),
+  ("¿Se puede usar el ERP sin activar la IA empresarial?", "Sí. El ERP funciona igual con sus pantallas de siempre y la IA empresarial se puede activar después."),
  ],
- "rel": [("../pix/inteligencia-conectada.html", "PIX con los datos de tu empresa"), ("cuadro-de-mando-en-tiempo-real.html", "Cuadro de mando en tiempo real"), ("../../blog/que-puede-hacer-un-agente-de-ia.html", "Qué puede hacer un agente de IA")],
+ "rel": [("../pix/inteligencia-conectada.html", "La IA empresarial con los datos de tu empresa"), ("cuadro-de-mando-en-tiempo-real.html", "Cuadro de mando en tiempo real"), ("../../blog/que-puede-hacer-un-agente-de-ia.html", "Qué puede hacer un agente de IA")],
 },
 "erp-para-pymes/conexion-con-tu-tienda-banco-y-otras-herramientas": {
  "titulo": "ERP conectado con tienda online, banco y herramientas",
@@ -282,7 +282,7 @@ PAGINAS = {
 },
 "software-especializado/huella-de-carbono-para-proveedores": {
  "titulo": "Calcular la huella de carbono de tu pyme proveedora",
- "meta": "Calcula la huella de carbono de tu pyme con los datos que ya tienes (facturas de luz, gasoil, viajes) y entrega a tus clientes el informe que piden.",
+ "meta": "Calcula huella de carbono de tu pyme con los datos que ya tienes (facturas de luz, gasoil, viajes) y entrega a tus clientes el informe que piden.",
  "h1": "Huella de carbono para pymes proveedoras, a partir de tus facturas",
  "lead": "Calcular la huella de carbono se ha vuelto una pregunta habitual en los cuestionarios de grandes clientes a sus proveedores. Para responderla, una pyme no necesita una consultora cada año.",
  "respuesta": "La herramienta de huella de carbono para proveedores recoge los consumos de tu empresa (electricidad, combustible de la flota, gas, viajes) desde las facturas o el programa de gestión, aplica factores de emisión publicados y calcula tus emisiones por alcance. Genera un informe anual y por cliente para responder a los cuestionarios de sostenibilidad.",
@@ -605,11 +605,11 @@ PAGINAS = {
  "lead": "Una integración por API es la manera limpia de que dos programas se pasen datos sin exportar e importar ficheros a mano: un pedido, un cliente nuevo o un pago viajan solos de uno a otro.",
  "respuesta": "Una API es la puerta que un programa ofrece para que otros lean o escriban datos en él de forma controlada. Integrar por API consiste en conectar dos o más programas a través de esas puertas, definiendo qué datos se envían, cuándo (al momento o cada cierto tiempo) y qué pasa si algo falla.",
  "secciones": [
-  ("¿Qué tipo de integraciones hacemos?", "Conectamos programas comerciales entre sí, software propio o antiguo al que se le añade una API, máquinas que generan datos y PIX, para que el agente trabaje con la información de varios sistemas a la vez.", [
+  ("¿Qué tipo de integraciones hacemos?", "Conectamos programas comerciales entre sí, software propio o antiguo al que se le añade una API, máquinas que generan datos y la IA empresarial, para que el agente trabaje con la información de varios sistemas a la vez.", [
     ("Entre programas comerciales", "Tu gestión con tienda online, CRM, pasarela de pago o plataforma de reservas, si ofrecen API."),
     ("Con software propio", "Programas hechos a medida o antiguos a los que se añade una API."),
     ("Con máquinas y dispositivos", "Equipos que exportan datos y que se pueden leer desde tu programa."),
-    ("Con PIX", "Para que el agente de IA consulte y actúe sobre los datos de varios programas."),
+    ("Con la IA empresarial", "Para que el agente de IA consulte y actúe sobre los datos de varios programas."),
   ]),
   ("¿Qué cuidamos en cada integración?", "En cada integración cuidamos que las claves estén protegidas y con los permisos justos, que cada envío quede registrado y se reintente si falla, y que todo quede documentado por escrito.", [
     ("Seguridad", "Claves de acceso guardadas de forma segura y permisos mínimos necesarios."),
@@ -622,6 +622,6 @@ PAGINAS = {
   ("¿Una integración por API se rompe cuando el otro programa se actualiza?", "Puede pasar si cambian su API; por eso se vigila y se ajusta dentro del mantenimiento."),
   ("¿Puedo conectar un programa hecho a medida con el software de gestión?", "Sí. Si no tiene API, se le puede añadir una o conectarlo por otra vía."),
  ],
- "rel": [("../pix/integraciones.html", "Integraciones de PIX"), ("conectar-erp-tienda-crm-y-contabilidad.html", "Conectar ERP, tienda, CRM y contabilidad"), ("rescate-de-software-antiguo.html", "Rescate de software antiguo")],
+ "rel": [("../pix/integraciones.html", "Integraciones de la IA empresarial"), ("conectar-erp-tienda-crm-y-contabilidad.html", "Conectar ERP, tienda, CRM y contabilidad"), ("rescate-de-software-antiguo.html", "Rescate de software antiguo")],
 },
 }

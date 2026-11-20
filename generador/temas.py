@@ -6,7 +6,7 @@ TEMAS = [
   "Artículos sobre inteligencia artificial para pymes y autónomos: agentes, WhatsApp, automatización y por dónde empezar.",
   "La IA útil en un negocio pequeño no es la que escribe poemas, sino la que contesta el WhatsApp a las once de la noche, prepara el presupuesto o te avisa de una factura sin cobrar. Aquí reunimos lo que hemos escrito sobre cómo empezar, qué tareas automatizar primero, qué herramienta elegir y cuándo compensa frente a contratar.",
   ["como-empezar-a-usar-la-ia-en-tu-pequena-empresa", "tareas-que-puedes-automatizar", "que-puede-hacer-un-agente-de-ia", "agente-de-ia-para-whatsapp", "whatsapp-para-no-perder-clientes", "ia-o-contratar-personal-en-una-pequena-empresa", "chatgpt-gemini-copilot-o-claude-para-empresas", "formacion-en-ia-desde-cero", "kit-digital-ia", "piloto-ia-grandes-empresas"],
-  [("Agentes de IA", "servicios/agentes-de-ia/index.html"), ("WhatsApp con IA", "servicios/whatsapp-ia/index.html"), ("PIX, nuestro agente", "servicios/pix/index.html")]),
+  [("Agentes de IA", "servicios/agentes-de-ia/index.html"), ("WhatsApp con IA", "servicios/whatsapp-ia/index.html"), ("nuestra IA empresarial", "servicios/pix/index.html")]),
  ("gestion-y-crm", "Gestión, CRM y programas para tu negocio",
   "Artículos sobre CRM, ERP, programas de gestión y cómo dejar el Excel: qué elegir, cuánto cuesta y cómo implantarlo.",
   "Si llevas clientes en una libreta, presupuestos en el correo y facturas en Excel, estos artículos son para ti. Explican qué es un CRM y un ERP sin tecnicismos, cuánto cuestan de verdad, cómo saber cuándo te hace falta uno y cómo pasar tus datos sin perder nada ni parar el negocio.",

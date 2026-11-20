@@ -33,14 +33,14 @@ ARTICULOS = [
 <li><b>La revisas y la activas.</b> Nada se pone en marcha sin tu aprobación.</li>
 <li><b>Queda registrada:</b> puedes ver cuándo se ha ejecutado, pausarla, cambiarla o borrarla cuando quieras.</li>
 </ol>
-<p>Las automatizaciones respetan los permisos de cada usuario: un comercial no puede crear una regla que toque datos que no ve. Y para procesos más complejos, como atender por WhatsApp o preparar presupuestos, está <a href="/servicios/pix/">PIX, nuestro agente de IA</a>, que trabaja dentro del mismo programa.</p>
+<p>Las automatizaciones respetan los permisos de cada usuario: un comercial no puede crear una regla que toque datos que no ve. Y para procesos más complejos, como atender por WhatsApp o preparar presupuestos, está <a href="/servicios/pix/">nuestra IA empresarial</a>, que trabaja dentro del mismo programa.</p>
 <h2>Ejemplo: una empresa de instalaciones con 6 técnicos</h2>
 <p>Una empresa de climatización llevaba los avisos en una libreta y los presupuestos en el correo. Empezó con dos módulos, CRM y facturación. En la primera semana, la gerente escribió tres automatizaciones: avisar de los presupuestos sin respuesta a los 5 días, recordar las facturas a punto de vencer y repartir los avisos nuevos según la zona de cada técnico. A los tres meses añadió el módulo de partes de trabajo con firma en el móvil, sin cambiar de programa ni rehacer lo anterior.</p>
 <h2>Qué mirar antes de elegir un software de gestión</h2>
 <ul>
 <li><b>Que sea modular</b>: que puedas empezar con poco y añadir módulos sin migrar a otro programa.</li>
 <li><b>Que tú puedas automatizar</b> sin depender de un técnico para cada cambio.</li>
-<li><b>Que cumpla la normativa</b> que te afecta: Verifactu para facturar y registro de jornada si tienes equipo.</li>
+<li><b>Que cumpla normativa</b> que te afecta: Verifactu para facturar y registro de jornada si tienes equipo.</li>
 <li><b>Que los datos sean tuyos</b> y puedas exportarlos cuando quieras.</li>
 <li><b>Que haya alguien al otro lado</b> para la migración, la formación y el soporte.</li>
 </ul>

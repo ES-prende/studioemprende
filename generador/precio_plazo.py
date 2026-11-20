@@ -1,8 +1,8 @@
 # Precio y plazo por familia de servicio (Bloque 1). Solo datos publicados por Studio Emprende:
-# packs (precios.html), PIX (implantacion-y-precios), formación 1 a 1 y diagnóstico gratuito. Precios sin IVA.
+# packs (precios.html), IA empresarial (implantacion-y-precios), formación 1 a 1 y diagnóstico gratuito. Precios sin IVA.
 # Donde no hay precio público se dice claro: presupuesto cerrado tras el diagnóstico gratuito.
 
-# PIX: sin precio publicado en estas páginas (decisión de Studio Emprende, 16/11/2026)
+# IA empresarial: sin precio publicado en estas páginas (decisión de Studio Emprende, 16/11/2026)
 # Programa de gestión / CRM / ERP: sin precios publicados (decisión de Studio Emprende, 26/10/2026)
 _PACK_GESTION = ("Presupuesto <b style=\"font-weight:500\">cerrado</b> antes de empezar, según los módulos que necesites, después de un diagnóstico gratuito.",
                  "Te damos las fases y las fechas por escrito en la propuesta. La migración de tus datos está incluida.")

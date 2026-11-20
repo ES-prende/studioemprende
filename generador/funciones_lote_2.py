@@ -40,7 +40,7 @@ PAGINAS = {
     ("Accesos y material", "Usuario del programa, correo, uniforme o herramientas: cada entrega queda marcada."),
     ("Primeras tareas reales", "Trabajos sencillos asignados en el propio programa para practicar desde el primer día."),
   ]),
-  ("¿Qué hace la IA en la acogida?", "El asistente PIX se entrena con tus procedimientos y responde preguntas como «¿cómo pido vacaciones?» o «¿qué hago si un cliente reclama?» a cualquier hora. Si no sabe la respuesta, la deriva al responsable en lugar de inventarla.", [
+  ("¿Qué hace la IA en la acogida?", "El asistente la IA empresarial se entrena con tus procedimientos y responde preguntas como «¿cómo pido vacaciones?» o «¿qué hago si un cliente reclama?» a cualquier hora. Si no sabe la respuesta, la deriva al responsable en lugar de inventarla.", [
     ("Dudas resueltas al momento", "El nuevo pregunta por chat o por WhatsApp sin sentir que molesta."),
     ("Avisos al responsable", "Si un paso se retrasa o una pregunta se repite, el encargado lo ve en su panel."),
     ("Mejora continua", "Las preguntas frecuentes señalan qué parte del manual hay que aclarar."),
@@ -51,7 +51,7 @@ PAGINAS = {
   ("¿La IA sustituye al responsable de acogida?", "No. Resuelve las dudas repetitivas y ordena los pasos; el responsable sigue haciendo el seguimiento y las conversaciones importantes."),
   ("¿Sirve el onboarding con IA para trabajadores temporales o de campaña?", "Sí, y es donde más se nota: se puede usar un recorrido corto que se repite en cada campaña sin preparar nada de nuevo."),
  ],
- "rel": [("../formacion-ia/plan-de-formacion-para-nuevos-empleados.html", "Plan de formación para nuevos empleados"), ("documentacion-del-empleado.html", "Documentación del empleado"), ("../pix/asistente-empresarial.html", "PIX como asistente empresarial")],
+ "rel": [("../formacion-ia/plan-de-formacion-para-nuevos-empleados.html", "Plan de formación para nuevos empleados"), ("documentacion-del-empleado.html", "Documentación del empleado"), ("../pix/asistente-empresarial.html", "La IA empresarial como asistente empresarial")],
 },
 "software-de-gestion/canal-de-denuncias-ley-2-2023": {
  "titulo": "Canal de denuncias Ley 2/2023 para empresas",
@@ -181,14 +181,14 @@ PAGINAS = {
  "meta": "Cada lunes, ventas, cobros, presupuestos y alertas de tu programa de gestión resumidos en un mensaje o una nota de voz en tu móvil.",
  "h1": "El resumen semanal de tu negocio, en el móvil, sacado de tu programa de gestión",
  "lead": "Un informe semanal automático por WhatsApp o voz te cuenta cómo ha ido la semana sin abrir el ordenador: lo que se vendió, lo que falta por cobrar y lo que necesita tu atención.",
- "respuesta": "El informe semanal automático es un resumen que el programa de gestión prepara y envía el día y la hora que elijas, en texto por WhatsApp o como nota de voz. Lo redacta el agente PIX a partir de los datos reales de la semana y destaca lo que ha cambiado y lo que conviene decidir.",
+ "respuesta": "El informe semanal automático es un resumen que el programa de gestión prepara y envía el día y la hora que elijas, en texto por WhatsApp o como nota de voz. Lo redacta la IA empresarial a partir de los datos reales de la semana y destaca lo que ha cambiado y lo que conviene decidir.",
  "secciones": [
   ("¿Qué cuenta el informe?", "El informe resume las cifras de la semana comparadas con la anterior, señala lo que se sale de lo habitual, como un cliente que deja de comprar, y recuerda lo que vence en los próximos días.", [
     ("Resumen de cifras", "Ventas, cobros, gastos destacados y comparación con la semana anterior."),
     ("Lo que se sale de lo normal", "Un cliente que ha dejado de comprar, un servicio que se ha disparado o una factura muy vencida."),
     ("Pendientes para la semana", "Presupuestos a punto de caducar, entregas comprometidas o pagos importantes."),
   ]),
-  ("¿Por qué por WhatsApp o en audio?", "Porque es donde ya estás. Un texto corto se lee en un minuto y un audio se escucha conduciendo o entre clientes. Si quieres más detalle, respondes al mensaje con una pregunta y PIX te contesta con los datos.", [
+  ("¿Por qué por WhatsApp o en audio?", "Porque es donde ya estás. Un texto corto se lee en un minuto y un audio se escucha conduciendo o entre clientes. Si quieres más detalle, respondes al mensaje con una pregunta y la IA empresarial te contesta con los datos.", [
     ("Tú eliges el formato", "Texto, audio o los dos, y a qué personas les llega."),
     ("Un informe por responsable", "El encargado de cada área puede recibir solo lo suyo."),
     ("Preguntas de seguimiento", "«¿Qué cliente ha bajado más?» y la respuesta llega en el mismo chat."),
@@ -196,14 +196,14 @@ PAGINAS = {
  ],
  "faqs": [
   ("¿Puedo recibir el informe otro día que no sea el lunes?", "Sí. Eliges el día, la hora y la frecuencia: semanal, diaria o al cierre de mes."),
-  ("¿El informe de voz lo graba una persona?", "No. Lo genera PIX a partir de tus datos con una voz sintética; el contenido es siempre el de tu programa."),
-  ("¿Qué pasa si una cifra del informe no me cuadra?", "Puedes preguntar en el mismo chat de dónde sale y PIX te indica las facturas o los pedidos que la forman."),
+  ("¿El informe de voz lo graba una persona?", "No. Lo genera la IA empresarial a partir de tus datos con una voz sintética; el contenido es siempre el de tu programa."),
+  ("¿Qué pasa si una cifra del informe no me cuadra?", "Puedes preguntar en el mismo chat de dónde sale y la IA empresarial te indica las facturas o los pedidos que la forman."),
  ],
- "rel": [("cuadro-de-mando-en-tiempo-real.html", "Cuadro de mando en tiempo real"), ("../pix/index.html", "Qué es PIX"), ("../automatizacion-y-datos/informe-semanal-por-whatsapp-o-voz.html", "Informes automáticos para dirección")],
+ "rel": [("cuadro-de-mando-en-tiempo-real.html", "Cuadro de mando en tiempo real"), ("../pix/index.html", "Qué es la IA empresarial"), ("../automatizacion-y-datos/informe-semanal-por-whatsapp-o-voz.html", "Informes automáticos para dirección")],
 },
 "software-de-gestion/rentabilidad-por-cliente-servicio-y-empleado": {
  "titulo": "Rentabilidad por cliente, servicio y empleado",
- "meta": "Calcula la rentabilidad real por cliente, por servicio y por empleado: horas, material y desplazamientos imputados para saber dónde ganas y dónde pierdes.",
+ "meta": "Calcula rentabilidad real por cliente, por servicio y por empleado: horas, material y desplazamientos imputados para saber dónde ganas y dónde pierdes.",
  "h1": "Rentabilidad por cliente, servicio y empleado: dónde ganas dinero",
  "lead": "Saber la rentabilidad por cliente, por servicio y por empleado cambia decisiones: a quién subir el precio, qué servicio dejar de ofrecer y dónde se escapan las horas.",
  "respuesta": "Este módulo cruza lo que facturas con lo que te cuesta producirlo: horas registradas en partes o fichajes, material consumido, desplazamientos y gastos asignados. El resultado es el margen real de cada cliente, de cada tipo de servicio y de las horas de cada persona, no una estimación.",
@@ -221,7 +221,7 @@ PAGINAS = {
   ]),
  ],
  "faqs": [
-  ("¿Cómo se calcula la rentabilidad de un cliente?", "Restando a lo que le facturas el coste de las horas, el material y los gastos dedicados a él en el mismo periodo."),
+  ("¿Cómo se calcula rentabilidad de un cliente?", "Restando a lo que le facturas el coste de las horas, el material y los gastos dedicados a él en el mismo periodo."),
   ("¿Hace falta que el equipo apunte las horas de cada trabajo?", "Las horas salen de los partes o del fichaje que ya se usan. Si hoy no se registran, empezamos por ahí."),
   ("¿La rentabilidad por empleado sirve para comparar personas?", "Sirve para ver en qué se va el tiempo y qué trabajos se facturan; conviene leerla junto al tipo de tareas de cada puesto."),
  ],
@@ -549,9 +549,9 @@ PAGINAS = {
     ("Casos de tu semana", "Se reproducen operaciones reales, incluidas las excepciones que más dudas generan."),
     ("Sesiones cortas", "Bloques breves cerca de la fecha de arranque de cada fase, para que no se olvide."),
   ]),
-  ("¿Qué queda después de la formación?", "Después te quedan guías breves por tarea en ficha o vídeo, PIX para resolver dudas de uso a cualquier hora y una persona de referencia en cada área que ayuda a sus compañeros.", [
+  ("¿Qué queda después de la formación?", "Después te quedan guías breves por tarea en ficha o vídeo, la IA empresarial para resolver dudas de uso a cualquier hora y una persona de referencia en cada área que ayuda a sus compañeros.", [
     ("Guías por tarea", "Fichas de una página o vídeos cortos: cómo hacer un abono, cómo dar de alta un artículo."),
-    ("PIX como consulta", "El agente responde dudas de uso del ERP en lenguaje normal y a cualquier hora."),
+    ("La IA empresarial como consulta", "El agente responde dudas de uso del ERP en lenguaje normal y a cualquier hora."),
     ("Referentes internos", "Una persona por área que domina el módulo y ayuda a sus compañeros."),
   ]),
  ],
@@ -560,7 +560,7 @@ PAGINAS = {
   ("¿Cuántas personas pueden estar en cada sesión de formación del ERP?", "Grupos pequeños del mismo puesto, para que todos practiquen y las dudas sean comunes."),
   ("¿Se graban las sesiones de formación?", "Si lo prefieres, sí, y se acompañan de guías por tarea para consultar sin ver la sesión entera."),
  ],
- "rel": [("../formacion-ia/formacion-de-empleados-en-un-programa-nuevo.html", "Formación de empleados en un programa nuevo"), ("acompanamiento-de-30-a-90-dias.html", "Acompañamiento de 30 a 90 días"), ("pix-dentro-del-erp-preguntale-en-lenguaje-normal.html", "PIX dentro del ERP")],
+ "rel": [("../formacion-ia/formacion-de-empleados-en-un-programa-nuevo.html", "Formación de empleados en un programa nuevo"), ("acompanamiento-de-30-a-90-dias.html", "Acompañamiento de 30 a 90 días"), ("pix-dentro-del-erp-preguntale-en-lenguaje-normal.html", "La IA empresarial dentro del ERP")],
 },
 "erp-para-pymes/acompanamiento-de-30-a-90-dias": {
  "titulo": "Acompañamiento tras implantar el ERP: 30 a 90 días",

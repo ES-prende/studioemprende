@@ -11,11 +11,11 @@ ENLACES_ENTRANTES = {
     "servicios/presencia-digital/videos-y-anuncios-con-ia": "Los reels y carruseles de ContrataLux forman parte de su lanzamiento.",
     "servicios/software-especializado": "ContrataLux es un CRM sectorial para asesorías energéticas construido a medida.",
     "servicios/software-de-gestion/cuadro-de-mando-en-tiempo-real": "Mira el panel de dirección del programa de gestión que hicimos para ContrataLux.",
-    "servicios/software-de-gestion/comerciales-y-comisiones": "En ContrataLux cada contrato calcula la comisión bruta, la neta y la repartida entre comerciales.",
+    "servicios/software-de-gestion/comerciales-y-comisiones": "En ContrataLux cada contrato calcula comisión bruta, la neta y la repartida entre comerciales.",
     "servicios/departamento-tecnologico/dominios-y-renovaciones": "En ContrataLux registramos el dominio y el hosting a nombre del cliente.",
     "servicios/departamento-tecnologico/correo-que-no-llega-a-spam": "ContrataLux arrancó con correos profesionales en su propio dominio.",
     "servicios/autonomos/packs-con-precio-cerrado": "Un ejemplo de lanzamiento completo de principio a fin: el caso ContrataLux.",
-    "servicios/pix": "PIX va integrado en el programa de gestión de ContrataLux.",
+    "servicios/pix": "La IA empresarial va integrada en el programa de gestión de ContrataLux.",
     "sobre-nosotros": "Conoce un proyecto completo nuestro: ContrataLux.",
 }
 
@@ -38,7 +38,7 @@ SERVICIOS = [  # (qué hicimos, detalle, enlace a nuestro servicio)
     ("Indexación en Google y Bing", "Alta en Google Search Console y Bing Webmaster Tools con el índice de sitemaps. Los dos buscadores lo leyeron sin errores y descubrieron las 251 URLs.", "servicios/presencia-digital/seo-programatico.html"),
     ("Redes sociales", "Creación, optimización y configuración de la página de empresa en Facebook (con su portafolio), Instagram y LinkedIn, con la misma imagen de marca.", "servicios/presencia-digital/automatizacion-de-redes-sociales.html"),
     ("Contenido y automatización", "Reels y carruseles con la marca y un calendario de publicación automatizado, para que las redes trabajen sin depender de que alguien se acuerde de publicar.", "servicios/presencia-digital/videos-y-anuncios-con-ia.html"),
-    ("Programa de gestión personalizado", "El CRM de ContrataLux: contratos, comisiones, retrocomisiones, liquidaciones, calculadora de ahorro, mercado energético, equipo y permisos, con PIX integrado.", "servicios/software-especializado/index.html"),
+    ("Programa de gestión personalizado", "El CRM de ContrataLux: contratos, comisiones, retrocomisiones, liquidaciones, calculadora de ahorro, mercado energético, equipo y permisos, con la IA empresarial integrada.", "servicios/software-especializado/index.html"),
 ]
 
 PASOS = ["Marca", "Dominio y correo", "Web", "Google y Bing", "Redes", "Contenido", "CRM"]
@@ -132,7 +132,7 @@ def html_caso(c, r, migas_html, faq_html, cta_html):
 <li>Días de retrocomisión pendientes en cada contrato, para saber qué baja costaría dinero.</li>
 <li>Calculadora de ahorro y comparador de tarifas para enseñar al cliente cuánto ahorra.</li>
 <li>Usuarios con permisos, doble factor de acceso y revisión de cada contrato antes de enviarlo a la comercializadora.</li>
-<li><a href="{r}servicios/pix/index.html">PIX</a>, el agente de IA, dentro del programa para consultar y automatizar en lenguaje normal.</li>
+<li><a href="{r}servicios/pix/index.html">IA empresarial</a>, el agente de IA, dentro del programa para consultar y automatizar en lenguaje normal.</li>
 </ul>
 <figure class="cr-video"><video controls muted playsinline preload="none" poster="{m}{vposter}" width="1280" height="720"><source src="{m}{varchivo}" type="video/mp4"></video><figcaption>{vdesc}</figcaption></figure>
 <div class="cr-galeria">{capturas}</div></div></section>

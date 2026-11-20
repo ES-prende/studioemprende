@@ -14,9 +14,9 @@ PAGINAS = {
     ("Accesos a nombre de la empresa", "Dominio, correo, banca online y plataformas pasan a cuentas de la empresa, con un inventario de contraseñas custodiado."),
   ]),
   ("¿Por qué hacerlo con el fundador todavía dentro?", "Un programa nuevo se aprende mejor con alguien al lado que sabe por qué se hacía cada cosa. Durante unos meses, fundador y sucesor trabajan en el mismo sistema: el primero valida los datos y el segundo coge soltura sin cargar todavía con la decisión final.", []),
-  ("¿Qué gana el sucesor desde el primer día?", "El sucesor gana autonomía: ve los encargos abiertos sin llamar al fundador, consulta datos a PIX con preguntas normales y puede decidir cambios de tarifas o canales de venta apoyándose en cifras reales.", [
+  ("¿Qué gana el sucesor desde el primer día?", "El sucesor gana autonomía: ve los encargos abiertos sin llamar al fundador, consulta datos a la IA empresarial con preguntas normales y puede decidir cambios de tarifas o canales de venta apoyándose en cifras reales.", [
     ("Trabajos pendientes a la vista", "Ve qué encargos hay abiertos y con qué cliente, sin depender de una llamada al fundador."),
-    ("Consultas en lenguaje normal", "Con PIX dentro del programa puede preguntar, por ejemplo, qué clientes no han comprado este año."),
+    ("Consultas en lenguaje normal", "Con la IA empresarial dentro del programa puede preguntar, por ejemplo, qué clientes no han comprado este año."),
     ("Margen para modernizar", "Con los datos ordenados, decidir si abrir tienda online o cambiar tarifas se hace con números, no a ciegas."),
   ]),
  ],
@@ -25,7 +25,7 @@ PAGINAS = {
   ("¿Se puede digitalizar si el fundador lo lleva todo en papel?", "Sí. Se transcriben o escanean libretas y fichas, y el fundador repasa los datos para corregir lo que solo él sabe."),
   ("¿Cuánto antes del relevo conviene empezar a digitalizar?", "Lo ideal es que fundador y sucesor convivan con el programa varios meses antes de la fecha del traspaso."),
  ],
- "rel": [("../../blog/relevo-generacional-preparar-mi-negocio.html", "Relevo generacional: cómo preparar tu negocio"), ("cerebro-digital-del-negocio-con-pix.html", "Cerebro digital del negocio con PIX"), ("../migraciones-e-integraciones/digitalizacion-de-archivo-en-papel.html", "Digitalización de archivo en papel")],
+ "rel": [("../../blog/relevo-generacional-preparar-mi-negocio.html", "Relevo generacional: cómo preparar tu negocio"), ("cerebro-digital-del-negocio-con-pix.html", "Cerebro digital del negocio con la IA empresarial"), ("../migraciones-e-integraciones/digitalizacion-de-archivo-en-papel.html", "Digitalización de archivo en papel")],
 },
 "relevo-y-continuidad/acompanamiento-del-traspaso": {
  "titulo": "Acompañamiento en el traspaso de un negocio",
@@ -162,7 +162,7 @@ PAGINAS = {
  "lead": "El agente de IA para trámites prepara el papeleo de tu empresa: rellena borradores, reúne documentos y te dice qué falta para cada gestión.",
  "respuesta": "Un agente de trámites es un asistente de inteligencia artificial que, a partir de los datos de tu empresa, prepara borradores de solicitudes, comprueba qué documentos pide cada trámite y los reúne en una carpeta. La presentación y la firma las haces tú o tu asesoría: el agente prepara y una persona decide.",
  "secciones": [
-  ("¿Qué trámites puede preparar?", "El agente prepara borradores de solicitudes y licencias, vigila la caducidad de los certificados que más te piden, reúne la documentación que exige cada cliente o pliego y resume los requerimientos que recibes.", [
+  ("¿Qué trámites puede preparar?", "El agente prepara borradores de solicitudes y licencias, vigila caducidad de los certificados que más te piden, reúne la documentación que exige cada cliente o pliego y resume los requerimientos que recibes.", [
     ("Solicitudes y licencias", "Borradores de solicitudes municipales o autonómicas con los datos de la empresa ya rellenados."),
     ("Certificados recurrentes", "Aviso cuando un certificado que te piden a menudo va a caducar y hay que solicitarlo de nuevo."),
     ("Documentación para clientes", "Reúne escrituras, seguros y certificados en el formato que pide cada cliente o cada pliego."),
@@ -233,7 +233,7 @@ PAGINAS = {
  "meta": "Empleado digital con IA que cubre un puesto concreto: atender consultas, registrar pedidos o preparar documentos, con funciones definidas y un supervisor.",
  "h1": "Empleado digital: un puesto de trabajo cubierto con IA y bajo supervisión",
  "lead": "Un empleado digital con IA es un agente al que se asigna un puesto con funciones concretas, igual que a una persona nueva, cuando no encuentras a quién contratar o no te salen las cuentas.",
- "respuesta": "Un empleado digital es un agente de inteligencia artificial, como PIX, configurado para un puesto concreto: tiene funciones escritas, acceso solo a las herramientas que necesita, un horario y una persona que supervisa su trabajo. Se encarga de tareas repetitivas como atender consultas, registrar pedidos o preparar documentos, y pasa a un humano lo que no sabe resolver.",
+ "respuesta": "Un empleado digital es un agente de inteligencia artificial, como la IA empresarial, configurada para un puesto concreto: tiene funciones escritas, acceso solo a las herramientas que necesita, un horario y una persona que supervisa su trabajo. Se encarga de tareas repetitivas como atender consultas, registrar pedidos o preparar documentos, y pasa a un humano lo que no sabe resolver.",
  "secciones": [
   ("¿Qué puestos puede cubrir?", "Un empleado digital puede cubrir tareas de auxiliar administrativo, de atención al cliente por WhatsApp, web o teléfono, y de apoyo a operaciones como pasar pedidos, avisar de stock bajo o confirmar entregas.", [
     ("Auxiliar administrativo", "Registra facturas de proveedores, da de alta clientes y prepara borradores de presupuesto."),
@@ -252,7 +252,7 @@ PAGINAS = {
   ("¿Puede el empleado digital trabajar de noche y en fin de semana?", "Sí. Atiende fuera de horario y deja preparado lo que necesite decisión para cuando llegue tu equipo."),
   ("¿Qué pasa si el empleado digital comete un error?", "Sus acciones quedan registradas y se pueden revisar, y las importantes requieren aprobación humana, así que la mayoría de errores se detectan antes de llegar al cliente."),
  ],
- "rel": [("../../blog/ia-o-contratar-personal-en-una-pequena-empresa.html", "¿IA o contratar personal?"), ("../pix/index.html", "PIX, agente de IA empresarial"), ("formacion-rapida-de-nuevos-empleados.html", "Formación rápida de nuevos empleados")],
+ "rel": [("../../blog/ia-o-contratar-personal-en-una-pequena-empresa.html", "¿IA o contratar personal?"), ("../pix/index.html", "IA empresarial"), ("formacion-rapida-de-nuevos-empleados.html", "Formación rápida de nuevos empleados")],
 },
 "problemas-sin-resolver/formacion-rapida-de-nuevos-empleados": {
  "titulo": "Formar rápido a un empleado nuevo con vídeos e IA",

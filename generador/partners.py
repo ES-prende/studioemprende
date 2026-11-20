@@ -16,7 +16,7 @@ def html(migas_html, faq_html, dom):
 <div class="botones" style="margin-top:24px"><a class="btn btn-p" href="#solicitud">Quiero ser partner</a><a class="btn btn-s" href="#niveles">Ver los niveles</a></div>
 <div class="niveles-mini"><span>Semilla</span><span>Brote</span><span>Árbol</span></div></div></section>
 
-<section class="sec" style="padding-bottom:0"><div class="w"><div class="respuesta"><p class="kicker" style="margin:0 0 6px">Respuesta corta</p><p style="margin:0">El programa de partners de Studio Emprende permite a asesorías, consultores y otros profesionales ofrecer a sus clientes todo lo digital que necesita un negocio (web con SEO, programa de gestión, agente de IA PIX, automatizaciones y formación) mientras nosotros nos encargamos de la parte técnica. Hay tres niveles: Semilla, Brote y Árbol.</p></div></div></section>
+<section class="sec" style="padding-bottom:0"><div class="w"><div class="respuesta"><p class="kicker" style="margin:0 0 6px">Respuesta corta</p><p style="margin:0">El programa de partners de Studio Emprende permite a asesorías, consultores y otros profesionales ofrecer a sus clientes todo lo digital que necesita un negocio (web con SEO, programa de gestión, IA empresarial, automatizaciones y formación) mientras nosotros nos encargamos de la parte técnica. Hay tres niveles: Semilla, Brote y Árbol.</p></div></div></section>
 
 <section class="sec"><div class="w"><div class="cab"><p class="kicker">A quién va</p><h2>¿Para quién es el programa de partners?</h2></div><div class="rejilla">
 <div class="tarjeta"><h3>Asesorías y gestorías</h3><p>Das de alta negocios cada semana. Tus clientes te preguntan por la web, la facturación con Verifactu o el fichaje, y ahora tienes a quién derivarlos con confianza.</p></div>
@@ -27,7 +27,7 @@ def html(migas_html, faq_html, dom):
 </div></div></section>
 
 <section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Qué te llevas</p><h2>¿Qué ganas al ser partner de Studio Emprende?</h2></div><div class="rejilla">
-<div class="tarjeta"><h3>Un catálogo completo para tus clientes</h3><p>Packs con precio cerrado, programa de gestión modular, el agente de IA PIX, webs con SEO, fichador y formación en IA. Un solo proveedor para todo lo digital.</p></div>
+<div class="tarjeta"><h3>Un catálogo completo para tus clientes</h3><p>Packs con precio cerrado, programa de gestión modular, la IA empresarial, webs con SEO, fichador y formación en IA. Un solo proveedor para todo lo digital.</p></div>
 <div class="tarjeta"><h3>Equipo técnico detrás</h3><p>Implantación, migración de datos, integraciones y soporte los hacemos nosotros. Tú no tienes que contratar a nadie.</p></div>
 <div class="tarjeta"><h3>Tu cliente sigue siendo tuyo</h3><p>Tú mantienes la relación. Te informamos de cada proyecto para que siempre sepas cómo va.</p></div>
 <div class="tarjeta"><h3>Diagnóstico gratis para tus clientes</h3><p>Antes de proponer nada, revisamos el negocio de tu cliente y te damos una propuesta clara para presentársela.</p></div>

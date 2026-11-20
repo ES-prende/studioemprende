@@ -24,7 +24,7 @@ GRUPOS = {
     ('/servicios/presencia-digital/pantallas-de-turnos-y-sala-de-espera', 'pantalla de turnos para sala de espera', 'Pantallas de turnos y sala de espera conectadas a tu agenda'),
   ],
   'chatbot': [
-    ('/servicios/agentes-de-ia/chatbot-para-tu-web-con-pix', 'chatbot con ia entrenado con tu negocio', 'Chatbot para tu web con PIX: responde con lo que sabe tu negocio'),
+    ('/servicios/agentes-de-ia/chatbot-para-tu-web-con-pix', 'chatbot con ia entrenado con tu negocio', 'Chatbot para tu web con la IA empresarial: responde con lo que sabe tu negocio'),
     ('/servicios/webs/chatbot-pix', 'chatbot para página web', 'Chatbot para tu página web, integrado en el diseño y conectado a tu CRM'),
   ],
   'cobros': [

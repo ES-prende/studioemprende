@@ -119,7 +119,7 @@ D["servicios/formacion-ia/formacion-obligatoria-ai-act"] = {
 </div></section>""",
  "faq": [
   ("¿Cómo saber qué herramientas de IA usa ya mi plantilla?", "Preguntándolo sin buscar culpables. Una encuesta anónima breve por departamentos, más una revisión de las funciones de IA incluidas en los programas que ya pagáis, suele dar una imagen fiel y es el primer paso del curso."),
-  ("¿Cuánto tiempo de trabajo quita a la plantilla la formación en alfabetización en IA?", "Se organiza en sesiones cortas por grupo para no parar la actividad. La duración total depende de cuántos tipos de uso distintos haya y del nivel de partida; se concreta en la propuesta tras conocer qué herramientas se utilizan."),
+  ("¿Cuánto tiempo de trabajo quita a la plantilla formación en alfabetización en IA?", "Se organiza en sesiones cortas por grupo para no parar la actividad. La duración total depende de cuántos tipos de uso distintos haya y del nivel de partida; se concreta en la propuesta tras conocer qué herramientas se utilizan."),
   ("¿Qué pasa si parte del equipo no quiere usar IA?", "No se obliga a nadie a usarla, pero conviene que todos entiendan qué es y qué riesgos tiene, porque recibirán textos o datos elaborados con ella por otros compañeros. La formación para ese grupo se centra en reconocer errores y saber cuándo desconfiar."),
  ],
 }

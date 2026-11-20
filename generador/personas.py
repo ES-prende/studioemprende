@@ -191,7 +191,7 @@ H["agentes-de-ia"] = _sec("Atención y tareas", "Las mismas preguntas todos los 
          ["Recoger los datos de un cliente nuevo", "Aceptar o rechazar un encargo"],
          ["Preparar el borrador de un presupuesto", "Aprobarlo antes de enviarlo"],
          ["Recordar una factura pendiente", "Negociar un aplazamiento"]]) + '</div>'
-    + '<p style="margin-top:22px">Para empezar por lo más habitual: %s o %s.</p>' % (_a("agentes-de-ia", "Chatbot para tu web con PIX", "chatbot para tu web"), _a("agentes-de-ia", "Recepcionista de voz y atención fuera de horario", "recepcionista de voz fuera de horario"))
+    + '<p style="margin-top:22px">Para empezar por lo más habitual: %s o %s.</p>' % (_a("agentes-de-ia", "Chatbot para tu web con la IA empresarial", "chatbot para tu web"), _a("agentes-de-ia", "Recepcionista de voz y atención fuera de horario", "recepcionista de voz fuera de horario"))
     + _cta("agentes-de-ia", "Cuéntanos qué tarea te quita más tiempo"), True)
 F["agentes-de-ia"] = [("¿Un agente de IA puede equivocarse?", "Sí, como cualquier herramienta. Por eso se prueba unas semanas con revisión humana y las acciones importantes requieren aprobación."),
                       ("¿Dónde quedan los datos de mi empresa?", "Hay opciones para que la información no salga de tu entorno, incluida la IA en servidor propio. Se decide según lo sensibles que sean los datos."),
@@ -362,7 +362,7 @@ FH = {"webs": "Antes de encargar tu web", "presencia-digital": "Lo que suele pre
 
 
 # =====================================================================
-# Páginas generales: sobre nosotros, sectores, PIX, blog, guías y precios
+# Páginas generales: sobre nosotros, sectores, IA empresarial, blog, guías y precios
 # =====================================================================
 
 # Sobre nosotros (rutas relativas a la raíz)
@@ -389,12 +389,12 @@ SECTORES = _sec("Encuentra el tuyo", "¿Cómo es tu día a día?", _tabla(
      ["Llevas expedientes de clientes", "Plazos, documentos y seguimiento de cada caso", _anc("Gestorías", "Asesorías energéticas")]])
     + '<p style="margin-top:18px">¿Tu sector no aparece? <a href="contacto.html#diagnostico">Cuéntanos a qué te dedicas</a> y vemos qué se puede adaptar.</p>', True)
 
-# PIX: tres situaciones reales (rutas relativas a /servicios/pix/)
-PIX = _sec("Tres momentos de cualquier semana", "Cuándo se nota tener a PIX en la empresa", _rej(
-    _d("Lunes, 9:00", "Quieres saber cómo fue la semana y los datos están en tres programas. PIX los reúne y te da el resumen, con lo que requiere tu atención."),
-    _d("Martes, 22:15", "Un cliente escribe por WhatsApp con el negocio cerrado. PIX responde con tu información y, si hace falta, deja la cita apuntada.", " d2"),
-    _d("Jueves, 13:30", "Hay facturas vencidas y nadie encuentra el momento de reclamarlas. PIX prepara los avisos y espera tu visto bueno antes de enviarlos.", " d3"))
-    + '<p style="margin-top:22px;max-width:820px"><b>Siempre con supervisión.</b> Tú decides qué puede hacer PIX por su cuenta y qué necesita aprobación. Las condiciones y las fases de puesta en marcha están en <a href="implantacion-y-precios.html">implantación y precios</a>.</p>', True)
+# IA empresarial: tres situaciones reales (rutas relativas a /servicios/pix/)
+PIX = _sec("Tres momentos de cualquier semana", "Cuándo se nota tener a la IA empresarial en la empresa", _rej(
+    _d("Lunes, 9:00", "Quieres saber cómo fue la semana y los datos están en tres programas. La IA empresarial los reúne y te da el resumen, con lo que requiere tu atención."),
+    _d("Martes, 22:15", "Un cliente escribe por WhatsApp con el negocio cerrado. La IA empresarial responde con tu información y, si hace falta, deja la cita apuntada.", " d2"),
+    _d("Jueves, 13:30", "Hay facturas vencidas y nadie encuentra el momento de reclamarlas. La IA empresarial prepara los avisos y espera tu visto bueno antes de enviarlos.", " d3"))
+    + '<p style="margin-top:22px;max-width:820px"><b>Siempre con supervisión.</b> Tú decides qué puede hacer la IA empresarial por su cuenta y qué necesita aprobación. Las condiciones y las fases de puesta en marcha están en <a href="implantacion-y-precios.html">implantación y precios</a>.</p>', True)
 
 # Blog: acceso por temas (rutas relativas a /blog/)
 BLOG = '<section class="sec sec-suave" style="padding:48px 0"><div class="w"><div class="cab" style="margin-bottom:22px"><p class="kicker">Por temas</p><h2>¿Qué te interesa leer?</h2></div><div class="pildoras">' + "".join(

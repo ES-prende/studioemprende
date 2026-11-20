@@ -90,7 +90,7 @@ D["servicios/consultoria-y-ayudas/segunda-opinion-tecnologica"] = {
 <h3 style="margin-top:26px">Frases que conviene traducir antes de firmar</h3>
 <ul class="lista" style="max-width:860px">
 <li><b>«Incluye personalización básica»</b>: pregunta cuántas horas son y cuánto cuesta la hora siguiente.</li>
-<li><b>«Licencia por usuario»</b>: calcula la cuota con la plantilla que tendrás dentro de dos años, no con la de hoy.</li>
+<li><b>«Licencia por usuario»</b>: calcula cuota con la plantilla que tendrás dentro de dos años, no con la de hoy.</li>
 <li><b>«Migración de datos según disponibilidad»</b>: aclara quién limpia los datos antiguos y qué pasa si no encajan.</li>
 <li><b>«Soporte en horario comercial»</b>: confirma el tiempo de respuesta y si hay coste por incidencia.</li>
 <li><b>«Desarrollo propietario»</b>: averigua si podrás llevarte el código y tus datos si cambias de proveedor.</li>

@@ -65,7 +65,7 @@ D["servicios/presencia-digital/escaparates-y-promociones"] = {
 <div class="cab"><p class="kicker">El metro cuadrado más visto de tu negocio</p><h2>¿Tu escaparate vende cuando la tienda está cerrada?</h2></div>
 <p style="max-width:820px">Si lo único que enseña a las diez de la noche es una persiana o un cartel apagado, no. Y sin embargo es cuando pasea la gente del barrio, la que mañana decidirá dónde comprar.</p>
 <h3 style="margin-top:28px">Cruza la calle y mira tres segundos</h3>
-<p style="max-width:820px">Es lo que tarda alguien en pasar por delante. Desde la acera de enfrente, pregúntate: ¿se entiende qué vendes?, ¿hay algo que no estuviera ayer?, ¿hay un motivo para entrar hoy y no la semana que viene? Un escaparate de papel casi nunca supera la segunda pregunta, porque cambiarlo cuesta una mañana. Una pantalla la supera sola, si alguien le da contenido.</p>
+<p style="max-width:820px">Es lo que tarda alguien en pasar por delante. Desde la acera de enfrente, pregúntate: ¿se entiende qué vendes?, ¿hay algo que no estuviera ayer?, ¿hay un motivo para entrar hoy y no la semana que viene? Un escaparate de papel casi nunca supera la segunda pregunta, porque cambiarlo cuesta una mañana. Una pantalla supera sola, si alguien le da contenido.</p>
 <h3 style="margin-top:28px">Qué contar según la hora</h3>
 <div class="tabla-wrap"><table class="tabla-norm"><thead><tr><th>Momento</th><th>Quién pasa</th><th>Mensaje que encaja</th></tr></thead><tbody>
 <tr><td>Primera hora</td><td>Gente camino del trabajo, con prisa</td><td>Una sola idea: «Hoy, recogida en una hora»</td></tr>

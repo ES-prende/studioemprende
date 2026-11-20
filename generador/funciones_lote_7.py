@@ -280,7 +280,7 @@ PAGINAS = {
   ("¿Puede el asistente del huésped cambiar una reserva?", "No por su cuenta: recoge la petición y te la pasa para que la apruebes."),
   ("¿Funciona con el WhatsApp que ya usan mis huéspedes para escribirme?", "Se conecta a un número de WhatsApp Business; revisamos contigo si conviene usar tu número actual o uno nuevo para el alojamiento."),
  ],
- "rel": [("../pix/index.html", "PIX, agente de IA empresarial"), ("../../blog/agente-de-ia-para-whatsapp.html", "Agente de IA para WhatsApp"), ("aviso-automatico-a-limpieza.html", "Aviso automático a limpieza")],
+ "rel": [("../pix/index.html", "IA empresarial"), ("../../blog/agente-de-ia-para-whatsapp.html", "Agente de IA para WhatsApp"), ("aviso-automatico-a-limpieza.html", "Aviso automático a limpieza")],
 },
 "alojamientos-y-domotica/aviso-automatico-a-limpieza": {
  "titulo": "Aviso automático al equipo de limpieza tras cada salida",

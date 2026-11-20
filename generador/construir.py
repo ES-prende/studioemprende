@@ -110,7 +110,7 @@ def cabecera(r):
 <a class="logo" href="{r}index.html" aria-label="Studio Emprende, inicio"><img src="{r}assets/img/logo-horizontal.svg" alt="Studio Emprende" width="200" height="56"></a>
 <nav class="nav" aria-label="Principal">
 <div class="desplegable"><button type="button" aria-expanded="false">Servicios ▾</button><div class="mega">{cols}</div></div>
-<a href="{r}servicios/pix/index.html">PIX IA</a>
+<a href="{r}servicios/pix/index.html">IA empresarial</a>
 <a href="{r}servicios/fichador.html">Fichador</a>
 <a href="{r}sectores.html">Sectores</a>
 <a href="{r}precios.html">Precios</a>
@@ -474,7 +474,7 @@ CANON = {"servicios/software-de-gestion/gestion-de-flotas.html": "servicios/soft
          "servicios/software-de-gestion/integraciones-por-api.html": "servicios/migraciones-e-integraciones/integraciones-por-api.html"}
 FAQ_HOME = [("¿Qué es Studio Emprende?", "Un estudio que monta todo lo digital de un negocio: marca, web con SEO, programa de gestión, automatizaciones e inteligencia artificial, en packs desde 990 €."),
  ("¿A quién ayudáis?", "A emprendedores, autónomos y pequeñas empresas que empiezan o quieren ordenar su negocio, y a asesores que montan negocios para sus clientes."),
- ("¿Usáis inteligencia artificial en los proyectos?", "Sí, cuando ahorra trabajo de verdad: automatizaciones, asistentes en WhatsApp y nuestro agente PIX conectado a tu programa de gestión, siempre con tu aprobación en lo importante."),
+ ("¿Usáis inteligencia artificial en los proyectos?", "Sí, cuando ahorra trabajo de verdad: automatizaciones, asistentes en WhatsApp y nuestra IA empresarial conectada a tu programa de gestión, siempre con tu aprobación en lo importante."),
  ("¿Cómo funciona el diagnóstico gratis?", "Nos cuentas cómo trabajas y te decimos qué digitalizar o automatizar primero y cuánto costaría, sin compromiso."),
  ("¿Dais formación?", "Sí: formación en IA para equipos, sesiones individuales y cursos a medida según la operativa de tu empresa.")]
 OGIMG = {}
@@ -545,7 +545,7 @@ BLOGHOME = "".join(tarjeta_blog(a, "blog/") for a in ARTICULOS[:3])
 # ---------- INICIO ----------
 r = ""
 cats = [("software", "Software de gestión", "ERP, CRM, apps y software especializado por módulos."),
-        ("ia", "Inteligencia artificial", "Agentes, WhatsApp IA y automatización con PIX."),
+        ("ia", "Inteligencia artificial", "Agentes, WhatsApp IA y automatización con la IA empresarial."),
         ("web", "Webs y presencia digital", "Webs con SEO, Google, redes y pantallas digitales."),
         ("soporte", "Soporte y seguridad", "Tu departamento tecnológico, sistemas y ciberseguridad."),
         ("formacion", "Consultoría y formación", "Formación IA, ayudas, relevo y problemas sin resolver."),
@@ -560,7 +560,12 @@ pagina("index.html", INI.TITULO, INI.META, inicio, faqs=FAQ_HOME, css="inicio.cs
 import unicodedata, re as _re
 def slugify(t):
     t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode().lower()
-    return _re.sub(r"[^a-z0-9]+", "-", t).strip("-")[:70]
+    s = _re.sub(r"[^a-z0-9]+", "-", t).strip("-")[:70]
+    return SLUG_FIJO.get(s, s)
+# Páginas que cambiaron de nombre el 20/11/2026 (ya no se menciona PIX) pero conservan su URL
+SLUG_FIJO = {"chatbot-para-tu-web-con-ia-empresarial": "chatbot-para-tu-web-con-pix", "chatbot-con-ia-empresarial": "chatbot-pix",
+             "fichaje-por-whatsapp-o-con-ia-empresarial": "fichaje-por-whatsapp-o-con-pix", "cerebro-digital-del-negocio-con-ia-empresarial": "cerebro-digital-del-negocio-con-pix",
+             "la-ia-empresarial-dentro-del-erp-preguntale-en-lenguaje-normal": "pix-dentro-del-erp-preguntale-en-lenguaje-normal"}
 def _faq_html(fs):
     return '<div class="faq">' + "".join("<details><summary>%s</summary><p>%s</p></details>" % (e(q), e(a)) for q, a in fs) + "</div>"
 # ---------- SERVICIOS ----------
@@ -600,7 +605,7 @@ HUB_EXTRA = {"whatsapp-ia": """<section class="sec"><div class="w"><div class="c
 <tr><td>Crea la ficha del cliente en tu CRM</td><td>Sustituir la atención humana cuando el cliente la pide</td></tr>
 </tbody></table>
 <h3 style="margin-top:28px">¿Cuánto cuesta?</h3>
-<p>Con PIX, WhatsApp va incluido en el plan Profesional, junto con Instagram, Facebook, LinkedIn y las principales herramientas de CRM. Aparte, Meta cobra los mensajes de plantilla que se envían fuera de una conversación abierta, según el país y el tipo de mensaje. Precios y fases del piloto en <a href="../servicios/pix/implantacion-y-precios.html">implantación y precios de PIX</a>.</p>
+<p>Con la IA empresarial, WhatsApp va incluido en el plan Profesional, junto con Instagram, Facebook, LinkedIn y las principales herramientas de CRM. Aparte, Meta cobra los mensajes de plantilla que se envían fuera de una conversación abierta, según el país y el tipo de mensaje. Precios y fases del piloto en <a href="../servicios/pix/implantacion-y-precios.html">implantación y precios de la IA empresarial</a>.</p>
 <h3 style="margin-top:28px">Por dónde empezar</h3>
 <p>Por el proceso que más mensajes genera: casi siempre, pedir cita o preguntar disponibilidad. Se configura con tus respuestas reales, se prueba unas semanas con revisión humana y se amplía después a recordatorios y a la <a href="whatsapp-ia/reactivacion-de-clientes-y-pacientes-inactivos.html">reactivación de clientes inactivos</a>. Si quieres entender antes cómo funciona, tienes la guía <a href="../blog/agente-de-ia-para-whatsapp.html">cómo automatizar las respuestas de WhatsApp con IA</a>.</p>
 </div></section>"""}
@@ -624,7 +629,7 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
     if gs:
         html += '<section class="sec"><div class="w"><div class="cab"><p class="kicker">Guías para emprender</p><h2>Antes de empezar, te puede servir</h2></div><div class="rejilla">%s</div></div></section>' % "".join('<a class="tarjeta" href="../guias/%s.html"><h3>%s</h3><p>%s</p><span class="mas">Leer guía →</span></a>' % (g[0], e(g[4]), e(g[3][:120].rsplit(" ",1)[0] + "…")) for g in gs[:3])
     if slug in ("agentes-de-ia", "whatsapp-ia", "automatizacion-y-datos", "software-de-gestion", "erp-para-pymes"):
-        html += '<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Nuestro agente de IA</p><h2>Conoce PIX, la IA que trabaja dentro de tu empresa</h2></div><p class="lead" style="max-width:760px">PIX se conecta a tus datos y herramientas, atiende por web, WhatsApp, correo y voz y completa procesos con aprobación humana.%s</div></div></section>' % (('</p><div class="botones" style="margin-top:20px"><a class="btn btn-p" href="pix/index.html">Descubrir PIX</a><a class="btn btn-s" href="pix/implantacion-y-precios.html">Cómo se implanta PIX</a>'))
+        html += '<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Nuestro agente de IA</p><h2>Conoce la IA empresarial, la IA que trabaja dentro de tu empresa</h2></div><p class="lead" style="max-width:760px">La IA empresarial se conecta a tus datos y herramientas, atiende por web, WhatsApp, correo y voz y completa procesos con aprobación humana.%s</div></div></section>' % (('</p><div class="botones" style="margin-top:20px"><a class="btn btn-p" href="pix/index.html">Descubrir IA empresarial</a><a class="btn btn-s" href="pix/implantacion-y-precios.html">Cómo se implanta la IA empresarial</a>'))
     if slug == "formacion-ia":
         pagina("servicios/formacion-ia.html", "Formación en IA para empresas y equipos · Studio Emprende", "Formación en IA práctica para tu equipo: casos reales de cada área, normas de uso y seguimiento. Online o presencial, con Jordan García.", html + cta("../"), faqs=FORM.HUB_FAQS, ld_extra=[FORM.curso_hub(), FORM.JORDAN])
     else:
@@ -656,7 +661,7 @@ for slug, menu, titulo, intro, bloques in SECCIONES:
 <div class="tarjeta" style="margin-bottom:18px"><h3>Cómo lo trabajamos</h3><ul class="lista">
 <li>Analizamos cómo lo haces hoy y qué te gustaría mejorar.</li>
 <li>Lo adaptamos a tu forma de trabajar y a tu sector.</li>
-<li>Lo conectamos con el resto de tus herramientas y, si quieres, con el agente PIX.</li>
+<li>Lo conectamos con el resto de tus herramientas y, si quieres, con la IA empresarial.</li>
 <li>Te formamos y te acompañamos las primeras semanas.</li></ul></div>
 <div class="tarjeta"><h3>Se combina bien con</h3><ul class="lista lista-enl">{herm}</ul></div>
 </div>
@@ -673,45 +678,45 @@ for _c in CE.CURSOS:
     _ld = [FORM.JORDAN] + ([CE.curso_ld(_c, FORM.JORDAN["@id"])] if _c["curso"] else [])
     pagina("servicios/formacion-ia/%s.html" % _c["slug"], _c["titulo"] + " · Studio Emprende", _c["meta"], CE.html(_c, _m, _faq_html(_c["faqs"]), FORM.tarjeta_formador("../../")) + cta("../../"), faqs=_c["faqs"], ld_extra=_ld, fecha=CE.FECHA)
 
-# ---------- PIX (agente de IA empresarial) ----------
+# ---------- IA empresarial (agente de IA empresarial) ----------
 def _pix_nav(actual):
-    return '<aside class="lateral-aside"><h3>PIX por dentro</h3><ul class="lista lista-enl" style="margin:8px 0 18px">%s</ul><a class="btn btn-claro" href="../../contacto.html?servicio=agentes-de-ia#diagnostico">Solicitar demo de PIX</a><a class="btn btn-borde-claro" href="implantacion-y-precios.html">Ver precios</a></aside>' % "".join(
-        '<li><a style="color:#fff" href="%s">%s</a></li>' % ("index.html" if s == "" else s + ".html", e(n)) for s, n in [("", "Qué es PIX")] + [(x["slug"], x["nav"]) for x in PIX_PAGINAS] if s != actual)
-_PIXAPP = {"@type": "SoftwareApplication", "@id": DOM + "/servicios/pix/#app", "name": "PIX", "alternateName": "PIX, agente de IA empresarial",
+    return '<aside class="lateral-aside"><h3>La IA empresarial por dentro</h3><ul class="lista lista-enl" style="margin:8px 0 18px">%s</ul><a class="btn btn-claro" href="../../contacto.html?servicio=agentes-de-ia#diagnostico">Solicitar demo de la IA empresarial</a><a class="btn btn-borde-claro" href="implantacion-y-precios.html">Ver precios</a></aside>' % "".join(
+        '<li><a style="color:#fff" href="%s">%s</a></li>' % ("index.html" if s == "" else s + ".html", e(n)) for s, n in [("", "Qué es la IA empresarial")] + [(x["slug"], x["nav"]) for x in PIX_PAGINAS] if s != actual)
+_PIXAPP = {"@type": "SoftwareApplication", "@id": DOM + "/servicios/pix/#app", "name": "IA empresarial", "alternateName": "IA empresarial",
            "applicationCategory": "BusinessApplication", "operatingSystem": "Windows, macOS, Linux, Android, Web",
            "description": PIX_HUB["resumen"], "url": DOM + "/servicios/pix/", "provider": {"@id": DOM + "/#org"},
            "offers": [{"@type": "Offer", "name": n, "availability": "https://schema.org/InStock", "price": pr, "priceCurrency": "EUR", "priceSpecification": {"@type": "UnitPriceSpecification", "price": pr, "priceCurrency": "EUR", "unitCode": "MON", "valueAddedTaxIncluded": False}, "seller": {"@id": DOM + "/#org"}}
-                      for n, pr in [("PIX 3 personas", "90"), ("PIX 5 personas", "145")]]}
+                      for n, pr in [("IA empresarial 3 personas", "90"), ("IA empresarial 5 personas", "145")]]}
 _cap = "".join('<a class="tarjeta" href="%s.html"><h3>%s</h3><p>%s</p><span class="mas">Ver más →</span></a>' % (sl, e(t), e(d)) for t, d, sl in PIX_HUB["capacidades"])
 _dol = "".join('<div class="tarjeta"><h3>%s</h3><p>%s</p></div>' % (e(t), e(d)) for t, d in PIX_HUB["dolor"])
 _mapa = "".join('<a class="tarjeta" href="%s.html"><h3>%s</h3><p>%s</p><span class="mas">Leer →</span></a>' % (x["slug"], e(x["nav"]), e(x["meta"][:140].rsplit(" ", 1)[0] + "…")) for x in PIX_PAGINAS)
-_impacto = """<section class="sec sec-oscura"><div class="w"><div class="cab"><p class="kicker">Lo que PIX te devuelve</p><h2>¿Cuánto tiempo ahorra PIX?</h2></div>
-<p class="lead" style="max-width:780px;margin-bottom:28px">De media, PIX devuelve 11 horas a la semana a cada persona de los equipos comerciales y de administración, porque se queda con el trabajo de copiar, cuadrar y dar formato.</p>
+_impacto = """<section class="sec sec-oscura"><div class="w"><div class="cab"><p class="kicker">Lo que la IA empresarial te devuelve</p><h2>¿Cuánto tiempo ahorra la IA empresarial?</h2></div>
+<p class="lead" style="max-width:780px;margin-bottom:28px">De media, la IA empresarial devuelve 11 horas a la semana a cada persona de los equipos comerciales y de administración, porque se queda con el trabajo de copiar, cuadrar y dar formato.</p>
 <div class="cifras"><div class="cifra"><b>11 h</b><span>a la semana por persona, libres para el trabajo que pide criterio</span></div><div class="cifra"><b>4 min</b><span>para tener una oferta lista, frente a unos 45 minutos haciéndola a mano</span></div><div class="cifra"><b>87 %</b><span>menos tiempo en correo, PDF, seguimientos y agenda del día</span></div><div class="cifra"><b>48 h</b><span>para verlo funcionando con tu equipo, sin proyectos de seis meses</span></div></div>
-<p style="color:#C9C1BB;font-size:14px;margin-top:22px">Cifras medias en equipos comerciales y de administración que usan PIX.</p></div></section>
-<section class="sec"><div class="w"><div class="cab"><p class="kicker">Calcula tu caso</p><h2>¿Cuántas horas recupera tu equipo con PIX?</h2></div>
+<p style="color:#C9C1BB;font-size:14px;margin-top:22px">Cifras medias en equipos comerciales y de administración que usan la IA empresarial.</p></div></section>
+<section class="sec"><div class="w"><div class="cab"><p class="kicker">Calcula tu caso</p><h2>¿Cuántas horas recupera tu equipo con la IA empresarial?</h2></div>
 <p class="lead" style="max-width:780px">Multiplica 11 horas por cada persona del equipo: con 5 personas son 55 horas a la semana y 2.530 al año, el trabajo de una persona más sin contratarla.</p>
 <div class="texto-largo" style="margin-top:18px"><table><thead><tr><th>Personas en el equipo</th><th>Horas recuperadas a la semana</th><th>Horas recuperadas al año</th></tr></thead><tbody><tr><td>1</td><td>11 h</td><td>506 h</td></tr><tr><td>5</td><td>55 h</td><td>2.530 h</td></tr><tr><td>12</td><td>132 h</td><td>6.072 h</td></tr></tbody></table><p class="mut" style="font-size:14px">Cálculo con 11 horas por persona y 46 semanas de trabajo al año.</p></div></div></section>
-<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Cómo trabaja</p><h2>¿Qué hace PIX mientras tu equipo atiende a los clientes?</h2></div>
-<p class="lead" style="max-width:780px;margin-bottom:20px">PIX es un agente, no un chat de preguntas y respuestas: lee lo que entra, prepara el trabajo y avisa a quien toca, y tu equipo solo revisa y aprueba.</p>
+<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Cómo trabaja</p><h2>¿Qué hace la IA empresarial mientras tu equipo atiende a los clientes?</h2></div>
+<p class="lead" style="max-width:780px;margin-bottom:20px">La IA empresarial es un agente, no un chat de preguntas y respuestas: lee lo que entra, prepara el trabajo y avisa a quien toca, y tu equipo solo revisa y aprueba.</p>
 <div class="rejilla"><div class="tarjeta"><h3>Observa</h3><p>Lee el correo, los documentos y los datos de las herramientas que le autorizas.</p></div><div class="tarjeta"><h3>Actúa</h3><p>Redacta la respuesta, monta el presupuesto y genera el PDF listo para enviar.</p></div><div class="tarjeta"><h3>Coordina</h3><p>Avisa a la persona responsable, agenda la cita y hace el seguimiento.</p></div></div></div></section>
-<section class="sec"><div class="w"><div class="cab"><p class="kicker">En cada puesto</p><h2>¿Qué hace PIX en cada departamento?</h2></div>
-<p class="lead" style="max-width:780px;margin-bottom:20px">Cada departamento delega en PIX su parte más repetitiva: ofertas en comercial, facturas en administración, bandeja de entrada en atención al cliente y resúmenes en dirección.</p>
+<section class="sec"><div class="w"><div class="cab"><p class="kicker">En cada puesto</p><h2>¿Qué hace la IA empresarial en cada departamento?</h2></div>
+<p class="lead" style="max-width:780px;margin-bottom:20px">Cada departamento delega en la IA empresarial su parte más repetitiva: ofertas en comercial, facturas en administración, bandeja de entrada en atención al cliente y resúmenes en dirección.</p>
 <div class="rejilla"><div class="tarjeta"><h3>Comercial</h3><p>De la petición del cliente al PDF de la oferta el mismo día, con recordatorios de seguimiento y un resumen cada semana.</p></div><div class="tarjeta"><h3>Administración</h3><p>Lee facturas, prepara los correos a proveedores, avisa de los vencimientos y entrega un informe semanal.</p></div><div class="tarjeta"><h3>Atención al cliente</h3><p>Ordena la bandeja, redacta las respuestas habituales, escala lo urgente y guarda el historial de cada cliente.</p></div><div class="tarjeta"><h3>Dirección</h3><p>En unas dos páginas: lo que se ha cerrado, lo que está bloqueado y lo que hay que decidir, con riesgos y seguimientos.</p></div></div></div></section>
-<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Primeros días</p><h2>¿Cómo empieza PIX a trabajar en tu empresa?</h2></div>
+<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Primeros días</p><h2>¿Cómo empieza la IA empresarial a trabajar en tu empresa?</h2></div>
 <p class="lead" style="max-width:780px;margin-bottom:20px">En días, no en un trimestre: se conecta a lo que ya usas, empieza por un proceso y en 48 horas lo ves funcionando; las dos primeras semanas sirven para medir tiempos reales.</p>
 <div class="rejilla"><div class="tarjeta"><h3>1. Se conecta a tus herramientas</h3><p>Correo, Drive, CRM o tu programa de gestión. Nadie tiene que cambiar de correo ni de programas.</p></div><div class="tarjeta"><h3>2. Trabaja con tu aprobación</h3><p>Por defecto prepara y espera a que revises antes de enviar. Si quieres, decides qué puede enviar solo.</p></div><div class="tarjeta"><h3>3. Se mide y se amplía</h3><p>Se comparan los tiempos de antes y de después y, con datos, se suma el siguiente proceso o departamento.</p></div></div>
 <ul class="lista" style="margin-top:22px"><li>Usa las herramientas que tu equipo ya tiene.</li><li>Ningún envío sale sin el visto bueno que tú definas.</li><li>Un solo agente al que le hablas, en lugar de un panel lleno de botones.</li></ul></div></section>
 """
 _hub = """<section class="page-hero"><div class="w">{m}<p class="kicker">IA empresarial</p><h1>{h1}</h1><p class="lead">{lead}</p>
-<div class="botones" style="margin-top:24px"><a class="btn btn-p" href="../../contacto.html?servicio=agentes-de-ia#diagnostico">Solicitar demo de PIX</a><a class="btn btn-s" href="implantacion-y-precios.html">Ver precios</a></div></div></section>
+<div class="botones" style="margin-top:24px"><a class="btn btn-p" href="../../contacto.html?servicio=agentes-de-ia#diagnostico">Solicitar demo de la IA empresarial</a><a class="btn btn-s" href="implantacion-y-precios.html">Ver precios</a></div></div></section>
 <section class="sec"><div class="w"><div class="resumen"><b>Respuesta rápida</b><p>{res}</p></div>
 <h2>Dos capacidades, un mismo objetivo</h2><div class="rejilla" style="margin-top:20px"><a class="tarjeta" href="inteligencia-conectada.html"><h3>1. Inteligencia conectada</h3><p>Consulta la información real del negocio y la convierte en control, alertas, estadísticas, informes y decisiones accionables.</p><span class="mas">Ver inteligencia conectada →</span></a><a class="tarjeta" href="asistente-empresarial.html"><h3>2. Asistente que ejecuta</h3><p>Ejecuta tareas entre herramientas, mantiene el contexto y escala a una persona cuando el proceso lo necesita.</p><span class="mas">Ver el asistente →</span></a></div></div></section>
-{imp}<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">El problema</p><h2>La empresa ya tiene datos. Lo que falta es que trabajen.</h2></div><div class="rejilla">{dol}</div><div class="resumen" style="margin-top:28px"><b>Con PIX</b><p>{con}</p></div></div></section>
-<section class="sec"><div class="w"><div class="cab"><p class="kicker">Capacidades en acción</p><h2>Así convierte PIX una necesidad en acción</h2></div><div class="rejilla">{cap}</div><p class="mut" style="margin-top:18px">Diseñado para cada empresa · conectado a sus datos · supervisado por su equipo.</p></div></section>
-<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Todo sobre PIX</p><h2>Conoce PIX a fondo</h2></div><div class="rejilla">{mapa}</div></div></section>
-<section class="sec"><div class="w"><div class="cab"><h2>Preguntas frecuentes sobre PIX</h2></div>{faq}</div></section>""".format(
-    m=migas("../../", ("Servicios", "../index.html"), ("PIX", None)), h1=e(PIX_HUB["h1"]), lead=e(PIX_HUB["lead"]), res=e(PIX_HUB["resumen"]), dol=_dol, con=e(PIX_HUB["con_pix"]), cap=_cap, mapa=_mapa, faq=_faq_html(PIX_HUB["faqs"]), imp=_impacto)
+{imp}<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">El problema</p><h2>La empresa ya tiene datos. Lo que falta es que trabajen.</h2></div><div class="rejilla">{dol}</div><div class="resumen" style="margin-top:28px"><b>Con la IA empresarial</b><p>{con}</p></div></div></section>
+<section class="sec"><div class="w"><div class="cab"><p class="kicker">Capacidades en acción</p><h2>Así convierte la IA empresarial una necesidad en acción</h2></div><div class="rejilla">{cap}</div><p class="mut" style="margin-top:18px">Diseñado para cada empresa · conectado a sus datos · supervisado por su equipo.</p></div></section>
+<section class="sec sec-suave"><div class="w"><div class="cab"><p class="kicker">Todo sobre la IA empresarial</p><h2>Conoce la IA empresarial a fondo</h2></div><div class="rejilla">{mapa}</div></div></section>
+<section class="sec"><div class="w"><div class="cab"><h2>Preguntas frecuentes sobre la IA empresarial</h2></div>{faq}</div></section>""".format(
+    m=migas("../../", ("Servicios", "../index.html"), ("IA empresarial", None)), h1=e(PIX_HUB["h1"]), lead=e(PIX_HUB["lead"]), res=e(PIX_HUB["resumen"]), dol=_dol, con=e(PIX_HUB["con_pix"]), cap=_cap, mapa=_mapa, faq=_faq_html(PIX_HUB["faqs"]), imp=_impacto)
 pagina("servicios/pix/index.html", PIX_HUB["titulo"], PIX_HUB["meta"], _hub.replace('<section class="sec"><div class="w"><div class="resumen"><b>Respuesta rápida</b>', PER.PIX + '<section class="sec"><div class="w"><div class="resumen"><b>Respuesta rápida</b>', 1) + cta("../../"), faqs=PIX_HUB["faqs"], ld_extra=_PIXAPP, extra_pagina={"mainEntity": {"@id": DOM + "/servicios/pix/#app"}})
 for x in PIX_PAGINAS:
     cuerpo = '<div class="resumen"><b>Respuesta rápida</b><p>%s</p></div>' % e(x["resumen"])
@@ -723,7 +728,7 @@ for x in PIX_PAGINAS:
     html = """<section class="page-hero"><div class="w">{m}<p class="kicker">{k}</p><h1>{h1}</h1><p class="lead">{lead}</p></div></section>
 <section class="sec"><div class="w lateral"><div class="lateral-main">{c}</div>{a}</div></section>
 <section class="sec sec-suave"><div class="w"><div class="cab"><h2>Preguntas frecuentes</h2></div>{faq}</div></section>""".format(
-        m=migas("../../", ("Servicios", "../index.html"), ("PIX", "index.html"), (x["nav"], None)), k=e(x["kicker"]), h1=e(x["h1"]), lead=e(x["lead"]), c=cuerpo, a=_pix_nav(x["slug"]), faq=_faq_html(x["faqs"]))
+        m=migas("../../", ("Servicios", "../index.html"), ("IA empresarial", "index.html"), (x["nav"], None)), k=e(x["kicker"]), h1=e(x["h1"]), lead=e(x["lead"]), c=cuerpo, a=_pix_nav(x["slug"]), faq=_faq_html(x["faqs"]))
     pagina("servicios/pix/%s.html" % x["slug"], x["titulo"], x["meta"], html + cta("../../"), faqs=x["faqs"], extra_pagina={"about": {"@id": DOM + "/servicios/pix/#app"}})
 
 # ---------- PRECIOS ----------
@@ -779,7 +784,7 @@ def _tarj_sect(s):
     return '<div class="tarjeta" id="%s"><h3>%s</h3><p><b style="font-weight:500">El problema:</b> %s</p><p><b style="font-weight:500">Cómo lo resolvemos:</b> %s%s</p><a class="mas" href="contacto.html?sector=%s#diagnostico">Pedir propuesta para %s →</a></div>' % (sl, s, e(prob), e(sol), extra, sl, s.lower())
 sect = "".join(_tarj_sect(s) for s in SECTORES)
 pagina("sectores.html", "Software, IA y webs por sector · Studio Emprende", "Software de gestión, IA y webs adaptados a talleres, clínicas, reformas, hostelería, inmobiliarias y más: problema típico y cómo lo resolvemos.",
-       '<section class="page-hero"><div class="w">%s<h1>Software, IA y webs para tu sector</h1><p class="lead">Partimos de lo que ya funciona en tu sector y lo adaptamos a tu forma de trabajar.</p></div></section>%s<section class="sec"><div class="w"><div class="rejilla" style="margin-bottom:36px"><div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">12</b><p>sectores con solución adaptada</p></div><div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">990 €</b><p>pack de inicio, + 40 €/mes de soporte (sin IVA)</p></div><div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">2-3 semanas</b><p>para tener el pack de inicio en marcha</p></div><div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">4 semanas</b><p>dura el piloto de PIX, el agente de IA</p></div></div><h2 style="margin-bottom:24px">Problemas típicos y cómo los resolvemos</h2><div class="rejilla">%s</div></div></section>%s' % (migas("", ("Sectores", None)), PER.SECTORES, sect, cta("")), tipo_pagina="CollectionPage")
+       '<section class="page-hero"><div class="w">%s<h1>Software, IA y webs para tu sector</h1><p class="lead">Partimos de lo que ya funciona en tu sector y lo adaptamos a tu forma de trabajar.</p></div></section>%s<section class="sec"><div class="w"><div class="rejilla" style="margin-bottom:36px"><div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">12</b><p>sectores con solución adaptada</p></div><div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">990 €</b><p>pack de inicio, + 40 €/mes de soporte (sin IVA)</p></div><div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">2-3 semanas</b><p>para tener el pack de inicio en marcha</p></div><div class="tarjeta"><b style="font-size:30px;font-weight:500;color:var(--burdeos)">4 semanas</b><p>dura el piloto de la IA empresarial</p></div></div><h2 style="margin-bottom:24px">Problemas típicos y cómo los resolvemos</h2><div class="rejilla">%s</div></div></section>%s' % (migas("", ("Sectores", None)), PER.SECTORES, sect, cta("")), tipo_pagina="CollectionPage")
 
 # ---------- CONTACTO ----------
 opts = "".join('<option value="%s">%s</option>' % (s[0], e(s[2])) for s in SECCIONES)
@@ -1026,7 +1031,7 @@ bots = ["Googlebot", "Bingbot", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "Clau
 open(OUT + "/robots.txt", "w").write("".join("User-agent: %s\nAllow: /\n\n" % b for b in bots) + "User-agent: *\nAllow: /\nDisallow: /registro-consentimientos.php\nDisallow: /consentimiento.php\nDisallow: /descargas/\n\n# Indice y sitemaps por tipo\nSitemap: %s/sitemap.xml\n" % DOM + "".join("Sitemap: %s/%s\n" % (DOM, s) for s in SMS) + "\n# Resumen para IA: %s/llms.txt · %s/llms-full.txt\n" % (DOM, DOM))
 llms = "# Studio Emprende\n\n> %s\n\n## Empresa\n- Nombre comercial: Studio Emprende\n- Titular: INTELIGENCIA SEVILLA SL (NIF B88763818)\n- Domicilio social: Calle Betis 3, 41449 Alcolea del Río (Sevilla), España\n- Contacto: info@studioemprende.com · WhatsApp +34 601 86 96 68\n- Ámbito: 100 %% online, toda España\n\n## Precios\n" % ORG["description"] + "".join("- %s: %s%s. %s\n" % (n, p, "" if p == "A medida" else " + 40 €/mes de soporte (sin IVA)", d) for n, p, d, x in PACKS) + "\n## Servicios\n"
 llms += "".join("- [%s](%s/servicios/%s.html): %s\n" % (s[2], DOM, s[0], " ".join(s[3].split())) for s in SECCIONES)
-llms += "\n## PIX, agente de IA empresarial\n- [PIX](%s/servicios/pix/): %s\n" % (DOM, PIX_HUB["resumen"]) + "".join("- [%s](%s/servicios/pix/%s.html): %s\n" % (x["nav"], DOM, x["slug"], x["resumen"]) for x in PIX_PAGINAS)
+llms += "\n## IA empresarial\n- [IA empresarial](%s/servicios/pix/): %s\n" % (DOM, PIX_HUB["resumen"]) + "".join("- [%s](%s/servicios/pix/%s.html): %s\n" % (x["nav"], DOM, x["slug"], x["resumen"]) for x in PIX_PAGINAS)
 llms += "\n## Guías para emprender\n" + "".join("- [%s](%s/guias/%s.html): %s\n" % (g[4], DOM, g[0], g[5].split(". ")[0] + ".") for g in GUIAS)
 llms += "\n## Casos de éxito\n- [Caso ContrataLux: marca, web, SEO, redes y CRM a medida](%s/casos/contratalux)\n" % DOM
 llms += "\n## Páginas clave\n- [Precios y packs](%s/precios.html)\n- [Normativas 2026-2027](%s/normativas.html)\n- [Sectores](%s/sectores.html)\n- [Programa de partners](%s/partners.html)\n- [Contacto](%s/contacto.html)\n\n## Blog\n" % (DOM, DOM, DOM, DOM, DOM)

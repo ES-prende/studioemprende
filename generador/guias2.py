@@ -256,7 +256,7 @@ GUIAS2 = [
   ("Software a medida para pymes",
    "<p>Una pyme no necesita un proyecto enorme: necesita quitarse de encima lo que más le cuesta. Por eso combinamos una base de <a href=\"" + SG + "software-de-gestion.html\">software de gestión modular</a> con desarrollos a medida solo donde aportan, como un <a href=\"" + SG + "software-especializado/presupuestador-y-configurador-online.html\">presupuestador online</a> o un <a href=\"" + SG + "software-especializado/portal-en-marca-blanca-para-gestorias.html\">portal para tus clientes</a>.</p>"),
   ("Software a medida con IA",
-   "<p>La IA cambia lo que se puede pedir a un programa: leer facturas y documentos, responder a clientes, preparar presupuestos o avisar de cobros pendientes. Integramos <a href=\"" + SG + "agentes-de-ia.html\">agentes de IA</a> como PIX dentro del propio software para que puedas preguntarle en lenguaje normal.</p>"),
+   "<p>La IA cambia lo que se puede pedir a un programa: leer facturas y documentos, responder a clientes, preparar presupuestos o avisar de cobros pendientes. Integramos <a href=\"" + SG + "agentes-de-ia.html\">agentes de IA</a> como la IA empresarial dentro del propio software para que puedas preguntarle en lenguaje normal.</p>"),
   ("Contrato de software a medida: qué debe incluir",
    "<ul><li>Alcance por fases y qué se entrega en cada una.</li><li>Propiedad del código y de los datos.</li><li>Dónde se aloja y quién responde de las copias de seguridad.</li><li>Mantenimiento, soporte y plazos de respuesta.</li><li>Cómo se gestionan los cambios que surjan por el camino.</li></ul>"),
   ("Cómo elegir una empresa de software a medida",

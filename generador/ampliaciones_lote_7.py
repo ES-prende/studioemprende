@@ -640,7 +640,7 @@ AMPL = {'servicios/software-especializado/index.html': {'secciones': [('¿Qué h
                                                                                       'descoloca la semana entera y nadie sabe qué se retrasa.</li><li>Hay máquinas paradas mientras otras acumulan '
                                                                                       'trabajo.</li><li>Las horas reales de cada pedido no se conocen, así que tampoco su margen.</li></ul>'),
                                                                                      ('Ejemplo hipotético: una carpintería con tres máquinas',
-                                                                                      '<p>Una carpintería que fabrica puertas y armarios a medida tiene como cuello de botella la sección de lacado, y '
+                                                                                      '<p>Una carpintería que fabrica puertas y armarios a medida tiene como cuello de botella sección de lacado, y '
                                                                                       'el planificador lo hace visible.</p><p>Cada pedido se convierte en una orden con operaciones: corte, '
                                                                                       'mecanizado, lacado y montaje. El programa reparte las operaciones según la capacidad de cada puesto y muestra '
                                                                                       'que el lacado está lleno las próximas dos semanas. Cuando entra un armario urgente, el encargado ve qué dos '
@@ -661,7 +661,7 @@ AMPL = {'servicios/software-especializado/index.html': {'secciones': [('¿Qué h
                                                                                       'Si una máquina tiene sensores, una alerta de avería prevista bloquea su capacidad en el plan. Al cerrar cada '
                                                                                       'orden se conocen horas y material consumido, y con eso el margen real de cada pedido.</p>')],
                                                                        'faq': [('¿Qué pasa con la planificación cuando falta un operario?',
-                                                                                'Se marca su ausencia y el programa recalcula la capacidad del puesto ese día. Las órdenes que ya no caben se '
+                                                                                'Se marca su ausencia y el programa recalcula capacidad del puesto ese día. Las órdenes que ya no caben se '
                                                                                 'desplazan y aparecen señaladas, para que el encargado decida si reasigna a otra persona, cambia prioridades o avisa '
                                                                                 'al cliente del nuevo plazo.'),
                                                                                ('¿Puede el planificador agrupar órdenes para reducir cambios de máquina?',
@@ -753,7 +753,7 @@ AMPL = {'servicios/software-especializado/index.html': {'secciones': [('¿Qué h
                                                                ('Qué incluye un proyecto de automatización con nosotros',
                                                                 '<p>Incluye el análisis del proceso, la construcción, un periodo de prueba en paralelo y el ajuste posterior.</p><p>Durante la prueba, '
                                                                 'la automatización trabaja junto al proceso manual y se comparan resultados. Cuando coinciden, se retira el trabajo manual. Muchas '
-                                                                'automatizaciones se apoyan en <a href="/servicios/pix/">PIX, nuestro agente de IA</a>, que además permite preguntar por los datos en '
+                                                                'automatizaciones se apoyan en <a href="/servicios/pix/">nuestra IA empresarial</a>, que además permite preguntar por los datos en '
                                                                 'lenguaje normal. El soporte posterior cubre cambios en tus programas, en los formatos de proveedores o en la normativa.</p>')],
                                                  'faq': [('¿Una automatización puede tomar decisiones sin que yo lo apruebe?',
                                                           'Solo las que tú autorices. Las tareas mecánicas, como enviar una factura recurrente o casar un cobro evidente, se ejecutan solas. Las que '
@@ -966,7 +966,7 @@ AMPL = {'servicios/software-especializado/index.html': {'secciones': [('¿Qué h
                                                                                              'recibe.</p><ul><li>El programa de facturación o gestión, para ventas y cobros.</li><li>La agenda o el '
                                                                                              'sistema de reservas, para lo que viene.</li><li>El CRM o el registro de presupuestos, para lo pendiente '
                                                                                              'de cerrar.</li><li>El banco, si quieres saldo y movimientos destacados.</li></ul><p>El informe lo '
-                                                                                             'prepara <a href="/servicios/pix/">PIX, el agente de IA</a>, que lee esas fuentes, redacta el resumen en '
+                                                                                             'prepara <a href="/servicios/pix/">la IA empresarial</a>, que lee esas fuentes, redacta el resumen en '
                                                                                              'lenguaje normal y lo convierte en audio si lo pides.</p>'),
                                                                                             ('Variantes según el puesto de quien lo recibe',
                                                                                              '<p>Cada responsable recibe un informe distinto con los mismos datos de '
@@ -1064,7 +1064,7 @@ AMPL = {'servicios/software-especializado/index.html': {'secciones': [('¿Qué h
                                                                                                      '<p>Un escenario es una copia de la previsión con una hipótesis cambiada, y sirve para decidir '
                                                                                                      'antes de que el problema llegue.</p><p>Puedes preguntar qué ocurre si las ventas caen un 15 % en '
                                                                                                      'verano, si el cliente principal paga un mes más tarde o si contratas a una persona en '
-                                                                                                     'septiembre. El sistema recalcula la caja de cada semana y muestra en qué momento bajaría del '
+                                                                                                     'septiembre. El sistema recalcula caja de cada semana y muestra en qué momento bajaría del '
                                                                                                      'mínimo. Así una decisión como contratar o invertir se toma con números delante, no solo con la '
                                                                                                      'sensación de cómo va el negocio.</p>')],
                                                                                       'faq': [('¿La previsión sirve para presentarla al banco?',
@@ -1079,10 +1079,10 @@ AMPL = {'servicios/software-especializado/index.html': {'secciones': [('¿Qué h
                                                                                                'Sí. Cada empresa tiene su previsión y se puede ver una vista consolidada del grupo, separando los '
                                                                                                'movimientos entre empresas para no contarlos dos veces. Es útil cuando un mismo dueño tiene varias '
                                                                                                'sociedades que se prestan dinero entre sí.')]},
- 'servicios/automatizacion-y-datos/clientes-en-riesgo-de-irse.html': {'secciones': [('¿Cómo se calcula la puntuación de riesgo de cada cliente?',
+ 'servicios/automatizacion-y-datos/clientes-en-riesgo-de-irse.html': {'secciones': [('¿Cómo se calcula puntuación de riesgo de cada cliente?',
                                                                                      '<p>La puntuación compara el comportamiento reciente de cada cliente con su propio patrón y suma señales '
                                                                                      'ponderadas.</p><p>A cada señal se le da un peso: la caída de frecuencia de compra suele pesar más que una '
-                                                                                     'incidencia aislada. El sistema calcula la puntuación cada semana y la ordena junto a lo que factura el cliente, '
+                                                                                     'incidencia aislada. El sistema calcula puntuación cada semana y la ordena junto a lo que factura el cliente, '
                                                                                      'porque no es lo mismo perder a uno que compra cada mes mucho que a uno ocasional. Los pesos se ajustan con el '
                                                                                      'tiempo comparando las predicciones con las bajas reales. Si en tu negocio las quejas avisan más que la '
                                                                                      'frecuencia, el modelo lo aprende.</p>'),

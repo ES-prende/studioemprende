@@ -12,7 +12,7 @@ Atendemos 100 % online en toda España. Contacto y diagnóstico gratis: https://
 
 ## Software de gestión modular a medida
 URL: https://studioemprende.com/servicios/software-de-gestion/
-ERP, CRM y programa de gestión por módulos, con app móvil y el agente de IA PIX. Paga solo por lo que usas: empieza con dos módulos y crece cuando quieras.
+ERP, CRM y programa de gestión por módulos, con app móvil y la IA empresarial. Paga solo por lo que usas: empieza con dos módulos y crece cuando quieras.
 
 ### Clientes y ventas (CRM)
 - [Ficha de cliente 360°](https://studioemprende.com/servicios/software-de-gestion/ficha-de-cliente-360)
@@ -84,7 +84,7 @@ ERP, CRM y programa de gestión por módulos, con app móvil y el agente de IA P
 
 ## ERP para pymes
 URL: https://studioemprende.com/servicios/erp-para-pymes/
-Un ERP une en un solo programa ventas, compras, almacén, facturación, equipo y contabilidad. Lo montamos por módulos y a medida, con PIX integrado y migración incluida.
+Un ERP une en un solo programa ventas, compras, almacén, facturación, equipo y contabilidad. Lo montamos por módulos y a medida, con la IA empresarial integrada y migración incluida.
 
 ### Qué incluye
 - [CRM y ventas conectados a facturación](https://studioemprende.com/servicios/erp-para-pymes/crm-y-ventas-conectados-a-facturacion)
@@ -106,12 +106,12 @@ Un ERP une en un solo programa ventas, compras, almacén, facturación, equipo y
 - [Pagas solo los módulos que usas](https://studioemprende.com/servicios/erp-para-pymes/pagas-solo-los-modulos-que-usas)
 - [Se adapta a tu forma de trabajar, no al revés](https://studioemprende.com/servicios/erp-para-pymes/se-adapta-a-tu-forma-de-trabajar-no-al-reves)
 - [Crece contigo: añades módulos cuando los necesitas](https://studioemprende.com/servicios/erp-para-pymes/crece-contigo-anades-modulos-cuando-los-necesitas)
-- [PIX dentro del ERP: pregúntale en lenguaje normal](https://studioemprende.com/servicios/erp-para-pymes/pix-dentro-del-erp-preguntale-en-lenguaje-normal)
+- [La IA empresarial dentro del ERP: pregúntale en lenguaje normal](https://studioemprende.com/servicios/erp-para-pymes/pix-dentro-del-erp-preguntale-en-lenguaje-normal)
 - [Conexión con tu tienda, banco y otras herramientas](https://studioemprende.com/servicios/erp-para-pymes/conexion-con-tu-tienda-banco-y-otras-herramientas)
 
 ## Apps móviles a medida
 URL: https://studioemprende.com/servicios/apps-moviles/
-Apps para tus clientes y para tu equipo, conectadas a tu programa de gestión y a PIX, publicadas en Google Play y App Store.
+Apps para tus clientes y para tu equipo, conectadas a tu programa de gestión y a la IA empresarial, publicadas en Google Play y App Store.
 
 ### Qué hacemos
 - [App para clientes: reservas, pedidos, fidelización y avisos](https://studioemprende.com/servicios/apps-moviles/app-para-clientes-reservas-pedidos-fidelizacion-y-avisos)
@@ -166,7 +166,7 @@ URL: https://studioemprende.com/servicios/agentes-de-ia/
 Asistentes que atienden, presupuestan, cobran y trabajan por ti, entrenados con la información de tu negocio.
 
 ### Atención
-- [Chatbot para tu web con PIX](https://studioemprende.com/servicios/agentes-de-ia/chatbot-para-tu-web-con-pix)
+- [Chatbot para tu web con IA empresarial](https://studioemprende.com/servicios/agentes-de-ia/chatbot-para-tu-web-con-pix)
 - [Recepcionista de voz y atención fuera de horario](https://studioemprende.com/servicios/agentes-de-ia/recepcionista-de-voz-y-atencion-fuera-de-horario)
 - [Clasificación y respuesta de correos](https://studioemprende.com/servicios/agentes-de-ia/clasificacion-y-respuesta-de-correos)
 - [Respuesta a reseñas de Google](https://studioemprende.com/servicios/agentes-de-ia/respuesta-a-resenas-de-google)
@@ -227,7 +227,7 @@ Webs rápidas, accesibles y conectadas a tu gestión: cada contacto entra direct
 - [Webs para startups](https://studioemprende.com/servicios/webs/webs-para-startups)
 
 ### IA en la web
-- [Chatbot PIX](https://studioemprende.com/servicios/webs/chatbot-pix)
+- [Chatbot con IA empresarial](https://studioemprende.com/servicios/webs/chatbot-pix)
 - [Contenido personalizado según el visitante](https://studioemprende.com/servicios/webs/contenido-personalizado-segun-el-visitante)
 - [Pruebas A/B automáticas](https://studioemprende.com/servicios/webs/pruebas-a-b-automaticas)
 - [Buscador inteligente](https://studioemprende.com/servicios/webs/buscador-inteligente)
@@ -273,7 +273,7 @@ Cumple con el registro de jornada desde hoy y prepárate para el fichaje digital
 ### Fichaje
 - [Móvil, tablet, web o tarjeta NFC](https://studioemprende.com/servicios/fichador/movil-tablet-web-o-tarjeta-nfc)
 - [Geolocalización con aviso al trabajador](https://studioemprende.com/servicios/fichador/geolocalizacion-con-aviso-al-trabajador)
-- [Fichaje por WhatsApp o con PIX](https://studioemprende.com/servicios/fichador/fichaje-por-whatsapp-o-con-pix)
+- [Fichaje por WhatsApp o con IA empresarial](https://studioemprende.com/servicios/fichador/fichaje-por-whatsapp-o-con-pix)
 - [Modo sin conexión para obras](https://studioemprende.com/servicios/fichador/modo-sin-conexion-para-obras)
 - [Pausas y descansos](https://studioemprende.com/servicios/fichador/pausas-y-descansos)
 
@@ -393,7 +393,7 @@ Tu negocio vale lo que sabes tú. Hagamos que siga funcionando cuando no estés.
 
 ### Servicios
 - [Diagnóstico de continuidad](https://studioemprende.com/servicios/relevo-y-continuidad/diagnostico-de-continuidad)
-- [Cerebro digital del negocio con PIX](https://studioemprende.com/servicios/relevo-y-continuidad/cerebro-digital-del-negocio-con-pix)
+- [Cerebro digital del negocio con IA empresarial](https://studioemprende.com/servicios/relevo-y-continuidad/cerebro-digital-del-negocio-con-pix)
 - [Manual de operaciones con vídeo e IA](https://studioemprende.com/servicios/relevo-y-continuidad/manual-de-operaciones-con-video-e-ia)
 - [Empresa lista para traspasar o vender](https://studioemprende.com/servicios/relevo-y-continuidad/empresa-lista-para-traspasar-o-vender)
 - [Cuadro de mando de valor](https://studioemprende.com/servicios/relevo-y-continuidad/cuadro-de-mando-de-valor)
@@ -1206,7 +1206,7 @@ Sí, la migración está incluida al implantar el programa de gestión.
 - [Relevo generacional: cómo preparar tu negocio para el día que no estés](https://studioemprende.com/blog/relevo-generacional-preparar-mi-negocio): Por qué tantas pymes rentables cierran en el relevo y cómo guardar todo lo que sabe el fundador con ayuda de la IA.
 - [¿Necesita tu negocio una app móvil?](https://studioemprende.com/blog/app-movil-para-mi-negocio): Cuándo compensa tener app propia, qué debe hacer y qué alternativas hay si aún no la necesitas.
 - [APPCC digital: adiós a las hojas de temperaturas en papel](https://studioemprende.com/blog/appcc-digital-hosteleria): Cómo llevar los registros de temperaturas, limpiezas y trazabilidad desde el móvil y tenerlos listos para una inspección.
-- [Qué puede hacer un agente de IA en una pyme (y qué no)](https://studioemprende.com/blog/que-puede-hacer-un-agente-de-ia): Ejemplos reales de tareas que un agente como PIX puede asumir y dónde sigue haciendo falta una persona.
+- [Qué puede hacer un agente de IA en una pyme (y qué no)](https://studioemprende.com/blog/que-puede-hacer-un-agente-de-ia): Ejemplos reales de tareas que un agente como la IA empresarial puede asumir y dónde sigue haciendo falta una persona.
 - [Cómo usar WhatsApp para no perder ningún cliente](https://studioemprende.com/blog/whatsapp-para-no-perder-clientes): Respuestas automáticas, citas y recordatorios: lo que puedes automatizar en WhatsApp sin perder el trato cercano.
 - [7 tareas que puedes automatizar esta semana](https://studioemprende.com/blog/tareas-que-puedes-automatizar): Tareas repetitivas de administración que se pueden dejar en piloto automático con poco esfuerzo.
 - [Qué tiene que tener una web que vende](https://studioemprende.com/blog/web-que-vende): Los elementos que convierten una web bonita en una web que trae clientes.

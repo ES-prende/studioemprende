@@ -28,7 +28,7 @@ ARTICULOS = [
 <ol><li><b>Consulta tu crédito disponible</b> en la plataforma de FUNDAE o pídeselo a tu asesoría.</li>
 <li><b>Decide quién lo gestiona:</b> la propia empresa o una entidad organizadora que lo tramita por ti.</li>
 <li><b>Comunica el inicio antes de empezar</b> el curso, con la antelación mínima que marca la norma. Si se comunica tarde, no se puede bonificar.</li>
-<li><b>Controla la asistencia</b> y guarda las evidencias: listas de firmas, conexiones si es online y evaluaciones.</li>
+<li><b>Controla asistencia</b> y guarda las evidencias: listas de firmas, conexiones si es online y evaluaciones.</li>
 <li><b>Comunica la finalización</b> con los costes y aplica la bonificación en los seguros sociales dentro del plazo.</li></ol>
 <h2>¿Y si mi empresa tiene menos de 50 trabajadores?</h2>
 <p>Las empresas de menos de 50 personas pueden <b>reservar el crédito que no gasten</b> y acumularlo hasta dos ejercicios más, si lo comunican dentro del plazo que fija FUNDAE (habitualmente, antes del 30 de junio). Es útil para pymes que quieren hacer una formación más grande un año concreto.</p>

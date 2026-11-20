@@ -11,7 +11,7 @@ ARTICULOS = [
 <ul><li>Usas varios programas que no se hablan entre sí.</li><li>El stock que dice el sistema no coincide con el del almacén.</li><li>Tardas días en saber si un trabajo o un cliente es rentable.</li><li>Cada departamento tiene su propio Excel.</li></ul>
 <h2>Cómo implantarlo sin parar el negocio</h2>
 <ol><li>Analiza tus procesos y decide qué módulos son imprescindibles.</li><li>Migra los datos de Excel o del programa anterior.</li><li>Implántalo por fases, empezando por lo que más tiempo te ahorra.</li><li>Forma al equipo con casos reales y acompáñalo las primeras semanas.</li></ol>
-<p>Nuestro ERP es modular y a medida, con el agente PIX integrado para que puedas consultar y automatizar en lenguaje normal.</p>"""),
+<p>Nuestro ERP es modular y a medida, con la IA empresarial integrada para que puedas consultar y automatizar en lenguaje normal.</p>"""),
 ("como-dejar-de-usar-excel-en-mi-empresa", "Cómo dejar de usar Excel en tu empresa sin perder datos",
  "Señales de que el Excel se te ha quedado pequeño y cómo pasar a un programa de gestión paso a paso.",
  "11 oct 2026", "Gestión", "migraciones-e-integraciones", """
@@ -21,7 +21,7 @@ ARTICULOS = [
 <h2>Cómo hacer el cambio paso a paso</h2>
 <ol><li><b>Ordena lo que tienes:</b> clientes, productos o servicios, precios y facturas pendientes.</li><li><b>Elige solo los módulos que necesitas:</b> por ejemplo, CRM y facturación. El resto puede esperar.</li><li><b>Migra los datos:</b> importamos tus hojas al programa para que no tengas que teclear nada de nuevo.</li><li><b>Trabaja una semana en paralelo</b> y revisa que todo cuadra.</li><li><b>Forma al equipo</b> con casos reales de tu día a día.</li></ol>
 <h2>Lo que ganas</h2>
-<p>Un único sitio con toda la información, facturas preparadas para Verifactu y avisos de cobro automáticos. Y con PIX puedes preguntar «¿quién me debe este mes?» y obtener la respuesta al momento.</p>"""),
+<p>Un único sitio con toda la información, facturas preparadas para Verifactu y avisos de cobro automáticos. Y con la IA empresarial puedes preguntar «¿quién me debe este mes?» y obtener la respuesta al momento.</p>"""),
 ("que-es-verifactu-y-cuando-me-afecta", "Qué es Verifactu y cuándo te afecta",
  "Explicación sencilla del sistema de facturación verificable de Hacienda y de los plazos para sociedades y autónomos.",
  "11 oct 2026", "Normativas", "software-de-gestion", """
@@ -49,7 +49,7 @@ ARTICULOS = [
  "11 oct 2026", "Normativas", "formacion-ia", """
 <p>Sí. Desde el 2 de febrero de 2025 el Reglamento Europeo de Inteligencia Artificial (Reglamento UE 2024/1689, artículo 4) exige que las empresas que usan IA garanticen que su personal tiene un nivel suficiente de alfabetización en IA.</p>
 <h2>¿A quién afecta?</h2>
-<p>A cualquier empresa cuyos trabajadores usen herramientas de IA en su trabajo: ChatGPT, Copilot, chatbots, generadores de imágenes o asistentes como PIX.</p>
+<p>A cualquier empresa cuyos trabajadores usen herramientas de IA en su trabajo: ChatGPT, Copilot, chatbots, generadores de imágenes o asistentes como la IA empresarial.</p>
 <h2>¿Qué tienes que hacer?</h2>
 <ul><li>Formar al equipo según el uso que hace de la IA.</li><li>Documentar esa formación: es la prueba ante una inspección.</li><li>Tener una política interna que diga qué herramientas se pueden usar y con qué datos.</li></ul>
 <h2>¿Cuánto cuesta?</h2>
@@ -91,7 +91,7 @@ _a("appcc-digital-hosteleria", "APPCC digital: adiós a las hojas de temperatura
 <h2>Ventajas frente al papel</h2>
 <ul><li>Nada se pierde ni se rellena a última hora.</li><li>Informe listo para enseñar en un clic.</li><li>Avisos automáticos cuando algo falta por registrar.</li></ul>
 <p>Los requisitos concretos dependen de tu actividad y comunidad autónoma; consulta siempre con tu responsable de seguridad alimentaria.</p>"""),
-_a("que-puede-hacer-un-agente-de-ia", "Qué puede hacer un agente de IA en una pyme (y qué no)", "Ejemplos reales de tareas que un agente como PIX puede asumir y dónde sigue haciendo falta una persona.", "Inteligencia artificial", "agentes-de-ia", """
+_a("que-puede-hacer-un-agente-de-ia", "Qué puede hacer un agente de IA en una pyme (y qué no)", "Ejemplos reales de tareas que un agente como la IA empresarial puede asumir y dónde sigue haciendo falta una persona.", "Inteligencia artificial", "agentes-de-ia", """
 <p>Un agente de IA no es solo un chat que responde preguntas: puede consultar tu programa, crear registros y ejecutar tareas completas siguiendo tus reglas.</p>
 <h2>Tareas que hace bien</h2>
 <ul><li>Atender consultas frecuentes a cualquier hora.</li><li>Crear el contacto en el CRM y agendar una cita.</li><li>Preparar borradores de presupuestos con tus tarifas.</li><li>Recordar cobros pendientes.</li><li>Resumirte cada lunes cómo va el negocio.</li></ul>

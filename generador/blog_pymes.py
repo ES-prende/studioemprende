@@ -25,7 +25,7 @@ ARTICULOS = [
 <p>Si quieres ideas concretas, mira <a href="tareas-que-puedes-automatizar.html">7 tareas que puedes automatizar esta semana</a>.</p>
 <h2>¿Cómo saber si me compensa?</h2>
 <p>Compara dos números: las horas al mes que dedicáis a esas tareas multiplicadas por lo que cuesta cada hora, frente a la cuota de la herramienta y su puesta en marcha. Si la automatización libera tiempo pero sigues necesitando a alguien, contrata para lo que aporta valor: vender, atender y hacer crecer el negocio.</p>
-<p>En Studio Emprende lo hacemos con <a href="../servicios/pix/index.html">PIX, nuestro agente de IA</a>, conectado a tu programa de gestión para que haga tareas completas con tu aprobación.</p>
+<p>En Studio Emprende lo hacemos con <a href="../servicios/pix/index.html">nuestra IA empresarial</a>, conectada a tu programa de gestión para que haga tareas completas con tu aprobación.</p>
 """),
 ("como-empezar-a-usar-la-ia-en-tu-pequena-empresa", "Cómo empezar a usar la IA en tu pequeña empresa (sin conocimientos técnicos)",
  "Guía para implementar IA en una pequeña empresa paso a paso: las mejores herramientas de IA para propietarios de pequeñas empresas, por dónde empezar y errores a evitar.",
@@ -62,7 +62,7 @@ ARTICULOS = [
 <ul><li><b>Un número conectado a la API oficial</b> de WhatsApp Business (a través de Meta o de un proveedor autorizado). Evita apps no oficiales: pueden bloquearte el número.</li><li><b>Tu información ordenada:</b> servicios, precios, preguntas frecuentes y normas.</li><li><b>Conexión con tu agenda o CRM</b> para que pueda actuar, no solo contestar.</li><li><b>Reglas claras</b> de cuándo debe pasar a una persona.</li></ul>
 <p>Las políticas de Meta permiten agentes que atienden sobre tu propio negocio; revísalas cuando configures la cuenta, porque cambian.</p>
 <h2>¿Cuál es la mejor herramienta de IA para automatizar WhatsApp en una pequeña empresa?</h2>
-<p>La que se conecta con lo que ya usas. Un agente aislado responde, pero no sabe si tienes hueco ni quién es el cliente. Por eso nuestro agente <a href="../servicios/pix/index.html">PIX</a> trabaja conectado a la agenda y al programa de gestión. Si quieres ver usos concretos, lee <a href="whatsapp-para-no-perder-clientes.html">cómo usar WhatsApp para no perder ningún cliente</a>.</p>
+<p>La que se conecta con lo que ya usas. Un agente aislado responde, pero no sabe si tienes hueco ni quién es el cliente. Por eso nuestra <a href="../servicios/pix/index.html">IA empresarial</a> trabaja conectada a la agenda y al programa de gestión. Si quieres ver usos concretos, lee <a href="whatsapp-para-no-perder-clientes.html">cómo usar WhatsApp para no perder ningún cliente</a>.</p>
 """),
 ("crm-para-empresas-de-servicios", "CRM para empresas de servicios: cuál elegir para clientes y citas",
  "Qué debe tener el mejor CRM para una pequeña empresa de servicios, clínica o negocio local: ficha de cliente, citas, recordatorios, presupuestos y cobros en un mismo sitio.",
@@ -188,7 +188,7 @@ FAQS = {
 "crm-para-empresas-de-servicios": [
  ("¿Cuál es el mejor CRM para una pequeña empresa de servicios?", "El que une ficha de cliente, agenda, recordatorios y cobros en un mismo sitio y permite reservar online."),
  ("¿Qué diferencia hay entre un CRM y un software de gestión de clientes?", "En la práctica se usan como sinónimos; lo importante es que incluya agenda y facturación si tu negocio vive de las citas."),
- ("¿Un CRM sirve para una clínica?", "Sí, siempre que tenga control de accesos, historial por paciente y cumpla la protección de datos."),
+ ("¿Un CRM sirve para una clínica?", "Sí, siempre que tenga control de accesos, historial por paciente y cumpla protección de datos."),
 ],
 "crm-para-autonomos": [
  ("¿Cuál es el mejor CRM gratis para autónomos?", "Los planes gratuitos de CRM conocidos sirven para ordenar contactos; si necesitas facturar según la normativa española y tener soporte en español, conviene uno con facturación integrada."),

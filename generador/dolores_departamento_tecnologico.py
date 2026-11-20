@@ -32,7 +32,7 @@ D["servicios/departamento-tecnologico/auditoria-de-accesos-y-licencias"] = {
  "lead": "Se fue una persona hace un año y nadie sabe si todavía puede entrar en el correo, en el programa de facturación o en el Instagram de la empresa. Y cada mes pagas usuarios que no sabrías decir de quién son. Una auditoría de accesos y licencias de software contesta a las dos dudas con una lista.",
  "bloque": """<section class="sec sec-suave"><div class="w">
 <div class="cab"><p class="kicker">Haz la prueba ahora, sin abrir ningún programa</p><h2>¿Sabrías decir quién puede entrar hoy en las cuentas de tu empresa?</h2></div>
-<p style="max-width:820px">Contesta de memoria. No hay nota: solo sirve para ver si controlas los accesos o si los controla la costumbre.</p>
+<p style="max-width:820px">Contesta de memoria. No hay nota: solo sirve para ver si controlas los accesos o si los controla costumbre.</p>
 <ol style="max-width:820px">
 <li>¿Cuántas personas conocen la contraseña del correo general, el de info o el de administración?</li>
 <li>La última persona que dejó la empresa, ¿en cuántos sitios tenía usuario? ¿Quién los cerró y cuándo?</li>
@@ -236,7 +236,7 @@ D["servicios/departamento-tecnologico/monitorizacion-de-la-web-24-7"] = {
  "estructura": "cronologia-de-una-caida-sin-vigilar + cuando-no-compensa-en-lista",
  "lead": "«Oye, que vuestra web no va.» Si te enteras de que la página está caída porque te lo dice un cliente, lleva así horas o días y no sabes cuántos se fueron sin avisar. La monitorización de la web 24/7 con aviso de caídas cambia quién se entera primero.",
  "bloque": """<section class="sec"><div class="w">
-<div class="cab"><p class="kicker">La avería que descubre el cliente</p><h2>¿Cuánto tiempo lleva caída mi web sin que nadie lo sepa?</h2><p class="lead" style="margin-top:8px">Así suele ir una caída en un negocio donde nadie vigila la página. Las horas son un ejemplo; el orden, por desgracia, no.</p></div>
+<div class="cab"><p class="kicker">La avería que descubre el cliente</p><h2>¿Cuánto tiempo lleva caída mi web sin que nadie lo sepa?</h2><p class="lead" style="margin-top:8px">Así suele ir una caída en un negocio donde nadie vigila página. Las horas son un ejemplo; el orden, por desgracia, no.</p></div>
 <ol style="max-width:820px">
 <li><strong>Viernes, 19:40.</strong> Se llena el espacio del alojamiento, o caduca el certificado, o una actualización automática rompe una pieza. La portada muestra un error.</li>
 <li><strong>Viernes por la noche.</strong> Quien te buscaba en Google entra, ve el aviso de «sitio no seguro» o una página en blanco y vuelve atrás. No escribe para contártelo.</li>

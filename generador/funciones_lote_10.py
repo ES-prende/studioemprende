@@ -78,7 +78,7 @@ PAGINAS = {
   ("¿Quién es dueño de lo que se desarrolla en marca blanca?", "Se pacta por escrito en cada proyecto: qué es de la consultora, qué del cliente final y qué componentes reutilizables quedan de nuestra parte."),
   ("¿Puede una consultora sin perfil técnico vender proyectos de IA?", "Sí, si hace bien su parte, que es entender el negocio del cliente. La viabilidad técnica la revisamos antes de que presentes la propuesta."),
  ],
- "rel": [("formacion-in-company-por-departamentos.html", "Formación in-company por departamentos"), ("../pix/index.html", "PIX, el agente de IA que puedes ofrecer"), ("../software-especializado/portal-en-marca-blanca-para-gestorias.html", "Portal en marca blanca para gestorías")],
+ "rel": [("formacion-in-company-por-departamentos.html", "Formación in-company por departamentos"), ("../pix/index.html", "la IA empresarial que puedes ofrecer"), ("../software-especializado/portal-en-marca-blanca-para-gestorias.html", "Portal en marca blanca para gestorías")],
 },
 "startups-e-inversores/mvp-en-6-12-semanas": {
  "titulo": "Desarrollo de MVP en 6-12 semanas para startups",
@@ -476,7 +476,7 @@ PAGINAS = {
  "meta": "Conectividad en toda la finca: wifi profesional en casa, jardín, piscina, casas de invitados y naves, con enlaces entre edificios y conexión de respaldo.",
  "h1": "Conectividad en toda la finca, de la casa principal a la última nave",
  "lead": "Llevamos la conectividad a toda la finca: wifi estable en la vivienda, el jardín, la piscina, la casa de invitados, las cuadras o la bodega, aunque estén a cientos de metros.",
- "respuesta": "Conectar toda una finca requiere un estudio de cobertura, enlaces entre edificios (por cable, fibra o radioenlace punto a punto), puntos de acceso profesionales de interior y exterior y, en zonas rurales, una segunda conexión a internet por satélite o por red móvil por si falla la principal. Todo se gestiona desde un único sistema.",
+ "respuesta": "Conectar toda una finca requiere un estudio de cobertura, enlaces entre edificios (por cable, fibra o radioenlace punto a punto), puntos de acceso profesionales de interior y exterior y, en zonas rurales, una segunda conexión a internet por satélite o por red móvil por si falla principal. Todo se gestiona desde un único sistema.",
  "secciones": [
   ("¿Qué incluye el proyecto?", "El proyecto incluye medir la cobertura sobre el terreno, unir los edificios con fibra o radioenlaces, instalar wifi exterior en jardín y piscina y añadir una segunda conexión a internet que entra sola.", [
     ("Estudio de cobertura", "Medición sobre el terreno y plano de dónde va cada equipo."),

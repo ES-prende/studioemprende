@@ -465,7 +465,7 @@ D["servicios/software-de-gestion/informe-semanal-automatico-por-whatsapp-o-voz"]
 <li>No reemplaza la revisión de fondo que haces con tu asesor cada trimestre.</li>
 <li>Las primeras semanas hay que afinarlo: quitar lo que no miras y añadir lo que echas en falta.</li>
 </ul>
-<p style="max-width:820px">Cuando una cifra del resumen te llame la atención y quieras el detalle, lo tienes en el <a href="/servicios/software-de-gestion/cuadro-de-mando-en-tiempo-real">cuadro de mando</a>. El asistente que lo redacta es <a href="/servicios/pix">PIX</a>, al que también puedes preguntar por escrito. Y si tus datos viven en otros programas que no son el nuestro, existe la versión independiente del <a href="/servicios/automatizacion-y-datos/informe-semanal-por-whatsapp-o-voz">informe semanal por WhatsApp o voz</a>.</p>
+<p style="max-width:820px">Cuando una cifra del resumen te llame la atención y quieras el detalle, lo tienes en el <a href="/servicios/software-de-gestion/cuadro-de-mando-en-tiempo-real">cuadro de mando</a>. El asistente que lo redacta es <a href="/servicios/pix">IA empresarial</a>, al que también puedes preguntar por escrito. Y si tus datos viven en otros programas que no son el nuestro, existe la versión independiente del <a href="/servicios/automatizacion-y-datos/informe-semanal-por-whatsapp-o-voz">informe semanal por WhatsApp o voz</a>.</p>
 </div></section>""",
  "faq": [
   ("¿Cómo recibir un resumen de mi negocio en el móvil sin entrar al programa?", "Se elige qué datos interesan, a quién se envían y qué día y a qué hora. A partir de ahí el programa prepara el resumen con lo registrado esa semana y lo manda por WhatsApp como texto, como nota de voz o de las dos formas."),

@@ -284,7 +284,7 @@ D["servicios/software-especializado/presupuestador-y-configurador-online"] = {
 <li>Eliges un solo producto o servicio: el que más peticiones genera y menos excepciones tiene.</li>
 <li>Nos pasas la tarifa tal como la usas, con sus «depende» incluidos.</li>
 <li>Convertimos esos «depende» en opciones y reglas, y marcamos lo que no se puede fabricar.</li>
-<li>Comparas veinte presupuestos antiguos con lo que calcula la herramienta hasta que coincidan.</li>
+<li>Comparas veinte presupuestos antiguos con lo que calcula herramienta hasta que coincidan.</li>
 <li>Se publica en una página de tu web y tu equipo lo usa también en la visita.</li>
 </ol>
 <p style="max-width:820px">A partir de ahí cada petición entra con todos sus datos y puede seguir su camino como <a href="/servicios/software-de-gestion/presupuestos-que-pasan-a-pedido-y-factura">presupuesto que pasa a pedido y factura</a>. Si tu precio sale de medir en casa del cliente, te encaja mejor el <a href="/servicios/software-de-gestion/presupuestos-desde-mediciones">presupuesto desde mediciones</a>, y si lo que dudas es si la web está preparada para convertir visitas, empieza por <a href="/servicios/webs">el diseño de la web</a>.</p>

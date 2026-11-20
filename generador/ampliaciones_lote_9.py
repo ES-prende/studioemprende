@@ -39,7 +39,7 @@ AMPL = {
  },
  "servicios/alojamientos-y-domotica/panel-de-propietarios.html": {
   "secciones": [
-   ("Cómo se calcula la liquidación mensual de cada dueño", '''<p>La liquidación mensual sale de restar al importe cobrado de cada estancia la comisión del canal, tus honorarios y los gastos imputados a esa vivienda.</p>
+   ("Cómo se calcula liquidación mensual de cada dueño", '''<p>La liquidación mensual sale de restar al importe cobrado de cada estancia la comisión del canal, tus honorarios y los gastos imputados a esa vivienda.</p>
 <ol>
 <li>El sistema toma las reservas con salida dentro del mes, o con entrada, según el criterio que tengas pactado en el contrato de gestión.</li>
 <li>Descuenta la comisión de Airbnb, Booking o la pasarela de pago de tu web.</li>
@@ -243,7 +243,7 @@ AMPL = {
 <li>Comprueba la semana siguiente si siguen llegando a ti.</li>
 </ol>
 <p>Al cabo de un mes deberías ver que te llegan sobre todo incidencias reales y peticiones que quieres aprobar tú, y casi ninguna pregunta sobre el wifi o la basura.</p>
-<p>Cuando quieras que la IA haga además tareas internas, como preparar informes o mover datos entre programas, el siguiente paso es <a href="/servicios/pix/">PIX, nuestro agente de IA para empresas</a>.</p>'''),
+<p>Cuando quieras que la IA haga además tareas internas, como preparar informes o mover datos entre programas, el siguiente paso es <a href="/servicios/pix/">nuestra IA empresarial para empresas</a>.</p>'''),
   ],
   "faq": [
    ("¿Qué hace el asistente cuando no sabe la respuesta?", "Lo reconoce ante el huésped, le dice que lo consulta con el anfitrión y te pasa la pregunta con el contexto. No se inventa respuestas sobre la vivienda. Cuando tú contestas, puedes guardar esa respuesta en la ficha para que la próxima vez la resuelva solo."),
@@ -776,7 +776,7 @@ AMPL = {
 <li>Aceptar instrucciones que lleguen dentro de correos o documentos de terceros.</li>
 <li>Borrar información sin dejar copia.</li>
 </ul>
-<p>Para empresas, el mismo enfoque de permisos y aprobaciones es el de <a href="/servicios/pix/asistente-empresarial">PIX como asistente empresarial</a>. Y para cualquier incidencia técnica tienes al <a href="/servicios/deluxe/tecnico-personal-24-7">técnico personal disponible a cualquier hora</a>.</p>'''),
+<p>Para empresas, el mismo enfoque de permisos y aprobaciones es el de <a href="/servicios/pix/asistente-empresarial">La IA empresarial como asistente empresarial</a>. Y para cualquier incidencia técnica tienes al <a href="/servicios/deluxe/tecnico-personal-24-7">técnico personal disponible a cualquier hora</a>.</p>'''),
   ],
   "faq": [
    ("¿Qué modelo de inteligencia artificial usa el asistente privado?", "Se elige según tus requisitos de privacidad y el tipo de tareas. En nube privada se usan modelos comerciales con condiciones que impiden entrenar con tus datos; en servidor propio, modelos que funcionan en local. Te explicamos la diferencia de capacidades antes de decidir, sin compromisos con ningún fabricante."),

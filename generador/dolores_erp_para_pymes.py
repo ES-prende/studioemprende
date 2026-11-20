@@ -213,7 +213,7 @@ D["servicios/erp-para-pymes/formacion-del-equipo-con-casos-reales"] = {
 <h3 style="margin-top:30px">Quién se resiste y qué hay detrás</h3>
 <p style="max-width:820px">Porque les enseñaron el programa y no su trabajo dentro del programa. Detrás de casi toda resistencia hay un motivo razonable que conviene escuchar antes de insistir. La persona veterana de administración teme perder lo que la hace imprescindible: sabe cosas que no están escritas en ninguna parte. El encargado de almacén cree que le van a medir. El comercial ve más casillas y menos visitas. Y el que acaba de entrar no se atreve a preguntar delante de todos. Ninguno se convence con una presentación; se convencen cuando resuelven, con sus propios datos, algo que ayer les costaba más.</p>
 <p style="max-width:820px">De ahí que la capacitación de usuarios funcione mejor en grupos pequeños por puesto, en ratos cortos y con una copia de la empresa donde equivocarse no rompe nada. Pídele a cada persona que traiga el caso que más teme: la devolución parcial, el cliente con dos direcciones de entrega, el pedido que cambia tres veces. Si eso sale, lo demás sale.</p>
-<p style="max-width:820px">La señal de que ha funcionado no es un examen. Es que, la primera semana de uso real, las preguntas son sobre excepciones y no sobre lo básico, y que alguien del equipo empieza a contestar a los demás. Esas primeras semanas las cubre el <a href="/servicios/erp-para-pymes/acompanamiento-de-30-a-90-dias">acompañamiento de 30 a 90 días</a>. Si quieres que una parte de las consultas diarias las resuelva un asistente, mira <a href="/servicios/erp-para-pymes/pix-dentro-del-erp-preguntale-en-lenguaje-normal">PIX dentro del ERP</a>. Y si lo que buscas es formación en inteligencia artificial para tu plantilla, sin relación con implantar un programa, eso es otro servicio: <a href="/servicios/formacion-ia">formación en IA</a>.</p>
+<p style="max-width:820px">La señal de que ha funcionado no es un examen. Es que, la primera semana de uso real, las preguntas son sobre excepciones y no sobre lo básico, y que alguien del equipo empieza a contestar a los demás. Esas primeras semanas las cubre el <a href="/servicios/erp-para-pymes/acompanamiento-de-30-a-90-dias">acompañamiento de 30 a 90 días</a>. Si quieres que una parte de las consultas diarias las resuelva un asistente, mira <a href="/servicios/erp-para-pymes/pix-dentro-del-erp-preguntale-en-lenguaje-normal">La IA empresarial dentro del ERP</a>. Y si lo que buscas es formación en inteligencia artificial para tu plantilla, sin relación con implantar un programa, eso es otro servicio: <a href="/servicios/formacion-ia">formación en IA</a>.</p>
 </div></section>""",
  "faq": [
   ("¿Cómo conseguir que los empleados usen el programa nuevo?", "Enseñando a cada puesto solo sus tareas, con operaciones reales de la empresa y en un entorno de pruebas donde puedan equivocarse. Cuando alguien resuelve su caso más difícil con la herramienta, deja de buscar el atajo antiguo."),
@@ -263,7 +263,7 @@ D["servicios/erp-para-pymes/migracion-desde-excel-u-otro-programa"] = {
 <p style="max-width:820px">Estudiando lo que tienes antes de mover una sola fila. El error habitual es importar los archivos tal cual y descubrir después que el desorden ha viajado con ellos: el mismo cliente escrito de tres maneras, precios de hace cuatro años, columnas cuyo significado nadie recuerda. Estas pistas indican que tus hojas necesitan revisión antes del traslado:</p>
 <ul class="lista" style="max-width:820px">
 <li>Hay archivos llamados «definitivo», «definitivo2» y «bueno de verdad».</li>
-<li>Una fórmula la montó alguien que ya no está y nadie se atreve a tocarla.</li>
+<li>Una fórmula montó alguien que ya no está y nadie se atreve a tocarla.</li>
 <li>Ventas y administración manejan listados de clientes que no coinciden.</li>
 <li>Los colores de las celdas significan algo, pero solo para quien los puso.</li>
 <li>Para saber cuánto te debe un cliente hay que abrir dos libros y sumar.</li>
@@ -302,7 +302,7 @@ D["servicios/erp-para-pymes/pagas-solo-los-modulos-que-usas"] = {
 <li><strong>Piezas que no comparten datos.</strong> Si cada una guarda sus clientes, no es un sistema por módulos: son varios programas con el mismo logotipo.</li>
 <li><strong>Lo básico troceado.</strong> Desconfía si emitir una factura exige tres complementos distintos.</li>
 <li><strong>Añadir es fácil, quitar no.</strong> Pregunta qué ocurre con los datos de una pieza que dejas de usar.</li>
-<li><strong>Mínimos escondidos.</strong> Algunos exigen un número de usuarios o un conjunto de partida que anula la ventaja.</li>
+<li><strong>Mínimos escondidos.</strong> Algunos exigen un número de usuarios o un conjunto de partida que anula ventaja.</li>
 <li><strong>Empezar demasiado corto.</strong> Dejar fuera la facturación «para ahorrar» obliga a mantener dos sistemas.</li>
 </ul>
 <p style="max-width:820px;margin-top:16px">Ese último punto es el límite del planteamiento: ir por piezas no significa ir a lo mínimo absoluto. Hay un núcleo sin el cual las demás no tienen de dónde leer. Cuál es el tuyo se determina en el <a href="/servicios/erp-para-pymes/analisis-de-tus-procesos-y-eleccion-de-modulos">análisis de procesos y elección de módulos</a>, y lo que ocurre cuando más adelante necesitas ampliar lo contamos en <a href="/servicios/erp-para-pymes/crece-contigo-anades-modulos-cuando-los-necesitas">crece contigo</a>. Si estás valorando alternativas sin cuota, repasa antes la guía <a href="/guias/erp-gratis-y-open-source">ERP gratis y open source</a> para saber qué costes no aparecen en la etiqueta.</p>
@@ -313,7 +313,7 @@ D["servicios/erp-para-pymes/pagas-solo-los-modulos-que-usas"] = {
  ],
 }
 
-# Estructura: escena del lunes + párrafo de por qué ocurre + tabla «pregunta / quién la contesta hoy / con PIX» + lo que no le dejamos hacer
+# Estructura: escena del lunes + párrafo de por qué ocurre + tabla «pregunta / quién la contesta hoy / con la IA empresarial» + lo que no le dejamos hacer
 D["servicios/erp-para-pymes/pix-dentro-del-erp-preguntale-en-lenguaje-normal"] = {
  "estructura": "escena-del-lunes + tabla-quien-contesta-hoy + lo-que-no-hace-el-agente",
  "lead": "Lunes a primera hora: quieres saber qué clientes llevan dos meses sin comprar y la única persona que sabe sacar ese listado está de vacaciones. El dato está en tu programa, pero no a tu alcance. Un ERP con inteligencia artificial, al que preguntas por tus datos con tus palabras, quita ese intermediario.",
@@ -335,7 +335,7 @@ D["servicios/erp-para-pymes/pix-dentro-del-erp-preguntale-en-lenguaje-normal"] =
 <li><strong>No sustituye el criterio.</strong> Te da la lista de clientes inactivos; decidir a cuál llamar es cosa tuya.</li>
 <li><strong>No es imprescindible.</strong> El programa funciona igual con sus menús; el asistente es una forma más de consultar.</li>
 </ul>
-<p style="max-width:820px;margin-top:16px">Compensa sobre todo a quien dirige y no tiene tiempo de aprender informes, y a equipos donde las consultas se repiten. Aporta menos si los datos aún no son fiables: primero hay que tenerlos bien cargados, y eso depende de la <a href="/servicios/erp-para-pymes/migracion-desde-excel-u-otro-programa">migración</a> y del uso diario. Si prefieres ver los números siempre a la vista, sin preguntar, existe el <a href="/servicios/erp-para-pymes/cuadro-de-mando-en-tiempo-real">cuadro de mando en tiempo real</a>. Qué es este agente, qué más sabe hacer y cómo se controla está en la página de <a href="/servicios/pix">PIX</a> y en <a href="/servicios/pix/seguridad-y-control">seguridad y control</a>.</p>
+<p style="max-width:820px;margin-top:16px">Compensa sobre todo a quien dirige y no tiene tiempo de aprender informes, y a equipos donde las consultas se repiten. Aporta menos si los datos aún no son fiables: primero hay que tenerlos bien cargados, y eso depende de la <a href="/servicios/erp-para-pymes/migracion-desde-excel-u-otro-programa">migración</a> y del uso diario. Si prefieres ver los números siempre a la vista, sin preguntar, existe el <a href="/servicios/erp-para-pymes/cuadro-de-mando-en-tiempo-real">cuadro de mando en tiempo real</a>. Qué es este agente, qué más sabe hacer y cómo se controla está en la página de <a href="/servicios/pix">IA empresarial</a> y en <a href="/servicios/pix/seguridad-y-control">seguridad y control</a>.</p>
 </div></section>""",
  "faq": [
   ("¿Cómo consultar los datos de mi empresa sin saber hacer informes?", "Escribiendo o diciendo la pregunta tal como la harías a un compañero. El agente integrado en el ERP busca en ventas, almacén, facturas o cobros y devuelve la respuesta con las cifras registradas en tu programa."),

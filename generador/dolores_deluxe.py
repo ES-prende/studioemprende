@@ -90,7 +90,7 @@ D["servicios/deluxe/eventos-con-tecnologia"] = {
 </div></section>""",
  "faq": [
   ("¿Cómo organizar la parte técnica de una boda en una finca sin tener que estar pendiente?", "Designando a un único responsable técnico que se coordine con quien organiza, visite el lugar con antelación y haga una prueba completa a la misma hora del evento. Ese día, los anfitriones no deberían recibir ninguna consulta técnica."),
-  ("¿Qué pasa si falla la conexión a internet durante la retransmisión del evento?", "Para la emisión se prepara una segunda vía de salida que toma el relevo si la principal cae. Puede haber un corte breve en el cambio, y por eso la ceremonia se graba además en local para que quien la seguía a distancia pueda verla después."),
+  ("¿Qué pasa si falla conexión a internet durante la retransmisión del evento?", "Para la emisión se prepara una segunda vía de salida que toma el relevo si la principal cae. Puede haber un corte breve en el cambio, y por eso la ceremonia se graba además en local para que quien la seguía a distancia pueda verla después."),
  ],
 }
 
